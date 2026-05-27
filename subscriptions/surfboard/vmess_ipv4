@@ -11,14 +11,13 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇽🇽 XX | VMESS | @frev2rayng #1 = vmess, 104.21.25.65, 2087, username = 864112a6-ceeb-4126-b7e2-509c2a203d20, ws = false, tls = true
 🇩🇪 DE | VMESS | @khoneproxy #1 = vmess, 142.132.163.200, 80, username = 7f965e3e-b03f-455e-a96e-01b61f72537a, ws = true, tls = false, ws-path = /graphql, ws-headers = Host:"142.132.163.200"
-🇮🇷 IR | VMESS | @khoneproxy #1 = vmess, 37.32.23.122, 443, username = d12bc882-43c7-415e-87c5-2a7fdc8371c0, ws = true, tls = false, ws-path = /websocket/, ws-headers = Host:"37.32.23.122"
 🇩🇪 DE | VMESS | @magickey_shop #1 = vmess, 168.119.174.229, 443, username = 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, ws = false, tls = false
 🇽🇽 XX | VMESS | @proxy48 #1 = vmess, 172.66.213.38, 443, username = dfbbc8de-8a4f-407d-8069-6de38d83c4e1, ws = false, tls = true
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇽🇽 XX | VMESS | @frev2rayng #1, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇽🇽 XX | VMESS | @proxy48 #1
-PSG-AUTO = url-test, 🇽🇽 XX | VMESS | @frev2rayng #1, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇽🇽 XX | VMESS | @proxy48 #1
-PSG-FALLBACK = fallback, 🇽🇽 XX | VMESS | @frev2rayng #1, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇽🇽 XX | VMESS | @proxy48 #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇽🇽 XX | VMESS | @frev2rayng #1, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇽🇽 XX | VMESS | @proxy48 #1
+PSG-AUTO = url-test, 🇽🇽 XX | VMESS | @frev2rayng #1, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇽🇽 XX | VMESS | @proxy48 #1
+PSG-FALLBACK = fallback, 🇽🇽 XX | VMESS | @frev2rayng #1, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇽🇽 XX | VMESS | @proxy48 #1
 
 [Rule]
 GEOIP,IR,DIRECT
