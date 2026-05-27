@@ -92,11 +92,14 @@
         "direct",
         "🇸🇨 SC | VLESS | @arv2ray #1",
         "🇸🇨 SC | VLESS | @arv2ray #2",
+        "🇸🇨 SC | VLESS | @father_vpn #1",
         "🇸🇨 SC | VLESS | @kafing_2 #1",
         "🇸🇨 SC | VLESS | @mpproxy #1",
         "🇸🇨 SC | VLESS | @mpproxy #2",
         "🇸🇨 SC | VLESS | @mpproxy #3",
-        "🇸🇨 SC | VLESS | @mpproxy #4"
+        "🇸🇨 SC | VLESS | @mpproxy #4",
+        "🇸🇨 SC | VLESS | @v2ray_free_conf #1",
+        "🇸🇨 SC | VLESS | @v2rayngvpn_1 #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -106,11 +109,14 @@
       "outbounds": [
         "🇸🇨 SC | VLESS | @arv2ray #1",
         "🇸🇨 SC | VLESS | @arv2ray #2",
+        "🇸🇨 SC | VLESS | @father_vpn #1",
         "🇸🇨 SC | VLESS | @kafing_2 #1",
         "🇸🇨 SC | VLESS | @mpproxy #1",
         "🇸🇨 SC | VLESS | @mpproxy #2",
         "🇸🇨 SC | VLESS | @mpproxy #3",
-        "🇸🇨 SC | VLESS | @mpproxy #4"
+        "🇸🇨 SC | VLESS | @mpproxy #4",
+        "🇸🇨 SC | VLESS | @v2ray_free_conf #1",
+        "🇸🇨 SC | VLESS | @v2rayngvpn_1 #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -156,11 +162,28 @@
       }
     },
     {
+      "tag": "🇸🇨 SC | VLESS | @father_vpn #1",
+      "type": "vless",
+      "server": "45.130.125.160",
+      "server_port": 443,
+      "uuid": "536d0d54-53a5-455a-ad7c-a525d8ff629f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "tag": "🇸🇨 SC | VLESS | @kafing_2 #1",
       "type": "vless",
-      "server": "cdn.torprospeed.ir",
-      "server_port": 2087,
-      "uuid": "0cdab3ab-67dd-4342-a78f-710a32d0c3bb",
+      "server": "192.144.19.55",
+      "server_port": 8443,
+      "uuid": "83f03646-fb28-44cc-9d2c-8853f6c09285",
       "packet_encoding": "xudp"
     },
     {
@@ -211,6 +234,40 @@
       "server": "srv1.khatibirepair.ir",
       "server_port": 443,
       "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇨 SC | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "45.130.125.160",
+      "server_port": 443,
+      "uuid": "536d0d54-53a5-455a-ad7c-a525d8ff629f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇨 SC | VLESS | @v2rayngvpn_1 #1",
+      "type": "vless",
+      "server": "45.130.125.160",
+      "server_port": 443,
+      "uuid": "8f8a9baf-16c2-4d59-a267-09e65b0a55e4",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
