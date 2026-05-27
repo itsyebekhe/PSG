@@ -9,12 +9,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇫🇷 FR | TROJAN | @privatevpns #1 = trojan, 13.37.186.112, 22222, password = telegram-id-privatevpns, skip-cert-verify = true
 🇫🇷 FR | TROJAN | @proxyfn #1 = trojan, 51.91.11.29, 80, password = 598c19f3-a48e-47cd-8451-1ba04ea094d0, skip-cert-verify = true
+🇫🇷 FR | TROJAN | @v2rayvpnchannel #1 = trojan, 13.37.186.112, 22223, password = telegram-id-v2rayvpnchannel, skip-cert-verify = true
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇫🇷 FR | TROJAN | @proxyfn #1
-PSG-AUTO = url-test, 🇫🇷 FR | TROJAN | @proxyfn #1
-PSG-FALLBACK = fallback, 🇫🇷 FR | TROJAN | @proxyfn #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @proxyfn #1, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #1
+PSG-AUTO = url-test, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @proxyfn #1, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #1
+PSG-FALLBACK = fallback, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @proxyfn #1, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #1
 
 [Rule]
 GEOIP,IR,DIRECT
