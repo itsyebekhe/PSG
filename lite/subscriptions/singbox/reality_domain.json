@@ -96,9 +96,9 @@
         "🇰🇿 KZ | VLESS | @filterk0sh #1",
         "🇨🇾 CY | VLESS | @nn_vpn #1",
         "🇨🇾 CY | VLESS | @nn_vpn #2",
+        "🇨🇭 CH | VLESS | @v2ray_free_conf #1",
         "🇮🇷 IR | VLESS | @v_2rayng0 #1",
-        "🇦🇪 AE | VLESS | @vmesskhodam #1",
-        "🇲🇩 MD | VLESS | @vpn_ioss #1"
+        "🇦🇪 AE | VLESS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -112,9 +112,9 @@
         "🇰🇿 KZ | VLESS | @filterk0sh #1",
         "🇨🇾 CY | VLESS | @nn_vpn #1",
         "🇨🇾 CY | VLESS | @nn_vpn #2",
+        "🇨🇭 CH | VLESS | @v2ray_free_conf #1",
         "🇮🇷 IR | VLESS | @v_2rayng0 #1",
-        "🇦🇪 AE | VLESS | @vmesskhodam #1",
-        "🇲🇩 MD | VLESS | @vpn_ioss #1"
+        "🇦🇪 AE | VLESS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -236,6 +236,28 @@
       "packet_encoding": "xudp"
     },
     {
+      "tag": "🇨🇭 CH | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "ch.darknet.cv",
+      "server_port": 8443,
+      "uuid": "6c36723b-75a3-4816-9c19-1ccd3fde83fe",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
       "tag": "🇮🇷 IR | VLESS | @v_2rayng0 #1",
       "type": "vless",
       "server": "wp14.virgool.best",
@@ -271,28 +293,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "🇲🇩 MD | VLESS | @vpn_ioss #1",
-      "type": "vless",
-      "server": "4.cdnconn.com",
-      "server_port": 23335,
-      "uuid": "e384913f-8863-47b4-8858-a84b68abb4a6",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
         }
       }
     }
