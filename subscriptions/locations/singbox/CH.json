@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQkc=
+//profile-title: base64:UFNHIHwgQ0g=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -90,7 +90,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇧🇬 BG | VLESS | @v2ray_free_conf #1"
+        "🇨🇭 CH | VLESS | @v2ray_youtube #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +98,7 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @v2ray_free_conf #1"
+        "🇨🇭 CH | VLESS | @v2ray_youtube #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,12 +110,26 @@
       "type": "direct"
     },
     {
-      "tag": "🇧🇬 BG | VLESS | @v2ray_free_conf #1",
+      "tag": "🇨🇭 CH | VLESS | @v2ray_youtube #1",
       "type": "vless",
-      "server": "45.39.241.51",
-      "server_port": 23837,
-      "uuid": "d262c258-e73a-47d2-944d-55cfc4bc8fd0",
-      "packet_encoding": "xudp"
+      "server": "ch.darknet.cv",
+      "server_port": 8443,
+      "uuid": "6c36723b-75a3-4816-9c19-1ccd3fde83fe",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     }
   ],
   "route": {

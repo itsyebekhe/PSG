@@ -90,7 +90,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇫🇮 FI | VLESS | @filtershekan_channel #1"
+        "🇫🇮 FI | VLESS | @filtershekan_channel #1",
+        "🇫🇮 FI | VLESS | @v2ray_youtube #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +99,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @filtershekan_channel #1"
+        "🇫🇮 FI | VLESS | @filtershekan_channel #1",
+        "🇫🇮 FI | VLESS | @v2ray_youtube #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -116,6 +118,28 @@
       "server_port": 45029,
       "uuid": "01ef96b4-e7ec-4218-8ffe-a59e1cdfd836",
       "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇫🇮 FI | VLESS | @v2ray_youtube #1",
+      "type": "vless",
+      "server": "fi2.darknet.cv",
+      "server_port": 8443,
+      "uuid": "6c36723b-75a3-4816-9c19-1ccd3fde83fe",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     }
   ],
   "route": {
