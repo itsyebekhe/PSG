@@ -77,8 +77,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇫🇮 FI | VLESS | @filtershekan_channel #1",
-        "🇫🇮 FI | VLESS | @v2ray_youtube #1"
+        "🇫🇮 FI | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -86,8 +85,7 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @filtershekan_channel #1",
-        "🇫🇮 FI | VLESS | @v2ray_youtube #1"
+        "🇫🇮 FI | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -103,34 +101,12 @@
       "type": "direct"
     },
     {
-      "tag": "🇫🇮 FI | VLESS | @filtershekan_channel #1",
+      "tag": "🇫🇮 FI | VLESS | @v2ray_free_conf #1",
       "type": "vless",
-      "server": "downlod.musicribvar.com",
-      "server_port": 45029,
-      "uuid": "01ef96b4-e7ec-4218-8ffe-a59e1cdfd836",
+      "server": "193.233.23.121",
+      "server_port": 40611,
+      "uuid": "f5a25ee5-ff24-41b0-80e8-ccafdc866614",
       "packet_encoding": "xudp"
-    },
-    {
-      "tag": "🇫🇮 FI | VLESS | @v2ray_youtube #1",
-      "type": "vless",
-      "server": "fi2.darknet.cv",
-      "server_port": 8443,
-      "uuid": "6c36723b-75a3-4816-9c19-1ccd3fde83fe",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
-        }
-      }
     }
   ],
   "route": {
