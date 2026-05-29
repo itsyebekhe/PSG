@@ -77,7 +77,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇮🇱 IL | VLESS | @v2aryng_vpn #1"
+        "🇮🇱 IL | VLESS | @v2aryng_vpn #1",
+        "🇮🇱 IL | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -85,7 +86,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇮🇱 IL | VLESS | @v2aryng_vpn #1"
+        "🇮🇱 IL | VLESS | @v2aryng_vpn #1",
+        "🇮🇱 IL | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -106,6 +108,28 @@
       "server": "193.203.10.86",
       "server_port": 443,
       "uuid": "f0ea76e9-c3c4-4e2c-b2f9-a97d65cc2907",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇮🇱 IL | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "45.140.204.121",
+      "server_port": 443,
+      "uuid": "416560bf-9ebb-4a43-96b6-e353e3d3572a",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
