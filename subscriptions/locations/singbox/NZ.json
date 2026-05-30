@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRkk=
+//profile-title: base64:UFNHIHwgTlo=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -90,7 +90,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇫🇮 FI | VLESS | @filtershekan_channel #1"
+        "🇳🇿 NZ | VLESS | @bored_vpn #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +98,7 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @filtershekan_channel #1"
+        "🇳🇿 NZ | VLESS | @bored_vpn #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,12 +110,21 @@
       "type": "direct"
     },
     {
-      "tag": "🇫🇮 FI | VLESS | @filtershekan_channel #1",
+      "tag": "🇳🇿 NZ | VLESS | @bored_vpn #1",
       "type": "vless",
-      "server": "downlod.musicribvar.com",
-      "server_port": 45029,
-      "uuid": "01ef96b4-e7ec-4218-8ffe-a59e1cdfd836",
-      "packet_encoding": "xudp"
+      "server": "202.37.33.80",
+      "server_port": 443,
+      "uuid": "cc752a3e-1537-4e86-bb50-1b897bf7b33c",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     }
   ],
   "route": {
