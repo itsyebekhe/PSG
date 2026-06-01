@@ -95,6 +95,7 @@
         "KingRezaPahlavi",
         "🇽🇽 XX | VMESS | @frev2rayng #1",
         "🇩🇪 DE | VMESS | @khoneproxy #1",
+        "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇩🇪 DE | VMESS | @magickey_shop #1",
         "🇽🇽 XX | VMESS | @proxy48 #1"
       ],
@@ -109,6 +110,7 @@
         "KingRezaPahlavi",
         "🇽🇽 XX | VMESS | @frev2rayng #1",
         "🇩🇪 DE | VMESS | @khoneproxy #1",
+        "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇩🇪 DE | VMESS | @magickey_shop #1",
         "🇽🇽 XX | VMESS | @proxy48 #1"
       ],
@@ -226,6 +228,31 @@
       "transport": {
         "type": "ws",
         "path": "/graphql",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1",
+      "type": "vmess",
+      "server": "37.32.23.122",
+      "server_port": 443,
+      "uuid": "d12bc882-43c7-415e-87c5-2a7fdc8371c0",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/websocket/",
         "headers": {
           "Host": ""
         }

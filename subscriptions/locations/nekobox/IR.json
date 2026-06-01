@@ -86,18 +86,18 @@
         "🇮🇷 IR | VLESS | @filtershekan_channel #1",
         "🇮🇷 IR | VLESS | @frev2rayng #1",
         "🇮🇷 IR | VMESS | @khoneproxy #1",
+        "🇮🇷 IR | VMESS | @khoneproxy #2",
         "🇮🇷 IR | VLESS | @lax_vpn #1",
         "🇮🇷 IR | VLESS | @miov2ray #1",
         "🇮🇷 IR | VLESS | @nofilter_v2rayng #1",
         "🇮🇷 IR | VLESS | @v2ang #1",
         "🇮🇷 IR | VLESS | @v2ang #2",
         "🇮🇷 IR | VLESS | @v2ray_free_conf #1",
-        "🇮🇷 IR | VLESS | @v2ray_free_conf #2",
         "🇮🇷 IR | VLESS | @v2ray_iran88 #1",
         "🇮🇷 IR | VLESS | @v2raymelliii #1",
         "🇮🇷 IR | VLESS | @v2rayngalpha #1",
-        "🇮🇷 IR | VLESS | @v_2rayng0 #1",
-        "🇮🇷 IR | VLESS | @vip_vpn_2022 #1"
+        "🇮🇷 IR | VLESS | @vip_vpn_2022 #1",
+        "🇮🇷 IR | VLESS | @vpnfree85 #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -114,18 +114,18 @@
         "🇮🇷 IR | VLESS | @filtershekan_channel #1",
         "🇮🇷 IR | VLESS | @frev2rayng #1",
         "🇮🇷 IR | VMESS | @khoneproxy #1",
+        "🇮🇷 IR | VMESS | @khoneproxy #2",
         "🇮🇷 IR | VLESS | @lax_vpn #1",
         "🇮🇷 IR | VLESS | @miov2ray #1",
         "🇮🇷 IR | VLESS | @nofilter_v2rayng #1",
         "🇮🇷 IR | VLESS | @v2ang #1",
         "🇮🇷 IR | VLESS | @v2ang #2",
         "🇮🇷 IR | VLESS | @v2ray_free_conf #1",
-        "🇮🇷 IR | VLESS | @v2ray_free_conf #2",
         "🇮🇷 IR | VLESS | @v2ray_iran88 #1",
         "🇮🇷 IR | VLESS | @v2raymelliii #1",
         "🇮🇷 IR | VLESS | @v2rayngalpha #1",
-        "🇮🇷 IR | VLESS | @v_2rayng0 #1",
-        "🇮🇷 IR | VLESS | @vip_vpn_2022 #1"
+        "🇮🇷 IR | VLESS | @vip_vpn_2022 #1",
+        "🇮🇷 IR | VLESS | @vpnfree85 #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -228,6 +228,31 @@
     {
       "tag": "🇮🇷 IR | VMESS | @khoneproxy #1",
       "type": "vmess",
+      "server": "37.32.23.122",
+      "server_port": 443,
+      "uuid": "d12bc882-43c7-415e-87c5-2a7fdc8371c0",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/websocket/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #2",
+      "type": "vmess",
       "server": "78.47.131.39",
       "server_port": 8443,
       "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",
@@ -296,16 +321,8 @@
       "tag": "🇮🇷 IR | VLESS | @v2ray_free_conf #1",
       "type": "vless",
       "server": "snapp.ir",
-      "server_port": 80,
-      "uuid": "2af75a89-3c3e-42d0-9f4e-b2aea5c54148",
-      "packet_encoding": "xudp"
-    },
-    {
-      "tag": "🇮🇷 IR | VLESS | @v2ray_free_conf #2",
-      "type": "vless",
-      "server": "tamland.ir",
-      "server_port": 80,
-      "uuid": "d55a56b0-3130-45f3-828c-c602cf6a6b6f",
+      "server_port": 2095,
+      "uuid": "41bc5a50-7c41-4078-9a2a-611ab1c6dddb",
       "packet_encoding": "xudp"
     },
     {
@@ -333,11 +350,11 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇮🇷 IR | VLESS | @v_2rayng0 #1",
+      "tag": "🇮🇷 IR | VLESS | @vip_vpn_2022 #1",
       "type": "vless",
-      "server": "wp14.virgool.best",
-      "server_port": 55014,
-      "uuid": "b01631fa-502b-497f-b8ed-2fda669667ad",
+      "server": "185.143.233.5",
+      "server_port": 443,
+      "uuid": "1a83df32-42f2-4395-97bb-1fb91822c630",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -346,20 +363,15 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
         }
       }
     },
     {
-      "tag": "🇮🇷 IR | VLESS | @vip_vpn_2022 #1",
+      "tag": "🇮🇷 IR | VLESS | @vpnfree85 #1",
       "type": "vless",
-      "server": "185.143.233.5",
+      "server": "protectnet.cloudinohost.com",
       "server_port": 443,
-      "uuid": "1a83df32-42f2-4395-97bb-1fb91822c630",
+      "uuid": "ea470142-10c6-4b1f-a8e6-0ddcc78a4058",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,

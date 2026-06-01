@@ -98,7 +98,6 @@
         "🇧🇾 BY | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VMESS | @iranvpnet #1",
-        "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇽🇽 XX | VMESS | @manstervpn #1",
         "🇽🇽 XX | VMESS | @mi_pn_official #1",
         "🇺🇸 US | VMESS | @prooxyk #1",
@@ -106,6 +105,7 @@
         "🇺🇸 US | VMESS | @v2ray4win #1",
         "🇺🇸 US | VMESS | @vpngate_config #1",
         "🇩🇪 DE | VMESS | @khoneproxy #1",
+        "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇩🇪 DE | VMESS | @magickey_shop #1"
       ],
       "tag": "proxy",
@@ -122,7 +122,6 @@
         "🇧🇾 BY | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VMESS | @iranvpnet #1",
-        "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇽🇽 XX | VMESS | @manstervpn #1",
         "🇽🇽 XX | VMESS | @mi_pn_official #1",
         "🇺🇸 US | VMESS | @prooxyk #1",
@@ -130,6 +129,7 @@
         "🇺🇸 US | VMESS | @v2ray4win #1",
         "🇺🇸 US | VMESS | @vpngate_config #1",
         "🇩🇪 DE | VMESS | @khoneproxy #1",
+        "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇩🇪 DE | VMESS | @magickey_shop #1"
       ],
       "tag": "auto",
@@ -332,15 +332,6 @@
       }
     },
     {
-      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1",
-      "type": "vmess",
-      "server": "78.47.131.39",
-      "server_port": 8443,
-      "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
       "tag": "🇽🇽 XX | VMESS | @manstervpn #1",
       "type": "vmess",
       "server": "104.16.60.8",
@@ -492,6 +483,31 @@
       "transport": {
         "type": "ws",
         "path": "/graphql",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1",
+      "type": "vmess",
+      "server": "37.32.23.122",
+      "server_port": 443,
+      "uuid": "d12bc882-43c7-415e-87c5-2a7fdc8371c0",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/websocket/",
         "headers": {
           "Host": ""
         }

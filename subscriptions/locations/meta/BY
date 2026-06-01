@@ -24,6 +24,7 @@ dns:
 
 proxies: 
   - {"name": "🇧🇾 BY | VMESS | @ir_netproxy #1", "server": "5.161.156.196", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d20e38ef-1a4d-4009-a00d-2f0d44e3c65a", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇧🇾 BY | VLESS | @vmesskhodam #1", "server": "by.api-yandex.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "959b4df5-15bc-4eb8-8b93-95f6af50cd80", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -38,6 +39,7 @@ proxy-groups:
     interval: 300
     proxies: 
       - '🇧🇾 BY | VMESS | @ir_netproxy #1'
+      - '🇧🇾 BY | VLESS | @vmesskhodam #1'
 
   - name: 🌍 Global Media
     type: select
