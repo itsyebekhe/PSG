@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFc=
+//profile-title: base64:UFNHIHwgUEw=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -90,7 +90,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇹🇼 TW | SS | @netfreedom0 #1"
+        "🇵🇱 PL | VLESS | @bored_vpn #1",
+        "🇵🇱 PL | SS | @netfreedom0 #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +99,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇹🇼 TW | SS | @netfreedom0 #1"
+        "🇵🇱 PL | VLESS | @bored_vpn #1",
+        "🇵🇱 PL | SS | @netfreedom0 #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,11 +112,33 @@
       "type": "direct"
     },
     {
-      "tag": "🇹🇼 TW | SS | @netfreedom0 #1",
+      "tag": "🇵🇱 PL | VLESS | @bored_vpn #1",
+      "type": "vless",
+      "server": "77.239.114.176",
+      "server_port": 19105,
+      "uuid": "fb9e4c3a-936f-44c7-ac89-d5d422690fcf",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #1",
       "type": "shadowsocks",
-      "server": "185.189.160.105",
-      "server_port": 41632,
-      "method": "YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==",
+      "server": "217.30.10.70",
+      "server_port": 9000,
+      "method": "YWVzLTI1Ni1jZmI6YTNHRll0MzZTbTgyVnlzOQ==",
       "password": null
     }
   ],
