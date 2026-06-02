@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTlo=
+//profile-title: base64:UFNHIHwgQlI=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -90,7 +90,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇳🇿 NZ | VLESS | @red2ray #1"
+        "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
+        "🇧🇷 BR | VMESS | @freeconfigsplus #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +99,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇳🇿 NZ | VLESS | @red2ray #1"
+        "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
+        "🇧🇷 BR | VMESS | @freeconfigsplus #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,21 +112,22 @@
       "type": "direct"
     },
     {
-      "tag": "🇳🇿 NZ | VLESS | @red2ray #1",
-      "type": "vless",
-      "server": "202.37.33.80",
-      "server_port": 443,
-      "uuid": "cc752a3e-1537-4e86-bb50-1b897bf7b33c",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "tag": "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
+      "type": "vmess",
+      "server": "172.233.17.76",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇧🇷 BR | VMESS | @freeconfigsplus #1",
+      "type": "vmess",
+      "server": "172.233.17.76",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
     }
   ],
   "route": {

@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇩🇪 DE | VMESS | @khoneproxy #1 = vmess, 142.132.163.200, 80, username = 7f965e3e-b03f-455e-a96e-01b61f72537a, ws = true, tls = false, ws-path = /graphql, ws-headers = Host:"142.132.163.200"
 🇩🇪 DE | VMESS | @magickey_shop #1 = vmess, 168.119.174.229, 443, username = 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147, ws = false, tls = false
-🇩🇪 DE | TROJAN | @red2ray #1 = trojan, 91.233.8.142, 443, password = d-VoBikwImgO9HMG7YWANlh%3DQNlHzjK32P, skip-cert-verify = true
+🇩🇪 DE | TROJAN | @v2ray_free_conf #1 = trojan, 172.104.237.100, 443, password = VPTFm%3DoZ%2B%2BSuNT%2BjMRqGZqrAnWq-r8KJyY, skip-cert-verify = true
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇩🇪 DE | TROJAN | @red2ray #1
-PSG-AUTO = url-test, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇩🇪 DE | TROJAN | @red2ray #1
-PSG-FALLBACK = fallback, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇩🇪 DE | TROJAN | @red2ray #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇩🇪 DE | TROJAN | @v2ray_free_conf #1
+PSG-AUTO = url-test, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇩🇪 DE | TROJAN | @v2ray_free_conf #1
+PSG-FALLBACK = fallback, 🇩🇪 DE | VMESS | @khoneproxy #1, 🇩🇪 DE | VMESS | @magickey_shop #1, 🇩🇪 DE | TROJAN | @v2ray_free_conf #1
 
 [Rule]
 GEOIP,IR,DIRECT

@@ -77,7 +77,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇱🇻 LV | VLESS | @megavpn_link #1"
+        "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
+        "🇧🇷 BR | VMESS | @freeconfigsplus #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -85,7 +86,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇱🇻 LV | VLESS | @megavpn_link #1"
+        "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
+        "🇧🇷 BR | VMESS | @freeconfigsplus #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -101,26 +103,22 @@
       "type": "direct"
     },
     {
-      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1",
-      "type": "vless",
-      "server": "91.218.143.194",
-      "server_port": 43798,
-      "uuid": "b7725d23-840a-4f8e-993c-69b40424cfc0",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
-        }
-      }
+      "tag": "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
+      "type": "vmess",
+      "server": "172.233.17.76",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇧🇷 BR | VMESS | @freeconfigsplus #1",
+      "type": "vmess",
+      "server": "172.233.17.76",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
     }
   ],
   "route": {

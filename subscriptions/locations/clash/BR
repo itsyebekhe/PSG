@@ -23,7 +23,8 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
-  - {"name": "🇳🇿 NZ | VLESS | @red2ray #1", "server": "202.37.33.80", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cc752a3e-1537-4e86-bb50-1b897bf7b33c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇧🇷 BR | VMESS | @Fr33C0nfig #1", "server": "172.233.17.76", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇧🇷 BR | VMESS | @freeconfigsplus #1", "server": "172.233.17.76", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -37,7 +38,8 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
-      - '🇳🇿 NZ | VLESS | @red2ray #1'
+      - '🇧🇷 BR | VMESS | @Fr33C0nfig #1'
+      - '🇧🇷 BR | VMESS | @freeconfigsplus #1'
 
   - name: 🌍 Global Media
     type: select
