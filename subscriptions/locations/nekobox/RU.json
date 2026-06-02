@@ -78,9 +78,9 @@
         "auto",
         "direct",
         "🇷🇺 RU | VLESS | @megavpn_link #1",
-        "🇷🇺 RU | VLESS | @netmellianti #1",
         "🇷🇺 RU | VLESS | @v2ray_collector #1",
-        "🇷🇺 RU | VLESS | @vmesc #1"
+        "🇷🇺 RU | VLESS | @v2ray_free_conf #1",
+        "🇷🇺 RU | VLESS | @v2ray_free_conf #2"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -89,9 +89,9 @@
       "interval": "10m",
       "outbounds": [
         "🇷🇺 RU | VLESS | @megavpn_link #1",
-        "🇷🇺 RU | VLESS | @netmellianti #1",
         "🇷🇺 RU | VLESS | @v2ray_collector #1",
-        "🇷🇺 RU | VLESS | @vmesc #1"
+        "🇷🇺 RU | VLESS | @v2ray_free_conf #1",
+        "🇷🇺 RU | VLESS | @v2ray_free_conf #2"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -112,28 +112,6 @@
       "server": "158.160.250.45",
       "server_port": 443,
       "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
-        }
-      }
-    },
-    {
-      "tag": "🇷🇺 RU | VLESS | @netmellianti #1",
-      "type": "vless",
-      "server": "84.201.168.186",
-      "server_port": 443,
-      "uuid": "85fc75e0-e84c-4a7f-943f-877d16e4a68a",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -173,12 +151,13 @@
       }
     },
     {
-      "tag": "🇷🇺 RU | VLESS | @vmesc #1",
+      "tag": "🇷🇺 RU | VLESS | @v2ray_free_conf #1",
       "type": "vless",
-      "server": "cdn3-87.vk-cdnvideo.com",
-      "server_port": 8443,
-      "uuid": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
+      "server": "51.250.106.87",
+      "server_port": 443,
+      "uuid": "a5a8c84e-c93c-4fed-a4f4-a1b1d9dcac02",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "",
@@ -188,6 +167,14 @@
           "fingerprint": "chrome"
         }
       }
+    },
+    {
+      "tag": "🇷🇺 RU | VLESS | @v2ray_free_conf #2",
+      "type": "vless",
+      "server": "62.109.21.244",
+      "server_port": 2096,
+      "uuid": "ba2630d8-d6c4-49ff-b5d5-2c24330dd245",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {
