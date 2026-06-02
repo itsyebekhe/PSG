@@ -77,6 +77,7 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇱🇻 LV | VLESS | @freeconfigsplus #1",
         "🇱🇻 LV | VLESS | @megavpn_link #1",
         "🇱🇻 LV | VLESS | @v2aryng_vpn #1"
       ],
@@ -86,6 +87,7 @@
     {
       "interval": "10m",
       "outbounds": [
+        "🇱🇻 LV | VLESS | @freeconfigsplus #1",
         "🇱🇻 LV | VLESS | @megavpn_link #1",
         "🇱🇻 LV | VLESS | @v2aryng_vpn #1"
       ],
@@ -101,6 +103,30 @@
     {
       "tag": "bypass",
       "type": "direct"
+    },
+    {
+      "tag": "🇱🇻 LV | VLESS | @freeconfigsplus #1",
+      "type": "vless",
+      "server": "fvpn.me",
+      "server_port": 443,
+      "uuid": "c359d107-c1b1-4b71-811d-5040b898f2a7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
     },
     {
       "tag": "🇱🇻 LV | VLESS | @megavpn_link #1",
