@@ -77,9 +77,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇱🇻 LV | VLESS | @freeconfigsplus #1",
-        "🇱🇻 LV | VLESS | @megavpn_link #1",
-        "🇱🇻 LV | VLESS | @v2aryng_vpn #1"
+        "🇱🇻 LV | VLESS | @megavpn_link #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -87,9 +85,7 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇱🇻 LV | VLESS | @freeconfigsplus #1",
-        "🇱🇻 LV | VLESS | @megavpn_link #1",
-        "🇱🇻 LV | VLESS | @v2aryng_vpn #1"
+        "🇱🇻 LV | VLESS | @megavpn_link #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -105,57 +101,11 @@
       "type": "direct"
     },
     {
-      "tag": "🇱🇻 LV | VLESS | @freeconfigsplus #1",
-      "type": "vless",
-      "server": "fvpn.me",
-      "server_port": 443,
-      "uuid": "c359d107-c1b1-4b71-811d-5040b898f2a7",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": ""
-        }
-      }
-    },
-    {
       "tag": "🇱🇻 LV | VLESS | @megavpn_link #1",
       "type": "vless",
       "server": "91.218.143.194",
       "server_port": 43798,
       "uuid": "b7725d23-840a-4f8e-993c-69b40424cfc0",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
-        }
-      }
-    },
-    {
-      "tag": "🇱🇻 LV | VLESS | @v2aryng_vpn #1",
-      "type": "vless",
-      "server": "104.253.18.220",
-      "server_port": 80,
-      "uuid": "ZoRoVpn",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
