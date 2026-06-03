@@ -10,12 +10,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇧🇷 BR | VMESS | @Fr33C0nfig #1 = vmess, 172.233.17.76, 22324, username = 04621bae-ab36-11ec-b909-0242ac120002, ws = false, tls = false
-🇧🇷 BR | VMESS | @freeconfigsplus #1 = vmess, 172.233.17.76, 22324, username = 04621bae-ab36-11ec-b909-0242ac120002, ws = false, tls = false
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇧🇷 BR | VMESS | @Fr33C0nfig #1, 🇧🇷 BR | VMESS | @freeconfigsplus #1
-PSG-AUTO = url-test, 🇧🇷 BR | VMESS | @Fr33C0nfig #1, 🇧🇷 BR | VMESS | @freeconfigsplus #1
-PSG-FALLBACK = fallback, 🇧🇷 BR | VMESS | @Fr33C0nfig #1, 🇧🇷 BR | VMESS | @freeconfigsplus #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇧🇷 BR | VMESS | @Fr33C0nfig #1
+PSG-AUTO = url-test, 🇧🇷 BR | VMESS | @Fr33C0nfig #1
+PSG-FALLBACK = fallback, 🇧🇷 BR | VMESS | @Fr33C0nfig #1
 
 [Rule]
 GEOIP,IR,DIRECT

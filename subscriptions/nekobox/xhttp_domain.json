@@ -84,9 +84,10 @@
         "🇬🇧 GB | VLESS | @komail315 #1",
         "🇺🇸 US | VLESS | @netmellianti #1",
         "🇺🇸 US | VLESS | @outline_ir #1",
-        "🇩🇪 DE | VLESS | @v2ray_free_conf #1",
+        "🇽🇽 XX | VLESS | @v2raych #1",
         "🇺🇸 US | VLESS | @v2rayngvpn_1 #2",
-        "🇺🇸 US | VLESS | @v2rayngvpn_1 #3"
+        "🇺🇸 US | VLESS | @v2rayngvpn_1 #3",
+        "🇮🇷 IR | VLESS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -101,9 +102,10 @@
         "🇬🇧 GB | VLESS | @komail315 #1",
         "🇺🇸 US | VLESS | @netmellianti #1",
         "🇺🇸 US | VLESS | @outline_ir #1",
-        "🇩🇪 DE | VLESS | @v2ray_free_conf #1",
+        "🇽🇽 XX | VLESS | @v2raych #1",
         "🇺🇸 US | VLESS | @v2rayngvpn_1 #2",
-        "🇺🇸 US | VLESS | @v2rayngvpn_1 #3"
+        "🇺🇸 US | VLESS | @v2rayngvpn_1 #3",
+        "🇮🇷 IR | VLESS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -232,12 +234,21 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @v2ray_free_conf #1",
+      "tag": "🇽🇽 XX | VLESS | @v2raych #1",
       "type": "vless",
-      "server": "r21.asemonyfixco.ir",
-      "server_port": 2084,
-      "uuid": "712a76b0-5afb-4e4b-8255-ae239bafd894",
-      "packet_encoding": "xudp"
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "c7591558-193e-45d5-83a3-7824859fec37",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "tag": "🇺🇸 US | VLESS | @v2rayngvpn_1 #2",
@@ -263,6 +274,14 @@
           "fingerprint": "chrome"
         }
       }
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @vmesskhodam #1",
+      "type": "vless",
+      "server": "app.movise.org",
+      "server_port": 19467,
+      "uuid": "ee258b89-6004-43cb-a404-69c4f1ac6b56",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {
