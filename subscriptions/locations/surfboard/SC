@@ -10,11 +10,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇸🇨 SC | TROJAN | @bored_vpn #1 = trojan, 45.130.125.76, 443, password = humanity, skip-cert-verify = true
+🇸🇨 SC | TROJAN | @outline_ir #1 = trojan, 45.130.125.0, 443, password = humanity, skip-cert-verify = true
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇸🇨 SC | TROJAN | @bored_vpn #1
-PSG-AUTO = url-test, 🇸🇨 SC | TROJAN | @bored_vpn #1
-PSG-FALLBACK = fallback, 🇸🇨 SC | TROJAN | @bored_vpn #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇸🇨 SC | TROJAN | @bored_vpn #1, 🇸🇨 SC | TROJAN | @outline_ir #1
+PSG-AUTO = url-test, 🇸🇨 SC | TROJAN | @bored_vpn #1, 🇸🇨 SC | TROJAN | @outline_ir #1
+PSG-FALLBACK = fallback, 🇸🇨 SC | TROJAN | @bored_vpn #1, 🇸🇨 SC | TROJAN | @outline_ir #1
 
 [Rule]
 GEOIP,IR,DIRECT
