@@ -90,8 +90,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇵🇱 PL | VLESS | @bored_vpn #1",
-        "🇵🇱 PL | VLESS | @outline_ir #1"
+        "🇵🇱 PL | VLESS | @outline_ir #1",
+        "🇵🇱 PL | VLESS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -99,8 +99,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @bored_vpn #1",
-        "🇵🇱 PL | VLESS | @outline_ir #1"
+        "🇵🇱 PL | VLESS | @outline_ir #1",
+        "🇵🇱 PL | VLESS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,28 +110,6 @@
     {
       "tag": "direct",
       "type": "direct"
-    },
-    {
-      "tag": "🇵🇱 PL | VLESS | @bored_vpn #1",
-      "type": "vless",
-      "server": "77.239.114.176",
-      "server_port": 19105,
-      "uuid": "fb9e4c3a-936f-44c7-ac89-d5d422690fcf",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
-        }
-      }
     },
     {
       "tag": "🇵🇱 PL | VLESS | @outline_ir #1",
@@ -154,6 +132,14 @@
           "enabled": true
         }
       }
+    },
+    {
+      "tag": "🇵🇱 PL | VLESS | @vmesskhodam #1",
+      "type": "vless",
+      "server": "support.zoom.us.beichuan.serv00.net",
+      "server_port": 9815,
+      "uuid": "37a0bd7c-8b9f-4693-8916-bd1e2da0a817",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {
