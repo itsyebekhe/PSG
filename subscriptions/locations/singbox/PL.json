@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgWkE=
+//profile-title: base64:UFNHIHwgUEw=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -90,7 +90,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇿🇦 ZA | SS | @prrofile_purple #1"
+        "🇵🇱 PL | VLESS | @filtershekan_channel #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +98,7 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇿🇦 ZA | SS | @prrofile_purple #1"
+        "🇵🇱 PL | VLESS | @filtershekan_channel #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,12 +110,26 @@
       "type": "direct"
     },
     {
-      "tag": "🇿🇦 ZA | SS | @prrofile_purple #1",
-      "type": "shadowsocks",
-      "server": "20.164.45.116",
+      "tag": "🇵🇱 PL | VLESS | @filtershekan_channel #1",
+      "type": "vless",
+      "server": "pl.healthy-connected.com",
       "server_port": 443,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3R20xc2RDU1JXQjQ2Q3JP",
-      "password": null
+      "uuid": "4405aeb6-84fc-49ba-a42b-948a3b1ed13c",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     }
   ],
   "route": {
