@@ -99,10 +99,10 @@
         "🇸🇪 SE | VLESS | @realvpnmaster #5",
         "🇸🇪 SE | VLESS | @realvpnmaster #6",
         "🇸🇪 SE | VLESS | @serverv2ray00 #1",
-        "🇸🇪 SE | VLESS | @sobi_vpn #1",
         "🇸🇪 SE | VLESS | @v2logy #1",
         "🇸🇪 SE | VLESS | @v2logy #2",
         "🇸🇪 SE | VLESS | @v2logy #3",
+        "🇸🇪 SE | VLESS | @v2raych #1",
         "🇸🇪 SE | TUIC | @vipv2rey #1"
       ],
       "tag": "proxy",
@@ -133,10 +133,10 @@
         "🇸🇪 SE | VLESS | @realvpnmaster #5",
         "🇸🇪 SE | VLESS | @realvpnmaster #6",
         "🇸🇪 SE | VLESS | @serverv2ray00 #1",
-        "🇸🇪 SE | VLESS | @sobi_vpn #1",
         "🇸🇪 SE | VLESS | @v2logy #1",
         "🇸🇪 SE | VLESS | @v2logy #2",
         "🇸🇪 SE | VLESS | @v2logy #3",
+        "🇸🇪 SE | VLESS | @v2raych #1",
         "🇸🇪 SE | TUIC | @vipv2rey #1"
       ],
       "tag": "auto",
@@ -392,21 +392,6 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇸🇪 SE | VLESS | @sobi_vpn #1",
-      "type": "vless",
-      "server": "185.146.173.58",
-      "server_port": 8080,
-      "uuid": "23adc6b0-dcf7-4bef-8136-72d2c566b1c5",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
-      }
-    },
-    {
       "tag": "🇸🇪 SE | VLESS | @v2logy #1",
       "type": "vless",
       "server": "185.146.173.237",
@@ -429,6 +414,23 @@
       "server_port": 80,
       "uuid": "telegram-id-ArV2ray",
       "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇸🇪 SE | VLESS | @v2raych #1",
+      "type": "vless",
+      "server": "se01.goodmaximum.com",
+      "server_port": 443,
+      "uuid": "7d1591c2-c313-0029-a56a-cfff98808bdc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "tag": "🇸🇪 SE | TUIC | @vipv2rey #1",

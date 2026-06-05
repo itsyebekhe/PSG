@@ -77,7 +77,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇨🇭 CH | VLESS | @outline_ir #1"
+        "🇨🇭 CH | VLESS | @outline_ir #1",
+        "🇨🇭 CH | VLESS | @turboo_server #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -85,7 +86,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇨🇭 CH | VLESS | @outline_ir #1"
+        "🇨🇭 CH | VLESS | @outline_ir #1",
+        "🇨🇭 CH | VLESS | @turboo_server #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -114,6 +116,28 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇭 CH | VLESS | @turboo_server #1",
+      "type": "vless",
+      "server": "104.244.73.115",
+      "server_port": 2053,
+      "uuid": "01c0530f-168d-4645-a74c-f2b3b015c217",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
         }
       }
     }
