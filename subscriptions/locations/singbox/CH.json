@@ -90,10 +90,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇨🇭 CH | VLESS | @outline_ir #1",
-        "🇨🇭 CH | TROJAN | @red2ray #1",
-        "🇨🇭 CH | VLESS | @turboo_server #1",
-        "🇨🇭 CH | VLESS | @v2ray_free_conf #1"
+        "🇨🇭 CH | VLESS | @turboo_server #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -101,10 +98,7 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇨🇭 CH | VLESS | @outline_ir #1",
-        "🇨🇭 CH | TROJAN | @red2ray #1",
-        "🇨🇭 CH | VLESS | @turboo_server #1",
-        "🇨🇭 CH | VLESS | @v2ray_free_conf #1"
+        "🇨🇭 CH | VLESS | @turboo_server #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -114,39 +108,6 @@
     {
       "tag": "direct",
       "type": "direct"
-    },
-    {
-      "tag": "🇨🇭 CH | VLESS | @outline_ir #1",
-      "type": "vless",
-      "server": "179.237.73.24",
-      "server_port": 443,
-      "uuid": "043c4eff-0999-4a90-9090-5eb206709c92",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "🇨🇭 CH | TROJAN | @red2ray #1",
-      "type": "trojan",
-      "server": "185.18.250.252",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
     },
     {
       "tag": "🇨🇭 CH | VLESS | @turboo_server #1",
@@ -167,23 +128,6 @@
           "public_key": "",
           "short_id": "",
           "enabled": true
-        }
-      }
-    },
-    {
-      "tag": "🇨🇭 CH | VLESS | @v2ray_free_conf #1",
-      "type": "vless",
-      "server": "185.18.250.127",
-      "server_port": 2096,
-      "uuid": "2ee26119-94e5-40b4-ba3a-16354021b600",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         }
       }
     }

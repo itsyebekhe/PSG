@@ -79,8 +79,9 @@
         "direct",
         "🇷🇴 RO | TROJAN | @bored_vpn #1",
         "🇷🇴 RO | VLESS | @configv2rayforfree #1",
-        "🇷🇴 RO | SS | @freeconfigsplus #1",
-        "🇷🇴 RO | VLESS | @v2ray_youtube #1"
+        "🇷🇴 RO | VLESS | @v2ray_youtube #1",
+        "🇷🇴 RO | VLESS | @v2rayngvpn_1 #1",
+        "🇷🇴 RO | VLESS | @v_2rayng0 #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -90,8 +91,9 @@
       "outbounds": [
         "🇷🇴 RO | TROJAN | @bored_vpn #1",
         "🇷🇴 RO | VLESS | @configv2rayforfree #1",
-        "🇷🇴 RO | SS | @freeconfigsplus #1",
-        "🇷🇴 RO | VLESS | @v2ray_youtube #1"
+        "🇷🇴 RO | VLESS | @v2ray_youtube #1",
+        "🇷🇴 RO | VLESS | @v2rayngvpn_1 #1",
+        "🇷🇴 RO | VLESS | @v_2rayng0 #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -140,19 +142,50 @@
       }
     },
     {
-      "tag": "🇷🇴 RO | SS | @freeconfigsplus #1",
-      "type": "shadowsocks",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRRld6Q3cydVg5QjlpNnFBWWVGQklF",
-      "password": null
-    },
-    {
       "tag": "🇷🇴 RO | VLESS | @v2ray_youtube #1",
       "type": "vless",
       "server": "91.199.50.37",
       "server_port": 443,
       "uuid": "43488128-319e-f480-64ea-0acdc712e2a8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇷🇴 RO | VLESS | @v2rayngvpn_1 #1",
+      "type": "vless",
+      "server": "195.74.93.254",
+      "server_port": 443,
+      "uuid": "809bce92-45a0-4fe3-af1d-79d1c8422606",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇷🇴 RO | VLESS | @v_2rayng0 #1",
+      "type": "vless",
+      "server": "162.249.126.76",
+      "server_port": 8443,
+      "uuid": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
