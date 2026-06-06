@@ -91,7 +91,8 @@
         "auto",
         "direct",
         "🇭🇰 HK | VMESS | @freev2rays #1",
-        "🇭🇰 HK | SS | @netfreedom0 #1"
+        "🇭🇰 HK | SS | @netfreedom0 #1",
+        "🇭🇰 HK | VLESS | @red2ray #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -100,7 +101,8 @@
       "interval": "10m",
       "outbounds": [
         "🇭🇰 HK | VMESS | @freev2rays #1",
-        "🇭🇰 HK | SS | @netfreedom0 #1"
+        "🇭🇰 HK | SS | @netfreedom0 #1",
+        "🇭🇰 HK | VLESS | @red2ray #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -143,6 +145,23 @@
       "server_port": 8388,
       "method": "Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=",
       "password": null
+    },
+    {
+      "tag": "🇭🇰 HK | VLESS | @red2ray #1",
+      "type": "vless",
+      "server": "84.17.37.19",
+      "server_port": 8443,
+      "uuid": "394f6981-a782-4779-9a85-e6cf22935d93",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     }
   ],
   "route": {

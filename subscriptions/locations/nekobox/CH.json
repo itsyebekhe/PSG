@@ -78,6 +78,7 @@
         "auto",
         "direct",
         "🇨🇭 CH | VLESS | @outline_ir #1",
+        "🇨🇭 CH | TROJAN | @red2ray #1",
         "🇨🇭 CH | VLESS | @turboo_server #1"
       ],
       "tag": "proxy",
@@ -87,6 +88,7 @@
       "interval": "10m",
       "outbounds": [
         "🇨🇭 CH | VLESS | @outline_ir #1",
+        "🇨🇭 CH | TROJAN | @red2ray #1",
         "🇨🇭 CH | VLESS | @turboo_server #1"
       ],
       "tag": "auto",
@@ -109,6 +111,22 @@
       "server_port": 443,
       "uuid": "043c4eff-0999-4a90-9090-5eb206709c92",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇭 CH | TROJAN | @red2ray #1",
+      "type": "trojan",
+      "server": "185.18.250.252",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "",
