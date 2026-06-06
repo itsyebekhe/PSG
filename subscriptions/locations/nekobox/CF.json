@@ -126,7 +126,6 @@
         "🇽🇽 XX | VLESS | @hope_net #1",
         "🇽🇽 XX | VLESS | @hope_net #2",
         "🇽🇽 XX | VLESS | @hope_net #3",
-        "🇽🇽 XX | VLESS | @hope_net #4",
         "🇽🇽 XX | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VLESS | @iran_access #1",
         "🇽🇽 XX | VLESS | @iran_access #2",
@@ -226,6 +225,7 @@
         "🇽🇽 XX | VLESS | @proxy48 #1",
         "🇽🇽 XX | VMESS | @proxy48 #1",
         "🇽🇽 XX | VLESS | @proxy48 #2",
+        "🇽🇽 XX | TROJAN | @red2ray #1",
         "🇽🇽 XX | VLESS | @renetvpn #1",
         "🇽🇽 XX | VLESS | @renetvpn #2",
         "🇽🇽 XX | VLESS | @renetvpn #3",
@@ -258,8 +258,6 @@
         "🇽🇽 XX | VLESS | @v2ra_ng_iran #5",
         "🇽🇽 XX | VLESS | @v2ra_ng_iran #6",
         "🇽🇽 XX | VLESS | @v2ray4win #1",
-        "🇽🇽 XX | VLESS | @v2ray_free_conf #1",
-        "🇽🇽 XX | VMESS | @v2ray_free_conf #1",
         "🇽🇽 XX | VLESS | @v2ray_youtube #1",
         "🇽🇽 XX | VLESS | @v2ray_youtube #2",
         "🇽🇽 XX | VLESS | @v2raybe #1",
@@ -372,7 +370,6 @@
         "🇽🇽 XX | VLESS | @hope_net #1",
         "🇽🇽 XX | VLESS | @hope_net #2",
         "🇽🇽 XX | VLESS | @hope_net #3",
-        "🇽🇽 XX | VLESS | @hope_net #4",
         "🇽🇽 XX | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VLESS | @iran_access #1",
         "🇽🇽 XX | VLESS | @iran_access #2",
@@ -472,6 +469,7 @@
         "🇽🇽 XX | VLESS | @proxy48 #1",
         "🇽🇽 XX | VMESS | @proxy48 #1",
         "🇽🇽 XX | VLESS | @proxy48 #2",
+        "🇽🇽 XX | TROJAN | @red2ray #1",
         "🇽🇽 XX | VLESS | @renetvpn #1",
         "🇽🇽 XX | VLESS | @renetvpn #2",
         "🇽🇽 XX | VLESS | @renetvpn #3",
@@ -504,8 +502,6 @@
         "🇽🇽 XX | VLESS | @v2ra_ng_iran #5",
         "🇽🇽 XX | VLESS | @v2ra_ng_iran #6",
         "🇽🇽 XX | VLESS | @v2ray4win #1",
-        "🇽🇽 XX | VLESS | @v2ray_free_conf #1",
-        "🇽🇽 XX | VMESS | @v2ray_free_conf #1",
         "🇽🇽 XX | VLESS | @v2ray_youtube #1",
         "🇽🇽 XX | VLESS | @v2ray_youtube #2",
         "🇽🇽 XX | VLESS | @v2raybe #1",
@@ -1083,17 +1079,26 @@
     {
       "tag": "🇽🇽 XX | VLESS | @hope_net #1",
       "type": "vless",
-      "server": "104.19.54.50",
-      "server_port": 80,
-      "uuid": "50ffa980-f8d9-4dc9-b8e1-4f923360b177",
-      "packet_encoding": "xudp"
+      "server": "104.17.147.22",
+      "server_port": 2087,
+      "uuid": "53ed5bc0-aa3a-4fe7-a89e-1c9f92045eeb",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "tag": "🇽🇽 XX | VLESS | @hope_net #2",
       "type": "vless",
-      "server": "172.67.134.159",
-      "server_port": 2083,
-      "uuid": "97a07e4c-14a0-4fb5-ba65-7fd7dbec9d8d",
+      "server": "104.21.19.237",
+      "server_port": 8443,
+      "uuid": "df4e1392-c78a-4a67-86b2-8c8eefce64b8",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -1108,17 +1113,9 @@
     {
       "tag": "🇽🇽 XX | VLESS | @hope_net #3",
       "type": "vless",
-      "server": "104.17.147.22",
-      "server_port": 80,
-      "uuid": "bdf498f1-c629-4882-91d8-d7c275c0a057",
-      "packet_encoding": "xudp"
-    },
-    {
-      "tag": "🇽🇽 XX | VLESS | @hope_net #4",
-      "type": "vless",
-      "server": "162.159.129.129",
-      "server_port": 443,
-      "uuid": "7a5a4624-df8d-4955-bccc-b3fa6161411f",
+      "server": "188.114.98.66",
+      "server_port": 2083,
+      "uuid": "6c0ed3fb-f0b0-5b53-a762-f8f8d832bdba",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -2488,6 +2485,22 @@
       "packet_encoding": "xudp"
     },
     {
+      "tag": "🇽🇽 XX | TROJAN | @red2ray #1",
+      "type": "trojan",
+      "server": "104.19.229.21",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "tag": "🇽🇽 XX | VLESS | @renetvpn #1",
       "type": "vless",
       "server": "198.41.202.5",
@@ -2870,48 +2883,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "🇽🇽 XX | VLESS | @v2ray_free_conf #1",
-      "type": "vless",
-      "server": "141.101.90.39",
-      "server_port": 443,
-      "uuid": "0f1b984b-dfa1-443c-8c2c-bd17d679e0e2",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "🇽🇽 XX | VMESS | @v2ray_free_conf #1",
-      "type": "vmess",
-      "server": "aris.arisping-ir.store",
-      "server_port": 443,
-      "uuid": "67f79907-6163-475c-b5ba-2a3faa0c02c5",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.arisping-ir.store",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cdn.arisping-ir.store"
         }
       }
     },
