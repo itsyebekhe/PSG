@@ -23,6 +23,7 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
+  - {"name": "🇨🇭 CH | VLESS | @hope_net #1", "server": "185.18.250.126", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "77a571fb-4fd2-4b37-8596-2b7d9728bb5c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇨🇭 CH | VLESS | @turboo_server #1", "server": "104.244.73.115", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "01c0530f-168d-4645-a74c-f2b3b015c217", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
 
 proxy-groups:
@@ -37,6 +38,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
+      - '🇨🇭 CH | VLESS | @hope_net #1'
       - '🇨🇭 CH | VLESS | @turboo_server #1'
 
   - name: 🌍 Global Media
