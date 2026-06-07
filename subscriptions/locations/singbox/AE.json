@@ -90,8 +90,8 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇦🇪 AE | VLESS | @filterk0sh #1",
         "🇦🇪 AE | SS | @manstervpn #1",
-        "🇦🇪 AE | VLESS | @v2ray_free_conf #1",
         "🇦🇪 AE | VLESS | @vpnfree85 #1"
       ],
       "tag": "proxy",
@@ -100,8 +100,8 @@
     {
       "interval": "10m",
       "outbounds": [
+        "🇦🇪 AE | VLESS | @filterk0sh #1",
         "🇦🇪 AE | SS | @manstervpn #1",
-        "🇦🇪 AE | VLESS | @v2ray_free_conf #1",
         "🇦🇪 AE | VLESS | @vpnfree85 #1"
       ],
       "tag": "auto",
@@ -114,20 +114,34 @@
       "type": "direct"
     },
     {
+      "tag": "🇦🇪 AE | VLESS | @filterk0sh #1",
+      "type": "vless",
+      "server": "eng14.netliberated.org",
+      "server_port": 443,
+      "uuid": "0bb6dff2-0029-4b81-8c81-4fc70fae1ed9",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
       "tag": "🇦🇪 AE | SS | @manstervpn #1",
       "type": "shadowsocks",
       "server": "3.29.198.112",
       "server_port": 443,
       "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj",
       "password": null
-    },
-    {
-      "tag": "🇦🇪 AE | VLESS | @v2ray_free_conf #1",
-      "type": "vless",
-      "server": "85.234.73.125",
-      "server_port": 13278,
-      "uuid": "e3115c84-266b-4c46-b3f2-16cc3263d555",
-      "packet_encoding": "xudp"
     },
     {
       "tag": "🇦🇪 AE | VLESS | @vpnfree85 #1",
