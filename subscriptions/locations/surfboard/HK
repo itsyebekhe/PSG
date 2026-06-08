@@ -10,11 +10,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇭🇰 HK | VMESS | @freev2rays #1 = vmess, hk2.lrzdx.uk, 443, username = db69d5bc-d36c-4903-f471-74b98c5cefe5, ws = true, tls = true, ws-path = /register, ws-headers = Host:"hk2.lrzdx.uk"
+🇭🇰 HK | VMESS | @hope_net #1 = vmess, 47.244.120.197, 44867, username = 845e6b08-2919-4290-ade0-5dc7dcea59ca, ws = true, tls = false, ws-path = /arki?ed=2048, ws-headers = Host:"47.244.120.197"
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇭🇰 HK | VMESS | @freev2rays #1
-PSG-AUTO = url-test, 🇭🇰 HK | VMESS | @freev2rays #1
-PSG-FALLBACK = fallback, 🇭🇰 HK | VMESS | @freev2rays #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇭🇰 HK | VMESS | @freev2rays #1, 🇭🇰 HK | VMESS | @hope_net #1
+PSG-AUTO = url-test, 🇭🇰 HK | VMESS | @freev2rays #1, 🇭🇰 HK | VMESS | @hope_net #1
+PSG-FALLBACK = fallback, 🇭🇰 HK | VMESS | @freev2rays #1, 🇭🇰 HK | VMESS | @hope_net #1
 
 [Rule]
 GEOIP,IR,DIRECT

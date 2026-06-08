@@ -77,6 +77,7 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇨🇭 CH | VLESS | @rez1vpn #1",
         "🇨🇭 CH | VLESS | @turboo_server #1"
       ],
       "tag": "proxy",
@@ -85,6 +86,7 @@
     {
       "interval": "10m",
       "outbounds": [
+        "🇨🇭 CH | VLESS | @rez1vpn #1",
         "🇨🇭 CH | VLESS | @turboo_server #1"
       ],
       "tag": "auto",
@@ -99,6 +101,23 @@
     {
       "tag": "bypass",
       "type": "direct"
+    },
+    {
+      "tag": "🇨🇭 CH | VLESS | @rez1vpn #1",
+      "type": "vless",
+      "server": "185.18.250.252",
+      "server_port": 443,
+      "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "tag": "🇨🇭 CH | VLESS | @turboo_server #1",

@@ -23,7 +23,7 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
-  - {"name": "🇲🇩 MD | VLESS | @v2raych #1", "server": "md.riotvpn.eu", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "30bbbfc5-6a24-4348-8f3b-d44331b6aab8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇨🇦 CA | VMESS | @v2ray_free_conf #1", "server": "23.162.200.227", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "23.162.200.227"}}}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -37,7 +37,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
-      - '🇲🇩 MD | VLESS | @v2raych #1'
+      - '🇨🇦 CA | VMESS | @v2ray_free_conf #1'
 
   - name: 🌍 Global Media
     type: select
