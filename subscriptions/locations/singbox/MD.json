@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQkU=
+//profile-title: base64:UFNHIHwgTUQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -90,7 +90,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇧🇪 BE | VLESS | @configv2rayforfree #1"
+        "🇲🇩 MD | VLESS | @v2raych #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +98,7 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇧🇪 BE | VLESS | @configv2rayforfree #1"
+        "🇲🇩 MD | VLESS | @v2raych #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,12 +110,21 @@
       "type": "direct"
     },
     {
-      "tag": "🇧🇪 BE | VLESS | @configv2rayforfree #1",
+      "tag": "🇲🇩 MD | VLESS | @v2raych #1",
       "type": "vless",
-      "server": "188.95.12.110",
-      "server_port": 8080,
-      "uuid": "68de0a0f-25bc-4fd4-ba78-183a1b80495e",
-      "packet_encoding": "xudp"
+      "server": "md.riotvpn.eu",
+      "server_port": 443,
+      "uuid": "30bbbfc5-6a24-4348-8f3b-d44331b6aab8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     }
   ],
   "route": {
