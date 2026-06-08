@@ -23,6 +23,7 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
+  - {"name": "🇸🇬 SG | VMESS | @hope_net #1", "server": "63.lwdh.us", "port": 12953, "type": "vmess", "skip-cert-verify": true, "uuid": "a32313ad-5e39-4f9a-9cad-512041790050", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
   - {"name": "🇸🇬 SG | VLESS | @v2rayexpress #1", "server": "5.223.42.211", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9d33dc91-fb84-4f96-d9b1-fe28a230a94f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
   - {"name": "🇸🇬 SG | VLESS | @v2rayngvpn_1 #1", "server": "27.50.48.49", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "197f5e5c-fc15-4db6-8444-50248c2c394d", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 
@@ -38,6 +39,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
+      - '🇸🇬 SG | VMESS | @hope_net #1'
       - '🇸🇬 SG | VLESS | @v2rayexpress #1'
       - '🇸🇬 SG | VLESS | @v2rayngvpn_1 #1'
 

@@ -92,7 +92,7 @@
         "direct",
         "🇨🇦 CA | VLESS | @jokerv2ray #1",
         "🇨🇦 CA | VLESS | @jokerv2ray #2",
-        "🇨🇦 CA | VMESS | @v2ray_free_conf #1"
+        "🇨🇦 CA | VLESS | @rez1vpn #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -102,7 +102,7 @@
       "outbounds": [
         "🇨🇦 CA | VLESS | @jokerv2ray #1",
         "🇨🇦 CA | VLESS | @jokerv2ray #2",
-        "🇨🇦 CA | VMESS | @v2ray_free_conf #1"
+        "🇨🇦 CA | VLESS | @rez1vpn #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -137,29 +137,12 @@
       }
     },
     {
-      "tag": "🇨🇦 CA | VMESS | @v2ray_free_conf #1",
-      "type": "vmess",
-      "server": "23.162.200.227",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": ""
-        }
-      }
+      "tag": "🇨🇦 CA | VLESS | @rez1vpn #1",
+      "type": "vless",
+      "server": "ov-canada1.09vpn.com",
+      "server_port": 8443,
+      "uuid": "08f96221-9b7b-4e6f-8ffe-aee8b9c9b504",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {

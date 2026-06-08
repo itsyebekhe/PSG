@@ -23,7 +23,8 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
-  - {"name": "🇨🇦 CA | VMESS | @v2ray_free_conf #1", "server": "23.162.200.227", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "23.162.200.227"}}}
+  - {"name": "🇫🇷 FR | TROJAN | @v2raych #1", "server": "15.236.237.21", "port": 22223, "type": "trojan", "skip-cert-verify": false, "password": "telegram-id-directvpn"}
+  - {"name": "🇫🇷 FR | TROJAN | @v2rayvpnchannel #1", "server": "15.236.237.21", "port": 22223, "type": "trojan", "skip-cert-verify": false, "password": "telegram-id-v2rayvpnchannel"}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -37,7 +38,8 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
-      - '🇨🇦 CA | VMESS | @v2ray_free_conf #1'
+      - '🇫🇷 FR | TROJAN | @v2raych #1'
+      - '🇫🇷 FR | TROJAN | @v2rayvpnchannel #1'
 
   - name: 🌍 Global Media
     type: select
