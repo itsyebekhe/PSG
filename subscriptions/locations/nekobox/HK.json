@@ -77,7 +77,11 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇭🇰 HK | VMESS | @freev2rays #1"
+        "🇭🇰 HK | VMESS | @freev2rays #1",
+        "🇭🇰 HK | VMESS | @hope_net #1",
+        "🇭🇰 HK | SS | @netfreedom0 #1",
+        "🇭🇰 HK | TROJAN | @red2ray #1",
+        "🇭🇰 HK | TROJAN | @red2ray #2"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -85,7 +89,11 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇭🇰 HK | VMESS | @freev2rays #1"
+        "🇭🇰 HK | VMESS | @freev2rays #1",
+        "🇭🇰 HK | VMESS | @hope_net #1",
+        "🇭🇰 HK | SS | @netfreedom0 #1",
+        "🇭🇰 HK | TROJAN | @red2ray #1",
+        "🇭🇰 HK | TROJAN | @red2ray #2"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -122,6 +130,62 @@
         "path": "/register",
         "headers": {
           "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 HK | VMESS | @hope_net #1",
+      "type": "vmess",
+      "server": "154.92.9.3",
+      "server_port": 80,
+      "uuid": "dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/blue",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 HK | SS | @netfreedom0 #1",
+      "type": "shadowsocks",
+      "server": "103.149.182.79",
+      "server_port": 8388,
+      "method": "Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=",
+      "password": null
+    },
+    {
+      "tag": "🇭🇰 HK | TROJAN | @red2ray #1",
+      "type": "trojan",
+      "server": "103.177.136.41",
+      "server_port": 48697,
+      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 HK | TROJAN | @red2ray #2",
+      "type": "trojan",
+      "server": "103.177.136.41",
+      "server_port": 45553,
+      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     }
