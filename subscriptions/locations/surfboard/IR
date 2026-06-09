@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇮🇷 IR | VMESS | @khoneproxy #1 = vmess, 37.32.23.122, 443, username = d12bc882-43c7-415e-87c5-2a7fdc8371c0, ws = true, tls = false, ws-path = /websocket/, ws-headers = Host:"37.32.23.122"
 🇮🇷 IR | VMESS | @khoneproxy #2 = vmess, 78.47.131.39, 8443, username = 4d598e48-234f-4c60-fdd3-fa90e084770d, ws = false, tls = false
-🇮🇷 IR | TROJAN | @v2ray_free_conf #1 = trojan, arvancloud.ir, 2082, password = fTkGeLgRco, skip-cert-verify = true
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #2, 🇮🇷 IR | TROJAN | @v2ray_free_conf #1
-PSG-AUTO = url-test, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #2, 🇮🇷 IR | TROJAN | @v2ray_free_conf #1
-PSG-FALLBACK = fallback, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #2, 🇮🇷 IR | TROJAN | @v2ray_free_conf #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #2
+PSG-AUTO = url-test, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #2
+PSG-FALLBACK = fallback, 🇮🇷 IR | VMESS | @khoneproxy #1, 🇮🇷 IR | VMESS | @khoneproxy #2
 
 [Rule]
 GEOIP,IR,DIRECT

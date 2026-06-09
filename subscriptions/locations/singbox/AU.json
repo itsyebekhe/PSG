@@ -91,6 +91,7 @@
         "auto",
         "direct",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1",
+        "🇦🇺 AU | VLESS | @v2ray_free_conf #1",
         "🇦🇺 AU | VLESS | @v2rayy_vpn13 #1"
       ],
       "tag": "proxy",
@@ -100,6 +101,7 @@
       "interval": "10m",
       "outbounds": [
         "🇦🇺 AU | VMESS | @serverv2ray00 #1",
+        "🇦🇺 AU | VLESS | @v2ray_free_conf #1",
         "🇦🇺 AU | VLESS | @v2rayy_vpn13 #1"
       ],
       "tag": "auto",
@@ -133,6 +135,23 @@
         "path": "/linkvws",
         "headers": {
           "Host": "janett.click"
+        }
+      }
+    },
+    {
+      "tag": "🇦🇺 AU | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "103.18.49.100",
+      "server_port": 443,
+      "uuid": "1a5b24bc-6180-4fa7-922d-ba7ee8a7a2b7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
