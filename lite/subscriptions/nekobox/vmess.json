@@ -84,9 +84,10 @@
         "🇩🇪 DE | VMESS | @khoneproxy #1",
         "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇩🇪 DE | VMESS | @magickey_shop #1",
-        "🇽🇽 XX | VMESS | @v2raych #1",
+        "🇩🇪 DE | VMESS | @v2raych #1",
         "🇭🇰 HK | VMESS | @freev2rays #1",
         "🇺🇸 US | VMESS | @freev2rays #1",
+        "🇽🇽 XX | VMESS | @hope_net #1",
         "🇧🇾 BY | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VMESS | @iranvpnet #1",
@@ -111,9 +112,10 @@
         "🇩🇪 DE | VMESS | @khoneproxy #1",
         "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇩🇪 DE | VMESS | @magickey_shop #1",
-        "🇽🇽 XX | VMESS | @v2raych #1",
+        "🇩🇪 DE | VMESS | @v2raych #1",
         "🇭🇰 HK | VMESS | @freev2rays #1",
         "🇺🇸 US | VMESS | @freev2rays #1",
+        "🇽🇽 XX | VMESS | @hope_net #1",
         "🇧🇾 BY | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VMESS | @ir_netproxy #1",
         "🇽🇽 XX | VMESS | @iranvpnet #1",
@@ -279,19 +281,28 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VMESS | @v2raych #1",
+      "tag": "🇩🇪 DE | VMESS | @v2raych #1",
       "type": "vmess",
-      "server": "141.101.115.99",
-      "server_port": 80,
-      "uuid": "19428c44-85b3-4a7c-8bc4-b58396138322",
+      "server": "157.90.20.18",
+      "server_port": 443,
+      "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
       "security": "auto",
       "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": ""
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "http",
+        "host": [
+          ""
+        ],
+        "path": ""
       }
     },
     {
@@ -341,6 +352,31 @@
         "path": "/d9863037",
         "headers": {
           "Host": "xcf037.facai2024.com"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VMESS | @hope_net #1",
+      "type": "vmess",
+      "server": "172.67.183.220",
+      "server_port": 443,
+      "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "jahfkjha.cfd",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "jahfkjha.cfd"
         }
       }
     },

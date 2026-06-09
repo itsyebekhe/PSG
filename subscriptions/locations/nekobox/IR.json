@@ -79,6 +79,7 @@
         "direct",
         "🇮🇷 IR | VLESS | @ai_duet #1",
         "🇮🇷 IR | VLESS | @bored_vpn #1",
+        "🇮🇷 IR | VLESS | @bored_vpn #2",
         "🇮🇷 IR | VLESS | @config_proxy #1",
         "🇮🇷 IR | VLESS | @config_proxy #2",
         "🇮🇷 IR | VLESS | @ehsawn8 #1",
@@ -95,6 +96,7 @@
         "🇮🇷 IR | VLESS | @nn_vpn #1",
         "🇮🇷 IR | VLESS | @nofiltering2 #1",
         "🇮🇷 IR | VLESS | @nofiltering2 #2",
+        "🇮🇷 IR | VLESS | @parsashonam #1",
         "🇮🇷 IR | SS | @prrofile_purple #1",
         "🇮🇷 IR | VLESS | @v2ang #1",
         "🇮🇷 IR | VLESS | @v2ang #2",
@@ -104,7 +106,8 @@
         "🇮🇷 IR | SS | @v2rayng3 #2",
         "🇮🇷 IR | VLESS | @v2rayngalpha #1",
         "🇮🇷 IR | VLESS | @v_2rayng0 #1",
-        "🇮🇷 IR | VLESS | @vip_vpn_2022 #1"
+        "🇮🇷 IR | VLESS | @vip_vpn_2022 #1",
+        "🇮🇷 IR | VLESS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -114,6 +117,7 @@
       "outbounds": [
         "🇮🇷 IR | VLESS | @ai_duet #1",
         "🇮🇷 IR | VLESS | @bored_vpn #1",
+        "🇮🇷 IR | VLESS | @bored_vpn #2",
         "🇮🇷 IR | VLESS | @config_proxy #1",
         "🇮🇷 IR | VLESS | @config_proxy #2",
         "🇮🇷 IR | VLESS | @ehsawn8 #1",
@@ -130,6 +134,7 @@
         "🇮🇷 IR | VLESS | @nn_vpn #1",
         "🇮🇷 IR | VLESS | @nofiltering2 #1",
         "🇮🇷 IR | VLESS | @nofiltering2 #2",
+        "🇮🇷 IR | VLESS | @parsashonam #1",
         "🇮🇷 IR | SS | @prrofile_purple #1",
         "🇮🇷 IR | VLESS | @v2ang #1",
         "🇮🇷 IR | VLESS | @v2ang #2",
@@ -139,7 +144,8 @@
         "🇮🇷 IR | SS | @v2rayng3 #2",
         "🇮🇷 IR | VLESS | @v2rayngalpha #1",
         "🇮🇷 IR | VLESS | @v_2rayng0 #1",
-        "🇮🇷 IR | VLESS | @vip_vpn_2022 #1"
+        "🇮🇷 IR | VLESS | @vip_vpn_2022 #1",
+        "🇮🇷 IR | VLESS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -164,6 +170,14 @@
     },
     {
       "tag": "🇮🇷 IR | VLESS | @bored_vpn #1",
+      "type": "vless",
+      "server": "87.107.193.3",
+      "server_port": 8443,
+      "uuid": "a1c30f35-e254-409c-89be-7754fed29ab0",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @bored_vpn #2",
       "type": "vless",
       "server": "blubank.ir",
       "server_port": 80,
@@ -379,6 +393,23 @@
       "packet_encoding": "xudp"
     },
     {
+      "tag": "🇮🇷 IR | VLESS | @parsashonam #1",
+      "type": "vless",
+      "server": "185.116.162.12",
+      "server_port": 443,
+      "uuid": "Telegram-Parsashonam-11",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "tag": "🇮🇷 IR | SS | @prrofile_purple #1",
       "type": "shadowsocks",
       "server": "dl3.p31download.info",
@@ -480,6 +511,14 @@
           "fingerprint": "chrome"
         }
       }
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @vmesskhodam #1",
+      "type": "vless",
+      "server": "185.143.232.24",
+      "server_port": 80,
+      "uuid": "a85e4fce-bffb-4fc4-bcf1-ac57fd3453e5",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {
