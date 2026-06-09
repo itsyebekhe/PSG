@@ -25,6 +25,7 @@ dns:
 proxies: 
   - {"name": "🇬🇧 GB | VLESS | @father_vpn #1", "server": "217.163.76.118", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "41f37ced-2021-4111-93a8-82d57ff2eb5b", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1", "server": "185.193.28.212", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8449887d7cd055d06646951bc8bc2d08", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VMESS | @hope_net #1", "server": "149.7.16.248", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "149.7.16.248"}}}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -40,6 +41,7 @@ proxy-groups:
     proxies: 
       - '🇬🇧 GB | VLESS | @father_vpn #1'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1'
+      - '🇬🇧 GB | VMESS | @hope_net #1'
 
   - name: 🌍 Global Media
     type: select

@@ -91,15 +91,17 @@
         "auto",
         "direct",
         "🇬🇧 GB | VLESS | @father_vpn #1",
+        "🇬🇧 GB | SS | @father_vpn #1",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1",
         "🇬🇧 GB | SS | @free4allvpn #1",
         "🇬🇧 GB | SS | @free4allvpn #2",
+        "🇬🇧 GB | VMESS | @hope_net #1",
         "🇬🇧 GB | SS | @mt_proxy #1",
         "🇬🇧 GB | SS | @netfreedom0 #1",
         "🇬🇧 GB | SS | @netfreedom0 #2",
         "🇬🇧 GB | SS | @netfreedom0 #3",
-        "🇬🇧 GB | SS | @v2rayopen #1",
-        "🇬🇧 GB | TUIC | @vipv2rey #1"
+        "🇬🇧 GB | SS | @outline_ir #1",
+        "🇬🇧 GB | SS | @v2rayopen #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -108,15 +110,17 @@
       "interval": "10m",
       "outbounds": [
         "🇬🇧 GB | VLESS | @father_vpn #1",
+        "🇬🇧 GB | SS | @father_vpn #1",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1",
         "🇬🇧 GB | SS | @free4allvpn #1",
         "🇬🇧 GB | SS | @free4allvpn #2",
+        "🇬🇧 GB | VMESS | @hope_net #1",
         "🇬🇧 GB | SS | @mt_proxy #1",
         "🇬🇧 GB | SS | @netfreedom0 #1",
         "🇬🇧 GB | SS | @netfreedom0 #2",
         "🇬🇧 GB | SS | @netfreedom0 #3",
-        "🇬🇧 GB | SS | @v2rayopen #1",
-        "🇬🇧 GB | TUIC | @vipv2rey #1"
+        "🇬🇧 GB | SS | @outline_ir #1",
+        "🇬🇧 GB | SS | @v2rayopen #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -134,6 +138,14 @@
       "server_port": 2083,
       "uuid": "41f37ced-2021-4111-93a8-82d57ff2eb5b",
       "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇬🇧 GB | SS | @father_vpn #1",
+      "type": "shadowsocks",
+      "server": "82.38.31.176",
+      "server_port": 8080,
+      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR",
+      "password": null
     },
     {
       "tag": "🇬🇧 GB | VLESS | @filtershekan_channel #1",
@@ -169,6 +181,31 @@
       "password": null
     },
     {
+      "tag": "🇬🇧 GB | VMESS | @hope_net #1",
+      "type": "vmess",
+      "server": "149.7.16.248",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "149.7.16.248",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "149.7.16.248"
+        }
+      }
+    },
+    {
       "tag": "🇬🇧 GB | SS | @mt_proxy #1",
       "type": "shadowsocks",
       "server": "82.38.31.189",
@@ -201,28 +238,20 @@
       "password": null
     },
     {
+      "tag": "🇬🇧 GB | SS | @outline_ir #1",
+      "type": "shadowsocks",
+      "server": "series-a1.samanehha.co",
+      "server_port": 443,
+      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB",
+      "password": null
+    },
+    {
       "tag": "🇬🇧 GB | SS | @v2rayopen #1",
       "type": "shadowsocks",
       "server": "82.38.31.190",
       "server_port": 8080,
       "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR",
       "password": null
-    },
-    {
-      "tag": "🇬🇧 GB | TUIC | @vipv2rey #1",
-      "type": "tuic",
-      "server": "64.176.186.193",
-      "server_port": 443,
-      "uuid": "d1bb3aae-ace9-4b0f-9ae5-85ab73acbb43",
-      "password": "d1bb3aae-ace9-4b0f-9ae5-85ab73acbb43",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": false,
-        "alpn": null
-      }
     }
   ],
   "route": {
