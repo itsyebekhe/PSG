@@ -91,6 +91,7 @@
         "🇺🇸 US | VLESS | @proxygrizzly #1",
         "🇺🇸 US | VLESS | @qeshmserver #1",
         "🇸🇨 SC | VLESS | @turboo_server #1",
+        "🇺🇸 US | VLESS | @v2ray_free_conf #1",
         "🇽🇽 XX | VLESS | @v2ray_youtube #1",
         "🇺🇸 US | VLESS | @v2rayngconfiig #1",
         "🇽🇽 XX | VLESS | @v2rayngvpn_1 #1",
@@ -99,8 +100,7 @@
         "🇸🇨 SC | VLESS | @vmesskhodam #1",
         "🇺🇸 US | VLESS | @vpnowl #1",
         "🇺🇸 US | VLESS | @kafing_2 #1",
-        "🇺🇸 US | VLESS | @prrofile_purple #1",
-        "🇺🇸 US | VLESS | @vmesc #1"
+        "🇺🇸 US | VLESS | @prrofile_purple #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -122,6 +122,7 @@
         "🇺🇸 US | VLESS | @proxygrizzly #1",
         "🇺🇸 US | VLESS | @qeshmserver #1",
         "🇸🇨 SC | VLESS | @turboo_server #1",
+        "🇺🇸 US | VLESS | @v2ray_free_conf #1",
         "🇽🇽 XX | VLESS | @v2ray_youtube #1",
         "🇺🇸 US | VLESS | @v2rayngconfiig #1",
         "🇽🇽 XX | VLESS | @v2rayngvpn_1 #1",
@@ -130,8 +131,7 @@
         "🇸🇨 SC | VLESS | @vmesskhodam #1",
         "🇺🇸 US | VLESS | @vpnowl #1",
         "🇺🇸 US | VLESS | @kafing_2 #1",
-        "🇺🇸 US | VLESS | @prrofile_purple #1",
-        "🇺🇸 US | VLESS | @vmesc #1"
+        "🇺🇸 US | VLESS | @prrofile_purple #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -361,6 +361,23 @@
       "packet_encoding": "xudp"
     },
     {
+      "tag": "🇺🇸 US | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "151.101.109.223",
+      "server_port": 443,
+      "uuid": "56833a2e-0f15-4f16-aca8-819be5e4d94d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "tag": "🇽🇽 XX | VLESS | @v2ray_youtube #1",
       "type": "vless",
       "server": "188.114.97.6",
@@ -457,14 +474,6 @@
       "server": "speedtest.net",
       "server_port": 80,
       "uuid": "aeeef25a-5ec2-4129-a043-2ca89357e15d",
-      "packet_encoding": "xudp"
-    },
-    {
-      "tag": "🇺🇸 US | VLESS | @vmesc #1",
-      "type": "vless",
-      "server": "mci.connectingissues.ir",
-      "server_port": 80,
-      "uuid": "edbd7b0b-225c-4595-a18c-6eeb5b5fb791",
       "packet_encoding": "xudp"
     }
   ],
