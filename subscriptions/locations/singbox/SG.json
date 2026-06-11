@@ -90,7 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇸🇬 SG | VMESS | @v2raych #1",
+        "🇸🇬 SG | VLESS | @freeconfigsplus #1",
+        "🇸🇬 SG | VLESS | @red2ray #1",
+        "🇸🇬 SG | VLESS | @red2ray #2",
         "🇸🇬 SG | VLESS | @v2rayexpress #1",
         "🇸🇬 SG | VLESS | @vmesc #1"
       ],
@@ -100,7 +102,9 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇸🇬 SG | VMESS | @v2raych #1",
+        "🇸🇬 SG | VLESS | @freeconfigsplus #1",
+        "🇸🇬 SG | VLESS | @red2ray #1",
+        "🇸🇬 SG | VLESS | @red2ray #2",
         "🇸🇬 SG | VLESS | @v2rayexpress #1",
         "🇸🇬 SG | VLESS | @vmesc #1"
       ],
@@ -114,18 +118,70 @@
       "type": "direct"
     },
     {
-      "tag": "🇸🇬 SG | VMESS | @v2raych #1",
-      "type": "vmess",
-      "server": "143.198.219.182",
-      "server_port": 80,
-      "uuid": "e9c4ce52-9a78-4381-b6f8-23350bc4d606",
-      "security": "auto",
-      "alter_id": 0,
+      "tag": "🇸🇬 SG | VLESS | @freeconfigsplus #1",
+      "type": "vless",
+      "server": "www.lianchuang123.com",
+      "server_port": 443,
+      "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/v2ray",
+        "path": "/",
         "headers": {
           "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇸🇬 SG | VLESS | @red2ray #1",
+      "type": "vless",
+      "server": "122.248.202.201",
+      "server_port": 45075,
+      "uuid": "452da0f8-3034-4e5d-9e7f-9c3f58abb8ff",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇸🇬 SG | VLESS | @red2ray #2",
+      "type": "vless",
+      "server": "54.151.254.107",
+      "server_port": 46799,
+      "uuid": "f232a803-ff05-4219-b16f-b4dc8497b938",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
         }
       }
     },
