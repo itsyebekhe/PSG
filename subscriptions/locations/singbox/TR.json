@@ -91,9 +91,8 @@
         "auto",
         "direct",
         "🇹🇷 TR | VLESS | @bored_vpn #1",
-        "🇹🇷 TR | VLESS | @outline_ir #1",
         "🇹🇷 TR | VLESS | @turboo_server #1",
-        "🇹🇷 TR | VLESS | @v2raych #1"
+        "🇹🇷 TR | SS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -102,9 +101,8 @@
       "interval": "10m",
       "outbounds": [
         "🇹🇷 TR | VLESS | @bored_vpn #1",
-        "🇹🇷 TR | VLESS | @outline_ir #1",
         "🇹🇷 TR | VLESS | @turboo_server #1",
-        "🇹🇷 TR | VLESS | @v2raych #1"
+        "🇹🇷 TR | SS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -133,14 +131,6 @@
       }
     },
     {
-      "tag": "🇹🇷 TR | VLESS | @outline_ir #1",
-      "type": "vless",
-      "server": "37.140.242.53",
-      "server_port": 85,
-      "uuid": "deab5cc6-db0d-4fe8-92b8-31fcf0fd26cd",
-      "packet_encoding": "xudp"
-    },
-    {
       "tag": "🇹🇷 TR | VLESS | @turboo_server #1",
       "type": "vless",
       "server": "37.221.79.82",
@@ -163,26 +153,12 @@
       }
     },
     {
-      "tag": "🇹🇷 TR | VLESS | @v2raych #1",
-      "type": "vless",
-      "server": "37.140.242.53",
-      "server_port": 67,
-      "uuid": "deab5cc6-db0d-4fe8-92b8-31fcf0fd26cd",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
-        }
-      }
+      "tag": "🇹🇷 TR | SS | @vmesskhodam #1",
+      "type": "shadowsocks",
+      "server": "62.133.63.169",
+      "server_port": 37096,
+      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZNUVKWm9qVk1FTnZrRFZGWWxpRXFF",
+      "password": null
     }
   ],
   "route": {
