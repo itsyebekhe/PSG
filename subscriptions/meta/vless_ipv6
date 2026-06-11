@@ -23,9 +23,10 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
-  - {"name": "🇸🇬 SG | TROJAN | @hope_net #1", "server": "188.253.12.92", "port": 45619, "type": "trojan", "skip-cert-verify": true, "password": "4f4d1167-ef14-4304-9bce-0740472503ef"}
-  - {"name": "🇸🇬 SG | TROJAN | @hope_net #2", "server": "188.253.12.98", "port": 45619, "type": "trojan", "skip-cert-verify": true, "password": "4f4d1167-ef14-4304-9bce-0740472503ef"}
-  - {"name": "🇸🇬 SG | TROJAN | @v2raych #1", "server": "188.253.12.96", "port": 48697, "type": "trojan", "skip-cert-verify": true, "password": "4f4d1167-ef14-4304-9bce-0740472503ef"}
+  - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "🇮🇷 IR | VLESS | @v2ang #2", "server": "::ffff:c197:8d24", "port": 2026, "type": "vless", "skip-cert-verify": true, "uuid": "c9c416ed-8a72-4572-8bd6-12292dee8dfd", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -39,9 +40,10 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
-      - '🇸🇬 SG | TROJAN | @hope_net #1'
-      - '🇸🇬 SG | TROJAN | @hope_net #2'
-      - '🇸🇬 SG | TROJAN | @v2raych #1'
+      - 'همکاری_ملی'
+      - 'جاویدشاه'
+      - 'KingRezaPahlavi'
+      - '🇮🇷 IR | VLESS | @v2ang #2'
 
   - name: 🌍 Global Media
     type: select
