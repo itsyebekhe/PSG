@@ -24,6 +24,7 @@ dns:
 
 proxies: 
   - {"name": "🇹🇷 TR | VLESS | @bored_vpn #1", "server": "five.paliss.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2e409cdc-d0c9-4fc0-b285-9371034b8002", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @turboo_server #1", "server": "37.221.79.82", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "turboo-server", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -38,6 +39,7 @@ proxy-groups:
     interval: 300
     proxies: 
       - '🇹🇷 TR | VLESS | @bored_vpn #1'
+      - '🇹🇷 TR | VLESS | @turboo_server #1'
 
   - name: 🌍 Global Media
     type: select

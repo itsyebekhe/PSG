@@ -78,8 +78,9 @@
         "auto",
         "direct",
         "🇷🇺 RU | VLESS | @megavpn_link #1",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1",
         "🇷🇺 RU | VLESS | @v2ray_collector #1",
-        "🇷🇺 RU | VLESS | @vmesskhodam #1"
+        "🇷🇺 RU | VLESS | @v2raych #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -88,8 +89,9 @@
       "interval": "10m",
       "outbounds": [
         "🇷🇺 RU | VLESS | @megavpn_link #1",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1",
         "🇷🇺 RU | VLESS | @v2ray_collector #1",
-        "🇷🇺 RU | VLESS | @vmesskhodam #1"
+        "🇷🇺 RU | VLESS | @v2raych #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,6 +112,28 @@
       "server": "158.160.250.45",
       "server_port": 443,
       "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1",
+      "type": "vless",
+      "server": "b3aa11az-k15gg1.ru.y-tun.com",
+      "server_port": 8443,
+      "uuid": "17172b99-16ae-4453-99f9-bd15191228a9",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -149,11 +173,11 @@
       }
     },
     {
-      "tag": "🇷🇺 RU | VLESS | @vmesskhodam #1",
+      "tag": "🇷🇺 RU | VLESS | @v2raych #1",
       "type": "vless",
-      "server": "89.169.39.55",
+      "server": "45.67.215.0",
       "server_port": 443,
-      "uuid": "c61ec320-29f1-4e00-9272-8b676e6957b4",
+      "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -162,11 +186,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
         }
       }
     }
