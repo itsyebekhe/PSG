@@ -92,7 +92,8 @@
         "direct",
         "🇨🇭 CH | VLESS | @rez1vpn #1",
         "🇨🇭 CH | VLESS | @v2ray1_ng #1",
-        "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1"
+        "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1",
+        "🇨🇭 CH | TROJAN | @vpn_ioss #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -102,7 +103,8 @@
       "outbounds": [
         "🇨🇭 CH | VLESS | @rez1vpn #1",
         "🇨🇭 CH | VLESS | @v2ray1_ng #1",
-        "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1"
+        "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1",
+        "🇨🇭 CH | TROJAN | @vpn_ioss #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -140,6 +142,22 @@
     },
     {
       "tag": "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1",
+      "type": "trojan",
+      "server": "185.18.250.252",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇭 CH | TROJAN | @vpn_ioss #1",
       "type": "trojan",
       "server": "185.18.250.252",
       "server_port": 443,

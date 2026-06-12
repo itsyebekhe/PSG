@@ -77,7 +77,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇨🇿 CZ | VMESS | @freev2rays #1"
+        "🇨🇿 CZ | VMESS | @freev2rays #1",
+        "🇨🇿 CZ | VMESS | @hope_net #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -85,7 +86,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇨🇿 CZ | VMESS | @freev2rays #1"
+        "🇨🇿 CZ | VMESS | @freev2rays #1",
+        "🇨🇿 CZ | VMESS | @hope_net #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -122,6 +124,31 @@
         "path": "/",
         "headers": {
           "Host": "shs111.kejixiaoqi666.store"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇿 CZ | VMESS | @hope_net #1",
+      "type": "vmess",
+      "server": "sg1-v.sshmax.xyz",
+      "server_port": 443,
+      "uuid": "b655be0e-4b1a-4e3e-b63f-22a928a6e808",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "sg1-v.sshmax.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "sg1-v.sshmax.xyz"
         }
       }
     }
