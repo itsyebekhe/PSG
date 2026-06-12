@@ -25,6 +25,9 @@ dns:
 proxies: 
   - {"name": "🇨🇭 CH | VLESS | @rez1vpn #1", "server": "185.18.250.252", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇨🇭 CH | VLESS | @v2ray1_ng #1", "server": "germany-vip.soft26.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "d39664df-5bc0-4f49-9894-8f03b4150082", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇨🇭 CH | VLESS | @v2raych #1", "server": "germany-vip.soft26.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "d39664df-5bc0-4f49-9894-8f03b4150082", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇨🇭 CH | VMESS | @v2raych #1", "server": "186.190.215.32", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 1, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "linkvws", "headers": {"Host": "186.190.215.32"}}}
+  - {"name": "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1", "server": "185.18.250.252", "port": 443, "type": "trojan", "skip-cert-verify": false, "password": "humanity"}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -40,6 +43,9 @@ proxy-groups:
     proxies: 
       - '🇨🇭 CH | VLESS | @rez1vpn #1'
       - '🇨🇭 CH | VLESS | @v2ray1_ng #1'
+      - '🇨🇭 CH | VLESS | @v2raych #1'
+      - '🇨🇭 CH | VMESS | @v2raych #1'
+      - '🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1'
 
   - name: 🌍 Global Media
     type: select

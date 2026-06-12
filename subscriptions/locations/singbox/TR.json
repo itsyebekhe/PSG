@@ -92,7 +92,7 @@
         "direct",
         "🇹🇷 TR | VLESS | @bored_vpn #1",
         "🇹🇷 TR | VLESS | @turboo_server #1",
-        "🇹🇷 TR | SS | @vmesskhodam #1"
+        "🇹🇷 TR | VLESS | @v2raych #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -102,7 +102,7 @@
       "outbounds": [
         "🇹🇷 TR | VLESS | @bored_vpn #1",
         "🇹🇷 TR | VLESS | @turboo_server #1",
-        "🇹🇷 TR | SS | @vmesskhodam #1"
+        "🇹🇷 TR | VLESS | @v2raych #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -153,12 +153,26 @@
       }
     },
     {
-      "tag": "🇹🇷 TR | SS | @vmesskhodam #1",
-      "type": "shadowsocks",
-      "server": "62.133.63.169",
-      "server_port": 37096,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZNUVKWm9qVk1FTnZrRFZGWWxpRXFF",
-      "password": null
+      "tag": "🇹🇷 TR | VLESS | @v2raych #1",
+      "type": "vless",
+      "server": "noyn.battlenetcp.com",
+      "server_port": 2087,
+      "uuid": "589a0172-46c2-4268-a786-839fd6ff2631",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     }
   ],
   "route": {
