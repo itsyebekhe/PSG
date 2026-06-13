@@ -77,6 +77,7 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇦🇺 AU | VLESS | @bored_vpn #1",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1"
       ],
       "tag": "proxy",
@@ -85,6 +86,7 @@
     {
       "interval": "10m",
       "outbounds": [
+        "🇦🇺 AU | VLESS | @bored_vpn #1",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1"
       ],
       "tag": "auto",
@@ -99,6 +101,28 @@
     {
       "tag": "bypass",
       "type": "direct"
+    },
+    {
+      "tag": "🇦🇺 AU | VLESS | @bored_vpn #1",
+      "type": "vless",
+      "server": "82.115.16.58",
+      "server_port": 24455,
+      "uuid": "3a72db3d-b9c0-4ed8-b21e-4336853d4f26",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     },
     {
       "tag": "🇦🇺 AU | VMESS | @serverv2ray00 #1",
