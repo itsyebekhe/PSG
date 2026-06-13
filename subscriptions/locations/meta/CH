@@ -23,6 +23,8 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
+  - {"name": "🇨🇭 CH | VLESS | @outline_ir #1", "server": "germany-vip.soft26.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "d39664df-5bc0-4f49-9894-8f03b4150082", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇨🇭 CH | VLESS | @outline_ir #2", "server": "83.228.235.106", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "83989465-4ec6-4dbe-97c6-2779df88d9e0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
   - {"name": "🇨🇭 CH | VLESS | @rez1vpn #1", "server": "185.18.250.252", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇨🇭 CH | VLESS | @v2ray1_ng #1", "server": "germany-vip.soft26.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "d39664df-5bc0-4f49-9894-8f03b4150082", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1", "server": "185.18.250.252", "port": 443, "type": "trojan", "skip-cert-verify": false, "password": "humanity"}
@@ -40,6 +42,8 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
+      - '🇨🇭 CH | VLESS | @outline_ir #1'
+      - '🇨🇭 CH | VLESS | @outline_ir #2'
       - '🇨🇭 CH | VLESS | @rez1vpn #1'
       - '🇨🇭 CH | VLESS | @v2ray1_ng #1'
       - '🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1'

@@ -10,12 +10,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇿 CZ | VMESS | @freev2rays #1 = vmess, time.is, 443, username = b526926d-1474-4f41-985e-8b877cb840cd, ws = true, tls = true, ws-path = /, ws-headers = Host:"shs111.kejixiaoqi666.store"
-🇨🇿 CZ | VMESS | @hope_net #1 = vmess, sg1-v.sshmax.xyz, 443, username = b655be0e-4b1a-4e3e-b63f-22a928a6e808, ws = true, tls = true, ws-path = /vmess, ws-headers = Host:"sg1-v.sshmax.xyz"
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇨🇿 CZ | VMESS | @freev2rays #1, 🇨🇿 CZ | VMESS | @hope_net #1
-PSG-AUTO = url-test, 🇨🇿 CZ | VMESS | @freev2rays #1, 🇨🇿 CZ | VMESS | @hope_net #1
-PSG-FALLBACK = fallback, 🇨🇿 CZ | VMESS | @freev2rays #1, 🇨🇿 CZ | VMESS | @hope_net #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇨🇿 CZ | VMESS | @freev2rays #1
+PSG-AUTO = url-test, 🇨🇿 CZ | VMESS | @freev2rays #1
+PSG-FALLBACK = fallback, 🇨🇿 CZ | VMESS | @freev2rays #1
 
 [Rule]
 GEOIP,IR,DIRECT

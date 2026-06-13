@@ -77,6 +77,8 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇨🇭 CH | VLESS | @outline_ir #1",
+        "🇨🇭 CH | VLESS | @outline_ir #2",
         "🇨🇭 CH | VLESS | @rez1vpn #1",
         "🇨🇭 CH | VLESS | @v2ray1_ng #1",
         "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1",
@@ -88,6 +90,8 @@
     {
       "interval": "10m",
       "outbounds": [
+        "🇨🇭 CH | VLESS | @outline_ir #1",
+        "🇨🇭 CH | VLESS | @outline_ir #2",
         "🇨🇭 CH | VLESS | @rez1vpn #1",
         "🇨🇭 CH | VLESS | @v2ray1_ng #1",
         "🇨🇭 CH | TROJAN | @v2rayngvpn_1 #1",
@@ -105,6 +109,36 @@
     {
       "tag": "bypass",
       "type": "direct"
+    },
+    {
+      "tag": "🇨🇭 CH | VLESS | @outline_ir #1",
+      "type": "vless",
+      "server": "germany-vip.soft26.ir",
+      "server_port": 8443,
+      "uuid": "d39664df-5bc0-4f49-9894-8f03b4150082",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇨🇭 CH | VLESS | @outline_ir #2",
+      "type": "vless",
+      "server": "83.228.235.106",
+      "server_port": 443,
+      "uuid": "83989465-4ec6-4dbe-97c6-2779df88d9e0",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     },
     {
       "tag": "🇨🇭 CH | VLESS | @rez1vpn #1",
