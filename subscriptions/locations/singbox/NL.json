@@ -101,10 +101,10 @@
         "🇳🇱 NL | VLESS | @v2ray_collector #1",
         "🇳🇱 NL | VLESS | @v2ray_youtube #1",
         "🇳🇱 NL | VLESS | @v2ray_youtube #2",
-        "🇳🇱 NL | VLESS | @v2raych #1",
         "🇳🇱 NL | VLESS | @v2rayngvpn_1 #1",
         "🇳🇱 NL | VLESS | @v2rayngvpn_1 #2",
-        "🇳🇱 NL | VLESS | @vmesc #1"
+        "🇳🇱 NL | VLESS | @vmesc #1",
+        "🇳🇱 NL | VLESS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -123,10 +123,10 @@
         "🇳🇱 NL | VLESS | @v2ray_collector #1",
         "🇳🇱 NL | VLESS | @v2ray_youtube #1",
         "🇳🇱 NL | VLESS | @v2ray_youtube #2",
-        "🇳🇱 NL | VLESS | @v2raych #1",
         "🇳🇱 NL | VLESS | @v2rayngvpn_1 #1",
         "🇳🇱 NL | VLESS | @v2rayngvpn_1 #2",
-        "🇳🇱 NL | VLESS | @vmesc #1"
+        "🇳🇱 NL | VLESS | @vmesc #1",
+        "🇳🇱 NL | VLESS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -308,14 +308,6 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇳🇱 NL | VLESS | @v2raych #1",
-      "type": "vless",
-      "server": "46.229.243.137",
-      "server_port": 8443,
-      "uuid": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
-      "packet_encoding": "xudp"
-    },
-    {
       "tag": "🇳🇱 NL | VLESS | @v2rayngvpn_1 #1",
       "type": "vless",
       "server": "46.229.243.132",
@@ -355,6 +347,23 @@
       "server": "46.229.243.139",
       "server_port": 8443,
       "uuid": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇳🇱 NL | VLESS | @vmesskhodam #1",
+      "type": "vless",
+      "server": "185.229.191.183",
+      "server_port": 8443,
+      "uuid": "394f6981-a782-4779-9a85-e6cf22935d93",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
