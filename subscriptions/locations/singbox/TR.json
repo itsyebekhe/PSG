@@ -90,7 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇹🇷 TR | VLESS | @turboo_server #1"
+        "🇹🇷 TR | VLESS | @rez1vpn #1",
+        "🇹🇷 TR | VLESS | @turboo_server #1",
+        "🇹🇷 TR | VLESS | @v2raych #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +100,9 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @turboo_server #1"
+        "🇹🇷 TR | VLESS | @rez1vpn #1",
+        "🇹🇷 TR | VLESS | @turboo_server #1",
+        "🇹🇷 TR | VLESS | @v2raych #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -108,6 +112,28 @@
     {
       "tag": "direct",
       "type": "direct"
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @rez1vpn #1",
+      "type": "vless",
+      "server": "31.57.225.201",
+      "server_port": 40282,
+      "uuid": "ecb092b3-040f-4b3c-b819-de9291c2f452",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     },
     {
       "tag": "🇹🇷 TR | VLESS | @turboo_server #1",
@@ -130,6 +156,14 @@
           "enabled": true
         }
       }
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @v2raych #1",
+      "type": "vless",
+      "server": "91.206.71.162",
+      "server_port": 2095,
+      "uuid": "2e8c7f71-e3da-45e6-bdab-dda715beb364",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {

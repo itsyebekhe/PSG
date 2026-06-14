@@ -9,13 +9,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇦🇺 AU | VMESS | @hope_net #1 = vmess, 141.101.115.120, 443, username = 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, ws = true, tls = true, ws-path = /dongtaiwang.com, ws-headers = Host:"clash6.ssr-free.xyz"
 🇦🇺 AU | VMESS | @serverv2ray00 #1 = vmess, 162.159.135.79, 443, username = 03fcc618-b93d-6796-6aed-8a38c975d581, ws = true, tls = true, ws-path = /linkvws, ws-headers = Host:"janett.click"
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇦🇺 AU | VMESS | @hope_net #1, 🇦🇺 AU | VMESS | @serverv2ray00 #1
-PSG-AUTO = url-test, 🇦🇺 AU | VMESS | @hope_net #1, 🇦🇺 AU | VMESS | @serverv2ray00 #1
-PSG-FALLBACK = fallback, 🇦🇺 AU | VMESS | @hope_net #1, 🇦🇺 AU | VMESS | @serverv2ray00 #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇦🇺 AU | VMESS | @serverv2ray00 #1
+PSG-AUTO = url-test, 🇦🇺 AU | VMESS | @serverv2ray00 #1
+PSG-FALLBACK = fallback, 🇦🇺 AU | VMESS | @serverv2ray00 #1
 
 [Rule]
 GEOIP,IR,DIRECT
