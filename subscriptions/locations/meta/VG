@@ -24,6 +24,7 @@ dns:
 
 proxies: 
   - {"name": "🇻🇬 VG | VLESS | @dailyv2ray #1", "server": "mtn.ircf.space", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "7f64eeb1-b5f1-40a0-d80e-e6c718f6bd6a", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇻🇬 VG | VMESS | @hope_net #1", "server": "57.129.24.142", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "harriscity.com"}}}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -38,6 +39,7 @@ proxy-groups:
     interval: 300
     proxies: 
       - '🇻🇬 VG | VLESS | @dailyv2ray #1'
+      - '🇻🇬 VG | VMESS | @hope_net #1'
 
   - name: 🌍 Global Media
     type: select
