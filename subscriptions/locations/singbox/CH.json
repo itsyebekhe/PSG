@@ -90,8 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇨🇭 CH | VLESS | @netmellianti #1",
+        "🇨🇭 CH | VLESS | @free1_vpn #1",
         "🇨🇭 CH | VLESS | @rez1vpn #1",
+        "🇨🇭 CH | VLESS | @v2ray_free_conf #1",
         "🇨🇭 CH | TROJAN | @vpn_ioss #1"
       ],
       "tag": "proxy",
@@ -100,8 +101,9 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇨🇭 CH | VLESS | @netmellianti #1",
+        "🇨🇭 CH | VLESS | @free1_vpn #1",
         "🇨🇭 CH | VLESS | @rez1vpn #1",
+        "🇨🇭 CH | VLESS | @v2ray_free_conf #1",
         "🇨🇭 CH | TROJAN | @vpn_ioss #1"
       ],
       "tag": "auto",
@@ -114,9 +116,9 @@
       "type": "direct"
     },
     {
-      "tag": "🇨🇭 CH | VLESS | @netmellianti #1",
+      "tag": "🇨🇭 CH | VLESS | @free1_vpn #1",
       "type": "vless",
-      "server": "84.234.29.132",
+      "server": "germany-vip.soft26.ir",
       "server_port": 8443,
       "uuid": "d39664df-5bc0-4f49-9894-8f03b4150082",
       "packet_encoding": "xudp"
@@ -127,6 +129,23 @@
       "server": "185.18.250.252",
       "server_port": 443,
       "uuid": "f77299ea-e13d-417d-8cdc-ce5566dfc94b",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇭 CH | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "185.18.250.127",
+      "server_port": 2096,
+      "uuid": "2ee26119-94e5-40b4-ba3a-16354021b600",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
