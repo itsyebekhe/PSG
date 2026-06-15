@@ -79,8 +79,9 @@
         "direct",
         "🇷🇺 RU | VLESS | @flyv2ray #1",
         "🇷🇺 RU | VLESS | @megavpn_link #1",
-        "🇷🇺 RU | VLESS | @outline_ir #1",
-        "🇷🇺 RU | VLESS | @v2ray_collector #1"
+        "🇷🇺 RU | VLESS | @v2ray_collector #1",
+        "🇷🇺 RU | TROJAN | @vmesc #1",
+        "🇷🇺 RU | VLESS | @vpn_ioss #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -90,8 +91,9 @@
       "outbounds": [
         "🇷🇺 RU | VLESS | @flyv2ray #1",
         "🇷🇺 RU | VLESS | @megavpn_link #1",
-        "🇷🇺 RU | VLESS | @outline_ir #1",
-        "🇷🇺 RU | VLESS | @v2ray_collector #1"
+        "🇷🇺 RU | VLESS | @v2ray_collector #1",
+        "🇷🇺 RU | TROJAN | @vmesc #1",
+        "🇷🇺 RU | VLESS | @vpn_ioss #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -151,23 +153,6 @@
       }
     },
     {
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #1",
-      "type": "vless",
-      "server": "85.234.114.53",
-      "server_port": 22231,
-      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "tag": "🇷🇺 RU | VLESS | @v2ray_collector #1",
       "type": "vless",
       "server": "188.225.80.183",
@@ -186,6 +171,30 @@
           "public_key": "",
           "short_id": "",
           "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇷🇺 RU | TROJAN | @vmesc #1",
+      "type": "trojan",
+      "server": "ip.feywebsite.ir",
+      "server_port": 8443,
+      "password": "15dde292f853ec5"
+    },
+    {
+      "tag": "🇷🇺 RU | VLESS | @vpn_ioss #1",
+      "type": "vless",
+      "server": "85.234.114.53",
+      "server_port": 22231,
+      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     }

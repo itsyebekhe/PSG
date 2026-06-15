@@ -1,0 +1,21 @@
+#!MANAGED-CONFIG https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/locations/surfboard/RU interval=3600 strict=false
+
+[General]
+loglevel = notify
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+ipv6 = true
+dns-server = system, 223.5.5.5
+enhanced-mode-by-rule = true
+
+[Proxy]
+DIRECT = direct
+🇷🇺 RU | TROJAN | @vmesc #1 = trojan, ip.feywebsite.ir, 8443, password = 15dde292f853ec5, skip-cert-verify = true
+
+[Proxy Group]
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇷🇺 RU | TROJAN | @vmesc #1
+PSG-AUTO = url-test, 🇷🇺 RU | TROJAN | @vmesc #1
+PSG-FALLBACK = fallback, 🇷🇺 RU | TROJAN | @vmesc #1
+
+[Rule]
+GEOIP,IR,DIRECT
+FINAL,PSG-MANUAL

@@ -91,7 +91,8 @@
         "auto",
         "direct",
         "🇨🇿 CZ | VLESS | @flyv2ray #1",
-        "🇨🇿 CZ | VMESS | @freev2rays #1"
+        "🇨🇿 CZ | VMESS | @freev2rays #1",
+        "🇨🇿 CZ | TROJAN | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -100,7 +101,8 @@
       "interval": "10m",
       "outbounds": [
         "🇨🇿 CZ | VLESS | @flyv2ray #1",
-        "🇨🇿 CZ | VMESS | @freev2rays #1"
+        "🇨🇿 CZ | VMESS | @freev2rays #1",
+        "🇨🇿 CZ | TROJAN | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -155,6 +157,22 @@
         "path": "/",
         "headers": {
           "Host": "shs111.kejixiaoqi666.store"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇿 CZ | TROJAN | @vmesskhodam #1",
+      "type": "trojan",
+      "server": "46.8.113.142",
+      "server_port": 443,
+      "password": "LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     }

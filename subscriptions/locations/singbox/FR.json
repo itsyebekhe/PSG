@@ -93,12 +93,12 @@
         "🇫🇷 FR | VLESS | @merdesert #1",
         "🇫🇷 FR | VLESS | @minovpnch #1",
         "🇫🇷 FR | VLESS | @minovpnch #2",
-        "🇫🇷 FR | SS | @outline_ir #1",
-        "🇫🇷 FR | TROJAN | @privatevpns #1",
+        "🇫🇷 FR | VLESS | @red2ray #1",
         "🇫🇷 FR | VLESS | @v2ray_collector #1",
         "🇫🇷 FR | VLESS | @v2rayprotocol #1",
         "🇫🇷 FR | TROJAN | @v2rayvpnchannel #1",
         "🇫🇷 FR | VLESS | @vlessconfig #1",
+        "🇫🇷 FR | VLESS | @vlessconfig #2",
         "🇫🇷 FR | SS | @vpn_ioss #1"
       ],
       "tag": "proxy",
@@ -110,12 +110,12 @@
         "🇫🇷 FR | VLESS | @merdesert #1",
         "🇫🇷 FR | VLESS | @minovpnch #1",
         "🇫🇷 FR | VLESS | @minovpnch #2",
-        "🇫🇷 FR | SS | @outline_ir #1",
-        "🇫🇷 FR | TROJAN | @privatevpns #1",
+        "🇫🇷 FR | VLESS | @red2ray #1",
         "🇫🇷 FR | VLESS | @v2ray_collector #1",
         "🇫🇷 FR | VLESS | @v2rayprotocol #1",
         "🇫🇷 FR | TROJAN | @v2rayvpnchannel #1",
         "🇫🇷 FR | VLESS | @vlessconfig #1",
+        "🇫🇷 FR | VLESS | @vlessconfig #2",
         "🇫🇷 FR | SS | @vpn_ioss #1"
       ],
       "tag": "auto",
@@ -161,19 +161,12 @@
       }
     },
     {
-      "tag": "🇫🇷 FR | SS | @outline_ir #1",
-      "type": "shadowsocks",
-      "server": "fr.bazrilornam.txt.usdtbama.site",
-      "server_port": 1082,
-      "method": "YXV0bzo=",
-      "password": null
-    },
-    {
-      "tag": "🇫🇷 FR | TROJAN | @privatevpns #1",
-      "type": "trojan",
-      "server": "51.45.33.19",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1",
+      "type": "vless",
+      "server": "bab-6.site",
+      "server_port": 443,
+      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "",
@@ -221,7 +214,7 @@
     {
       "tag": "🇫🇷 FR | TROJAN | @v2rayvpnchannel #1",
       "type": "trojan",
-      "server": "51.45.33.19",
+      "server": "15.188.45.5",
       "server_port": 22223,
       "password": "telegram-id-v2rayvpnchannel",
       "tls": {
@@ -237,7 +230,22 @@
     {
       "tag": "🇫🇷 FR | VLESS | @vlessconfig #1",
       "type": "vless",
-      "server": "51.45.33.19",
+      "server": "15.188.45.5",
+      "server_port": 22224,
+      "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @vlessconfig #2",
+      "type": "vless",
+      "server": "52.47.119.234",
       "server_port": 22224,
       "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
       "packet_encoding": "xudp",
