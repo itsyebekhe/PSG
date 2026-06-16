@@ -90,7 +90,10 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇱🇻 LV | VLESS | @megavpn_link #1"
+        "🇱🇻 LV | VLESS | @megavpn_link #1",
+        "🇱🇻 LV | VLESS | @netmellianti #1",
+        "🇱🇻 LV | VLESS | @v2raych #1",
+        "🇱🇻 LV | VLESS | @v2raych #2"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +101,10 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇱🇻 LV | VLESS | @megavpn_link #1"
+        "🇱🇻 LV | VLESS | @megavpn_link #1",
+        "🇱🇻 LV | VLESS | @netmellianti #1",
+        "🇱🇻 LV | VLESS | @v2raych #1",
+        "🇱🇻 LV | VLESS | @v2raych #2"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -130,6 +136,58 @@
           "enabled": true
         }
       }
+    },
+    {
+      "tag": "🇱🇻 LV | VLESS | @netmellianti #1",
+      "type": "vless",
+      "server": "95.182.85.148",
+      "server_port": 8080,
+      "uuid": "f3837fcb-4867-42f5-b55e-338d12bbf77c",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇱🇻 LV | VLESS | @v2raych #1",
+      "type": "vless",
+      "server": "104.165.205.15",
+      "server_port": 443,
+      "uuid": "91d0fa43-e557-43e7-a731-f0c3d1fb306a",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇱🇻 LV | VLESS | @v2raych #2",
+      "type": "vless",
+      "server": "90.156.255.198",
+      "server_port": 51114,
+      "uuid": "8b575b35-3c7c-42b0-ac80-2aa6b0d7717c",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {
