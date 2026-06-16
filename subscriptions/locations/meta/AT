@@ -25,6 +25,7 @@ dns:
 proxies: 
   - {"name": "🇦🇹 AT | TROJAN | @freeconfigsplus #1", "server": "212.183.88.136", "port": 443, "type": "trojan", "skip-cert-verify": false, "password": "humanity"}
   - {"name": "🇦🇹 AT | TROJAN | @mpproxy #1", "server": "152.53.45.251", "port": 8888, "type": "trojan", "skip-cert-verify": false, "password": "trojan"}
+  - {"name": "🇦🇹 AT | VLESS | @red2ray #1", "server": "152.53.44.148", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f64cab0a-75a4-44f1-b2f6-8ecc6c73c249", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -40,6 +41,7 @@ proxy-groups:
     proxies: 
       - '🇦🇹 AT | TROJAN | @freeconfigsplus #1'
       - '🇦🇹 AT | TROJAN | @mpproxy #1'
+      - '🇦🇹 AT | VLESS | @red2ray #1'
 
   - name: 🌍 Global Media
     type: select

@@ -82,6 +82,8 @@
         "KingRezaPahlavi",
         "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
         "🇽🇽 XX | VMESS | @frev2rayng #1",
+        "🇭🇰 HK | VMESS | @hope_net #1",
+        "🇽🇽 XX | VMESS | @hope_net #2",
         "🇩🇪 DE | VMESS | @khoneproxy #1",
         "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇩🇪 DE | VMESS | @khoneproxy #2",
@@ -99,6 +101,8 @@
         "KingRezaPahlavi",
         "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
         "🇽🇽 XX | VMESS | @frev2rayng #1",
+        "🇭🇰 HK | VMESS | @hope_net #1",
+        "🇽🇽 XX | VMESS | @hope_net #2",
         "🇩🇪 DE | VMESS | @khoneproxy #1",
         "🇮🇷 IR | VMESS | @khoneproxy #1",
         "🇩🇪 DE | VMESS | @khoneproxy #2",
@@ -219,6 +223,47 @@
       "transport": {
         "type": "grpc",
         "service_name": ""
+      }
+    },
+    {
+      "tag": "🇭🇰 HK | VMESS | @hope_net #1",
+      "type": "vmess",
+      "server": "154.92.9.241",
+      "server_port": 80,
+      "uuid": "dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/blue",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VMESS | @hope_net #2",
+      "type": "vmess",
+      "server": "104.24.208.25",
+      "server_port": 2053,
+      "uuid": "72f76c36-3e3c-45b3-a61f-d8f017345958",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": ""
+        }
       }
     },
     {

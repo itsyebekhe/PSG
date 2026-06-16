@@ -90,7 +90,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇭🇰 HK | VMESS | @freev2rays #1"
+        "🇭🇰 HK | VMESS | @freev2rays #1",
+        "🇭🇰 HK | VMESS | @hope_net #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +99,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇭🇰 HK | VMESS | @freev2rays #1"
+        "🇭🇰 HK | VMESS | @freev2rays #1",
+        "🇭🇰 HK | VMESS | @hope_net #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -129,6 +131,22 @@
       "transport": {
         "type": "ws",
         "path": "/register",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 HK | VMESS | @hope_net #1",
+      "type": "vmess",
+      "server": "154.92.9.241",
+      "server_port": 80,
+      "uuid": "dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/blue",
         "headers": {
           "Host": ""
         }

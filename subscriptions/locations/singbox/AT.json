@@ -91,7 +91,8 @@
         "auto",
         "direct",
         "🇦🇹 AT | TROJAN | @freeconfigsplus #1",
-        "🇦🇹 AT | TROJAN | @mpproxy #1"
+        "🇦🇹 AT | TROJAN | @mpproxy #1",
+        "🇦🇹 AT | VLESS | @red2ray #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -100,7 +101,8 @@
       "interval": "10m",
       "outbounds": [
         "🇦🇹 AT | TROJAN | @freeconfigsplus #1",
-        "🇦🇹 AT | TROJAN | @mpproxy #1"
+        "🇦🇹 AT | TROJAN | @mpproxy #1",
+        "🇦🇹 AT | VLESS | @red2ray #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -140,6 +142,28 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇦🇹 AT | VLESS | @red2ray #1",
+      "type": "vless",
+      "server": "152.53.44.148",
+      "server_port": 443,
+      "uuid": "f64cab0a-75a4-44f1-b2f6-8ecc6c73c249",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
         }
       }
     }
