@@ -23,7 +23,11 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
-  - {"name": "🇫🇷 FR | TROJAN | @privatevpns #1", "server": "15.188.67.19", "port": 22222, "type": "trojan", "skip-cert-verify": false, "password": "telegram-id-privatevpns"}
+  - {"name": "🇫🇷 FR | VMESS | @hope_net #1", "server": "51.83.97.167", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "6e7ef21f-4736-480e-93aa-1f7d54f28089", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/vmess", "headers": {"Host": "51.83.97.167"}}}
+  - {"name": "🇫🇷 FR | TROJAN | @privatevpns #1", "server": "15.188.218.165", "port": 22222, "type": "trojan", "skip-cert-verify": false, "password": "telegram-id-privatevpns"}
+  - {"name": "🇫🇷 FR | TROJAN | @privatevpns #2", "server": "15.188.67.19", "port": 22222, "type": "trojan", "skip-cert-verify": false, "password": "telegram-id-privatevpns"}
+  - {"name": "🇫🇷 FR | TROJAN | @v2raych #1", "server": "15.188.218.165", "port": 22223, "type": "trojan", "skip-cert-verify": false, "password": "telegram-id-directvpn"}
+  - {"name": "🇫🇷 FR | TROJAN | @v2raych #2", "server": "15.188.67.19", "port": 22223, "type": "trojan", "skip-cert-verify": false, "password": "telegram-id-directvpn"}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -37,7 +41,11 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
+      - '🇫🇷 FR | VMESS | @hope_net #1'
       - '🇫🇷 FR | TROJAN | @privatevpns #1'
+      - '🇫🇷 FR | TROJAN | @privatevpns #2'
+      - '🇫🇷 FR | TROJAN | @v2raych #1'
+      - '🇫🇷 FR | TROJAN | @v2raych #2'
 
   - name: 🌍 Global Media
     type: select

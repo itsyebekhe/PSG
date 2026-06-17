@@ -82,7 +82,7 @@
         "KingRezaPahlavi",
         "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
         "🇽🇽 XX | VMESS | @frev2rayng #1",
-        "🇽🇽 XX | VMESS | @hope_net #1",
+        "🇫🇷 FR | VMESS | @hope_net #1",
         "🇽🇽 XX | VMESS | @hope_net #2",
         "🇩🇪 DE | VMESS | @khoneproxy #1",
         "🇮🇷 IR | VMESS | @khoneproxy #1",
@@ -101,7 +101,7 @@
         "KingRezaPahlavi",
         "🇧🇷 BR | VMESS | @Fr33C0nfig #1",
         "🇽🇽 XX | VMESS | @frev2rayng #1",
-        "🇽🇽 XX | VMESS | @hope_net #1",
+        "🇫🇷 FR | VMESS | @hope_net #1",
         "🇽🇽 XX | VMESS | @hope_net #2",
         "🇩🇪 DE | VMESS | @khoneproxy #1",
         "🇮🇷 IR | VMESS | @khoneproxy #1",
@@ -226,11 +226,27 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VMESS | @hope_net #1",
+      "tag": "🇫🇷 FR | VMESS | @hope_net #1",
       "type": "vmess",
-      "server": "141.101.115.120",
+      "server": "51.83.97.167",
+      "server_port": 80,
+      "uuid": "6e7ef21f-4736-480e-93aa-1f7d54f28089",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VMESS | @hope_net #2",
+      "type": "vmess",
+      "server": "172.67.242.38",
       "server_port": 443,
-      "uuid": "33aa57df-1c93-4318-9fce-e850437ee781",
+      "uuid": "824c58b1-65ba-4680-a609-663a000dbb92",
       "security": "auto",
       "alter_id": 0,
       "tls": {
@@ -244,34 +260,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/dongtaiwang.com",
+        "path": "/wss13889",
         "headers": {
           "Host": ""
-        }
-      }
-    },
-    {
-      "tag": "🇽🇽 XX | VMESS | @hope_net #2",
-      "type": "vmess",
-      "server": "104.19.36.160",
-      "server_port": 443,
-      "uuid": "ad806487-2d26-4636-98b6-ab85cc8521f7",
-      "security": "auto",
-      "alter_id": 64,
-      "tls": {
-        "enabled": true,
-        "server_name": "104.19.36.160",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "104.19.36.160"
         }
       }
     },

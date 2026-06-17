@@ -9,12 +9,16 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇫🇷 FR | TROJAN | @privatevpns #1 = trojan, 15.188.67.19, 22222, password = telegram-id-privatevpns, skip-cert-verify = true
+🇫🇷 FR | VMESS | @hope_net #1 = vmess, 51.83.97.167, 80, username = 6e7ef21f-4736-480e-93aa-1f7d54f28089, ws = true, tls = false, ws-path = /vmess, ws-headers = Host:"51.83.97.167"
+🇫🇷 FR | TROJAN | @privatevpns #1 = trojan, 15.188.218.165, 22222, password = telegram-id-privatevpns, skip-cert-verify = true
+🇫🇷 FR | TROJAN | @privatevpns #2 = trojan, 15.188.67.19, 22222, password = telegram-id-privatevpns, skip-cert-verify = true
+🇫🇷 FR | TROJAN | @v2raych #1 = trojan, 15.188.218.165, 22223, password = telegram-id-directvpn, skip-cert-verify = true
+🇫🇷 FR | TROJAN | @v2raych #2 = trojan, 15.188.67.19, 22223, password = telegram-id-directvpn, skip-cert-verify = true
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇫🇷 FR | TROJAN | @privatevpns #1
-PSG-AUTO = url-test, 🇫🇷 FR | TROJAN | @privatevpns #1
-PSG-FALLBACK = fallback, 🇫🇷 FR | TROJAN | @privatevpns #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇫🇷 FR | VMESS | @hope_net #1, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | TROJAN | @v2raych #1, 🇫🇷 FR | TROJAN | @v2raych #2
+PSG-AUTO = url-test, 🇫🇷 FR | VMESS | @hope_net #1, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | TROJAN | @v2raych #1, 🇫🇷 FR | TROJAN | @v2raych #2
+PSG-FALLBACK = fallback, 🇫🇷 FR | VMESS | @hope_net #1, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | TROJAN | @v2raych #1, 🇫🇷 FR | TROJAN | @v2raych #2
 
 [Rule]
 GEOIP,IR,DIRECT
