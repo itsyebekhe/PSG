@@ -84,7 +84,7 @@
         "🇺🇸 US | VLESS | @kafing_2 #1",
         "🇮🇷 IR | VLESS | @netmellianti #2",
         "🇮🇷 IR | VLESS | @nofiltering2 #1",
-        "🇺🇸 US | VLESS | @v2raych #1"
+        "🇽🇽 XX | VLESS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -99,7 +99,7 @@
         "🇺🇸 US | VLESS | @kafing_2 #1",
         "🇮🇷 IR | VLESS | @netmellianti #2",
         "🇮🇷 IR | VLESS | @nofiltering2 #1",
-        "🇺🇸 US | VLESS | @v2raych #1"
+        "🇽🇽 XX | VLESS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -219,12 +219,21 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇺🇸 US | VLESS | @v2raych #1",
+      "tag": "🇽🇽 XX | VLESS | @vmesskhodam #1",
       "type": "vless",
-      "server": "local.connectingissues.ir",
-      "server_port": 80,
-      "uuid": "7772d968-52d2-459b-88c5-4c6d0a20f92a",
-      "packet_encoding": "xudp"
+      "server": "ser8.fredomiran.com",
+      "server_port": 443,
+      "uuid": "44f7eb71-de22-4a9c-8d5a-64fb7115c82f",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     }
   ],
   "route": {
