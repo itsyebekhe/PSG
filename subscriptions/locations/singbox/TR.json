@@ -92,7 +92,8 @@
         "direct",
         "🇹🇷 TR | VLESS | @father_vpn #1",
         "🇹🇷 TR | VLESS | @netmellianti #1",
-        "🇹🇷 TR | VLESS | @vmesskhodam #1"
+        "🇹🇷 TR | VLESS | @red2ray #1",
+        "🇹🇷 TR | VLESS | @red2ray #2"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -102,7 +103,8 @@
       "outbounds": [
         "🇹🇷 TR | VLESS | @father_vpn #1",
         "🇹🇷 TR | VLESS | @netmellianti #1",
-        "🇹🇷 TR | VLESS | @vmesskhodam #1"
+        "🇹🇷 TR | VLESS | @red2ray #1",
+        "🇹🇷 TR | VLESS | @red2ray #2"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -144,11 +146,33 @@
       }
     },
     {
-      "tag": "🇹🇷 TR | VLESS | @vmesskhodam #1",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1",
       "type": "vless",
-      "server": "netnab2.dgrozz.ir",
-      "server_port": 48405,
-      "uuid": "57c7030e-d72b-4e8d-bc5b-8bc534763128",
+      "server": "hm.khoycityman.ir",
+      "server_port": 443,
+      "uuid": "83a30307-e371-40ed-ad56-0e9fdb98b4b4",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @red2ray #2",
+      "type": "vless",
+      "server": "hm.khoycityman.ir",
+      "server_port": 41319,
+      "uuid": "83a30307-e371-40ed-ad56-0e9fdb98b4b4",
       "packet_encoding": "xudp"
     }
   ],
