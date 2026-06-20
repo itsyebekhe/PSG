@@ -90,6 +90,7 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇱🇻 LV | VLESS | @free1_vpn #1",
         "🇱🇻 LV | VLESS | @megavpn_link #1"
       ],
       "tag": "proxy",
@@ -98,6 +99,7 @@
     {
       "interval": "10m",
       "outbounds": [
+        "🇱🇻 LV | VLESS | @free1_vpn #1",
         "🇱🇻 LV | VLESS | @megavpn_link #1"
       ],
       "tag": "auto",
@@ -108,6 +110,28 @@
     {
       "tag": "direct",
       "type": "direct"
+    },
+    {
+      "tag": "🇱🇻 LV | VLESS | @free1_vpn #1",
+      "type": "vless",
+      "server": "95.182.80.48",
+      "server_port": 15370,
+      "uuid": "8e13e299-1bbf-46da-a297-8ee19fe4c914",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     },
     {
       "tag": "🇱🇻 LV | VLESS | @megavpn_link #1",
