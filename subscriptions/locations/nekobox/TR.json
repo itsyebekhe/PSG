@@ -79,8 +79,10 @@
         "direct",
         "🇹🇷 TR | VLESS | @father_vpn #1",
         "🇹🇷 TR | VLESS | @netmellianti #1",
+        "🇹🇷 TR | VLESS | @netmellianti #2",
         "🇹🇷 TR | VLESS | @red2ray #1",
-        "🇹🇷 TR | VLESS | @red2ray #2"
+        "🇹🇷 TR | VLESS | @red2ray #2",
+        "🇹🇷 TR | VLESS | @red2ray #3"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -90,8 +92,10 @@
       "outbounds": [
         "🇹🇷 TR | VLESS | @father_vpn #1",
         "🇹🇷 TR | VLESS | @netmellianti #1",
+        "🇹🇷 TR | VLESS | @netmellianti #2",
         "🇹🇷 TR | VLESS | @red2ray #1",
-        "🇹🇷 TR | VLESS | @red2ray #2"
+        "🇹🇷 TR | VLESS | @red2ray #2",
+        "🇹🇷 TR | VLESS | @red2ray #3"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -137,10 +141,40 @@
       }
     },
     {
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #2",
+      "type": "vless",
+      "server": "91.216.104.45",
+      "server_port": 8443,
+      "uuid": "7698de4e-2882-4fee-967b-8db030ced1dc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
       "tag": "🇹🇷 TR | VLESS | @red2ray #1",
       "type": "vless",
       "server": "hm.khoycityman.ir",
-      "server_port": 443,
+      "server_port": 41319,
+      "uuid": "83a30307-e371-40ed-ad56-0e9fdb98b4b4",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @red2ray #2",
+      "type": "vless",
+      "server": "hm.khoycityman.ir",
+      "server_port": 57176,
       "uuid": "83a30307-e371-40ed-ad56-0e9fdb98b4b4",
       "packet_encoding": "xudp",
       "tls": {
@@ -159,12 +193,26 @@
       }
     },
     {
-      "tag": "🇹🇷 TR | VLESS | @red2ray #2",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #3",
       "type": "vless",
       "server": "hm.khoycityman.ir",
-      "server_port": 41319,
-      "uuid": "83a30307-e371-40ed-ad56-0e9fdb98b4b4",
-      "packet_encoding": "xudp"
+      "server_port": 443,
+      "uuid": "8072396c-6a74-46b3-8a43-91b5e86ed160",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     }
   ],
   "route": {
