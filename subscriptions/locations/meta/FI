@@ -23,6 +23,9 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
+  - {"name": "🇫🇮 FI | VLESS | @v2ray_free_conf #1", "server": "65.109.219.2", "port": 52219, "type": "vless", "skip-cert-verify": true, "uuid": "39e01e3e-5161-43e0-9a27-cc3316177466", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
+  - {"name": "🇫🇮 FI | VLESS | @v2ray_free_conf #2", "server": "plan.opann.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "207fb1be-e784-4053-94c1-b0e96333152f", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @v2raych #1", "server": "65.109.219.2", "port": 110, "type": "vless", "skip-cert-verify": true, "uuid": "bb789aaa-c07a-47ae-987f-5adba035e8c7", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇮 FI | VLESS | @vmesskhodam #1", "server": "46.246.34.174", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "394f6981-a782-4779-9a85-e6cf22935d93", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
 
 proxy-groups:
@@ -37,6 +40,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
+      - '🇫🇮 FI | VLESS | @v2ray_free_conf #1'
+      - '🇫🇮 FI | VLESS | @v2ray_free_conf #2'
+      - '🇫🇮 FI | VLESS | @v2raych #1'
       - '🇫🇮 FI | VLESS | @vmesskhodam #1'
 
   - name: 🌍 Global Media
