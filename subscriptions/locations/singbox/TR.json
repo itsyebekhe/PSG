@@ -90,7 +90,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇹🇷 TR | VLESS | @father_vpn #1"
+        "🇹🇷 TR | VLESS | @father_vpn #1",
+        "🇹🇷 TR | VLESS | @red2ray #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +99,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @father_vpn #1"
+        "🇹🇷 TR | VLESS | @father_vpn #1",
+        "🇹🇷 TR | VLESS | @red2ray #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -116,6 +118,28 @@
       "server_port": 2052,
       "uuid": "2e409cdc-d0c9-4fc0-b285-9371034b8002",
       "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1",
+      "type": "vless",
+      "server": "turkey.shabtaban.ir",
+      "server_port": 443,
+      "uuid": "336ab676-47c5-4d11-99a2-29441457e94e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     }
   ],
   "route": {
