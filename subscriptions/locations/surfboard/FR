@@ -9,15 +9,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇫🇷 FR | TROJAN | @privatevpns #1 = trojan, 15.237.161.224, 22222, password = telegram-id-privatevpns, skip-cert-verify = true
-🇫🇷 FR | TROJAN | @privatevpns #2 = trojan, 13.37.90.19, 22222, password = telegram-id-privatevpns, skip-cert-verify = true
-🇫🇷 FR | TROJAN | @v2rayvpnchannel #1 = trojan, 15.237.161.224, 22223, password = telegram-id-v2rayvpnchannel, skip-cert-verify = true
-🇫🇷 FR | TROJAN | @v2rayvpnchannel #2 = trojan, 13.37.90.19, 22223, password = telegram-id-v2rayvpnchannel, skip-cert-verify = true
+🇫🇷 FR | TROJAN | @privatevpns #1 = trojan, 13.38.243.57, 22222, password = telegram-id-privatevpns, skip-cert-verify = true
+🇫🇷 FR | TROJAN | @privatevpns #2 = trojan, 13.37.9.135, 22222, password = telegram-id-privatevpns, skip-cert-verify = true
+🇫🇷 FR | VMESS | @v2raych #1 = vmess, 69.84.182.49, 80, username = f8975871-a7a0-4906-8835-a23c1258ca1e, ws = true, tls = false, ws-path = /, ws-headers = Host:"google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #1, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #2
-PSG-AUTO = url-test, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #1, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #2
-PSG-FALLBACK = fallback, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #1, 🇫🇷 FR | TROJAN | @v2rayvpnchannel #2
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | VMESS | @v2raych #1
+PSG-AUTO = url-test, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | VMESS | @v2raych #1
+PSG-FALLBACK = fallback, 🇫🇷 FR | TROJAN | @privatevpns #1, 🇫🇷 FR | TROJAN | @privatevpns #2, 🇫🇷 FR | VMESS | @v2raych #1
 
 [Rule]
 GEOIP,IR,DIRECT
