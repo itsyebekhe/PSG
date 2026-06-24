@@ -79,7 +79,8 @@
         "direct",
         "🇹🇷 TR | VLESS | @father_vpn #1",
         "🇹🇷 TR | VLESS | @netmellianti #1",
-        "🇹🇷 TR | SS | @outline_ir #1",
+        "🇹🇷 TR | VLESS | @red2ray #1",
+        "🇹🇷 TR | VLESS | @turboo_server #1",
         "🇹🇷 TR | VLESS | @v2rayngvpn_1 #1"
       ],
       "tag": "proxy",
@@ -90,7 +91,8 @@
       "outbounds": [
         "🇹🇷 TR | VLESS | @father_vpn #1",
         "🇹🇷 TR | VLESS | @netmellianti #1",
-        "🇹🇷 TR | SS | @outline_ir #1",
+        "🇹🇷 TR | VLESS | @red2ray #1",
+        "🇹🇷 TR | VLESS | @turboo_server #1",
         "🇹🇷 TR | VLESS | @v2rayngvpn_1 #1"
       ],
       "tag": "auto",
@@ -137,12 +139,34 @@
       }
     },
     {
-      "tag": "🇹🇷 TR | SS | @outline_ir #1",
-      "type": "shadowsocks",
-      "server": "62.133.63.169",
-      "server_port": 37096,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpLUDZGUVZtSmhsWFBndlBocncyZ25J",
-      "password": null
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1",
+      "type": "vless",
+      "server": "tr1.avenpulse.ir",
+      "server_port": 2084,
+      "uuid": "f99908f9-6d1e-4512-9aab-588fbd399485",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @turboo_server #1",
+      "type": "vless",
+      "server": "37.221.79.82",
+      "server_port": 8443,
+      "uuid": "turboo-server",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     },
     {
       "tag": "🇹🇷 TR | VLESS | @v2rayngvpn_1 #1",
