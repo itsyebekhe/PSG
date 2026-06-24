@@ -91,8 +91,10 @@
         "auto",
         "direct",
         "🇷🇺 RU | VLESS | @free1_vpn #1",
+        "🇷🇺 RU | VLESS | @free1_vpn #2",
         "🇷🇺 RU | VLESS | @megavpn_link #1",
         "🇷🇺 RU | VLESS | @v2ray_collector #1",
+        "🇷🇺 RU | VLESS | @v2ray_free_conf #1",
         "🇷🇺 RU | VLESS | @v2raytg #1",
         "🇷🇺 RU | VLESS | @vmesskhodam #1",
         "🇷🇺 RU | VLESS | @vpn_ioss #1",
@@ -105,8 +107,10 @@
       "interval": "10m",
       "outbounds": [
         "🇷🇺 RU | VLESS | @free1_vpn #1",
+        "🇷🇺 RU | VLESS | @free1_vpn #2",
         "🇷🇺 RU | VLESS | @megavpn_link #1",
         "🇷🇺 RU | VLESS | @v2ray_collector #1",
+        "🇷🇺 RU | VLESS | @v2ray_free_conf #1",
         "🇷🇺 RU | VLESS | @v2raytg #1",
         "🇷🇺 RU | VLESS | @vmesskhodam #1",
         "🇷🇺 RU | VLESS | @vpn_ioss #1",
@@ -127,6 +131,28 @@
       "server": "193.151.108.143",
       "server_port": 443,
       "uuid": "d78c12c4-6927-40b8-8550-ed9be00334da",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇷🇺 RU | VLESS | @free1_vpn #2",
+      "type": "vless",
+      "server": "94.242.55.42",
+      "server_port": 443,
+      "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -184,6 +210,23 @@
           "public_key": "",
           "short_id": "",
           "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇷🇺 RU | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "85.234.114.53",
+      "server_port": 22231,
+      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
