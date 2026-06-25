@@ -78,7 +78,8 @@
         "auto",
         "direct",
         "🇦🇹 AT | TROJAN | @freeconfigsplus #1",
-        "🇦🇹 AT | TROJAN | @mpproxy #1"
+        "🇦🇹 AT | TROJAN | @mpproxy #1",
+        "🇦🇹 AT | VLESS | @v2raych #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -87,7 +88,8 @@
       "interval": "10m",
       "outbounds": [
         "🇦🇹 AT | TROJAN | @freeconfigsplus #1",
-        "🇦🇹 AT | TROJAN | @mpproxy #1"
+        "🇦🇹 AT | TROJAN | @mpproxy #1",
+        "🇦🇹 AT | VLESS | @v2raych #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -133,6 +135,14 @@
           "fingerprint": "chrome"
         }
       }
+    },
+    {
+      "tag": "🇦🇹 AT | VLESS | @v2raych #1",
+      "type": "vless",
+      "server": "152.53.102.166",
+      "server_port": 2052,
+      "uuid": "6f7597a8-f569-41d6-8f98-a4e59af35064",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {
