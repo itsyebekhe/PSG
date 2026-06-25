@@ -100,7 +100,8 @@
         "🇺🇸 US | VLESS | @kafing_2 #1",
         "🇬🇧 GB | VLESS | @outline_ir #1",
         "🇬🇧 GB | VLESS | @v2aryng_vpn #1",
-        "🇩🇪 DE | VLESS | @v2ray_free_conf #2"
+        "🇺🇸 US | VLESS | @v2ray_free_conf #1",
+        "🇬🇧 GB | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -118,7 +119,8 @@
         "🇺🇸 US | VLESS | @kafing_2 #1",
         "🇬🇧 GB | VLESS | @outline_ir #1",
         "🇬🇧 GB | VLESS | @v2aryng_vpn #1",
-        "🇩🇪 DE | VLESS | @v2ray_free_conf #2"
+        "🇺🇸 US | VLESS | @v2ray_free_conf #1",
+        "🇬🇧 GB | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -267,11 +269,28 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @v2ray_free_conf #2",
+      "tag": "🇺🇸 US | VLESS | @v2ray_free_conf #1",
       "type": "vless",
-      "server": "reality2.novmber.ir",
-      "server_port": 427,
-      "uuid": "87ace6ba-7c02-46b3-9e4e-61ea450c8ae5",
+      "server": "f2.iranphlox.ir",
+      "server_port": 443,
+      "uuid": "9c5ea2a8-150f-45b6-886c-be0d9e90f5d3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇬🇧 GB | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "suolar.yellowsky.ir",
+      "server_port": 2053,
+      "uuid": "fa937ff5-89cc-49a4-9bf9-da2b7285070d",
       "packet_encoding": "xudp"
     }
   ],
