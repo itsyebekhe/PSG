@@ -91,7 +91,9 @@
         "auto",
         "direct",
         "🇮🇹 IT | VLESS | @free1_vpn #1",
-        "🇮🇹 IT | VLESS | @vmesskhodam #1"
+        "🇮🇹 IT | SS | @v2raych #1",
+        "🇮🇹 IT | VLESS | @vmesskhodam #1",
+        "🇮🇹 IT | TROJAN | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -100,7 +102,9 @@
       "interval": "10m",
       "outbounds": [
         "🇮🇹 IT | VLESS | @free1_vpn #1",
-        "🇮🇹 IT | VLESS | @vmesskhodam #1"
+        "🇮🇹 IT | SS | @v2raych #1",
+        "🇮🇹 IT | VLESS | @vmesskhodam #1",
+        "🇮🇹 IT | TROJAN | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -129,6 +133,14 @@
       }
     },
     {
+      "tag": "🇮🇹 IT | SS | @v2raych #1",
+      "type": "shadowsocks",
+      "server": "103.241.66.76",
+      "server_port": 14605,
+      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVazhsZm12aFlueDVySnZYeEtyUnFHUnluZDlnSXBKLmlZ",
+      "password": null
+    },
+    {
       "tag": "🇮🇹 IT | VLESS | @vmesskhodam #1",
       "type": "vless",
       "server": "31.76.113.22",
@@ -147,6 +159,22 @@
           "public_key": "",
           "short_id": "",
           "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇮🇹 IT | TROJAN | @vmesskhodam #1",
+      "type": "trojan",
+      "server": "172.235.229.227",
+      "server_port": 443,
+      "password": "zK%3D0KfL3IG%2BsNNZL-J7d0Nonu4wFBx8MOy",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     }
