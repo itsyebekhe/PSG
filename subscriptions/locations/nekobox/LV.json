@@ -77,7 +77,8 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇱🇻 LV | VLESS | @megavpn_link #1"
+        "🇱🇻 LV | VLESS | @prrofile_purple #1",
+        "🇱🇻 LV | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -85,7 +86,8 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇱🇻 LV | VLESS | @megavpn_link #1"
+        "🇱🇻 LV | VLESS | @prrofile_purple #1",
+        "🇱🇻 LV | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -101,11 +103,11 @@
       "type": "direct"
     },
     {
-      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1",
+      "tag": "🇱🇻 LV | VLESS | @prrofile_purple #1",
       "type": "vless",
-      "server": "91.218.143.194",
-      "server_port": 43798,
-      "uuid": "b7725d23-840a-4f8e-993c-69b40424cfc0",
+      "server": "90.156.254.168",
+      "server_port": 443,
+      "uuid": "4af298c3-5c2d-4cf1-af68-5261e482c4e7",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -114,13 +116,16 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "",
-          "short_id": "",
-          "enabled": true
         }
       }
+    },
+    {
+      "tag": "🇱🇻 LV | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "217.28.48.29",
+      "server_port": 25752,
+      "uuid": "27f2ae85-3e15-4a9a-9c71-49ee032e7b26",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {
