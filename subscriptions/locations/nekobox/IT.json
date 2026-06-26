@@ -77,10 +77,9 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇮🇹 IT | VLESS | @ehsawn8 #1",
         "🇮🇹 IT | VLESS | @free1_vpn #1",
-        "🇮🇹 IT | VLESS | @v2ray_free_conf #1",
-        "🇮🇹 IT | VLESS | @vmesskhodam #1",
-        "🇮🇹 IT | TROJAN | @vmesskhodam #1"
+        "🇮🇹 IT | VLESS | @v2raych #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -88,10 +87,9 @@
     {
       "interval": "10m",
       "outbounds": [
+        "🇮🇹 IT | VLESS | @ehsawn8 #1",
         "🇮🇹 IT | VLESS | @free1_vpn #1",
-        "🇮🇹 IT | VLESS | @v2ray_free_conf #1",
-        "🇮🇹 IT | VLESS | @vmesskhodam #1",
-        "🇮🇹 IT | TROJAN | @vmesskhodam #1"
+        "🇮🇹 IT | VLESS | @v2raych #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -105,6 +103,14 @@
     {
       "tag": "bypass",
       "type": "direct"
+    },
+    {
+      "tag": "🇮🇹 IT | VLESS | @ehsawn8 #1",
+      "type": "vless",
+      "server": "151.115.164.37",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "packet_encoding": "xudp"
     },
     {
       "tag": "🇮🇹 IT | VLESS | @free1_vpn #1",
@@ -124,17 +130,9 @@
       }
     },
     {
-      "tag": "🇮🇹 IT | VLESS | @v2ray_free_conf #1",
+      "tag": "🇮🇹 IT | VLESS | @v2raych #1",
       "type": "vless",
-      "server": "57.131.18.123",
-      "server_port": 13355,
-      "uuid": "d7d95e1b-0c38-4553-82e4-6002f472fcd5",
-      "packet_encoding": "xudp"
-    },
-    {
-      "tag": "🇮🇹 IT | VLESS | @vmesskhodam #1",
-      "type": "vless",
-      "server": "31.76.113.22",
+      "server": "31.76.113.54",
       "server_port": 443,
       "uuid": "dfc0cb9d-f005-41b0-848c-7703bd39d0de",
       "packet_encoding": "xudp",
@@ -150,22 +148,6 @@
           "public_key": "",
           "short_id": "",
           "enabled": true
-        }
-      }
-    },
-    {
-      "tag": "🇮🇹 IT | TROJAN | @vmesskhodam #1",
-      "type": "trojan",
-      "server": "172.235.229.227",
-      "server_port": 443,
-      "password": "zK%3D0KfL3IG%2BsNNZL-J7d0Nonu4wFBx8MOy",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         }
       }
     }

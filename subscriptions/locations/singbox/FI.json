@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQlI=
+//profile-title: base64:UFNHIHwgRkk=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -90,7 +90,9 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇧🇷 BR | VLESS | @free1_vpn #1"
+        "🇫🇮 FI | VLESS | @netfreedom0 #1",
+        "🇫🇮 FI | VLESS | @outline_ir #1",
+        "🇫🇮 FI | VLESS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -98,7 +100,9 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇧🇷 BR | VLESS | @free1_vpn #1"
+        "🇫🇮 FI | VLESS | @netfreedom0 #1",
+        "🇫🇮 FI | VLESS | @outline_ir #1",
+        "🇫🇮 FI | VLESS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -110,11 +114,41 @@
       "type": "direct"
     },
     {
-      "tag": "🇧🇷 BR | VLESS | @free1_vpn #1",
+      "tag": "🇫🇮 FI | VLESS | @netfreedom0 #1",
       "type": "vless",
-      "server": "185.133.35.140",
-      "server_port": 80,
-      "uuid": "f9255507-1b65-433f-bfd8-193b35e068e2",
+      "server": "fi1.vitok.cc",
+      "server_port": 443,
+      "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇫🇮 FI | VLESS | @outline_ir #1",
+      "type": "vless",
+      "server": "telewebion.com.fin2.shakhle.ir",
+      "server_port": 52525,
+      "uuid": "21702d6d-7b35-4faa-8462-c23dc7e20e00",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇫🇮 FI | VLESS | @vmesskhodam #1",
+      "type": "vless",
+      "server": "fanlandv3.sorcepack.ir",
+      "server_port": 52077,
+      "uuid": "a36b1024-70b2-476e-9caf-0fd644d5b9ac",
       "packet_encoding": "xudp"
     }
   ],
