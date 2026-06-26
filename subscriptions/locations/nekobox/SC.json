@@ -86,10 +86,9 @@
         "🇸🇨 SC | VLESS | @netfreedom0 #1",
         "🇸🇨 SC | VLESS | @selinc #1",
         "🇸🇨 SC | VLESS | @turboo_server #1",
-        "🇸🇨 SC | VLESS | @v2ray_free_conf #1",
-        "🇸🇨 SC | VLESS | @v2ray_free_conf #2",
         "🇸🇨 SC | VLESS | @v2rayngvpn_1 #1",
-        "🇸🇨 SC | VLESS | @vmesc #1"
+        "🇸🇨 SC | VLESS | @vmesc #1",
+        "🇸🇨 SC | TROJAN | @vpn_ioss #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -106,10 +105,9 @@
         "🇸🇨 SC | VLESS | @netfreedom0 #1",
         "🇸🇨 SC | VLESS | @selinc #1",
         "🇸🇨 SC | VLESS | @turboo_server #1",
-        "🇸🇨 SC | VLESS | @v2ray_free_conf #1",
-        "🇸🇨 SC | VLESS | @v2ray_free_conf #2",
         "🇸🇨 SC | VLESS | @v2rayngvpn_1 #1",
-        "🇸🇨 SC | VLESS | @vmesc #1"
+        "🇸🇨 SC | VLESS | @vmesc #1",
+        "🇸🇨 SC | TROJAN | @vpn_ioss #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -238,31 +236,6 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇸🇨 SC | VLESS | @v2ray_free_conf #1",
-      "type": "vless",
-      "server": "45.130.125.160",
-      "server_port": 443,
-      "uuid": "536d0d54-53a5-455a-ad7c-a525d8ff629f",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "🇸🇨 SC | VLESS | @v2ray_free_conf #2",
-      "type": "vless",
-      "server": "45.198.87.243",
-      "server_port": 8443,
-      "uuid": "7896c501-248f-4068-bc2f-363c91ba5122",
-      "packet_encoding": "xudp"
-    },
-    {
       "tag": "🇸🇨 SC | VLESS | @v2rayngvpn_1 #1",
       "type": "vless",
       "server": "45.130.125.194",
@@ -277,6 +250,22 @@
       "server_port": 8443,
       "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93",
       "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇸🇨 SC | TROJAN | @vpn_ioss #1",
+      "type": "trojan",
+      "server": "45.130.125.158",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     }
   ],
   "route": {
