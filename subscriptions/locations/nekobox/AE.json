@@ -78,7 +78,8 @@
         "auto",
         "direct",
         "🇦🇪 AE | SS | @manstervpn #1",
-        "🇦🇪 AE | VLESS | @rez1vpn #1"
+        "🇦🇪 AE | VLESS | @rez1vpn #1",
+        "🇦🇪 AE | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -87,7 +88,8 @@
       "interval": "10m",
       "outbounds": [
         "🇦🇪 AE | SS | @manstervpn #1",
-        "🇦🇪 AE | VLESS | @rez1vpn #1"
+        "🇦🇪 AE | VLESS | @rez1vpn #1",
+        "🇦🇪 AE | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -129,6 +131,23 @@
           "public_key": "",
           "short_id": "",
           "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇦🇪 AE | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "94.140.0.255",
+      "server_port": 443,
+      "uuid": "78485147-82d0-4fc4-80cf-dd08c54bbaa1",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     }
