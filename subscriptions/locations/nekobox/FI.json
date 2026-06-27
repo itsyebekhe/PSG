@@ -78,9 +78,8 @@
         "auto",
         "direct",
         "🇫🇮 FI | VLESS | @free1_vpn #1",
-        "🇫🇮 FI | SS | @red2ray #1",
-        "🇫🇮 FI | VLESS | @vmesskhodam #1",
-        "🇫🇮 FI | VLESS | @vmesskhodam #2"
+        "🇫🇮 FI | VLESS | @red2ray #1",
+        "🇫🇮 FI | VLESS | @vmesskhodam #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -89,9 +88,8 @@
       "interval": "10m",
       "outbounds": [
         "🇫🇮 FI | VLESS | @free1_vpn #1",
-        "🇫🇮 FI | SS | @red2ray #1",
-        "🇫🇮 FI | VLESS | @vmesskhodam #1",
-        "🇫🇮 FI | VLESS | @vmesskhodam #2"
+        "🇫🇮 FI | VLESS | @red2ray #1",
+        "🇫🇮 FI | VLESS | @vmesskhodam #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -115,15 +113,7 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇫🇮 FI | SS | @red2ray #1",
-      "type": "shadowsocks",
-      "server": "65.109.218.60",
-      "server_port": 8880,
-      "method": "MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206a0NzOGgweHVTTmZObmdMMVNlRExUR1JBRVdld0RuVGovYXczdU1tRWJTVT06emlIVXFQeXhKL2F0Uk5ra0NmWFZBRS83SCtSbTlocGJkL0gyU1hYRFROND0=",
-      "password": null
-    },
-    {
-      "tag": "🇫🇮 FI | VLESS | @vmesskhodam #1",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1",
       "type": "vless",
       "server": "fanlandv3.sorcepack.ir",
       "server_port": 52077,
@@ -131,12 +121,26 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇫🇮 FI | VLESS | @vmesskhodam #2",
+      "tag": "🇫🇮 FI | VLESS | @vmesskhodam #1",
       "type": "vless",
-      "server": "fanlandv2.sorcepack.ir",
-      "server_port": 52077,
-      "uuid": "aa9453dc-0e52-4628-8911-933c5286a9da",
-      "packet_encoding": "xudp"
+      "server": "pinto5.wubbalubbadubdubb.ir",
+      "server_port": 1011,
+      "uuid": "f2200cec-858a-47c3-8a29-002902319f42",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     }
   ],
   "route": {
