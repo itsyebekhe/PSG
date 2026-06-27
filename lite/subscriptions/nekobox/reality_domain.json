@@ -81,7 +81,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @filterk0sh #1",
-        "🇨🇾 CY | VLESS | @nn_vpn #1"
+        "🇨🇾 CY | VLESS | @nn_vpn #1",
+        "🇩🇪 DE | VLESS | @red2ray #1",
+        "🇮🇷 IR | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -93,7 +95,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @filterk0sh #1",
-        "🇨🇾 CY | VLESS | @nn_vpn #1"
+        "🇨🇾 CY | VLESS | @nn_vpn #1",
+        "🇩🇪 DE | VLESS | @red2ray #1",
+        "🇮🇷 IR | VLESS | @v2ray_free_conf #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -209,6 +213,45 @@
       "server_port": 80,
       "uuid": "59acb90b-fb9d-433b-a2f0-c039cf23dfc7",
       "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1",
+      "type": "vless",
+      "server": "de-1.coinbridge.nl",
+      "server_port": 443,
+      "uuid": "8658fe29-466b-41d9-b1f9-05c268054f87",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "khoroos4.helsinki2upload.shop",
+      "server_port": 443,
+      "uuid": "37449985-a4a7-4c16-ae6c-464e46b4939e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     }
   ],
   "route": {

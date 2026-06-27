@@ -23,7 +23,9 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
+  - {"name": "🇦🇪 AE | TROJAN | @outline_ir #1", "server": "94.140.0.100", "port": 443, "type": "trojan", "skip-cert-verify": false, "password": "MITIVPN"}
   - {"name": "🇦🇪 AE | VLESS | @rez1vpn #1", "server": "185.253.116.18", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "cbc9f9be-bd9c-4a8a-8439-ec606ea4803f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
+  - {"name": "🇦🇪 AE | VLESS | @v2rayprotocol #1", "server": "89.125.20.104", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "546d7622-cdf6-4d39-af34-9060c5720f57", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -37,7 +39,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
+      - '🇦🇪 AE | TROJAN | @outline_ir #1'
       - '🇦🇪 AE | VLESS | @rez1vpn #1'
+      - '🇦🇪 AE | VLESS | @v2rayprotocol #1'
 
   - name: 🌍 Global Media
     type: select
