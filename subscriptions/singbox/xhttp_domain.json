@@ -100,7 +100,8 @@
         "🇺🇸 US | VLESS | @kafing_2 #1",
         "🇺🇸 US | VLESS | @netmellianti #3",
         "🇬🇧 GB | VLESS | @v2aryng_vpn #1",
-        "🇺🇸 US | VLESS | @v2ray_free_conf #2"
+        "🇺🇸 US | VLESS | @v2ray_free_conf #1",
+        "🇺🇸 US | VLESS | @v2ray_free_conf #3"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -118,7 +119,8 @@
         "🇺🇸 US | VLESS | @kafing_2 #1",
         "🇺🇸 US | VLESS | @netmellianti #3",
         "🇬🇧 GB | VLESS | @v2aryng_vpn #1",
-        "🇺🇸 US | VLESS | @v2ray_free_conf #2"
+        "🇺🇸 US | VLESS | @v2ray_free_conf #1",
+        "🇺🇸 US | VLESS | @v2ray_free_conf #3"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -267,12 +269,29 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇺🇸 US | VLESS | @v2ray_free_conf #2",
+      "tag": "🇺🇸 US | VLESS | @v2ray_free_conf #1",
       "type": "vless",
-      "server": "mci.cloud-play.ir",
+      "server": "global.cloud-play.ir",
       "server_port": 80,
-      "uuid": "903123fd-84fd-45d9-abc8-08c83d704224",
+      "uuid": "dcbb2940-bb24-41fd-953e-2a24e34a9790",
       "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇺🇸 US | VLESS | @v2ray_free_conf #3",
+      "type": "vless",
+      "server": "fastly.videobazi.com",
+      "server_port": 443,
+      "uuid": "40bf0425-e1b5-41a0-aad8-b482d2aee498",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     }
   ],
   "route": {
