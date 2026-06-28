@@ -1,0 +1,62 @@
+# PSG Configuration File
+# All settings below are optional — missing values use built-in defaults.
+
+limits:
+  lite: 2
+  normal: 6
+
+timeouts:
+  http: 15
+  tcp: 2
+  dns: 10
+
+workers:
+  dns: 100
+  tcp: 500
+  logo: 20
+
+retry:
+  max_attempts: 3
+  backoff_base: 2
+
+rate_limit:
+  max_requests_per_domain: 50
+  window_seconds: 60
+
+dedup:
+  cache_file: seen_fps.json
+  max_age_days: 7
+
+source_discovery:
+  enabled: true
+  max_depth: 1
+
+validation:
+  enabled: true
+  required_vless_reality:
+    - pbk
+    - sid
+  required_vmess_fields:
+    - id
+    - add
+  required_trojan_fields:
+    - sni
+  required_ss_fields:
+    - method
+    - password
+
+ai_domains:
+  - openai.com
+  - chatgpt.com
+  - claude.com
+  - claude.ai
+
+fake_names:
+  - "#همکاری_ملی"
+  - "#جاویدشاه"
+  - "#KingRezaPahlavi"
+
+github:
+  user: itsyebekhe
+  repo: PSG
+  branch: main
