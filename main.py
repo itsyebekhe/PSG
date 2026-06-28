@@ -2041,7 +2041,7 @@ MATCH,PROXY
         os.makedirs(os.path.join(output_root, 'singbox'), exist_ok=True)
         os.makedirs(os.path.join(output_root, 'nekobox'), exist_ok=True)
 
-        input_files = glob_mod.glob(os.path.join(input_dir, '*'))
+        input_files = [f for f in glob_mod.glob(os.path.join(input_dir, '*')) if os.path.isfile(f)]
         if not input_files:
             logger.info(f"    No files found in {input_dir}")
             return
