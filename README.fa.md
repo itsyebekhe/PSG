@@ -1,40 +1,40 @@
-# 🛡️ PSG — Premium Subscription Generator
+# 🛡️ PSG — سازنده اشتراک پروکسی
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Configs-294-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Lite-153-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Channels-88-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Countries-25-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Updated-2026-06-28 23:24 UTC-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/کانفیگ-294-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/سبک-153-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/کانال-88-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/کشور-25-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/بروزرسانی-2026-06-28 23:24 UTC-red?style=for-the-badge" />
 </p>
 
-<p align="center"><a href="README.fa.md">🇮🇷 نسخه فارسی</a></p>
+<p align="center"><a href="README.md">🇬🇧 English Version</a></p>
 
 ---
 
-## 📊 Network Statistics
+## 📊 آمار شبکه
 
-| Metric | Value |
+| شرح | مقدار |
 |:---|:---:|
-| 🔢 Total Configs | **294** |
-| 🪶 Lite Configs | **153** |
-| 📡 Active Channels | **88** |
-| 🌍 Countries | **25** |
-| 🔌 Protocol Types | **4** |
-| ☁️ Cloudflare | **230** |
+| 🔢 کل کانفیگ‌ها | **294** |
+| 🪶 کانفیگ سبک | **153** |
+| 📡 کانال فعال | **88** |
+| 🌍 کشور | **25** |
+| 🔌 نوع پروتکل | **4** |
+| ☁️ کلودفلر | **230** |
 
-### ⚡ Protocol Distribution
+### ⚡ توزیع پروتکل‌ها
 
-| Protocol | Count | Share | Distribution |
+| پروتکل | تعداد | سهم | نمودار |
 |:---|:---:|:---:|:---|
 | 🔒 VLESS | 407 | 138.4% | `███████████████████████████` |
 | 🛡️ VMESS | 25 | 8.5% | `█░░░░░░░░░░░░░░░░░░░` |
 | 🔑 SS | 22 | 7.5% | `█░░░░░░░░░░░░░░░░░░░` |
 | 🌊 HY2 | 3 | 1.0% | `░░░░░░░░░░░░░░░░░░░░` |
 
-### 🌍 Top Countries
+### 🌍 برترین کشورها
 
-| Country | Configs | Share |
+| کشور | کانفیگ | سهم |
 |:---|:---:|:---:|
 | 🇽🇽 XX | 230 | 78.2% |
 | 🇺🇸 US | 55 | 18.7% |
@@ -52,21 +52,21 @@
 | 🇷🇺 RU | 3 | 1.0% |
 | 🇯🇵 JP | 2 | 0.7% |
 
-### 🚀 Speed Distribution
+### 🚀 توزیع سرعت
 
-| Tier | Count | Latency |
+| سطح | تعداد | تأخیر |
 |:---|:---:|:---|
-| ⚡ Fast | 439 | < 200ms |
-| 🟡 Medium | 18 | 200-500ms |
-| 🐢 Slow | 0 | > 500ms |
+| ⚡ سریع | 439 | کمتر از ۲۰۰ms |
+| 🟡 متوسط | 18 | ۲۰۰-۵۰۰ms |
+| 🐢 کند | 0 | بیش از ۵۰۰ms |
 
 ---
 
-## 🔗 Subscription Links
+## 🔗 لینک‌های اشتراک
 
-### 📌 Main Subscriptions
+### 📌 اشتراک اصلی
 
-| Format | Normal | Lite |
+| فرمت | لینک عادی | لینک سبک |
 |:---|:---|:---|
 | 🔗 Base64 | `[mix](https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/mix)` | `[mix](https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/xray/base64/mix)` |
 | ⚡ Clash | `[mix](https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/clash/mix)` | `[mix](https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/clash/mix)` |
@@ -75,9 +75,9 @@
 | 📦 Sing-box | `[mix.json](https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/singbox/mix.json)` | `[mix.json](https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/singbox/mix.json)` |
 | 🐱 Nekobox | `[mix.json](https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/nekobox/mix.json)` | `[mix.json](https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/nekobox/mix.json)` |
 
-### 🔌 By Protocol
+### 🔌 بر اساس پروتکل
 
-| Protocol | Normal | Lite |
+| پروتکل | عادی | سبک |
 |:---|:---|:---|
 | 🔒 VLESS | `https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/vless` | `https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/xray/base64/vless` |
 | 🛡️ VMESS | `https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/vmess` | `https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/xray/base64/vmess` |
@@ -86,9 +86,9 @@
 
 
 
-### 🌍 By Country (Top 20)
+### 🌍 بر اساس کشور (۲۰ کشور برتر)
 
-| Country | Link | Configs |
+| کشور | لینک | کانفیگ |
 |:---|:---|:---:|
 | 🇽🇽 XX | `https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/locations/base64/XX` | 230 configs |
 | 🇺🇸 US | `https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/locations/base64/US` | 55 configs |
@@ -113,9 +113,9 @@
 
 ---
 
-## 📡 Active Channels (88)
+## 📡 کانال‌های فعال (88)
 
-| # | Channel | Title | Configs |
+| # | کانال | عنوان | کانفیگ |
 |:---:|:---|:---|:---:|
 | 1 | @prrofile_purple | سرور - V2rayNG | 47 |
 | 2 | @kafing_2 | کافینگ رایگان | 38 |
@@ -150,20 +150,20 @@
 
 ---
 
-## 📱 Recommended Clients
+## 📱 کلاینت‌های پیشنهادی
 
-| Platform | Client | Format |
+| پلتفرم | کلاینت | فرمت |
 |:---|:---|:---|
-| 🤖 Android | [v2rayNG](https://github.com/2dust/v2rayNG), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
-| 🍎 iOS | [Streisand](https://github.com/nickinchina/streisand), [V2Box](https://github.com/nickinchina/v2box), [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932740345) | All |
-| 🪟 Windows | [v2rayN](https://github.com/2dust/v2rayN), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
-| 🍏 macOS | [V2Box](https://github.com/nickinchina/v2box), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
-| 🐧 Linux | [Nekoray](https://github.com/MatsuriDayo/nekoray), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
+| 🤖 اندروید | [v2rayNG](https://github.com/2dust/v2rayNG), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
+| 🍎 آیفون | [Streisand](https://github.com/nickinchina/streisand), [V2Box](https://github.com/nickinchina/v2box), [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932740345) | همه |
+| 🪟 ویندوز | [v2rayN](https://github.com/2dust/v2rayN), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
+| 🍏 مک | [V2Box](https://github.com/nickinchina/v2box), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
+| 🐧 لینوکس | [Nekoray](https://github.com/MatsuriDayo/nekoray), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
 
 ---
 
 <div align="center">
 
-**Auto-updated every 6 hours** · Built with ❤️ by [PSG](https://github.com/itsyebekhe/PSG)
+**بروزرسانی خودکار هر ۶ ساعت** · ساخته شده با ❤️ توسط [PSG](https://github.com/itsyebekhe/PSG)
 
 </div>
