@@ -109,7 +109,6 @@ PATHS = {
 
 URLS = {
     'GEOIP': "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb",
-    'PRIVATE': 'https://raw.githubusercontent.com/itsyebekhe/PSGP/main/private_configs.json',
     'GITHUB_LOGO': f"https://raw.githubusercontent.com/{CFG['github']['user']}/{CFG['github']['repo']}/main/channelsData/logos",
     'IP_API': 'http://ip-api.com/json/{}',
     'DOH_GOOGLE': 'https://dns.google/resolve?name={}&type=A',
@@ -536,7 +535,9 @@ class SubscriptionProcessor:
         self._geo_fallback_cache: Dict[str, str] = {}
 
     async def initialize(self):
-        self.session = aiohttp.ClientSession()
+        self.session = aiohttp.ClientSession(headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+        })
 
         dirs_to_clean = [
             PATHS['TEMP'],
@@ -583,9 +584,9 @@ class SubscriptionProcessor:
         self._rate_tracker[domain].append(now)
         return True
 
-    async def _fetch_url(self, url: str) -> Optional[bytes]:
+    async def _fetch_url(self, url: str, bypass_rate_limit: bool = False) -> Optional[bytes]:
         if not self.session: return None
-        if not self._check_rate_limit(url):
+        if not bypass_rate_limit and not self._check_rate_limit(url):
             return None
         for attempt in range(CONSTANTS['MAX_RETRIES']):
             try:
@@ -844,17 +845,14 @@ class SubscriptionProcessor:
         logo_tasks = [self._fetch_and_save_logo(k, u) for k, u in logos_to_fetch.items()]
         if logo_tasks: await asyncio.gather(*logo_tasks, return_exceptions=True)
 
-        await self._fetch_private_configs()
-
     async def _sort_sources_by_subscribers(self, sources: Dict[str, Dict]) -> Dict[str, Dict]:
-        """Fetch subscriber count for each channel in batches, then sort descending."""
+        """Fetch subscriber count for each channel sequentially, then sort descending."""
         sub_count_regex = re.compile(r'count[^>]*>([\d,\.]+[KkMm]?)<')
-        BATCH_SIZE = 10
-        BATCH_DELAY = 1.5
+        FETCH_DELAY = 0.3
 
         async def get_sub_count(key: str) -> Tuple[str, int]:
             url = f"https://t.me/s/{key}"
-            content = await self._fetch_url(url)
+            content = await self._fetch_url(url, bypass_rate_limit=True)
             if not content:
                 return key, 0
             text = content.decode('utf-8', errors='ignore')
@@ -874,21 +872,14 @@ class SubscriptionProcessor:
 
         keys = list(sources.keys())
         counts = {}
-        total_batches = (len(keys) + BATCH_SIZE - 1) // BATCH_SIZE
+        total = len(keys)
 
-        for i in range(0, len(keys), BATCH_SIZE):
-            batch = keys[i:i + BATCH_SIZE]
-            batch_num = i // BATCH_SIZE + 1
-            logger.info(f"  Fetching subscriber counts: batch {batch_num}/{total_batches} ({len(batch)} channels)")
-            batch_tasks = [get_sub_count(k) for k in batch]
-            results = await asyncio.gather(*batch_tasks, return_exceptions=True)
-            for r in results:
-                if isinstance(r, Exception):
-                    continue
-                k, c = r
-                counts[k] = c
-            if i + BATCH_SIZE < len(keys):
-                await asyncio.sleep(BATCH_DELAY)
+        for i, key in enumerate(keys):
+            if (i + 1) % 20 == 0 or i == 0:
+                logger.info(f"  Fetching subscriber counts: {i + 1}/{total}")
+            k, c = await get_sub_count(key)
+            counts[k] = c
+            await asyncio.sleep(FETCH_DELAY)
 
         sorted_keys = sorted(keys, key=lambda k: counts.get(k, 0), reverse=True)
         top3 = [(k, counts.get(k, 0)) for k in sorted_keys[:3] if counts.get(k, 0) > 0]
@@ -966,28 +957,6 @@ class SubscriptionProcessor:
                     with open(os.path.join(PATHS['TEMP'], 'logos', f"{key}.jpg"), 'wb') as f:
                         f.write(data)
                 except: pass
-
-    async def _fetch_private_configs(self):
-        data = await self._fetch_url(URLS['PRIVATE'])
-        if not data: return
-        try:
-            p_confs = json.loads(data)
-            for c_name, confs in p_confs.items():
-                c_name = c_name.strip()
-                if not c_name: continue
-                p_types = set()
-                for c in confs:
-                    ct = ConfigUtils.detect_type(c)
-                    if ct:
-                        p_types.add(ct)
-                        self.all_configs.append((c, c_name))
-                if c_name in self.channel_assets:
-                    curr_types = set(self.channel_assets[c_name]['types'])
-                    self.channel_assets[c_name]['types'] = sorted(list(curr_types | p_types))
-                else:
-                    self.channel_assets[c_name] = {'title': c_name, 'logo': '', 'types': sorted(list(p_types))}
-        except Exception as e:
-            logger.error(f"Error parsing private configs: {e}")
 
     def deduplicate_configs(self) -> Dict[str, Tuple[str, Dict, str]]:
         unique_map = {}
