@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇳🇱 NL | TROJAN | @nofiltering2 #1 = trojan, 45.131.4.118, 443, password = MiTiVPN, skip-cert-verify = true
 🇳🇱 NL | TROJAN | @nofiltering2 #2 = trojan, 45.131.4.118, 443, password = MiTiVPN, skip-cert-verify = true
-🇳🇱 NL | TROJAN | @outline_ir #1 = trojan, 45.131.4.118, 443, password = MiTiVPN, skip-cert-verify = true
 
 [Proxy Group]
-PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇳🇱 NL | TROJAN | @nofiltering2 #1, 🇳🇱 NL | TROJAN | @nofiltering2 #2, 🇳🇱 NL | TROJAN | @outline_ir #1
-PSG-AUTO = url-test, 🇳🇱 NL | TROJAN | @nofiltering2 #1, 🇳🇱 NL | TROJAN | @nofiltering2 #2, 🇳🇱 NL | TROJAN | @outline_ir #1
-PSG-FALLBACK = fallback, 🇳🇱 NL | TROJAN | @nofiltering2 #1, 🇳🇱 NL | TROJAN | @nofiltering2 #2, 🇳🇱 NL | TROJAN | @outline_ir #1
+PSG-MANUAL = select, PSG-AUTO, PSG-FALLBACK, 🇳🇱 NL | TROJAN | @nofiltering2 #1, 🇳🇱 NL | TROJAN | @nofiltering2 #2
+PSG-AUTO = url-test, 🇳🇱 NL | TROJAN | @nofiltering2 #1, 🇳🇱 NL | TROJAN | @nofiltering2 #2
+PSG-FALLBACK = fallback, 🇳🇱 NL | TROJAN | @nofiltering2 #1, 🇳🇱 NL | TROJAN | @nofiltering2 #2
 
 [Rule]
 GEOIP,IR,DIRECT

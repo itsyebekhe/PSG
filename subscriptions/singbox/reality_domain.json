@@ -101,7 +101,9 @@
         "🇨🇾 CY | VLESS | @nn_vpn #2",
         "🇷🇺 RU | VLESS | @v2raytg #1",
         "🇫🇮 FI | VLESS | @vmesskhodam #1",
-        "🇳🇱 NL | VLESS | @vpn_ioss #1"
+        "🇳🇱 NL | VLESS | @vpn_ioss #1",
+        "🇫🇷 FR | VLESS | @vpn_ioss #1",
+        "🇳🇱 NL | VLESS | @vpn_ioss #2"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -120,7 +122,9 @@
         "🇨🇾 CY | VLESS | @nn_vpn #2",
         "🇷🇺 RU | VLESS | @v2raytg #1",
         "🇫🇮 FI | VLESS | @vmesskhodam #1",
-        "🇳🇱 NL | VLESS | @vpn_ioss #1"
+        "🇳🇱 NL | VLESS | @vpn_ioss #1",
+        "🇫🇷 FR | VLESS | @vpn_ioss #1",
+        "🇳🇱 NL | VLESS | @vpn_ioss #2"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -337,6 +341,50 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @vpn_ioss #1",
+      "type": "vless",
+      "server": "greb.loralden.com",
+      "server_port": 443,
+      "uuid": "2065a8c9-8b3d-4dba-b0ce-90d649aa3da7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇳🇱 NL | VLESS | @vpn_ioss #2",
+      "type": "vless",
+      "server": "cdn.netraidly.ru",
+      "server_port": 40443,
+      "uuid": "4bf5a71c-d726-4585-b095-7396675706d5",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
         }
       }
     }
