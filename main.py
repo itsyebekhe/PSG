@@ -104,7 +104,8 @@ PATHS = {
     'OUTPUT_LITE': os.path.join(BASE_DIR, 'lite', 'subscriptions'),
     'CONFIG_TXT': os.path.join(BASE_DIR, 'config.txt'),
     'SEEN_FPS': os.path.join(BASE_DIR, CFG['dedup']['cache_file']),
-    'DISCOVERED': os.path.join(BASE_DIR, 'discovered_sources.json')
+    'DISCOVERED': os.path.join(BASE_DIR, 'discovered_sources.json'),
+    'CHANNEL_ACTIVITY': os.path.join(BASE_DIR, 'channel_activity.json')
 }
 
 URLS = {
@@ -532,6 +533,7 @@ class SubscriptionProcessor:
         self._seen_fps: Dict[str, float] = {}
         self._discovered_sources: Set[str] = set()
         self._geo_fallback_cache: Dict[str, str] = {}
+        self._channel_activity: Dict[str, Dict[str, Any]] = {}
 
     async def initialize(self):
         self.session = aiohttp.ClientSession(headers={
@@ -560,6 +562,7 @@ class SubscriptionProcessor:
         await self._setup_geoip()
         self._load_seen_fps()
         self._load_discovered_sources()
+        self._load_channel_activity()
 
     async def cleanup(self):
         if self.session:
@@ -569,6 +572,7 @@ class SubscriptionProcessor:
             self.geo_reader.close()
         self._save_seen_fps()
         self._save_discovered_sources()
+        self._save_channel_activity()
 
     # --- Feature #5: Rate Limiting ---
 
@@ -773,6 +777,42 @@ class SubscriptionProcessor:
         except Exception:
             pass
 
+    def _load_channel_activity(self):
+        if not os.path.exists(PATHS['CHANNEL_ACTIVITY']):
+            return
+        try:
+            with open(PATHS['CHANNEL_ACTIVITY'], 'r', encoding='utf-8') as f:
+                self._channel_activity = json.load(f)
+        except Exception:
+            pass
+
+    def _save_channel_activity(self):
+        try:
+            with open(PATHS['CHANNEL_ACTIVITY'], 'w', encoding='utf-8') as f:
+                json.dump(self._channel_activity, f, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
+
+    def _is_channel_stale(self, key: str) -> bool:
+        """Check if a channel has had 0 configs for 3+ days."""
+        STALE_DAYS = 3
+        entry = self._channel_activity.get(key)
+        if not entry:
+            return False
+        last_config_count = entry.get('config_count', 0)
+        last_seen = entry.get('last_seen', 0)
+        days_since = (time.time() - last_seen) / 86400
+        if last_config_count == 0 and days_since >= STALE_DAYS:
+            return True
+        return False
+
+    def _update_channel_activity(self, key: str, config_count: int):
+        """Update channel activity tracker."""
+        self._channel_activity[key] = {
+            'config_count': config_count,
+            'last_seen': time.time()
+        }
+
     # --- Feature #8: Automatic Source Discovery ---
 
     def _extract_discovered_channels(self, text: str, depth: int) -> List[str]:
@@ -828,10 +868,16 @@ class SubscriptionProcessor:
         keys = list(sources.keys())
         total = len(keys)
         results_with_counts = []
+        skipped_stale = 0
 
         for i, key in enumerate(keys):
+            # Skip channels with 0 configs for 3+ days
+            if self._is_channel_stale(key):
+                skipped_stale += 1
+                continue
+
             if (i + 1) % 20 == 0 or i == 0:
-                logger.info(f"  Fetching: {i + 1}/{total}")
+                logger.info(f"  Fetching: {i + 1}/{total} (skipped {skipped_stale} stale)")
 
             data = sources[key]
             url = data.get('subscription_url') or f"https://t.me/s/{key}"
@@ -886,6 +932,9 @@ class SubscriptionProcessor:
                 if t_match: title = t_match.group(1)
                 if i_match: logo = i_match.group(1)
 
+            # Update activity tracker
+            self._update_channel_activity(key, len(configs))
+
             self.channel_assets[key] = {
                 'title': title,
                 'logo': URLS['GITHUB_LOGO'] + f"/{key}.jpg" if logo else data.get('logo', ''),
@@ -894,6 +943,9 @@ class SubscriptionProcessor:
 
             results_with_counts.append((key, configs, logo, discovered, sub_count))
             await asyncio.sleep(FETCH_DELAY)
+
+        if skipped_stale:
+            logger.info(f"Skipped {skipped_stale} stale channels (0 configs for 3+ days)")
 
         # Sort by subscriber count descending
         results_with_counts.sort(key=lambda x: x[4], reverse=True)
@@ -984,10 +1036,10 @@ class SubscriptionProcessor:
         is_reachable, latency_ms = await self.check_reachability(ip, port)
         if not is_reachable: return None
 
-        country_code = self.get_geo_code(ip)
-        if country_code == "XX":
-            country_code = await self._geo_ip_api_fallback(ip)
         is_cf = ConfigUtils.is_cloudflare(ip)
+        country_code = self.get_geo_code(ip)
+        if country_code == "XX" and not is_cf:
+            country_code = await self._geo_ip_api_fallback(ip)
         flag = self.get_flag(country_code)
 
         return EnrichedConfig(
