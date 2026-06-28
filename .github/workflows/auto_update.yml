@@ -23,19 +23,16 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install aiohttp geoip2 pytz
+          pip install aiohttp geoip2 pyyaml
 
-      - name: Run Main Bot (Fetch & Deduplicate)
+      - name: Run Main Bot
         env: 
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: python main.py
 
-      - name: Run Converter (Clash, Singbox, etc.)
-        run: python convert.py
-
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-update subscriptions [skip ci]"
-          file_pattern: 'subscriptions/* lite/* config.txt api/* channelsData/channelsAssets.json'
+          file_pattern: 'subscriptions/* lite/* config.txt api/* channelsData/channelsAssets.json seen_fps.json discovered_sources.json'
