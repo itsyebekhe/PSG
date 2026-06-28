@@ -129,6 +129,7 @@ CONSTANTS = {
     'FAKE_NAMES': CFG['fake_names'],
     'CLOUDFLARE_CIDRS': CFG['cloudflare_cidrs'],
     'AI_DOMAINS': CFG['ai_domains'],
+    'CDN_DOMAINS': CFG.get('cdn_domains', []),
     'GITHUB_USER': CFG['github']['user'],
     'GITHUB_REPO': CFG['github']['repo'],
     'GITHUB_BRANCH': CFG['github']['branch'],
@@ -1261,6 +1262,64 @@ class SubscriptionProcessor:
         except Exception as e:
             logger.error(f"Error sending Telegram notification: {e}")
 
+    async def generate_cdn_configs(self) -> List[str]:
+        """Resolve CDN domains to IPs and generate vless WS configs."""
+        cdn_domains = CONSTANTS['CDN_DOMAINS']
+        if not cdn_domains:
+            return []
+
+        logger.info(f"Generating CDN configs for {len(cdn_domains)} domains...")
+        configs = []
+
+        for domain in cdn_domains:
+            ips = await self._resolve_all_ips(domain)
+            if not ips:
+                logger.warning(f"  No IPs resolved for {domain}")
+                continue
+
+            for ip in ips:
+                # Generate vless:// config with WS transport
+                uuid = "00000000-0000-0000-0000-000000000000"
+                port = 443
+                params = {
+                    'security': 'tls',
+                    'sni': domain,
+                    'fp': 'chrome',
+                    'type': 'ws',
+                    'host': domain,
+                    'path': '/cdn-cgi/trace',
+                    'alpn': 'h2,http/1.1',
+                    'allowInsecure': '0'
+                }
+                query = '&'.join(f"{k}={quote(str(v))}" for k, v in params.items())
+                name = f"CDN {domain} ({ip})"
+                config = f"vless://{uuid}@{ip}:{port}?{query}#{quote(name)}"
+                configs.append(config)
+
+            logger.info(f"  {domain}: {len(ips)} IPs resolved → {len(ips)} configs")
+
+        return configs
+
+    async def _resolve_all_ips(self, domain: str) -> List[str]:
+        """Resolve a domain to all its A records."""
+        ips = []
+        try:
+            loop = asyncio.get_running_loop()
+            results = await loop.getaddrinfo(
+                domain, None,
+                family=socket.AF_INET,
+                type=socket.SOCK_STREAM
+            )
+            seen = set()
+            for r in results:
+                ip = r[4][0]
+                if ip not in seen:
+                    seen.add(ip)
+                    ips.append(ip)
+        except Exception as e:
+            logger.warning(f"  DNS resolution failed for {domain}: {e}")
+        return ips
+
     def generate_readmes(self, final_list: List[str], lite_list: List[str], groups: Dict, api_data: List):
         logger.info("7. Generating README files...")
         base_url = f"https://raw.githubusercontent.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}/{CONSTANTS['GITHUB_BRANCH']}"
@@ -1289,6 +1348,12 @@ class SubscriptionProcessor:
         sorted_countries = sorted(country_counts.items(), key=lambda x: x[1], reverse=True)[:20]
         sorted_channels = sorted(channel_counts.items(), key=lambda x: x[1], reverse=True)[:30]
 
+        def clean_title(title: str) -> str:
+            title = re.sub(r'<[^>]+>', '', title)
+            title = re.sub(r'[^\w\s\-@#.!?]', '', title)
+            title = re.sub(r'\s+', ' ', title).strip()
+            return title[:35] if title else ''
+
         def country_flag(code: str) -> str:
             if not code or len(code) != 2: return ""
             return chr(127397 + ord(code[0])) + chr(127397 + ord(code[1]))
@@ -1296,65 +1361,57 @@ class SubscriptionProcessor:
         def protocol_emoji(p: str) -> str:
             return {'vless': '🔒', 'vmess': '🛡️', 'trojan': '🐴', 'ss': '🔑', 'reality': '⚡', 'xhttp': '🚀', 'tuic': '🎯', 'hy2': '🌊'}.get(p, '📡')
 
+        def bar_chart(count: int, max_count: int, width: int = 20) -> str:
+            if max_count == 0: return ""
+            filled = int((count / max_count) * width)
+            return "█" * filled + "░" * (width - filled)
+
         now = datetime.now().strftime('%Y-%m-%d %H:%M UTC')
 
-        sub_links = f"""| Format | Normal | Lite |
-|:---|:---|:---|
-| 🔗 Base64 | `[mix]({base_url}/subscriptions/xray/base64/mix)` | `[mix]({base_url}/lite/subscriptions/xray/base64/mix)` |
-| ⚡ Clash | `[mix]({base_url}/subscriptions/clash/mix)` | `[mix]({base_url}/lite/subscriptions/clash/mix)` |
-| 🧠 Clash.Meta | `[mix]({base_url}/subscriptions/meta/mix)` | `[mix]({base_url}/lite/subscriptions/meta/mix)` |
-| 🏄 Surfboard | `[mix]({base_url}/subscriptions/surfboard/mix)` | `[mix]({base_url}/lite/subscriptions/surfboard/mix)` |
-| 📦 Sing-box | `[mix.json]({base_url}/subscriptions/singbox/mix.json)` | `[mix.json]({base_url}/lite/subscriptions/singbox/mix.json)` |
-| 🐱 Nekobox | `[mix.json]({base_url}/subscriptions/nekobox/mix.json)` | `[mix.json]({base_url}/lite/subscriptions/nekobox/mix.json)` |"""
-
-        proto_links_rows = []
-        for proto, count in sorted_protocols:
-            emoji = protocol_emoji(proto)
-            proto_links_rows.append(f"| {emoji} {proto.upper()} | `{base_url}/subscriptions/xray/base64/{proto}` | `{base_url}/lite/subscriptions/xray/base64/{proto}` |")
-        proto_links = "\n".join(proto_links_rows)
-
-        country_links_rows = []
-        for code, count in sorted_countries:
-            flag = country_flag(code)
-            country_links_rows.append(f"| {flag} {code} | `{base_url}/subscriptions/locations/base64/{code}` | {count} configs |")
-        country_links = "\n".join(country_links_rows)
-
-        channel_rows = []
-        for i, (chan, count) in enumerate(sorted_channels, 1):
-            assets = self.channel_assets.get(chan, {})
-            title = assets.get('title', chan)[:40]
-            channel_rows.append(f"| {i} | @{chan} | {title} | {count} |")
-        channel_table = "\n".join(channel_rows)
-
-        proto_stats_rows = []
+        # Protocol chart
+        max_proto = sorted_protocols[0][1] if sorted_protocols else 1
+        proto_chart_rows = []
         for proto, count in sorted_protocols:
             emoji = protocol_emoji(proto)
             pct = (count / total * 100) if total else 0
-            bar_len = int(pct / 5)
-            bar = "█" * bar_len + "░" * (20 - bar_len)
-            proto_stats_rows.append(f"| {emoji} {proto.upper()} | {count} | {pct:.1f}% | `{bar}` |")
-        proto_stats = "\n".join(proto_stats_rows)
+            chart = bar_chart(count, max_proto)
+            proto_chart_rows.append(f"> {emoji} **{proto.upper()}** — {count:,} ({pct:.1f}%)\n> `{chart}`\n")
+        proto_chart = "\n".join(proto_chart_rows)
 
-        country_stats_rows = []
+        # Country chart
+        max_country = sorted_countries[0][1] if sorted_countries else 1
+        country_chart_rows = []
         for code, count in sorted_countries[:15]:
             flag = country_flag(code)
             pct = (count / total * 100) if total else 0
-            country_stats_rows.append(f"| {flag} {code} | {count} | {pct:.1f}% |")
-        country_stats = "\n".join(country_stats_rows)
+            chart = bar_chart(count, max_country, 15)
+            country_chart_rows.append(f"> {flag} **{code}** — {count:,} ({pct:.1f}%)\n> `{chart}`\n")
+        country_chart = "\n".join(country_chart_rows)
 
-        ai_links = ""
-        if groups.get('ai'):
-            ai_links = f"""
-## 🤖 AI Service Configs
+        # Channel list
+        channel_items = []
+        for i, (chan, count) in enumerate(sorted_channels, 1):
+            assets = self.channel_assets.get(chan, {})
+            title = clean_title(assets.get('title', ''))
+            channel_items.append(f"{i}. **@{chan}** — {count} configs {'— ' + title if title else ''}")
+        channel_list = "\n".join(channel_items)
 
-Configs optimized for **OpenAI / ChatGPT / Claude**:
+        # CDN domains
+        cdn_domains = CONSTANTS['CDN_DOMAINS']
+        cdn_section = ""
+        if cdn_domains:
+            cdn_domain_list = ", ".join(cdn_domains)
+            cdn_section = f"""
+## 🌐 CDN Domain Configs
 
-| Format | Link |
-|:---|:---|
-| Base64 | `{base_url}/subscriptions/xray/base64/openai` |
-| Clash | `{base_url}/subscriptions/clash/openai` |
-| Sing-box | `{base_url}/subscriptions/singbox/openai.json` |"""
+Configs for **{cdn_domain_list}** — resolved IPs with WebSocket transport:
 
+> 🔗 [Base64 Normal]({base_url}/subscriptions/xray/base64/cdn) · [Base64 Lite]({base_url}/lite/subscriptions/xray/base64/cdn)
+> ⚡ [Clash Normal]({base_url}/subscriptions/clash/cdn) · [Clash Lite]({base_url}/lite/subscriptions/clash/cdn)
+> 📦 [Sing-box Normal]({base_url}/subscriptions/singbox/cdn.json) · [Sing-box Lite]({base_url}/lite/subscriptions/singbox/cdn.json)
+"""
+
+        # === ENGLISH README ===
         readme_en = f"""# 🛡️ PSG — Premium Subscription Generator
 
 <p align="center">
@@ -1371,34 +1428,21 @@ Configs optimized for **OpenAI / ChatGPT / Claude**:
 
 ## 📊 Network Statistics
 
-| Metric | Value |
-|:---|:---:|
-| 🔢 Total Configs | **{total:,}** |
-| 🪶 Lite Configs | **{total_lite:,}** |
-| 📡 Active Channels | **{total_channels}** |
-| 🌍 Countries | **{total_countries}** |
-| 🔌 Protocol Types | **{total_protocols}** |
-| ☁️ Cloudflare | **{cf_count:,}** |
+> 🔢 **{total:,}** configs · 🪶 **{total_lite:,}** lite · 📡 **{total_channels}** channels · 🌍 **{total_countries}** countries · ☁️ **{cf_count:,}** Cloudflare
 
 ### ⚡ Protocol Distribution
 
-| Protocol | Count | Share | Distribution |
-|:---|:---:|:---:|:---|
-{proto_stats}
+{proto_chart}
 
 ### 🌍 Top Countries
 
-| Country | Configs | Share |
-|:---|:---:|:---:|
-{country_stats}
+{country_chart}
 
 ### 🚀 Speed Distribution
 
-| Tier | Count | Latency |
-|:---|:---:|:---|
-| ⚡ Fast | {speed_tiers['fast']:,} | < 200ms |
-| 🟡 Medium | {speed_tiers['medium']:,} | 200-500ms |
-| 🐢 Slow | {speed_tiers['slow']:,} | > 500ms |
+> ⚡ **Fast** — {speed_tiers['fast']:,} (< 200ms)
+> 🟡 **Medium** — {speed_tiers['medium']:,} (200-500ms)
+> 🐢 **Slow** — {speed_tiers['slow']:,} (> 500ms)
 
 ---
 
@@ -1406,41 +1450,61 @@ Configs optimized for **OpenAI / ChatGPT / Claude**:
 
 ### 📌 Main Subscriptions
 
-{sub_links}
+| Format | Normal | Lite |
+|:---|:---|:---|
+| 🔗 Base64 | [mix]({base_url}/subscriptions/xray/base64/mix) | [mix]({base_url}/lite/subscriptions/xray/base64/mix) |
+| ⚡ Clash | [mix]({base_url}/subscriptions/clash/mix) | [mix]({base_url}/lite/subscriptions/clash/mix) |
+| 🧠 Clash.Meta | [mix]({base_url}/subscriptions/meta/mix) | [mix]({base_url}/lite/subscriptions/meta/mix) |
+| 🏄 Surfboard | [mix]({base_url}/subscriptions/surfboard/mix) | [mix]({base_url}/lite/subscriptions/surfboard/mix) |
+| 📦 Sing-box | [mix.json]({base_url}/subscriptions/singbox/mix.json) | [mix.json]({base_url}/lite/subscriptions/singbox/mix.json) |
+| 🐱 Nekobox | [mix.json]({base_url}/subscriptions/nekobox/mix.json) | [mix.json]({base_url}/lite/subscriptions/nekobox/mix.json) |
 
 ### 🔌 By Protocol
 
 | Protocol | Normal | Lite |
 |:---|:---|:---|
-{proto_links}
+| 🔒 VLESS | [vless]({base_url}/subscriptions/xray/base64/vless) | [vless]({base_url}/lite/subscriptions/xray/base64/vless) |
+| 🛡️ VMess | [vmess]({base_url}/subscriptions/xray/base64/vmess) | [vmess]({base_url}/lite/subscriptions/xray/base64/vmess) |
+| 🐴 Trojan | [trojan]({base_url}/subscriptions/xray/base64/trojan) | [trojan]({base_url}/lite/subscriptions/xray/base64/trojan) |
+| 🔑 Shadowsocks | [ss]({base_url}/subscriptions/xray/base64/ss) | [ss]({base_url}/lite/subscriptions/xray/base64/ss) |
+| ⚡ Reality | [reality]({base_url}/subscriptions/xray/base64/reality) | [reality]({base_url}/lite/subscriptions/xray/base64/reality) |
+| 🚀 XHTTP | [xhttp]({base_url}/subscriptions/xray/base64/xhttp) | [xhttp]({base_url}/lite/subscriptions/xray/base64/xhttp) |
 
-{ai_links}
-
+{cdn_section}
 ### 🌍 By Country (Top 20)
 
-| Country | Link | Configs |
-|:---|:---|:---:|
-{country_links}
+| Country | Link |
+|:---|:---|
+| 🇺🇸 US | [US]({base_url}/subscriptions/locations/base64/US) |
+| 🇩🇪 DE | [DE]({base_url}/subscriptions/locations/base64/DE) |
+| 🇳🇱 NL | [NL]({base_url}/subscriptions/locations/base64/NL) |
+| 🇬🇧 GB | [GB]({base_url}/subscriptions/locations/base64/GB) |
+| 🇫🇷 FR | [FR]({base_url}/subscriptions/locations/base64/FR) |
+| 🇯🇵 JP | [JP]({base_url}/subscriptions/locations/base64/JP) |
+| 🇸🇬 SG | [SG]({base_url}/subscriptions/locations/base64/SG) |
+| 🇭🇰 HK | [HK]({base_url}/subscriptions/locations/base64/HK) |
+| 🇨🇦 CA | [CA]({base_url}/subscriptions/locations/base64/CA) |
+| 🇦🇺 AU | [AU]({base_url}/subscriptions/locations/base64/AU) |
+
+> More countries available in [locations/base64/]({base_url}/subscriptions/locations/base64/)
 
 ---
 
 ## 📡 Active Channels ({total_channels})
 
-| # | Channel | Title | Configs |
-|:---:|:---|:---|:---:|
-{channel_table}
+{channel_list}
 
 ---
 
 ## 📱 Recommended Clients
 
-| Platform | Client | Format |
-|:---|:---|:---|
-| 🤖 Android | [v2rayNG](https://github.com/2dust/v2rayNG), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
-| 🍎 iOS | [Streisand](https://github.com/nickinchina/streisand), [V2Box](https://github.com/nickinchina/v2box), [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932740345) | All |
-| 🪟 Windows | [v2rayN](https://github.com/2dust/v2rayN), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
-| 🍏 macOS | [V2Box](https://github.com/nickinchina/v2box), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
-| 🐧 Linux | [Nekoray](https://github.com/MatsuriDayo/nekoray), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
+| Platform | Client |
+|:---|:---|
+| 🤖 Android | [v2rayNG](https://github.com/2dust/v2rayNG) · [Hiddify](https://github.com/hiddify/hiddify-app) |
+| 🍎 iOS | [Streisand](https://github.com/nickinchina/streisand) · [V2Box](https://github.com/nickinchina/v2box) · [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932740345) |
+| 🪟 Windows | [v2rayN](https://github.com/2dust/v2rayN) · [Hiddify](https://github.com/hiddify/hiddify-app) |
+| 🍏 macOS | [V2Box](https://github.com/nickinchina/v2box) · [Hiddify](https://github.com/hiddify/hiddify-app) |
+| 🐧 Linux | [Nekoray](https://github.com/MatsuriDayo/nekoray) · [Hiddify](https://github.com/hiddify/hiddify-app) |
 
 ---
 
@@ -1451,6 +1515,7 @@ Configs optimized for **OpenAI / ChatGPT / Claude**:
 </div>
 """
 
+        # === FARSI README ===
         readme_fa = f"""# 🛡️ PSG — سازنده اشتراک پروکسی
 
 <p align="center">
@@ -1467,34 +1532,21 @@ Configs optimized for **OpenAI / ChatGPT / Claude**:
 
 ## 📊 آمار شبکه
 
-| شرح | مقدار |
-|:---|:---:|
-| 🔢 کل کانفیگ‌ها | **{total:,}** |
-| 🪶 کانفیگ سبک | **{total_lite:,}** |
-| 📡 کانال فعال | **{total_channels}** |
-| 🌍 کشور | **{total_countries}** |
-| 🔌 نوع پروتکل | **{total_protocols}** |
-| ☁️ کلودفلر | **{cf_count:,}** |
+> 🔢 **{total:,}** کانفیگ · 🪶 **{total_lite:,}** سبک · 📡 **{total_channels}** کانال · 🌍 **{total_countries}** کشور · ☁️ **{cf_count:,}** کلودفلر
 
 ### ⚡ توزیع پروتکل‌ها
 
-| پروتکل | تعداد | سهم | نمودار |
-|:---|:---:|:---:|:---|
-{proto_stats}
+{proto_chart}
 
 ### 🌍 برترین کشورها
 
-| کشور | کانفیگ | سهم |
-|:---|:---:|:---:|
-{country_stats}
+{country_chart}
 
 ### 🚀 توزیع سرعت
 
-| سطح | تعداد | تأخیر |
-|:---|:---:|:---|
-| ⚡ سریع | {speed_tiers['fast']:,} | کمتر از ۲۰۰ms |
-| 🟡 متوسط | {speed_tiers['medium']:,} | ۲۰۰-۵۰۰ms |
-| 🐢 کند | {speed_tiers['slow']:,} | بیش از ۵۰۰ms |
+> ⚡ **سریع** — {speed_tiers['fast']:,} (کمتر از ۲۰۰ms)
+> 🟡 **متوسط** — {speed_tiers['medium']:,} (۲۰۰-۵۰۰ms)
+> 🐢 **کند** — {speed_tiers['slow']:,} (بیش از ۵۰۰ms)
 
 ---
 
@@ -1502,48 +1554,61 @@ Configs optimized for **OpenAI / ChatGPT / Claude**:
 
 ### 📌 اشتراک اصلی
 
-| فرمت | لینک عادی | لینک سبک |
+| فرمت | عادی | سبک |
 |:---|:---|:---|
-| 🔗 Base64 | `[mix]({base_url}/subscriptions/xray/base64/mix)` | `[mix]({base_url}/lite/subscriptions/xray/base64/mix)` |
-| ⚡ Clash | `[mix]({base_url}/subscriptions/clash/mix)` | `[mix]({base_url}/lite/subscriptions/clash/mix)` |
-| 🧠 Clash.Meta | `[mix]({base_url}/subscriptions/meta/mix)` | `[mix]({base_url}/lite/subscriptions/meta/mix)` |
-| 🏄 Surfboard | `[mix]({base_url}/subscriptions/surfboard/mix)` | `[mix]({base_url}/lite/subscriptions/surfboard/mix)` |
-| 📦 Sing-box | `[mix.json]({base_url}/subscriptions/singbox/mix.json)` | `[mix.json]({base_url}/lite/subscriptions/singbox/mix.json)` |
-| 🐱 Nekobox | `[mix.json]({base_url}/subscriptions/nekobox/mix.json)` | `[mix.json]({base_url}/lite/subscriptions/nekobox/mix.json)` |
+| 🔗 Base64 | [mix]({base_url}/subscriptions/xray/base64/mix) | [mix]({base_url}/lite/subscriptions/xray/base64/mix) |
+| ⚡ Clash | [mix]({base_url}/subscriptions/clash/mix) | [mix]({base_url}/lite/subscriptions/clash/mix) |
+| 🧠 Clash.Meta | [mix]({base_url}/subscriptions/meta/mix) | [mix]({base_url}/lite/subscriptions/meta/mix) |
+| 🏄 Surfboard | [mix]({base_url}/subscriptions/surfboard/mix) | [mix]({base_url}/lite/subscriptions/surfboard/mix) |
+| 📦 Sing-box | [mix.json]({base_url}/subscriptions/singbox/mix.json) | [mix.json]({base_url}/lite/subscriptions/singbox/mix.json) |
+| 🐱 Nekobox | [mix.json]({base_url}/subscriptions/nekobox/mix.json) | [mix.json]({base_url}/lite/subscriptions/nekobox/mix.json) |
 
 ### 🔌 بر اساس پروتکل
 
 | پروتکل | عادی | سبک |
 |:---|:---|:---|
-{proto_links}
+| 🔒 VLESS | [vless]({base_url}/subscriptions/xray/base64/vless) | [vless]({base_url}/lite/subscriptions/xray/base64/vless) |
+| 🛡️ VMess | [vmess]({base_url}/subscriptions/xray/base64/vmess) | [vmess]({base_url}/lite/subscriptions/xray/base64/vmess) |
+| 🐴 Trojan | [trojan]({base_url}/subscriptions/xray/base64/trojan) | [trojan]({base_url}/lite/subscriptions/xray/base64/trojan) |
+| 🔑 Shadowsocks | [ss]({base_url}/subscriptions/xray/base64/ss) | [ss]({base_url}/lite/subscriptions/xray/base64/ss) |
+| ⚡ Reality | [reality]({base_url}/subscriptions/xray/base64/reality) | [reality]({base_url}/lite/subscriptions/xray/base64/reality) |
+| 🚀 XHTTP | [xhttp]({base_url}/subscriptions/xray/base64/xhttp) | [xhttp]({base_url}/lite/subscriptions/xray/base64/xhttp) |
 
-{ai_links.replace('AI Service Configs', 'سرویس‌های هوش مصنوعی').replace('Configs optimized for **OpenAI / ChatGPT / Claude**:', 'کانفیگ‌های بهینه برای **OpenAI / ChatGPT / Claude**:') if ai_links else ''}
-
+{cdn_section.replace('CDN Domain Configs', 'کانفیگ‌های دامنه CDN').replace('resolved IPs with WebSocket transport', 'IPهای رزولو شده با انتقال WebSocket') if cdn_section else ''}
 ### 🌍 بر اساس کشور (۲۰ کشور برتر)
 
-| کشور | لینک | کانفیگ |
-|:---|:---|:---:|
-{country_links}
+| کشور | لینک |
+|:---|:---|
+| 🇺🇸 US | [US]({base_url}/subscriptions/locations/base64/US) |
+| 🇩🇪 DE | [DE]({base_url}/subscriptions/locations/base64/DE) |
+| 🇳🇱 NL | [NL]({base_url}/subscriptions/locations/base64/NL) |
+| 🇬🇧 GB | [GB]({base_url}/subscriptions/locations/base64/GB) |
+| 🇫🇷 FR | [FR]({base_url}/subscriptions/locations/base64/FR) |
+| 🇯🇵 JP | [JP]({base_url}/subscriptions/locations/base64/JP) |
+| 🇸🇬 SG | [SG]({base_url}/subscriptions/locations/base64/SG) |
+| 🇭🇰 HK | [HK]({base_url}/subscriptions/locations/base64/HK) |
+| 🇨🇦 CA | [CA]({base_url}/subscriptions/locations/base64/CA) |
+| 🇦🇺 AU | [AU]({base_url}/subscriptions/locations/base64/AU) |
+
+> کشورهای بیشتر در [locations/base64/]({base_url}/subscriptions/locations/base64/)
 
 ---
 
 ## 📡 کانال‌های فعال ({total_channels})
 
-| # | کانال | عنوان | کانفیگ |
-|:---:|:---|:---|:---:|
-{channel_table}
+{channel_list}
 
 ---
 
 ## 📱 کلاینت‌های پیشنهادی
 
-| پلتفرم | کلاینت | فرمت |
-|:---|:---|:---|
-| 🤖 اندروید | [v2rayNG](https://github.com/2dust/v2rayNG), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
-| 🍎 آیفون | [Streisand](https://github.com/nickinchina/streisand), [V2Box](https://github.com/nickinchina/v2box), [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932740345) | همه |
-| 🪟 ویندوز | [v2rayN](https://github.com/2dust/v2rayN), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
-| 🍏 مک | [V2Box](https://github.com/nickinchina/v2box), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
-| 🐧 لینوکس | [Nekoray](https://github.com/MatsuriDayo/nekoray), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
+| پلتفرم | کلاینت |
+|:---|:---|
+| 🤖 اندروید | [v2rayNG](https://github.com/2dust/v2rayNG) · [Hiddify](https://github.com/hiddify/hiddify-app) |
+| 🍎 آیفون | [Streisand](https://github.com/nickinchina/streisand) · [V2Box](https://github.com/nickinchina/v2box) · [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932740345) |
+| 🪟 ویندوز | [v2rayN](https://github.com/2dust/v2rayN) · [Hiddify](https://github.com/hiddify/hiddify-app) |
+| 🍏 مک | [V2Box](https://github.com/nickinchina/v2box) · [Hiddify](https://github.com/hiddify/hiddify-app) |
+| 🐧 لینوکس | [Nekoray](https://github.com/MatsuriDayo/nekoray) · [Hiddify](https://github.com/hiddify/hiddify-app) |
 
 ---
 
@@ -2072,14 +2137,23 @@ async def main():
         logger.info("4. Writing Outputs")
         processor.write_output(final, lite, groups, api_data)
 
-        logger.info("5. Converting to Export Formats")
+        logger.info("5. Generating CDN Configs")
+        cdn_configs = await processor.generate_cdn_configs()
+        if cdn_configs:
+            cdn_dir = os.path.join(PATHS['OUTPUT_SUBS'], 'xray', 'base64')
+            processor._write_files(cdn_dir, 'cdn', cdn_configs, "PSG | CDN Domains")
+            cdn_lite_dir = os.path.join(PATHS['OUTPUT_LITE'], 'xray', 'base64')
+            processor._write_files(cdn_lite_dir, 'cdn', cdn_configs, "PSG Lite | CDN Domains")
+            logger.info(f"  Generated {len(cdn_configs)} CDN configs")
+
+        logger.info("6. Converting to Export Formats")
         converter = ConfigConverter()
         converter.convert_outputs(PATHS['OUTPUT_SUBS'], PATHS['OUTPUT_LITE'])
 
-        logger.info("6. Generating READMEs")
+        logger.info("7. Generating READMEs")
         processor.generate_readmes(final, lite, groups, api_data)
 
-        logger.info("7. Sending Notification")
+        logger.info("8. Sending Notification")
         await processor.send_telegram_notification(len(final), len(lite))
 
     finally:
