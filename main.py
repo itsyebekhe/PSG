@@ -1262,42 +1262,63 @@ class SubscriptionProcessor:
         except Exception as e:
             logger.error(f"Error sending Telegram notification: {e}")
 
-    async def generate_cdn_configs(self) -> List[str]:
-        """Resolve CDN domains to IPs and generate vless WS configs."""
+    async def generate_cdn_configs(self, final_list: List[str]) -> List[str]:
+        """Take all CF WS configs, replace their server address with resolved CDN domain IPs."""
         cdn_domains = CONSTANTS['CDN_DOMAINS']
         if not cdn_domains:
             return []
 
-        logger.info(f"Generating CDN configs for {len(cdn_domains)} domains...")
-        configs = []
-
+        # Resolve all CDN domain IPs (skip raw IPs)
+        all_ips: List[str] = []
         for domain in cdn_domains:
-            ips = await self._resolve_all_ips(domain)
-            if not ips:
-                logger.warning(f"  No IPs resolved for {domain}")
+            try:
+                ipaddress.ip_address(domain)
+                logger.info(f"  CDN {domain} (raw IP, no resolution needed)")
+                all_ips.append(domain)
                 continue
+            except ValueError:
+                pass
+            ips = await self._resolve_all_ips(domain)
+            if ips:
+                logger.info(f"  CDN {domain} → {', '.join(ips)}")
+                all_ips.extend(ips)
 
-            for ip in ips:
-                # Generate vless:// config with WS transport
-                uuid = "00000000-0000-0000-0000-000000000000"
-                port = 443
-                params = {
-                    'security': 'tls',
-                    'sni': domain,
-                    'fp': 'chrome',
-                    'type': 'ws',
-                    'host': domain,
-                    'path': '/cdn-cgi/trace',
-                    'alpn': 'h2,http/1.1',
-                    'allowInsecure': '0'
-                }
+        if not all_ips:
+            logger.warning("  No IPs resolved for any CDN domain")
+            return []
+
+        # Find all CF WS configs
+        cf_ws_configs = []
+        for config_str in final_list:
+            if not config_str.startswith('vless://'):
+                continue
+            if 'type=ws' not in config_str:
+                continue
+            parsed = ConfigParser.parse(config_str)
+            if not parsed:
+                continue
+            cf_ws_configs.append((config_str, parsed))
+
+        if not cf_ws_configs:
+            logger.info("  No CF WS configs found")
+            return []
+
+        logger.info(f"  Replacing addresses in {len(cf_ws_configs)} CF WS configs with {len(all_ips)} CDN IPs")
+
+        # For each CF WS config, replace server address with each CDN IP
+        configs = []
+        for config_str, parsed in cf_ws_configs:
+            user = parsed.get('user', '')
+            port = parsed.get('port', '443')
+            params = parsed.get('params', {})
+
+            for ip in all_ips:
                 query = '&'.join(f"{k}={quote(str(v))}" for k, v in params.items())
-                name = f"CDN {domain} ({ip})"
-                config = f"vless://{uuid}@{ip}:{port}?{query}#{quote(name)}"
+                name = f"CDN {ip}"
+                config = f"vless://{user}@{ip}:{port}?{query}#{quote(name)}"
                 configs.append(config)
 
-            logger.info(f"  {domain}: {len(ips)} IPs resolved → {len(ips)} configs")
-
+        logger.info(f"  Generated {len(configs)} CDN configs")
         return configs
 
     async def _resolve_all_ips(self, domain: str) -> List[str]:
@@ -2138,7 +2159,7 @@ async def main():
         processor.write_output(final, lite, groups, api_data)
 
         logger.info("5. Generating CDN Configs")
-        cdn_configs = await processor.generate_cdn_configs()
+        cdn_configs = await processor.generate_cdn_configs(final)
         if cdn_configs:
             cdn_dir = os.path.join(PATHS['OUTPUT_SUBS'], 'xray', 'base64')
             processor._write_files(cdn_dir, 'cdn', cdn_configs, "PSG | CDN Domains")
