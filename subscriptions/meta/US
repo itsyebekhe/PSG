@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]", "server": "104.129.167.161", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "401374e6-df77-41fb-f638-dad8184f175b", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "pqh23v4.hiddendom.shop", "grpc-opts": {"grpc-service-name": ""}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
