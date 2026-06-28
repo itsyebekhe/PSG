@@ -1,7 +1,0 @@
-rule-providers:
-  ir_domains: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/bootmortis/iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
-  ir_cidr: {type: http, format: text, behavior: ipcidr, path: ./ruleset/ircidr.txt, url: https://github.com/bootmortis/iran-clash-rules/releases/latest/download/ircidr.txt, interval: 86400}
-  
-meta_rules:
-  - RULE-SET,ir_domains,DIRECT
-  - RULE-SET,ir_cidr,DIRECT
