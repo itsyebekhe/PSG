@@ -528,6 +528,43 @@
             width: 115% !important;
             /* Compensate for scale */
         }
+
+        /* IMPROVED UX: Better focus states */
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(35, 158, 79, 0.3);
+        }
+
+        /* IMPROVED UX: Smooth page transitions */
+        .tab-content {
+            animation: none !important;
+        }
+        .tab-content.active {
+            animation: slideUp 0.3s ease-out forwards;
+        }
+
+        /* IMPROVED UX: Better button press feedback */
+        button:active {
+            transform: scale(0.97);
+        }
+
+        /* IMPROVED UX: Loading skeleton shimmer */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .skeleton {
+            background: linear-gradient(90deg, transparent 25%, rgba(255,255,255,0.1) 50%, transparent 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+
+        /* IMPROVED UX: Better scrollbar for touch devices */
+        @media (hover: none) {
+            .custom-scrollbar::-webkit-scrollbar { width: 2px; }
+        }
     </style>
 </head>
 
@@ -797,56 +834,60 @@
                 </div>
 
                 <!-- MAIN GRID LAYOUT -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 h-full lg:h-[650px] animate-slide-up pb-24 lg:pb-0">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 h-full lg:h-[650px] animate-slide-up pb-24 lg:pb-0">
 
                     <!-- LEFT PANEL: CONTROLS (Full Width on Mobile) -->
-                    <div class="lg:col-span-8 flex flex-col gap-4 min-h-0 h-full">
+                    <div class="lg:col-span-8 flex flex-col gap-3 min-h-0 h-full">
 
                         <!-- Step 1: Category -->
-                        <div class="royal-card p-4 rounded-3xl flex-shrink-0">
-                            <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider mb-3 px-1">۱. انتخاب
-                                سرویس</h3>
-                            <div id="category-selector" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <div class="royal-card p-3 rounded-2xl flex-shrink-0">
+                            <div class="flex items-center gap-2 mb-2 px-1">
+                                <div class="w-5 h-5 rounded-full bg-imperial-green-500 text-white text-[10px] font-bold flex items-center justify-center">۱</div>
+                                <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider">انتخاب سرویس</h3>
+                            </div>
+                            <div id="category-selector" class="grid grid-cols-2 sm:grid-cols-4 gap-2">
                                 <!-- JS Injected -->
                             </div>
                         </div>
 
                         <!-- Step 2: Client/Channel Selection -->
                         <div id="client-section"
-                            class="royal-card p-4 rounded-3xl flex-shrink-0 hidden opacity-0 transition-all duration-500">
-                            <div class="flex justify-between items-center mb-3 px-1">
-                                <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider">۲. انتخاب گزینه
-                                </h3>
+                            class="royal-card p-3 rounded-2xl flex-shrink-0 hidden opacity-0 transition-all duration-500">
+                            <div class="flex justify-between items-center mb-2 px-1">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-5 h-5 rounded-full bg-imperial-green-500 text-white text-[10px] font-bold flex items-center justify-center">۲</div>
+                                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider">انتخاب فرمت</h3>
+                                </div>
 
-                                <!-- NEW: Search Bar (Hidden by default) -->
                                 <div id="client-search-container" class="hidden relative w-1/2">
-                                    <input type="text" id="client-search-input" placeholder="جستجو در کانال‌ها..."
-                                        class="w-full bg-slate-100 dark:bg-white/5 border-none rounded-lg py-1 px-3 text-[10px] font-bold text-right focus:ring-2 focus:ring-emerald-500 transition-all outline-none h-8">
-                                    <i data-lucide="search" class="absolute left-2 top-2 w-3 h-3 text-slate-400"></i>
+                                    <input type="text" id="client-search-input" placeholder="جستجو..."
+                                        class="w-full bg-slate-100 dark:bg-white/5 border-none rounded-lg py-1 px-3 text-[10px] font-bold text-right focus:ring-2 focus:ring-emerald-500 transition-all outline-none h-7">
+                                    <i data-lucide="search" class="absolute left-2 top-1.5 w-3 h-3 text-slate-400"></i>
                                 </div>
                             </div>
 
-                            <!-- Container (Dynamic: Can be Horizontal Scroll OR Grid) -->
                             <div id="client-grid"
-                                class="flex gap-3 overflow-x-auto pb-2 custom-scrollbar snap-x touch-pan-x min-h-[60px]">
+                                class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 max-h-[140px] overflow-y-auto custom-scrollbar">
                                 <!-- JS Injected -->
                             </div>
                         </div>
 
-                        <!-- Step 3: Files (Scrollable List) -->
+                        <!-- Step 3: Files (Grid Layout) -->
                         <div id="file-section"
-                            class="royal-card p-4 rounded-3xl flex-grow flex flex-col min-h-0 hidden opacity-0 transition-all duration-500 overflow-hidden">
-                            <div class="flex justify-between items-center mb-4 flex-shrink-0">
-                                <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider">۳. انتخاب کانفیگ
-                                </h3>
+                            class="royal-card p-3 rounded-2xl flex-grow flex flex-col min-h-0 hidden opacity-0 transition-all duration-500 overflow-hidden">
+                            <div class="flex justify-between items-center mb-2 flex-shrink-0">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-5 h-5 rounded-full bg-imperial-green-500 text-white text-[10px] font-bold flex items-center justify-center">۳</div>
+                                    <h3 class="text-xs font-black text-slate-400 uppercase tracking-wider">انتخاب فایل</h3>
+                                </div>
                                 <div class="relative w-1/2">
                                     <input type="text" id="builder-search" placeholder="جستجو..."
-                                        class="w-full bg-slate-100 dark:bg-white/5 border-none rounded-lg py-1.5 px-3 text-xs font-bold text-right focus:ring-2 focus:ring-emerald-500 transition-all outline-none">
+                                        class="w-full bg-slate-100 dark:bg-white/5 border-none rounded-lg py-1 px-2.5 text-[11px] font-bold text-right focus:ring-2 focus:ring-emerald-500 transition-all outline-none">
                                     <i data-lucide="search" class="absolute left-2 top-1.5 w-3 h-3 text-slate-400"></i>
                                 </div>
                             </div>
                             <div id="file-list"
-                                class="overflow-y-auto pr-2 custom-scrollbar space-y-2 flex-grow h-full max-h-[400px] lg:max-h-none">
+                                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 overflow-y-auto custom-scrollbar flex-grow h-full max-h-[400px] lg:max-h-none">
                                 <!-- JS Injected -->
                             </div>
                         </div>
@@ -1302,45 +1343,44 @@
                 <div class="max-w-6xl mx-auto animate-slide-up pb-20">
 
                     <!-- Header Section -->
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 gap-4 dir-rtl">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-4 gap-3 dir-rtl">
 
                         <!-- Title & Badge (Aligned Right) -->
                         <div class="text-right w-full md:w-auto order-1 md:order-1">
                             <div
-                                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-[10px] font-bold tracking-wider mb-2 shadow-sm">
+                                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-[10px] font-bold tracking-wider mb-1 shadow-sm">
                                 <span class="relative flex h-2 w-2">
                                     <span
                                         class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
                                     <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                                 </span>
-                                وضعیت شبکه: آنلاین
+                                آنلاین
                             </div>
-                            <h2 class="text-2xl md:text-3xl font-black text-slate-800 dark:text-white leading-tight">
+                            <h2 class="text-xl md:text-2xl font-black text-slate-800 dark:text-white leading-tight">
                                 پروکسی‌های <span class="text-blue-500">تلگرام</span>
                             </h2>
                         </div>
 
-                        <!-- Stats Card (Refresh Button Moved to Right) -->
+                        <!-- Stats Card -->
                         <div
-                            class="royal-card p-2 rounded-2xl flex items-center gap-3 px-4 bg-white/60 dark:bg-black/20 w-full md:w-auto justify-between md:justify-start order-2 md:order-2">
+                            class="royal-card p-1.5 rounded-xl flex items-center gap-2 px-3 bg-white/60 dark:bg-black/20 w-full md:w-auto justify-between md:justify-start order-2 md:order-2">
 
-                            <!-- Refresh Button (First in DOM = Right in RTL) -->
+                            <!-- Refresh Button -->
                             <button onclick="initMTProto()"
-                                class="w-10 h-10 rounded-xl bg-blue-500 hover:bg-blue-600 text-white flex items-center justify-center shadow-lg shadow-blue-500/30 transition-all active:scale-95 ml-2">
-                                <i data-lucide="refresh-cw" class="w-5 h-5"></i>
+                                class="w-8 h-8 rounded-lg bg-blue-500 hover:bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/30 transition-all active:scale-95">
+                                <i data-lucide="refresh-cw" class="w-4 h-4"></i>
                             </button>
 
                             <!-- Stats Data -->
-                            <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-3">
                                 <div class="text-center">
-                                    <div class="text-[9px] text-slate-400 font-bold uppercase">فعال</div>
-                                    <div class="text-lg font-black text-emerald-500" id="mt-count-online">0</div>
+                                    <div class="text-[8px] text-slate-400 font-bold uppercase">فعال</div>
+                                    <div class="text-sm font-black text-emerald-500" id="mt-count-online">0</div>
                                 </div>
-                                <div class="w-px h-8 bg-slate-200 dark:bg-white/10"></div>
+                                <div class="w-px h-6 bg-slate-200 dark:bg-white/10"></div>
                                 <div class="text-center">
-                                    <div class="text-[9px] text-slate-400 font-bold uppercase">کل</div>
-                                    <div class="text-lg font-black text-slate-700 dark:text-white" id="mt-count-total">0
-                                    </div>
+                                    <div class="text-[8px] text-slate-400 font-bold uppercase">کل</div>
+                                    <div class="text-sm font-black text-slate-700 dark:text-white" id="mt-count-total">0</div>
                                 </div>
                             </div>
 
@@ -1348,14 +1388,14 @@
                     </div>
 
                     <!-- Toolbar -->
-                    <div class="flex flex-col sm:flex-row gap-3 mb-6">
+                    <div class="flex flex-col sm:flex-row gap-2 mb-4">
                         <div class="relative flex-grow">
                             <input type="text" id="mtproto-search" placeholder="جستجو در سرورها..."
-                                class="w-full pl-4 pr-10 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-imperial-green-800 rounded-xl text-xs font-bold focus:outline-none focus:ring-2 focus:ring-blue-500 text-right">
-                            <i data-lucide="search" class="absolute right-3 top-3 w-4 h-4 text-slate-400"></i>
+                                class="w-full pl-4 pr-10 py-2 bg-white dark:bg-white/5 border border-slate-200 dark:border-imperial-green-800 rounded-xl text-xs font-bold focus:outline-none focus:ring-2 focus:ring-blue-500 text-right">
+                            <i data-lucide="search" class="absolute right-3 top-2.5 w-4 h-4 text-slate-400"></i>
                         </div>
                         <button id="mtproto-export-btn"
-                            class="flex items-center justify-center gap-2 px-6 py-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-imperial-green-800 rounded-xl text-slate-600 dark:text-slate-300 font-bold text-xs hover:bg-slate-50 dark:hover:bg-white/10 transition-all">
+                            class="flex items-center justify-center gap-2 px-4 py-2 bg-white dark:bg-white/5 border border-slate-200 dark:border-imperial-green-800 rounded-xl text-slate-600 dark:text-slate-300 font-bold text-xs hover:bg-slate-50 dark:hover:bg-white/10 transition-all">
                             <i data-lucide="download" class="w-4 h-4 text-blue-500"></i>
                             <span>دانلود لیست</span>
                         </button>
@@ -1363,7 +1403,7 @@
 
                     <!-- Grid Cards -->
                     <div id="mtproto-grid"
-                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 min-h-[200px]">
+                        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 min-h-[200px]">
                         <!-- Loader (Will be removed after fetch) -->
                         <div class="col-span-full flex flex-col items-center justify-center py-12 opacity-50">
                             <span class="loader mb-4"></span>
@@ -1393,8 +1433,14 @@
 
     <!-- Toast -->
     <div id="toastContainer"
-        class="fixed bottom-6 left-1/2 transform -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-6 z-50 flex flex-col gap-2 pointer-events-none w-full sm:w-auto px-4 sm:px-0">
+        class="fixed bottom-20 left-1/2 transform -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-6 z-[10000] flex flex-col gap-2 pointer-events-none w-full sm:w-auto px-4 sm:px-0 max-h-[40vh] overflow-hidden">
     </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        class="fixed bottom-24 right-4 z-40 w-10 h-10 rounded-full bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-slate-200 dark:border-white/10 shadow-lg flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-imperial-green-600 dark:hover:text-imperial-green-400 transition-all opacity-0 pointer-events-none hover:scale-110">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
 
     <script>
         // --- 1. CONSTANTS & CONFIGURATION ---
@@ -1416,9 +1462,62 @@
             "singbox": "Singbox",
             "surfboard": "Surfboard",
             "xray": "Xray",
-            "base64": "Xray", // Mapped as requested
-            "normal": null    // Null will be used to hide this
+            "base64": "Xray",
+            "normal": null
         };
+
+        // --- CATEGORY DESCRIPTIONS ---
+        const catDescriptions = {
+            "Standard": "اشتراک کامل با تمام پروتکل‌ها",
+            "Lite": "نسخه سبک با حجم کمتر",
+            "Channels": "اشتراک بر اساس کانال تلگرام",
+            "Locations": "اشتراک بر اساس کشور و موقعیت"
+        };
+
+        // --- FILE NAME MAPPER (matches main.py output) ---
+        const fileNameMap = {
+            "mix": "ترکیبی (MIX)",
+            "openai": "هوش مصنوعی (OpenAI/Claude)",
+            "list": "لیست کانال",
+            "vless_domain": "VLESS + دامنه",
+            "vless_ipv4": "VLESS + IPv4",
+            "vless_ipv6": "VLESS + IPv6",
+            "vless": "VLESS (همه)",
+            "vmess_domain": "VMess + دامنه",
+            "vmess_ipv4": "VMess + IPv4",
+            "vmess_ipv6": "VMess + IPv6",
+            "vmess": "VMess (همه)",
+            "trojan_domain": "Trojan + دامنه",
+            "trojan_ipv4": "Trojan + IPv4",
+            "trojan_ipv6": "Trojan + IPv6",
+            "trojan": "Trojan (همه)",
+            "ss_domain": "Shadowsocks + دامنه",
+            "ss_ipv4": "Shadowsocks + IPv4",
+            "ss_ipv6": "Shadowsocks + IPv6",
+            "ss": "Shadowsocks (همه)",
+            "reality_domain": "Reality + دامنه",
+            "reality_ipv4": "Reality + IPv4",
+            "reality_ipv6": "Reality + IPv6",
+            "reality": "Reality (همه)",
+            "xhttp_domain": "XHTTP + دامنه",
+            "xhttp_ipv4": "XHTTP + IPv4",
+            "xhttp_ipv6": "XHTTP + IPv6",
+            "xhttp": "XHTTP (همه)",
+            "tuic_domain": "TUIC + دامنه",
+            "tuic_ipv4": "TUIC + IPv4",
+            "tuic_ipv6": "TUIC + IPv6",
+            "tuic": "TUIC (همه)",
+            "hy2_domain": "Hysteria2 + دامنه",
+            "hy2_ipv4": "Hysteria2 + IPv4",
+            "hy2_ipv6": "Hysteria2 + IPv6",
+            "hy2": "Hysteria2 (همه)"
+        };
+
+        function getFriendlyFileName(rawName) {
+            if (fileNameMap[rawName]) return fileNameMap[rawName];
+            // Clean up underscores for unmapped names
+            return rawName.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        }
         // --- 2. STATE MANAGEMENT ---
         let structuredData = {};
         let metricsData = { totalConfigs: 0, protocolCounts: {}, totalFiles: 0, totalSize: 0, allFiles: [], categoryCounts: { "Standard": 0, "Lite": 0, "Channels": 0, "Locations": 0 } };
@@ -1458,11 +1557,40 @@
             updateCacheSize();
             initTutorials();
 
-            // Add this inside DOMContentLoaded
+            // Keyboard navigation for tabs
+            document.addEventListener('keydown', (e) => {
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+                const tabs = ['home', 'builder', 'mtproto', 'metrics', 'settings', 'tutorials'];
+                const currentIndex = tabs.findIndex(t => getEl(`content-${t}`)?.classList.contains('active'));
+                if (e.key === 'ArrowRight' && currentIndex < tabs.length - 1) {
+                    e.preventDefault();
+                    switchTab(tabs[currentIndex + 1]);
+                } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
+                    e.preventDefault();
+                    switchTab(tabs[currentIndex - 1]);
+                } else if (e.key === 'Escape') {
+                    // Close mobile drawer/tutorial if open
+                    if (typeof closeMobileDrawer === 'function') closeMobileDrawer();
+                    if (typeof closeMobileTutorial === 'function') closeMobileTutorial();
+                }
+            });
+
+            // Search bar keyboard shortcut (Ctrl/Cmd + K)
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    switchTab('builder');
+                    setTimeout(() => {
+                        const searchInput = getEl('builder-search');
+                        if (searchInput) searchInput.focus();
+                    }, 300);
+                }
+            });
+
+            // Client search filtering
             const clientSearchInput = document.getElementById('client-search-input');
             if (clientSearchInput) {
                 clientSearchInput.addEventListener('input', (e) => {
-                    // Pass the search term to the renderer
                     renderClientGrid(builderState.selectedCat, e.target.value);
                 });
             }
@@ -1502,13 +1630,18 @@
                 initBuilderCategories();
 
                 if (ui.loaders.overlay) {
-                    setTimeout(() => ui.loaders.overlay.classList.add('opacity-0', 'pointer-events-none'), 500);
+                    setTimeout(() => {
+                        ui.loaders.overlay.classList.add('opacity-0', 'pointer-events-none');
+                        setTimeout(() => { ui.loaders.overlay.style.display = 'none'; }, 500);
+                    }, 500);
                 }
 
             } catch (error) {
                 if (ui.loaders.text) {
-                    ui.loaders.text.textContent = "خطا در دریافت اطلاعات. لطفاً رفرش کنید.";
-                    ui.loaders.text.classList.add('text-red-500');
+                    ui.loaders.text.innerHTML = `
+                        <span class="text-red-500 mb-2">خطا در دریافت اطلاعات</span>
+                        <button onclick="location.reload()" class="mt-3 px-4 py-2 bg-emerald-500 text-white rounded-lg text-xs font-bold hover:bg-emerald-600 transition-colors">تلاش مجدد</button>
+                    `;
                 }
                 console.error(error);
             }
@@ -1550,6 +1683,9 @@
 
                 const ext = cleanPath.split('.').pop();
                 if (["md", "php", "py", "html", "yml"].includes(ext)) return;
+
+                // Skip normal/ files (raw base64 only, not useful in UI)
+                if (cleanPath.includes("/normal/")) return;
 
                 const parts = cleanPath.split("/");
                 const clientKey = parts[0];
@@ -1656,9 +1792,18 @@
             ui.catSelector.innerHTML = '';
             Object.keys(structuredData).sort().forEach(cat => {
                 if (Object.keys(structuredData[cat]).length === 0) return;
+                const fileCount = Object.values(structuredData[cat]).reduce((sum, clients) => sum + Object.keys(clients).length, 0);
+                const desc = catDescriptions[cat] || '';
                 const btn = document.createElement('button');
                 btn.className = `cat-btn relative overflow-hidden p-3 rounded-xl border border-slate-200 dark:border-imperial-green-800 bg-white dark:bg-imperial-green-900/40 hover:border-imperial-green-500 transition-all duration-200 flex flex-col items-center justify-center gap-2 group`;
-                btn.innerHTML = `<div class="p-2 rounded-full bg-slate-50 dark:bg-imperial-green-900 group-hover:bg-imperial-green-100 dark:group-hover:bg-imperial-green-800 transition-colors text-slate-500 dark:text-slate-400 group-hover:text-imperial-green-600"><i data-lucide="${catIcons[cat] || 'folder'}" class="w-5 h-5"></i></div><span class="text-xs font-bold text-slate-700 dark:text-slate-300 group-hover:text-imperial-green-600">${cat}</span>`;
+                btn.innerHTML = `
+                    <div class="p-2.5 rounded-full bg-slate-50 dark:bg-imperial-green-900 group-hover:bg-imperial-green-100 dark:group-hover:bg-imperial-green-800 transition-colors text-slate-500 dark:text-slate-400 group-hover:text-imperial-green-600">
+                        <i data-lucide="${catIcons[cat] || 'folder'}" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold text-slate-700 dark:text-slate-300 group-hover:text-imperial-green-600">${cat}</span>
+                    <span class="text-[9px] text-slate-400 dark:text-slate-500 text-center leading-tight truncate w-full">${desc}</span>
+                    <span class="text-[8px] font-mono text-imperial-green-500 dark:text-imperial-green-400">${fileCount} فایل</span>
+                `;
                 btn.onclick = () => selectCategory(cat, btn);
                 ui.catSelector.appendChild(btn);
             });
@@ -1738,18 +1883,14 @@
 
             let clients = Object.keys(structuredData[cat] || {}).sort();
 
-            // 1. FILTER: Search
             if (filterText) {
                 clients = clients.filter(c => c.toLowerCase().includes(filterText.toLowerCase()));
             }
 
-            // 2. FILTER: Remove 'normal'
             clients = clients.filter(client => {
                 const mapCheck = clientDisplayNames[client.toLowerCase()];
                 return mapCheck !== null;
             });
-
-            grid.className = "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 max-h-[180px] overflow-y-auto pr-1 custom-scrollbar";
 
             if (clients.length === 0) {
                 grid.innerHTML = `<div class="col-span-full text-center text-slate-400 text-[10px] py-4">موردی یافت نشد</div>`;
@@ -1759,41 +1900,25 @@
             clients.forEach(client => {
                 const fileCount = Object.keys(structuredData[cat][client]).length;
                 const btn = document.createElement('button');
-
-                let displayName = client;
                 const lowerKey = client.toLowerCase();
 
-                if (cat === 'Channels') {
-                    displayName = client;
-                } else {
-                    if (clientDisplayNames[lowerKey]) {
-                        displayName = clientDisplayNames[lowerKey];
-                    } else {
-                        displayName = client.charAt(0).toUpperCase() + client.slice(1);
-                    }
-                }
-
-                btn.className = `client-btn flex items-center gap-2 p-2 rounded-xl border border-slate-200 dark:border-imperial-green-800 bg-white dark:bg-imperial-green-900/40 hover:bg-slate-50 dark:hover:bg-imperial-green-800/60 transition-all text-right group w-full`;
-
-                // IMPORTANT: Add data-client attribute here
-                btn.setAttribute('data-client', client);
+                let displayName = cat === 'Channels' ? client : (clientDisplayNames[lowerKey] || client.charAt(0).toUpperCase() + client.slice(1));
 
                 const iconName = clientIcons[client] || (cat === 'Channels' ? 'at-sign' : (client.length === 2 ? 'flag' : 'settings'));
 
-                btn.innerHTML = `
-            <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-imperial-green-900 flex items-center justify-center text-slate-500 group-hover:text-royal-gold-500 transition-colors flex-shrink-0">
-                <i data-lucide="${iconName}" class="w-4 h-4"></i>
-            </div>
-            <div class="min-w-0 overflow-hidden">
-                <div class="text-[11px] font-bold text-slate-700 dark:text-slate-200 truncate dir-ltr text-left">${displayName}</div>
-                <div class="text-[8px] text-slate-400 truncate">${fileCount} فایل</div>
-            </div>
-        `;
+                btn.className = `client-btn flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border border-slate-200 dark:border-imperial-green-800 bg-white dark:bg-imperial-green-900/40 hover:bg-slate-50 dark:hover:bg-imperial-green-800/60 hover:border-royal-gold-400 transition-all text-center group min-h-[70px]`;
+                btn.setAttribute('data-client', client);
 
+                btn.innerHTML = `
+                    <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-imperial-green-900 flex items-center justify-center text-slate-500 group-hover:text-royal-gold-500 group-hover:bg-royal-gold-50 dark:group-hover:bg-royal-gold-900/20 transition-colors flex-shrink-0">
+                        <i data-lucide="${iconName}" class="w-4 h-4"></i>
+                    </div>
+                    <div class="text-[10px] font-bold text-slate-700 dark:text-slate-200 truncate dir-ltr text-center w-full">${displayName}</div>
+                    <div class="text-[8px] text-slate-400">${fileCount} اشتراک</div>
+                `;
                 btn.onclick = () => selectClient(client, btn);
                 grid.appendChild(btn);
             });
-
             if (window.lucide) lucide.createIcons();
         }
 
@@ -1810,12 +1935,27 @@
             const files = Object.keys(structuredData[cat][client]).sort();
             const filtered = files.filter(f => f.toLowerCase().includes(filter.toLowerCase()));
 
+            if (filtered.length === 0) {
+                ui.fileList.innerHTML = `<div class="col-span-full text-center py-8 text-slate-400"><i data-lucide="search-x" class="w-8 h-8 mx-auto mb-2 opacity-50"></i><p class="text-xs">موردی یافت نشد</p></div>`;
+                if (window.lucide) lucide.createIcons();
+                return;
+            }
+
             filtered.forEach(file => {
-                const btn = document.createElement('button');
+                const friendlyName = getFriendlyFileName(file);
                 const flag = (cat === 'Locations' && file.length <= 3) ? getFlagImage(file) : '';
-                const name = file.replace(/_/g, ' ');
-                btn.className = `file-btn w-full flex items-center justify-between p-2.5 rounded-lg border border-transparent hover:bg-slate-100 dark:hover:bg-imperial-green-900/50 transition-colors text-right group`;
-                btn.innerHTML = `<div class="flex items-center gap-2 overflow-hidden">${flag ? flag : `<i data-lucide="file-text" class="w-3 h-3 text-slate-400"></i>`}<span class="text-xs font-bold text-slate-600 dark:text-slate-300 truncate group-hover:text-imperial-green-600 transition-colors">${name}</span></div><i data-lucide="chevron-left" class="w-3 h-3 text-slate-300 opacity-0 group-hover:opacity-100 transition-opacity"></i>`;
+                const protoMatch = file.match(/(vless|vmess|trojan|ss|reality|xhttp|tuic|hy2)/i);
+                const protoTag = protoMatch ? protoMatch[1].toUpperCase() : '';
+
+                const btn = document.createElement('button');
+                btn.className = `file-btn flex flex-col items-center justify-center gap-1.5 p-3 rounded-xl border border-slate-200 dark:border-imperial-green-800 bg-white dark:bg-imperial-green-900/40 hover:bg-imperial-green-50 dark:hover:bg-imperial-green-800/60 hover:border-imperial-green-400 transition-all text-center group min-h-[80px]`;
+                btn.innerHTML = `
+                    <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-imperial-green-900 flex items-center justify-center flex-shrink-0 group-hover:bg-imperial-green-100 dark:group-hover:bg-imperial-green-800 transition-colors">
+                        ${flag || `<i data-lucide="file-text" class="w-4 h-4 text-slate-400 group-hover:text-imperial-green-500"></i>`}
+                    </div>
+                    <div class="text-[11px] font-bold text-slate-700 dark:text-slate-200 group-hover:text-imperial-green-600 transition-colors leading-tight">${friendlyName}</div>
+                    ${protoTag ? `<span class="text-[8px] font-bold px-1.5 py-0.5 rounded bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400">${protoTag}</span>` : ''}
+                `;
                 btn.onclick = () => selectFile(file, btn);
                 ui.fileList.appendChild(btn);
             });
@@ -2189,35 +2329,26 @@
         };
 
         // --- UPDATED INIT ---
-        // Call this inside your main DOMContentLoaded
         function initSettings() {
-            const isDark = localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
-            updateThemeUI(isDark);
             loadPreferences();
             renderSystemInfo();
         }
-
-        // Hook into the main Theme Toggle button (Header) to sync with Settings page
-        document.getElementById('theme-toggle').addEventListener('click', () => {
-            const isDark = document.documentElement.classList.contains('dark'); // State *after* toggle
-            updateThemeUI(!isDark); // Toggle flips state, so we check inverse? No, the main initTheme toggles class THEN calls this.
-            // Actually, simplest is to just check class list:
-            setTimeout(() => updateThemeUI(document.documentElement.classList.contains('dark')), 50);
-        });
 
         // --- UTILS ---
         window.switchTab = (tabName) => {
             ui.tabs.forEach(btn => btn.classList.toggle('active', btn.id === `tab-${tabName}`));
             ui.contents.forEach(content => content.classList.toggle('active', content.id === `content-${tabName}`));
             if (tabName === 'metrics') setTimeout(() => renderMetricsDashboard(), 100);
+            // Scroll to top on tab switch
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         };
         window.copyLink = () => { ui.urlInput.select(); navigator.clipboard.writeText(ui.urlInput.value); showToast("کپی شد"); };
-        window.copyToClip = (text) => { navigator.clipboard.writeText(text); showToast("کپی شد"); };
+        window.copyToClip = (text) => { navigator.clipboard.writeText(text); showToast("کپی شد ✔"); };
         window.shareLink = async () => { if (navigator.share) await navigator.share({ title: 'PSG', url: ui.urlInput.value }); else showToast("عدم پشتیبانی"); };
 
         function getFlagImage(countryCode) {
             if (!countryCode || countryCode.length !== 2) return '';
-            return `<img src="https://flagcdn.com/w40/${countryCode.toLowerCase()}.png" class="w-5 h-auto rounded-sm shadow-sm inline-block ml-1" alt="${countryCode}">`;
+            return `<img src="https://flagcdn.com/w40/${countryCode.toLowerCase()}.png" class="w-5 h-auto rounded-sm shadow-sm inline-block ml-1" alt="${countryCode}" loading="lazy">`;
         }
         function animateValue(obj, start, end, duration, isSize = false) {
             let startTimestamp = null;
@@ -2230,25 +2361,66 @@
             };
             window.requestAnimationFrame(step);
         }
+
+        // Improved Toast System
+        let toastQueue = [];
         function showToast(msg) {
             const container = document.getElementById('toastContainer');
             if (!container) return;
+
+            while (toastQueue.length >= 3) {
+                const old = toastQueue.shift();
+                if (old && old.parentNode) old.remove();
+            }
+
             const toast = document.createElement('div');
-            toast.className = "bg-slate-800 text-white dark:bg-white dark:text-slate-900 px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 transition-all duration-300 pointer-events-auto min-w-[280px] justify-center sm:justify-start";
-            toast.innerHTML = `<i data-lucide="check-circle-2" class="w-5 h-5 text-imperial-green-500 dark:text-imperial-green-600"></i><span class="text-sm font-bold">${msg}</span>`;
+            toast.className = "bg-slate-800 text-white dark:bg-white dark:text-slate-900 px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 transition-all duration-300 pointer-events-auto min-w-[280px] justify-center sm:justify-start opacity-0 translate-y-4 scale-95 cursor-pointer";
+            toast.innerHTML = `<i data-lucide="check-circle-2" class="w-5 h-5 text-imperial-green-500 dark:text-imperial-green-600 flex-shrink-0"></i><span class="text-sm font-bold">${msg}</span>`;
+            toast.onclick = () => { toast.classList.add('opacity-0', 'translate-y-4', 'scale-95'); setTimeout(() => { toast.remove(); toastQueue = toastQueue.filter(t => t !== toast); }, 300); };
             container.appendChild(toast);
+            toastQueue.push(toast);
             if (window.lucide) lucide.createIcons();
-            requestAnimationFrame(() => { toast.classList.remove('opacity-0', 'translate-y-4'); });
-            setTimeout(() => { toast.classList.add('opacity-0', 'translate-y-4'); setTimeout(() => toast.remove(), 300); }, 3000);
+
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    toast.classList.remove('opacity-0', 'translate-y-4', 'scale-95');
+                    toast.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                });
+            });
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-4', 'scale-95');
+                setTimeout(() => { toast.remove(); toastQueue = toastQueue.filter(t => t !== toast); }, 300);
+            }, 3000);
         }
+
+        // Back to Top Button
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            if (!btn) return;
+            if (window.scrollY > 300) {
+                btn.classList.remove('opacity-0', 'pointer-events-none');
+                btn.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                btn.classList.add('opacity-0', 'pointer-events-none');
+                btn.classList.remove('opacity-100', 'pointer-events-auto');
+            }
+        }, { passive: true });
         function initTheme() {
             const html = document.documentElement;
             const themeBtn = document.getElementById('theme-toggle');
-            const settingsToggle = document.getElementById('settings-theme-toggle');
-            const set = (d) => { html.classList.toggle('dark', d); localStorage.setItem('theme', d ? 'dark' : 'light'); if (settingsToggle) settingsToggle.checked = d; if (window.lucide) lucide.createIcons(); };
-            set(localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches));
-            if (themeBtn) themeBtn.addEventListener('click', () => set(!html.classList.contains('dark')));
-            if (settingsToggle) settingsToggle.addEventListener('change', (e) => set(e.target.checked));
+            const isDark = localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            html.classList.toggle('dark', isDark);
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateThemeUI(isDark);
+            if (window.lucide) lucide.createIcons();
+
+            if (themeBtn) themeBtn.addEventListener('click', () => {
+                const nowDark = !html.classList.contains('dark');
+                html.classList.toggle('dark', nowDark);
+                localStorage.setItem('theme', nowDark ? 'dark' : 'light');
+                updateThemeUI(nowDark);
+                if (window.lucide) lucide.createIcons();
+            });
         }
         function updateCacheSize() {
             const cachedData = localStorage.getItem('psg_tree_cache');
@@ -2319,7 +2491,7 @@
                     const btnText = isOnline ? 'اتصال' : 'قطع';
 
                     const card = document.createElement('div');
-                    card.className = `mt-card royal-card p-4 rounded-2xl group relative overflow-hidden transition-all hover:-translate-y-1 hover:border-blue-300 dark:hover:border-blue-700 ${cardOpacity}`;
+                    card.className = `mt-card royal-card p-3 rounded-xl group relative overflow-hidden transition-all hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-700 ${cardOpacity}`;
 
                     // Add Data Attributes for Search/Export
                     card.dataset.server = proxy.server;
@@ -2328,31 +2500,31 @@
                     if (isOnline) card.classList.add('is-online');
 
                     card.innerHTML = `
-                <div class="flex justify-between items-start mb-3">
-                    <span class="px-2 py-0.5 rounded-md text-[9px] font-black border ${badgeClass}">${proxy.type}</span>
-                    <div class="flex items-center gap-1.5 dir-ltr">
-                        <span class="relative flex h-2 w-2">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="px-1.5 py-0.5 rounded text-[8px] font-black border ${badgeClass}">${proxy.type}</span>
+                    <div class="flex items-center gap-1 dir-ltr">
+                        <span class="relative flex h-1.5 w-1.5">
                             ${isOnline ? `<span class="animate-ping absolute inline-flex h-full w-full rounded-full ${statusBg} opacity-75"></span>` : ''}
-                            <span class="relative inline-flex rounded-full h-2 w-2 ${statusBg}"></span>
+                            <span class="relative inline-flex rounded-full h-1.5 w-1.5 ${statusBg}"></span>
                         </span>
-                        <span class="text-[10px] font-mono font-bold ${statusColor}">${latencyText}</span>
+                        <span class="text-[9px] font-mono font-bold ${statusColor}">${latencyText}</span>
                     </div>
                 </div>
 
-                <div class="mb-4 text-left dir-ltr">
-                    <div class="font-mono text-sm font-black text-slate-700 dark:text-slate-200 tracking-tight truncate" title="${proxy.server}">${proxy.server}</div>
-                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">Port: <span class="text-slate-600 dark:text-slate-400">${proxy.port}</span></div>
+                <div class="mb-2 text-left dir-ltr">
+                    <div class="font-mono text-xs font-black text-slate-700 dark:text-slate-200 tracking-tight truncate" title="${proxy.server}">${proxy.server}</div>
+                    <div class="text-[9px] text-slate-400 font-mono">: ${proxy.port}</div>
                 </div>
 
-                <div class="grid grid-cols-4 gap-2">
+                <div class="grid grid-cols-3 gap-1.5">
                     <a ${btnState}>
-                        <span>${btnText}</span> <i data-lucide="${btnIcon}" class="w-3 h-3 ${isOnline ? '' : ''}"></i>
+                        <span class="text-[10px]">${btnText}</span> <i data-lucide="${btnIcon}" class="w-3 h-3"></i>
                     </a>
-                    <button class="mt-copy-btn col-span-1 flex items-center justify-center bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-500 rounded-lg transition-colors">
-                        <i data-lucide="copy" class="w-4 h-4"></i>
+                    <button class="mt-copy-btn flex items-center justify-center bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-500 rounded-lg transition-colors">
+                        <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                     </button>
-                    <button class="mt-qr-btn col-span-1 flex items-center justify-center bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-500 rounded-lg transition-colors">
-                        <i data-lucide="qr-code" class="w-4 h-4"></i>
+                    <button class="mt-qr-btn flex items-center justify-center bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-500 rounded-lg transition-colors">
+                        <i data-lucide="qr-code" class="w-3.5 h-3.5"></i>
                     </button>
                 </div>
             `;

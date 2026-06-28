@@ -9,17 +9,91 @@ import ipaddress
 import socket
 import sys
 import logging
+import time
+import copy
+import glob as glob_mod
+from dataclasses import dataclass, field
 from typing import List, Dict, Optional, Set, Tuple, Any
 from urllib.parse import urlparse, parse_qs, urlencode, unquote, quote
 from datetime import datetime, timezone
 from collections import defaultdict
 import geoip2.database
 
+try:
+    import yaml
+except ImportError:
+    yaml = None
+
 # --- Configuration & Logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# --- Feature #11: Configuration File Support ---
+DEFAULT_CONFIG = {
+    'limits': {'lite': 2, 'normal': 6},
+    'timeouts': {'http': 15, 'tcp': 2, 'dns': 10},
+    'workers': {'dns': 100, 'tcp': 500, 'logo': 20},
+    'retry': {'max_attempts': 3, 'backoff_base': 2},
+    'rate_limit': {'max_requests_per_domain': 50, 'window_seconds': 60},
+    'dedup': {'cache_file': 'seen_fps.json', 'max_age_days': 7},
+    'source_discovery': {'enabled': True, 'max_depth': 1},
+    'ai_domains': ['openai.com', 'chatgpt.com', 'claude.com', 'claude.ai'],
+    'fake_names': ['#همکاری_ملی', '#جاویدشاه', '#KingRezaPahlavi'],
+    'github': {'user': 'itsyebekhe', 'repo': 'PSG', 'branch': 'main'},
+    'cloudflare_cidrs': [
+        "173.245.48.0/20", "103.21.244.0/22", "103.22.200.0/22", "103.31.4.0/22",
+        "141.101.64.0/18", "108.162.192.0/18", "190.93.240.0/20", "188.114.96.0/20",
+        "197.234.240.0/22", "198.41.128.0/17", "162.158.0.0/15", "104.16.0.0/13",
+        "104.24.0.0/14", "172.64.0.0/13", "131.0.72.0/22", "2400:cb00::/32",
+        "2606:4700::/32", "2803:f800::/32", "2405:b500::/32", "2405:8100::/32",
+        "2a06:98c0::/29", "2c0f:f248::/32"
+    ],
+    'validation': {
+        'enabled': True,
+        'required_vless_reality': ['pbk', 'sid'],
+        'required_vmess_fields': ['id', 'add'],
+        'required_trojan_fields': ['sni'],
+        'required_ss_fields': ['method', 'password']
+    }
+}
+
+
+def load_config() -> Dict[str, Any]:
+    config_path = os.path.join(BASE_DIR, 'config.yaml')
+    config = DEFAULT_CONFIG.copy()
+    if os.path.exists(config_path):
+        if yaml:
+            with open(config_path, 'r', encoding='utf-8') as f:
+                user_cfg = yaml.safe_load(f)
+            if user_cfg:
+                config = _deep_merge(config, user_cfg)
+            logger.info(f"Loaded config from {config_path}")
+        else:
+            json_path = os.path.join(BASE_DIR, 'config.json')
+            if os.path.exists(json_path):
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    user_cfg = json.load(f)
+                config = _deep_merge(config, user_cfg)
+                logger.info(f"Loaded config from {json_path}")
+            else:
+                logger.warning("PyYAML not installed. Place config.json next to main.py or install PyYAML.")
+    return config
+
+
+def _deep_merge(base: Dict, override: Dict) -> Dict:
+    result = base.copy()
+    for k, v in override.items():
+        if k in result and isinstance(result[k], dict) and isinstance(v, dict):
+            result[k] = _deep_merge(result[k], v)
+        else:
+            result[k] = v
+    return result
+
+
+CFG = load_config()
+
 PATHS = {
     'INPUT': os.path.join(BASE_DIR, 'channelsData', 'channelsAssets.json'),
     'TEMP': os.path.join(BASE_DIR, 'temp_build'),
@@ -28,43 +102,139 @@ PATHS = {
     'API': os.path.join(BASE_DIR, 'api'),
     'OUTPUT_SUBS': os.path.join(BASE_DIR, 'subscriptions'),
     'OUTPUT_LITE': os.path.join(BASE_DIR, 'lite', 'subscriptions'),
-    'CONFIG_TXT': os.path.join(BASE_DIR, 'config.txt')
+    'CONFIG_TXT': os.path.join(BASE_DIR, 'config.txt'),
+    'SEEN_FPS': os.path.join(BASE_DIR, CFG['dedup']['cache_file']),
+    'DISCOVERED': os.path.join(BASE_DIR, 'discovered_sources.json')
 }
 
 URLS = {
     'GEOIP': "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb",
     'PRIVATE': 'https://raw.githubusercontent.com/itsyebekhe/PSGP/main/private_configs.json',
-    'GITHUB_LOGO': 'https://raw.githubusercontent.com/itsyebekhe/PSG/main/channelsData/logos'
+    'GITHUB_LOGO': f"https://raw.githubusercontent.com/{CFG['github']['user']}/{CFG['github']['repo']}/main/channelsData/logos",
+    'IP_API': 'http://ip-api.com/json/{}',
+    'DOH_GOOGLE': 'https://dns.google/resolve?name={}&type=A',
+    'DOH_CLOUDFLARE': 'https://1.1.1.1/dns-query?name={}&type=A'
 }
 
 CONSTANTS = {
-    'LITE_LIMIT': 2,
-    'NORMAL_LIMIT': 6,
-    'TIMEOUT': 15,
-    'DNS_WORKERS': 100,
-    'TCP_WORKERS': 500,
-    'TCP_TIMEOUT': 2,
-    'FAKE_NAMES': ['#همکاری_ملی', '#جاویدشاه', '#KingRezaPahlavi'],
-    'CLOUDFLARE_CIDRS': [
-        "173.245.48.0/20", "103.21.244.0/22", "103.22.200.0/22", "103.31.4.0/22",
-        "141.101.64.0/18", "108.162.192.0/18", "190.93.240.0/20", "188.114.96.0/20",
-        "197.234.240.0/22", "198.41.128.0/17", "162.158.0.0/15", "104.16.0.0/13",
-        "104.24.0.0/14", "172.64.0.0/13", "131.0.72.0/22", "2400:cb00::/32",
-        "2606:4700::/32", "2803:f800::/32", "2405:b500::/32", "2405:8100::/32",
-        "2a06:98c0::/29", "2c0f:f248::/32"
-    ],
-    'AI_DOMAINS': ['openai.com', 'chatgpt.com', 'claude.com', 'claude.ai'],
-    # --- UPDATE THESE TO MATCH YOUR REPO ---
-    'GITHUB_USER': 'itsyebekhe',
-    'GITHUB_REPO': 'PSG',
-    'GITHUB_BRANCH': 'main'
+    'LITE_LIMIT': CFG['limits']['lite'],
+    'NORMAL_LIMIT': CFG['limits']['normal'],
+    'TIMEOUT': CFG['timeouts']['http'],
+    'DNS_WORKERS': CFG['workers']['dns'],
+    'TCP_WORKERS': CFG['workers']['tcp'],
+    'TCP_TIMEOUT': CFG['timeouts']['tcp'],
+    'LOGO_WORKERS': CFG['workers']['logo'],
+    'MAX_RETRIES': CFG['retry']['max_attempts'],
+    'RETRY_BACKOFF_BASE': CFG['retry']['backoff_base'],
+    'FAKE_NAMES': CFG['fake_names'],
+    'CLOUDFLARE_CIDRS': CFG['cloudflare_cidrs'],
+    'AI_DOMAINS': CFG['ai_domains'],
+    'GITHUB_USER': CFG['github']['user'],
+    'GITHUB_REPO': CFG['github']['repo'],
+    'GITHUB_BRANCH': CFG['github']['branch'],
+    'RATE_LIMIT_MAX': CFG['rate_limit']['max_requests_per_domain'],
+    'RATE_LIMIT_WINDOW': CFG['rate_limit']['window_seconds'],
+    'SEEN_FP_MAX_AGE': CFG['dedup']['max_age_days'],
+    'SOURCE_DISCOVERY': CFG['source_discovery']['enabled'],
+    'SOURCE_DISCOVERY_DEPTH': CFG['source_discovery']['max_depth'],
+    'VALIDATION_ENABLED': CFG['validation']['enabled']
 }
 
 # Pre-compile Regex and Networks
 PROTOCOL_REGEX = re.compile(r'(?:vmess|vless|trojan|ss|tuic|hy2|hysteria2?):\/\/[^\s"\']+(?=\s|<|>|$)', re.IGNORECASE)
+TELEGRAM_MSG_REGEX = re.compile(r'<div class="tgme_widget_message_text[^"]*">(.*?)</div>', re.DOTALL)
+TELEGRAM_CHANNEL_REGEX = re.compile(r't\.me/s/([a-zA-Z0-9_]{5,})', re.IGNORECASE)
 CLOUDFLARE_NETWORKS = [ipaddress.ip_network(cidr) for cidr in CONSTANTS['CLOUDFLARE_CIDRS']]
 
-# --- Fixed ConfigUtils & ConfigParser ---
+
+# --- Data Classes ---
+
+@dataclass
+class EnrichedConfig:
+    fp: str
+    orig: str
+    parsed: Dict[str, Any]
+    chan: str
+    ip: str
+    country_code: str
+    is_cf: bool
+    flag: str
+    latency_ms: float = 0.0
+    speed_tier: str = "unknown"
+
+
+# --- Feature #3: Protocol-Specific Validation ---
+
+class ConfigValidator:
+    @staticmethod
+    def validate(parsed: Dict[str, Any], raw: str) -> Tuple[bool, str]:
+        if not CONSTANTS['VALIDATION_ENABLED']:
+            return True, ""
+        ctype = parsed.get('type', '')
+        if ctype == 'vless':
+            return ConfigValidator._validate_vless(parsed, raw)
+        if ctype == 'vmess':
+            return ConfigValidator._validate_vmess(parsed)
+        if ctype == 'trojan':
+            return ConfigValidator._validate_trojan(parsed)
+        if ctype == 'ss':
+            return ConfigValidator._validate_ss(parsed)
+        return True, ""
+
+    @staticmethod
+    def _validate_vless(parsed: Dict, raw: str) -> Tuple[bool, str]:
+        host = parsed.get('host', '')
+        if not host:
+            return False, "vless: missing host"
+        port = parsed.get('port', '')
+        if not port:
+            return False, "vless: missing port"
+        user = parsed.get('user', '')
+        if not user:
+            return False, "vless: missing uuid"
+        params = parsed.get('params', {})
+        if 'security=reality' in raw:
+            missing = [f for f in CFG['validation']['required_vless_reality'] if f not in params]
+            if missing:
+                return False, f"vless reality: missing {', '.join(missing)}"
+        return True, ""
+
+    @staticmethod
+    def _validate_vmess(parsed: Dict) -> Tuple[bool, str]:
+        missing = [f for f in CFG['validation']['required_vmess_fields'] if not parsed.get(f)]
+        if missing:
+            return False, f"vmess: missing {', '.join(missing)}"
+        port = parsed.get('port', '')
+        try:
+            p = int(port)
+            if not (1 <= p <= 65535):
+                return False, f"vmess: invalid port {port}"
+        except (ValueError, TypeError):
+            return False, f"vmess: non-numeric port '{port}'"
+        scy = parsed.get('scy', 'auto')
+        valid_ciphers = ['auto', 'aes-128-gcm', 'chacha20-poly1305', 'none', 'aes-128-cfb', 'aes-256-cfb', 'chacha20-ietf']
+        if scy not in valid_ciphers:
+            return False, f"vmess: invalid cipher '{scy}'"
+        return True, ""
+
+    @staticmethod
+    def _validate_trojan(parsed: Dict) -> Tuple[bool, str]:
+        missing = [f for f in CFG['validation']['required_trojan_fields'] if not parsed.get(f) and not parsed.get('params', {}).get(f)]
+        if missing:
+            return False, f"trojan: missing {', '.join(missing)}"
+        if not parsed.get('password'):
+            return False, "trojan: missing password"
+        return True, ""
+
+    @staticmethod
+    def _validate_ss(parsed: Dict) -> Tuple[bool, str]:
+        missing = [f for f in CFG['validation']['required_ss_fields'] if not parsed.get(f)]
+        if missing:
+            return False, f"ss: missing {', '.join(missing)}"
+        return True, ""
+
+
+# --- ConfigUtils & ConfigParser ---
 
 class ConfigUtils:
     @staticmethod
@@ -131,7 +301,7 @@ class ConfigUtils:
     def create_fake_config(name: str) -> str:
         encoded_name = quote(name.lstrip('#'))
         return f"vless://00000000-0000-0000-0000-000000000000@127.0.0.1:443?security=none&type=ws&path=/#{encoded_name}"
-    
+
     @staticmethod
     def generate_header(title: str) -> str:
         b64_title = base64.b64encode(title.encode()).decode()
@@ -142,7 +312,7 @@ class ConfigUtils:
             "#support-url: https://t.me/yebekhe\n"
             f"#profile-web-page-url: https://github.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}\n\n"
         )
-    
+
     @staticmethod
     def safe_base64_decode(text: str) -> str:
         try:
@@ -156,7 +326,7 @@ class ConfigParser:
     def parse(config_str: str) -> Optional[Dict[str, Any]]:
         ctype = ConfigUtils.detect_type(config_str)
         if not ctype: return None
-        
+
         try:
             if ctype == 'vmess':
                 return ConfigParser._parse_vmess(config_str)
@@ -174,9 +344,9 @@ class ConfigParser:
             b64 = config_str[prefix_len:]
             json_str = ConfigUtils.decode_base64(b64)
             if not json_str: return None
-            
+
             data = json.loads(json_str)
-            
+
             return {
                 'type': 'vmess',
                 'ps': data.get('ps', ''),
@@ -200,7 +370,7 @@ class ConfigParser:
         parsed = urlparse(config_str)
         user_info = parsed.netloc
         host_port = ""
-        
+
         if '@' in user_info:
             user_pass_b64, host_port = user_info.rsplit('@', 1)
             try:
@@ -282,27 +452,27 @@ class ConfigParser:
             password = parsed.get('password', '')
             user_pass = f"{method}:{password}"
             b64_user = base64.b64encode(user_pass.encode()).decode()
-            
+
             host = parsed.get('host', '')
             if ConfigUtils.is_ipv6(host): host = f"[{host}]"
-            
+
             uri = f"ss://{b64_user}@{host}:{parsed.get('port', '')}"
             name = new_tag if new_tag else parsed.get('name', '')
             return f"{uri}#{quote(name)}"
 
         else:
             user = parsed.get('user', '')
-            password = parsed.get('password', '') 
+            password = parsed.get('password', '')
             userinfo = quote(user)
             if password: userinfo += f":{quote(password)}"
-            
+
             host = parsed.get('host', '')
             if ConfigUtils.is_ipv6(host): host = f"[{host}]"
-            
+
             netloc = f"{userinfo}@{host}:{parsed.get('port', '')}"
             query_params = parsed.get('params', {}).copy()
             path = parsed.get('path', '')
-            
+
             full_path_str = ""
             if ctype in ['vless', 'trojan']:
                  full_path_str = path
@@ -318,7 +488,7 @@ class ConfigParser:
     def get_fingerprint(parsed: Dict) -> str:
         ctype = parsed.get('type')
         if not ctype: return "invalid"
-        
+
         def norm(s): return str(s).strip().lower()
 
         components = [ctype]
@@ -332,13 +502,13 @@ class ConfigParser:
             keys = ['host', 'port', 'method', 'password']
             for k in keys:
                 components.append(norm(parsed.get(k, '')))
-        
+
         else:
             components.append(norm(parsed.get('user', '')))
             components.append(norm(parsed.get('host', '')))
             components.append(norm(parsed.get('port', '')))
             components.append(norm(parsed.get('path', '')))
-            
+
             ignored_params = ['name', 'remarks', 'ps', 'plugin', 'spiders', 'hash']
             params = parsed.get('params', {})
             sorted_keys = sorted(params.keys())
@@ -352,72 +522,160 @@ class ConfigParser:
 
 class SubscriptionProcessor:
     def __init__(self):
-        self.session = None
-        self.dns_cache = {}
-        self.geo_reader = None
-        self.channel_assets = {}
-        self.all_configs = []
+        self.session: Optional[aiohttp.ClientSession] = None
+        self.dns_cache: Dict[str, Optional[str]] = {}
+        self.geo_reader: Optional[geoip2.database.Reader] = None
+        self.channel_assets: Dict[str, Dict[str, Any]] = {}
+        self.all_configs: List[Tuple[str, str]] = []
         self.dns_semaphore = asyncio.Semaphore(CONSTANTS['DNS_WORKERS'])
         self.tcp_semaphore = asyncio.Semaphore(CONSTANTS['TCP_WORKERS'])
+        self.logo_semaphore = asyncio.Semaphore(CONSTANTS['LOGO_WORKERS'])
+        self._rate_tracker: Dict[str, List[float]] = defaultdict(list)
+        self._seen_fps: Dict[str, float] = {}
+        self._discovered_sources: Set[str] = set()
+        self._geo_fallback_cache: Dict[str, str] = {}
 
     async def initialize(self):
         self.session = aiohttp.ClientSession()
-        
+
         dirs_to_clean = [
-            PATHS['TEMP'], 
-            PATHS['OUTPUT_SUBS'], 
+            PATHS['TEMP'],
+            PATHS['OUTPUT_SUBS'],
             PATHS['OUTPUT_LITE']
         ]
-        
+
         logger.info("Cleaning up old directories...")
         for d in dirs_to_clean:
             if os.path.exists(d):
                 try:
-                    shutil.rmtree(d)
+                    shutil.rmtree(d, ignore_errors=True)
                 except Exception as e:
                     logger.warning(f"Could not remove {d}: {e}")
 
-        for path in [PATHS['TEMP'], PATHS['FINAL_ASSETS'], PATHS['API'], 
-                     os.path.join(PATHS['TEMP'], 'logos'), 
+        for path in [PATHS['TEMP'], PATHS['FINAL_ASSETS'], PATHS['API'],
+                     os.path.join(PATHS['TEMP'], 'logos'),
                      os.path.join(PATHS['TEMP'], 'html_cache')]:
             os.makedirs(path, exist_ok=True)
-        
+
         await self._setup_geoip()
+        self._load_seen_fps()
+        self._load_discovered_sources()
 
     async def cleanup(self):
-        if self.session: 
+        if self.session:
             await self.session.close()
             self.session = None
-        if self.geo_reader: 
+        if self.geo_reader:
             self.geo_reader.close()
+        self._save_seen_fps()
+        self._save_discovered_sources()
+
+    # --- Feature #5: Rate Limiting ---
+
+    def _check_rate_limit(self, url: str) -> bool:
+        domain = urlparse(url).hostname or url
+        now = time.monotonic()
+        window = CONSTANTS['RATE_LIMIT_WINDOW']
+        self._rate_tracker[domain] = [t for t in self._rate_tracker[domain] if now - t < window]
+        if len(self._rate_tracker[domain]) >= CONSTANTS['RATE_LIMIT_MAX']:
+            logger.warning(f"Rate limit hit for {domain} ({len(self._rate_tracker[domain])} requests in {window}s)")
+            return False
+        self._rate_tracker[domain].append(now)
+        return True
 
     async def _fetch_url(self, url: str) -> Optional[bytes]:
         if not self.session: return None
-        try:
-            async with self.session.get(url, timeout=CONSTANTS['TIMEOUT']) as response:
-                if response.status == 200:
-                    return await response.read()
-        except Exception:
-            pass
+        if not self._check_rate_limit(url):
+            return None
+        for attempt in range(CONSTANTS['MAX_RETRIES']):
+            try:
+                async with self.session.get(url, timeout=CONSTANTS['TIMEOUT']) as response:
+                    if response.status == 200:
+                        return await response.read()
+                    if response.status == 429:
+                        wait = CONSTANTS['RETRY_BACKOFF_BASE'] ** attempt
+                        logger.warning(f"Rate limited ({response.status}) on {url}, retrying in {wait}s...")
+                        await asyncio.sleep(wait)
+                        continue
+                    if response.status >= 500:
+                        wait = CONSTANTS['RETRY_BACKOFF_BASE'] ** attempt
+                        logger.warning(f"Server error ({response.status}) on {url}, retrying in {wait}s...")
+                        await asyncio.sleep(wait)
+                        continue
+                    return None
+            except (aiohttp.ClientError, asyncio.TimeoutError):
+                if attempt < CONSTANTS['MAX_RETRIES'] - 1:
+                    wait = CONSTANTS['RETRY_BACKOFF_BASE'] ** attempt
+                    await asyncio.sleep(wait)
+                    continue
+                logger.warning(f"Failed to fetch {url} after {CONSTANTS['MAX_RETRIES']} attempts")
+                return None
+            except Exception:
+                return None
         return None
+
+    # --- Feature #12: Graceful Degradation (GeoIP + DoH) ---
 
     async def _setup_geoip(self):
         db_path = PATHS['GEOIP']
         if not os.path.exists(db_path) or (datetime.now().timestamp() - os.path.getmtime(db_path) > 86400):
             logger.info("Downloading GeoIP Database...")
-            data = await self._fetch_url(URLS['GEOIP'])
+            geoip_urls = [
+                URLS['GEOIP'],
+                "https://cdn.jsdelivr.net/gh/P3TERX/GeoLite.mmdb@download/GeoLite2-Country.mmdb",
+                "https://git.io/GeoLite2-Country.mmdb"
+            ]
+            data = None
+            for url in geoip_urls:
+                data = await self._fetch_url(url)
+                if data:
+                    break
+                logger.info(f"  Trying next GeoIP mirror...")
             if data:
                 with open(db_path, 'wb') as f: f.write(data)
-        
+            else:
+                logger.warning("Failed to download GeoIP from all mirrors.")
+
         try:
             self.geo_reader = geoip2.database.Reader(db_path)
         except Exception:
-            logger.warning("Could not load GeoIP database.")
+            logger.warning("Could not load GeoIP database. Falling back to ip-api.com for geo lookups.")
+
+    async def _geo_ip_api_fallback(self, ip: str) -> str:
+        if ip in self._geo_fallback_cache:
+            return self._geo_fallback_cache[ip]
+        try:
+            url = URLS['IP_API'].format(ip)
+            data = await self._fetch_url(url)
+            if data:
+                info = json.loads(data)
+                code = info.get('countryCode', 'XX')
+                self._geo_fallback_cache[ip] = code
+                return code
+        except Exception:
+            pass
+        self._geo_fallback_cache[ip] = 'XX'
+        return 'XX'
+
+    async def _dns_doh_fallback(self, host: str) -> Optional[str]:
+        for doh_url_template in [URLS['DOH_GOOGLE'], URLS['DOH_CLOUDFLARE']]:
+            try:
+                url = doh_url_template.format(host)
+                data = await self._fetch_url(url)
+                if data:
+                    result = json.loads(data)
+                    answers = result.get('Answer', [])
+                    for ans in answers:
+                        if ans.get('type') == 1:
+                            return ans['data']
+            except Exception:
+                continue
+        return None
 
     async def resolve_ip(self, host: str) -> Optional[str]:
         if not host: return None
         if host in self.dns_cache: return self.dns_cache[host]
-        
+
         try:
             ipaddress.ip_address(host.strip('[]'))
             self.dns_cache[host] = host.strip('[]')
@@ -428,70 +686,245 @@ class SubscriptionProcessor:
         async with self.dns_semaphore:
             try:
                 loop = asyncio.get_running_loop()
-                ip = await loop.run_in_executor(None, socket.gethostbyname, host)
-                self.dns_cache[host] = ip
-                return ip
+                results = await loop.getaddrinfo(
+                    host, None,
+                    family=socket.AF_UNSPEC,
+                    type=socket.SOCK_STREAM
+                )
+                if results:
+                    ip = results[0][4][0]
+                    self.dns_cache[host] = ip
+                    return ip
             except Exception:
-                self.dns_cache[host] = None
-                return None
+                pass
 
-    async def check_reachability(self, ip: str, port: int) -> bool:
-        if not ip or not port: return False
+            # Feature #12: DoH fallback
+            doh_ip = await self._dns_doh_fallback(host)
+            if doh_ip:
+                self.dns_cache[host] = doh_ip
+                return doh_ip
+
+            self.dns_cache[host] = None
+            return None
+
+    async def check_reachability(self, ip: str, port: int) -> Tuple[bool, float]:
+        if not ip or not port: return False, 0.0
         target_ip = ip.strip('[]')
+        start = time.monotonic()
         async with self.tcp_semaphore:
             try:
                 future = asyncio.open_connection(target_ip, port)
                 reader, writer = await asyncio.wait_for(future, timeout=CONSTANTS['TCP_TIMEOUT'])
+                elapsed_ms = (time.monotonic() - start) * 1000
                 writer.close()
                 await writer.wait_closed()
-                return True
+                return True, elapsed_ms
             except (OSError, asyncio.TimeoutError):
-                return False
+                return False, 0.0
             except Exception:
-                return False
+                return False, 0.0
 
     def get_geo_code(self, ip: str) -> str:
-        if not self.geo_reader or not ip: return "XX"
-        try:
-            return self.geo_reader.country(ip).country.iso_code or "XX"
-        except: return "XX"
+        if not ip: return "XX"
+        if self.geo_reader:
+            try:
+                return self.geo_reader.country(ip).country.iso_code or "XX"
+            except:
+                pass
+        return "XX"
 
     @staticmethod
     def get_flag(code: str) -> str:
         if not code or len(code) != 2: return "🏳️"
         return chr(127397 + ord(code[0])) + chr(127397 + ord(code[1]))
 
+    @staticmethod
+    def _speed_tier(latency_ms: float) -> str:
+        if latency_ms <= 0: return "unknown"
+        if latency_ms < 200: return "fast"
+        if latency_ms < 500: return "medium"
+        return "slow"
+
+    # --- Feature #4: Cross-Session Dedup Cache ---
+
+    def _load_seen_fps(self):
+        cache_path = PATHS['SEEN_FPS']
+        if not os.path.exists(cache_path):
+            return
+        try:
+            with open(cache_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            max_age = CONSTANTS['SEEN_FP_MAX_AGE'] * 86400
+            now = time.time()
+            self._seen_fps = {fp: ts for fp, ts in data.items() if now - ts < max_age}
+            logger.info(f"Loaded {len(self._seen_fps)} fingerprints from cache (expired pruned)")
+        except Exception as e:
+            logger.warning(f"Could not load seen fps cache: {e}")
+
+    def _save_seen_fps(self):
+        try:
+            with open(PATHS['SEEN_FPS'], 'w', encoding='utf-8') as f:
+                json.dump(self._seen_fps, f)
+        except Exception as e:
+            logger.warning(f"Could not save seen fps cache: {e}")
+
+    def _load_discovered_sources(self):
+        if not os.path.exists(PATHS['DISCOVERED']):
+            return
+        try:
+            with open(PATHS['DISCOVERED'], 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            self._discovered_sources = set(data.get('sources', []))
+            logger.info(f"Loaded {len(self._discovered_sources)} discovered sources")
+        except Exception:
+            pass
+
+    def _save_discovered_sources(self):
+        try:
+            with open(PATHS['DISCOVERED'], 'w', encoding='utf-8') as f:
+                json.dump({'sources': sorted(self._discovered_sources)}, f, indent=2)
+        except Exception:
+            pass
+
+    # --- Feature #8: Automatic Source Discovery ---
+
+    def _extract_discovered_channels(self, text: str, depth: int) -> List[str]:
+        if not CONSTANTS['SOURCE_DISCOVERY'] or depth >= CONSTANTS['SOURCE_DISCOVERY_DEPTH']:
+            return []
+        found = set()
+        for match in TELEGRAM_CHANNEL_REGEX.finditer(text):
+            ch = match.group(1)
+            if ch not in self._discovered_sources and ch not in self.channel_assets:
+                found.add(ch)
+        return sorted(found)
+
     async def process_sources(self):
         try:
             with open(PATHS['INPUT'], 'r', encoding='utf-8') as f:
-                sources = json.load(f)
+                raw_input = json.load(f)
         except FileNotFoundError:
             logger.error("Input file not found.")
             return
 
+        # Normalize input: support multiple formats
+        sources = self._normalize_sources(raw_input)
+
+        # Merge discovered sources
+        for disc in self._discovered_sources:
+            if disc not in sources:
+                sources[disc] = {}
+
+        # Pre-fetch subscriber counts and sort by popularity
+        logger.info("Fetching subscriber counts...")
+        sources = await self._sort_sources_by_subscribers(sources)
+
         tasks = []
         for key, data in sources.items():
             tasks.append(self._process_single_source(key, data))
-        
-        results = await asyncio.gather(*tasks)
-        
+
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+
         logos_to_fetch = {}
-        for key, configs, logo_url in results:
+        new_discoveries = set()
+        for result in results:
+            if isinstance(result, Exception):
+                logger.warning(f"Source processing failed: {result}")
+                continue
+            key, configs, logo_url, discovered = result
             if logo_url: logos_to_fetch[key] = logo_url
             for c in configs: self.all_configs.append((c, key))
-            
+            for d in discovered:
+                if d not in self._discovered_sources:
+                    new_discoveries.add(d)
+                    self._discovered_sources.add(d)
+
+        if new_discoveries:
+            logger.info(f"Discovered {len(new_discoveries)} new sources: {sorted(new_discoveries)[:10]}")
+
         logo_tasks = [self._fetch_and_save_logo(k, u) for k, u in logos_to_fetch.items()]
-        if logo_tasks: await asyncio.gather(*logo_tasks)
+        if logo_tasks: await asyncio.gather(*logo_tasks, return_exceptions=True)
 
         await self._fetch_private_configs()
 
-    async def _process_single_source(self, key: str, data: Dict) -> Tuple[str, List[str], Optional[str]]:
+    async def _sort_sources_by_subscribers(self, sources: Dict[str, Dict]) -> Dict[str, Dict]:
+        """Fetch subscriber count for each channel in batches, then sort descending."""
+        sub_count_regex = re.compile(r'count[^>]*>([\d,\.]+[KkMm]?)<')
+        BATCH_SIZE = 10
+        BATCH_DELAY = 1.5
+
+        async def get_sub_count(key: str) -> Tuple[str, int]:
+            url = f"https://t.me/s/{key}"
+            content = await self._fetch_url(url)
+            if not content:
+                return key, 0
+            text = content.decode('utf-8', errors='ignore')
+            match = sub_count_regex.search(text)
+            if not match:
+                return key, 0
+            raw = match.group(1).replace(',', '').replace('.', '')
+            try:
+                if raw.endswith(('K', 'k')):
+                    return key, int(float(raw[:-1]) * 1000)
+                elif raw.endswith(('M', 'm')):
+                    return key, int(float(raw[:-1]) * 1000000)
+                else:
+                    return key, int(raw)
+            except (ValueError, IndexError):
+                return key, 0
+
+        keys = list(sources.keys())
+        counts = {}
+        total_batches = (len(keys) + BATCH_SIZE - 1) // BATCH_SIZE
+
+        for i in range(0, len(keys), BATCH_SIZE):
+            batch = keys[i:i + BATCH_SIZE]
+            batch_num = i // BATCH_SIZE + 1
+            logger.info(f"  Fetching subscriber counts: batch {batch_num}/{total_batches} ({len(batch)} channels)")
+            batch_tasks = [get_sub_count(k) for k in batch]
+            results = await asyncio.gather(*batch_tasks, return_exceptions=True)
+            for r in results:
+                if isinstance(r, Exception):
+                    continue
+                k, c = r
+                counts[k] = c
+            if i + BATCH_SIZE < len(keys):
+                await asyncio.sleep(BATCH_DELAY)
+
+        sorted_keys = sorted(keys, key=lambda k: counts.get(k, 0), reverse=True)
+        top3 = [(k, counts.get(k, 0)) for k in sorted_keys[:3] if counts.get(k, 0) > 0]
+        if top3:
+            top_str = ", ".join(f"{k} ({c:,})" for k, c in top3)
+            logger.info(f"Top channels by subscribers: {top_str}")
+
+        return {k: sources[k] for k in sorted_keys}
+
+    def _normalize_sources(self, raw: Any) -> Dict[str, Dict]:
+        """Accept multiple input formats and normalize to {key: {data}}."""
+        # Format 1: Old format — dict of dicts with full metadata
+        # {"ChannelName": {"title": "...", "logo": "...", "types": [...], "subscription_url": "..."}}
+        if isinstance(raw, dict):
+            first_val = next(iter(raw.values()), None) if raw else None
+            if isinstance(first_val, dict):
+                return raw
+            # Format 2: Simple dict — {"ChannelName": numeric_id, ...}
+            # Just use the keys as channel names
+            return {k: {} for k in raw.keys()}
+
+        # Format 3: Array — ["ChannelName1", "ChannelName2", ...]
+        if isinstance(raw, list):
+            return {str(item): {} for item in raw if item}
+
+        logger.warning("Unknown input format. Expected dict or list.")
+        return {}
+
+    async def _process_single_source(self, key: str, data: Dict) -> Tuple[str, List[str], Optional[str], List[str]]:
         url = data.get('subscription_url') or f"https://t.me/s/{key}"
         content = await self._fetch_url(url)
         configs = []
         logo = None
         types = set()
         title = data.get('title', key)
+        discovered = []
 
         if content:
             text = content.decode('utf-8', errors='ignore')
@@ -501,12 +934,18 @@ class SubscriptionProcessor:
                     if 'vmess://' in decoded or 'vless://' in decoded:
                         text = decoded
                 except: pass
-            
+
+            if 't.me' in url and not data.get('subscription_url'):
+                msg_bodies = TELEGRAM_MSG_REGEX.findall(text)
+                if msg_bodies:
+                    text = '\n'.join(msg_bodies)
+                discovered = self._extract_discovered_channels(text, 0)
+
             configs = PROTOCOL_REGEX.findall(text)
-            for c in configs: 
+            for c in configs:
                 ct = ConfigUtils.detect_type(c)
                 if ct: types.add(ct)
-            
+
             t_match = re.search(r'<meta property="twitter:title" content="(.*?)">', text)
             i_match = re.search(r'<meta property="twitter:image" content="(.*?)">', text)
             if t_match: title = t_match.group(1)
@@ -517,15 +956,16 @@ class SubscriptionProcessor:
             'logo': URLS['GITHUB_LOGO'] + f"/{key}.jpg" if logo else data.get('logo', ''),
             'types': sorted(list(types))
         }
-        return key, configs, logo
+        return key, configs, logo, discovered
 
     async def _fetch_and_save_logo(self, key, url):
-        data = await self._fetch_url(url)
-        if data:
-            try:
-                with open(os.path.join(PATHS['TEMP'], 'logos', f"{key}.jpg"), 'wb') as f:
-                    f.write(data)
-            except: pass
+        async with self.logo_semaphore:
+            data = await self._fetch_url(url)
+            if data:
+                try:
+                    with open(os.path.join(PATHS['TEMP'], 'logos', f"{key}.jpg"), 'wb') as f:
+                        f.write(data)
+                except: pass
 
     async def _fetch_private_configs(self):
         data = await self._fetch_url(URLS['PRIVATE'])
@@ -538,7 +978,7 @@ class SubscriptionProcessor:
                 p_types = set()
                 for c in confs:
                     ct = ConfigUtils.detect_type(c)
-                    if ct: 
+                    if ct:
                         p_types.add(ct)
                         self.all_configs.append((c, c_name))
                 if c_name in self.channel_assets:
@@ -551,18 +991,35 @@ class SubscriptionProcessor:
 
     def deduplicate_configs(self) -> Dict[str, Tuple[str, Dict, str]]:
         unique_map = {}
+        skipped_invalid = 0
         for conf_str, chan in self.all_configs:
             parsed = ConfigParser.parse(conf_str)
             if not parsed: continue
-            
+
+            # Feature #3: Protocol-specific validation
+            valid, reason = ConfigValidator.validate(parsed, conf_str)
+            if not valid:
+                skipped_invalid += 1
+                logger.debug(f"Rejected config from {chan}: {reason}")
+                continue
+
             fp = ConfigParser.get_fingerprint(parsed)
             orig_name = parsed.get('ps') or parsed.get('name') or parsed.get('hash', '')
-            
+
             if fp not in unique_map:
                 unique_map[fp] = (orig_name, parsed, chan)
+
+        # Feature #4: Mark fingerprints as seen
+        now = time.time()
+        for fp in unique_map:
+            self._seen_fps[fp] = now
+
+        self.all_configs.clear()
+        if skipped_invalid:
+            logger.info(f"Validation rejected {skipped_invalid} invalid configs")
         return unique_map
 
-    async def _process_config_parallel(self, fp, orig, parsed, chan) -> Optional[Dict]:
+    async def _process_config_parallel(self, fp: str, orig: str, parsed: Dict, chan: str) -> Optional[EnrichedConfig]:
         raw_port = parsed.get('port')
         if not raw_port: return None
         try:
@@ -574,128 +1031,133 @@ class SubscriptionProcessor:
         sni = parsed.get('sni') or parsed.get('params', {}).get('sni') or parsed.get('params', {}).get('host')
         if (not host or host == '127.0.0.1') and sni:
             host = sni
-        
+
         if not host: return None
 
         ip = await self.resolve_ip(host)
         if not ip: return None
 
-        is_reachable = await self.check_reachability(ip, port)
+        is_reachable, latency_ms = await self.check_reachability(ip, port)
         if not is_reachable: return None
 
         country_code = self.get_geo_code(ip)
+        if country_code == "XX":
+            country_code = await self._geo_ip_api_fallback(ip)
         is_cf = ConfigUtils.is_cloudflare(ip)
         flag = self.get_flag(country_code)
-        
-        return {
-            'fp': fp,
-            'orig': orig,
-            'parsed': parsed,
-            'chan': chan,
-            'ip': ip,
-            'country_code': country_code,
-            'is_cf': is_cf,
-            'flag': flag
-        }
+
+        return EnrichedConfig(
+            fp=fp,
+            orig=orig,
+            parsed=parsed,
+            chan=chan,
+            ip=ip,
+            country_code=country_code,
+            is_cf=is_cf,
+            flag=flag,
+            latency_ms=round(latency_ms, 1),
+            speed_tier=self._speed_tier(latency_ms)
+        )
 
     async def enrich_and_tag(self, unique_map: Dict):
         final_list = []
         lite_list = []
         api_data = []
-        groups = {'channels': defaultdict(list), 'locations': defaultdict(list), 'ai': []}
-        
-        lite_channel_counts = defaultdict(int)
-        normal_channel_counts = defaultdict(int)
-        channel_name_counter = defaultdict(lambda: defaultdict(int))
-        
+        groups: Dict[str, Any] = {'channels': defaultdict(list), 'locations': defaultdict(list), 'ai': []}
+
+        lite_channel_counts: Dict[str, int] = defaultdict(int)
+        normal_channel_counts: Dict[str, int] = defaultdict(int)
+        channel_name_counter: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
+
         total = len(unique_map)
         logger.info(f"Processing {total} configs (Mass Parallel Check)...")
-        
+
         tasks = []
         for fp, (orig, parsed, chan) in unique_map.items():
             tasks.append(self._process_config_parallel(fp, orig, parsed, chan))
-            
+
         results = await asyncio.gather(*tasks)
-        
+
         logger.info("Checks complete. Formatting results...")
-        
+
+        reachable_count = 0
         for res in results:
             if not res: continue
+            reachable_count += 1
 
-            parsed = res['parsed']
-            chan = res['chan']
-            country_code = res['country_code']
-            flag = res['flag']
-            is_cf = res['is_cf']
-            
+            parsed = res.parsed
+            chan = res.chan
+            country_code = res.country_code
+            flag = res.flag
+            is_cf = res.is_cf
+
             clean_chan = chan.strip().lstrip('@')
             ctype_disp = parsed.get('type', 'UNK').upper()
-            
+
             combo_key = f"{country_code}_{ctype_disp}"
             channel_name_counter[clean_chan][combo_key] += 1
             count_idx = channel_name_counter[clean_chan][combo_key]
-            
-            new_tag = f"{flag} {country_code} | {ctype_disp} | @{clean_chan} #{count_idx}"
-            
+
+            speed_badge = f" [{res.speed_tier}]" if res.speed_tier != "unknown" else ""
+            new_tag = f"{flag} {country_code} | {ctype_disp} | @{clean_chan} #{count_idx}{speed_badge}"
+
             final_str = ConfigParser.reassemble(parsed, new_tag)
             if not final_str: continue
-            
+
             if normal_channel_counts[clean_chan] < CONSTANTS['NORMAL_LIMIT']:
                 final_list.append(final_str)
                 groups['channels'][clean_chan].append(final_str)
                 groups['locations'][country_code].append(final_str)
                 if is_cf:
                     groups['locations']['CF'].append(final_str)
-                
+
                 if is_cf and parsed['type'] == 'vless':
                     sni = parsed.get('sni') or parsed.get('params', {}).get('sni') or ''
                     check_host = parsed.get('host') or parsed.get('add') or ''
-                    is_ai_config = False
-                    for domain in CONSTANTS['AI_DOMAINS']:
-                        if domain in sni or domain in check_host:
-                            is_ai_config = True
-                            break
+                    is_ai_config = any(domain in sni or domain in check_host for domain in CONSTANTS['AI_DOMAINS'])
                     if is_ai_config:
                         groups['ai'].append(final_str)
-                
+
                 normal_channel_counts[clean_chan] += 1
 
             if lite_channel_counts[clean_chan] < CONSTANTS['LITE_LIMIT']:
                 lite_list.append(final_str)
                 lite_channel_counts[clean_chan] += 1
-                
+
             eff_type = parsed['type']
             if eff_type == 'vless' and 'security=reality' in final_str: eff_type = 'reality'
             assets = self.channel_assets.get(clean_chan, {})
-            
+
             if normal_channel_counts[clean_chan] <= CONSTANTS['NORMAL_LIMIT']:
                 api_data.append({
                     'channel': {'username': clean_chan, 'title': assets.get('title', ''), 'logo': assets.get('logo', '')},
-                    'country': country_code, 'flag': flag, 'type': eff_type, 'config': final_str, 'is_cf': is_cf
+                    'country': country_code, 'flag': flag, 'type': eff_type, 'config': final_str,
+                    'is_cf': is_cf, 'latency_ms': res.latency_ms, 'speed_tier': res.speed_tier
                 })
-            
-        print("\nProcessing complete.")
+
+        logger.info(f"Processing complete. Reachable: {reachable_count}/{total}, Normal: {len(final_list)}, Lite: {len(lite_list)}")
         return final_list, lite_list, groups, api_data
 
     def write_output(self, final_list, lite_list, groups, api_data):
         sorted_assets = dict(sorted(self.channel_assets.items()))
         with open(os.path.join(PATHS['TEMP'], 'channelsAssets.json'), 'w', encoding='utf-8') as f:
             json.dump(sorted_assets, f, indent=4, ensure_ascii=False)
-        
-        if os.path.exists(PATHS['FINAL_ASSETS']): shutil.rmtree(PATHS['FINAL_ASSETS'])
+
+        if os.path.exists(PATHS['FINAL_ASSETS']): shutil.rmtree(PATHS['FINAL_ASSETS'], ignore_errors=True)
         shutil.copytree(PATHS['TEMP'], PATHS['FINAL_ASSETS'])
 
         def write_subscription_package(configs: List[str], base_dir: str, title_prefix: str, ai_configs: List[str] = None):
-            proto_groups = defaultdict(lambda: defaultdict(list))
+            proto_groups: Dict[str, Dict[str, List[str]]] = defaultdict(lambda: defaultdict(list))
             fake_configs = [ConfigUtils.create_fake_config(n) for n in CONSTANTS['FAKE_NAMES']]
-            
+
             for c in configs:
                 ct = ConfigUtils.detect_type(c)
                 if not ct: continue
                 parsed = ConfigParser.parse(c)
-                if not parsed: continue
-                host = parsed.get('host') or parsed.get('add', '')
-                addr_type = ConfigUtils.get_address_type(host)
+                host = ""
+                if parsed:
+                    host = parsed.get('host') or parsed.get('add', '') or parsed.get('host', '')
+                addr_type = ConfigUtils.get_address_type(host) if host else 'domain'
                 proto_groups[ct][addr_type].append(c)
                 if ct == 'vless' and ConfigUtils.is_reality(c):
                     proto_groups['reality'][addr_type].append(c)
@@ -722,7 +1184,7 @@ class SubscriptionProcessor:
         logger.info("Writing files...")
         write_subscription_package(final_list, os.path.join(PATHS['OUTPUT_SUBS'], 'xray'), "PSG", groups['ai'])
         write_subscription_package(lite_list, os.path.join(PATHS['OUTPUT_LITE'], 'xray'), "PSG Lite", groups['ai'])
-        
+
         for loc, confs in groups['locations'].items():
             safe_name = re.sub(r'[^a-zA-Z0-9]', '', loc) or "XX"
             path = os.path.join(PATHS['OUTPUT_SUBS'], 'locations')
@@ -735,18 +1197,18 @@ class SubscriptionProcessor:
 
         with open(PATHS['CONFIG_TXT'], 'w', encoding='utf-8') as f:
             f.write('\n'.join(final_list))
-        
+
         with open(os.path.join(PATHS['API'], 'allConfigs.json'), 'w', encoding='utf-8') as f:
             json.dump(api_data, f, indent=4, ensure_ascii=False)
 
     def _write_files(self, directory: str, filename: str, configs: List[str], title: str, prepends: List[str] = None):
         os.makedirs(os.path.join(directory, 'normal'), exist_ok=True)
         os.makedirs(os.path.join(directory, 'base64'), exist_ok=True)
-        
+
         merged = (prepends or []) + configs
         content = ConfigUtils.generate_header(title) + '\n'.join(merged)
         b64_content = base64.b64encode(content.encode()).decode()
-        
+
         try:
             with open(os.path.join(directory, 'normal', filename), 'w', encoding='utf-8') as f:
                 f.write(content)
@@ -764,14 +1226,14 @@ class SubscriptionProcessor:
             return
 
         base_url = f"https://raw.githubusercontent.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}/{CONSTANTS['GITHUB_BRANCH']}"
-        
-        # Prepare Message in Persian with Base64 links
+
         message = (
             f"<b>🚀 بروزرسانی PSG تکمیل شد</b>\n"
             f"📅 <i>{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</i>\n\n"
             f"📊 <b>آمار:</b>\n"
             f"• کانفیگ‌های عادی: {total_normal}\n"
-            f"• کانفیگ‌های سبک: {total_lite}\n\n"
+            f"• کانفیگ‌های سبک: {total_lite}\n"
+            f"• منابع کشف شده: {len(self._discovered_sources)}\n\n"
             f"🔗 <b>لینک‌های اشتراک (Base64):</b>\n\n"
             f"🌍 <b>اشتراک عادی (میکس):</b>\n"
             f"<code>{base_url}/subscriptions/xray/base64/mix</code>\n\n"
@@ -803,26 +1265,523 @@ class SubscriptionProcessor:
         except Exception as e:
             logger.error(f"Error sending Telegram notification: {e}")
 
+# --- Feature #6: Configuration Format Converter ---
+
+ALLOWED_SS_METHODS = ["chacha20-ietf-poly1305", "aes-256-gcm", "2022-blake3-aes-256-gcm", "aes-128-gcm", "chacha20-ietf"]
+
+
+class ConfigConverter:
+    SINGBOX_TEMPLATE = {
+        "log": {"level": "info", "timestamp": True},
+        "dns": {
+            "servers": [
+                {"tag": "google", "address": "https://8.8.8.8/dns-query"},
+                {"tag": "local", "address": "local"}
+            ],
+            "rules": [{"server": "local", "domain_suffix": ["ir"]}]
+        },
+        "inbounds": [
+            {"tag": "mixed-in", "type": "mixed", "listen": "127.0.0.1", "listen_port": 2080}
+        ],
+        "outbounds": [
+            {"tag": "DIRECT", "type": "direct"},
+            {"tag": "BLOCK", "type": "block"},
+            {"tag": "REJECT", "type": "reject"}
+        ]
+    }
+
+    NEKOBOX_TEMPLATE = {
+        "log": {"level": "info"},
+        "dns": {
+            "servers": [
+                {"tag": "google", "address": "https://8.8.8.8/dns-query"},
+                {"tag": "local", "address": "local"}
+            ]
+        },
+        "inbounds": [
+            {"tag": "mixed-in", "type": "mixed", "listen": "127.0.0.1", "listen_port": 2080}
+        ],
+        "outbounds": [
+            {"tag": "DIRECT", "type": "direct"},
+            {"tag": "BLOCK", "type": "block"}
+        ]
+    }
+
+    CLASH_TEMPLATE = """mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+##PROXIES##
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+##PROXY_NAMES##
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+##PROXY_NAMES##
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
+"""
+
+    SURFBOARD_TEMPLATE = """[General]
+loglevel = notify
+skip-proxy = 127.0.0.1, localhost, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 192.168.*, 10.*, 172.16.*, 172.17.*, 172.18.*, 172.19.*, 172.20.*, 172.21.*, 172.22.*, 172.23.*, 172.24.*, 172.25.*, 172.26.*, 172.27.*, 172.28.*, 172.29.*, 172.30.*, 172.31.*, localhost, *.local, e.crashlynatics.com
+dns-server = 8.8.8.8, 8.8.4.4
+[Proxy]
+##PROXIES##
+[Proxy Group]
+PROXY = select, ##PROXY_NAMES##
+[Rule]
+GEOSITE,category-ads-all,REJECT
+GEOIP,LAN,DIRECT
+GEOIP,CN,DIRECT
+MATCH,PROXY
+"""
+
+    @staticmethod
+    def _parse_config_for_export(config_str: str) -> Optional[Dict[str, Any]]:
+        ctype = ConfigUtils.detect_type(config_str)
+        if not ctype:
+            return None
+        try:
+            if ctype == 'vmess':
+                b64 = config_str[8:]
+                data = json.loads(ConfigUtils.decode_base64(b64))
+                return {
+                    'type': 'vmess',
+                    'name': data.get('ps', 'VMess'),
+                    'server': data.get('add', ''),
+                    'port': int(data.get('port', 443)),
+                    'uuid': data.get('id', ''),
+                    'alterId': int(data.get('aid', 0)),
+                    'cipher': data.get('scy', 'auto'),
+                    'network': data.get('net', 'tcp'),
+                    'type_header': data.get('type', 'none'),
+                    'host': data.get('host', ''),
+                    'path': data.get('path', ''),
+                    'tls': data.get('tls', '') == 'tls',
+                    'sni': data.get('sni', ''),
+                    'fp': data.get('fp', ''),
+                    'alpn': data.get('alpn', ''),
+                }
+            elif ctype == 'ss':
+                parsed = urlparse(config_str)
+                user_info = parsed.username
+                if not user_info and '@' in parsed.netloc:
+                    try:
+                        b64part = parsed.netloc.split('@')[0]
+                        decoded = ConfigUtils.decode_base64(b64part)
+                        method, password = decoded.split(':', 1)
+                    except Exception:
+                        return None
+                else:
+                    method = parsed.username
+                    password = parsed.password
+                return {
+                    'type': 'ss',
+                    'name': unquote(parsed.fragment),
+                    'server': parsed.hostname,
+                    'port': parsed.port,
+                    'method': method,
+                    'password': password
+                }
+            else:
+                parsed = urlparse(config_str)
+                params = parse_qs(parsed.query)
+                clean_params = {k: v[0] for k, v in params.items()}
+                return {
+                    'type': ctype,
+                    'name': unquote(parsed.fragment),
+                    'server': parsed.hostname,
+                    'port': parsed.port,
+                    'uuid': parsed.username,
+                    'password': parsed.username,
+                    'params': clean_params,
+                    'path': parsed.path
+                }
+        except Exception:
+            return None
+
+    @staticmethod
+    def _to_clash_proxy(data: Dict, is_meta: bool = False) -> Optional[Dict]:
+        ctype = data['type']
+        proxy = {
+            "name": data['name'],
+            "server": data['server'],
+            "port": data['port'],
+            "type": ctype,
+            "skip-cert-verify": True
+        }
+
+        if ctype == 'vmess':
+            proxy.update({
+                "uuid": data['uuid'],
+                "alterId": data.get('alterId', 0),
+                "cipher": data.get('cipher', 'auto'),
+                "network": data.get('network', 'tcp'),
+                "tls": data.get('tls', False)
+            })
+            if data.get('network') == 'ws':
+                proxy['ws-opts'] = {
+                    "path": data.get('path', '/'),
+                    "headers": {"Host": data.get('host') or data['server']}
+                }
+            elif data.get('network') == 'grpc':
+                proxy['grpc-opts'] = {"grpc-service-name": data.get('path', '')}
+                if not proxy['tls']:
+                    proxy['tls'] = True
+
+        elif ctype == 'vless':
+            if not is_meta:
+                return None
+            params = data.get('params', {})
+            proxy.update({
+                "uuid": data['uuid'],
+                "network": params.get('type', 'tcp'),
+                "tls": params.get('security') in ['tls', 'reality'],
+                "udp": True,
+                "client-fingerprint": params.get('fp', 'chrome')
+            })
+            if params.get('flow'):
+                proxy['flow'] = 'xtls-rprx-vision'
+            if params.get('sni'):
+                proxy['servername'] = params['sni']
+            if proxy['network'] == 'ws':
+                proxy['ws-opts'] = {
+                    "path": data.get('path', '/'),
+                    "headers": {"Host": params.get('host', data['server'])}
+                }
+            elif proxy['network'] == 'grpc':
+                proxy['grpc-opts'] = {"grpc-service-name": params.get('serviceName', '')}
+            if params.get('security') == 'reality':
+                proxy['client-fingerprint'] = params.get('fp', 'chrome')
+                proxy['reality-opts'] = {
+                    "public-key": params.get('pbk', ''),
+                    "short-id": params.get('sid', '')
+                }
+
+        elif ctype == 'trojan':
+            proxy['password'] = data.get('password', '')
+            proxy['skip-cert-verify'] = data.get('params', {}).get('allowInsecure') == '1'
+            if data.get('params', {}).get('sni'):
+                proxy['sni'] = data['params']['sni']
+
+        elif ctype == 'ss':
+            if data.get('method') not in ALLOWED_SS_METHODS:
+                return None
+            proxy['cipher'] = data['method']
+            proxy['password'] = data.get('password', '')
+        else:
+            return None
+
+        return proxy
+
+    @staticmethod
+    def _to_surfboard_proxy(data: Dict) -> Optional[str]:
+        ctype = data['type']
+        if ctype not in ['vmess', 'trojan', 'ss']:
+            return None
+        name = data['name'].replace(',', ' ')
+        parts = [f"{name} = {ctype}", data['server'], str(data['port'])]
+
+        if ctype == 'vmess':
+            parts.append(f"username = {data['uuid']}")
+            parts.append(f"ws = {'true' if data.get('network') == 'ws' else 'false'}")
+            parts.append(f"tls = {'true' if data.get('tls') else 'false'}")
+            if data.get('network') == 'ws':
+                parts.append(f"ws-path = {data.get('path', '/')}")
+                host = data.get('host') or data['server']
+                parts.append(f'ws-headers = Host:"{host}"')
+        elif ctype == 'trojan':
+            parts.append(f"password = {data.get('password', '')}")
+            parts.append("skip-cert-verify = true")
+            if data.get('params', {}).get('sni'):
+                parts.append(f"sni = {data['params']['sni']}")
+        elif ctype == 'ss':
+            if data.get('method') not in ALLOWED_SS_METHODS:
+                return None
+            parts.append(f"encrypt-method = {data['method']}")
+            parts.append(f"password = {data.get('password', '')}")
+
+        return ", ".join(parts)
+
+    @staticmethod
+    def _to_singbox_outbound(data: Dict) -> Optional[Dict]:
+        ctype = data['type']
+        out = {
+            "tag": data['name'],
+            "type": ctype,
+            "server": data['server'],
+            "server_port": data['port']
+        }
+
+        def get_tls(sni, insecure=True, fp='chrome', alpn=None, reality=None):
+            tls = {
+                "enabled": True,
+                "server_name": sni,
+                "insecure": insecure,
+                "utls": {"enabled": True, "fingerprint": fp}
+            }
+            if alpn:
+                tls['alpn'] = alpn if isinstance(alpn, list) else [alpn]
+            if reality:
+                tls['reality'] = reality
+                tls['reality']['enabled'] = True
+            return tls
+
+        def get_transport(net, path, host, service_name):
+            if net == 'ws':
+                return {"type": "ws", "path": path, "headers": {"Host": host}}
+            if net == 'grpc':
+                return {"type": "grpc", "service_name": service_name}
+            if net == 'http':
+                return {"type": "http", "host": [host], "path": path}
+            return None
+
+        if ctype == 'vmess':
+            out.update({
+                "uuid": data['uuid'],
+                "security": "auto",
+                "alter_id": data.get('alterId', 0)
+            })
+            if data.get('port') == 443 or data.get('tls'):
+                out['tls'] = get_tls(data.get('sni') or data.get('host', ''))
+            net = data.get('network', 'tcp')
+            if net in ['ws', 'grpc', 'http']:
+                out['transport'] = get_transport(net, data.get('path', ''), data.get('host', ''), data.get('path', ''))
+
+        elif ctype == 'vless':
+            params = data.get('params', {})
+            out.update({
+                "uuid": data['uuid'],
+                "packet_encoding": "xudp"
+            })
+            if params.get('flow'):
+                out['flow'] = "xtls-rprx-vision"
+            security = params.get('security', '')
+            if data.get('port') == 443 or security in ['tls', 'reality']:
+                reality = None
+                if security == 'reality':
+                    reality = {"public_key": params.get('pbk', ''), "short_id": params.get('sid', '')}
+                out['tls'] = get_tls(params.get('sni', ''), reality=reality, fp=params.get('fp', 'chrome'))
+            net = params.get('type', 'tcp')
+            if net in ['ws', 'grpc', 'http']:
+                out['transport'] = get_transport(net, data.get('path', ''), params.get('host', ''), params.get('serviceName', ''))
+
+        elif ctype == 'trojan':
+            out['password'] = data.get('password', '')
+            if data.get('port') == 443 or data.get('params', {}).get('security') == 'tls':
+                out['tls'] = get_tls(data.get('params', {}).get('sni', ''))
+
+        elif ctype == 'ss':
+            out['type'] = "shadowsocks"
+            out['method'] = data.get('method', 'aes-256-gcm')
+            out['password'] = data.get('password', '')
+
+        elif ctype == 'tuic':
+            params = data.get('params', {})
+            out.update({
+                "uuid": data['uuid'],
+                "password": data.get('password', ''),
+                "congestion_control": params.get('congestion_control', 'bbr'),
+                "udp_relay_mode": params.get('udp_relay_mode', 'native'),
+                "tls": {
+                    "enabled": True,
+                    "server_name": params.get('sni', ''),
+                    "insecure": params.get('allow_insecure') == '1',
+                    "alpn": params.get('alpn', '').split(',') if params.get('alpn') else None
+                }
+            })
+
+        elif ctype == 'hy2':
+            out['type'] = 'hysteria2'
+            params = data.get('params', {})
+            if not params.get('obfs-password'):
+                return None
+            out.update({
+                "password": data.get('password', ''),
+                "obfs": {"type": params.get('obfs', 'salamander'), "password": params.get('obfs-password', '')},
+                "tls": {
+                    "enabled": True,
+                    "server_name": params.get('sni', ''),
+                    "insecure": params.get('insecure') == '1',
+                    "alpn": ["h3"]
+                }
+            })
+        else:
+            return None
+
+        return out
+
+    def convert_outputs(self, output_subs: str, output_lite: str):
+        logger.info("6. Converting outputs to Clash/Meta/Surfboard/Singbox formats...")
+        datasets = [
+            {
+                "name": "MAIN",
+                "input_dir": os.path.join(output_subs, 'xray', 'base64'),
+                "output_root": output_subs,
+                "url_path": "subscriptions/surfboard"
+            },
+            {
+                "name": "LITE",
+                "input_dir": os.path.join(output_lite, 'xray', 'base64'),
+                "output_root": output_lite,
+                "url_path": "lite/subscriptions/surfboard"
+            },
+            {
+                "name": "LOCATIONS",
+                "input_dir": os.path.join(output_subs, 'locations', 'base64'),
+                "output_root": output_subs,
+                "url_path": "subscriptions/locations/surfboard"
+            }
+        ]
+
+        for dataset in datasets:
+            self._process_dataset(
+                dataset['name'],
+                dataset['input_dir'],
+                dataset['output_root'],
+                dataset['url_path']
+            )
+
+        logger.info("Format conversion complete.")
+
+    def _process_dataset(self, name: str, input_dir: str, output_root: str, url_path: str):
+        logger.info(f"  Converting {name} datasets...")
+
+        for out_type in ['clash', 'meta', 'surfboard']:
+            os.makedirs(os.path.join(output_root, out_type), exist_ok=True)
+
+        os.makedirs(os.path.join(output_root, 'singbox'), exist_ok=True)
+        os.makedirs(os.path.join(output_root, 'nekobox'), exist_ok=True)
+
+        input_files = glob_mod.glob(os.path.join(input_dir, '*'))
+        if not input_files:
+            logger.info(f"    No files found in {input_dir}")
+            return
+
+        for filepath in input_files:
+            filename = os.path.basename(filepath)
+            with open(filepath, 'r', encoding='utf-8') as f:
+                b64_content = f.read().strip()
+            decoded_content = ConfigUtils.decode_base64(b64_content)
+            config_lines = decoded_content.splitlines()
+
+            parsed_proxies = []
+            for line in config_lines:
+                if not line.strip():
+                    continue
+                parsed = self._parse_config_for_export(line)
+                if parsed:
+                    parsed_proxies.append(parsed)
+
+            if not parsed_proxies:
+                continue
+
+            self._write_clash_configs(parsed_proxies, filename, output_root)
+            self._write_surfboard_config(parsed_proxies, filename, output_root, url_path)
+            self._write_singbox_configs(parsed_proxies, filename, output_root)
+
+    def _write_clash_configs(self, proxies: List[Dict], filename: str, output_root: str):
+        for out_type in ['clash', 'meta']:
+            is_meta = (out_type == 'meta')
+            proxy_lines = []
+            proxy_names = []
+
+            for p in proxies:
+                res = self._to_clash_proxy(p, is_meta)
+                if res:
+                    json_str = json.dumps(res, ensure_ascii=False)
+                    proxy_lines.append(f"  - {json_str}")
+                    safe_name = p['name'].replace("'", "''")
+                    proxy_names.append(f"      - '{safe_name}'")
+
+            if proxy_lines:
+                content = self.CLASH_TEMPLATE
+                content = content.replace('##PROXIES##', '\n'.join(proxy_lines))
+                content = content.replace('##PROXY_NAMES##', '\n'.join(proxy_names))
+                out_path = os.path.join(output_root, out_type, filename)
+                with open(out_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+
+    def _write_surfboard_config(self, proxies: List[Dict], filename: str, output_root: str, url_path: str):
+        surf_lines = []
+        proxy_names = []
+        for p in proxies:
+            res = self._to_surfboard_proxy(p)
+            if res:
+                surf_lines.append(res)
+                proxy_names.append(p['name'].replace(',', ' '))
+
+        if surf_lines:
+            content = self.SURFBOARD_TEMPLATE
+            content = content.replace('##PROXIES##', '\n'.join(surf_lines))
+            content = content.replace('##PROXY_NAMES##', ', '.join(proxy_names))
+            out_path = os.path.join(output_root, 'surfboard', filename)
+            with open(out_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+
+    def _write_singbox_configs(self, proxies: List[Dict], filename: str, output_root: str):
+        for task, base_template in [('singbox', self.SINGBOX_TEMPLATE), ('nekobox', self.NEKOBOX_TEMPLATE)]:
+            structure = copy.deepcopy(base_template)
+            tags_added = []
+
+            for p in proxies:
+                outbound = self._to_singbox_outbound(p)
+                if outbound:
+                    structure['outbounds'].append(outbound)
+                    tags_added.append(outbound['tag'])
+
+            if tags_added:
+                structure['outbounds'][0]['outbounds'] = tags_added
+
+            if task == 'singbox':
+                b64_title = base64.b64encode(f"PSG | {filename.upper()}".encode()).decode()
+                header = (
+                    f"//profile-title: base64:{b64_title}\n"
+                    "//profile-update-interval: 1\n"
+                    "//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n"
+                    "//support-url: https://t.me/yebekhe\n"
+                    f"//profile-web-page-url: https://github.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}\n\n"
+                )
+                final_content = header + json.dumps(structure, indent=2, ensure_ascii=False)
+            else:
+                final_content = json.dumps(structure, indent=2, ensure_ascii=False)
+
+            out_path = os.path.join(output_root, task, f"{filename}.json")
+            with open(out_path, 'w', encoding='utf-8') as f:
+                f.write(final_content)
+
+
 # --- Entry Point ---
 
 async def main():
     processor = SubscriptionProcessor()
     try:
         await processor.initialize()
-        
+
         logger.info("1. Fetching Sources")
         await processor.process_sources()
-        
-        logger.info("2. Deduplicating")
+
+        logger.info("2. Deduplicating & Validating")
         unique_map = processor.deduplicate_configs()
-        
+
         logger.info("3. Enriching and Tagging (Mass Parallel Check)")
         final, lite, groups, api_data = await processor.enrich_and_tag(unique_map)
-        
+
         logger.info("4. Writing Outputs")
         processor.write_output(final, lite, groups, api_data)
-        
-        logger.info("5. Sending Notification")
+
+        logger.info("5. Converting to Export Formats")
+        converter = ConfigConverter()
+        converter.convert_outputs(PATHS['OUTPUT_SUBS'], PATHS['OUTPUT_LITE'])
+
+        logger.info("6. Sending Notification")
         await processor.send_telegram_notification(len(final), len(lite))
 
     finally:
@@ -834,4 +1793,3 @@ if __name__ == "__main__":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
     asyncio.run(main())
-
