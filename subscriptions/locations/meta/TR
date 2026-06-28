@@ -23,7 +23,10 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1", "server": "45.136.5.98", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e82277d0-9a7f-4217-aac4-b587529d4f95", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
   - {"name": "🇹🇷 TR | VLESS | @turboo_server #1", "server": "37.221.79.82", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "turboo-server", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
+  - {"name": "🇹🇷 TR | VLESS | @v2ray_free_conf #1", "server": "194.116.236.15", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b92ed761-7503-40fc-ab5d-b7d164cf9758", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
+  - {"name": "🇹🇷 TR | VLESS | @vmesc #1", "server": "tr.dtgitar.com", "port": 19667, "type": "vless", "skip-cert-verify": true, "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -37,7 +40,10 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies: 
+      - '🇹🇷 TR | VLESS | @red2ray #1'
       - '🇹🇷 TR | VLESS | @turboo_server #1'
+      - '🇹🇷 TR | VLESS | @v2ray_free_conf #1'
+      - '🇹🇷 TR | VLESS | @vmesc #1'
 
   - name: 🌍 Global Media
     type: select

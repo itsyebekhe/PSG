@@ -91,8 +91,9 @@
         "auto",
         "direct",
         "🇫🇮 FI | VLESS | @free1_vpn #1",
+        "🇫🇮 FI | VLESS | @mimitdl #1",
         "🇫🇮 FI | VLESS | @netfreedom0 #1",
-        "🇫🇮 FI | VLESS | @v2raych #1"
+        "🇫🇮 FI | VLESS | @v2rayngvpn_1 #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -101,8 +102,9 @@
       "interval": "10m",
       "outbounds": [
         "🇫🇮 FI | VLESS | @free1_vpn #1",
+        "🇫🇮 FI | VLESS | @mimitdl #1",
         "🇫🇮 FI | VLESS | @netfreedom0 #1",
-        "🇫🇮 FI | VLESS | @v2raych #1"
+        "🇫🇮 FI | VLESS | @v2rayngvpn_1 #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -116,9 +118,31 @@
     {
       "tag": "🇫🇮 FI | VLESS | @free1_vpn #1",
       "type": "vless",
-      "server": "fanlandv2.sorcepack.ir",
-      "server_port": 52077,
-      "uuid": "f6c9ef00-feb2-456e-ac54-11fd5a996cc3",
+      "server": "217.217.247.246",
+      "server_port": 443,
+      "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇫🇮 FI | VLESS | @mimitdl #1",
+      "type": "vless",
+      "server": "65.109.212.53",
+      "server_port": 80,
+      "uuid": "MIMITDL",
       "packet_encoding": "xudp"
     },
     {
@@ -144,12 +168,21 @@
       }
     },
     {
-      "tag": "🇫🇮 FI | VLESS | @v2raych #1",
+      "tag": "🇫🇮 FI | VLESS | @v2rayngvpn_1 #1",
       "type": "vless",
-      "server": "65.109.186.44",
-      "server_port": 45026,
-      "uuid": "fa420bad-1a7a-46b9-ab44-05caa7255931",
-      "packet_encoding": "xudp"
+      "server": "46.246.34.165",
+      "server_port": 8443,
+      "uuid": "394f6981-a782-4779-9a85-e6cf22935d93",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     }
   ],
   "route": {

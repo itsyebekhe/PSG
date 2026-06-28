@@ -23,9 +23,10 @@ dns:
     - '+.pool.ntp.org'
 
 proxies: 
-  - {"name": "🇫🇮 FI | VLESS | @free1_vpn #1", "server": "fanlandv2.sorcepack.ir", "port": 52077, "type": "vless", "skip-cert-verify": true, "uuid": "f6c9ef00-feb2-456e-ac54-11fd5a996cc3", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @free1_vpn #1", "server": "217.217.247.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
+  - {"name": "🇫🇮 FI | VLESS | @mimitdl #1", "server": "65.109.212.53", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "MIMITDL", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1", "server": "fi1.vitok.cc", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "", "short-id": ""}}
-  - {"name": "🇫🇮 FI | VLESS | @v2raych #1", "server": "65.109.186.44", "port": 45026, "type": "vless", "skip-cert-verify": true, "uuid": "fa420bad-1a7a-46b9-ab44-05caa7255931", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @v2rayngvpn_1 #1", "server": "46.246.34.165", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "394f6981-a782-4779-9a85-e6cf22935d93", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
 
 proxy-groups:
   - name: 🚀 Proxy
@@ -40,8 +41,9 @@ proxy-groups:
     interval: 300
     proxies: 
       - '🇫🇮 FI | VLESS | @free1_vpn #1'
+      - '🇫🇮 FI | VLESS | @mimitdl #1'
       - '🇫🇮 FI | VLESS | @netfreedom0 #1'
-      - '🇫🇮 FI | VLESS | @v2raych #1'
+      - '🇫🇮 FI | VLESS | @v2rayngvpn_1 #1'
 
   - name: 🌍 Global Media
     type: select

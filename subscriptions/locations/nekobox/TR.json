@@ -77,7 +77,10 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇹🇷 TR | VLESS | @turboo_server #1"
+        "🇹🇷 TR | VLESS | @red2ray #1",
+        "🇹🇷 TR | VLESS | @turboo_server #1",
+        "🇹🇷 TR | VLESS | @v2ray_free_conf #1",
+        "🇹🇷 TR | VLESS | @vmesc #1"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -85,7 +88,10 @@
     {
       "interval": "10m",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @turboo_server #1"
+        "🇹🇷 TR | VLESS | @red2ray #1",
+        "🇹🇷 TR | VLESS | @turboo_server #1",
+        "🇹🇷 TR | VLESS | @v2ray_free_conf #1",
+        "🇹🇷 TR | VLESS | @vmesc #1"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -99,6 +105,28 @@
     {
       "tag": "bypass",
       "type": "direct"
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1",
+      "type": "vless",
+      "server": "45.136.5.98",
+      "server_port": 443,
+      "uuid": "e82277d0-9a7f-4217-aac4-b587529d4f95",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
     },
     {
       "tag": "🇹🇷 TR | VLESS | @turboo_server #1",
@@ -121,6 +149,36 @@
           "enabled": true
         }
       }
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @v2ray_free_conf #1",
+      "type": "vless",
+      "server": "194.116.236.15",
+      "server_port": 443,
+      "uuid": "b92ed761-7503-40fc-ab5d-b7d164cf9758",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "public_key": "",
+          "short_id": "",
+          "enabled": true
+        }
+      }
+    },
+    {
+      "tag": "🇹🇷 TR | VLESS | @vmesc #1",
+      "type": "vless",
+      "server": "tr.dtgitar.com",
+      "server_port": 19667,
+      "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
+      "packet_encoding": "xudp"
     }
   ],
   "route": {
