@@ -28,7 +28,10 @@
       "type": "direct",
       "outbounds": [
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
-        "🇫🇷 FR | VLESS | @mpproxy #1 [fast]"
+        "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ]
     },
     {
@@ -58,6 +61,39 @@
       "server": "84.247.129.205",
       "server_port": 4433,
       "uuid": "00000000-0000-4000-8000-000000000000",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+      "type": "vless",
+      "server": "199.232.169.135",
+      "server_port": 80,
+      "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+      "type": "vless",
+      "server": "199.232.169.135",
+      "server_port": 443,
+      "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+      "type": "vless",
+      "server": "51.75.30.8",
+      "server_port": 80,
+      "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",
       "packet_encoding": "xudp"
     }
   ]

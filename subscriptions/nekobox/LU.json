@@ -1,0 +1,46 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "🇱🇺 LU | VLESS | @configv2rayforfree #1 [fast]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "🇱🇺 LU | VLESS | @configv2rayforfree #1 [fast]",
+      "type": "vless",
+      "server": "car2.carcloudsix.site",
+      "server_port": 444,
+      "uuid": "2bbcaede-7820-4a21-8357-c86aec278c4e",
+      "packet_encoding": "xudp"
+    }
+  ]
+}

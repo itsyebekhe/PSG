@@ -34,7 +34,16 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @mpproxy #2 [fast]"
+        "🇮🇷 IR | VLESS | @mpproxy #2 [medium]",
+        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
+        "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
+        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
+        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]"
       ]
     },
     {
@@ -112,11 +121,137 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇮🇷 IR | VLESS | @mpproxy #2 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @mpproxy #2 [medium]",
       "type": "vless",
       "server": "non.zabuzabfr.ir",
       "server_port": 8880,
       "uuid": "74c5af8f-1801-42a2-99ae-f3e5b7f3258a",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+      "type": "vless",
+      "server": "parspack.com",
+      "server_port": 443,
+      "uuid": "51905fd3-29de-4b4e-b351-83542f1d5390",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+      "type": "vless",
+      "server": "tamin.ir",
+      "server_port": 80,
+      "uuid": "aa5e25fc-c7d7-4e6e-b7f7-105a35c0175a",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
+      "type": "vless",
+      "server": "s19.speedyconnect.pro",
+      "server_port": 443,
+      "uuid": "97dce074-7db1-4d59-99ca-0ef8311e2425",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
+      "type": "vmess",
+      "server": "37.32.23.122",
+      "server_port": 443,
+      "uuid": "d12bc882-43c7-415e-87c5-2a7fdc8371c0",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/websocket/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
+      "type": "vmess",
+      "server": "78.47.131.39",
+      "server_port": 8443,
+      "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+      "type": "vless",
+      "server": "allsms.rozfa.com",
+      "server_port": 443,
+      "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
+      "type": "vless",
+      "server": "zula.ir",
+      "server_port": 80,
+      "uuid": "9b4a2cd4-7d28-4ebe-d701-95723b811aff",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
+      "type": "vless",
+      "server": "www.zula.ir",
+      "server_port": 443,
+      "uuid": "2b5e2b86-55b6-4571-abc1-c1dec8605725",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]",
+      "type": "vless",
+      "server": "zula.ir",
+      "server_port": 80,
+      "uuid": "19f935c2-4c92-4b8a-b024-3e378f396255",
       "packet_encoding": "xudp"
     }
   ]
