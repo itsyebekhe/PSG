@@ -801,23 +801,13 @@ class SubscriptionProcessor:
             if disc not in sources:
                 sources[disc] = {}
 
-        # Pre-fetch subscriber counts and sort by popularity
-        logger.info("Fetching subscriber counts...")
-        sources = await self._sort_sources_by_subscribers(sources)
-
-        tasks = []
-        for key, data in sources.items():
-            tasks.append(self._process_single_source(key, data))
-
-        results = await asyncio.gather(*tasks, return_exceptions=True)
+        # Single-pass: fetch each channel once, extract everything
+        logger.info("Fetching channels (single-pass)...")
+        results = await self._fetch_all_sources(sources)
 
         logos_to_fetch = {}
         new_discoveries = set()
-        for result in results:
-            if isinstance(result, Exception):
-                logger.warning(f"Source processing failed: {result}")
-                continue
-            key, configs, logo_url, discovered = result
+        for key, configs, logo_url, discovered in results:
             if logo_url: logos_to_fetch[key] = logo_url
             for c in configs: self.all_configs.append((c, key))
             for d in discovered:
@@ -831,49 +821,89 @@ class SubscriptionProcessor:
         logo_tasks = [self._fetch_and_save_logo(k, u) for k, u in logos_to_fetch.items()]
         if logo_tasks: await asyncio.gather(*logo_tasks, return_exceptions=True)
 
-    async def _sort_sources_by_subscribers(self, sources: Dict[str, Dict]) -> Dict[str, Dict]:
-        """Fetch subscriber count for each channel sequentially, then sort descending."""
+    async def _fetch_all_sources(self, sources: Dict[str, Dict]) -> List[Tuple[str, List[str], Optional[str], List[str]]]:
+        """Fetch each channel once, extract subscriber count + configs + metadata, then sort by subscribers."""
         sub_count_regex = re.compile(r'count[^>]*>([\d,\.]+[KkMm]?)<')
         FETCH_DELAY = 0.3
-
-        async def get_sub_count(key: str) -> Tuple[str, int]:
-            url = f"https://t.me/s/{key}"
-            content = await self._fetch_url(url)
-            if not content:
-                return key, 0
-            text = content.decode('utf-8', errors='ignore')
-            match = sub_count_regex.search(text)
-            if not match:
-                return key, 0
-            raw = match.group(1).replace(',', '').replace('.', '')
-            try:
-                if raw.endswith(('K', 'k')):
-                    return key, int(float(raw[:-1]) * 1000)
-                elif raw.endswith(('M', 'm')):
-                    return key, int(float(raw[:-1]) * 1000000)
-                else:
-                    return key, int(raw)
-            except (ValueError, IndexError):
-                return key, 0
-
         keys = list(sources.keys())
-        counts = {}
         total = len(keys)
+        results_with_counts = []
 
         for i, key in enumerate(keys):
             if (i + 1) % 20 == 0 or i == 0:
-                logger.info(f"  Fetching subscriber counts: {i + 1}/{total}")
-            k, c = await get_sub_count(key)
-            counts[k] = c
+                logger.info(f"  Fetching: {i + 1}/{total}")
+
+            data = sources[key]
+            url = data.get('subscription_url') or f"https://t.me/s/{key}"
+            content = await self._fetch_url(url)
+
+            configs = []
+            logo = None
+            types = set()
+            title = data.get('title', key)
+            discovered = []
+            sub_count = 0
+
+            if content:
+                text = content.decode('utf-8', errors='ignore')
+
+                # Extract subscriber count
+                count_match = sub_count_regex.search(text)
+                if count_match:
+                    raw = count_match.group(1).replace(',', '').replace('.', '')
+                    try:
+                        if raw.endswith(('K', 'k')):
+                            sub_count = int(float(raw[:-1]) * 1000)
+                        elif raw.endswith(('M', 'm')):
+                            sub_count = int(float(raw[:-1]) * 1000000)
+                        else:
+                            sub_count = int(raw)
+                    except (ValueError, IndexError):
+                        sub_count = 0
+
+                # Extract configs
+                if data.get('subscription_url'):
+                    try:
+                        decoded = ConfigUtils.safe_base64_decode(text)
+                        if 'vmess://' in decoded or 'vless://' in decoded:
+                            text = decoded
+                    except: pass
+
+                if 't.me' in url and not data.get('subscription_url'):
+                    msg_bodies = TELEGRAM_MSG_REGEX.findall(text)
+                    if msg_bodies:
+                        text = '\n'.join(msg_bodies)
+                    discovered = self._extract_discovered_channels(text, 0)
+
+                configs = PROTOCOL_REGEX.findall(text)
+                for c in configs:
+                    ct = ConfigUtils.detect_type(c)
+                    if ct: types.add(ct)
+
+                # Extract metadata
+                t_match = re.search(r'<meta property="twitter:title" content="(.*?)">', text)
+                i_match = re.search(r'<meta property="twitter:image" content="(.*?)">', text)
+                if t_match: title = t_match.group(1)
+                if i_match: logo = i_match.group(1)
+
+            self.channel_assets[key] = {
+                'title': title,
+                'logo': URLS['GITHUB_LOGO'] + f"/{key}.jpg" if logo else data.get('logo', ''),
+                'types': sorted(list(types))
+            }
+
+            results_with_counts.append((key, configs, logo, discovered, sub_count))
             await asyncio.sleep(FETCH_DELAY)
 
-        sorted_keys = sorted(keys, key=lambda k: counts.get(k, 0), reverse=True)
-        top3 = [(k, counts.get(k, 0)) for k in sorted_keys[:3] if counts.get(k, 0) > 0]
+        # Sort by subscriber count descending
+        results_with_counts.sort(key=lambda x: x[4], reverse=True)
+        top3 = [(r[0], r[4]) for r in results_with_counts[:3] if r[4] > 0]
         if top3:
             top_str = ", ".join(f"{k} ({c:,})" for k, c in top3)
             logger.info(f"Top channels by subscribers: {top_str}")
 
-        return {k: sources[k] for k in sorted_keys}
+        # Return without counts
+        return [(r[0], r[1], r[2], r[3]) for r in results_with_counts]
 
     def _normalize_sources(self, raw: Any) -> Dict[str, Dict]:
         """Accept multiple input formats and normalize to {key: {data}}."""
@@ -893,47 +923,6 @@ class SubscriptionProcessor:
 
         logger.warning("Unknown input format. Expected dict or list.")
         return {}
-
-    async def _process_single_source(self, key: str, data: Dict) -> Tuple[str, List[str], Optional[str], List[str]]:
-        url = data.get('subscription_url') or f"https://t.me/s/{key}"
-        content = await self._fetch_url(url, bypass_rate_limit=True)
-        configs = []
-        logo = None
-        types = set()
-        title = data.get('title', key)
-        discovered = []
-
-        if content:
-            text = content.decode('utf-8', errors='ignore')
-            if data.get('subscription_url'):
-                try:
-                    decoded = ConfigUtils.safe_base64_decode(text)
-                    if 'vmess://' in decoded or 'vless://' in decoded:
-                        text = decoded
-                except: pass
-
-            if 't.me' in url and not data.get('subscription_url'):
-                msg_bodies = TELEGRAM_MSG_REGEX.findall(text)
-                if msg_bodies:
-                    text = '\n'.join(msg_bodies)
-                discovered = self._extract_discovered_channels(text, 0)
-
-            configs = PROTOCOL_REGEX.findall(text)
-            for c in configs:
-                ct = ConfigUtils.detect_type(c)
-                if ct: types.add(ct)
-
-            t_match = re.search(r'<meta property="twitter:title" content="(.*?)">', text)
-            i_match = re.search(r'<meta property="twitter:image" content="(.*?)">', text)
-            if t_match: title = t_match.group(1)
-            if i_match: logo = i_match.group(1)
-
-        self.channel_assets[key] = {
-            'title': title,
-            'logo': URLS['GITHUB_LOGO'] + f"/{key}.jpg" if logo else data.get('logo', ''),
-            'types': sorted(list(types))
-        }
-        return key, configs, logo, discovered
 
     async def _fetch_and_save_logo(self, key, url):
         async with self.logo_semaphore:
