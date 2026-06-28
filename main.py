@@ -1754,6 +1754,375 @@ MATCH,PROXY
                 f.write(final_content)
 
 
+    def generate_readmes(self, final_list: List[str], lite_list: List[str], groups: Dict, api_data: List):
+        logger.info("7. Generating README files...")
+        base_url = f"https://raw.githubusercontent.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}/{CONSTANTS['GITHUB_BRANCH']}"
+        repo_url = f"https://github.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}"
+
+        # Gather stats
+        protocol_counts: Dict[str, int] = defaultdict(int)
+        country_counts: Dict[str, int] = defaultdict(int)
+        channel_counts: Dict[str, int] = defaultdict(int)
+        speed_tiers = {'fast': 0, 'medium': 0, 'slow': 0, 'unknown': 0}
+        cf_count = 0
+
+        for item in api_data:
+            protocol_counts[item['type']] += 1
+            country_counts[item['country']] += 1
+            channel_counts[item['channel']['username']] += 1
+            if item.get('is_cf'): cf_count += 1
+            tier = item.get('speed_tier', 'unknown')
+            speed_tiers[tier] = speed_tiers.get(tier, 0) + 1
+
+        total = len(final_list)
+        total_lite = len(lite_list)
+        total_channels = len(channel_counts)
+        total_countries = len(country_counts)
+        total_protocols = len(protocol_counts)
+
+        # Sort by count
+        sorted_protocols = sorted(protocol_counts.items(), key=lambda x: x[1], reverse=True)
+        sorted_countries = sorted(country_counts.items(), key=lambda x: x[1], reverse=True)[:20]
+        sorted_channels = sorted(channel_counts.items(), key=lambda x: x[1], reverse=True)[:30]
+
+        def country_flag(code: str) -> str:
+            if not code or len(code) != 2: return ""
+            return chr(127397 + ord(code[0])) + chr(127397 + ord(code[1]))
+
+        def protocol_emoji(p: str) -> str:
+            return {'vless': '🔒', 'vmess': '🛡️', 'trojan': '🐴', 'ss': '🔑', 'reality': '⚡', 'xhttp': '🚀', 'tuic': '🎯', 'hy2': '🌊'}.get(p, '📡')
+
+        now = datetime.now().strftime('%Y-%m-%d %H:%M UTC')
+
+        # Build subscription links section
+        sub_links = f"""| فرمت / Format | لینک عادی / Normal | لینک سبک / Lite |
+|:---|:---|:---|
+| 🔗 Base64 | `[_mix]({base_url}/subscriptions/xray/base64/mix)` | `[mix]({base_url}/lite/subscriptions/xray/base64/mix)` |
+| ⚡ Clash | `[mix]({base_url}/subscriptions/clash/mix)` | `[mix]({base_url}/lite/subscriptions/clash/mix)` |
+| 🧠 Clash.Meta | `[mix]({base_url}/subscriptions/meta/mix)` | `[mix]({base_url}/lite/subscriptions/meta/mix)` |
+| 🏄 Surfboard | `[mix]({base_url}/subscriptions/surfboard/mix)` | `[mix]({base_url}/lite/subscriptions/surfboard/mix)` |
+| 📦 Sing-box | `[mix.json]({base_url}/subscriptions/singbox/mix.json)` | `[mix.json]({base_url}/lite/subscriptions/singbox/mix.json)` |
+| 🐱 Nekobox | `[mix.json]({base_url}/subscriptions/nekobox/mix.json)` | `[mix.json]({base_url}/lite/subscriptions/nekobox/mix.json)` |"""
+
+        # Per-protocol links
+        proto_links_rows = []
+        for proto, count in sorted_protocols:
+            emoji = protocol_emoji(proto)
+            proto_links_rows.append(f"| {emoji} {proto.upper()} | `{base_url}/subscriptions/xray/base64/{proto}` | `{base_url}/lite/subscriptions/xray/base64/{proto}` |")
+        proto_links = "\n".join(proto_links_rows)
+
+        # Per-country links
+        country_links_rows = []
+        for code, count in sorted_countries:
+            flag = country_flag(code)
+            country_links_rows.append(f"| {flag} {code} | `{base_url}/subscriptions/locations/base64/{code}` | {count} configs |")
+        country_links = "\n".join(country_links_rows)
+
+        # Channel table
+        channel_rows = []
+        for i, (chan, count) in enumerate(sorted_channels, 1):
+            assets = self.channel_assets.get(chan, {})
+            title = assets.get('title', chan)[:40]
+            channel_rows.append(f"| {i} | @{chan} | {title} | {count} |")
+        channel_table = "\n".join(channel_rows)
+
+        # Protocol stats
+        proto_stats_rows = []
+        for proto, count in sorted_protocols:
+            emoji = protocol_emoji(proto)
+            pct = (count / total * 100) if total else 0
+            bar_len = int(pct / 5)
+            bar = "█" * bar_len + "░" * (20 - bar_len)
+            proto_stats_rows.append(f"| {emoji} {proto.upper()} | {count} | {pct:.1f}% | `{bar}` |")
+        proto_stats = "\n".join(proto_stats_rows)
+
+        # Country stats
+        country_stats_rows = []
+        for code, count in sorted_countries[:15]:
+            flag = country_flag(code)
+            pct = (count / total * 100) if total else 0
+            country_stats_rows.append(f"| {flag} {code} | {count} | {pct:.1f}% |")
+        country_stats = "\n".join(country_stats_rows)
+
+        # AI configs
+        ai_links = ""
+        if groups.get('ai'):
+            ai_links = f"""
+## 🤖 AI Service Configs
+
+Configs optimized for **OpenAI / ChatGPT / Claude**:
+
+| Format | Link |
+|:---|:---|
+| Base64 | `{base_url}/subscriptions/xray/base64/openai` |
+| Clash | `{base_url}/subscriptions/clash/openai` |
+| Sing-box | `{base_url}/subscriptions/singbox/openai.json` |"""
+
+        # === ENGLISH README ===
+        readme_en = f"""# 🛡️ PSG — Premium Subscription Generator
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Configs-{total}-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Lite-{total_lite}-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Channels-{total_channels}-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Countries-{total_countries}-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Updated-{now}-red?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <a href="README.fa.md">🇮🇷 نسخه فارسی</a>
+</p>
+
+---
+
+## 📊 Network Statistics
+
+<div align="center">
+
+| Metric | Value |
+|:---|:---:|
+| 🔢 Total Configs | **{total:,}** |
+| 🪶 Lite Configs | **{total_lite:,}** |
+| 📡 Active Channels | **{total_channels}** |
+| 🌍 Countries | **{total_countries}** |
+| 🔌 Protocol Types | **{total_protocols}** |
+| ☁️ Cloudflare | **{cf_count:,}** |
+
+</div>
+
+### ⚡ Protocol Distribution
+
+| Protocol | Count | Share | Distribution |
+|:---|:---:|:---:|:---|
+{proto_stats}
+
+### 🌍 Top Countries
+
+| Country | Configs | Share |
+|:---|:---:|:---:|
+{country_stats}
+
+### 🚀 Speed Distribution
+
+| Tier | Count | Latency |
+|:---|:---:|:---|
+| ⚡ Fast | {speed_tiers['fast']:,} | < 200ms |
+| 🟡 Medium | {speed_tiers['medium']:,} | 200-500ms |
+| 🐢 Slow | {speed_tiers['slow']:,} | > 500ms |
+
+---
+
+## 🔗 Subscription Links
+
+### 📌 Main Subscriptions
+
+{sub_links}
+
+### 🔌 By Protocol
+
+| Protocol | Normal | Lite |
+|:---|:---|:---|
+{proto_links}
+
+{ai_links}
+
+### 🌍 By Country (Top 20)
+
+| Country | Link | Configs |
+|:---|:---|:---:|
+{country_links}
+
+---
+
+## 📡 Active Channels ({total_channels})
+
+| # | Channel | Title | Configs |
+|:---:|:---|:---|:---:|
+{channel_table}
+
+---
+
+## 📱 Recommended Clients
+
+| Platform | Client | Format |
+|:---|:---|:---|
+| 🤖 Android | [v2rayNG](https://github.com/2dust/v2rayNG), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
+| 🍎 iOS | [Streisand](https://github.com/nickinchina/streisand), [V2Box](https://github.com/nickinchina/v2box), [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932740345) | All |
+| 🪟 Windows | [v2rayN](https://github.com/2dust/v2rayN), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
+| 🍏 macOS | [V2Box](https://github.com/nickinchina/v2box), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
+| 🐧 Linux | [Nekoray](https://github.com/MatsuriDayo/nekoray), [Hiddify](https://github.com/hiddify/hiddify-app) | All |
+
+---
+
+## 📂 Output Structure
+
+```
+subscriptions/
+├── xray/
+│   ├── base64/          # Base64 encoded (for import)
+│   └── normal/          # Plain text
+├── clash/               # Clash YAML configs
+├── meta/                # Clash.Meta YAML configs
+├── surfboard/           # Surfboard INI configs
+├── singbox/             # Sing-box JSON configs
+├── nekobox/             # Nekobox JSON configs
+├── locations/           # Per-country subscriptions
+│   └── base64/
+└── channels/            # Per-channel subscriptions
+    └── base64/
+lite/
+└── subscriptions/       # Lite versions (same structure)
+```
+
+---
+
+<div align="center">
+
+**Auto-updated every 6 hours** · Built with ❤️ by [PSG](https://github.com/itsyebekhe/PSG)
+
+</div>
+"""
+
+        # === FARSI README ===
+        readme_fa = f"""# 🛡️ PSG — سازنده اشتراک پروکسی
+
+<p align="center">
+  <img src="https://img.shields.io/badge/کانفیگ-{total:,}-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/سبک-{total_lite:,}-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/کانال-{total_channels}-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/کشور-{total_countries}-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/بروزرسانی-{now}-red?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <a href="README.md">🇬🇧 English Version</a>
+</p>
+
+---
+
+## 📊 آمار شبکه
+
+<div align="center">
+
+| شرح | مقدار |
+|:---|:---:|
+| 🔢 کل کانفیگ‌ها | **{total:,}** |
+| 🪶 کانفیگ سبک | **{total_lite:,}** |
+| 📡 کانال فعال | **{total_channels}** |
+| 🌍 کشور | **{total_countries}** |
+| 🔌 نوع پروتکل | **{total_protocols}** |
+| ☁️ کلودفلر | **{cf_count:,}** |
+
+</div>
+
+### ⚡ توزیع پروتکل‌ها
+
+| پروتکل | تعداد | سهم | نمودار |
+|:---|:---:|:---:|:---|
+{proto_stats}
+
+### 🌍 برترین کشورها
+
+| کشور | کانفیگ | سهم |
+|:---|:---:|:---:|
+{country_stats}
+
+### 🚀 توزیع سرعت
+
+| سطح | تعداد | تأخیر |
+|:---|:---:|:---|
+| ⚡ سریع | {speed_tiers['fast']:,} | کمتر از ۲۰۰ms |
+| 🟡 متوسط | {speed_tiers['medium']:,} | ۲۰۰-۵۰۰ms |
+| 🐢 کند | {speed_tiers['slow']:,} | بیش از ۵۰۰ms |
+
+---
+
+## 🔗 لینک‌های اشتراک
+
+### 📌 اشتراک اصلی
+
+| فرمت | لینک عادی | لینک سبک |
+|:---|:---|:---|
+| 🔗 Base64 | `[mix]({base_url}/subscriptions/xray/base64/mix)` | `[mix]({base_url}/lite/subscriptions/xray/base64/mix)` |
+| ⚡ Clash | `[mix]({base_url}/subscriptions/clash/mix)` | `[mix]({base_url}/lite/subscriptions/clash/mix)` |
+| 🧠 Clash.Meta | `[mix]({base_url}/subscriptions/meta/mix)` | `[mix]({base_url}/lite/subscriptions/meta/mix)` |
+| 🏄 Surfboard | `[mix]({base_url}/subscriptions/surfboard/mix)` | `[mix]({base_url}/lite/subscriptions/surfboard/mix)` |
+| 📦 Sing-box | `[mix.json]({base_url}/subscriptions/singbox/mix.json)` | `[mix.json]({base_url}/lite/subscriptions/singbox/mix.json)` |
+| 🐱 Nekobox | `[mix.json]({base_url}/subscriptions/nekobox/mix.json)` | `[mix.json]({base_url}/lite/subscriptions/nekobox/mix.json)` |
+
+### 🔌 بر اساس پروتکل
+
+| پروتکل | عادی | سبک |
+|:---|:---|:---|
+{proto_links}
+
+{ai_links.replace('AI Service Configs', 'سرویس‌های هوش مصنوعی').replace('Configs optimized for **OpenAI / ChatGPT / Claude**:', 'کانفیگ‌های بهینه برای **OpenAI / ChatGPT / Claude**:') if ai_links else ''}
+
+### 🌍 بر اساس کشور (۲۰ کشور برتر)
+
+| کشور | لینک | کانفیگ |
+|:---|:---|:---:|
+{country_links}
+
+---
+
+## 📡 کانال‌های فعال ({total_channels})
+
+| # | کانال | عنوان | کانفیگ |
+|:---:|:---|:---|:---:|
+{channel_table}
+
+---
+
+## 📱 کلاینت‌های پیشنهادی
+
+| پلتفرم | کلاینت | فرمت |
+|:---|:---|:---|
+| 🤖 اندروید | [v2rayNG](https://github.com/2dust/v2rayNG), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
+| 🍎 آیفون | [Streisand](https://github.com/nickinchina/streisand), [V2Box](https://github.com/nickinchina/v2box), [Shadowrocket](https://apps.apple.com/app/shadowrocket/id932740345) | همه |
+| 🪟 ویندوز | [v2rayN](https://github.com/2dust/v2rayN), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
+| 🍏 مک | [V2Box](https://github.com/nickinchina/v2box), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
+| 🐧 لینوکس | [Nekoray](https://github.com/MatsuriDayo/nekoray), [Hiddify](https://github.com/hiddify/hiddify-app) | همه |
+
+---
+
+## 📂 ساختار خروجی
+
+```
+subscriptions/
+├── xray/
+│   ├── base64/          # کدگذاری شده Base64
+│   └── normal/          # متن ساده
+├── clash/               # فایل‌های Clash YAML
+├── meta/                # فایل‌های Clash.Meta YAML
+├── surfboard/           # فایل‌های Surfboard INI
+├── singbox/             # فایل‌های Sing-box JSON
+├── nekobox/             # فایل‌های Nekobox JSON
+├── locations/           # اشتراک بر اساس کشور
+│   └── base64/
+└── channels/            # اشتراک بر اساس کانال
+    └── base64/
+lite/
+└── subscriptions/       # نسخه سبک (ساختار مشابه)
+```
+
+---
+
+<div align="center">
+
+**بروزرسانی خودکار هر ۶ ساعت** · ساخته شده با ❤️ توسط [PSG](https://github.com/itsyebekhe/PSG)
+
+</div>
+"""
+
+        # Write files
+        with open(os.path.join(BASE_DIR, 'README.md'), 'w', encoding='utf-8') as f:
+            f.write(readme_en)
+        with open(os.path.join(BASE_DIR, 'README.fa.md'), 'w', encoding='utf-8') as f:
+            f.write(readme_fa)
+        logger.info("README.md and README.fa.md generated.")
+
+
 # --- Entry Point ---
 
 async def main():
@@ -1777,7 +2146,10 @@ async def main():
         converter = ConfigConverter()
         converter.convert_outputs(PATHS['OUTPUT_SUBS'], PATHS['OUTPUT_LITE'])
 
-        logger.info("6. Sending Notification")
+        logger.info("6. Generating READMEs")
+        processor.generate_readmes(final, lite, groups, api_data)
+
+        logger.info("7. Sending Notification")
         await processor.send_telegram_notification(len(final), len(lite))
 
     finally:
