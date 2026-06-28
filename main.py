@@ -529,7 +529,6 @@ class SubscriptionProcessor:
         self.dns_semaphore = asyncio.Semaphore(CONSTANTS['DNS_WORKERS'])
         self.tcp_semaphore = asyncio.Semaphore(CONSTANTS['TCP_WORKERS'])
         self.logo_semaphore = asyncio.Semaphore(CONSTANTS['LOGO_WORKERS'])
-        self._rate_tracker: Dict[str, List[float]] = defaultdict(list)
         self._seen_fps: Dict[str, float] = {}
         self._discovered_sources: Set[str] = set()
         self._geo_fallback_cache: Dict[str, str] = {}
@@ -573,21 +572,8 @@ class SubscriptionProcessor:
 
     # --- Feature #5: Rate Limiting ---
 
-    def _check_rate_limit(self, url: str) -> bool:
-        domain = urlparse(url).hostname or url
-        now = time.monotonic()
-        window = CONSTANTS['RATE_LIMIT_WINDOW']
-        self._rate_tracker[domain] = [t for t in self._rate_tracker[domain] if now - t < window]
-        if len(self._rate_tracker[domain]) >= CONSTANTS['RATE_LIMIT_MAX']:
-            logger.warning(f"Rate limit hit for {domain} ({len(self._rate_tracker[domain])} requests in {window}s)")
-            return False
-        self._rate_tracker[domain].append(now)
-        return True
-
-    async def _fetch_url(self, url: str, bypass_rate_limit: bool = False) -> Optional[bytes]:
+    async def _fetch_url(self, url: str) -> Optional[bytes]:
         if not self.session: return None
-        if not bypass_rate_limit and not self._check_rate_limit(url):
-            return None
         for attempt in range(CONSTANTS['MAX_RETRIES']):
             try:
                 async with self.session.get(url, timeout=CONSTANTS['TIMEOUT']) as response:
@@ -852,7 +838,7 @@ class SubscriptionProcessor:
 
         async def get_sub_count(key: str) -> Tuple[str, int]:
             url = f"https://t.me/s/{key}"
-            content = await self._fetch_url(url, bypass_rate_limit=True)
+            content = await self._fetch_url(url)
             if not content:
                 return key, 0
             text = content.decode('utf-8', errors='ignore')
@@ -910,7 +896,7 @@ class SubscriptionProcessor:
 
     async def _process_single_source(self, key: str, data: Dict) -> Tuple[str, List[str], Optional[str], List[str]]:
         url = data.get('subscription_url') or f"https://t.me/s/{key}"
-        content = await self._fetch_url(url)
+        content = await self._fetch_url(url, bypass_rate_limit=True)
         configs = []
         logo = None
         types = set()
