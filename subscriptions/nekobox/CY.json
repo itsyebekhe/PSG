@@ -27,7 +27,7 @@
       "tag": "DIRECT",
       "type": "direct",
       "outbounds": [
-        "🇨🇾 CY | SS | @NamiraConfigs #1 [fast]"
+        "🇨🇾 CY | VLESS | @easy_free_vpn #1 [medium]"
       ]
     },
     {
@@ -35,12 +35,21 @@
       "type": "block"
     },
     {
-      "tag": "🇨🇾 CY | SS | @NamiraConfigs #1 [fast]",
-      "type": "shadowsocks",
-      "server": "134.255.210.49",
-      "server_port": 990,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz",
-      "password": null
+      "tag": "🇨🇾 CY | VLESS | @easy_free_vpn #1 [medium]",
+      "type": "vless",
+      "server": "ercf-ma.rainzone.site",
+      "server_port": 443,
+      "uuid": "6a5d1316-c0a6-4963-8ee1-e8b9b5f98c20",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,31 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "🇨🇦 CA | VLESS | @flyv2ray #1 [fast]", "server": "104.16.72.70", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "2179012d-4aa6-4acd-9e67-be80d8a63486", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇨🇦 CA | VLESS | @mimitdl #1 [fast]", "server": "104.16.75.207", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "ef0adf73-a279-4bd3-9f1b-bb5f4137ddb3", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - 'همکاری_ملی'
+      - 'جاویدشاه'
+      - 'KingRezaPahlavi'
+      - '🇨🇦 CA | VLESS | @flyv2ray #1 [fast]'
+      - '🇨🇦 CA | VLESS | @mimitdl #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - 'همکاری_ملی'
+      - 'جاویدشاه'
+      - 'KingRezaPahlavi'
+      - '🇨🇦 CA | VLESS | @flyv2ray #1 [fast]'
+      - '🇨🇦 CA | VLESS | @mimitdl #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

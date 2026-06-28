@@ -1,0 +1,74 @@
+//profile-title: base64:UFNHIHwgUlU=
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://t.me/yebekhe
+//profile-web-page-url: https://github.com/itsyebekhe/PSG
+
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ],
+    "rules": [
+      {
+        "server": "local",
+        "domain_suffix": [
+          "ir"
+        ]
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "🇷🇺 RU | VLESS | @beshkan #1 [fast]",
+        "🇷🇺 RU | VLESS | @beshkan #2 [fast]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "REJECT",
+      "type": "reject"
+    },
+    {
+      "tag": "🇷🇺 RU | VLESS | @beshkan #1 [fast]",
+      "type": "vless",
+      "server": "r1.mizulina.top",
+      "server_port": 22231,
+      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇷🇺 RU | VLESS | @beshkan #2 [fast]",
+      "type": "vless",
+      "server": "85.234.114.53",
+      "server_port": 22231,
+      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+      "packet_encoding": "xudp"
+    }
+  ]
+}

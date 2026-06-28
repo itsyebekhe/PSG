@@ -1,0 +1,46 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "🇬🇧 GB | SS | @beshkan #1 [fast]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "🇬🇧 GB | SS | @beshkan #1 [fast]",
+      "type": "shadowsocks",
+      "server": "82.38.31.149",
+      "server_port": 8080,
+      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB",
+      "password": null
+    }
+  ]
+}

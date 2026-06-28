@@ -3,17 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]", "server": "178.162.245.230", "port": 2052, "type": "vless", "skip-cert-verify": true, "uuid": "70b6b341-b859-443a-baf0-08ceabe9d1a4", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "178.162.245.230"}}}
+  - {"name": "🇩🇪 DE | VLESS | @father_vpn #1 [fast]", "server": "152.233.35.228", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "394f6981-a782-4779-9a85-e6cf22935d93", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]", "server": "rfvbtghnuyjmikolpqaz.sd.noafra.ir", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "1de6be2d-567a-4663-b5ea-5de8afe0f496", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇩🇪 DE | VLESS | @mpproxy #1 [fast]", "server": "37.114.50.157", "port": 4002, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-4000-8000-000000000000", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇩🇪 DE | VLESS | @father_vpn #1 [fast]'
+      - '🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]'
+      - '🇩🇪 DE | VLESS | @mpproxy #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇩🇪 DE | VLESS | @father_vpn #1 [fast]'
+      - '🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]'
+      - '🇩🇪 DE | VLESS | @mpproxy #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

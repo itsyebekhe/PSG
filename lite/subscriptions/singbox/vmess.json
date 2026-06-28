@@ -1,0 +1,183 @@
+//profile-title: base64:UFNHIHwgVk1FU1M=
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://t.me/yebekhe
+//profile-web-page-url: https://github.com/itsyebekhe/PSG
+
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ],
+    "rules": [
+      {
+        "server": "local",
+        "domain_suffix": [
+          "ir"
+        ]
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "REJECT",
+      "type": "reject"
+    },
+    {
+      "tag": "همکاری_ملی",
+      "type": "vless",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "جاویدشاه",
+      "type": "vless",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "KingRezaPahlavi",
+      "type": "vless",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+      "type": "vmess",
+      "server": "xcf037.facai2024.com",
+      "server_port": 443,
+      "uuid": "d9863037-0463-4615-e972-36ba9662d1e9",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "xcf037.facai2024.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/d9863037",
+        "headers": {
+          "Host": "xcf037.facai2024.com"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
+      "type": "vmess",
+      "server": "time.is",
+      "server_port": 443,
+      "uuid": "b526926d-1474-4f41-985e-8b877cb840cd",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "time.is",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shs111.kejixiaoqi666.store"
+        }
+      }
+    }
+  ]
+}

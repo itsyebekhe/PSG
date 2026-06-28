@@ -1,0 +1,22 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇷 FR | VLESS | @father_vpn #1 [fast]", "server": "79.127.196.11", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "55f7d143-a594-4a91-b030-f227039f85ef", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]", "server": "84.247.129.205", "port": 4433, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-4000-8000-000000000000", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇷 FR | VLESS | @father_vpn #1 [fast]'
+      - '🇫🇷 FR | VLESS | @mpproxy #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇷 FR | VLESS | @father_vpn #1 [fast]'
+      - '🇫🇷 FR | VLESS | @mpproxy #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

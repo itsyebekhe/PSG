@@ -1,0 +1,46 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
+      "type": "vless",
+      "server": "65.109.212.53",
+      "server_port": 80,
+      "uuid": "MIMITDL",
+      "packet_encoding": "xudp"
+    }
+  ]
+}

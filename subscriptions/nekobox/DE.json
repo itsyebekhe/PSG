@@ -27,7 +27,10 @@
       "tag": "DIRECT",
       "type": "direct",
       "outbounds": [
-        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]"
+        "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]",
+        "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
+        "🇩🇪 DE | SS | @beshkan #1 [fast]"
       ]
     },
     {
@@ -35,19 +38,54 @@
       "type": "block"
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
       "type": "vless",
-      "server": "178.162.245.230",
-      "server_port": 2052,
-      "uuid": "70b6b341-b859-443a-baf0-08ceabe9d1a4",
+      "server": "152.233.35.228",
+      "server_port": 8443,
+      "uuid": "394f6981-a782-4779-9a85-e6cf22935d93",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
+    },
+    {
+      "tag": "🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]",
+      "type": "vless",
+      "server": "rfvbtghnuyjmikolpqaz.sd.noafra.ir",
+      "server_port": 80,
+      "uuid": "1de6be2d-567a-4663-b5ea-5de8afe0f496",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
+      "type": "vless",
+      "server": "37.114.50.157",
+      "server_port": 4002,
+      "uuid": "00000000-0000-4000-8000-000000000000",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇩🇪 DE | SS | @beshkan #1 [fast]",
+      "type": "shadowsocks",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa",
+      "password": null
     }
   ]
 }

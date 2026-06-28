@@ -1,0 +1,226 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "🇽🇽 XX | VLESS | @father_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @mester_v2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #3 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #4 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #5 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #6 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #3 [fast]",
+        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @father_vpn #1 [fast]",
+      "type": "vless",
+      "server": "pishdad.org",
+      "server_port": 8080,
+      "uuid": "0058c215-ab1e-400c-a403-b5b2fda7e846",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @mester_v2ray #1 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "e2f4d1fa-0a6d-48c3-a5bb-8b438e78af23",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "DIGIV2RAY",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "DIGIV2RAY",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "4b75a44d-3c91-461e-b5a0-6060ac8aff68",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "8a20ecfe-6a72-4e88-aa2c-65a9e43a8512",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #3 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "64abd4e7-59ad-4a74-e3df-cd5d87cc105a",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #4 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "5781b499-6c56-452d-9e9f-fa43383f3b08",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #5 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "d7bd8e1a-8e57-46a8-c1f9-2c6751de3afc",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #6 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "7be30ab7-2077-4115-f6cb-125226afd3c9",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
+      "type": "vless",
+      "server": "heap.metsima.com",
+      "server_port": 443,
+      "uuid": "1babf628-b13f-4fe2-8064-985f617425d6",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
+      "type": "vless",
+      "server": "lc.metsima.com",
+      "server_port": 443,
+      "uuid": "1babf628-b13f-4fe2-8064-985f617425d6",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @netmellianti #3 [fast]",
+      "type": "vless",
+      "server": "lc.metsima.com",
+      "server_port": 443,
+      "uuid": "1babf628-b13f-4fe2-8064-985f617425d6",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
+      "type": "vless",
+      "server": "ipw.ygdfw.com",
+      "server_port": 443,
+      "uuid": "bbab81f3-87a0-4e63-8b3b-010c645d8da7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
+      "type": "vless",
+      "server": "codepen.io",
+      "server_port": 443,
+      "uuid": "ecb790d4-36ca-4dfc-a142-b3a395d1c50d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    }
+  ]
+}

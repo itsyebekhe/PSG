@@ -1,0 +1,368 @@
+//profile-title: base64:UFNHIHwgVkxFU1NfRE9NQUlO
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://t.me/yebekhe
+//profile-web-page-url: https://github.com/itsyebekhe/PSG
+
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ],
+    "rules": [
+      {
+        "server": "local",
+        "domain_suffix": [
+          "ir"
+        ]
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
+        "🇮🇷 IR | VLESS | @ehsawn8 #2 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
+        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
+        "🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]",
+        "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]",
+        "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "REJECT",
+      "type": "reject"
+    },
+    {
+      "tag": "همکاری_ملی",
+      "type": "vless",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "جاویدشاه",
+      "type": "vless",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "KingRezaPahlavi",
+      "type": "vless",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
+      "type": "vless",
+      "server": "clfconnect.pishipishi.pro",
+      "server_port": 8880,
+      "uuid": "vpn_connects",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
+      "type": "vless",
+      "server": "snapp.ir",
+      "server_port": 80,
+      "uuid": "0f6bc229-6a6e-4604-8a7d-f6242e9609d6",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @ehsawn8 #2 [fast]",
+      "type": "vless",
+      "server": "snapp.ir",
+      "server_port": 80,
+      "uuid": "1ecfc07d-5ab5-46cd-8438-02ff221b1881",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
+      "type": "vless",
+      "server": "ipclf.bhralrqmy.com",
+      "server_port": 2053,
+      "uuid": "2f60be6f-be0c-48b4-9772-b56f42b51ba1",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
+      "type": "vless",
+      "server": "ipclf.bhralrqmy.com",
+      "server_port": 2053,
+      "uuid": "2f60be6f-be0c-48b4-9772-b56f42b51ba1",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+      "type": "vless",
+      "server": "spd-mynames.global.ssl.fastly.net",
+      "server_port": 80,
+      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
+      "type": "vless",
+      "server": "snapp.ir",
+      "server_port": 2052,
+      "uuid": "7b81a350-89c3-47da-a3a9-5f2b65313d03",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "DIGIV2RAY",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "DIGIV2RAY",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "4b75a44d-3c91-461e-b5a0-6060ac8aff68",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "8a20ecfe-6a72-4e88-aa2c-65a9e43a8512",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
+      "type": "vless",
+      "server": "heap.metsima.com",
+      "server_port": 443,
+      "uuid": "1babf628-b13f-4fe2-8064-985f617425d6",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
+      "type": "vless",
+      "server": "lc.metsima.com",
+      "server_port": 443,
+      "uuid": "1babf628-b13f-4fe2-8064-985f617425d6",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]",
+      "type": "vless",
+      "server": "rfvbtghnuyjmikolpqaz.sd.noafra.ir",
+      "server_port": 80,
+      "uuid": "1de6be2d-567a-4663-b5ea-5de8afe0f496",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]",
+      "type": "vless",
+      "server": "www.lianchuang123.com",
+      "server_port": 443,
+      "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": ""
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
+      "type": "vless",
+      "server": "rvg-production-1ab7.up.railway.app",
+      "server_port": 443,
+      "uuid": "deffbfcd-0626-365b-ff92-9b93f2fd6459",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
+      "type": "vless",
+      "server": "ipw.ygdfw.com",
+      "server_port": 443,
+      "uuid": "bbab81f3-87a0-4e63-8b3b-010c645d8da7",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
+      "type": "vless",
+      "server": "codepen.io",
+      "server_port": 443,
+      "uuid": "ecb790d4-36ca-4dfc-a142-b3a395d1c50d",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    }
+  ]
+}

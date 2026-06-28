@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇱🇻 LV | VLESS | @beshkan #1 [fast]", "server": "217.28.48.29", "port": 25752, "type": "vless", "skip-cert-verify": true, "uuid": "27f2ae85-3e15-4a9a-9c71-49ee032e7b26", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇱🇻 LV | VLESS | @beshkan #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇱🇻 LV | VLESS | @beshkan #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
