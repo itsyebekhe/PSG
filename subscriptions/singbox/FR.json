@@ -1,0 +1,181 @@
+//profile-title: base64:UFNHIHwgRlI=
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://t.me/yebekhe
+//profile-web-page-url: https://github.com/itsyebekhe/PSG
+
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ],
+    "rules": [
+      {
+        "server": "local",
+        "domain_suffix": [
+          "ir"
+        ]
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
+        "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "REJECT",
+      "type": "reject"
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
+      "type": "vless",
+      "server": "79.127.196.11",
+      "server_port": 8443,
+      "uuid": "55f7d143-a594-4a91-b030-f227039f85ef",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdg-1.fromblancwithlove.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+      "type": "vless",
+      "server": "84.247.129.205",
+      "server_port": 4433,
+      "uuid": "00000000-0000-4000-8000-000000000000",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.mot.ip-ddns.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": "sub.mot.ip-ddns.com"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+      "type": "vless",
+      "server": "199.232.169.135",
+      "server_port": 80,
+      "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": "googleb.net"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+      "type": "vless",
+      "server": "199.232.169.135",
+      "server_port": 443,
+      "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": "googleb.net"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+      "type": "vless",
+      "server": "141.11.202.133",
+      "server_port": 443,
+      "uuid": "45d2fe56-2da3-409a-bdc7-5b95f30817bd",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sahand-m.sahand5.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": "sahand-m.sahand5.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+      "type": "vless",
+      "server": "51.75.30.8",
+      "server_port": 80,
+      "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
+    }
+  ]
+}
