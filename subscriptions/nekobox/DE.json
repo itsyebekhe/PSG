@@ -31,7 +31,7 @@
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @free1_vpn #2 [medium]",
         "🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #2 [fast]",
@@ -42,15 +42,15 @@
         "🇩🇪 DE | VLESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #1 [slow]",
-        "🇩🇪 DE | VLESS | @foxnt #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
+        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [medium]",
+        "🇩🇪 DE | VLESS | @outline_ir #2 [medium]",
+        "🇩🇪 DE | VLESS | @mehrosaboran #1 [medium]",
+        "🇩🇪 DE | VLESS | @foxnt #1 [medium]",
+        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
       ]
     },
     {
@@ -144,7 +144,7 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #2 [medium]",
       "type": "vless",
       "server": "de.ko.prod.n7.homes",
       "server_port": 8443,
@@ -344,6 +344,23 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
+        "server_name": "static.lotussec.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
+      "type": "vless",
+      "server": "static.lotussec.com",
+      "server_port": 443,
+      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
         "server_name": "",
         "insecure": true,
         "utls": {
@@ -353,7 +370,7 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #1 [slow]",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [medium]",
       "type": "vless",
       "server": "31.77.161.2",
       "server_port": 8443,
@@ -375,45 +392,7 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @foxnt #1 [fast]",
-      "type": "vless",
-      "server": "49.13.74.174",
-      "server_port": 8080,
-      "uuid": "7cd6adff-8849-4fad-b3b3-857721c81477",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": "fast.com"
-        }
-      }
-    },
-    {
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "type": "vless",
-      "server": "5.75.207.247",
-      "server_port": 44004,
-      "uuid": "874847b1-8f30-4c84-8976-869c48709d03",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.intel.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "public_key": "KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ",
-          "short_id": "77b0689f",
-          "enabled": true
-        }
-      }
-    },
-    {
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #2 [medium]",
       "type": "vless",
       "server": "144.31.219.56",
       "server_port": 8443,
@@ -436,30 +415,44 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #1 [medium]",
       "type": "vless",
-      "server": "5.75.207.247",
-      "server_port": 41083,
-      "uuid": "bd2558ed-51c9-4a03-a4ca-dc0c32417887",
+      "server": "31.77.161.2",
+      "server_port": 8443,
+      "uuid": "a6704fb4-4874-4e6b-98f4-571b048e3d90",
       "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.intel.com",
+        "server_name": "prod.de-node-01.security-sbrf.ru",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
-          "public_key": "KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ",
-          "short_id": "77b0689f",
+          "public_key": "4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE",
+          "short_id": "db04ce8bdb8900f1",
           "enabled": true
         }
       }
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @foxnt #1 [medium]",
+      "type": "vless",
+      "server": "49.13.74.174",
+      "server_port": 8080,
+      "uuid": "7cd6adff-8849-4fad-b3b3-857721c81477",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": "fast.com"
+        }
+      }
+    },
+    {
+      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
       "type": "vless",
       "server": "92.223.124.29",
       "server_port": 443,
@@ -483,7 +476,7 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
       "type": "vmess",
       "server": "142.132.163.200",
       "server_port": 80,
@@ -499,7 +492,7 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
       "type": "vmess",
       "server": "167.235.205.182",
       "server_port": 443,
@@ -517,7 +510,7 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
       "type": "vmess",
       "server": "168.119.174.229",
       "server_port": 443,

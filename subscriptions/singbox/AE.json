@@ -42,7 +42,8 @@
       "tag": "DIRECT",
       "type": "direct",
       "outbounds": [
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #2 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ]
     },
@@ -55,7 +56,26 @@
       "type": "reject"
     },
     {
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+      "type": "hysteria2",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #2 [medium]",
       "type": "hysteria2",
       "server": "130.49.161.70",
       "server_port": 443,

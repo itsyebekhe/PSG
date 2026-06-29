@@ -3,26 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "94.242.55.42", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
-  - {"name": "🇷🇺 RU | VLESS | @beshkan #1 [fast]", "server": "r1.mizulina.top", "port": 22231, "type": "vless", "skip-cert-verify": true, "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "r1.mizulina.top"}
-  - {"name": "🇷🇺 RU | VLESS | @beshkan #2 [fast]", "server": "85.234.114.53", "port": 22231, "type": "vless", "skip-cert-verify": true, "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "r1.mizulina.top"}
-  - {"name": "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]", "server": "158.160.250.45", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "mDtiIWLFPJoPVrDLOCvKn6lvlS8r0TdRO9MxmmdIDmo", "short-id": "917fd5a45e8840"}}
+  - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]", "server": "94.242.55.42", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
+  - {"name": "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]", "server": "158.160.250.45", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "mDtiIWLFPJoPVrDLOCvKn6lvlS8r0TdRO9MxmmdIDmo", "short-id": "917fd5a45e8840"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇷🇺 RU | VLESS | @beshkan #1 [fast]'
-      - '🇷🇺 RU | VLESS | @beshkan #2 [fast]'
-      - '🇷🇺 RU | VLESS | @megavpn_link #1 [fast]'
+      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]'
+      - '🇷🇺 RU | VLESS | @megavpn_link #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇷🇺 RU | VLESS | @beshkan #1 [fast]'
-      - '🇷🇺 RU | VLESS | @beshkan #2 [fast]'
-      - '🇷🇺 RU | VLESS | @megavpn_link #1 [fast]'
+      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]'
+      - '🇷🇺 RU | VLESS | @megavpn_link #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
