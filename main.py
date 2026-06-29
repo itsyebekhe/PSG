@@ -923,6 +923,8 @@ class SubscriptionProcessor:
                     discovered = self._extract_discovered_channels(text, 0)
 
                 configs = PROTOCOL_REGEX.findall(text)
+                # Clean HTML entities from config strings
+                configs = [c.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>') for c in configs]
                 for c in configs:
                     ct = ConfigUtils.detect_type(c)
                     if ct: types.add(ct)
@@ -2063,6 +2065,9 @@ MATCH,PROXY
 
         for filepath in input_files:
             filename = os.path.basename(filepath)
+            # Strip .b64 extension for output files
+            if filename.endswith('.b64'):
+                filename = filename[:-4]
             with open(filepath, 'r', encoding='utf-8') as f:
                 b64_content = f.read().strip()
             decoded_content = ConfigUtils.decode_base64(b64_content)
