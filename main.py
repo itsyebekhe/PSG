@@ -1292,10 +1292,12 @@ class SubscriptionProcessor:
                 continue
             if 'type=ws' not in config_str:
                 continue
-            parsed = ConfigParser.parse(config_str)
+            # Fix HTML entities in config string before parsing
+            clean_str = config_str.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
+            parsed = ConfigParser.parse(clean_str)
             if not parsed:
                 continue
-            cf_ws_configs.append((config_str, parsed))
+            cf_ws_configs.append((clean_str, parsed))
 
         if not cf_ws_configs:
             logger.info("  No CF WS configs found")
@@ -1310,8 +1312,14 @@ class SubscriptionProcessor:
             port = parsed.get('port', '443')
             params = parsed.get('params', {})
 
+            # Clean HTML entities from param values
+            clean_params = {}
+            for k, v in params.items():
+                v = str(v).replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>').replace('&quot;', '"').replace('&#39;', "'")
+                clean_params[k] = v
+
             for ip in all_ips:
-                query = '&'.join(f"{k}={v}" for k, v in params.items())
+                query = '&'.join(f"{k}={v}" for k, v in clean_params.items())
                 name = f"CDN {ip}"
                 config = f"vless://{user}@{ip}:{port}?{query}#{quote(name)}"
                 configs.append(config)
