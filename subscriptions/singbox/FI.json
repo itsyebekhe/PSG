@@ -13,100 +13,163 @@
     "servers": [
       {
         "tag": "google",
-        "address": "https://8.8.8.8/dns-query"
+        "address": "tls://8.8.8.8",
+        "detour": "select"
       },
       {
         "tag": "local",
-        "address": "local"
+        "address": "223.5.5.5",
+        "detour": "direct"
       }
     ],
     "rules": [
       {
-        "server": "local",
-        "domain_suffix": [
-          "ir"
-        ]
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
       }
-    ]
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
   },
   "inbounds": [
     {
-      "tag": "mixed-in",
       "type": "mixed",
+      "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2080
+      "listen_port": 2080,
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
     {
-      "tag": "DIRECT",
-      "type": "direct",
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
+        "🇫🇮 FI | SS | @jiedianf #1 [fast]",
+        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
+        "direct"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
-        "🇫🇮 FI | SS | @jiedianf #1 [medium]",
+        "🇫🇮 FI | SS | @jiedianf #1 [fast]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]"
-      ]
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
     },
     {
-      "tag": "BLOCK",
-      "type": "block"
-    },
-    {
-      "tag": "REJECT",
-      "type": "reject"
-    },
-    {
-      "tag": "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
       "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
       "server": "217.217.247.246",
       "server_port": 443,
       "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
-      "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "enterprisekitten.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
         },
         "reality": {
+          "enabled": true,
           "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2",
-          "enabled": true
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
     {
-      "tag": "🇫🇮 FI | SS | @jiedianf #1 [medium]",
       "type": "shadowsocks",
+      "tag": "🇫🇮 FI | SS | @jiedianf #1 [fast]",
       "server": "109.107.182.229",
       "server_port": 51544,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0ZDFuVnBxSlZwNW9xMlc0RDBMank0",
-      "password": null
+      "method": "chacha20-ietf-poly1305",
+      "password": "4d1nVpqJVp5oq2W4D0Ljy4",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
-      "tag": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
       "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
       "server": "fi1.vitok.cc",
       "server_port": 443,
       "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sberbank.ru",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8",
-          "short_id": "5e841fab",
-          "enabled": true
+          "short_id": "5e841fab"
         }
       }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     }
-  ]
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
 }

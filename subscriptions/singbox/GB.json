@@ -13,134 +13,208 @@
     "servers": [
       {
         "tag": "google",
-        "address": "https://8.8.8.8/dns-query"
+        "address": "tls://8.8.8.8",
+        "detour": "select"
       },
       {
         "tag": "local",
-        "address": "local"
+        "address": "223.5.5.5",
+        "detour": "direct"
       }
     ],
     "rules": [
       {
-        "server": "local",
-        "domain_suffix": [
-          "ir"
-        ]
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
       }
-    ]
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
   },
   "inbounds": [
     {
-      "tag": "mixed-in",
       "type": "mixed",
+      "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2080
+      "listen_port": 2080,
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
     {
-      "tag": "DIRECT",
-      "type": "direct",
+      "type": "selector",
+      "tag": "select",
       "outbounds": [
+        "auto",
+        "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #2 [medium]",
-        "🇬🇧 GB | SS | @Proxymelimon #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
-        "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
-        "🇬🇧 GB | SS | @NamiraConfigs #2 [medium]",
-        "🇬🇧 GB | SS | @NamiraConfigs #3 [medium]",
+        "🇬🇧 GB | SS | @proxy48 #1 [fast]",
+        "direct"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
-      ]
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
     },
     {
-      "tag": "BLOCK",
-      "type": "block"
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]",
+      "server": "all27.allenshop100.ir",
+      "server_port": 443,
+      "uuid": "9cda451e-0adf-4df1-a5b4-7fec8f363c10",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+          "short_id": "98fa0b00d09419f7"
+        }
+      }
     },
     {
-      "tag": "REJECT",
-      "type": "reject"
-    },
-    {
-      "tag": "🇬🇧 GB | SS | @beshkan #1 [fast]",
       "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @beshkan #1 [fast]",
       "server": "82.38.31.149",
       "server_port": 8080,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB",
-      "password": null
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
-      "tag": "🇬🇧 GB | SS | @beshkan #2 [medium]",
       "type": "shadowsocks",
-      "server": "82.38.31.217",
+      "tag": "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+      "server": "82.38.31.216",
       "server_port": 8080,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR",
-      "password": null
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
-      "tag": "🇬🇧 GB | SS | @Proxymelimon #1 [fast]",
       "type": "shadowsocks",
-      "server": "141.98.101.182",
-      "server_port": 443,
-      "method": "YWVzLTEyOC1nY206c2hhZG93c29ja3M=",
-      "password": null
-    },
-    {
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
-      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
       "server_port": 8080,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR",
-      "password": null
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
       "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
       "server": "146.70.61.37",
       "server_port": 8080,
-      "method": "cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==",
-      "password": null
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
+      "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
-      "type": "shadowsocks",
       "server": "series-a2.samanehha.co",
       "server_port": 443,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB",
-      "password": null
+      "method": "chacha20-ietf-poly1305",
+      "password": "W74XFALLLuw6m5IA",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
-      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
       "type": "shadowsocks",
-      "server": "82.38.31.2",
-      "server_port": 8080,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB",
-      "password": null
-    },
-    {
-      "tag": "🇬🇧 GB | SS | @NamiraConfigs #2 [medium]",
-      "type": "shadowsocks",
-      "server": "82.38.31.179",
-      "server_port": 8080,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR",
-      "password": null
-    },
-    {
-      "tag": "🇬🇧 GB | SS | @NamiraConfigs #3 [medium]",
-      "type": "shadowsocks",
-      "server": "82.38.31.10",
-      "server_port": 8080,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB",
-      "password": null
-    },
-    {
       "tag": "🇬🇧 GB | SS | @proxy48 #1 [fast]",
-      "type": "shadowsocks",
       "server": "series-a2.samanehha.co",
       "server_port": 443,
-      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn",
-      "password": null
+      "method": "chacha20-ietf-poly1305",
+      "password": "mps3FwmDjLrWaOVg",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     }
-  ]
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
 }

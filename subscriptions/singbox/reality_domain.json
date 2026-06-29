@@ -13,282 +13,222 @@
     "servers": [
       {
         "tag": "google",
-        "address": "https://8.8.8.8/dns-query"
+        "address": "tls://8.8.8.8",
+        "detour": "select"
       },
       {
         "tag": "local",
-        "address": "local"
+        "address": "223.5.5.5",
+        "detour": "direct"
       }
     ],
     "rules": [
       {
-        "server": "local",
-        "domain_suffix": [
-          "ir"
-        ]
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
       }
-    ]
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
   },
   "inbounds": [
     {
-      "tag": "mixed-in",
       "type": "mixed",
+      "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2080
+      "listen_port": 2080,
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
     {
-      "tag": "DIRECT",
-      "type": "direct",
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
+        "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
+        "🇨🇾 CY | VLESS | @nn_vpn #1 [fast]",
+        "🇨🇾 CY | VLESS | @nn_vpn #2 [fast]",
+        "direct"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
       "outbounds": [
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @free1_vpn #2 [medium]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
-        "🇮🇷 IR | VLESS | @outline_ir #1 [medium]",
-        "🇭🇰 HK | VLESS | @red2ray #1 [fast]",
-        "🇸🇨 SC | VLESS | @netfreedom0 #1 [medium]",
+        "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
+        "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
         "🇨🇾 CY | VLESS | @nn_vpn #1 [fast]",
         "🇨🇾 CY | VLESS | @nn_vpn #2 [fast]"
-      ]
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
     },
     {
-      "tag": "BLOCK",
-      "type": "block"
-    },
-    {
-      "tag": "REJECT",
-      "type": "reject"
-    },
-    {
+      "type": "vless",
       "tag": "همکاری_ملی",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
+      "type": "vless",
       "tag": "جاویدشاه",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
+      "type": "vless",
       "tag": "KingRezaPahlavi",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @free1_vpn #2 [medium]",
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
       "server": "de.ko.prod.n7.homes",
       "server_port": 8443,
       "uuid": "dcba77d7-bb59-4802-b32c-37fd7011fca4",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "google.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo",
-          "short_id": "3ca620a7ed5f3196",
-          "enabled": true
+          "short_id": "3ca620a7ed5f3196"
         }
       }
     },
     {
-      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
       "type": "vless",
-      "server": "all46.allenshop100.ir",
+      "tag": "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]",
+      "server": "all27.allenshop100.ir",
       "server_port": 443,
-      "uuid": "296a5736-bc8c-45dd-9971-8bf44b28ed4e",
+      "uuid": "9cda451e-0adf-4df1-a5b4-7fec8f363c10",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "play.google.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
+          "enabled": true,
           "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
-          "short_id": "98fa0b00d09419f7",
-          "enabled": true
+          "short_id": "98fa0b00d09419f7"
         }
       }
     },
     {
-      "tag": "🇮🇷 IR | VLESS | @outline_ir #1 [medium]",
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
       "server": "opt.walking-with-death.shop",
       "server_port": 2052,
       "uuid": "93c8e54b-aa84-4593-a2f7-ffb19960c923",
-      "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "www.yahoo.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "qM-k-WxqBUQWzHS4qBN1Wngc-c_jvaNhPzDiw87JpT0",
-          "short_id": "c6a7dfed3c99d035",
-          "enabled": true
+          "short_id": "c6a7dfed3c99d035"
         }
       }
     },
     {
-      "tag": "🇭🇰 HK | VLESS | @red2ray #1 [fast]",
       "type": "vless",
-      "server": "vip.bcjdvip.com",
-      "server_port": 14002,
-      "uuid": "3e06720a-86f0-49b9-8f00-062681e3b385",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "public_key": "D4eZTpgaPV_2YQa7cbiDMGnZs6NBEU2JkfUroHpvoWs",
-          "short_id": "7cabb05b68f63b",
-          "enabled": true
-        }
-      }
-    },
-    {
-      "tag": "🇸🇨 SC | VLESS | @netfreedom0 #1 [medium]",
-      "type": "vless",
-      "server": "ch-gt-02.com",
-      "server_port": 8443,
-      "uuid": "06bcd513-ef0b-4c0c-a03b-e25fcda66fe2",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "storage.yandex.net",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "public_key": "IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY",
-          "short_id": "40ce08cf20c67003",
-          "enabled": true
-        }
-      }
-    },
-    {
       "tag": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
-      "type": "vless",
       "server": "fi1.vitok.cc",
       "server_port": 443,
       "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sberbank.ru",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8",
-          "short_id": "5e841fab",
-          "enabled": true
+          "short_id": "5e841fab"
         }
       }
     },
     {
-      "tag": "🇨🇾 CY | VLESS | @nn_vpn #1 [fast]",
       "type": "vless",
+      "tag": "🇨🇾 CY | VLESS | @nn_vpn #1 [fast]",
       "server": "sadaf.netherlands.mehrdadsadaf.com",
       "server_port": 80,
       "uuid": "59acb90b-fb9d-433b-a2f0-c039cf23dfc7",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "dash.cloudflare.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "5VdWpwWeApKlGJoi50efzxiPjBruG4Rqi6ku0IDxwgc",
-          "short_id": "3bbf56e2",
-          "enabled": true
+          "short_id": "3bbf56e2"
         }
       },
       "transport": {
@@ -297,30 +237,74 @@
       }
     },
     {
-      "tag": "🇨🇾 CY | VLESS | @nn_vpn #2 [fast]",
       "type": "vless",
+      "tag": "🇨🇾 CY | VLESS | @nn_vpn #2 [fast]",
       "server": "sadaf.melorin.mehrdadsadaf.com",
       "server_port": 80,
       "uuid": "b8debe38-3858-4a7e-9bfc-ee090ac7597b",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "dash.cloudflare.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "U27aXgEDWdrPwlPOLK3XGi5MzTtnYicnSHhbtBUyKBY",
-          "short_id": "73c901c5",
-          "enabled": true
+          "short_id": "73c901c5"
         }
       },
       "transport": {
         "type": "grpc",
         "service_name": "@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar"
       }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     }
-  ]
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
 }

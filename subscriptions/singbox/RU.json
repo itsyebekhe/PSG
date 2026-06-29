@@ -13,91 +13,189 @@
     "servers": [
       {
         "tag": "google",
-        "address": "https://8.8.8.8/dns-query"
+        "address": "tls://8.8.8.8",
+        "detour": "select"
       },
       {
         "tag": "local",
-        "address": "local"
+        "address": "223.5.5.5",
+        "detour": "direct"
       }
     ],
     "rules": [
       {
-        "server": "local",
-        "domain_suffix": [
-          "ir"
-        ]
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
       }
-    ]
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
   },
   "inbounds": [
     {
-      "tag": "mixed-in",
       "type": "mixed",
+      "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2080
+      "listen_port": 2080,
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
     {
-      "tag": "DIRECT",
-      "type": "direct",
+      "type": "selector",
+      "tag": "select",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
-        "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]"
-      ]
+        "auto",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | VLESS | @beshkan #1 [fast]",
+        "🇷🇺 RU | VLESS | @beshkan #2 [fast]",
+        "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
+        "direct"
+      ],
+      "default": "auto"
     },
     {
-      "tag": "BLOCK",
-      "type": "block"
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | VLESS | @beshkan #1 [fast]",
+        "🇷🇺 RU | VLESS | @beshkan #2 [fast]",
+        "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
     },
     {
-      "tag": "REJECT",
-      "type": "reject"
-    },
-    {
-      "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
       "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
       "server": "94.242.55.42",
       "server_port": 443,
       "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
-      "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "enterprisekitten.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
+          "enabled": true,
           "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2",
-          "enabled": true
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
     {
-      "tag": "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]",
       "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @beshkan #1 [fast]",
+      "server": "r1.mizulina.top",
+      "server_port": 22231,
+      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+      "flow": "xtls-rprx-vision-udp443",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "r1.mizulina.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @beshkan #2 [fast]",
+      "server": "85.234.114.53",
+      "server_port": 22231,
+      "uuid": "afcac633-0e1a-46c3-bef2-cc01cc0097c8",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "r1.mizulina.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
       "server": "158.160.250.45",
       "server_port": 443,
       "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "ads.x5.ru",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "mDtiIWLFPJoPVrDLOCvKn6lvlS8r0TdRO9MxmmdIDmo",
-          "short_id": "917fd5a45e8840",
-          "enabled": true
+          "short_id": "917fd5a45e8840"
         }
       }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     }
-  ]
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
 }

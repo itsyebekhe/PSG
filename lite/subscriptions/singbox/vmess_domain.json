@@ -13,34 +13,63 @@
     "servers": [
       {
         "tag": "google",
-        "address": "https://8.8.8.8/dns-query"
+        "address": "tls://8.8.8.8",
+        "detour": "select"
       },
       {
         "tag": "local",
-        "address": "local"
+        "address": "223.5.5.5",
+        "detour": "direct"
       }
     ],
     "rules": [
       {
-        "server": "local",
-        "domain_suffix": [
-          "ir"
-        ]
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
       }
-    ]
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
   },
   "inbounds": [
     {
-      "tag": "mixed-in",
       "type": "mixed",
+      "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2080
+      "listen_port": 2080,
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
     {
-      "tag": "DIRECT",
-      "type": "direct",
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
+        "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
+        "🇺🇸 US | VMESS | @prooxyk #1 [fast]",
+        "🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]",
+        "🇺🇸 US | VMESS | @proxy48 #1 [fast]",
+        "🇽🇽 XX | VMESS | @manstervpn #1 [fast]",
+        "🇽🇽 XX | VMESS | @manstervpn #2 [fast]",
+        "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
+        "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]",
+        "direct"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
       "outbounds": [
         "همکاری_ملی",
         "جاویدشاه",
@@ -55,104 +84,66 @@
         "🇽🇽 XX | VMESS | @manstervpn #2 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
         "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]"
-      ]
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
     },
     {
-      "tag": "BLOCK",
-      "type": "block"
-    },
-    {
-      "tag": "REJECT",
-      "type": "reject"
-    },
-    {
+      "type": "vless",
       "tag": "همکاری_ملی",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
+      "type": "vless",
       "tag": "جاویدشاه",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
+      "type": "vless",
       "tag": "KingRezaPahlavi",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
-      "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
       "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
       "server": "xcf037.facai2024.com",
       "server_port": 443,
       "uuid": "d9863037-0463-4615-e972-36ba9662d1e9",
       "security": "auto",
       "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "xcf037.facai2024.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "xcf037.facai2024.com"
       },
       "transport": {
         "type": "ws",
@@ -163,21 +154,20 @@
       }
     },
     {
-      "tag": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
       "type": "vmess",
+      "tag": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
       "server": "time.is",
       "server_port": 443,
       "uuid": "b526926d-1474-4f41-985e-8b877cb840cd",
       "security": "auto",
       "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "time.is",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "time.is"
       },
       "transport": {
         "type": "ws",
@@ -188,21 +178,20 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
       "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
       "server": "mute-math-d64e.0e503992ad7026.WOrKERs.deV",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "security": "auto",
       "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "mute-math-d64e.0e503992ad7026.woRKERS.DeV",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "mute-math-d64e.0e503992ad7026.woRKERS.DeV"
       },
       "transport": {
         "type": "ws",
@@ -213,21 +202,20 @@
       }
     },
     {
-      "tag": "🇺🇸 US | VMESS | @prooxyk #1 [fast]",
       "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @prooxyk #1 [fast]",
       "server": "77.v2ray1.xyz",
       "server_port": 443,
       "uuid": "17b2a313-37a0-4945-a8e4-e63375506b4a",
       "security": "auto",
       "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "77.v2ray1.xyz",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "77.v2ray1.xyz"
       },
       "transport": {
         "type": "ws",
@@ -238,21 +226,20 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]",
       "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]",
       "server": "104.21.15.212",
       "server_port": 443,
       "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
       "security": "auto",
       "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "glweidf.sbs",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "glweidf.sbs"
       },
       "transport": {
         "type": "ws",
@@ -263,21 +250,20 @@
       }
     },
     {
-      "tag": "🇺🇸 US | VMESS | @proxy48 #1 [fast]",
       "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @proxy48 #1 [fast]",
       "server": "188.114.97.3",
       "server_port": 443,
       "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
       "security": "auto",
       "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "afrhms16v.bestxray.buzz",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "afrhms16v.bestxray.buzz"
       },
       "transport": {
         "type": "ws",
@@ -288,13 +274,17 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VMESS | @manstervpn #1 [fast]",
       "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @manstervpn #1 [fast]",
       "server": "104.16.60.8",
       "server_port": 2086,
       "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
       "security": "auto",
       "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "transport": {
         "type": "ws",
         "path": "/glweidf.sbs/linkws",
@@ -304,21 +294,20 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VMESS | @manstervpn #2 [fast]",
       "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @manstervpn #2 [fast]",
       "server": "172.67.71.160",
       "server_port": 443,
       "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
       "security": "auto",
       "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "obdii.cfd",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "obdii.cfd"
       },
       "transport": {
         "type": "ws",
@@ -329,39 +318,33 @@
       }
     },
     {
-      "tag": "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
       "type": "vmess",
+      "tag": "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
       "server": "5.161.156.196",
       "server_port": 443,
       "uuid": "d20e38ef-1a4d-4009-a00d-2f0d44e3c65a",
       "security": "auto",
       "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "internet.life.com.by",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
     },
     {
-      "tag": "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]",
       "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]",
       "server": "172.67.207.114",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "security": "auto",
       "alter_id": 1,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "ophelia.mom",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "ophelia.mom"
       },
       "transport": {
         "type": "ws",
@@ -370,6 +353,50 @@
           "Host": "ophelia.mom"
         }
       }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     }
-  ]
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
 }

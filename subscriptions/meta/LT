@@ -3,23 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇱🇹 LT | VLESS | @flyv2ray #1 [medium]", "server": "45.194.10.134", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA", "short-id": "2cfb5a0ae8ab0cb0"}}
-  - {"name": "🇱🇹 LT | VLESS | @flyv2ray #2 [medium]", "server": "5.199.170.105", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fd47216b-4217-4ec1-85b9-98304634a391", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "amd.com", "reality-opts": {"public-key": "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE", "short-id": "6ba85179e30d4fc2"}}
-  - {"name": "🇱🇹 LT | VLESS | @free1_vpn #1 [medium]", "server": "45.194.10.209", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA", "short-id": "2cfb5a0ae8ab0cb0"}}
+  - {"name": "🇱🇹 LT | VLESS | @flyv2ray #1 [fast]", "server": "45.194.10.134", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA", "short-id": "2cfb5a0ae8ab0cb0"}}
+  - {"name": "🇱🇹 LT | VLESS | @flyv2ray #2 [fast]", "server": "5.199.170.105", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fd47216b-4217-4ec1-85b9-98304634a391", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "amd.com", "reality-opts": {"public-key": "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE", "short-id": "6ba85179e30d4fc2"}}
+  - {"name": "🇱🇹 LT | VLESS | @free1_vpn #1 [fast]", "server": "45.194.10.209", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA", "short-id": "2cfb5a0ae8ab0cb0"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇱🇹 LT | VLESS | @flyv2ray #1 [medium]'
-      - '🇱🇹 LT | VLESS | @flyv2ray #2 [medium]'
-      - '🇱🇹 LT | VLESS | @free1_vpn #1 [medium]'
+      - '🇱🇹 LT | VLESS | @flyv2ray #1 [fast]'
+      - '🇱🇹 LT | VLESS | @flyv2ray #2 [fast]'
+      - '🇱🇹 LT | VLESS | @free1_vpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇱🇹 LT | VLESS | @flyv2ray #1 [medium]'
-      - '🇱🇹 LT | VLESS | @flyv2ray #2 [medium]'
-      - '🇱🇹 LT | VLESS | @free1_vpn #1 [medium]'
+      - '🇱🇹 LT | VLESS | @flyv2ray #1 [fast]'
+      - '🇱🇹 LT | VLESS | @flyv2ray #2 [fast]'
+      - '🇱🇹 LT | VLESS | @free1_vpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

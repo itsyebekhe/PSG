@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VLESS | @prrofile_purple #1 [fast]", "server": "erosan.appleseraj.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "53feb5dd-9bb2-44ff-80ec-4d00debf1de4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "falkinichlol.appleseraj.ir", "ws-opts": {"path": "", "headers": {"Host": "falkinichlol.appleseraj.ir"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VLESS | @prrofile_purple #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VLESS | @prrofile_purple #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

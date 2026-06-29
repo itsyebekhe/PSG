@@ -13,40 +13,47 @@
     "servers": [
       {
         "tag": "google",
-        "address": "https://8.8.8.8/dns-query"
+        "address": "tls://8.8.8.8",
+        "detour": "select"
       },
       {
         "tag": "local",
-        "address": "local"
+        "address": "223.5.5.5",
+        "detour": "direct"
       }
     ],
     "rules": [
       {
-        "server": "local",
-        "domain_suffix": [
-          "ir"
-        ]
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
       }
-    ]
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
   },
   "inbounds": [
     {
-      "tag": "mixed-in",
       "type": "mixed",
+      "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2080
+      "listen_port": 2080,
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
     {
-      "tag": "DIRECT",
-      "type": "direct",
+      "type": "selector",
+      "tag": "select",
       "outbounds": [
+        "auto",
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
-        "🇽🇽 XX | VLESS | @prrofile_purple #4 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @mimitdl #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
@@ -60,130 +67,108 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
-        "🇸🇨 SC | VLESS | @prrofile_purple #1 [fast]",
-        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
         "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
-        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+        "direct"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
+        "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @mimitdl #1 [fast]",
+        "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxie #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxie #2 [fast]",
+        "🇽🇽 XX | VLESS | @proxie #3 [fast]",
+        "🇽🇽 XX | VLESS | @proxie #4 [fast]",
+        "🇽🇽 XX | VLESS | @proxie #5 [fast]",
+        "🇽🇽 XX | VLESS | @proxie #6 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
+        "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
+        "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
+        "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]"
-      ]
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
     },
     {
-      "tag": "BLOCK",
-      "type": "block"
-    },
-    {
-      "tag": "REJECT",
-      "type": "reject"
-    },
-    {
+      "type": "vless",
       "tag": "همکاری_ملی",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
+      "type": "vless",
       "tag": "جاویدشاه",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
+      "type": "vless",
       "tag": "KingRezaPahlavi",
-      "type": "vless",
       "server": "127.0.0.1",
       "server_port": 443,
       "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": ""
-        }
+        "path": "/"
       }
     },
     {
-      "tag": "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
       "server": "199.232.78.159",
       "server_port": 80,
       "uuid": "2c9af5d8-8e1c-40e7-8b6b-c200fc5488e8",
+      "network": "xhttp",
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @prrofile_purple #4 [fast]",
       "type": "vless",
-      "server": "104.17.122.123",
-      "server_port": 2083,
-      "uuid": "6c22648a-18f5-4249-9ace-72a1639d4190",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ziba.velizor.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "tag": "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
-      "type": "vless",
       "server": "104.16.72.70",
       "server_port": 8443,
       "uuid": "2179012d-4aa6-4acd-9e67-be80d8a63486",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sa.sorixset.ir",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -191,16 +176,20 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @mimitdl #1 [fast]",
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @mimitdl #1 [fast]",
       "server": "104.16.75.207",
       "server_port": 2087,
       "uuid": "ef0adf73-a279-4bd3-9f1b-bb5f4137ddb3",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "dl-pack.motionbetter.ir",
-        "insecure": true,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -208,16 +197,20 @@
       }
     },
     {
-      "tag": "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
       "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
       "server": "45.130.125.160",
       "server_port": 443,
       "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "de.lezzatzone.ir",
-        "insecure": true,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -225,16 +218,22 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @proxie #1 [fast]",
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxie #1 [fast]",
       "server": "104.21.62.144",
       "server_port": 443,
       "uuid": "f98e06c6-6b36-47f1-a0e3-77d7937c3ec7",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sauron.melkore.ir",
         "insecure": true,
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "randomized"
@@ -242,16 +241,22 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @proxie #2 [fast]",
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxie #2 [fast]",
       "server": "104.21.62.144",
       "server_port": 443,
       "uuid": "45948c7b-cd85-4040-92b2-9e634e9ddd52",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sauron.melkore.ir",
         "insecure": true,
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "randomized"
@@ -259,16 +264,22 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @proxie #3 [fast]",
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxie #3 [fast]",
       "server": "104.21.62.144",
       "server_port": 443,
       "uuid": "9e1c1c4a-3ae8-43b3-af4e-6bd357e4c424",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sauron.melkore.ir",
         "insecure": true,
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "randomized"
@@ -276,16 +287,22 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @proxie #4 [fast]",
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxie #4 [fast]",
       "server": "104.21.62.144",
       "server_port": 443,
       "uuid": "b75b4a49-0506-4159-b2ec-3e2a5e9406de",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sauron.melkore.ir",
         "insecure": true,
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "randomized"
@@ -293,16 +310,22 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @proxie #5 [fast]",
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxie #5 [fast]",
       "server": "104.21.62.144",
       "server_port": 443,
       "uuid": "62793d13-24bc-4a0b-9b35-f565ed659773",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sauron.melkore.ir",
         "insecure": true,
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "randomized"
@@ -310,16 +333,20 @@
       }
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @proxie #6 [fast]",
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxie #6 [fast]",
       "server": "104.21.62.144",
       "server_port": 443,
       "uuid": "c6c34ffc-6e55-4b98-8da9-48565ce3b89e",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "sauron.melkore.ir",
         "insecure": true,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "randomized"
@@ -327,105 +354,88 @@
       }
     },
     {
-      "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
       "server": "151.101.56.6",
       "server_port": 443,
       "uuid": "5e6a66e9-a250-465d-adb5-0b7bd692f48a",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "speedtest.net",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       }
     },
     {
-      "tag": "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
       "server": "151.101.25.242",
       "server_port": 80,
       "uuid": "02d87d00-c769-48d8-91cb-bd05e2f62790",
+      "network": "xhttp",
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
       "server": "147.182.183.207",
       "server_port": 443,
       "uuid": "e7be1334-6a1d-47c0-8c9a-c7a5b8575499",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "yahoo.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "z--KbBlQtkBgTcrtdBJeGeCymIrLdaUDwkb44pAp6nY",
-          "short_id": "4c",
-          "enabled": true
+          "short_id": "4c"
         }
       }
     },
     {
-      "tag": "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
       "server": "151.101.3.8",
       "server_port": 80,
       "uuid": "qeshmserver",
+      "network": "xhttp",
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇸🇨 SC | VLESS | @prrofile_purple #1 [fast]",
       "type": "vless",
-      "server": "push.sukario.ir",
-      "server_port": 2096,
-      "uuid": "5a4abb78-ecd7-4d68-ab2a-c11a3842f261",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "s1-98k6kug2.actorhaminjastd.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
-      "type": "vless",
-      "server": "ipw.ygdfw.com",
+      "tag": "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
+      "server": "psc-1.zdshop.ir",
       "server_port": 443,
-      "uuid": "bbab81f3-87a0-4e63-8b3b-010c645d8da7",
+      "uuid": "63ec4dae-1817-4f57-8102-b885d6045847",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "lIVe-1OdGy1GQ.bEuIZ.COM",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "75a288cac10899ee.dailygo.ir",
+        "insecure": true
       }
     },
     {
-      "tag": "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
       "server": "adamak1.phacode.ir",
       "server_port": 2053,
       "uuid": "f5887006-d4da-48c7-81e7-92595a2703fd",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "adamak.phacode.ir",
-        "insecure": true,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -433,16 +443,19 @@
       }
     },
     {
-      "tag": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "server": "static.lotussec.com",
       "server_port": 443,
       "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "static.lotussec.com",
-        "insecure": true,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -450,20 +463,83 @@
       }
     },
     {
-      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
       "server": "spd-mynames.global.ssl.fastly.net",
       "server_port": 80,
       "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
+      "network": "xhttp",
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "shadyvpn-production-afff.up.railway.app",
+      "server_port": 443,
+      "uuid": "a692da68-3bb0-4716-909a-9918acfcef30",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "shadyvpn-production-afff.up.railway.app",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
       "server": "germany.fast.hosting-ip.com",
       "server_port": 80,
       "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",
+      "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     }
-  ]
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
 }

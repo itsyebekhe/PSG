@@ -13,116 +13,175 @@
     "servers": [
       {
         "tag": "google",
-        "address": "https://8.8.8.8/dns-query"
+        "address": "tls://8.8.8.8",
+        "detour": "select"
       },
       {
         "tag": "local",
-        "address": "local"
+        "address": "223.5.5.5",
+        "detour": "direct"
       }
     ],
     "rules": [
       {
-        "server": "local",
-        "domain_suffix": [
-          "ir"
-        ]
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
       }
-    ]
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
   },
   "inbounds": [
     {
-      "tag": "mixed-in",
       "type": "mixed",
+      "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2080
+      "listen_port": 2080,
+      "set_system_proxy": false
     }
   ],
   "outbounds": [
     {
-      "tag": "DIRECT",
-      "type": "direct",
+      "type": "selector",
+      "tag": "select",
       "outbounds": [
-        "🇱🇹 LT | VLESS | @flyv2ray #1 [medium]",
-        "🇱🇹 LT | VLESS | @flyv2ray #2 [medium]",
-        "🇱🇹 LT | VLESS | @free1_vpn #1 [medium]"
-      ]
+        "auto",
+        "🇱🇹 LT | VLESS | @flyv2ray #1 [fast]",
+        "🇱🇹 LT | VLESS | @flyv2ray #2 [fast]",
+        "🇱🇹 LT | VLESS | @free1_vpn #1 [fast]",
+        "direct"
+      ],
+      "default": "auto"
     },
     {
-      "tag": "BLOCK",
-      "type": "block"
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇱🇹 LT | VLESS | @flyv2ray #1 [fast]",
+        "🇱🇹 LT | VLESS | @flyv2ray #2 [fast]",
+        "🇱🇹 LT | VLESS | @free1_vpn #1 [fast]"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
     },
     {
-      "tag": "REJECT",
-      "type": "reject"
-    },
-    {
-      "tag": "🇱🇹 LT | VLESS | @flyv2ray #1 [medium]",
       "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @flyv2ray #1 [fast]",
       "server": "45.194.10.134",
       "server_port": 8443,
       "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907",
-      "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "storage.yandex.net",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
+          "enabled": true,
           "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
-          "short_id": "2cfb5a0ae8ab0cb0",
-          "enabled": true
+          "short_id": "2cfb5a0ae8ab0cb0"
         }
       }
     },
     {
-      "tag": "🇱🇹 LT | VLESS | @flyv2ray #2 [medium]",
       "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @flyv2ray #2 [fast]",
       "server": "5.199.170.105",
       "server_port": 443,
       "uuid": "fd47216b-4217-4ec1-85b9-98304634a391",
-      "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "amd.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
+          "enabled": true,
           "public_key": "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE",
-          "short_id": "6ba85179e30d4fc2",
-          "enabled": true
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
     {
-      "tag": "🇱🇹 LT | VLESS | @free1_vpn #1 [medium]",
       "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @free1_vpn #1 [fast]",
       "server": "45.194.10.209",
       "server_port": 8443,
       "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907",
-      "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "storage.yandex.net",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
+          "enabled": true,
           "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
-          "short_id": "2cfb5a0ae8ab0cb0",
-          "enabled": true
+          "short_id": "2cfb5a0ae8ab0cb0"
         }
       }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
     }
-  ]
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
 }
