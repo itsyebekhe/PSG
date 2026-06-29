@@ -29,10 +29,11 @@
       "outbounds": [
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ]
     },
     {
@@ -81,6 +82,28 @@
       }
     },
     {
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+      "type": "vless",
+      "server": "all46.allenshop100.ir",
+      "server_port": 443,
+      "uuid": "296a5736-bc8c-45dd-9971-8bf44b28ed4e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+          "short_id": "98fa0b00d09419f7",
+          "enabled": true
+        }
+      }
+    },
+    {
       "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
       "type": "vless",
       "server": "199.232.169.135",
@@ -122,29 +145,23 @@
     {
       "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
       "type": "vless",
-      "server": "141.11.202.133",
+      "server": "5.157.51.171",
       "server_port": 443,
-      "uuid": "45d2fe56-2da3-409a-bdc7-5b95f30817bd",
+      "uuid": "7b241232-208d-4d36-857e-913f91b044f4",
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sahand-m.sahand5.workers.dev",
+        "server_name": "api-6a20f558.noooo.win",
         "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "",
-        "headers": {
-          "Host": "sahand-m.sahand5.workers.dev"
-        }
       }
     },
     {
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "type": "vless",
       "server": "51.75.30.8",
       "server_port": 80,

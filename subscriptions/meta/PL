@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇵🇱 PL | VLESS | @netmellianti #1 [medium]", "server": "62.112.222.47", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "b21c558b-1ca1-4159-a140-868448e5b1a8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [medium]", "server": "51.83.251.233", "port": 9331, "type": "vless", "skip-cert-verify": true, "uuid": "275e5518-9097-57bf-3241-8b9f369a115b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "x0PQITRDc443ujCTd0LORwvBBFGYKv6z2cvRbKHxAFU", "short-id": "af1fac6e"}}
+  - {"name": "🇵🇱 PL | VLESS | @netmellianti #1 [fast]", "server": "62.112.222.47", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "b21c558b-1ca1-4159-a140-868448e5b1a8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "51.83.251.233", "port": 9331, "type": "vless", "skip-cert-verify": true, "uuid": "275e5518-9097-57bf-3241-8b9f369a115b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "x0PQITRDc443ujCTd0LORwvBBFGYKv6z2cvRbKHxAFU", "short-id": "af1fac6e"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇵🇱 PL | VLESS | @netmellianti #1 [medium]'
-      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
+      - '🇵🇱 PL | VLESS | @netmellianti #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇵🇱 PL | VLESS | @netmellianti #1 [medium]'
-      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
+      - '🇵🇱 PL | VLESS | @netmellianti #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
