@@ -1,0 +1,73 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "https://8.8.8.8/dns-query"
+      },
+      {
+        "tag": "local",
+        "address": "local"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "mixed-in",
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "DIRECT",
+      "type": "direct",
+      "outbounds": [
+        "🇨🇾 CY | VLESS | @easy_free_vpn #1 [fast]",
+        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+        "🇨🇾 CY | SS | @NamiraConfigs #1 [medium]"
+      ]
+    },
+    {
+      "tag": "BLOCK",
+      "type": "block"
+    },
+    {
+      "tag": "🇨🇾 CY | VLESS | @easy_free_vpn #1 [fast]",
+      "type": "vless",
+      "server": "ercf-ma.rainzone.site",
+      "server_port": 443,
+      "uuid": "6a5d1316-c0a6-4963-8ee1-e8b9b5f98c20",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+      "type": "vless",
+      "server": "germany.fast.hosting-ip.com",
+      "server_port": 80,
+      "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇨🇾 CY | SS | @NamiraConfigs #1 [medium]",
+      "type": "shadowsocks",
+      "server": "134.255.210.49",
+      "server_port": 990,
+      "method": "Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz",
+      "password": null
+    }
+  ]
+}

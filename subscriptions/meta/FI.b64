@@ -1,0 +1,22 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]", "server": "65.109.212.53", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "MIMITDL", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "telewebion.com.fin2.shakhle.ir", "port": 52525, "type": "vless", "skip-cert-verify": true, "uuid": "21702d6d-7b35-4faa-8462-c23dc7e20e00", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
+      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
+      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
