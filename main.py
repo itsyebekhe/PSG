@@ -1184,8 +1184,7 @@ class SubscriptionProcessor:
 
         for loc, confs in groups['locations'].items():
             safe_name = re.sub(r'[^a-zA-Z0-9]', '', loc) or "XX"
-            path = os.path.join(PATHS['OUTPUT_SUBS'], 'locations')
-            self._write_files(path, safe_name, confs, f"PSG | Location {loc}")
+            self._write_files(os.path.join(PATHS['OUTPUT_SUBS'], 'locations'), safe_name, confs, f"PSG | Location {loc}")
 
         for chan, confs in groups['channels'].items():
             safe_chan = re.sub(r'[^a-zA-Z0-9_.-]', '_', chan)
@@ -1199,17 +1198,16 @@ class SubscriptionProcessor:
             json.dump(api_data, f, indent=4, ensure_ascii=False)
 
     def _write_files(self, directory: str, filename: str, configs: List[str], title: str, prepends: List[str] = None):
-        os.makedirs(os.path.join(directory, 'normal'), exist_ok=True)
-        os.makedirs(os.path.join(directory, 'base64'), exist_ok=True)
+        os.makedirs(directory, exist_ok=True)
 
         merged = (prepends or []) + configs
         content = ConfigUtils.generate_header(title) + '\n'.join(merged)
         b64_content = base64.b64encode(content.encode()).decode()
 
         try:
-            with open(os.path.join(directory, 'normal', filename), 'w', encoding='utf-8') as f:
+            with open(os.path.join(directory, f"{filename}"), 'w', encoding='utf-8') as f:
                 f.write(content)
-            with open(os.path.join(directory, 'base64', filename), 'w', encoding='utf-8') as f:
+            with open(os.path.join(directory, f"{filename}.b64"), 'w', encoding='utf-8') as f:
                 f.write(b64_content)
         except IOError as e:
             logger.error(f"Failed to write {filename} in {directory}: {e}")
@@ -1313,7 +1311,7 @@ class SubscriptionProcessor:
             params = parsed.get('params', {})
 
             for ip in all_ips:
-                query = '&'.join(f"{k}={quote(str(v))}" for k, v in params.items())
+                query = '&'.join(f"{k}={v}" for k, v in params.items())
                 name = f"CDN {ip}"
                 config = f"vless://{user}@{ip}:{port}?{query}#{quote(name)}"
                 configs.append(config)
@@ -1363,161 +1361,154 @@ class SubscriptionProcessor:
         total_lite = len(lite_list)
         total_channels = len(channel_counts)
         total_countries = len(country_counts)
-        total_protocols = len(protocol_counts)
 
         sorted_protocols = sorted(protocol_counts.items(), key=lambda x: x[1], reverse=True)
-        sorted_countries = sorted(country_counts.items(), key=lambda x: x[1], reverse=True)[:20]
+        sorted_countries = sorted(country_counts.items(), key=lambda x: x[1], reverse=True)[:15]
         sorted_channels = sorted(channel_counts.items(), key=lambda x: x[1], reverse=True)[:30]
 
-        def clean_title(title: str) -> str:
-            title = re.sub(r'<[^>]+>', '', title)
-            title = re.sub(r'[^\w\s\-@#.!?]', '', title)
-            title = re.sub(r'\s+', ' ', title).strip()
-            return title[:35] if title else ''
+        def clean_title(t: str) -> str:
+            t = re.sub(r'<[^>]+>', '', t)
+            t = re.sub(r'[^\w\s\-@#.!?]', '', t)
+            t = re.sub(r'\s+', ' ', t).strip()
+            return t[:30] if t else ''
 
-        def country_flag(code: str) -> str:
-            if not code or len(code) != 2: return ""
-            return chr(127397 + ord(code[0])) + chr(127397 + ord(code[1]))
+        def flag(code: str) -> str:
+            return chr(127397 + ord(code[0])) + chr(127397 + ord(code[1])) if code and len(code) == 2 else ""
 
-        def protocol_emoji(p: str) -> str:
-            return {'vless': '🔒', 'vmess': '🛡️', 'trojan': '🐴', 'ss': '🔑', 'reality': '⚡', 'xhttp': '🚀', 'tuic': '🎯', 'hy2': '🌊'}.get(p, '📡')
+        def pbar(count: int, mx: int, w: int = 15) -> str:
+            return "█" * int((count / mx) * w) + "░" * (w - int((count / mx) * w)) if mx else ""
 
-        def bar_chart(count: int, max_count: int, width: int = 20) -> str:
-            if max_count == 0: return ""
-            filled = int((count / max_count) * width)
-            return "█" * filled + "░" * (width - filled)
+        now = datetime.now().strftime('%Y-%m-%d')
+        mx_p = sorted_protocols[0][1] if sorted_protocols else 1
+        mx_c = sorted_countries[0][1] if sorted_countries else 1
 
-        now = datetime.now().strftime('%Y-%m-%d %H:%M UTC')
+        proto_chart = "\n".join(f"> {p} **{k.upper()}** `{pbar(v, mx_p)}` {v:,} ({v/total*100:.1f}%)" for k, v in sorted_protocols for p in [{'vless':'🔒','vmess':'🛡️','trojan':'🐴','ss':'🔑','reality':'⚡','xhttp':'🚀','tuic':'🎯','hy2':'🌊'}.get(k,'📡')])
+        country_chart = "\n".join(f"> {flag(k)} **{k}** `{pbar(v, mx_c, 12)}` {v:,}" for k, v in sorted_countries)
+        channel_list = "\n".join(f"{i}. **@{c}** — {n} configs{' — ' + clean_title(self.channel_assets.get(c,{}).get('title','')) if self.channel_assets.get(c,{}).get('title') else ''}" for i, (c, n) in enumerate(sorted_channels, 1))
 
-        # Protocol chart
-        max_proto = sorted_protocols[0][1] if sorted_protocols else 1
-        proto_chart_rows = []
-        for proto, count in sorted_protocols:
-            emoji = protocol_emoji(proto)
-            pct = (count / total * 100) if total else 0
-            chart = bar_chart(count, max_proto)
-            proto_chart_rows.append(f"> {emoji} **{proto.upper()}** — {count:,} ({pct:.1f}%)\n> `{chart}`\n")
-        proto_chart = "\n".join(proto_chart_rows)
-
-        # Country chart
-        max_country = sorted_countries[0][1] if sorted_countries else 1
-        country_chart_rows = []
-        for code, count in sorted_countries[:15]:
-            flag = country_flag(code)
-            pct = (count / total * 100) if total else 0
-            chart = bar_chart(count, max_country, 15)
-            country_chart_rows.append(f"> {flag} **{code}** — {count:,} ({pct:.1f}%)\n> `{chart}`\n")
-        country_chart = "\n".join(country_chart_rows)
-
-        # Channel list
-        channel_items = []
-        for i, (chan, count) in enumerate(sorted_channels, 1):
-            assets = self.channel_assets.get(chan, {})
-            title = clean_title(assets.get('title', ''))
-            channel_items.append(f"{i}. **@{chan}** — {count} configs {'— ' + title if title else ''}")
-        channel_list = "\n".join(channel_items)
-
-        # CDN domains
         cdn_domains = CONSTANTS['CDN_DOMAINS']
         cdn_section = ""
         if cdn_domains:
-            cdn_domain_list = ", ".join(cdn_domains)
+            cdn_list = ", ".join(cdn_domains)
             cdn_section = f"""
-## 🌐 CDN Domain Configs
-
-Configs for **{cdn_domain_list}** — resolved IPs with WebSocket transport:
-
-> 🔗 [Base64 Normal]({base_url}/subscriptions/xray/base64/cdn) · [Base64 Lite]({base_url}/lite/subscriptions/xray/base64/cdn)
-> ⚡ [Clash Normal]({base_url}/subscriptions/clash/cdn) · [Clash Lite]({base_url}/lite/subscriptions/clash/cdn)
-> 📦 [Sing-box Normal]({base_url}/subscriptions/singbox/cdn.json) · [Sing-box Lite]({base_url}/lite/subscriptions/singbox/cdn.json)
-"""
-
-        # === ENGLISH README ===
-        readme_en = f"""# 🛡️ PSG — Premium Subscription Generator
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Configs-{total}-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Lite-{total_lite}-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Channels-{total_channels}-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Countries-{total_countries}-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Updated-{now}-red?style=for-the-badge" />
-</p>
-
-<p align="center"><a href="README.fa.md">🇮🇷 نسخه فارسی</a></p>
-
----
-
-## 📊 Network Statistics
-
-> 🔢 **{total:,}** configs · 🪶 **{total_lite:,}** lite · 📡 **{total_channels}** channels · 🌍 **{total_countries}** countries · ☁️ **{cf_count:,}** Cloudflare
-
-### ⚡ Protocol Distribution
-
-{proto_chart}
-
-### 🌍 Top Countries
-
-{country_chart}
-
-### 🚀 Speed Distribution
-
-> ⚡ **Fast** — {speed_tiers['fast']:,} (< 200ms)
-> 🟡 **Medium** — {speed_tiers['medium']:,} (200-500ms)
-> 🐢 **Slow** — {speed_tiers['slow']:,} (> 500ms)
-
----
-
-## 🔗 Subscription Links
-
-### 📌 Main Subscriptions
+<details>
+<summary>🌐 CDN Domain Configs — {cdn_list}</summary>
 
 | Format | Normal | Lite |
 |:---|:---|:---|
-| 🔗 Base64 | [mix]({base_url}/subscriptions/xray/base64/mix) | [mix]({base_url}/lite/subscriptions/xray/base64/mix) |
+| Base64 | [cdn]({base_url}/subscriptions/xray/cdn) | [cdn]({base_url}/lite/subscriptions/xray/cdn) |
+| Clash | [cdn]({base_url}/subscriptions/clash/cdn) | [cdn]({base_url}/lite/subscriptions/clash/cdn) |
+| Sing-box | [cdn.json]({base_url}/subscriptions/singbox/cdn.json) | [cdn.json]({base_url}/lite/subscriptions/singbox/cdn.json) |
+
+</details>
+"""
+
+        readme_en = f"""<div align="center">
+
+# 🛡️ PSG
+
+### Premium Proxy Subscription Generator
+
+![Updated](https://img.shields.io/badge/Updated-{now}-blue?style=flat-square)
+![Configs](https://img.shields.io/badge/Configs-{total:,}-green?style=flat-square)
+![Lite](https://img.shields.io/badge/Lite-{total_lite:,}-cyan?style=flat-square)
+![Channels](https://img.shields.io/badge/Channels-{total_channels}-orange?style=flat-square)
+![Countries](https://img.shields.io/badge/Countries-{total_countries}-purple?style=flat-square)
+
+[**فارسی**](README.fa.md)
+
+</div>
+
+---
+
+## 📊 Statistics
+
+| | |
+|:---|:---|
+| 🔢 **{total:,}** configs | 🪶 **{total_lite:,}** lite |
+| 📡 **{total_channels}** channels | 🌍 **{total_countries}** countries |
+| ☁️ **{cf_count:,}** Cloudflare | ⚡ **{speed_tiers['fast']:,}** fast |
+
+<details>
+<summary><b>⚡ Protocol Distribution</b></summary>
+
+{proto_chart}
+
+</details>
+
+<details>
+<summary><b>🌍 Country Distribution</b></summary>
+
+{country_chart}
+
+</details>
+
+<details>
+<summary><b>🚀 Speed Distribution</b></summary>
+
+> ⚡ **Fast** — {speed_tiers['fast']:,} configs (< 200ms)
+> 🟡 **Medium** — {speed_tiers['medium']:,} configs (200-500ms)
+> 🐢 **Slow** — {speed_tiers['slow']:,} configs (> 500ms)
+
+</details>
+
+---
+
+## 🔗 Subscriptions
+
+| Format | Normal | Lite |
+|:---|:---|:---|
+| 🔗 Base64 | [mix]({base_url}/subscriptions/xray/mix) | [mix]({base_url}/lite/subscriptions/xray/mix) |
 | ⚡ Clash | [mix]({base_url}/subscriptions/clash/mix) | [mix]({base_url}/lite/subscriptions/clash/mix) |
 | 🧠 Clash.Meta | [mix]({base_url}/subscriptions/meta/mix) | [mix]({base_url}/lite/subscriptions/meta/mix) |
 | 🏄 Surfboard | [mix]({base_url}/subscriptions/surfboard/mix) | [mix]({base_url}/lite/subscriptions/surfboard/mix) |
 | 📦 Sing-box | [mix.json]({base_url}/subscriptions/singbox/mix.json) | [mix.json]({base_url}/lite/subscriptions/singbox/mix.json) |
 | 🐱 Nekobox | [mix.json]({base_url}/subscriptions/nekobox/mix.json) | [mix.json]({base_url}/lite/subscriptions/nekobox/mix.json) |
 
-### 🔌 By Protocol
+<details>
+<summary><b>🔌 By Protocol</b></summary>
 
 | Protocol | Normal | Lite |
 |:---|:---|:---|
-| 🔒 VLESS | [vless]({base_url}/subscriptions/xray/base64/vless) | [vless]({base_url}/lite/subscriptions/xray/base64/vless) |
-| 🛡️ VMess | [vmess]({base_url}/subscriptions/xray/base64/vmess) | [vmess]({base_url}/lite/subscriptions/xray/base64/vmess) |
-| 🐴 Trojan | [trojan]({base_url}/subscriptions/xray/base64/trojan) | [trojan]({base_url}/lite/subscriptions/xray/base64/trojan) |
-| 🔑 Shadowsocks | [ss]({base_url}/subscriptions/xray/base64/ss) | [ss]({base_url}/lite/subscriptions/xray/base64/ss) |
-| ⚡ Reality | [reality]({base_url}/subscriptions/xray/base64/reality) | [reality]({base_url}/lite/subscriptions/xray/base64/reality) |
-| 🚀 XHTTP | [xhttp]({base_url}/subscriptions/xray/base64/xhttp) | [xhttp]({base_url}/lite/subscriptions/xray/base64/xhttp) |
+| 🔒 VLESS | [vless]({base_url}/subscriptions/xray/vless) | [vless]({base_url}/lite/subscriptions/xray/vless) |
+| 🛡️ VMess | [vmess]({base_url}/subscriptions/xray/vmess) | [vmess]({base_url}/lite/subscriptions/xray/vmess) |
+| 🐴 Trojan | [trojan]({base_url}/subscriptions/xray/trojan) | [trojan]({base_url}/lite/subscriptions/xray/trojan) |
+| 🔑 Shadowsocks | [ss]({base_url}/subscriptions/xray/ss) | [ss]({base_url}/lite/subscriptions/xray/ss) |
+| ⚡ Reality | [reality]({base_url}/subscriptions/xray/reality) | [reality]({base_url}/lite/subscriptions/xray/reality) |
+| 🚀 XHTTP | [xhttp]({base_url}/subscriptions/xray/xhttp) | [xhttp]({base_url}/lite/subscriptions/xray/xhttp) |
+
+</details>
 
 {cdn_section}
-### 🌍 By Country (Top 20)
+<details>
+<summary><b>🌍 By Country</b></summary>
 
 | Country | Link |
 |:---|:---|
-| 🇺🇸 US | [US]({base_url}/subscriptions/locations/base64/US) |
-| 🇩🇪 DE | [DE]({base_url}/subscriptions/locations/base64/DE) |
-| 🇳🇱 NL | [NL]({base_url}/subscriptions/locations/base64/NL) |
-| 🇬🇧 GB | [GB]({base_url}/subscriptions/locations/base64/GB) |
-| 🇫🇷 FR | [FR]({base_url}/subscriptions/locations/base64/FR) |
-| 🇯🇵 JP | [JP]({base_url}/subscriptions/locations/base64/JP) |
-| 🇸🇬 SG | [SG]({base_url}/subscriptions/locations/base64/SG) |
-| 🇭🇰 HK | [HK]({base_url}/subscriptions/locations/base64/HK) |
-| 🇨🇦 CA | [CA]({base_url}/subscriptions/locations/base64/CA) |
-| 🇦🇺 AU | [AU]({base_url}/subscriptions/locations/base64/AU) |
+| 🇺🇸 US | [US]({base_url}/subscriptions/locations/US) |
+| 🇩🇪 DE | [DE]({base_url}/subscriptions/locations/DE) |
+| 🇳🇱 NL | [NL]({base_url}/subscriptions/locations/NL) |
+| 🇬🇧 GB | [GB]({base_url}/subscriptions/locations/GB) |
+| 🇫🇷 FR | [FR]({base_url}/subscriptions/locations/FR) |
+| 🇯🇵 JP | [JP]({base_url}/subscriptions/locations/JP) |
+| 🇸🇬 SG | [SG]({base_url}/subscriptions/locations/SG) |
+| 🇭🇰 HK | [HK]({base_url}/subscriptions/locations/HK) |
+| 🇨🇦 CA | [CA]({base_url}/subscriptions/locations/CA) |
+| 🇦🇺 AU | [AU]({base_url}/subscriptions/locations/AU) |
 
-> More countries available in [locations/base64/]({base_url}/subscriptions/locations/base64/)
+> More at [{base_url}/subscriptions/locations/]({base_url}/subscriptions/locations/)
+
+</details>
 
 ---
 
-## 📡 Active Channels ({total_channels})
+## 📡 Channels ({total_channels})
 
 {channel_list}
 
 ---
 
-## 📱 Recommended Clients
+## 📱 Clients
 
 | Platform | Client |
 |:---|:---|
@@ -1530,98 +1521,116 @@ Configs for **{cdn_domain_list}** — resolved IPs with WebSocket transport:
 ---
 
 <div align="center">
-
-**Auto-updated every 6 hours** · Built with ❤️ by [PSG](https://github.com/itsyebekhe/PSG)
-
+Auto-updated every 6 hours · Built with ❤️ by <a href="https://github.com/itsyebekhe/PSG">PSG</a>
 </div>
 """
 
-        # === FARSI README ===
-        readme_fa = f"""# 🛡️ PSG — سازنده اشتراک پروکسی
+        readme_fa = f"""<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/کانفیگ-{total:,}-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/سبک-{total_lite:,}-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/کانال-{total_channels}-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/کشور-{total_countries}-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/بروزرسانی-{now}-red?style=for-the-badge" />
-</p>
+# 🛡️ PSG
 
-<p align="center"><a href="README.md">🇬🇧 English Version</a></p>
+### سازنده اشتراک پروکسی
+
+![Updated](https://img.shields.io/badge/بروزرسانی-{now}-blue?style=flat-square)
+![Configs](https://img.shields.io/badge/کانفیگ-{total:,}-green?style=flat-square)
+![Lite](https://img.shields.io/badge/سبک-{total_lite:,}-cyan?style=flat-square)
+![Channels](https://img.shields.io/badge/کانال-{total_channels}-orange?style=flat-square)
+![Countries](https://img.shields.io/badge/کشور-{total_countries}-purple?style=flat-square)
+
+[**English**](README.md)
+
+</div>
 
 ---
 
-## 📊 آمار شبکه
+## 📊 آمار
 
-> 🔢 **{total:,}** کانفیگ · 🪶 **{total_lite:,}** سبک · 📡 **{total_channels}** کانال · 🌍 **{total_countries}** کشور · ☁️ **{cf_count:,}** کلودفلر
+| | |
+|:---|:---|
+| 🔢 **{total:,}** کانفیگ | 🪶 **{total_lite:,}** سبک |
+| 📡 **{total_channels}** کانال | 🌍 **{total_countries}** کشور |
+| ☁️ **{cf_count:,}** کلودفلر | ⚡ **{speed_tiers['fast']:,}** سریع |
 
-### ⚡ توزیع پروتکل‌ها
+<details>
+<summary><b>⚡ توزیع پروتکل‌ها</b></summary>
 
 {proto_chart}
 
-### 🌍 برترین کشورها
+</details>
+
+<details>
+<summary><b>🌍 توزیع کشورها</b></summary>
 
 {country_chart}
 
-### 🚀 توزیع سرعت
+</details>
 
-> ⚡ **سریع** — {speed_tiers['fast']:,} (کمتر از ۲۰۰ms)
-> 🟡 **متوسط** — {speed_tiers['medium']:,} (۲۰۰-۵۰۰ms)
-> 🐢 **کند** — {speed_tiers['slow']:,} (بیش از ۵۰۰ms)
+<details>
+<summary><b>🚀 توزیع سرعت</b></summary>
+
+> ⚡ **سریع** — {speed_tiers['fast']:,} کانفیگ (کمتر از ۲۰۰ms)
+> 🟡 **متوسط** — {speed_tiers['medium']:,} کانفیگ (۲۰۰-۵۰۰ms)
+> 🐢 **کند** — {speed_tiers['slow']:,} کانفیگ (بیش از ۵۰۰ms)
+
+</details>
 
 ---
 
-## 🔗 لینک‌های اشتراک
-
-### 📌 اشتراک اصلی
+## 🔗 اشتراک‌ها
 
 | فرمت | عادی | سبک |
 |:---|:---|:---|
-| 🔗 Base64 | [mix]({base_url}/subscriptions/xray/base64/mix) | [mix]({base_url}/lite/subscriptions/xray/base64/mix) |
+| 🔗 Base64 | [mix]({base_url}/subscriptions/xray/mix) | [mix]({base_url}/lite/subscriptions/xray/mix) |
 | ⚡ Clash | [mix]({base_url}/subscriptions/clash/mix) | [mix]({base_url}/lite/subscriptions/clash/mix) |
 | 🧠 Clash.Meta | [mix]({base_url}/subscriptions/meta/mix) | [mix]({base_url}/lite/subscriptions/meta/mix) |
 | 🏄 Surfboard | [mix]({base_url}/subscriptions/surfboard/mix) | [mix]({base_url}/lite/subscriptions/surfboard/mix) |
 | 📦 Sing-box | [mix.json]({base_url}/subscriptions/singbox/mix.json) | [mix.json]({base_url}/lite/subscriptions/singbox/mix.json) |
 | 🐱 Nekobox | [mix.json]({base_url}/subscriptions/nekobox/mix.json) | [mix.json]({base_url}/lite/subscriptions/nekobox/mix.json) |
 
-### 🔌 بر اساس پروتکل
+<details>
+<summary><b>🔌 بر اساس پروتکل</b></summary>
 
 | پروتکل | عادی | سبک |
 |:---|:---|:---|
-| 🔒 VLESS | [vless]({base_url}/subscriptions/xray/base64/vless) | [vless]({base_url}/lite/subscriptions/xray/base64/vless) |
-| 🛡️ VMess | [vmess]({base_url}/subscriptions/xray/base64/vmess) | [vmess]({base_url}/lite/subscriptions/xray/base64/vmess) |
-| 🐴 Trojan | [trojan]({base_url}/subscriptions/xray/base64/trojan) | [trojan]({base_url}/lite/subscriptions/xray/base64/trojan) |
-| 🔑 Shadowsocks | [ss]({base_url}/subscriptions/xray/base64/ss) | [ss]({base_url}/lite/subscriptions/xray/base64/ss) |
-| ⚡ Reality | [reality]({base_url}/subscriptions/xray/base64/reality) | [reality]({base_url}/lite/subscriptions/xray/base64/reality) |
-| 🚀 XHTTP | [xhttp]({base_url}/subscriptions/xray/base64/xhttp) | [xhttp]({base_url}/lite/subscriptions/xray/base64/xhttp) |
+| 🔒 VLESS | [vless]({base_url}/subscriptions/xray/vless) | [vless]({base_url}/lite/subscriptions/xray/vless) |
+| 🛡️ VMess | [vmess]({base_url}/subscriptions/xray/vmess) | [vmess]({base_url}/lite/subscriptions/xray/vmess) |
+| 🐴 Trojan | [trojan]({base_url}/subscriptions/xray/trojan) | [trojan]({base_url}/lite/subscriptions/xray/trojan) |
+| 🔑 Shadowsocks | [ss]({base_url}/subscriptions/xray/ss) | [ss]({base_url}/lite/subscriptions/xray/ss) |
+| ⚡ Reality | [reality]({base_url}/subscriptions/xray/reality) | [reality]({base_url}/lite/subscriptions/xray/reality) |
+| 🚀 XHTTP | [xhttp]({base_url}/subscriptions/xray/xhttp) | [xhttp]({base_url}/lite/subscriptions/xray/xhttp) |
+
+</details>
 
 {cdn_section.replace('CDN Domain Configs', 'کانفیگ‌های دامنه CDN').replace('resolved IPs with WebSocket transport', 'IPهای رزولو شده با انتقال WebSocket') if cdn_section else ''}
-### 🌍 بر اساس کشور (۲۰ کشور برتر)
+<details>
+<summary><b>🌍 بر اساس کشور</b></summary>
 
 | کشور | لینک |
 |:---|:---|
-| 🇺🇸 US | [US]({base_url}/subscriptions/locations/base64/US) |
-| 🇩🇪 DE | [DE]({base_url}/subscriptions/locations/base64/DE) |
-| 🇳🇱 NL | [NL]({base_url}/subscriptions/locations/base64/NL) |
-| 🇬🇧 GB | [GB]({base_url}/subscriptions/locations/base64/GB) |
-| 🇫🇷 FR | [FR]({base_url}/subscriptions/locations/base64/FR) |
-| 🇯🇵 JP | [JP]({base_url}/subscriptions/locations/base64/JP) |
-| 🇸🇬 SG | [SG]({base_url}/subscriptions/locations/base64/SG) |
-| 🇭🇰 HK | [HK]({base_url}/subscriptions/locations/base64/HK) |
-| 🇨🇦 CA | [CA]({base_url}/subscriptions/locations/base64/CA) |
-| 🇦🇺 AU | [AU]({base_url}/subscriptions/locations/base64/AU) |
+| 🇺🇸 US | [US]({base_url}/subscriptions/locations/US) |
+| 🇩🇪 DE | [DE]({base_url}/subscriptions/locations/DE) |
+| 🇳🇱 NL | [NL]({base_url}/subscriptions/locations/NL) |
+| 🇬🇧 GB | [GB]({base_url}/subscriptions/locations/GB) |
+| 🇫🇷 FR | [FR]({base_url}/subscriptions/locations/FR) |
+| 🇯🇵 JP | [JP]({base_url}/subscriptions/locations/JP) |
+| 🇸🇬 SG | [SG]({base_url}/subscriptions/locations/SG) |
+| 🇭🇰 HK | [HK]({base_url}/subscriptions/locations/HK) |
+| 🇨🇦 CA | [CA]({base_url}/subscriptions/locations/CA) |
+| 🇦🇺 AU | [AU]({base_url}/subscriptions/locations/AU) |
 
-> کشورهای بیشتر در [locations/base64/]({base_url}/subscriptions/locations/base64/)
+> کشورهای بیشتر در [{base_url}/subscriptions/locations/]({base_url}/subscriptions/locations/)
+
+</details>
 
 ---
 
-## 📡 کانال‌های فعال ({total_channels})
+## 📡 کانال‌ها ({total_channels})
 
 {channel_list}
 
 ---
 
-## 📱 کلاینت‌های پیشنهادی
+## 📱 کلاینت‌ها
 
 | پلتفرم | کلاینت |
 |:---|:---|
@@ -1634,9 +1643,7 @@ Configs for **{cdn_domain_list}** — resolved IPs with WebSocket transport:
 ---
 
 <div align="center">
-
-**بروزرسانی خودکار هر ۶ ساعت** · ساخته شده با ❤️ توسط [PSG](https://github.com/itsyebekhe/PSG)
-
+بروزرسانی خودکار هر ۶ ساعت · ساخته شده با ❤️ توسط <a href="https://github.com/itsyebekhe/PSG">PSG</a>
 </div>
 """
 
@@ -2004,19 +2011,19 @@ MATCH,PROXY
         datasets = [
             {
                 "name": "MAIN",
-                "input_dir": os.path.join(output_subs, 'xray', 'base64'),
+                "input_dir": os.path.join(output_subs, 'xray'),
                 "output_root": output_subs,
                 "url_path": "subscriptions/surfboard"
             },
             {
                 "name": "LITE",
-                "input_dir": os.path.join(output_lite, 'xray', 'base64'),
+                "input_dir": os.path.join(output_lite, 'xray'),
                 "output_root": output_lite,
                 "url_path": "lite/subscriptions/surfboard"
             },
             {
                 "name": "LOCATIONS",
-                "input_dir": os.path.join(output_subs, 'locations', 'base64'),
+                "input_dir": os.path.join(output_subs, 'locations'),
                 "output_root": output_subs,
                 "url_path": "subscriptions/locations/surfboard"
             }
@@ -2161,9 +2168,9 @@ async def main():
         logger.info("5. Generating CDN Configs")
         cdn_configs = await processor.generate_cdn_configs(final)
         if cdn_configs:
-            cdn_dir = os.path.join(PATHS['OUTPUT_SUBS'], 'xray', 'base64')
+            cdn_dir = os.path.join(PATHS['OUTPUT_SUBS'], 'xray')
             processor._write_files(cdn_dir, 'cdn', cdn_configs, "PSG | CDN Domains")
-            cdn_lite_dir = os.path.join(PATHS['OUTPUT_LITE'], 'xray', 'base64')
+            cdn_lite_dir = os.path.join(PATHS['OUTPUT_LITE'], 'xray')
             processor._write_files(cdn_lite_dir, 'cdn', cdn_configs, "PSG Lite | CDN Domains")
             logger.info(f"  Generated {len(cdn_configs)} CDN configs")
 
