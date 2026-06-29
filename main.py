@@ -10,7 +10,6 @@ import socket
 import sys
 import logging
 import time
-import copy
 import glob as glob_mod
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional, Set, Tuple, Any
@@ -18,6 +17,7 @@ from urllib.parse import urlparse, parse_qs, urlencode, unquote, quote
 from datetime import datetime, timezone
 from collections import defaultdict
 import geoip2.database
+import proxy2singbox
 
 try:
     import yaml
@@ -924,7 +924,7 @@ class SubscriptionProcessor:
 
                 configs = PROTOCOL_REGEX.findall(text)
                 # Clean HTML entities from config strings
-                configs = [c.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>') for c in configs]
+                configs = [c.replace('&amp%3B', '&').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>') for c in configs]
                 for c in configs:
                     ct = ConfigUtils.detect_type(c)
                     if ct: types.add(ct)
@@ -1669,25 +1669,6 @@ ALLOWED_SS_METHODS = ["chacha20-ietf-poly1305", "aes-256-gcm", "2022-blake3-aes-
 
 
 class ConfigConverter:
-    SINGBOX_TEMPLATE = {
-        "log": {"level": "info", "timestamp": True},
-        "dns": {
-            "servers": [
-                {"tag": "google", "address": "https://8.8.8.8/dns-query"},
-                {"tag": "local", "address": "local"}
-            ],
-            "rules": [{"server": "local", "domain_suffix": ["ir"]}]
-        },
-        "inbounds": [
-            {"tag": "mixed-in", "type": "mixed", "listen": "127.0.0.1", "listen_port": 2080}
-        ],
-        "outbounds": [
-            {"tag": "DIRECT", "type": "direct"},
-            {"tag": "BLOCK", "type": "block"},
-            {"tag": "REJECT", "type": "reject"}
-        ]
-    }
-
     NEKOBOX_TEMPLATE = {
         "log": {"level": "info"},
         "dns": {
@@ -1908,114 +1889,6 @@ MATCH,PROXY
 
         return ", ".join(parts)
 
-    @staticmethod
-    def _to_singbox_outbound(data: Dict) -> Optional[Dict]:
-        ctype = data['type']
-        out = {
-            "tag": data['name'],
-            "type": ctype,
-            "server": data['server'],
-            "server_port": data['port']
-        }
-
-        def get_tls(sni, insecure=True, fp='chrome', alpn=None, reality=None):
-            tls = {
-                "enabled": True,
-                "server_name": sni,
-                "insecure": insecure,
-                "utls": {"enabled": True, "fingerprint": fp}
-            }
-            if alpn:
-                tls['alpn'] = alpn if isinstance(alpn, list) else [alpn]
-            if reality:
-                tls['reality'] = reality
-                tls['reality']['enabled'] = True
-            return tls
-
-        def get_transport(net, path, host, service_name):
-            if net == 'ws':
-                return {"type": "ws", "path": path, "headers": {"Host": host}}
-            if net == 'grpc':
-                return {"type": "grpc", "service_name": service_name}
-            if net == 'http':
-                return {"type": "http", "host": [host], "path": path}
-            return None
-
-        if ctype == 'vmess':
-            out.update({
-                "uuid": data['uuid'],
-                "security": "auto",
-                "alter_id": data.get('alterId', 0)
-            })
-            if data.get('port') == 443 or data.get('tls'):
-                out['tls'] = get_tls(data.get('sni') or data.get('host', ''))
-            net = data.get('network', 'tcp')
-            if net in ['ws', 'grpc', 'http']:
-                out['transport'] = get_transport(net, data.get('path', ''), data.get('host', ''), data.get('path', ''))
-
-        elif ctype == 'vless':
-            params = data.get('params', {})
-            out.update({
-                "uuid": data['uuid'],
-                "packet_encoding": "xudp"
-            })
-            if params.get('flow'):
-                out['flow'] = "xtls-rprx-vision"
-            security = params.get('security', '')
-            if data.get('port') == 443 or security in ['tls', 'reality']:
-                reality = None
-                if security == 'reality':
-                    reality = {"public_key": params.get('pbk', ''), "short_id": params.get('sid', '')}
-                out['tls'] = get_tls(params.get('sni', ''), reality=reality, fp=params.get('fp', 'chrome'))
-            net = params.get('type', 'tcp')
-            if net in ['ws', 'grpc', 'http']:
-                out['transport'] = get_transport(net, data.get('path', ''), params.get('host', ''), params.get('serviceName', ''))
-
-        elif ctype == 'trojan':
-            out['password'] = data.get('password', '')
-            if data.get('port') == 443 or data.get('params', {}).get('security') == 'tls':
-                out['tls'] = get_tls(data.get('params', {}).get('sni', ''))
-
-        elif ctype == 'ss':
-            out['type'] = "shadowsocks"
-            out['method'] = data.get('method', 'aes-256-gcm')
-            out['password'] = data.get('password', '')
-
-        elif ctype == 'tuic':
-            params = data.get('params', {})
-            out.update({
-                "uuid": data['uuid'],
-                "password": data.get('password', ''),
-                "congestion_control": params.get('congestion_control', 'bbr'),
-                "udp_relay_mode": params.get('udp_relay_mode', 'native'),
-                "tls": {
-                    "enabled": True,
-                    "server_name": params.get('sni', ''),
-                    "insecure": params.get('allow_insecure') == '1',
-                    "alpn": params.get('alpn', '').split(',') if params.get('alpn') else None
-                }
-            })
-
-        elif ctype == 'hy2':
-            out['type'] = 'hysteria2'
-            params = data.get('params', {})
-            if not params.get('obfs-password'):
-                return None
-            out.update({
-                "password": data.get('password', ''),
-                "obfs": {"type": params.get('obfs', 'salamander'), "password": params.get('obfs-password', '')},
-                "tls": {
-                    "enabled": True,
-                    "server_name": params.get('sni', ''),
-                    "insecure": params.get('insecure') == '1',
-                    "alpn": ["h3"]
-                }
-            })
-        else:
-            return None
-
-        return out
-
     def convert_outputs(self, output_subs: str, output_lite: str):
         logger.info("6. Converting outputs to Clash/Meta/Surfboard/Singbox formats...")
         datasets = [
@@ -2086,7 +1959,7 @@ MATCH,PROXY
 
             self._write_clash_configs(parsed_proxies, filename, output_root)
             self._write_surfboard_config(parsed_proxies, filename, output_root, url_path)
-            self._write_singbox_configs(parsed_proxies, filename, output_root)
+            self._write_singbox_configs(config_lines, filename, output_root)
 
     def _write_clash_configs(self, proxies: List[Dict], filename: str, output_root: str):
         for out_type in ['clash', 'meta']:
@@ -2127,36 +2000,49 @@ MATCH,PROXY
             with open(out_path, 'w', encoding='utf-8') as f:
                 f.write(content)
 
-    def _write_singbox_configs(self, proxies: List[Dict], filename: str, output_root: str):
-        for task, base_template in [('singbox', self.SINGBOX_TEMPLATE), ('nekobox', self.NEKOBOX_TEMPLATE)]:
-            structure = copy.deepcopy(base_template)
-            tags_added = []
+    def _write_singbox_configs(self, raw_lines: List[str], filename: str, output_root: str):
+        outbounds = []
+        seen_tags = set()
 
-            for p in proxies:
-                outbound = self._to_singbox_outbound(p)
-                if outbound:
-                    structure['outbounds'].append(outbound)
-                    tags_added.append(outbound['tag'])
+        for line in raw_lines:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            node = proxy2singbox.parse_proxy_url(line)
+            if node is None:
+                continue
+            ob = proxy2singbox.build_outbound(node)
 
-            if tags_added:
-                structure['outbounds'][0]['outbounds'] = tags_added
+            tag = ob["tag"]
+            base_tag = tag
+            counter = 1
+            while tag in seen_tags:
+                tag = f"{base_tag}-{counter}"
+                counter += 1
+            ob["tag"] = tag
+            seen_tags.add(tag)
 
-            if task == 'singbox':
-                b64_title = base64.b64encode(f"PSG | {filename.upper()}".encode()).decode()
-                header = (
-                    f"//profile-title: base64:{b64_title}\n"
-                    "//profile-update-interval: 1\n"
-                    "//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n"
-                    "//support-url: https://t.me/yebekhe\n"
-                    f"//profile-web-page-url: https://github.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}\n\n"
-                )
-                final_content = header + json.dumps(structure, indent=2, ensure_ascii=False)
-            else:
-                final_content = json.dumps(structure, indent=2, ensure_ascii=False)
+            outbounds.append(ob)
 
-            out_path = os.path.join(output_root, task, f"{filename}.json")
-            with open(out_path, 'w', encoding='utf-8') as f:
-                f.write(final_content)
+        if not outbounds:
+            return
+
+        singbox_config = proxy2singbox.build_singbox_config(outbounds=outbounds)
+        b64_title = base64.b64encode(f"PSG | {filename.upper()}".encode()).decode()
+        header = (
+            f"//profile-title: base64:{b64_title}\n"
+            "//profile-update-interval: 1\n"
+            "//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n"
+            "//support-url: https://t.me/yebekhe\n"
+            f"//profile-web-page-url: https://github.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}\n\n"
+        )
+        final_content = header + json.dumps(singbox_config, indent=2, ensure_ascii=False)
+
+        singbox_dir = os.path.join(output_root, 'singbox')
+        os.makedirs(singbox_dir, exist_ok=True)
+        out_path = os.path.join(singbox_dir, f"{filename}.json")
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(final_content)
 
 
 # --- Entry Point ---
