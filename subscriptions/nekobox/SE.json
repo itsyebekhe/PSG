@@ -27,6 +27,7 @@
       "tag": "DIRECT",
       "type": "direct",
       "outbounds": [
+        "🇸🇪 SE | VLESS | @outline_ir #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #3 [fast]",
@@ -53,6 +54,30 @@
     {
       "tag": "BLOCK",
       "type": "block"
+    },
+    {
+      "tag": "🇸🇪 SE | VLESS | @outline_ir #1 [fast]",
+      "type": "vless",
+      "server": "192.71.82.2",
+      "server_port": 443,
+      "uuid": "a5c05c1e-aa68-443f-8598-09800244bd4b",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "kingcloud.biack.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {
+          "Host": ""
+        }
+      }
     },
     {
       "tag": "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",

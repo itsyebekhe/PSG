@@ -32,8 +32,9 @@
         "🇳🇱 NL | VLESS | @freeconfigsplus #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ]
     },
     {
@@ -104,11 +105,33 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "",
+        "server_name": "static.lotussec.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+      "type": "vless",
+      "server": "178.255.222.197",
+      "server_port": 36096,
+      "uuid": "b08b5069-af08-4cd0-98c6-15c2360b797e",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.oracle.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "public_key": "RCgdkJbw00cI6Gq24MGBknpuIZz0-ypo_D6OkmcnTjY",
+          "short_id": "c69a",
+          "enabled": true
         }
       }
     },
@@ -136,7 +159,7 @@
       }
     },
     {
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "type": "vless",
       "server": "95.179.138.190",
       "server_port": 443,
