@@ -6,7 +6,7 @@
 
 ![Updated](https://img.shields.io/badge/Updated-2026-06-29-blue?style=flat-square)
 ![Configs](https://img.shields.io/badge/Configs-295-green?style=flat-square)
-![Lite](https://img.shields.io/badge/Lite-154-cyan?style=flat-square)
+![Lite](https://img.shields.io/badge/Lite-153-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/Channels-88-orange?style=flat-square)
 ![Countries](https://img.shields.io/badge/Countries-26-purple?style=flat-square)
 
@@ -20,9 +20,9 @@
 
 | | |
 |:---|:---|
-| 🔢 **295** configs | 🪶 **154** lite |
+| 🔢 **295** configs | 🪶 **153** lite |
 | 📡 **88** channels | 🌍 **26** countries |
-| ☁️ **229** Cloudflare | ⚡ **446** fast |
+| ☁️ **229** Cloudflare | ⚡ **448** fast |
 
 <details>
 <summary><b>⚡ Protocol Distribution</b></summary>
@@ -41,13 +41,13 @@
 > 🇺🇸 **US** `██░░░░░░░░░░` 55
 > 🇸🇪 **SE** `██░░░░░░░░░░` 46
 > 🇮🇷 **IR** `█░░░░░░░░░░░` 25
-> 🇩🇪 **DE** `█░░░░░░░░░░░` 21
+> 🇩🇪 **DE** `░░░░░░░░░░░░` 19
 > 🇬🇧 **GB** `░░░░░░░░░░░░` 16
 > 🇸🇨 **SC** `░░░░░░░░░░░░` 14
 > 🇨🇦 **CA** `░░░░░░░░░░░░` 9
+> 🇳🇱 **NL** `░░░░░░░░░░░░` 7
 > 🇦🇪 **AE** `░░░░░░░░░░░░` 7
-> 🇳🇱 **NL** `░░░░░░░░░░░░` 6
-> 🇫🇷 **FR** `░░░░░░░░░░░░` 6
+> 🇫🇷 **FR** `░░░░░░░░░░░░` 7
 > 🇮🇹 **IT** `░░░░░░░░░░░░` 4
 > 🇨🇾 **CY** `░░░░░░░░░░░░` 3
 > 🇷🇺 **RU** `░░░░░░░░░░░░` 3
@@ -58,8 +58,8 @@
 <details>
 <summary><b>🚀 Speed Distribution</b></summary>
 
-> ⚡ **Fast** — 446 configs (< 200ms)
-> 🟡 **Medium** — 13 configs (200-500ms)
+> ⚡ **Fast** — 448 configs (< 200ms)
+> 🟡 **Medium** — 11 configs (200-500ms)
 > 🐢 **Slow** — 0 configs (> 500ms)
 
 </details>

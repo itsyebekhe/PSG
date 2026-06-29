@@ -4,11 +4,9 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇩🇪 DE | VLESS | @father_vpn #1 [fast]", "server": "152.233.35.228", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "394f6981-a782-4779-9a85-e6cf22935d93", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]", "server": "rfvbtghnuyjmikolpqaz.sd.noafra.ir", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "1de6be2d-567a-4663-b5ea-5de8afe0f496", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇩🇪 DE | VLESS | @mpproxy #1 [fast]", "server": "37.114.50.157", "port": 4002, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-4000-8000-000000000000", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇩🇪 DE | VLESS | @ai_duet #1 [fast]", "server": "3.126.31.60", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇩🇪 DE | VLESS | @foxnt #1 [fast]", "server": "49.13.74.174", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "7cd6adff-8849-4fad-b3b3-857721c81477", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "49.13.74.174"}}}
   - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "89.39.121.54", "port": 110, "type": "vless", "skip-cert-verify": true, "uuid": "0540b490-5738-4f6d-9517-7e75ad77186f", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇩🇪 DE | VMESS | @red2ray #1 [fast]", "server": "18.184.156.126", "port": 1002, "type": "vmess", "skip-cert-verify": true, "uuid": "440cddf8-bfdc-4936-b842-381d572a12aa", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
@@ -22,11 +20,9 @@ proxy-groups:
     type: select
     proxies:
       - '🇩🇪 DE | VLESS | @father_vpn #1 [fast]'
-      - '🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]'
       - '🇩🇪 DE | VLESS | @mpproxy #1 [fast]'
       - '🇩🇪 DE | VLESS | @ai_duet #1 [fast]'
       - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]'
-      - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]'
       - '🇩🇪 DE | VLESS | @foxnt #1 [fast]'
       - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @red2ray #1 [fast]'
@@ -40,11 +36,9 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇩🇪 DE | VLESS | @father_vpn #1 [fast]'
-      - '🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]'
       - '🇩🇪 DE | VLESS | @mpproxy #1 [fast]'
       - '🇩🇪 DE | VLESS | @ai_duet #1 [fast]'
       - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]'
-      - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]'
       - '🇩🇪 DE | VLESS | @foxnt #1 [fast]'
       - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @red2ray #1 [fast]'
