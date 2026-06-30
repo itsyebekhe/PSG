@@ -50,11 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇮🇹 IT | VLESS | @outline_ir #1 [medium]",
         "🇮🇹 IT | VLESS | @ehsawn8 #1 [fast]",
-        "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
+        "🇮🇹 IT | VLESS | @flyv2ray #1 [medium]",
         "🇮🇹 IT | VLESS | @flyv2ray #2 [fast]",
         "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇹 IT | VLESS | @NamiraConfigs #2 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -63,11 +64,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇮🇹 IT | VLESS | @outline_ir #1 [medium]",
         "🇮🇹 IT | VLESS | @ehsawn8 #1 [fast]",
-        "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
+        "🇮🇹 IT | VLESS | @flyv2ray #1 [medium]",
         "🇮🇹 IT | VLESS | @flyv2ray #2 [fast]",
         "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇹 IT | VLESS | @NamiraConfigs #2 [fast]"
+        "🇮🇹 IT | VLESS | @NamiraConfigs #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,7 +78,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @ehsawn8 #1 [fast]",
+      "tag": "🇮🇹 IT | VLESS | @outline_ir #1 [medium]",
       "server": "151.115.164.37",
       "server_port": 8880,
       "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
@@ -89,7 +91,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
+      "tag": "🇮🇹 IT | VLESS | @ehsawn8 #1 [fast]",
+      "server": "sca29.speedmeter.shop",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @flyv2ray #1 [medium]",
       "server": "151.115.164.126",
       "server_port": 8880,
       "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
@@ -116,7 +134,7 @@
     {
       "type": "vless",
       "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "151.115.167.1",
+      "server": "sca35.speedmeter.shop",
       "server_port": 8880,
       "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
       "network": "grpc",
@@ -128,8 +146,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "sca35.speedmeter.shop",
+      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #2 [medium]",
+      "server": "151.115.164.132",
       "server_port": 8880,
       "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
       "network": "grpc",

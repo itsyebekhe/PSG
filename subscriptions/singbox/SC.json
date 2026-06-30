@@ -50,13 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]",
         "🇸🇨 SC | VLESS | @selinc #1 [medium]",
         "🇸🇨 SC | VLESS | @netmellianti #1 [medium]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #2 [fast]",
+        "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @red2ray #1 [medium]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "direct"
@@ -67,13 +67,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]",
         "🇸🇨 SC | VLESS | @selinc #1 [medium]",
         "🇸🇨 SC | VLESS | @netmellianti #1 [medium]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #2 [fast]",
+        "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @red2ray #1 [medium]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]"
       ],
@@ -81,30 +81,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
-      "server": "45.130.125.114",
-      "server_port": 8443,
-      "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv10.perfectbulk.info",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "srv10.perfectbulk.info"
-        }
-      }
     },
     {
       "type": "vless",
@@ -239,6 +215,30 @@
         "path": "/-Arfilter-TEL--@Arfilter-TEL--@Arfilter-TEL--@ArFilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@ArFilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEl--@Arfilter?ed=2048",
         "headers": {
           "Host": "cdn-alman1.arfilter2.blog"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
+      "server": "45.130.125.114",
+      "server_port": 8443,
+      "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv10.perfectbulk.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "srv10.perfectbulk.info"
         }
       }
     },
