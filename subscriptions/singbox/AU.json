@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇦🇺 AU | SS | @NamiraConfigs #1 [medium]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇦🇺 AU | SS | @NamiraConfigs #1 [medium]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇺 AU | SS | @NamiraConfigs #1 [medium]",
+      "server": "67.219.106.119",
+      "server_port": 26286,
+      "method": "chacha20-ietf-poly1305",
+      "password": "xfscSDcb-SeEqqRb.omzVGgVgNpXh3bA1u",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vmess",

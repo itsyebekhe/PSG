@@ -68,7 +68,6 @@
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇺🇸 US | VMESS | @prooxyk #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -112,7 +111,6 @@
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇺🇸 US | VMESS | @prooxyk #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -455,65 +453,53 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @prooxyk #1 [fast]",
-      "server": "77.v2ray1.xyz",
-      "server_port": 443,
-      "uuid": "17b2a313-37a0-4945-a8e4-e63375506b4a",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "77.v2ray1.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/A2DJOPFT",
-        "headers": {
-          "Host": "77.v2ray1.xyz"
-        }
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "shadyvpn-production-afff.up.railway.app",
+      "server": "gbw40.moyvpns.com",
       "server_port": 443,
-      "uuid": "a692da68-3bb0-4716-909a-9918acfcef30",
-      "network": "xhttp",
+      "uuid": "810b8ba9-3232-42ac-a474-3e921fdc8845",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "shadyvpn-production-afff.up.railway.app",
+        "server_name": "gbw40.moyvpns.com",
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-api"
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
-      "server": "174.129.45.76",
-      "server_port": 2053,
-      "uuid": "f188ec3b-e055-4eed-ae62-97403931d4e2",
-      "network": "tcp",
+      "server": "rvg-production-2030.up.railway.app",
+      "server_port": 443,
+      "uuid": "8664d5b6-3316-a334-5163-dffb9dea4c3f",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.intel.com",
+        "server_name": "rvg-production-2030.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L0bhr3K-aQCLq4aVrDTBQa6N62T7XbCsFhWnbStdWyc",
-          "short_id": "835db5c67c00"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/8664d5b6-3316-a334-5163-dffb9dea4c3f",
+        "headers": {
+          "Host": "rvg-production-2030.up.railway.app"
         }
       }
     },

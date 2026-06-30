@@ -50,15 +50,15 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @Proxymelimon #1 [fast]",
-        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
-        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #2 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -68,21 +68,45 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @Proxymelimon #1 [fast]",
-        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
-        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #2 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
+      "server": "erosan.appleseraj.ir",
+      "server_port": 443,
+      "uuid": "53feb5dd-9bb2-44ff-80ec-4d00debf1de4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "falkinichlol.appleseraj.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "?ed=2048",
+        "headers": {
+          "Host": "falkinichlol.appleseraj.ir"
+        }
+      }
     },
     {
       "type": "vless",
@@ -132,18 +156,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outline_ir #1 [fast]",
-      "server": "82.38.31.216",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
       "server_port": 8080,
@@ -156,11 +168,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
-      "server": "82.38.31.212",
-      "server_port": 8080,
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+      "server": "series-a2.samanehha.co",
+      "server_port": 443,
       "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "password": "W74XFALLLuw6m5IA",
       "network": "tcp",
       "tls": {
         "enabled": true
@@ -168,7 +180,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
       "server": "146.70.61.37",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -180,24 +192,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
-      "server": "series-a2.samanehha.co",
-      "server_port": 443,
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+      "server": "82.38.31.193",
+      "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
-      "password": "W74XFALLLuw6m5IA",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
       "network": "tcp",
       "tls": {
         "enabled": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "13.40.188.81",
-      "server_port": 443,
-      "uuid": "7e6a38f4-7150-4eff-ae68-579852357ddb",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #2 [fast]",
+      "server": "82.38.31.10",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "shadowsocks",

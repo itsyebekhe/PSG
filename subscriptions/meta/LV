@@ -3,18 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇱🇻 LV | VLESS | @beshkan #1 [fast]", "server": "217.28.48.29", "port": 25752, "type": "vless", "skip-cert-verify": true, "uuid": "27f2ae85-3e15-4a9a-9c71-49ee032e7b26", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]", "server": "195.135.252.28", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "099dbf2d-a8e0-406e-a85f-eba0ac9a68aa", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "hGGVm0PiHJwNL34pBG6NLtbFGYVdcWhDu5zHYDoct08", "short-id": "4360e536"}}
   - {"name": "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]", "server": "91.218.143.194", "port": 43798, "type": "vless", "skip-cert-verify": true, "uuid": "b7725d23-840a-4f8e-993c-69b40424cfc0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "W3aiFnhZRvZuZP0Zyfy7888t-NbHc0RmMEyFa7fYShU", "short-id": "f71c22"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇱🇻 LV | VLESS | @beshkan #1 [fast]'
       - '🇱🇻 LV | VLESS | @free4allvpn #1 [fast]'
       - '🇱🇻 LV | VLESS | @megavpn_link #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇱🇻 LV | VLESS | @beshkan #1 [fast]'
       - '🇱🇻 LV | VLESS | @free4allvpn #1 [fast]'
       - '🇱🇻 LV | VLESS | @megavpn_link #1 [fast]'
 rules:

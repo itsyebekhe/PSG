@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTFQ=
+//profile-title: base64:UFNHIHwgVFI=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT | VLESS | @free1_vpn #1 [fast]",
-        "🇱🇹 LT | VLESS | @flyv2ray #1 [fast]",
+        "🇹🇷 TR | SS | @NamiraConfigs #1 [slow]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT | VLESS | @free1_vpn #1 [fast]",
-        "🇱🇹 LT | VLESS | @flyv2ray #1 [fast]"
+        "🇹🇷 TR | SS | @NamiraConfigs #1 [slow]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,49 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @free1_vpn #1 [fast]",
-      "server": "45.194.10.209",
-      "server_port": 8443,
-      "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇹🇷 TR | SS | @NamiraConfigs #1 [slow]",
+      "server": "185.123.101.64",
+      "server_port": 2376,
+      "method": "aes-256-gcm",
+      "password": "faBAoD54k87UJG7",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "storage.yandex.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
-          "short_id": "2cfb5a0ae8ab0cb0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @flyv2ray #1 [fast]",
-      "server": "5.199.170.105",
-      "server_port": 443,
-      "uuid": "fd47216b-4217-4ec1-85b9-98304634a391",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE",
-          "short_id": "6ba85179e30d4fc2"
-        }
+        "enabled": true
       }
     },
     {
