@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
+        "🇫🇮 FI | VLESS | @free1_vpn #1 [medium]",
+        "🇫🇮 FI | SS | @jiedianf #1 [medium]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
@@ -60,7 +61,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
+        "🇫🇮 FI | VLESS | @free1_vpn #1 [medium]",
+        "🇫🇮 FI | SS | @jiedianf #1 [medium]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -70,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @free1_vpn #1 [medium]",
       "server": "217.217.247.246",
       "server_port": 443,
       "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
@@ -89,6 +91,18 @@
           "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
           "short_id": "6ba85179e30d4fc2"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 FI | SS | @jiedianf #1 [medium]",
+      "server": "109.107.182.229",
+      "server_port": 51544,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4d1nVpqJVp5oq2W4D0Ljy4",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

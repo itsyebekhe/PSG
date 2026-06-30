@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "89.105.206.151", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "15634a62-7add-473b-a76c-cf26d158850d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "nl.quattro-tech.ru", "reality-opts": {"public-key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc", "short-id": "43dcff53849b81e6"}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "104.238.31.71", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b783c6d6-3a0f-4c13-bbd1-86bf1ec4d94d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "unitbook.net", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTk8=
+//profile-title: base64:UFNHIHwgRVM=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO | SS | @NamiraConfigs #1 [fast]",
+        "🇪🇸 ES | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO | SS | @NamiraConfigs #1 [fast]"
+        "🇪🇸 ES | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,26 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇴 NO | SS | @NamiraConfigs #1 [fast]",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+      "type": "vless",
+      "tag": "🇪🇸 ES | VLESS | @red2ray #1 [medium]",
+      "server": "5.180.173.222",
+      "server_port": 448,
+      "uuid": "626b07bd-81c4-4212-be7a-27442a579620",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "www.googletagmanager.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y4_NnPQc2X8Bj97LpUL9r9xuK-R2pLwjd5cZbBw2HSo",
+          "short_id": "15052edc8120b63d"
+        }
       }
     },
     {
