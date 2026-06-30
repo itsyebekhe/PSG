@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFI=
+//profile-title: base64:UFNHIHwgSEs=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
+        "🇭🇰 HK | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @red2ray #1 [medium]"
+        "🇭🇰 HK | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,12 +68,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
-      "server": "77.83.203.137",
-      "server_port": 2052,
-      "uuid": "5e6a66e9-a250-465d-adb5-0b7bd692f48a",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
+      "tag": "🇭🇰 HK | VLESS | @red2ray #1 [medium]",
+      "server": "64.49.44.87",
+      "server_port": 19107,
+      "uuid": "9e13f74e-3ad7-437d-aba6-5def3c42b046",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rdfVgNqwK528X1X4ZdKe9abvTm7yMICZ5FRUmdYLF14",
+          "short_id": "bedc231e12dd39"
+        }
+      }
     },
     {
       "type": "direct",

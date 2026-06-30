@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇭🇰 HK | VLESS | @red2ray #1 [medium]", "server": "64.49.44.87", "port": 19107, "type": "vless", "skip-cert-verify": true, "uuid": "9e13f74e-3ad7-437d-aba6-5def3c42b046", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.intel.com", "reality-opts": {"public-key": "rdfVgNqwK528X1X4ZdKe9abvTm7yMICZ5FRUmdYLF14", "short-id": "bedc231e12dd39"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

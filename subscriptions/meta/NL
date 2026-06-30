@@ -4,19 +4,22 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @beshkan #1 [fast]", "server": "185.229.191.58", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "394f6981-a782-4779-9a85-e6cf22935d93", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ams1.fromblancwithlove.com"}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "87.199.210.215", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "def62c86-e2f2-4d13-b1f1-b3c197ed4873", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
