@@ -3,29 +3,38 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇳🇱 NL | VLESS | @netmellianti #1 [fast]", "server": "45.131.6.203", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "9c940549-ac64-370e-eda9-67257bab6815", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "corecache.novacorelorna.com"}
   - {"name": "🇳🇱 NL | VLESS | @freeconfigsplus #1 [fast]", "server": "72.56.18.179", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a2415a12-3f92-4636-9823-9828d3ceb818", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.ya.ru", "reality-opts": {"public-key": "8xufuXmVTmxmM9SKIN1P6x3CFstZdl1mfSxr_LfOkDQ", "short-id": "2af15d98"}}
   - {"name": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]", "server": "45.131.6.203", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "9c940549-ac64-370e-eda9-67257bab6815", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "corecache.novacorelorna.com"}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "89.105.206.151", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "15634a62-7add-473b-a76c-cf26d158850d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "nl.quattro-tech.ru", "reality-opts": {"public-key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc", "short-id": "43dcff53849b81e6"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #2 [fast]", "server": "154.83.159.14", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "0047a8bc-0025-4d45-899b-c75c669f3ede", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo", "short-id": "6f15101ff2cc4887"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #3 [fast]", "server": "85.234.65.130", "port": 6000, "type": "vless", "skip-cert-verify": true, "uuid": "f75566a5-4744-4806-ac2e-ccaefe1b1080", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "telekom.com", "reality-opts": {"public-key": "F6D_xS9iNp_eeQsHkFpUiLgFsGOH62Q1RFrY4qo5_X4", "short-id": "bc03731d6e4c2f7f"}}
   - {"name": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]", "server": "72.56.92.177", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "4480161e-2c59-4d37-8736-675c9af32bf1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y", "short-id": "01d1bf2d4755d40c"}}
-  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "188.166.121.10", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vpn47.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "vpn47.cc.cd"}}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇳🇱 NL | VLESS | @netmellianti #1 [fast]'
       - '🇳🇱 NL | VLESS | @freeconfigsplus #1 [fast]'
       - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #3 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇳🇱 NL | VLESS | @netmellianti #1 [fast]'
       - '🇳🇱 NL | VLESS | @freeconfigsplus #1 [fast]'
       - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #3 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

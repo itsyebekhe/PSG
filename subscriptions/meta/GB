@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @netmellianti #1 [fast]", "server": "h2.garletshopino.com", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "ca.dtgitar.com"}
-  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]", "server": "57.129.137.57", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vpn47.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "vpn47.cc.cd"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @netmellianti #1 [fast]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @netmellianti #1 [fast]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

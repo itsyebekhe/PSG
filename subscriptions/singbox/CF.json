@@ -83,6 +83,8 @@
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @meli_v2rayng #1 [fast]",
         "🇽🇽 XX | VLESS | @meli_v2rayng #2 [fast]",
+        "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
+        "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @novinology #1 [fast]",
         "🇽🇽 XX | VLESS | @novinology #2 [fast]",
         "🇽🇽 XX | VLESS | @novinology #3 [fast]",
@@ -121,10 +123,9 @@
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #3 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #4 [fast]",
+        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #2 [fast]",
-        "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
-        "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
@@ -236,6 +237,8 @@
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @meli_v2rayng #1 [fast]",
         "🇽🇽 XX | VLESS | @meli_v2rayng #2 [fast]",
+        "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
+        "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @novinology #1 [fast]",
         "🇽🇽 XX | VLESS | @novinology #2 [fast]",
         "🇽🇽 XX | VLESS | @novinology #3 [fast]",
@@ -274,10 +277,9 @@
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #3 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #4 [fast]",
+        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #2 [fast]",
-        "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
-        "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
@@ -958,6 +960,34 @@
         "headers": {
           "Host": "VPNCUSTOMIZE.V2ray.Community."
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
+      "server": "creativecommons.org",
+      "server_port": 2086,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/PdgTMW8NBNZYo6L23v",
+        "headers": {
+          "Host": "index.0x15.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
+      "server": "creativecommons.org",
+      "server_port": 2086,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true
       }
     },
     {
@@ -1773,6 +1803,33 @@
     },
     {
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
+      "server": "hikvision-plus.com",
+      "server_port": 2083,
+      "uuid": "85c40985-f109-410c-9657-4a2f52140bf0",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg.sogand.qzz.io",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/BlueKnight_Net",
+        "headers": {
+          "Host": "sg.sogand.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
       "server": "104.16.72.70",
       "server_port": 8443,
@@ -1803,34 +1860,6 @@
           "enabled": true,
           "fingerprint": "firefox"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
-      "server": "creativecommons.org",
-      "server_port": 2086,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/PdgTMW8NBNZYo6L23v",
-        "headers": {
-          "Host": "index.0x15.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
-      "server": "creativecommons.org",
-      "server_port": 2086,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true
       }
     },
     {
@@ -1982,7 +2011,7 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "172.64.53.65",
+      "server": "104.18.42.54",
       "server_port": 443,
       "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "network": "ws",
@@ -1993,7 +2022,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/fp",
+        "path": "/",
         "headers": {
           "Host": "t1s1.rittbo.kdns.fr"
         }
@@ -2202,8 +2231,8 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "104.18.35.13",
-      "server_port": 443,
+      "server": "108.162.196.3",
+      "server_port": 2083,
       "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "network": "ws",
       "packet_encoding": "xudp",
