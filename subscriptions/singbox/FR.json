@@ -52,9 +52,9 @@
         "auto",
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -66,9 +66,9 @@
       "outbounds": [
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -115,28 +115,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-      "server": "141.95.8.64",
-      "server_port": 9331,
-      "uuid": "9c940549-ac64-370e-eda9-67257bab6815",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x0PQITRDc443ujCTd0LORwvBBFGYKv6z2cvRbKHxAFU",
-          "short_id": "af1fac6e"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
       "server": "199.232.169.135",
       "server_port": 80,
@@ -172,6 +150,30 @@
         "path": "/MinoVpnCh?ed=2048",
         "headers": {
           "Host": "googleb.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "82.64.152.55",
+      "server_port": 20304,
+      "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn47.cc.cd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vpn47.cc.cd"
         }
       }
     },

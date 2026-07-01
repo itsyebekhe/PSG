@@ -50,6 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
         "🇮🇷 IR | VLESS | @prrofile_purple #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -61,14 +63,12 @@
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
-        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
-        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]",
+        "🇮🇷 IR | VMESS | @khoneproxy #2 [slow]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @frev2rayng #1 [medium]",
+        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @realvpnmaster #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -77,6 +77,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
         "🇮🇷 IR | VLESS | @prrofile_purple #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -88,19 +90,42 @@
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
-        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
-        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]"
+        "🇮🇷 IR | VMESS | @khoneproxy #2 [slow]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @frev2rayng #1 [medium]",
+        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @realvpnmaster #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+      "server": "185.143.233.235",
+      "server_port": 80,
+      "uuid": "22109ab6-bfdd-4062-ae1c-054c74353e39",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
+      "server": "185.143.234.235",
+      "server_port": 80,
+      "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vixon.portab.org"
+        }
+      }
     },
     {
       "type": "vless",
@@ -281,31 +306,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-      "server": "185.143.233.235",
-      "server_port": 80,
-      "uuid": "22109ab6-bfdd-4062-ae1c-054c74353e39",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-      "server": "185.143.234.235",
-      "server_port": 80,
-      "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vixon.portab.org"
-        }
-      }
-    },
-    {
       "type": "vmess",
       "tag": "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
       "server": "37.32.23.122",
@@ -324,7 +324,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #2 [slow]",
       "server": "78.47.131.39",
       "server_port": 8443,
       "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",
@@ -337,7 +337,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
       "server": "allsms.rozfa.com",
       "server_port": 443,
       "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
@@ -365,7 +365,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @frev2rayng #1 [medium]",
       "server": "zula.ir",
       "server_port": 80,
       "uuid": "9b4a2cd4-7d28-4ebe-d701-95723b811aff",
@@ -381,7 +381,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
       "server": "www.zula.ir",
       "server_port": 443,
       "uuid": "2b5e2b86-55b6-4571-abc1-c1dec8605725",
@@ -401,7 +401,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @realvpnmaster #1 [medium]",
       "server": "zula.ir",
       "server_port": 80,
       "uuid": "19f935c2-4c92-4b8a-b024-3e378f396255",

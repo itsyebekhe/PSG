@@ -3,19 +3,28 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "209.38.46.202", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vpn47.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "vpn47.cc.cd"}}}
+  - {"name": "🇳🇱 NL | VLESS | @freeconfigsplus #1 [fast]", "server": "72.56.18.179", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a2415a12-3f92-4636-9823-9828d3ceb818", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.ya.ru", "reality-opts": {"public-key": "8xufuXmVTmxmM9SKIN1P6x3CFstZdl1mfSxr_LfOkDQ", "short-id": "2af15d98"}}
+  - {"name": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]", "server": "45.131.6.203", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "9c940549-ac64-370e-eda9-67257bab6815", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "corecache.novacorelorna.com"}
+  - {"name": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]", "server": "72.56.92.177", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "4480161e-2c59-4d37-8736-675c9af32bf1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y", "short-id": "01d1bf2d4755d40c"}}
+  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "188.166.121.10", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vpn47.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "vpn47.cc.cd"}}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @freeconfigsplus #1 [fast]'
+      - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
+      - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @freeconfigsplus #1 [fast]'
+      - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
+      - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

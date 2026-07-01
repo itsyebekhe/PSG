@@ -4,22 +4,22 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]", "server": "germany.fast.hosting-ip.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇨🇾 CY | VLESS | @nn_vpn #1 [medium]", "server": "sadaf.netherlands.mehrdadsadaf.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "59acb90b-fb9d-433b-a2f0-c039cf23dfc7", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "dash.cloudflare.com", "grpc-opts": {"grpc-service-name": "@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar"}, "reality-opts": {"public-key": "5VdWpwWeApKlGJoi50efzxiPjBruG4Rqi6ku0IDxwgc", "short-id": "3bbf56e2"}}
-  - {"name": "🇨🇾 CY | VLESS | @nn_vpn #2 [medium]", "server": "sadaf.melorin.mehrdadsadaf.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "b8debe38-3858-4a7e-9bfc-ee090ac7597b", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "dash.cloudflare.com", "grpc-opts": {"grpc-service-name": "@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar"}, "reality-opts": {"public-key": "U27aXgEDWdrPwlPOLK3XGi5MzTtnYicnSHhbtBUyKBY", "short-id": "73c901c5"}}
+  - {"name": "🇨🇾 CY | VLESS | @nn_vpn #1 [fast]", "server": "sadaf.netherlands.mehrdadsadaf.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "59acb90b-fb9d-433b-a2f0-c039cf23dfc7", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "dash.cloudflare.com", "grpc-opts": {"grpc-service-name": "@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar"}, "reality-opts": {"public-key": "5VdWpwWeApKlGJoi50efzxiPjBruG4Rqi6ku0IDxwgc", "short-id": "3bbf56e2"}}
+  - {"name": "🇨🇾 CY | VLESS | @nn_vpn #2 [fast]", "server": "sadaf.melorin.mehrdadsadaf.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "b8debe38-3858-4a7e-9bfc-ee090ac7597b", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "dash.cloudflare.com", "grpc-opts": {"grpc-service-name": "@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar,@Mehrdad_Zargar"}, "reality-opts": {"public-key": "U27aXgEDWdrPwlPOLK3XGi5MzTtnYicnSHhbtBUyKBY", "short-id": "73c901c5"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]'
-      - '🇨🇾 CY | VLESS | @nn_vpn #1 [medium]'
-      - '🇨🇾 CY | VLESS | @nn_vpn #2 [medium]'
+      - '🇨🇾 CY | VLESS | @nn_vpn #1 [fast]'
+      - '🇨🇾 CY | VLESS | @nn_vpn #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]'
-      - '🇨🇾 CY | VLESS | @nn_vpn #1 [medium]'
-      - '🇨🇾 CY | VLESS | @nn_vpn #2 [medium]'
+      - '🇨🇾 CY | VLESS | @nn_vpn #1 [fast]'
+      - '🇨🇾 CY | VLESS | @nn_vpn #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
