@@ -4,16 +4,22 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]", "server": "erosan.appleseraj.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "53feb5dd-9bb2-44ff-80ec-4d00debf1de4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "falkinichlol.appleseraj.ir", "ws-opts": {"path": "", "headers": {"Host": "falkinichlol.appleseraj.ir"}}}
+  - {"name": "🇬🇧 GB | VLESS | @netmellianti #1 [fast]", "server": "h2.garletshopino.com", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "ca.dtgitar.com"}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "eng.wizardx1.com", "port": 8085, "type": "vless", "skip-cert-verify": true, "uuid": "4a836d89-0655-4c77-9702-b47219afaa5d", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
+      - '🇬🇧 GB | VLESS | @netmellianti #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
+      - '🇬🇧 GB | VLESS | @netmellianti #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
