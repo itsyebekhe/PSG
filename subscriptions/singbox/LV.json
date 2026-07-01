@@ -50,9 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV | VLESS | @bored_vpn #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇱🇻 LV | VLESS | @megavpn_link #1 [medium]",
+        "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,36 +60,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV | VLESS | @bored_vpn #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇱🇻 LV | VLESS | @megavpn_link #1 [medium]"
+        "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 LV | VLESS | @bored_vpn #1 [fast]",
-      "server": "31.57.28.197",
-      "server_port": 443,
-      "uuid": "fedf7ff3-0bd2-45dd-ba36-b25cda318388",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jWNzEE0kjuK_3n0XQHdG_eEime9kSQt-O01XK5C68Fo",
-          "short_id": "201f2fa0"
-        }
-      }
     },
     {
       "type": "vless",
@@ -117,7 +93,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1 [medium]",
+      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
       "server": "91.218.143.194",
       "server_port": 43798,
       "uuid": "b7725d23-840a-4f8e-993c-69b40424cfc0",

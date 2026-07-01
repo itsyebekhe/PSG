@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | VLESS | @prrofile_purple #1 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #2 [fast]",
+        "🇦🇪 AE | HY2 | @prrofile_purple #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #2 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
       ],
@@ -62,9 +62,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @prrofile_purple #1 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #2 [fast]",
+        "🇦🇪 AE | HY2 | @prrofile_purple #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #2 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -73,32 +73,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @prrofile_purple #1 [fast]",
-      "server": "solar.appleseraj.ir",
-      "server_port": 2083,
-      "uuid": "53feb5dd-9bb2-44ff-80ec-4d00debf1de4",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "nurenbbbb.appleseraj.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "?ed=2048",
-        "headers": {
-          "Host": "nurenbbbb.appleseraj.ir"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
+      "tag": "🇦🇪 AE | HY2 | @prrofile_purple #1 [medium]",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -114,7 +90,23 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #2 [fast]",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "obfs": {
+        "type": "salamander",
+        "password": "salamander"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #2 [medium]",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",

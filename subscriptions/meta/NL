@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "209.38.46.202", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vpn47.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "vpn47.cc.cd"}}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
