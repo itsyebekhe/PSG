@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @netmellianti #1 [fast]", "server": "51.89.226.247", "port": 2958, "type": "vless", "skip-cert-verify": true, "uuid": "9c940549-ac64-370e-eda9-67257bab6815", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "cOH4yLxRXzleQPvmoJ2p-XMW1PFrdwNa4yxeAzpXCB0", "short-id": "ca6f274184f32c7d"}}
-  - {"name": "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]", "server": "95.133.242.210", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5982d32f-f2e4-4267-a8ad-48492e65344c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "filesconvert.org", "reality-opts": {"public-key": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs", "short-id": "10debbdf94767541"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @netmellianti #1 [fast]'
-      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @netmellianti #1 [fast]'
-      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
