@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇷 FR | VMESS | @NamiraConfigs #1 [fast]", "server": "69.84.182.49", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "f8975871-a7a0-4906-8835-a23c1258ca1e", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇷 FR | VMESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇷 FR | VMESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

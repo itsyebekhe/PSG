@@ -136,6 +136,8 @@
         "🇽🇽 XX | VLESS | @customizev2ray #5 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #6 [fast]",
         "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #3 [fast]",
         "🇽🇽 XX | VLESS | @renetvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @renetvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @renetvpn #3 [fast]",
@@ -290,6 +292,8 @@
         "🇽🇽 XX | VLESS | @customizev2ray #5 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #6 [fast]",
         "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #3 [fast]",
         "🇽🇽 XX | VLESS | @renetvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @renetvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @renetvpn #3 [fast]",
@@ -2011,8 +2015,8 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "104.18.42.54",
-      "server_port": 443,
+      "server": "162.159.11.57",
+      "server_port": 2083,
       "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "network": "ws",
       "packet_encoding": "xudp",
@@ -2022,10 +2026,57 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/fp",
         "headers": {
           "Host": "t1s1.rittbo.kdns.fr"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+      "server": "162.159.38.119",
+      "server_port": 443,
+      "uuid": "e277ac9b-3225-3381-a9fb-3585419f7142<code>",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "media14.ftmsoft.com",
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/media14",
+        "headers": {
+          "Host": "media14.ftmsoft.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #3 [fast]",
+      "server": "188.114.98.193",
+      "server_port": 443,
+      "uuid": "a5c05c1e-aa68-443f-8598-09800244bd4b",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "kingcloud.biack.ir",
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/LiL?ed=512"
       }
     },
     {
@@ -2231,22 +2282,18 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "108.162.196.3",
-      "server_port": 2083,
+      "server": "162.159.16.154",
+      "server_port": 443,
       "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "t1s1.rittbo.kdns.fr",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "t1s1.rittbo.kdns.fr"
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/fp",
         "headers": {
           "Host": "t1s1.rittbo.kdns.fr"
         }

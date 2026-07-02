@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSUU=
+//profile-title: base64:UFNHIHwgVFI=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE | SS | @outline_ir #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE | SS | @outline_ir #1 [fast]"
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,25 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @outline_ir #1 [fast]",
-      "server": "20.223.136.202",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "HeC2HzINHb4SUY8S",
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+      "server": "78.135.87.247",
+      "server_port": 8443,
+      "uuid": "d543719b-7325-44ef-a8f4-b1a6e6b44078",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CmOo6N7jVYHj9MhRHT3BpxIU8ZgWLPDR3ops_Vqj_l4",
+          "short_id": "db49335ae082"
+        }
       }
     },
     {
