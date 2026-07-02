@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇵🇱 PL | VLESS | @free1_vpn #1 [medium]", "server": "scj.foot8all.ir", "port": 11332, "type": "vless", "skip-cert-verify": true, "uuid": "681314c5-b3ee-41f1-a959-fa42841f5383", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "Yozi8V5IYT7TzszTYwxnxMO-RZ93qCRFpgzZYehbqiM", "short-id": "7252845aadae02bb"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇵🇱 PL | VLESS | @free1_vpn #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇵🇱 PL | VLESS | @free1_vpn #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

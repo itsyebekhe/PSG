@@ -60,12 +60,11 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+        "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @free1_vpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-        "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇽🇽 XX | VLESS | @beshkan #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -75,9 +74,8 @@
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
-        "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
@@ -116,12 +114,11 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+        "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @free1_vpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-        "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇽🇽 XX | VLESS | @beshkan #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -131,9 +128,8 @@
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
-        "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
@@ -296,6 +292,19 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
+      "server": "sca30.mysilipdir.com",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇫🇮 FI | VLESS | @free1_vpn #1 [medium]",
       "server": "fi.faygo.bot",
       "server_port": 443,
@@ -337,26 +346,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
-      "server": "news.microsoft.com",
-      "server_port": 443,
-      "uuid": "4f013568-a58b-4b04-b5dd-4d52bf1c33a4",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "amoosamiii.net"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/poiuyws",
-        "headers": {
-          "Host": "amoosamiii.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
       "server": "rvg-production-1ab7.up.railway.app",
       "server_port": 443,
@@ -376,23 +365,6 @@
         "path": "/ws/deffbfcd-0626-365b-ff92-9b93f2fd6459",
         "headers": {
           "Host": "rvg-production-1ab7.up.railway.app"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
-      "server": "ipw.ygdfw.com",
-      "server_port": 443,
-      "uuid": "bbab81f3-87a0-4e63-8b3b-010c645d8da7",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "lIVe-1OdGy1GQ.bEuIZ.COM",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         }
       }
     },
@@ -580,15 +552,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
-      "server": "sca30.mysilipdir.com",
-      "server_port": 8880,
-      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-      "network": "grpc",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+      "server": "de.vpnbase.net",
+      "server_port": 80,
+      "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
+      "network": "ws",
       "packet_encoding": "xudp",
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/http",
+        "headers": {
+          "Host": "de.vpnbase.net"
+        }
       }
     },
     {
@@ -606,15 +581,6 @@
           "Host": "7.arsalanv2.sbs"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "ip2.iranphlox.ir",
-      "server_port": 2086,
-      "uuid": "3b715892-8610-4fdc-9086-647b36af5443",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

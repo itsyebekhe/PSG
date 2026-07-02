@@ -57,13 +57,15 @@
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
         "🇱🇹 LT | VLESS | @free1_vpn #1 [medium]",
         "🇸🇨 SC | VLESS | @selinc #1 [medium]",
+        "🇺🇸 US | VLESS | @netmellianti #1 [medium]",
+        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "🇫🇮 FI | VLESS | @filtershekan_channel #1 [medium]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇱🇻 LV | VLESS | @megavpn_link #1 [slow]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -79,13 +81,15 @@
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
         "🇱🇹 LT | VLESS | @free1_vpn #1 [medium]",
         "🇸🇨 SC | VLESS | @selinc #1 [medium]",
+        "🇺🇸 US | VLESS | @netmellianti #1 [medium]",
+        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "🇫🇮 FI | VLESS | @filtershekan_channel #1 [medium]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇱🇻 LV | VLESS | @megavpn_link #1 [slow]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -225,6 +229,51 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @netmellianti #1 [medium]",
+      "server": "155.103.69.33",
+      "server_port": 42841,
+      "uuid": "EarnMoneyarz-ZoRo",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dzQmB-5PshfbZ228GO154TnSIcKV1HvG8sAhzlLn_zo",
+          "short_id": "a00ad308"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+      "server": "159.195.44.159",
+      "server_port": 443,
+      "uuid": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "5.oncloudnineservicestreang.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RurLbpOTStqCjS3lhwB0d3MEZ3629j3atv_r1dT5zjM",
+          "short_id": "273940fba6ad8250"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
       "server": "77.73.232.61",
       "server_port": 19747,
@@ -270,24 +319,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
-      "server": "31.77.161.2",
-      "server_port": 8443,
-      "uuid": "a6704fb4-4874-4e6b-98f4-571b048e3d90",
-      "network": "tcp",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "185.68.184.237",
+      "server_port": 443,
+      "uuid": "b0f08ae1-7cf9-4612-ad61-72681e0b92da",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "prod.de-node-01.security-sbrf.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
+        "server_name": "google.com",
         "reality": {
           "enabled": true,
-          "public_key": "4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE",
-          "short_id": "db04ce8bdb8900f1"
+          "public_key": "kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI",
+          "short_id": "d5c7f84e37e0c12d"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "data-sync"
       }
     },
     {
@@ -359,7 +408,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",
