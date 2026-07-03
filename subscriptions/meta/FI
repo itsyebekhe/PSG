@@ -3,25 +3,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @free1_vpn #1 [medium]", "server": "fi.faygo.bot", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
-  - {"name": "🇫🇮 FI | VLESS | @filtershekan_channel #1 [medium]", "server": "217.217.247.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
-  - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [medium]", "server": "217.217.247.248", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
+  - {"name": "🇫🇮 FI | VLESS | @filtershekan_channel #1 [fast]", "server": "217.217.247.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
+  - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]", "server": "217.217.247.248", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
+  - {"name": "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]", "server": "fi.faygo.bot", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
   - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]", "server": "fi1.vitok.cc", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sberbank.ru", "reality-opts": {"public-key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8", "short-id": "5e841fab"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @free1_vpn #1 [medium]'
-      - '🇫🇮 FI | VLESS | @filtershekan_channel #1 [medium]'
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [medium]'
+      - '🇫🇮 FI | VLESS | @filtershekan_channel #1 [fast]'
+      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
+      - '🇫🇮 FI | VLESS | @free1_vpn #1 [fast]'
       - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @free1_vpn #1 [medium]'
-      - '🇫🇮 FI | VLESS | @filtershekan_channel #1 [medium]'
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [medium]'
+      - '🇫🇮 FI | VLESS | @filtershekan_channel #1 [fast]'
+      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
+      - '🇫🇮 FI | VLESS | @free1_vpn #1 [fast]'
       - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

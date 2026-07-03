@@ -4,21 +4,18 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]", "server": "134.122.194.186", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "2-ee1.pages.dev", "ws-opts": {"path": "", "headers": {"Host": "2-ee1.pages.dev"}}}
-  - {"name": "🇯🇵 JP | VLESS | @NamiraConfigs #1 [fast]", "server": "43.163.241.110", "port": 24477, "type": "vless", "skip-cert-verify": true, "uuid": "2bc72bec-0c2a-4c6b-aa9f-138bfce7ba0d", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇯🇵 JP | VMESS | @NamiraConfigs #1 [fast]", "server": "172.104.80.66", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 1, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇯🇵 JP | VLESS | @megavpn_link #1 [medium]'
-      - '🇯🇵 JP | VLESS | @NamiraConfigs #1 [fast]'
       - '🇯🇵 JP | VMESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇯🇵 JP | VLESS | @megavpn_link #1 [medium]'
-      - '🇯🇵 JP | VLESS | @NamiraConfigs #1 [fast]'
       - '🇯🇵 JP | VMESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
