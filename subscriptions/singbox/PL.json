@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
         "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
         "direct"
@@ -60,6 +61,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
         "🇵🇱 PL | VLESS | @red2ray #1 [fast]"
       ],
@@ -67,6 +69,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+      "server": "pl-allnet.onlinernet.ir",
+      "server_port": 20000,
+      "uuid": "199436d3-2fa2-4e34-a1de-844419de5a4f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VpCHC5IwaHLMdVkwK5iFplUBNflB-b4Qghyme-8HBl0",
+          "short_id": "6ba85179e30d4fc4"
+        }
+      }
     },
     {
       "type": "vless",

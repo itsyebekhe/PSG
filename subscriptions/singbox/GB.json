@@ -52,6 +52,7 @@
         "auto",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #2 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]",
@@ -66,6 +67,7 @@
       "outbounds": [
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #2 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]",
@@ -91,7 +93,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @outline_ir #1 [fast]",
-      "server": "82.38.31.213",
+      "server": "82.38.31.203",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ",
@@ -101,26 +103,33 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @outline_ir #2 [fast]",
+      "server": "82.38.31.47",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "104.248.173.190",
+      "server": "213.193.252.90",
       "server_port": 443,
-      "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4",
-      "network": "ws",
+      "uuid": "8b04b31b-6435-472e-a598-90705c575afc",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "vpn47.cc.cd",
-        "utls": {
+        "server_name": "en2.freehiliters.com",
+        "reality": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vpn47.cc.cd"
+          "public_key": "hyOYRfDSIYyqALQt3N2H0RjK8gbV1JvPTkNACC4PJF8",
+          "short_id": "8718c58d3d51db59"
         }
       }
     },

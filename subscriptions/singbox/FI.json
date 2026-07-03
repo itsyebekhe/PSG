@@ -52,9 +52,9 @@
         "auto",
         "🇫🇮 FI | VLESS | @filtershekan_channel #1 [fast]",
         "🇫🇮 FI | SS | @jiedianf #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
         "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
+        "🇫🇮 FI | VLESS | @sobi_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -65,9 +65,9 @@
       "outbounds": [
         "🇫🇮 FI | VLESS | @filtershekan_channel #1 [fast]",
         "🇫🇮 FI | SS | @jiedianf #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
         "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]",
-        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]"
+        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
+        "🇫🇮 FI | VLESS | @sobi_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -107,29 +107,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-      "server": "217.217.247.248",
-      "server_port": 443,
-      "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "enterprisekitten.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
-        }
       }
     },
     {
@@ -174,6 +151,28 @@
           "enabled": true,
           "public_key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8",
           "short_id": "5e841fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @sobi_vpn #1 [fast]",
+      "server": "shop.frahidx.ir",
+      "server_port": 2044,
+      "uuid": "075232d9-82c0-4500-b049-812e944c655c",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "google-analytics.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gjTtmitQwQ-RqfeieYrfdba0R08zcdwh4h4YGBCnVRo",
+          "short_id": "0be408ac733a5da5"
         }
       }
     },

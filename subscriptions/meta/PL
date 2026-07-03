@@ -3,18 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "pl-allnet.onlinernet.ir", "port": 20000, "type": "vless", "skip-cert-verify": true, "uuid": "199436d3-2fa2-4e34-a1de-844419de5a4f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.yahoo.com", "reality-opts": {"public-key": "VpCHC5IwaHLMdVkwK5iFplUBNflB-b4Qghyme-8HBl0", "short-id": "6ba85179e30d4fc4"}}
   - {"name": "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]", "server": "scj.foot8all.ir", "port": 11332, "type": "vless", "skip-cert-verify": true, "uuid": "681314c5-b3ee-41f1-a959-fa42841f5383", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "Yozi8V5IYT7TzszTYwxnxMO-RZ93qCRFpgzZYehbqiM", "short-id": "7252845aadae02bb"}}
   - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "31.169.126.66", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vpn47.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "vpn47.cc.cd"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
       - '🇵🇱 PL | VLESS | @free1_vpn #1 [fast]'
       - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
       - '🇵🇱 PL | VLESS | @free1_vpn #1 [fast]'
       - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
 rules:
