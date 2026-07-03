@@ -6,7 +6,6 @@ proxies:
   - {"name": "🇮🇹 IT | VLESS | @ehsawn8 #1 [fast]", "server": "151.115.164.37", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": ""}}
   - {"name": "🇮🇹 IT | VLESS | @ehsawn8 #2 [fast]", "server": "sca29.speedmeter.shop", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": ""}}
   - {"name": "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]", "server": "sca30.mysilipdir.com", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "servername": "sca30.mysilipdir.com", "grpc-opts": {"grpc-service-name": ""}}
-  - {"name": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]", "server": "151.115.164.167", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": ""}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +13,6 @@ proxy-groups:
       - '🇮🇹 IT | VLESS | @ehsawn8 #1 [fast]'
       - '🇮🇹 IT | VLESS | @ehsawn8 #2 [fast]'
       - '🇮🇹 IT | VLESS | @flyv2ray #1 [fast]'
-      - '🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +20,6 @@ proxy-groups:
       - '🇮🇹 IT | VLESS | @ehsawn8 #1 [fast]'
       - '🇮🇹 IT | VLESS | @ehsawn8 #2 [fast]'
       - '🇮🇹 IT | VLESS | @flyv2ray #1 [fast]'
-      - '🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

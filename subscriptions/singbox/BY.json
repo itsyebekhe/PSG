@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇧🇾 BY | VLESS | @red2ray #1 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,35 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇧🇾 BY | VLESS | @red2ray #1 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇾 BY | VLESS | @red2ray #1 [fast]",
+      "server": "by.verymad.net",
+      "server_port": 26146,
+      "uuid": "d312730d-e1f3-4fe4-a907-f9077ba62b5d",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.vk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gX3_zVtbvWNZH7lXyrsBBCcyCVKkkr_LMw9JRqpAmmQ",
+          "short_id": "d4f2a3a536b962"
+        }
+      }
     },
     {
       "type": "vmess",

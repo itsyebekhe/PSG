@@ -52,6 +52,7 @@
         "auto",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]"
+        "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -110,6 +112,27 @@
           "enabled": true,
           "public_key": "mDtiIWLFPJoPVrDLOCvKn6lvlS8r0TdRO9MxmmdIDmo",
           "short_id": "917fd5a45e8840"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "130.49.219.126",
+      "server_port": 8443,
+      "uuid": "2ee2b77f-e4cd-4e5d-af22-f9d919eeadd5",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "at16.fastlanehosting.ru",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },

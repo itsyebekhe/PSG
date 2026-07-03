@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇧🇾 BY | VLESS | @red2ray #1 [fast]", "server": "by.verymad.net", "port": 26146, "type": "vless", "skip-cert-verify": true, "uuid": "d312730d-e1f3-4fe4-a907-f9077ba62b5d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.vk.ru", "reality-opts": {"public-key": "gX3_zVtbvWNZH7lXyrsBBCcyCVKkkr_LMw9JRqpAmmQ", "short-id": "d4f2a3a536b962"}}
   - {"name": "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]", "server": "5.161.156.196", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d20e38ef-1a4d-4009-a00d-2f0d44e3c65a", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇧🇾 BY | VLESS | @red2ray #1 [fast]'
       - '🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇧🇾 BY | VLESS | @red2ray #1 [fast]'
       - '🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
