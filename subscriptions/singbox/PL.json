@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSVQ=
+//profile-title: base64:UFNHIHwgUEw=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]"
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,28 +68,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @flyv2ray #1 [fast]",
-      "server": "sca30.mysilipdir.com",
-      "server_port": 8880,
-      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-      "network": "grpc",
+      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+      "server": "pl-allnet.onlinernet.ir",
+      "server_port": 20000,
+      "uuid": "199436d3-2fa2-4e34-a1de-844419de5a4f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "sca35.speedmeter.shop",
-      "server_port": 8880,
-      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VpCHC5IwaHLMdVkwK5iFplUBNflB-b4Qghyme-8HBl0",
+          "short_id": "6ba85179e30d4fc4"
+        }
       }
     },
     {

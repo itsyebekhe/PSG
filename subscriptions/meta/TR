@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "tr.iranfastspeed.com.tr", "port": 59492, "type": "vless", "skip-cert-verify": true, "uuid": "5aa708a4-0134-4f24-ba6f-d775651bd21e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.google.com:443", "reality-opts": {"public-key": "jPWzhxlyYrRZTKbUO-Wb_OjWgD_7RrG3CFkttX7mKVY", "short-id": "0b1eccc239d0"}}
-  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]", "server": "tekno.fusetea.ir", "port": 555, "type": "vless", "skip-cert-verify": true, "uuid": "3ffd3381-b733-4f39-a7e5-516018b4b4d6", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
