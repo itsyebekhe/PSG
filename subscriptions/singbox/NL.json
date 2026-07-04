@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -64,7 +63,6 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
@@ -88,39 +86,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
-      "server": "45.131.6.203",
-      "server_port": 2096,
-      "uuid": "9c940549-ac64-370e-eda9-67257bab6815",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "corecache.novacorelorna.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "server": "static.lotussec.com",
       "server_port": 443,
       "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
-      "network": "xhttp",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "static.lotussec.com",
         "alpn": [
           "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        ]
       }
     },
     {
