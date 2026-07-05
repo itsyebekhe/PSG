@@ -5,30 +5,30 @@ log-level: info
 proxies:
   - {"name": "🇫🇷 FR | VLESS | @father_vpn #1 [fast]", "server": "79.127.196.11", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "55f7d143-a594-4a91-b030-f227039f85ef", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "cdg-1.fromblancwithlove.com"}
   - {"name": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]", "server": "84.247.129.205", "port": 4433, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-4000-8000-000000000000", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sub.mot.ip-ddns.com", "ws-opts": {"path": "", "headers": {"Host": "sub.mot.ip-ddns.com"}}}
-  - {"name": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]", "server": "jdhdhdjjdhdu.djjdhudiisjjejsj.eorvexo.ir", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "47e9fa2b-1146-47cb-9623-18a5343ed061", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]", "server": "199.232.169.135", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "firefox", "servername": "speedtest.net", "ws-opts": {"path": "", "headers": {"Host": "googleb.net"}}}
-  - {"name": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]", "server": "199.232.169.135", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "randomized", "servername": "speedtest.net", "ws-opts": {"path": "", "headers": {"Host": "googleb.net"}}}
-  - {"name": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]", "server": "51.75.30.8", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "51.75.30.8"}}}
+  - {"name": "🇫🇷 FR | VLESS | @configasli #1 [fast]", "server": "172.232.33.18", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fe48773b-df06-409a-bc61-117cd8fb1eb7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ftp.debian.org", "reality-opts": {"public-key": "PTlW40u-tHGDlObhSKFN4tntrfHLgNPlHqg1oYqyY1o", "short-id": "b5ecd44d"}}
+  - {"name": "🇫🇷 FR | VLESS | @minovpnch #1 [medium]", "server": "199.232.169.135", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "firefox", "servername": "speedtest.net", "ws-opts": {"path": "", "headers": {"Host": "googleb.net"}}}
+  - {"name": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]", "server": "199.232.169.135", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "randomized", "servername": "speedtest.net", "ws-opts": {"path": "", "headers": {"Host": "googleb.net"}}}
+  - {"name": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]", "server": "51.75.30.8", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "51.75.30.8"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇷 FR | VLESS | @father_vpn #1 [fast]'
       - '🇫🇷 FR | VLESS | @mpproxy #1 [fast]'
-      - '🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]'
-      - '🇫🇷 FR | VLESS | @minovpnch #1 [fast]'
-      - '🇫🇷 FR | VLESS | @minovpnch #2 [fast]'
-      - '🇫🇷 FR | VLESS | @proxy48 #1 [fast]'
+      - '🇫🇷 FR | VLESS | @configasli #1 [fast]'
+      - '🇫🇷 FR | VLESS | @minovpnch #1 [medium]'
+      - '🇫🇷 FR | VLESS | @minovpnch #2 [medium]'
+      - '🇫🇷 FR | VLESS | @proxy48 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇷 FR | VLESS | @father_vpn #1 [fast]'
       - '🇫🇷 FR | VLESS | @mpproxy #1 [fast]'
-      - '🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]'
-      - '🇫🇷 FR | VLESS | @minovpnch #1 [fast]'
-      - '🇫🇷 FR | VLESS | @minovpnch #2 [fast]'
-      - '🇫🇷 FR | VLESS | @proxy48 #1 [fast]'
+      - '🇫🇷 FR | VLESS | @configasli #1 [fast]'
+      - '🇫🇷 FR | VLESS | @minovpnch #1 [medium]'
+      - '🇫🇷 FR | VLESS | @minovpnch #2 [medium]'
+      - '🇫🇷 FR | VLESS | @proxy48 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

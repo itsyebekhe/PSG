@@ -59,7 +59,7 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
-        "🇮🇹 IT | VLESS | @flyv2ray #1 [medium]",
+        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
@@ -73,15 +73,15 @@
         "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
         "🇽🇽 XX | VLESS | @parsashonam #1 [fast]",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
-        "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
         "🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #2 [fast]",
         "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
-        "🇱🇻 LV | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @garnet_free #2 [fast]",
         "🇽🇽 XX | VLESS | @dailyv2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @iranproxypro #1 [fast]",
@@ -115,7 +115,7 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
-        "🇮🇹 IT | VLESS | @flyv2ray #1 [medium]",
+        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
@@ -129,15 +129,15 @@
         "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
         "🇽🇽 XX | VLESS | @parsashonam #1 [fast]",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
-        "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
         "🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #2 [fast]",
         "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
-        "🇱🇻 LV | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @garnet_free #2 [fast]",
         "🇽🇽 XX | VLESS | @dailyv2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @iranproxypro #1 [fast]",
@@ -296,15 +296,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @flyv2ray #1 [medium]",
-      "server": "sca30.mysilipdir.com",
-      "server_port": 8880,
-      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-      "network": "grpc",
+      "tag": "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
+      "server": "rvg-production-dfeb.up.railway.app",
+      "server_port": 443,
+      "uuid": "147182ba-946d-9ef2-a209-dbfcccec9231",
+      "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rvg-production-dfeb.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/ws/147182ba-946d-9ef2-a209-dbfcccec9231",
+        "headers": {
+          "Host": "rvg-production-dfeb.up.railway.app"
+        }
       }
     },
     {
@@ -555,46 +569,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
-      "server": "md.arghavanrezaii.co.uk",
-      "server_port": 2082,
-      "uuid": "c5ee3bba-f737-42d5-b0bc-cccec1ffe7e2",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VxW_T8XUwWi2ELxLK4g9LWVNBLRjMLDBKQcJNoIFwi8",
-          "short_id": "72d1809de52ebf95"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
-      "server": "dp-es-01.live",
+      "tag": "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
+      "server": "shopify.com",
       "server_port": 443,
-      "uuid": "eece4171-e025-40a3-9027-e395036ff99d",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "04c808e2-0b59-47b0-a54b-32fc7ef1c902",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "storage.yandex.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
-          "short_id": "28047c78b3f5ee2c"
+        "server_name": "misaka.cndyw.ggff.net"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed",
+        "headers": {
+          "Host": "misaka.cndyw.ggff.net"
         }
       }
     },
@@ -704,20 +693,37 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "sca25.directdnsai.shop",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "sca23.directdnsai.shop",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
       "server": "germany.fast.hosting-ip.com",
       "server_port": 80,
       "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",
       "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 LV | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "fn.fifapes.monster",
-      "server_port": 2090,
-      "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055",
-      "network": "tcp",
       "packet_encoding": "xudp"
     },
     {
