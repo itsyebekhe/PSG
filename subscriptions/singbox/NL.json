@@ -51,9 +51,10 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,9 +64,10 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -86,7 +88,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -98,15 +100,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "37.139.24.45",
+      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "188.226.149.72",
       "server_port": 443,
-      "uuid": "bbbde6b4-eb72-4018-b702-1c782c528927",
+      "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "etppnyfi.j84lb8cxseup4s2nb3if.workers.dev",
+        "server_name": "vpn47.cc.cd",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -116,13 +118,26 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "etppnyfi.j84lb8cxseup4s2nb3if.workers.dev"
+          "Host": "vpn47.cc.cd"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "niga.mohammadaz2sub.ir",
+      "server_port": 62803,
+      "uuid": "e286cebe-7473-44e9-8c30-273ac36ac83b",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

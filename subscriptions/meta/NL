@@ -3,20 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "37.139.24.45", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bbbde6b4-eb72-4018-b702-1c782c528927", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "etppnyfi.j84lb8cxseup4s2nb3if.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "etppnyfi.j84lb8cxseup4s2nb3if.workers.dev"}}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "188.226.149.72", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vpn47.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "vpn47.cc.cd"}}}
+  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]", "server": "niga.mohammadaz2sub.ir", "port": 62803, "type": "vless", "skip-cert-verify": true, "uuid": "e286cebe-7473-44e9-8c30-273ac36ac83b", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

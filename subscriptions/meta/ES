@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇪🇸 ES | VLESS | @NamiraConfigs #1 [fast]", "server": "spain.unixzone.us", "port": 36326, "type": "vless", "skip-cert-verify": true, "uuid": "63ff4bfa-0f1d-48e4-8314-e882b14e602c", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "spain.unixzone.us"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇪🇸 ES | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇪🇸 ES | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
