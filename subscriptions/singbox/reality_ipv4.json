@@ -61,11 +61,10 @@
         "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
         "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
-        "🇰🇿 KZ | VLESS | @red2ray #1 [medium]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
-        "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇱🇻 LV | VLESS | @megavpn_link #1 [slow]",
+        "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]",
         "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -89,11 +88,10 @@
         "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
         "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
-        "🇰🇿 KZ | VLESS | @red2ray #1 [medium]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
-        "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇱🇻 LV | VLESS | @megavpn_link #1 [slow]",
+        "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]",
         "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -237,23 +235,27 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-      "server": "91.107.241.155",
-      "server_port": 2082,
-      "uuid": "c5ee3bba-f737-42d5-b0bc-cccec1ffe7e2",
-      "network": "xhttp",
+      "server": "104.167.24.21",
+      "server_port": 443,
+      "uuid": "564397f8-4805-4433-ab5b-a24aa133bac2",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "hub.oneoknews.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "VxW_T8XUwWi2ELxLK4g9LWVNBLRjMLDBKQcJNoIFwi8",
-          "short_id": "72d1809de52ebf95"
+          "public_key": "KJoHsAShwQt-FYE2OGEekwDbeeYe-S1A0YBU8W5uYGc",
+          "short_id": "064c2d37308aeeb6"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {
@@ -325,7 +327,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
       "server": "178.215.238.148",
       "server_port": 8443,
       "uuid": "21c1132b-068c-46fb-880e-3268f6a30e7f",
@@ -347,30 +349,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 KZ | VLESS | @red2ray #1 [medium]",
-      "server": "178.236.17.86",
-      "server_port": 443,
-      "uuid": "6fdfdb73-51b0-4a14-89a5-c9355a0e0397",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vCxfuNNmogA1DlPkjvmKb7_hSgXqe4MboPfi2s1JZG0",
-          "short_id": "b318242471ba4f5b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
       "server": "159.195.46.178",
       "server_port": 443,
       "uuid": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
@@ -393,7 +372,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
+      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1 [slow]",
       "server": "91.218.143.194",
       "server_port": 43798,
       "uuid": "b7725d23-840a-4f8e-993c-69b40424cfc0",
@@ -415,7 +394,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]",
       "server": "158.160.250.45",
       "server_port": 443,
       "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a",
