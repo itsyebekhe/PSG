@@ -6,8 +6,8 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]", "server": "fi1.vitok.cc", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sberbank.ru", "reality-opts": {"public-key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8", "short-id": "5e841fab"}}
   - {"name": "🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]", "server": "shop.frahidx.ir", "port": 2044, "type": "vless", "skip-cert-verify": true, "uuid": "075232d9-82c0-4500-b049-812e944c655c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "google-analytics.com", "reality-opts": {"public-key": "gjTtmitQwQ-RqfeieYrfdba0R08zcdwh4h4YGBCnVRo", "short-id": "0be408ac733a5da5"}}
+  - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]", "server": "fi1.vitok.cc", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sberbank.ru", "reality-opts": {"public-key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8", "short-id": "5e841fab"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -15,8 +15,8 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
       - '🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -24,8 +24,8 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
       - '🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

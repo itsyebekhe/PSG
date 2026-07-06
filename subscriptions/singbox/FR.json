@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VMESS | @NamiraConfigs #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -64,9 +64,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VMESS | @NamiraConfigs #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -75,6 +75,25 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
+      "server": "212.69.86.220",
+      "server_port": 9443,
+      "uuid": "ebcb836a-ab7a-424f-a07c-aba25c70da69",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "estonianode.dostupnet.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "2MnLp2jBmP-bPYRHf3VY3wyGMwIYIAizXCB7UxgYVGc",
+          "short_id": "7c16c340cde3ed39"
+        }
+      }
     },
     {
       "type": "vless",
@@ -110,26 +129,6 @@
         "path": "/",
         "headers": {
           "Host": "sub.mot.ip-ddns.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇷 FR | VMESS | @NamiraConfigs #1 [fast]",
-      "server": "69.84.182.49",
-      "server_port": 80,
-      "uuid": "f8975871-a7a0-4906-8835-a23c1258ca1e",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
         }
       }
     },
