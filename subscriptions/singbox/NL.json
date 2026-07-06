@@ -51,9 +51,10 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -64,9 +65,10 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -87,6 +89,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+      "server": "static.lotussec.com",
+      "server_port": 443,
+      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.lotussec.com",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
+      "server": "static.lotussec.com",
+      "server_port": 443,
+      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "alpn": [
+          "h2"
+        ]
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
@@ -100,15 +137,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "188.226.149.72",
-      "server_port": 443,
-      "uuid": "0970324b-8c61-4ae7-8c3f-385a6f1e17e4",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "188.164.248.79",
+      "server_port": 2087,
+      "uuid": "e34561ae-9373-4f1c-8ccd-488ff45bb64e",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "vpn47.cc.cd",
+        "server_name": "frosty-wind-5575.pashagfw1.workers.dev",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -118,21 +155,8 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "vpn47.cc.cd"
+          "Host": "frosty-wind-5575.pashagfw1.workers.dev"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "niga.mohammadaz2sub.ir",
-      "server_port": 62803,
-      "uuid": "e286cebe-7473-44e9-8c30-273ac36ac83b",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com"
       }
     },
     {
