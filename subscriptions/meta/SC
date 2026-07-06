@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇸🇨 SC | VLESS | @mehrosaboran #1 [fast]", "server": "ipw.ygdfw.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bbab81f3-87a0-4e63-8b3b-010c645d8da7", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "lIVe-1OdGy1GQ.bEuIZ.COM"}
   - {"name": "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]", "server": "45.130.125.114", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "srv10.perfectbulk.info", "ws-opts": {"path": "", "headers": {"Host": "srv10.perfectbulk.info"}}}
   - {"name": "🇸🇨 SC | VLESS | @prrofile_purple #1 [fast]", "server": "45.130.125.162", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f106648e-0644-40bc-974c-6edc966fe18d", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sh.mojaz-persian-music.ir"}
   - {"name": "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]", "server": "45.130.125.69", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "5e8c894b-1efa-48d4-85ee-9daf5d574c16", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "bad-AppLicatIon22nBd8j5OK.CArBoNbLaCkBmw.Ir", "grpc-opts": {"grpc-service-name": "irannewsdaily.com.hamshahrionline.ir.irdiplomacy.ir.irandaily.ir.alef.ir.rajanews.com.irannewsdaily.com"}}
@@ -18,7 +17,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇸🇨 SC | VLESS | @mehrosaboran #1 [fast]'
       - '🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]'
       - '🇸🇨 SC | VLESS | @prrofile_purple #1 [fast]'
       - '🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]'
@@ -33,7 +31,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇸🇨 SC | VLESS | @mehrosaboran #1 [fast]'
       - '🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]'
       - '🇸🇨 SC | VLESS | @prrofile_purple #1 [fast]'
       - '🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]'

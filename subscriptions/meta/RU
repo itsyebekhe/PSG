@@ -4,21 +4,18 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "213.171.30.172", "port": 9881, "type": "vless", "skip-cert-verify": true, "uuid": "97d290a0-acec-4aae-b8cf-c7111a5a6397", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "dl.google.com", "grpc-opts": {"grpc-service-name": "grpc-tunnel"}, "reality-opts": {"public-key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0", "short-id": "aabbccdd"}}
   - {"name": "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]", "server": "158.160.250.45", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "mDtiIWLFPJoPVrDLOCvKn6lvlS8r0TdRO9MxmmdIDmo", "short-id": "917fd5a45e8840"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
       - '🇷🇺 RU | VLESS | @megavpn_link #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
       - '🇷🇺 RU | VLESS | @megavpn_link #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
