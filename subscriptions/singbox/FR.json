@@ -50,11 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -64,17 +64,36 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
+      "server": "212.69.86.220",
+      "server_port": 9443,
+      "uuid": "ebcb836a-ab7a-424f-a07c-aba25c70da69",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "estonianode.dostupnet.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "2MnLp2jBmP-bPYRHf3VY3wyGMwIYIAizXCB7UxgYVGc",
+          "short_id": "7c16c340cde3ed39"
+        }
+      }
     },
     {
       "type": "vless",
@@ -115,30 +134,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-      "server": "57.128.181.26",
-      "server_port": 443,
-      "uuid": "6680846a-8a57-4dfd-9a0e-63209cfc8535",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "support.zoom.us.yxls.eu.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sg-amz",
-        "headers": {
-          "Host": "support.zoom.us.yxls.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
       "server": "199.232.169.135",
       "server_port": 80,
@@ -155,7 +150,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",

@@ -52,20 +52,21 @@
         "auto",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @mehrosaboran #1 [fast]",
         "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @bored_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @lax_vpn #1 [slow]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | SS | @NamiraConfigs #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
-        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
-        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]",
+        "🇮🇷 IR | VMESS | @khoneproxy #2 [slow]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @frev2rayng #1 [medium]",
+        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @realvpnmaster #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -76,20 +77,21 @@
       "outbounds": [
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @mehrosaboran #1 [fast]",
         "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @bored_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @lax_vpn #1 [slow]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | SS | @NamiraConfigs #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
-        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
-        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]"
+        "🇮🇷 IR | VMESS | @khoneproxy #2 [slow]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @frev2rayng #1 [medium]",
+        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @realvpnmaster #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -123,26 +125,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @mehrosaboran #1 [fast]",
-      "server": "185.143.232.201",
-      "server_port": 443,
-      "uuid": "16227db7-1914-4a97-bb6b-7bf98e6b525b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "zapzap.mc.filimo.cam"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "zapzap.mc.filimo.cam"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
       "server": "snapp.ir",
       "server_port": 80,
@@ -165,6 +147,26 @@
       "uuid": "7b81a350-89c3-47da-a3a9-5f2b65313d03",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @bored_vpn #1 [fast]",
+      "server": "185.143.232.201",
+      "server_port": 443,
+      "uuid": "16227db7-1914-4a97-bb6b-7bf98e6b525b",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "zapzap.mc.filimo.cam"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zapzap.mc.filimo.cam"
+        }
+      }
     },
     {
       "type": "vless",
@@ -193,7 +195,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @lax_vpn #1 [slow]",
       "server": "s19.speedyconnect.pro",
       "server_port": 443,
       "uuid": "97dce074-7db1-4d59-99ca-0ef8311e2425",
@@ -249,6 +251,18 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇮🇷 IR | SS | @NamiraConfigs #1 [medium]",
+      "server": "mmd.radanjami.org",
+      "server_port": 37309,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b4jq8kdzbfpt7ipf",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vmess",
       "tag": "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
       "server": "37.32.23.122",
@@ -267,7 +281,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #2 [slow]",
       "server": "78.47.131.39",
       "server_port": 8443,
       "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",
@@ -280,7 +294,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
       "server": "allsms.rozfa.com",
       "server_port": 443,
       "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
@@ -308,7 +322,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @frev2rayng #1 [medium]",
       "server": "zula.ir",
       "server_port": 80,
       "uuid": "9b4a2cd4-7d28-4ebe-d701-95723b811aff",
@@ -324,7 +338,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
       "server": "www.zula.ir",
       "server_port": 443,
       "uuid": "2b5e2b86-55b6-4571-abc1-c1dec8605725",
@@ -344,7 +358,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @realvpnmaster #1 [medium]",
       "server": "zula.ir",
       "server_port": 80,
       "uuid": "19f935c2-4c92-4b8a-b024-3e378f396255",
