@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "🇫🇮 FI | SS | @jiedianf #1 [fast]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
-        "🇫🇮 FI | SS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,14 +61,37 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "🇫🇮 FI | SS | @jiedianf #1 [fast]",
-        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
-        "🇫🇮 FI | SS | @NamiraConfigs #1 [fast]"
+        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
+      "server": "fn2-unlimited.pavilof.ir",
+      "server_port": 1020,
+      "uuid": "01aacd3b-fdda-4e3f-894b-bc380f184fe1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jILgyIiDR7xY8WDrU9EMx_iXUi6nKr3LapCgglBVBAU",
+          "short_id": "3fa2fdb7dce16b8b"
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -102,18 +125,6 @@
           "public_key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8",
           "short_id": "5e841fab"
         }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI | SS | @NamiraConfigs #1 [fast]",
-      "server": "bot.sobhanpor.ir",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "B3mkXKgRCibW_mgNFWqW7Qpgiwm_I5yB",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {

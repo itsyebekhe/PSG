@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]", "server": "fn2-unlimited.pavilof.ir", "port": 1020, "type": "vless", "skip-cert-verify": true, "uuid": "01aacd3b-fdda-4e3f-894b-bc380f184fe1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "jILgyIiDR7xY8WDrU9EMx_iXUi6nKr3LapCgglBVBAU", "short-id": "3fa2fdb7dce16b8b"}}
   - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]", "server": "fi1.vitok.cc", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sberbank.ru", "reality-opts": {"public-key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8", "short-id": "5e841fab"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇫🇮 FI | VLESS | @netmellianti #1 [fast]'
       - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇫🇮 FI | VLESS | @netmellianti #1 [fast]'
       - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
