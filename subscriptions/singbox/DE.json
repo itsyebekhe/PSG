@@ -50,15 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
+        "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
@@ -72,15 +73,16 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
+        "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
@@ -91,6 +93,28 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
+      "server": "las.dearhossein-taktaz.ir",
+      "server_port": 47922,
+      "uuid": "40601c06-6fbf-4f48-bcff-2a8d57038e37",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-smckvxfg8A2QkVqkQpI3bPMcYJ_69fAxWS7u9VhND8",
+          "short_id": "09"
+        }
+      }
     },
     {
       "type": "vless",
@@ -163,6 +187,30 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
+      "server": "37.114.50.157",
+      "server_port": 4002,
+      "uuid": "00000000-0000-4000-8000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.mot.ip-ddns.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sub.mot.ip-ddns.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
       "server": "3.126.31.60",
       "server_port": 443,
@@ -192,61 +240,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
-      "server": "static.lotussec.com",
-      "server_port": 443,
-      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+      "server": "178.215.238.148",
+      "server_port": 8443,
+      "uuid": "21c1132b-068c-46fb-880e-3268f6a30e7f",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "alpn": [
-          "h2"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "ge.unlimitedteam.space",
-      "server_port": 443,
-      "uuid": "7982f37c-757c-4a29-9ad4-04db96d6b1bc",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ge.unlimitedteam.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CH9W2oh_iX9lNVegNBYJ3Z6Ht2PMS5xFaq7gZ_S-3AY",
-          "short_id": "7c069b4738e25acd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-      "server": "las.dearhossein-taktaz.ir",
-      "server_port": 47922,
-      "uuid": "40601c06-6fbf-4f48-bcff-2a8d57038e37",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
+        "server_name": "eh.vk.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "-smckvxfg8A2QkVqkQpI3bPMcYJ_69fAxWS7u9VhND8",
-          "short_id": "09"
+          "public_key": "Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU",
+          "short_id": "478dc6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "grm.janaj.space",
+      "server_port": 443,
+      "uuid": "8a4d32e8-ab02-4398-84a7-8d7672426ad6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "p2kybyvJhP9F98fLS4TcL8nNcFE-MdhfGoVBlGkdHUs",
+          "short_id": "d1"
         }
       }
     },

@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]", "server": "pan1.mashkestan.com", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "7943183f-5c33-4728-8d57-8f18efe6ce25", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]", "server": "fi1.vitok.cc", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sberbank.ru", "reality-opts": {"public-key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8", "short-id": "5e841fab"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
       - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
       - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

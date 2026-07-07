@@ -51,8 +51,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | SS | @jiedianf #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
+        "🇫🇮 FI | SS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | SS | @jiedianf #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]"
+        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
+        "🇫🇮 FI | SS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -81,15 +81,6 @@
       "tls": {
         "enabled": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-      "server": "pan1.mashkestan.com",
-      "server_port": 2087,
-      "uuid": "7943183f-5c33-4728-8d57-8f18efe6ce25",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -111,6 +102,18 @@
           "public_key": "7sRyn95DXAxnGKRapwfydC6nRmj1IgH-QQQ3ctwC5k8",
           "short_id": "5e841fab"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 FI | SS | @NamiraConfigs #1 [fast]",
+      "server": "bot.sobhanpor.ir",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "B3mkXKgRCibW_mgNFWqW7Qpgiwm_I5yB",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

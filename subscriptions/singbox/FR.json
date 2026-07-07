@@ -50,15 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #1 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #2 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #3 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #4 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #5 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #6 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -70,15 +64,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
         "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #1 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #2 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #3 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #4 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #5 [fast]",
-        "🇫🇷 FR | SS | @NamiraConfigs #6 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -87,25 +75,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
-      "server": "212.69.86.220",
-      "server_port": 9443,
-      "uuid": "ebcb836a-ab7a-424f-a07c-aba25c70da69",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "estonianode.dostupnet.ru",
-        "reality": {
-          "enabled": true,
-          "public_key": "2MnLp2jBmP-bPYRHf3VY3wyGMwIYIAizXCB7UxgYVGc",
-          "short_id": "7c16c340cde3ed39"
-        }
-      }
     },
     {
       "type": "vless",
@@ -145,75 +114,25 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @NamiraConfigs #1 [fast]",
-      "server": "pasarguard.losthonor.ir",
-      "server_port": 3049,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4Px-Gc_R7FiXUf4Ty3jMdwIQZo49DMYo",
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+      "server": "check05.allenshop66244.ir",
+      "server_port": 8443,
+      "uuid": "cc3e6e36-b329-435b-bb71-192fb5c718ae",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @NamiraConfigs #2 [fast]",
-      "server": "pasarguard.losthonor.ir",
-      "server_port": 3045,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4Px-Gc_R7FiXUf4Ty3jMdwIQZo49DMYo",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @NamiraConfigs #3 [fast]",
-      "server": "pasarguard.losthonor.ir",
-      "server_port": 3042,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4Px-Gc_R7FiXUf4Ty3jMdwIQZo49DMYo",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @NamiraConfigs #4 [fast]",
-      "server": "pasarguard.losthonor.ir",
-      "server_port": 3048,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4Px-Gc_R7FiXUf4Ty3jMdwIQZo49DMYo",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @NamiraConfigs #5 [fast]",
-      "server": "pasarguard.losthonor.ir",
-      "server_port": 3034,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4Px-Gc_R7FiXUf4Ty3jMdwIQZo49DMYo",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @NamiraConfigs #6 [fast]",
-      "server": "pasarguard.losthonor.ir",
-      "server_port": 3041,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4Px-Gc_R7FiXUf4Ty3jMdwIQZo49DMYo",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw",
+          "short_id": "b7b70c104ad267b8"
+        }
       }
     },
     {
