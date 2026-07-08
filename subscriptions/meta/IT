@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [medium]", "server": "151.115.167.228", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": ""}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇮🇹 IT | VLESS | @NamiraConfigs #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇮🇹 IT | VLESS | @NamiraConfigs #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

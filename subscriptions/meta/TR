@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]", "server": "185.226.93.88", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9b8a334b-e4e1-424c-99b4-4fd203ffb571", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

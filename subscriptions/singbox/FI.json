@@ -51,8 +51,9 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
-        "🇫🇮 FI | SS | @jiedianf #1 [fast]",
+        "🇫🇮 FI | SS | @jiedianf #1 [medium]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +63,9 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
-        "🇫🇮 FI | SS | @jiedianf #1 [fast]",
-        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]"
+        "🇫🇮 FI | SS | @jiedianf #1 [medium]",
+        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -95,7 +97,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 FI | SS | @jiedianf #1 [fast]",
+      "tag": "🇫🇮 FI | SS | @jiedianf #1 [medium]",
       "server": "109.107.182.229",
       "server_port": 51544,
       "method": "chacha20-ietf-poly1305",
@@ -126,6 +128,15 @@
           "short_id": "5e841fab"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]",
+      "server": "65.109.209.71",
+      "server_port": 8441,
+      "uuid": "9b8a334b-e4e1-424c-99b4-4fd203ffb571",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
