@@ -51,13 +51,13 @@
       "outbounds": [
         "auto",
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
+        "🇸🇨 SC | VLESS | @prrofile_purple #1 [fast]",
         "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]",
         "🇸🇨 SC | VLESS | @selinc #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #2 [fast]",
         "🇸🇨 SC | VLESS | @jiedianf #1 [medium]",
-        "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "direct"
       ],
@@ -68,13 +68,13 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
+        "🇸🇨 SC | VLESS | @prrofile_purple #1 [fast]",
         "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]",
         "🇸🇨 SC | VLESS | @selinc #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #2 [fast]",
         "🇸🇨 SC | VLESS | @jiedianf #1 [medium]",
-        "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -103,6 +103,30 @@
         "path": "/",
         "headers": {
           "Host": "srv10.perfectbulk.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @prrofile_purple #1 [fast]",
+      "server": "45.130.125.158",
+      "server_port": 8443,
+      "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv03.perfectbulk.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "srv03.perfectbulk.info"
         }
       }
     },
@@ -243,29 +267,6 @@
           "enabled": true,
           "public_key": "KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg",
           "short_id": "d020b987f84eb78a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
-      "server": "45.198.80.220",
-      "server_port": 443,
-      "uuid": "eece4171-e025-40a3-9027-e395036ff99d",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "storage.yandex.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg",
-          "short_id": "28047c78b3f5ee2c"
         }
       }
     },
