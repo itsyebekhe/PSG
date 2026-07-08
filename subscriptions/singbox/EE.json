@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFI=
+//profile-title: base64:UFNHIHwgRUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇪🇪 EE | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
+        "🇪🇪 EE | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,34 +68,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-      "server": "panel1.bakhe01.ir",
-      "server_port": 443,
-      "uuid": "de3b6d50-1b2d-4156-b3fa-e559be5cf271",
-      "network": "xhttp",
+      "tag": "🇪🇪 EE | VLESS | @red2ray #1 [fast]",
+      "server": "185.155.97.58",
+      "server_port": 45176,
+      "uuid": "dc7940e0-6bff-45e3-853d-4007561803c3",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
+        "server_name": "www.googletagmanager.com",
         "reality": {
           "enabled": true,
-          "public_key": "50bAcRJm7v6qsNBRXFGBI-OD58gi4tahmlTJ5vPm8zE",
-          "short_id": "82f1f3c981116dca"
+          "public_key": "A1Qf_rMG4KDfLzfCK-M5R9qW_0uThfeSosQnv6LBL1M",
+          "short_id": "8433cb66b6c3ab6d"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "turkgame.soltankabos.ir",
-      "server_port": 22337,
-      "uuid": "fdebd2b4-4c8f-474a-851a-981082195643",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
