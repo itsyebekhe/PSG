@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
-        "🇫🇮 FI | SS | @jiedianf #1 [medium]",
+        "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
         "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
-        "🇫🇮 FI | SS | @jiedianf #1 [medium]",
-        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]"
+        "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
+        "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,37 +70,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
-      "server": "fn2-unlimited.pavilof.ir",
-      "server_port": 1020,
-      "uuid": "01aacd3b-fdda-4e3f-894b-bc380f184fe1",
+      "tag": "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
+      "server": "217.217.247.251",
+      "server_port": 443,
+      "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "enterprisekitten.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "jILgyIiDR7xY8WDrU9EMx_iXUi6nKr3LapCgglBVBAU",
-          "short_id": "3fa2fdb7dce16b8b"
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
         }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI | SS | @jiedianf #1 [medium]",
-      "server": "109.107.182.229",
-      "server_port": 51544,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4d1nVpqJVp5oq2W4D0Ljy4",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {
@@ -128,15 +112,6 @@
           "short_id": "5e841fab"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "65.109.209.71",
-      "server_port": 8441,
-      "uuid": "9b8a334b-e4e1-424c-99b4-4fd203ffb571",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

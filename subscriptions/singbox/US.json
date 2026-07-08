@@ -51,10 +51,10 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @filterk0sh #1 [fast]",
@@ -72,6 +72,9 @@
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
+        "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
+        "🇺🇸 US | VMESS | @NamiraConfigs #2 [fast]",
+        "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -91,10 +94,10 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @filterk0sh #1 [fast]",
@@ -112,6 +115,9 @@
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
+        "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
+        "🇺🇸 US | VMESS | @NamiraConfigs #2 [fast]",
+        "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -146,6 +152,33 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+      "server": "199.232.9.94",
+      "server_port": 443,
+      "uuid": "86fdb625-1a7f-4784-99a6-a96b3a80fc6d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.net",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vip1",
+        "headers": {
+          "Host": "hamshahriesfahan.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
       "server": "199.232.78.159",
       "server_port": 80,
@@ -156,21 +189,16 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "fast.cd-tur4.ir",
-      "server_port": 443,
-      "uuid": "e7d3fb75-034f-4f3f-83d6-33845dafa81c",
+      "server": "151.101.194.219",
+      "server_port": 80,
+      "uuid": "0058c215-ab1e-400c-a403-b5b2fda7e846",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "default.ssl.fastly.net",
-        "insecure": true
-      },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "pan1.global.ssl.fastly.net"
+          "Host": "max-gb1.global.ssl.fastly.net"
         }
       }
     },
@@ -198,33 +226,6 @@
         "path": "/",
         "headers": {
           "Host": "mitivpn-vipsub-de.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
-      "server": "199.232.9.94",
-      "server_port": 443,
-      "uuid": "86fdb625-1a7f-4784-99a6-a96b3a80fc6d",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtest.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vip1",
-        "headers": {
-          "Host": "hamshahriesfahan.com"
         }
       }
     },
@@ -575,6 +576,51 @@
         "headers": {
           "Host": "JoinBedeeeeee--VPNCUSTOMIZE.ir."
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @NamiraConfigs #2 [fast]",
+      "server": "57.151.100.27",
+      "server_port": 10086,
+      "uuid": "550e8400-e29b-41d4-a716-446655440000",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
+      "server": "147.90.234.133",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "hbGrpfvNrJsUmKmPbR3iY2",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

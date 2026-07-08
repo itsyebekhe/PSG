@@ -51,12 +51,12 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
-        "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
+        "🇫🇷 FR | VLESS | @free1_vpn #1 [medium]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -66,12 +66,12 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
-        "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
+        "🇫🇷 FR | VLESS | @free1_vpn #1 [medium]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -99,18 +99,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @father_vpn #1 [fast]",
-      "server": "79.127.196.11",
-      "server_port": 8443,
-      "uuid": "55f7d143-a594-4a91-b030-f227039f85ef",
+      "tag": "🇫🇷 FR | VLESS | @free1_vpn #1 [medium]",
+      "server": "54.37.2.131",
+      "server_port": 443,
+      "uuid": "36644091-0cec-47fe-9955-97c3f424baf7",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "cdg-1.fromblancwithlove.com",
-        "alpn": [
-          "h2"
-        ]
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+          "short_id": "98fa0b00d09419f7"
+        }
       }
     },
     {
@@ -136,7 +142,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
       "server": "all105.allenshop66245.ir",
       "server_port": 443,
       "uuid": "36644091-0cec-47fe-9955-97c3f424baf7",
@@ -198,7 +204,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]", "server": "185.226.93.88", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9b8a334b-e4e1-424c-99b4-4fd203ffb571", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]", "server": "panel1.bakhe01.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "de3b6d50-1b2d-4156-b3fa-e559be5cf271", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "50bAcRJm7v6qsNBRXFGBI-OD58gi4tahmlTJ5vPm8zE", "short-id": "82f1f3c981116dca"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]'
+      - '🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]'
+      - '🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

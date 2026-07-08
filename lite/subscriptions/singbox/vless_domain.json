@@ -56,8 +56,9 @@
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-        "🇮🇷 IR | VLESS | @father_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
@@ -74,6 +75,7 @@
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -110,8 +112,9 @@
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇮🇷 IR | VLESS | @ehsawn8 #1 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-        "🇮🇷 IR | VLESS | @father_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
@@ -128,6 +131,7 @@
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -251,28 +255,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "fast.cd-tur4.ir",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+      "server": "ru.faygo.bot",
       "server_port": 443,
-      "uuid": "e7d3fb75-034f-4f3f-83d6-33845dafa81c",
-      "network": "ws",
+      "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "default.ssl.fastly.net",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "pan1.global.ssl.fastly.net"
+        "server_name": "enterprisekitten.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @father_vpn #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+      "server": "vpn.oplatasite.ru",
+      "server_port": 8443,
+      "uuid": "9cc56b5d-2a44-4fd1-91e3-659b06255c11",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.oplatasite.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
       "server": "snapp.ir",
       "server_port": 2052,
       "uuid": "7b81a350-89c3-47da-a3a9-5f2b65313d03",
@@ -565,6 +588,28 @@
       "uuid": "051154dd-2eac-4f84-8d20-e253ada6eac8",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "all104.allenshop66245.ir",
+      "server_port": 443,
+      "uuid": "36644091-0cec-47fe-9955-97c3f424baf7",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+          "short_id": "98fa0b00d09419f7"
+        }
+      }
     },
     {
       "type": "vless",
