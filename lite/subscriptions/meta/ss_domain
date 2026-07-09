@@ -6,7 +6,6 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇽🇽 XX | VLESS | @kafing_2 #6 [fast]", "server": "chatgpt.com", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "686c62d9-17a7-43c9-a40a-f6747df60a9f", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ca.adobe-connect.top", "ws-opts": {"path": "", "headers": {"Host": "ca.adobe-connect.top"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +13,6 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇽🇽 XX | VLESS | @kafing_2 #6 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +20,6 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇽🇽 XX | VLESS | @kafing_2 #6 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -7,8 +7,9 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]", "server": "panel1.bakhe01.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "de3b6d50-1b2d-4156-b3fa-e559be5cf271", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "50bAcRJm7v6qsNBRXFGBI-OD58gi4tahmlTJ5vPm8zE", "short-id": "82f1f3c981116dca"}}
+  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "ru.faygo.bot", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8ca5cbd3-ec16-4728-bedc-2bc0d82f0922", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "enterprisekitten.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
   - {"name": "🇺🇸 US | VLESS | @netmellianti #1 [fast]", "server": "us.ipsafe2.site", "port": 40646, "type": "vless", "skip-cert-verify": true, "uuid": "41a6a386-485c-417f-971c-06167252863a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "bv9-alBIp1TK5D7AVJ8HBbKXXuzWPNOL2s9wD5b6m3o", "short-id": "a5d9152796f5"}}
-  - {"name": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]", "server": "all105.allenshop66245.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "36644091-0cec-47fe-9955-97c3f424baf7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M", "short-id": "98fa0b00d09419f7"}}
+  - {"name": "🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]", "server": "shop.frahidx.ir", "port": 2044, "type": "vless", "skip-cert-verify": true, "uuid": "075232d9-82c0-4500-b049-812e944c655c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "google-analytics.com", "reality-opts": {"public-key": "gjTtmitQwQ-RqfeieYrfdba0R08zcdwh4h4YGBCnVRo", "short-id": "0be408ac733a5da5"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -17,8 +18,9 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - '🇺🇸 US | VLESS | @netmellianti #1 [fast]'
-      - '🇫🇷 FR | VLESS | @outline_ir #1 [fast]'
+      - '🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -27,8 +29,9 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - '🇺🇸 US | VLESS | @netmellianti #1 [fast]'
-      - '🇫🇷 FR | VLESS | @outline_ir #1 [fast]'
+      - '🇩🇪 DE | VLESS | @sobi_vpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

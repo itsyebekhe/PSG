@@ -5,21 +5,18 @@ log-level: info
 proxies:
   - {"name": "🇨🇭 CH | VLESS | @free1_vpn #1 [fast]", "server": "179.237.75.21", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "56fde86d-7985-4385-bc75-276b29a70e44", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "grpc-opts": {"grpc-service-name": "xyz"}, "reality-opts": {"public-key": "MhOa-Fkr656VVRcxXd27gam263cdXF_uyGiHZZEISUA", "short-id": "ce741cbe468babc7"}}
   - {"name": "🇨🇭 CH | VLESS | @hope_net #1 [fast]", "server": "185.18.250.109", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "cfed.tgzdyz2.top", "ws-opts": {"path": "", "headers": {"Host": "185.18.250.109"}}}
-  - {"name": "🇨🇭 CH | VLESS | @red2ray #1 [medium]", "server": "37.156.44.233", "port": 50148, "type": "vless", "skip-cert-verify": true, "uuid": "c00b79fc-02e0-5b2f-8e53-15e91c0c8929", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "chi.yahoo.com", "reality-opts": {"public-key": "HLYPbzsOMGFz118_7LkL4tled8aYwma2rR06EuSk3Ag", "short-id": "58f70a76"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇭 CH | VLESS | @free1_vpn #1 [fast]'
       - '🇨🇭 CH | VLESS | @hope_net #1 [fast]'
-      - '🇨🇭 CH | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇭 CH | VLESS | @free1_vpn #1 [fast]'
       - '🇨🇭 CH | VLESS | @hope_net #1 [fast]'
-      - '🇨🇭 CH | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

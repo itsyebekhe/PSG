@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]", "server": "panel1.bakhe01.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "de3b6d50-1b2d-4156-b3fa-e559be5cf271", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "50bAcRJm7v6qsNBRXFGBI-OD58gi4tahmlTJ5vPm8zE", "short-id": "82f1f3c981116dca"}}
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "help.novaano.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ecbaa049-4a7e-4e18-a363-5ef58b6278f7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "WA651ZTwzgiUKRJLkWTERvd63kxN8PoUucbm5O7tjAE", "short-id": "0af693799b7e"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

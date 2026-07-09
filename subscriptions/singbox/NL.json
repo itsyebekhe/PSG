@@ -52,9 +52,9 @@
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
-        "🇳🇱 NL | HY2 | @netfreedom0 #1 [medium]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -66,9 +66,9 @@
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
-        "🇳🇱 NL | HY2 | @netfreedom0 #1 [medium]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -94,26 +94,6 @@
       "server": "static.lotussec.com",
       "server_port": 443,
       "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.lotussec.com",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
-      "server": "static.lotussec.com",
-      "server_port": 443,
-      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
@@ -125,7 +105,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
       "server": "193.29.139.235",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -137,7 +117,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 NL | HY2 | @netfreedom0 #1 [medium]",
+      "tag": "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
       "server": "193.142.59.97",
       "server_port": 443,
       "password": "9794d18f-9280-3553-a7a5-a23da75aca76",
@@ -147,6 +127,19 @@
       "tls": {
         "enabled": true,
         "server_name": "u691611us1244.csgfw.top"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "mypanel.unixzone.us",
+      "server_port": 12068,
+      "uuid": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
