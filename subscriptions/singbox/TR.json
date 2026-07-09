@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]",
+        "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]"
+        "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
       "server": "panel1.bakhe01.ir",
       "server_port": 443,
       "uuid": "de3b6d50-1b2d-4156-b3fa-e559be5cf271",
@@ -86,6 +88,19 @@
           "public_key": "50bAcRJm7v6qsNBRXFGBI-OD58gi4tahmlTJ5vPm8zE",
           "short_id": "82f1f3c981116dca"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "turki.gelqino.ir",
+      "server_port": 17830,
+      "uuid": "e1c7f7ce-5bf8-41a8-87d5-896d2659f08a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
       }
     },
     {
