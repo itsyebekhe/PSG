@@ -50,9 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #2 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #3 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #2 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #3 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
       ],
@@ -62,9 +63,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #2 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #3 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #2 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #3 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -73,8 +75,27 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
+      "server": "78.17.3.113",
+      "server_port": 443,
+      "uuid": "c7c0e837-d9ac-4211-aee7-1e7691be3be1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "X2H-SQTGBao3eTqP9D3M75dXjfydbhShHbkV9KC6vy4",
+          "short_id": "433b9f"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -90,7 +111,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #2 [fast]",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #2 [medium]",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -106,7 +127,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #3 [fast]",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #3 [medium]",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",

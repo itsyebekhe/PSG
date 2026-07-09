@@ -3,19 +3,22 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @netmellianti #1 [fast]", "server": "nl.ipsafe2.site", "port": 42439, "type": "vless", "skip-cert-verify": true, "uuid": "41a6a386-485c-417f-971c-06167252863a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "nNhCQ52jQ3B6WbtqbqHBDQc7aS23T1vtu40O8chzCxY", "short-id": "d7bd2fb475"}}
+  - {"name": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "static.lotussec.com"}
+  - {"name": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇳🇱 NL | VLESS | @netmellianti #1 [fast]'
+      - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
+      - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇳🇱 NL | VLESS | @netmellianti #1 [fast]'
+      - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
+      - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
