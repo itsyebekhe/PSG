@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
         "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
@@ -61,7 +60,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
         "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
@@ -69,25 +67,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
-      "server": "157.85.230.247",
-      "server_port": 64371,
-      "uuid": "85357d35-492e-4814-835a-aba4cb7f00ad",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "lvNgDfAnK72MtJYd3VcZWgmpKUABdH8jfUghJIScdSM",
-          "short_id": "38c7778a"
-        }
-      }
     },
     {
       "type": "shadowsocks",

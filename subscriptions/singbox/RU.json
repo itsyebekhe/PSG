@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
         "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]",
@@ -62,6 +63,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
         "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]",
@@ -71,6 +73,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
+      "server": "91.196.32.37",
+      "server_port": 443,
+      "uuid": "68474f96-98c1-402a-8f3f-9893ed3d7934",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wbOyKxI709eor4Ih2ksZwWu00S_1N6rnCgKBWBSg6Cg",
+          "short_id": "ea2dc6354e30d525"
+        }
+      }
     },
     {
       "type": "vless",
