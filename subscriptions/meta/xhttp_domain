@@ -10,9 +10,10 @@ proxies:
   - {"name": "🇽🇽 XX | VLESS | @netmellianti #1 [fast]", "server": "cdn1.mehfa.site", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "b14bc0dc-623e-42ca-b45a-383a572fa192", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇺🇸 US | VLESS | @netmellianti #1 [fast]", "server": "manage.fastly.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "237a0397-1cf5-4f2e-9bac-418e7a8b34ce", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]", "server": "adamak1.phacode.ir", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "f5887006-d4da-48c7-81e7-92595a2703fd", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "adamak.phacode.ir"}
-  - {"name": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "static.lotussec.com"}
+  - {"name": "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]", "server": "c1.fineartsnet.org", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "668869b1-860e-4308-b1da-386e222defce", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "Ikaho.soralink.ir"}
+  - {"name": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "static.lotussec.com"}
   - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "pol.mrsolo5323.ir", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "3d8f333a-1e87-4689-a6d1-b3c9bbacfdea", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "nUJ1k6Sb4Guh8dpD6ZE8Sm4SW4yzu-4Dfv1Om8fT4gk", "short-id": "19d6a1fa4401"}}
-  - {"name": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]", "server": "germany.fast.hosting-ip.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]", "server": "germany.fast.hosting-ip.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -24,9 +25,10 @@ proxy-groups:
       - '🇽🇽 XX | VLESS | @netmellianti #1 [fast]'
       - '🇺🇸 US | VLESS | @netmellianti #1 [fast]'
       - '🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]'
-      - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]'
+      - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
+      - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
-      - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]'
+      - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -38,9 +40,10 @@ proxy-groups:
       - '🇽🇽 XX | VLESS | @netmellianti #1 [fast]'
       - '🇺🇸 US | VLESS | @netmellianti #1 [fast]'
       - '🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]'
-      - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]'
+      - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
+      - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
-      - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]'
+      - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
