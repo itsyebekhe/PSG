@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]", "server": "germany.fast.hosting-ip.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]", "server": "germany.fast.hosting-ip.com", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]'
+      - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]'
+      - '🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -50,11 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @outline_ir #1 [medium]",
+        "🇬🇧 GB | SS | @red2ray #1 [medium]",
+        "🇬🇧 GB | SS | @red2ray #2 [medium]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
-        "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | VLESS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -64,11 +65,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @outline_ir #1 [medium]",
+        "🇬🇧 GB | SS | @red2ray #1 [medium]",
+        "🇬🇧 GB | SS | @red2ray #2 [medium]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
-        "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | VLESS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -78,7 +80,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -90,7 +92,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @outline_ir #1 [medium]",
       "server": "82.38.31.198",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -102,9 +104,21 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @red2ray #1 [medium]",
       "server": "82.38.31.35",
       "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @red2ray #2 [medium]",
+      "server": "82.38.31.32",
+      "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
@@ -126,7 +140,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]",
+      "tag": "🇬🇧 GB | VLESS | @netfreedom0 #1 [medium]",
       "server": "95.133.242.210",
       "server_port": 443,
       "uuid": "5982d32f-f2e4-4267-a8ad-48492e65344c",

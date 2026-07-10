@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQlI=
+//profile-title: base64:UFNHIHwgRVM=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR | VLESS | @netmellianti #1 [fast]",
+        "🇪🇸 ES | VLESS | @netmellianti #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR | VLESS | @netmellianti #1 [fast]"
+        "🇪🇸 ES | VLESS | @netmellianti #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,12 +68,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇷 BR | VLESS | @netmellianti #1 [fast]",
-      "server": "200.25.53.5",
-      "server_port": 80,
-      "uuid": "b14bc0dc-623e-42ca-b45a-383a572fa192",
+      "tag": "🇪🇸 ES | VLESS | @netmellianti #1 [fast]",
+      "server": "uk.r.stockym.com",
+      "server_port": 23564,
+      "uuid": "f09d18a9-d778-4e00-a49a-c0063d1c1b11",
+      "flow": "xtls-rprx-vision",
       "network": "xhttp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "gpuopen.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hfutZISM2YJrEcCcb-CjrxMA5VP7I7geMQGFKUS8cRo",
+          "short_id": "ba8ee4b12b0b"
+        }
+      }
     },
     {
       "type": "direct",

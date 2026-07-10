@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇱🇹 LT | VLESS | @jiedianf #1 [fast]", "server": "45.194.10.79", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net"}
+  - {"name": "🇱🇹 LT | VLESS | @jiedianf #1 [medium]", "server": "45.194.10.79", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇱🇹 LT | VLESS | @jiedianf #1 [fast]'
+      - '🇱🇹 LT | VLESS | @jiedianf #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇱🇹 LT | VLESS | @jiedianf #1 [fast]'
+      - '🇱🇹 LT | VLESS | @jiedianf #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

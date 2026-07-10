@@ -56,10 +56,10 @@
         "🇫🇷 FR | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mtproxy22_v2ray #2 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [medium]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -74,10 +74,10 @@
         "🇫🇷 FR | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mtproxy22_v2ray #2 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [medium]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
+        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -195,19 +195,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-      "server": "13.39.153.213",
-      "server_port": 22224,
-      "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
-      "network": "ws",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [medium]",
+      "server": "135.125.168.129",
+      "server_port": 47791,
+      "uuid": "aba63574-708f-43aa-9fbb-ef9513193ae2",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "trojan.burgerip.co.uk"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/telegram-channel-vlessconfig"
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fcPTFFt0ZLXCkgfbluqIZgL4ewuUxCO1BbhCIraKoh8",
+          "short_id": "ff"
+        }
       }
     },
     {
@@ -228,7 +233,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -252,7 +257,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",
