@@ -54,11 +54,13 @@
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
+        "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
         "🇮🇷 IR | VLESS | @bored_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
@@ -77,11 +79,13 @@
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
+        "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
         "🇮🇷 IR | VLESS | @bored_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
@@ -136,6 +140,22 @@
       "uuid": "71f1a3f9-11c9-482e-b64f-a8442b8fdef4",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
+      "server": "news1.vipshop2.shop",
+      "server_port": 2083,
+      "uuid": "d688105d-882c-4188-9fc3-6c1774132f8f",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3.vipshopnew.shop"
+      },
+      "transport": {
+        "type": "ws"
+      }
     },
     {
       "type": "vless",
@@ -210,6 +230,34 @@
       "uuid": "aa5e25fc-c7d7-4e6e-b7f7-105a35c0175a",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+      "server": "parspack.com",
+      "server_port": 443,
+      "uuid": "51905fd3-29de-4b4e-b351-83542f1d5390",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Bia.alLhub.Ltd",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "biA.ALlhub.LTD"
+        }
+      }
     },
     {
       "type": "vmess",

@@ -4,9 +4,11 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]", "server": "212.69.86.220", "port": 9443, "type": "vless", "skip-cert-verify": true, "uuid": "ebcb836a-ab7a-424f-a07c-aba25c70da69", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "estonianode.dostupnet.ru", "reality-opts": {"public-key": "2MnLp2jBmP-bPYRHf3VY3wyGMwIYIAizXCB7UxgYVGc", "short-id": "7c16c340cde3ed39"}}
+  - {"name": "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]", "server": "54.37.2.131", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "36644091-0cec-47fe-9955-97c3f424baf7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M", "short-id": "98fa0b00d09419f7"}}
   - {"name": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]", "server": "84.247.129.205", "port": 4433, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-4000-8000-000000000000", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sub.mot.ip-ddns.com", "ws-opts": {"path": "", "headers": {"Host": "sub.mot.ip-ddns.com"}}}
   - {"name": "🇫🇷 FR | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "gr1.fifapes.monster", "port": 8882, "type": "vless", "skip-cert-verify": true, "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇷 FR | VLESS | @mtproxy22_v2ray #2 [fast]", "server": "gr1.fifapes.monster", "port": 8882, "type": "vless", "skip-cert-verify": true, "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇷 FR | VLESS | @mtproxy22_v2ray #3 [fast]", "server": "fn.fifapes.monster", "port": 2090, "type": "vless", "skip-cert-verify": true, "uuid": "eab915bc-d2df-73d1-47d0-6eb240497055", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]", "server": "15.224.111.185", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]", "server": "13.38.233.14", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]", "server": "199.232.169.135", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "firefox", "servername": "speedtest.net", "ws-opts": {"path": "", "headers": {"Host": "googleb.net"}}}
@@ -17,9 +19,11 @@ proxy-groups:
     type: select
     proxies:
       - '🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]'
+      - '🇫🇷 FR | VLESS | @free1_vpn #1 [fast]'
       - '🇫🇷 FR | VLESS | @mpproxy #1 [fast]'
       - '🇫🇷 FR | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇫🇷 FR | VLESS | @mtproxy22_v2ray #2 [fast]'
+      - '🇫🇷 FR | VLESS | @mtproxy22_v2ray #3 [fast]'
       - '🇫🇷 FR | VLESS | @privatevpns #1 [fast]'
       - '🇫🇷 FR | VLESS | @privatevpns #2 [fast]'
       - '🇫🇷 FR | VLESS | @minovpnch #1 [fast]'
@@ -30,9 +34,11 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]'
+      - '🇫🇷 FR | VLESS | @free1_vpn #1 [fast]'
       - '🇫🇷 FR | VLESS | @mpproxy #1 [fast]'
       - '🇫🇷 FR | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇫🇷 FR | VLESS | @mtproxy22_v2ray #2 [fast]'
+      - '🇫🇷 FR | VLESS | @mtproxy22_v2ray #3 [fast]'
       - '🇫🇷 FR | VLESS | @privatevpns #1 [fast]'
       - '🇫🇷 FR | VLESS | @privatevpns #2 [fast]'
       - '🇫🇷 FR | VLESS | @minovpnch #1 [fast]'

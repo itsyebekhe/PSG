@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇱🇹 LT | VLESS | @jiedianf #1 [fast]", "server": "45.194.10.79", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net"}
+  - {"name": "🇱🇹 LT | VLESS | @NamiraConfigs #1 [fast]", "server": "89.117.112.4", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "424fa201-3f94-479e-b533-d5257cf9a207", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "floral-thunder-10d3.82-67d.workers.dev"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇱🇹 LT | VLESS | @jiedianf #1 [fast]'
+      - '🇱🇹 LT | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇱🇹 LT | VLESS | @jiedianf #1 [fast]'
+      - '🇱🇹 LT | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
