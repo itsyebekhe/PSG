@@ -70,9 +70,9 @@
         "🇽🇽 XX | VLESS | @parsashonam #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
-        "🇹🇷 TR | VLESS | @oonfig #1 [medium]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
@@ -122,9 +122,9 @@
         "🇽🇽 XX | VLESS | @parsashonam #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
-        "🇹🇷 TR | VLESS | @oonfig #1 [medium]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
@@ -210,22 +210,11 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-      "server": "speedtest.net",
+      "server": "spd-mynames.global.ssl.fastly.net",
       "server_port": 80,
-      "uuid": "056d10f1-4ebd-40e1-9f78-c7e11fce5258",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "sabzb2.global.ssl.fastly.net"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/download",
-        "headers": {
-          "Host": "sabzb2.global.ssl.fastly.net"
-        }
-      }
+      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -499,32 +488,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @oonfig #1 [medium]",
-      "server": "my.filpower.shop",
-      "server_port": 443,
-      "uuid": "09bb1018-47b1-4968-964c-d9bf96bb052b",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "m7WfiFH6HcPxlTgzNjq035kpMnkGaNG3UBo4OyS2kGA",
-          "short_id": "f2c5768a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
       "server": "hayabusa.proxy.rlwy.net",
       "server_port": 50127,
@@ -550,18 +513,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "x4g-update-production.up.railway.app",
-      "server_port": 443,
-      "uuid": "a57c04f8-3c73-7f22-58dc-d4f7e26b70cf",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+      "server": "zeus-panel-l9ww2h.kingworker313peekconfig.workers.dev",
+      "server_port": 2053,
+      "uuid": "5157b1bd-afad-4d74-b4f6-9df43b9942ba",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "x4g-update-production.up.railway.app",
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "zeus-panel-l9ww2h.kingworker313peekconfig.workers.dev",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -569,9 +529,32 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/a57c04f8-3c73-7f22-58dc-d4f7e26b70cf",
+        "path": "/",
         "headers": {
-          "Host": "x4g-update-production.up.railway.app"
+          "Host": "zeus-panel-l9ww2h.kingworker313peekconfig.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+      "server": "ezaccess-project-afaa32.ez-1d31ab.workers.dev",
+      "server_port": 443,
+      "uuid": "ebd90947-6938-4c12-b2da-0475c72ff913",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ezACCEsS-projeCt-AFaA32.ez-1D31aB.wOrkers.deV",
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiN2FOekRxSzV2NkZlQVpZIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+        "headers": {
+          "Host": "ezaccess-project-afaa32.ez-1d31ab.workers.dev"
         }
       }
     },
