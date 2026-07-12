@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]", "server": "fn4.sannest.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "738f170e-e674-7991-9902-f182a8fa9b1c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "www.yahoo.com", "reality-opts": {"public-key": "DJ9B-OWkR4FwRvEfHpdAKqEasnRdVcZHoAaMueWEGWA", "short-id": "bd"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
