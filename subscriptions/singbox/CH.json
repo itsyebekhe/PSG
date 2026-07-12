@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH | VLESS | @free1_vpn #1 [medium]",
         "🇨🇭 CH | VLESS | @hope_net #1 [fast]",
         "direct"
       ],
@@ -60,39 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH | VLESS | @free1_vpn #1 [medium]",
         "🇨🇭 CH | VLESS | @hope_net #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 CH | VLESS | @free1_vpn #1 [medium]",
-      "server": "179.237.75.21",
-      "server_port": 443,
-      "uuid": "56fde86d-7985-4385-bc75-276b29a70e44",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MhOa-Fkr656VVRcxXd27gam263cdXF_uyGiHZZEISUA",
-          "short_id": "ce741cbe468babc7"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "xyz"
-      }
     },
     {
       "type": "vless",
