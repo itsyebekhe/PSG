@@ -7,6 +7,7 @@ proxies:
   - {"name": "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]", "server": "186.246.31.136", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "74139fb5-fd3f-4133-a34a-b1d85da7a89f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "ads.x5.ru", "reality-opts": {"public-key": "djTtGqd0XWqtt_WHukU7BTPQSn9o7gIpAosAxMy8tUo", "short-id": "ea1058117be12087"}}
   - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
   - {"name": "🇷🇺 RU | VLESS | @megavpn_link #1 [medium]", "server": "158.160.250.45", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "mDtiIWLFPJoPVrDLOCvKn6lvlS8r0TdRO9MxmmdIDmo", "short-id": "917fd5a45e8840"}}
+  - {"name": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]", "server": "using.neobo-tooth.ru", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "0c6b632a-cd96-4b74-9b51-151e3b5697db", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "grpc"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -15,6 +16,7 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @free1_vpn #1 [medium]'
       - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
       - '🇷🇺 RU | VLESS | @megavpn_link #1 [medium]'
+      - '🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -23,6 +25,7 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @free1_vpn #1 [medium]'
       - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
       - '🇷🇺 RU | VLESS | @megavpn_link #1 [medium]'
+      - '🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -5,8 +5,9 @@ log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "static.lotussec.com"}
   - {"name": "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]", "server": "c1.fineartsnet.org", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "668869b1-860e-4308-b1da-386e222defce", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "Ikaho.soralink.ir"}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "uf8t8t8y.mbcloudynias.ir", "port": 56625, "type": "vless", "skip-cert-verify": true, "uuid": "d7955f3f-dfa3-45a0-a3ef-9693df439a0f", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "icloud.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM", "short-id": "d5e4b75249e38cbb"}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "italy-nm.serendpiti.ir", "port": 2060, "type": "vless", "skip-cert-verify": true, "uuid": "1e8ed829-92ba-4867-86ed-75c2a02d4cf5", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "G5_DckdgcTAbEubwJvlZDBwrncT1lOq6W5JRwINl1nE", "short-id": "90cecfbf0c0a21ec"}}
+  - {"name": "🇳🇱 NL | VMESS | @NamiraConfigs #1 [fast]", "server": "31.76.78.98", "port": 110, "type": "vmess", "skip-cert-verify": true, "uuid": "c4caf231-bf6c-4603-98d8-f4518bfc52af", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +15,8 @@ proxy-groups:
       - '🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]'
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +24,8 @@ proxy-groups:
       - '🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]'
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
