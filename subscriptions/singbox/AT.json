@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFI=
+//profile-title: base64:UFNHIHwgQVQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://t.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | SS | @outline_ir #1 [fast]",
+        "🇦🇹 AT | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | SS | @outline_ir #1 [fast]"
+        "🇦🇹 AT | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,19 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @outline_ir #1 [fast]",
-      "server": "62.133.63.222",
-      "server_port": 48981,
-      "method": "chacha20-ietf-poly1305",
-      "password": "abC43WeNxuDAXdmQZdkwVx",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+      "type": "vless",
+      "tag": "🇦🇹 AT | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "212.183.88.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "vms.lifetime23.workers.dev"
+        }
       }
     },
     {

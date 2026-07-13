@@ -54,7 +54,6 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
@@ -68,13 +67,14 @@
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
+        "🇮🇷 IR | VLESS | @prrofile_purple #1 [medium]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇵🇱 PL | VLESS | @netmellianti #1 [fast]",
+        "🇵🇱 PL | VLESS | @netmellianti #1 [medium]",
         "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]",
+        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -87,7 +87,6 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
@@ -101,13 +100,14 @@
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
+        "🇮🇷 IR | VLESS | @prrofile_purple #1 [medium]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇵🇱 PL | VLESS | @netmellianti #1 [fast]",
+        "🇵🇱 PL | VLESS | @netmellianti #1 [medium]",
         "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]"
+        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -161,28 +161,6 @@
       "uuid": "2c9af5d8-8e1c-40e7-8b6b-c200fc5488e8",
       "network": "xhttp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "167.82.101.213",
-      "server_port": 443,
-      "uuid": "08c063d4-17d8-4d44-8f1c-6a1e782d3a1e",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": true,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
     },
     {
       "type": "vless",
@@ -440,6 +418,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @prrofile_purple #1 [medium]",
+      "server": "s2.zynavo.ir",
+      "server_port": 2087,
+      "uuid": "9adb5a9e-ef33-406f-0562-34656d0a3ea2",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.zynavo.ir",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
       "server": "static.lotussec.com",
       "server_port": 443,
@@ -449,7 +450,6 @@
       "tls": {
         "enabled": true,
         "server_name": "static.lotussec.com",
-        "insecure": true,
         "alpn": [
           "h2"
         ],
@@ -470,7 +470,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @netmellianti #1 [fast]",
+      "tag": "🇵🇱 PL | VLESS | @netmellianti #1 [medium]",
       "server": "w.r.stockym.com",
       "server_port": 443,
       "uuid": "f09d18a9-d778-4e00-a49a-c0063d1c1b11",
@@ -555,7 +555,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]",
+      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
       "server": "germany.fast.hosting-ip.com",
       "server_port": 80,
       "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",
