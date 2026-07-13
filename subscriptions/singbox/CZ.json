@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,35 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+      "server": "s1.streemmovie.shop",
+      "server_port": 8443,
+      "uuid": "76b7834c-75d4-4fce-a90b-2639739e8e3e",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yt.be",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo",
+          "short_id": "408aded4"
+        }
+      }
     },
     {
       "type": "vmess",

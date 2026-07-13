@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "31.76.39.116", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "16ad976d-b5df-4b4e-87b6-87cc64ac0a8b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "ag-02.rita-cloud.com", "reality-opts": {"public-key": "MKXQ6n6iRohWguhAZqABw5XBiymVYZdK7hX9zua0Ik4", "short-id": "51ef5a427b3615ee"}}
   - {"name": "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]", "server": "95.133.242.210", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5982d32f-f2e4-4267-a8ad-48492e65344c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "filesconvert.org", "reality-opts": {"public-key": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs", "short-id": "10debbdf94767541"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

@@ -51,9 +51,10 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VMESS | @hope_net #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -66,9 +67,10 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VMESS | @hope_net #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -100,17 +102,25 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "51.44.138.45",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "type": "vmess",
+      "tag": "🇫🇷 FR | VMESS | @hope_net #1 [fast]",
+      "server": "51.83.97.167",
+      "server_port": 80,
+      "uuid": "6e7ef21f-4736-480e-93aa-1f7d54f28089",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
       "server": "15.224.48.56",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
@@ -119,7 +129,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+      "server": "13.36.15.123",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
       "server": "151.80.147.30",
       "server_port": 443,
       "uuid": "a1750ade-801f-4e3e-a5d2-de825771205d",
