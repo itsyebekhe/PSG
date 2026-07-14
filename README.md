@@ -5,10 +5,10 @@
 ### Premium Proxy Subscription Generator
 
 ![Updated](https://img.shields.io/badge/Updated-2026-07-14-blue?style=flat-square)
-![Configs](https://img.shields.io/badge/Configs-0-green?style=flat-square)
-![Lite](https://img.shields.io/badge/Lite-0-cyan?style=flat-square)
-![Channels](https://img.shields.io/badge/Channels-0-orange?style=flat-square)
-![Countries](https://img.shields.io/badge/Countries-0-purple?style=flat-square)
+![Configs](https://img.shields.io/badge/Configs-315-green?style=flat-square)
+![Lite](https://img.shields.io/badge/Lite-162-cyan?style=flat-square)
+![Channels](https://img.shields.io/badge/Channels-92-orange?style=flat-square)
+![Countries](https://img.shields.io/badge/Countries-30-purple?style=flat-square)
 
 [**فارسی**](README.fa.md)
 
@@ -20,30 +20,48 @@
 
 | | |
 |:---|:---|
-| 🔢 **0** configs | 🪶 **0** lite |
-| 📡 **0** channels | 🌍 **0** countries |
-| ☁️ **0** Cloudflare | ⚡ **0** fast |
+| 🔢 **315** configs | 🪶 **162** lite |
+| 📡 **92** channels | 🌍 **30** countries |
+| ☁️ **235** Cloudflare | ⚡ **444** fast |
 
 <details>
 <summary><b>⚡ Protocol Distribution</b></summary>
 
-
+> 🔒 **VLESS** `███████████████` 397 (126.0%)
+> ⚡ **REALITY** `█░░░░░░░░░░░░░░` 46 (14.6%)
+> 🔑 **SS** `█░░░░░░░░░░░░░░` 30 (9.5%)
+> 🛡️ **VMESS** `░░░░░░░░░░░░░░░` 24 (7.6%)
+> 🌊 **HY2** `░░░░░░░░░░░░░░░` 4 (1.3%)
 
 </details>
 
 <details>
 <summary><b>🌍 Country Distribution</b></summary>
 
-
+> 🇽🇽 **XX** `████████████` 235
+> 🇸🇪 **SE** `██░░░░░░░░░░` 52
+> 🇺🇸 **US** `██░░░░░░░░░░` 51
+> 🇩🇪 **DE** `█░░░░░░░░░░░` 26
+> 🇬🇧 **GB** `█░░░░░░░░░░░` 26
+> 🇮🇷 **IR** `█░░░░░░░░░░░` 25
+> 🇸🇨 **SC** `░░░░░░░░░░░░` 15
+> 🇳🇱 **NL** `░░░░░░░░░░░░` 10
+> 🇨🇦 **CA** `░░░░░░░░░░░░` 9
+> 🇫🇷 **FR** `░░░░░░░░░░░░` 7
+> 🇵🇱 **PL** `░░░░░░░░░░░░` 7
+> 🇫🇮 **FI** `░░░░░░░░░░░░` 6
+> 🇦🇪 **AE** `░░░░░░░░░░░░` 6
+> 🇷🇺 **RU** `░░░░░░░░░░░░` 4
+> 🇨🇿 **CZ** `░░░░░░░░░░░░` 3
 
 </details>
 
 <details>
 <summary><b>🚀 Speed Distribution</b></summary>
 
-> ⚡ **Fast** — 0 configs (< 200ms)
-> 🟡 **Medium** — 0 configs (200-500ms)
-> 🐢 **Slow** — 0 configs (> 500ms)
+> ⚡ **Fast** — 444 configs (< 200ms)
+> 🟡 **Medium** — 56 configs (200-500ms)
+> 🐢 **Slow** — 1 configs (> 500ms)
 
 </details>
 
@@ -108,9 +126,38 @@
 
 ---
 
-## 📡 Channels (0)
+## 📡 Channels (92)
 
-
+1. **@prrofile_purple** — 48 configs — سرور - V2rayNG
+2. **@kafing_2** — 39 configs — کافینگ رایگان
+3. **@meli_v2rayng** — 21 configs — V2rayng iran کانال کانفیگ فیلت
+4. **@NamiraConfigs** — 20 configs — NamiraNet
+5. **@lockey_vpn** — 15 configs — LOCKEY_VPN
+6. **@manstervpn** — 15 configs — KingVPN
+7. **@nepo_v2ray** — 13 configs — Nepo_v2ray
+8. **@proxie** — 12 configs — V2ray Proxies
+9. **@iran_access** — 12 configs — کانفیگ v2rayNG Napsternetv
+10. **@customizev2ray** — 12 configs — CUSTOMIZE V2ray
+11. **@kurd_v2ray** — 12 configs — VPN فیلتر شکن
+12. **@netmellianti** — 11 configs — VPN V2rayNG نت ملی
+13. **@nofiltering2** — 10 configs — Nofiltering2 V2rayng رفع فیلتر
+14. **@novinology** — 9 configs — Novinology نوینولوژی
+15. **@outline_ir** — 9 configs — سرور اوتلاین ا سرور V2ray
+16. **@ai_duet** — 9 configs — خرید فیلترشکن V2rayNG خرید کان
+17. **@minovpnch** — 9 configs — کانال MinoVpn
+18. **@mester_v2ray** — 8 configs — 𝐌𝐞𝐬𝐭𝐞𝐫.𝐯𝟐𝐫𝐚𝐲 نات پیکسل
+19. **@netfreedom0** — 8 configs — NetFreedom
+20. **@serverv2ray00** — 8 configs — ایران پروکسی وکانفیکiran proxy
+21. **@realvpnmaster** — 8 configs — Vpn master
+22. **@jiedianf** — 7 configs — 免费节点 分享频道
+23. **@iranvipnet** — 7 configs — VIP_V2rayNG
+24. **@frev2rayng** — 7 configs — پروکسی ملی Proxy v2rayng کانفی
+25. **@free_vip3** — 7 configs — Free Service
+26. **@flyv2ray** — 6 configs — FlyV2ray
+27. **@proxy48** — 6 configs — فیلترشکنv2rayپروکسی proxy
+28. **@new_proxy_channel** — 6 configs — New Proxy
+29. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
+30. **@jokerv2ray** — 5 configs — JOKER V2Ray کانفیگ اختصاصی
 
 ---
 

@@ -1,0 +1,326 @@
+//profile-title: base64:UFNHIHwgUkVBTElUWV9ET01BSU4=
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://telegram.me/yebekhe
+//profile-web-page-url: https://github.com/itsyebekhe/PSG
+
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "tls://8.8.8.8",
+        "detour": "select"
+      },
+      {
+        "tag": "local",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
+      }
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 2080,
+      "set_system_proxy": false
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+        "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+        "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
+        "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
+        "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "direct"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+        "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+        "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
+        "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
+        "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+      "server": "gr.teraideri.sbs",
+      "server_port": 38733,
+      "uuid": "384a72e6-8a10-4695-9ee5-c93728ef7e2a",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "CXOpQI3hwCqEp5ul2SKWfdAK-PBjjzUn-eRb7bAxDgU",
+          "short_id": "09e78c1d381f98ed"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+      "server": "vip-de2-unlimited.relqino.ir",
+      "server_port": 2087,
+      "uuid": "4e37ec19-064c-41fe-a218-42b093d2ca5f",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YzBMpb1dERPYZ523TWUVf9MkqH4_zrnc_t_o2IjF0W4",
+          "short_id": "e898156ae00ddeb8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+      "server": "s1.streemmovie.shop",
+      "server_port": 8443,
+      "uuid": "76b7834c-75d4-4fce-a90b-2639739e8e3e",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yt.be",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo",
+          "short_id": "408aded4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
+      "server": "albanyao.consolgame.ir",
+      "server_port": 1002,
+      "uuid": "7691d590-be40-411f-ab11-1e1ab4b03570",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "E5n-njx-57MxDzVpCwsqmc9wKeYRjyd2tg2yAUJ_sFU",
+          "short_id": "28711478c2a20a18"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
+      "server": "mreal2.varzesh361.ir",
+      "server_port": 1153,
+      "uuid": "7691d590-be40-411f-ab11-1e1ab4b03570",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "E5n-njx-57MxDzVpCwsqmc9wKeYRjyd2tg2yAUJ_sFU",
+          "short_id": "28711478c2a20a18"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
+      "server": "tv.myblog.org.tr",
+      "server_port": 25520,
+      "uuid": "27bb7bca-1335-4f1a-91e6-14c2974cffb1",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CdbZitEgBioklscSAiU8eGR_sRvzLPrH3davu5DrNBc",
+          "short_id": "a8de8bc1e9f5ef"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "netraidly.ru",
+      "server_port": 40443,
+      "uuid": "4480161e-2c59-4d37-8736-675c9af32bf1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y",
+          "short_id": "01d1bf2d4755d40c"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
+}
