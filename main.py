@@ -310,7 +310,7 @@ class ConfigUtils:
             f"#profile-title: base64:{b64_title}\n"
             "#profile-update-interval: 1\n"
             "#subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n"
-            "#support-url: https://t.me/yebekhe\n"
+            "#support-url: https://telegram.me/yebekhe\n"
             f"#profile-web-page-url: https://github.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}\n\n"
         )
 
@@ -881,7 +881,7 @@ class SubscriptionProcessor:
                 logger.info(f"  Fetching: {i + 1}/{total} (skipped {skipped_stale} stale)")
 
             data = sources[key]
-            url = data.get('subscription_url') or f"https://t.me/s/{key}"
+            url = data.get('subscription_url') or f"https://telegram.me/s/{key}"
             content = await self._fetch_url(url)
 
             configs = []
@@ -916,7 +916,7 @@ class SubscriptionProcessor:
                             text = decoded
                     except: pass
 
-                if 't.me' in url and not data.get('subscription_url'):
+                if 'telegram.me' in url and not data.get('subscription_url'):
                     msg_bodies = TELEGRAM_MSG_REGEX.findall(text)
                     if msg_bodies:
                         text = '\n'.join(msg_bodies)
@@ -2033,7 +2033,7 @@ MATCH,PROXY
             f"//profile-title: base64:{b64_title}\n"
             "//profile-update-interval: 1\n"
             "//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n"
-            "//support-url: https://t.me/yebekhe\n"
+            "//support-url: https://telegram.me/yebekhe\n"
             f"//profile-web-page-url: https://github.com/{CONSTANTS['GITHUB_USER']}/{CONSTANTS['GITHUB_REPO']}\n\n"
         )
         final_content = header + json.dumps(singbox_config, indent=2, ensure_ascii=False)
