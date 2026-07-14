@@ -60,8 +60,9 @@
         "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
         "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-        "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+        "🇱🇻 LV | VLESS | @megavpn_link #1 [medium]",
         "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -84,8 +85,9 @@
         "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
         "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-        "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+        "🇱🇻 LV | VLESS | @megavpn_link #1 [medium]",
         "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -296,29 +298,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-      "server": "141.98.118.70",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "130.49.185.196",
       "server_port": 443,
-      "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c",
-      "network": "xhttp",
+      "uuid": "e3c56988-5261-400f-b21b-6af5fa6efae1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "site.rumedia-cdn.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "4ndg8TcyXMWmnEvthjh9mIWJ9mc85jzy_G9D4D5xGxM",
+          "short_id": "808a7e8a2e32c697"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+      "server": "185.137.157.72",
+      "server_port": 443,
+      "uuid": "55a5044d-5b35-405f-971c-ea7aacaafcb4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ",
-          "short_id": "44"
+          "public_key": "z6_OFl0jskilOOxkQcUcdQOCS4-LVndwFF9i7kIOPzg",
+          "short_id": "d23753491eefde7e"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
+      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1 [medium]",
       "server": "91.218.143.194",
       "server_port": 43798,
       "uuid": "b7725d23-840a-4f8e-993c-69b40424cfc0",
