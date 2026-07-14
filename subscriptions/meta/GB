@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]", "server": "95.133.242.210", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5982d32f-f2e4-4267-a8ad-48492e65344c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "filesconvert.org", "reality-opts": {"public-key": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs", "short-id": "10debbdf94767541"}}
+  - {"name": "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
+      - '🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
+      - '🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

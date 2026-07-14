@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | SS | @orange_vpns #1 [fast]",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | SS | @orange_vpns #1 [fast]"
+        "🇫🇮 FI | SS | @orange_vpns #1 [fast]",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,6 +78,30 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
+      "server": "fanland.lorqina.ir",
+      "server_port": 8880,
+      "uuid": "9d66932d-9eec-47de-972a-e98dee7231c1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dISkAZV3LXVBa9yM02MoyFqajSLFqXrTj74ywRzKjiY",
+          "short_id": "69d1"
+        }
       }
     },
     {
