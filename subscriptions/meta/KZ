@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]", "server": "77.73.232.61", "port": 19747, "type": "vless", "skip-cert-verify": true, "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM", "short-id": "2001"}}
+  - {"name": "🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]", "server": "77.73.232.61", "port": 19747, "type": "vless", "skip-cert-verify": true, "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM", "short-id": "2001"}}
+  - {"name": "🇰🇿 KZ | VLESS | @hope_net #1 [fast]", "server": "194.76.18.220", "port": 2082, "type": "vless", "skip-cert-verify": true, "uuid": "5361a986-91b9-4756-a78c-103261128d83", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]'
+      - '🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]'
+      - '🇰🇿 KZ | VLESS | @hope_net #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]'
+      - '🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]'
+      - '🇰🇿 KZ | VLESS | @hope_net #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

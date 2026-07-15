@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRkk=
+//profile-title: base64:UFNHIHwgQVU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+        "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
+        "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,13 +67,28 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "dl2.ilooo.ir",
-      "server_port": 8080,
-      "uuid": "c5d32f27-dded-4b63-8d01-1693471fb044",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "type": "vmess",
+      "tag": "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
+      "server": "162.159.135.79",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "janett.click"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "janett.click"
+        }
+      }
     },
     {
       "type": "direct",

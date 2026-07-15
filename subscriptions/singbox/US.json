@@ -63,6 +63,7 @@
         "🇺🇸 US | VLESS | @filterk0sh #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -83,6 +84,7 @@
         "🇺🇸 US | VLESS | @deli_servers #1 [fast]",
         "🇺🇸 US | VLESS | @public504 #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
+        "🇺🇸 US | VMESS | @proxy48 #1 [fast]",
         "🇺🇸 US | VLESS | @buffalo_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @manstervpn #1 [fast]",
         "direct"
@@ -106,6 +108,7 @@
         "🇺🇸 US | VLESS | @filterk0sh #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -126,6 +129,7 @@
         "🇺🇸 US | VLESS | @deli_servers #1 [fast]",
         "🇺🇸 US | VLESS | @public504 #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
+        "🇺🇸 US | VMESS | @proxy48 #1 [fast]",
         "🇺🇸 US | VLESS | @buffalo_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @manstervpn #1 [fast]"
       ],
@@ -365,11 +369,47 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
-      "server": "135.84.73.161",
-      "server_port": 8880,
-      "uuid": "06e811a4-8f6f-41fe-a44a-9052209c104c",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
+      "server": "151.101.2.219",
+      "server_port": 443,
+      "uuid": "358eab4b-7db4-4f93-a7b0-5e6f98b7cf45",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.net",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/W0tvTq4oSbHyKeRM?ed=2560",
+        "headers": {
+          "Host": "tody.ir."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #2 [fast]",
+      "server": "69.84.182.93",
+      "server_port": 443,
+      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "kd.ylks.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/freecodes"
+      }
     },
     {
       "type": "vless",
@@ -761,6 +801,30 @@
       "uuid": "qeshmserver",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @proxy48 #1 [fast]",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "afrhms16v.bestxray.buzz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "afrhms16v.bestxray.buzz"
+        }
+      }
     },
     {
       "type": "vless",
