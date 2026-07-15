@@ -3,18 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇺🇸 US | VMESS | @orange_vpns #1 [fast]", "server": "57.151.100.27", "port": 10086, "type": "vmess", "skip-cert-verify": true, "uuid": "550e8400-e29b-41d4-a716-446655440000", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #1 [fast]", "server": "xcf037.facai2024.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d9863037-0463-4615-e972-36ba9662d1e9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/d9863037", "headers": {"Host": "xcf037.facai2024.com"}}}
   - {"name": "🇺🇸 US | VMESS | @proxy48 #1 [fast]", "server": "188.114.97.3", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkws", "headers": {"Host": "afrhms16v.bestxray.buzz"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇺🇸 US | VMESS | @orange_vpns #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @proxy48 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇺🇸 US | VMESS | @orange_vpns #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @proxy48 #1 [fast]'
 rules:

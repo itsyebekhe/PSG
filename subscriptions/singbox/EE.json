@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFI=
+//profile-title: base64:UFNHIHwgRUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | SS | @outline_ir #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [slow]",
+        "🇪🇪 EE | VLESS | @hope_net #1 [fast]",
+        "🇪🇪 EE | VLESS | @hope_net #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | SS | @outline_ir #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [slow]"
+        "🇪🇪 EE | VLESS | @hope_net #1 [fast]",
+        "🇪🇪 EE | VLESS | @hope_net #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,25 +69,38 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @outline_ir #1 [fast]",
-      "server": "62.133.63.222",
-      "server_port": 48981,
-      "method": "chacha20-ietf-poly1305",
-      "password": "abC43WeNxuDAXdmQZdkwVx",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @hope_net #1 [fast]",
+      "server": "45.80.110.96",
+      "server_port": 2087,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "network": "ws",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "a.ssll.gay"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "twitterfreecodesfp"
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [slow]",
-      "server": "107.161.174.153",
-      "server_port": 59142,
-      "uuid": "c4c96606-100d-491c-a7ad-f56e0a5c61d3",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "tag": "🇪🇪 EE | VLESS | @hope_net #2 [fast]",
+      "server": "45.80.110.230",
+      "server_port": 2087,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "a.ssll.gay"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "twitterfreecodesfp"
+      }
     },
     {
       "type": "direct",

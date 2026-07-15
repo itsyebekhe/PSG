@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE | VLESS | @orange_vpns #1 [fast]",
         "🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]",
-        "🇸🇪 SE | VLESS | @netmellianti #1 [fast]",
+        "🇸🇪 SE | VLESS | @prrofile_purple #2 [fast]",
+        "🇸🇪 SE | VLESS | @netmellianti #1 [medium]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #3 [fast]",
@@ -82,9 +82,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE | VLESS | @orange_vpns #1 [fast]",
         "🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]",
-        "🇸🇪 SE | VLESS | @netmellianti #1 [fast]",
+        "🇸🇪 SE | VLESS | @prrofile_purple #2 [fast]",
+        "🇸🇪 SE | VLESS | @netmellianti #1 [medium]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #3 [fast]",
@@ -114,29 +114,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @orange_vpns #1 [fast]",
-      "server": "swser2.foot8all.ir",
-      "server_port": 50567,
-      "uuid": "d7955f3f-dfa3-45a0-a3ef-9693df439a0f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs",
-          "short_id": "29a833ab20778306"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]",
       "server": "192.71.82.2",
       "server_port": 443,
@@ -161,7 +138,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @netmellianti #1 [fast]",
+      "tag": "🇸🇪 SE | VLESS | @prrofile_purple #2 [fast]",
+      "server": "192.71.82.2",
+      "server_port": 443,
+      "uuid": "a5c05c1e-aa68-443f-8598-09800244bd4b",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "kingcloud.biack.ir",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/LiL?ed"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @netmellianti #1 [medium]",
       "server": "104.105.96.153",
       "server_port": 50567,
       "uuid": "9a794b73-d16d-4d20-8dfa-14985c8b97be",

@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]", "server": "mx.bexumconnect.ltd", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1e06c388-d31c-420e-916a-94a990648e34", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "mx.bexumconnect.ltd"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
