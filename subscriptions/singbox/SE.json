@@ -50,9 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
         "🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]",
         "🇸🇪 SE | VLESS | @prrofile_purple #2 [fast]",
-        "🇸🇪 SE | VLESS | @netmellianti #1 [medium]",
+        "🇸🇪 SE | VLESS | @netmellianti #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #3 [fast]",
@@ -82,9 +83,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
         "🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]",
         "🇸🇪 SE | VLESS | @prrofile_purple #2 [fast]",
-        "🇸🇪 SE | VLESS | @netmellianti #1 [medium]",
+        "🇸🇪 SE | VLESS | @netmellianti #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #3 [fast]",
@@ -111,6 +113,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
+      "server": "swed1.helper-internet.com",
+      "server_port": 443,
+      "uuid": "59da5351-5151-417d-b2f7-6923848b717e",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "swed1.helper-internet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      }
     },
     {
       "type": "vless",
@@ -163,7 +188,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @netmellianti #1 [medium]",
+      "tag": "🇸🇪 SE | VLESS | @netmellianti #1 [fast]",
       "server": "104.105.96.153",
       "server_port": 50567,
       "uuid": "9a794b73-d16d-4d20-8dfa-14985c8b97be",

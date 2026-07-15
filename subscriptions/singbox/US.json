@@ -51,6 +51,8 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | VMESS | @orange_vpns #1 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -63,9 +65,6 @@
         "🇺🇸 US | VLESS | @filterk0sh #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
-        "🇺🇸 US | VLESS | @hope_net #2 [fast]",
-        "🇺🇸 US | VLESS | @hope_net #3 [fast]",
-        "🇺🇸 US | VLESS | @hope_net #4 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -101,6 +100,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | VMESS | @orange_vpns #1 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -113,9 +114,6 @@
         "🇺🇸 US | VLESS | @filterk0sh #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
-        "🇺🇸 US | VLESS | @hope_net #2 [fast]",
-        "🇺🇸 US | VLESS | @hope_net #3 [fast]",
-        "🇺🇸 US | VLESS | @hope_net #4 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -160,6 +158,41 @@
       "authenticated_length": true,
       "network": "tcp",
       "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+      "server": "69.84.182.70",
+      "server_port": 443,
+      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "hd.kpcloud.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/freecodes"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
+      "server": "hayabusa.proxy.rlwy.net",
+      "server_port": 29864,
+      "uuid": "9acca3f9-12d9-47e9-88f1-01fbdab0307f",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "is1-ssl.mzstatic.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "HnuWrv72dR2ZYC-fbpVcPl-Y1ZdNMBUsZuk9GCMvKj0",
+          "short_id": "3e2c8f3cd7b0"
+        }
+      }
     },
     {
       "type": "vless",
@@ -365,69 +398,16 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
-      "server": "69.84.182.131",
-      "server_port": 443,
-      "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
+      "server": "151.101.66.219",
+      "server_port": 80,
+      "uuid": "a3c234cf-36a0-46f1-b853-b065431c62ef",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "xd.ylks.xyz"
-      },
       "transport": {
         "type": "ws",
-        "path": "/freecodes"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @hope_net #2 [fast]",
-      "server": "69.84.182.1",
-      "server_port": 443,
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "hd.ylks.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/freecodes"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @hope_net #3 [fast]",
-      "server": "198.62.62.183",
-      "server_port": 443,
-      "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "xd.ylks.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/freecodes"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @hope_net #4 [fast]",
-      "server": "198.62.62.199",
-      "server_port": 443,
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "kd.ylks.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/freecodes"
+        "headers": {
+          "Host": "wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v08.com"
+        }
       }
     },
     {

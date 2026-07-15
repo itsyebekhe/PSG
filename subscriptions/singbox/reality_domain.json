@@ -53,15 +53,16 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
+        "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
-        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇪🇪 EE | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -73,15 +74,16 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
+        "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
-        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]"
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇪🇪 EE | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -125,6 +127,47 @@
       "transport": {
         "type": "ws",
         "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
+      "server": "swed1.helper-internet.com",
+      "server_port": 443,
+      "uuid": "59da5351-5151-417d-b2f7-6923848b717e",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "swed1.helper-internet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
+      "server": "hayabusa.proxy.rlwy.net",
+      "server_port": 29864,
+      "uuid": "9acca3f9-12d9-47e9-88f1-01fbdab0307f",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "is1-ssl.mzstatic.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "HnuWrv72dR2ZYC-fbpVcPl-Y1ZdNMBUsZuk9GCMvKj0",
+          "short_id": "3e2c8f3cd7b0"
+        }
       }
     },
     {
@@ -239,51 +282,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-      "server": "lt.vrsvpn.com",
-      "server_port": 443,
-      "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wcBiDeIWXUMKp2lkwYGnSOxHLVxS0IDEYeTGaEraUy8",
-          "short_id": "15aa18f816ad1f81"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
-      "server": "node2.aloamin99.ir",
-      "server_port": 443,
-      "uuid": "d52869a2-e78a-4395-9063-4ea2769eee5c",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GwPrEwjLNXHfeDX2txhuJq1f8XMdC2FpZsfj3qiXsQc",
-          "short_id": "da4b0f71d84859a1"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
       "server": "af48e9533d6a23ed.mbmovietime.ir",
       "server_port": 50567,
@@ -329,6 +327,29 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @red2ray #1 [medium]",
+      "server": "est.vrsvpn.com",
+      "server_port": 443,
+      "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4",
+          "short_id": "15aa18f971da1f81"
+        }
       }
     },
     {

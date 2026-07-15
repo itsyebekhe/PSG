@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT | VLESS | @jiedianf #1 [medium]",
-        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
+        "🇱🇹 LT | VLESS | @jiedianf #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT | VLESS | @jiedianf #1 [medium]",
-        "🇱🇹 LT | VLESS | @red2ray #1 [fast]"
+        "🇱🇹 LT | VLESS | @jiedianf #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @jiedianf #1 [medium]",
+      "tag": "🇱🇹 LT | VLESS | @jiedianf #1 [fast]",
       "server": "45.194.10.79",
       "server_port": 8443,
       "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907",
@@ -88,29 +86,6 @@
           "enabled": true,
           "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
           "short_id": "2cfb5a0ae8ab0cb0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-      "server": "lt.vrsvpn.com",
-      "server_port": 443,
-      "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wcBiDeIWXUMKp2lkwYGnSOxHLVxS0IDEYeTGaEraUy8",
-          "short_id": "15aa18f816ad1f81"
         }
       }
     },
