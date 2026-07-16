@@ -53,10 +53,11 @@
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | SS | @hope_net #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [medium]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -69,10 +70,11 @@
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | SS | @hope_net #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [medium]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -125,6 +127,18 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @hope_net #1 [fast]",
+      "server": "193.29.139.215",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "a8bt9fY0QsLS6eLnXUe0Ym",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
       "server": "c1.fineartsnet.org",
@@ -151,13 +165,18 @@
       "server": "static.lotussec.com",
       "server_port": 443,
       "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
-      "network": "tcp",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
+        "server_name": "static.lotussec.com",
         "alpn": [
           "h2"
-        ]
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
@@ -176,7 +195,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
       "server": "195.63.137.251",
       "server_port": 8090,
       "uuid": "ef14c532-b69a-4f46-ae29-272f2fdaf673",

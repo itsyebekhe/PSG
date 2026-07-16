@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "104.239.83.102", "port": 53411, "type": "vless", "skip-cert-verify": true, "uuid": "7c8d83f8-2f16-4d74-9484-118dd14a1ffa", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "icloud.com", "reality-opts": {"public-key": "h2Hufqll77kjQHlxpCkvzZFqH4nr_P7A0EHW4QtJ7WA", "short-id": "0b140b79a1dceaad"}}
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #2 [fast]", "server": "98tr21223dadfadsfas.hardy2venom.ir", "port": 57198, "type": "vless", "skip-cert-verify": true, "uuid": "7c8d83f8-2f16-4d74-9484-118dd14a1ffa", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "roxgdl1HRVFXoZcFVHGGD8k-9JdDBELQs0ebNAzLR0M", "short-id": "e62fbf6f74d73c21"}}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "tr.jorzel.ir", "port": 19302, "type": "vless", "skip-cert-verify": true, "uuid": "70d12802-0dfb-4304-b7a0-574f578cd90f", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.yahoo.com", "reality-opts": {"public-key": "yr3q-vsj5zsbIOSDFaYlKNhGc-C4P2GrnpljVeaAblE", "short-id": "86b5b1f40a5893e1"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

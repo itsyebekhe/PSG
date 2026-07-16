@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇳🇴 NO | VLESS | @red2ray #1 [fast]", "server": "no.cache-4d8a.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bbae962a-b6e9-46e6-990c-6abf13e6b075", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "no.cache-4d8a.com", "reality-opts": {"public-key": "7wLv5M4GZGhqMAGVj9zdHyW-RrSRdrYAu1Aaqa8N1nY", "short-id": "9d84de9d9f7b85e9"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇳🇴 NO | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇳🇴 NO | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
