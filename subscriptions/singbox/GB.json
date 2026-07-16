@@ -51,12 +51,15 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]",
+        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #2 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
-        "🇬🇧 GB | VMESS | @hope_net #1 [fast]",
-        "🇬🇧 GB | SS | @outline_ir #1 [medium]",
-        "🇬🇧 GB | SS | @red2ray #1 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #2 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #3 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -67,12 +70,15 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]",
+        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #2 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
-        "🇬🇧 GB | VMESS | @hope_net #1 [fast]",
-        "🇬🇧 GB | SS | @outline_ir #1 [medium]",
-        "🇬🇧 GB | SS | @red2ray #1 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #2 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #3 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -92,6 +98,18 @@
         "enabled": true,
         "server_name": "186.190.211.188",
         "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+      "server": "82.38.31.176",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
@@ -120,7 +138,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -131,28 +149,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇬🇧 GB | VMESS | @hope_net #1 [fast]",
-      "server": "104.26.15.148",
-      "server_port": 80,
-      "uuid": "f1fb28e5-e5b6-450c-972c-13235c94285c",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
-        "headers": {
-          "Host": "50907082685942059876387799824779.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outline_ir #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @outline_ir #1 [fast]",
       "server": "82.38.31.10",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -164,8 +162,44 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @red2ray #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
       "server": "82.38.31.189",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+      "server": "82.38.31.204",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #2 [fast]",
+      "server": "82.38.31.211",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #3 [fast]",
+      "server": "82.38.31.195",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ",

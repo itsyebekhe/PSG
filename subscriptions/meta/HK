@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇭🇰 HK | VLESS | @nofiltering2 #1 [fast]", "server": "104.171.135.184", "port": 42672, "type": "vless", "skip-cert-verify": true, "uuid": "1008a30d-4e23-485a-8981-fd1f103b7d11", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇭🇰 HK | VLESS | @nofiltering2 #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇭🇰 HK | VLESS | @nofiltering2 #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

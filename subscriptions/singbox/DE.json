@@ -51,21 +51,20 @@
       "outbounds": [
         "auto",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
-        "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #1 [medium]",
+        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -75,21 +74,20 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
-        "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #1 [medium]",
+        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
+        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -99,26 +97,6 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
-      "server": "static.lotussec.com",
-      "server_port": 443,
-      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.lotussec.com",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
       "server": "31.77.161.2",
       "server_port": 8443,
       "uuid": "a6704fb4-4874-4e6b-98f4-571b048e3d90",
@@ -270,8 +248,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @privatevpns #1 [medium]",
-      "server": "18.194.133.160",
+      "tag": "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
+      "server": "3.125.5.177",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
+      "server": "3.127.97.180",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -321,32 +308,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
-      "server": "speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir",
-      "server_port": 2087,
-      "uuid": "efdb11ca-8d37-40ab-9ec2-bdfd72ad4a5b",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/mehdi",
-        "headers": {
-          "Host": "speedtestgoogleyahoobingyandexgmailappleaol.andishehnegariran.ir"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
       "server": "92.223.124.29",
       "server_port": 443,
       "uuid": "e1034c59-c944-4a60-bdba-8f9cea0324b1",
@@ -370,7 +333,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
       "server": "142.132.163.200",
       "server_port": 80,
       "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a",
@@ -387,7 +350,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
       "server": "167.235.205.182",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -400,7 +363,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
       "server": "168.119.174.229",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
