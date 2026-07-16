@@ -4,16 +4,22 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]", "server": "ytm83.sannest.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d29811ad-cdb2-47f4-9af1-d2023c2c726c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [medium]", "server": "91.224.75.127", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "42e2dd45-2323-4929-9ab7-98f43591416e", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yykir7al.ndaiwcu.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "yykir7al.ndaiwcu.workers.dev"}}}
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #2 [fast]", "server": "pol.mrsolo5323.ir", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "592b8484-76af-40b3-8892-a35001ce015a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "nUJ1k6Sb4Guh8dpD6ZE8Sm4SW4yzu-4Dfv1Om8fT4gk", "short-id": "5bc473258a219059"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
+      - '🇵🇱 PL | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
+      - '🇵🇱 PL | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

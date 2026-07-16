@@ -53,11 +53,10 @@
         "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #2 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #2 [fast]",
-        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | VMESS | @hope_net #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [medium]",
+        "🇬🇧 GB | SS | @red2ray #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -70,11 +69,10 @@
         "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #2 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #2 [fast]",
-        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | VMESS | @hope_net #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [medium]",
+        "🇬🇧 GB | SS | @red2ray #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -122,7 +120,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -133,8 +131,28 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇬🇧 GB | VMESS | @hope_net #1 [fast]",
+      "server": "104.26.15.148",
+      "server_port": 80,
+      "uuid": "f1fb28e5-e5b6-450c-972c-13235c94285c",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
+        "headers": {
+          "Host": "50907082685942059876387799824779.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @outline_ir #1 [medium]",
       "server": "82.38.31.10",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -146,39 +164,14 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
-      "server": "82.38.31.57",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @red2ray #2 [fast]",
-      "server": "82.38.31.35",
+      "tag": "🇬🇧 GB | SS | @red2ray #1 [medium]",
+      "server": "82.38.31.189",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "45.86.159.136",
-      "server_port": 2085,
-      "uuid": "1ea1b30b-4114-4a5c-bd3a-9637bdae1948",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
       }
     },
     {
