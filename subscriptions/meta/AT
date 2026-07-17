@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇹 AT | VLESS | @NamiraConfigs #1 [fast]", "server": "212.183.88.30", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "servername": "212.183.88.30", "ws-opts": {"path": "", "headers": {"Host": "vms.lifetime23.workers.dev"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇹 AT | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇹 AT | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

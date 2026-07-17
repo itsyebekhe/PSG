@@ -208,20 +208,24 @@
     {
       "type": "vmess",
       "tag": "🇽🇽 XX | VMESS | @hope_net #1 [fast]",
-      "server": "104.19.45.178",
-      "server_port": 2095,
-      "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
+      "server": "172.67.71.160",
+      "server_port": 443,
+      "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
       "network": "ws",
       "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "obdii.cfd"
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/linkws",
         "headers": {
-          "Host": "onea.flha.ru"
+          "Host": "obdii.cfd"
         }
       }
     },

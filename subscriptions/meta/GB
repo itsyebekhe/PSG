@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
-  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]", "server": "45.86.159.142", "port": 2085, "type": "vless", "skip-cert-verify": true, "uuid": "1ea1b30b-4114-4a5c-bd3a-9637bdae1948", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "vless"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

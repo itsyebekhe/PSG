@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRVM=
+//profile-title: base64:UFNHIHwgSUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 ES | VLESS | @red2ray #1 [fast]",
+        "🇮🇪 IE | SS | @mehrosaboran #1 [slow]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 ES | VLESS | @red2ray #1 [fast]"
+        "🇮🇪 IE | SS | @mehrosaboran #1 [slow]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,29 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 ES | VLESS | @red2ray #1 [fast]",
-      "server": "sp.foot8all.ir",
-      "server_port": 56625,
-      "uuid": "df0e61f6-dd51-49d6-bee7-6d5ff06ae44b",
-      "network": "grpc",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE | SS | @mehrosaboran #1 [slow]",
+      "server": "128.251.12.23",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "lghX3rcG7bqSQ8L6",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM",
-          "short_id": "d5e4b75249e38cbb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "enabled": true
       }
     },
     {

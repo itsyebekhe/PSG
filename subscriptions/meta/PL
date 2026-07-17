@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]", "server": "ytm83.sannest.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d29811ad-cdb2-47f4-9af1-d2023c2c726c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
