@@ -53,9 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
@@ -72,9 +72,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
@@ -127,26 +127,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-      "server": "de2.raketa-balance.com",
-      "server_port": 443,
-      "uuid": "8a22fde8-e72e-4ce2-96f6-285aeffe66a2",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "de2.raketa-balance.com",
-        "insecure": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY",
-          "short_id": "6c6082a2223c1d03"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
       "server": "fetch.anotherok.com",
       "server_port": 443,
@@ -191,6 +171,32 @@
           "public_key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo",
           "short_id": "408aded4"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
+      "server": "main.oneoker.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "main.oneoker.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yiX2T6z3GavNIgnnxsoU57vgq2pdfngXAU83vhBDQlA",
+          "short_id": "a9b0c08836bad3c5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {

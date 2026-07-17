@@ -50,12 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]",
+        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
         "🇬🇧 GB | SS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @outline_ir #2 [fast]",
+        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -65,12 +67,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]",
+        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
         "🇬🇧 GB | SS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @outline_ir #2 [fast]",
+        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -80,7 +84,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @prrofile_purple #1 [medium]",
+      "tag": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
       "server": "186.190.211.188",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -105,6 +109,32 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
+      "server": "main.oneoker.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "main.oneoker.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yiX2T6z3GavNIgnnxsoU57vgq2pdfngXAU83vhBDQlA",
+          "short_id": "a9b0c08836bad3c5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
@@ -117,15 +147,20 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
-      "server": "82.38.31.57",
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
+      "server": "185.238.228.212",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
+      "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+      "network": "ws",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "juzibaipiao.5112233.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -150,6 +185,19 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "45.86.159.140",
+      "server_port": 2085,
+      "uuid": "e6b8004d-2b34-487a-9cd2-d080c4eecf5d",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {

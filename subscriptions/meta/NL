@@ -3,19 +3,28 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "static.lotussec.com"}
   - {"name": "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]", "server": "c1.fineartsnet.org", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "668869b1-860e-4308-b1da-386e222defce", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "Ikaho.soralink.ir"}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "87.199.206.227", "port": 2566, "type": "vless", "skip-cert-verify": true, "uuid": "49bab9b8-5a76-4ef1-a4b4-979d8611acef", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "cs2uxkfzvnJXO3dyLiC1ihoFPwQQlbJknOhNPF0OGyY", "short-id": "b220cebe89a795"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #2 [fast]", "server": "2m1fa.pastilbastani.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "248a5252-9ca2-4612-91c0-7122965854d2", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]'
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]'
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
