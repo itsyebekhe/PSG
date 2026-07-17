@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇮🇹 IT | VLESS | @red2ray #1 [medium]", "server": "31.77.201.85", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "16ad976d-b5df-4b4e-87b6-87cc64ac0a8b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "ag-03.rita-cloud.com", "reality-opts": {"public-key": "yLDI5Qjzn4AHlXVDEXNVcLKAdr_dFeJ3p4eAScGkQjA", "short-id": "0b0aa9caed9d011e"}}
   - {"name": "🇮🇹 IT | VLESS | @outline_ir #1 [fast]", "server": "sca34.mysilipdir.com", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": ""}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇮🇹 IT | VLESS | @red2ray #1 [medium]'
       - '🇮🇹 IT | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇮🇹 IT | VLESS | @red2ray #1 [medium]'
       - '🇮🇹 IT | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

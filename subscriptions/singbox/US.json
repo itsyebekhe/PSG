@@ -67,6 +67,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #4 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #5 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -74,6 +75,7 @@
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -108,6 +110,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #4 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #5 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -115,6 +118,7 @@
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -133,18 +137,20 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-      "server": "hayabusa.proxy.rlwy.net",
-      "server_port": 29864,
-      "uuid": "9acca3f9-12d9-47e9-88f1-01fbdab0307f",
-      "network": "xhttp",
+      "server": "de2.raketa-balance.com",
+      "server_port": 443,
+      "uuid": "8a22fde8-e72e-4ce2-96f6-285aeffe66a2",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "is1-ssl.mzstatic.com",
+        "server_name": "de2.raketa-balance.com",
+        "insecure": true,
         "reality": {
           "enabled": true,
-          "public_key": "HnuWrv72dR2ZYC-fbpVcPl-Y1ZdNMBUsZuk9GCMvKj0",
-          "short_id": "3e2c8f3cd7b0"
+          "public_key": "JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY",
+          "short_id": "6c6082a2223c1d03"
         }
       }
     },
@@ -437,6 +443,19 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @nofiltering2 #5 [fast]",
+      "server": "81.31.211.109",
+      "server_port": 2085,
+      "uuid": "468ad79f-d66a-47eb-874b-b88cd1bb76e3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
       "server": "151.101.64.155",
       "server_port": 80,
@@ -565,6 +584,26 @@
         "path": "/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE?ed=2560",
         "headers": {
           "Host": "JoinBedeeeeee--VPNCUSTOMIZE.ir."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "uuid": "7e544a9d-7667-413b-bbb0-b3bb1aac6d77",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "shegeftihaaa.net"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/rsedgws",
+        "headers": {
+          "Host": "shegeftihaaa.net"
         }
       }
     },

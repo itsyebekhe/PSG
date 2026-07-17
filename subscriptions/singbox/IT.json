@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇮🇹 IT | VLESS | @red2ray #1 [medium]",
         "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,32 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇮🇹 IT | VLESS | @red2ray #1 [medium]",
         "🇮🇹 IT | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @red2ray #1 [medium]",
+      "server": "31.77.201.85",
+      "server_port": 443,
+      "uuid": "16ad976d-b5df-4b4e-87b6-87cc64ac0a8b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ag-03.rita-cloud.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "yLDI5Qjzn4AHlXVDEXNVcLKAdr_dFeJ3p4eAScGkQjA",
+          "short_id": "0b0aa9caed9d011e"
+        }
+      }
     },
     {
       "type": "vless",

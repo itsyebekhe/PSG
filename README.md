@@ -6,7 +6,7 @@
 
 ![Updated](https://img.shields.io/badge/Updated-2026-07-17-blue?style=flat-square)
 ![Configs](https://img.shields.io/badge/Configs-310-green?style=flat-square)
-![Lite](https://img.shields.io/badge/Lite-162-cyan?style=flat-square)
+![Lite](https://img.shields.io/badge/Lite-163-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/Channels-92-orange?style=flat-square)
 ![Countries](https://img.shields.io/badge/Countries-32-purple?style=flat-square)
 
@@ -20,17 +20,17 @@
 
 | | |
 |:---|:---|
-| 🔢 **310** configs | 🪶 **162** lite |
+| 🔢 **310** configs | 🪶 **163** lite |
 | 📡 **92** channels | 🌍 **32** countries |
-| ☁️ **244** Cloudflare | ⚡ **466** fast |
+| ☁️ **244** Cloudflare | ⚡ **444** fast |
 
 <details>
 <summary><b>⚡ Protocol Distribution</b></summary>
 
 > 🔒 **VLESS** `███████████████` 402 (129.7%)
-> ⚡ **REALITY** `█░░░░░░░░░░░░░░` 47 (15.2%)
-> 🛡️ **VMESS** `░░░░░░░░░░░░░░░` 22 (7.1%)
-> 🔑 **SS** `░░░░░░░░░░░░░░░` 19 (6.1%)
+> ⚡ **REALITY** `█░░░░░░░░░░░░░░` 44 (14.2%)
+> 🛡️ **VMESS** `░░░░░░░░░░░░░░░` 23 (7.4%)
+> 🔑 **SS** `░░░░░░░░░░░░░░░` 17 (5.5%)
 > 🌊 **HY2** `░░░░░░░░░░░░░░░` 3 (1.0%)
 
 </details>
@@ -40,27 +40,27 @@
 
 > 🇽🇽 **XX** `████████████` 244
 > 🇸🇪 **SE** `██░░░░░░░░░░` 51
-> 🇺🇸 **US** `██░░░░░░░░░░` 45
-> 🇩🇪 **DE** `█░░░░░░░░░░░` 27
+> 🇺🇸 **US** `██░░░░░░░░░░` 48
+> 🇩🇪 **DE** `█░░░░░░░░░░░` 24
 > 🇮🇷 **IR** `░░░░░░░░░░░░` 18
-> 🇬🇧 **GB** `░░░░░░░░░░░░` 17
-> 🇸🇨 **SC** `░░░░░░░░░░░░` 15
-> 🇳🇱 **NL** `░░░░░░░░░░░░` 12
-> 🇷🇺 **RU** `░░░░░░░░░░░░` 9
+> 🇸🇨 **SC** `░░░░░░░░░░░░` 17
+> 🇬🇧 **GB** `░░░░░░░░░░░░` 14
+> 🇳🇱 **NL** `░░░░░░░░░░░░` 11
+> 🇫🇷 **FR** `░░░░░░░░░░░░` 10
 > 🇨🇦 **CA** `░░░░░░░░░░░░` 9
-> 🇫🇷 **FR** `░░░░░░░░░░░░` 8
-> 🇵🇱 **PL** `░░░░░░░░░░░░` 6
-> 🇦🇪 **AE** `░░░░░░░░░░░░` 6
+> 🇷🇺 **RU** `░░░░░░░░░░░░` 7
+> 🇦🇪 **AE** `░░░░░░░░░░░░` 5
+> 🇵🇱 **PL** `░░░░░░░░░░░░` 4
 > 🇨🇿 **CZ** `░░░░░░░░░░░░` 3
-> 🇱🇹 **LT** `░░░░░░░░░░░░` 2
+> 🇫🇮 **FI** `░░░░░░░░░░░░` 3
 
 </details>
 
 <details>
 <summary><b>🚀 Speed Distribution</b></summary>
 
-> ⚡ **Fast** — 466 configs (< 200ms)
-> 🟡 **Medium** — 26 configs (200-500ms)
+> ⚡ **Fast** — 444 configs (< 200ms)
+> 🟡 **Medium** — 44 configs (200-500ms)
 > 🐢 **Slow** — 1 configs (> 500ms)
 
 </details>
@@ -128,8 +128,8 @@
 
 ## 📡 Channels (92)
 
-1. **@prrofile_purple** — 57 configs — سرور - V2rayNG
-2. **@kafing_2** — 39 configs — کافینگ رایگان
+1. **@prrofile_purple** — 54 configs — سرور - V2rayNG
+2. **@kafing_2** — 38 configs — کافینگ رایگان
 3. **@meli_v2rayng** — 21 configs — V2rayng iran کانال کانفیگ فیلت
 4. **@NamiraConfigs** — 18 configs — NamiraNet
 5. **@lockey_vpn** — 15 configs — LOCKEY_VPN
@@ -152,9 +152,9 @@
 22. **@iranvipnet** — 7 configs — VIP_V2rayNG
 23. **@frev2rayng** — 7 configs — پروکسی ملی Proxy v2rayng کانفی
 24. **@free_vip3** — 7 configs — Free Service
-25. **@father_vpn** — 6 configs — Father vpn Proxy V2rayNg
-26. **@proxy48** — 6 configs — فیلترشکنv2rayپروکسی proxy
-27. **@new_proxy_channel** — 6 configs — New Proxy
+25. **@proxy48** — 6 configs — فیلترشکنv2rayپروکسی proxy
+26. **@new_proxy_channel** — 6 configs — New Proxy
+27. **@father_vpn** — 5 configs — Father vpn Proxy V2rayNg
 28. **@flyv2ray** — 5 configs — FlyV2ray
 29. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
 30. **@jokerv2ray** — 5 configs — JOKER V2Ray کانفیگ اختصاصی
