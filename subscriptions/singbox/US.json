@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -62,7 +63,6 @@
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
@@ -91,6 +91,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -103,7 +104,6 @@
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
@@ -129,6 +129,24 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+      "server": "hayabusa.proxy.rlwy.net",
+      "server_port": 29864,
+      "uuid": "9acca3f9-12d9-47e9-88f1-01fbdab0307f",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "is1-ssl.mzstatic.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "HnuWrv72dR2ZYC-fbpVcPl-Y1ZdNMBUsZuk9GCMvKj0",
+          "short_id": "3e2c8f3cd7b0"
+        }
+      }
     },
     {
       "type": "vless",
@@ -351,24 +369,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "jkrv2ry"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-      "server": "hayabusa.proxy.rlwy.net",
-      "server_port": 29864,
-      "uuid": "9acca3f9-12d9-47e9-88f1-01fbdab0307f",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "is1-ssl.mzstatic.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "HnuWrv72dR2ZYC-fbpVcPl-Y1ZdNMBUsZuk9GCMvKj0",
-          "short_id": "3e2c8f3cd7b0"
-        }
       }
     },
     {
