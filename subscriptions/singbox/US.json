@@ -64,11 +64,13 @@
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @filterk0sh #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #2 [fast]",
+        "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
+        "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
-        "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -76,6 +78,8 @@
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #3 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #4 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -107,11 +111,13 @@
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @filterk0sh #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #2 [fast]",
+        "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
+        "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
-        "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -119,6 +125,8 @@
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #3 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #4 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -363,6 +371,78 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+      "server": "151.101.194.219",
+      "server_port": 443,
+      "uuid": "5d306585-adb5-4698-89fa-9648de4f3a55",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.speedtest.net"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cdn.coinc.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #2 [fast]",
+      "server": "151.101.194.219",
+      "server_port": 443,
+      "uuid": "7e9cfe7c-4cb5-4529-bc49-8b11d2143038",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.net",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=TELEGRAM-MARAMBASHI/?ed=2048",
+        "headers": {
+          "Host": "hostiran.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "9c488e6e-932c-44cb-b488-0b27f591b034",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+      "server": "147.185.161.229",
+      "server_port": 80,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
       "server": "199.232.86.11",
       "server_port": 80,
@@ -431,30 +511,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "jkrv2ry"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
-      "server": "151.101.64.155",
-      "server_port": 80,
-      "uuid": "9c488e6e-932c-44cb-b488-0b27f591b034",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-      "server": "147.185.161.229",
-      "server_port": 80,
-      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true
       }
     },
     {
@@ -569,21 +625,74 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "x4g-production-246b.up.railway.app",
+      "server": "167.82.77.173",
       "server_port": 443,
-      "uuid": "3503d010-b395-960b-e840-db518a918eaa",
-      "network": "tcp",
+      "uuid": "891710f4-45f3-41b1-99a6-6f1510f83c10",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "alpn": [
-          "http%2…"
-        ]
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed",
+        "headers": {
+          "Host": "pan21.global.ssl.fastly.net"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "199.232.29.204",
+      "server_port": 443,
+      "uuid": "cbcf2255-6d66-4039-b7d6-c10d6ffc99e7",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed",
+        "headers": {
+          "Host": "pan1.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #3 [fast]",
+      "server": "199.232.222.178",
+      "server_port": 443,
+      "uuid": "cbcf2255-6d66-4039-b7d6-c10d6ffc99e7",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed",
+        "headers": {
+          "Host": "pan1.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #4 [fast]",
       "server": "x4g-production-ec06.up.railway.app",
       "server_port": 443,
       "uuid": "9497676f-7346-e27b-2d5b-c91c8db590f4",

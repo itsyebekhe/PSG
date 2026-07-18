@@ -4,6 +4,8 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇽🇽 XX | VMESS | @mehrosaboran #1 [fast]", "server": "2cdn.njkrpl.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "", "headers": {"Host": "2cdn.njkrpl.com"}}}
+  - {"name": "🇽🇽 XX | VMESS | @hope_net #1 [fast]", "server": "104.19.46.27", "port": 2086, "type": "vmess", "skip-cert-verify": true, "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "", "headers": {"Host": "104.19.46.27"}}}
+  - {"name": "🇽🇽 XX | VMESS | @hope_net #2 [fast]", "server": "104.19.46.59", "port": 2086, "type": "vmess", "skip-cert-verify": true, "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "", "headers": {"Host": "104.19.46.59"}}}
   - {"name": "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]", "server": "mute-math-d64e.0e503992ad7026.WOrKERs.deV", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/aveiror.com:443/linkvws", "headers": {"Host": "mute-math-d64e.0e503992ad7026.woRKERS.DeV"}}}
   - {"name": "🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]", "server": "104.21.15.212", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkws", "headers": {"Host": "glweidf.sbs"}}}
   - {"name": "🇽🇽 XX | VMESS | @proxy48 #1 [fast]", "server": "172.66.213.38", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "dfbbc8de-8a4f-407d-8069-6de38d83c4e1", "alterId": 0, "cipher": "chacha20-poly1305", "network": "grpc", "tls": true, "grpc-opts": {"grpc-service-name": "WgCmp8p80KDzo64uHE"}}
@@ -17,6 +19,8 @@ proxy-groups:
     type: select
     proxies:
       - '🇽🇽 XX | VMESS | @mehrosaboran #1 [fast]'
+      - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
+      - '🇽🇽 XX | VMESS | @hope_net #2 [fast]'
       - '🇽🇽 XX | VMESS | @iranvpnet #1 [fast]'
       - '🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
@@ -30,6 +34,8 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇽🇽 XX | VMESS | @mehrosaboran #1 [fast]'
+      - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
+      - '🇽🇽 XX | VMESS | @hope_net #2 [fast]'
       - '🇽🇽 XX | VMESS | @iranvpnet #1 [fast]'
       - '🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'

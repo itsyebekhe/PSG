@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
         "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
@@ -60,26 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
         "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
-      "server": "sca34.mysilipdir.com",
-      "server_port": 8880,
-      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
     },
     {
       "type": "vless",

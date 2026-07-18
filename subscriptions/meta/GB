@@ -5,24 +5,18 @@ log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
   - {"name": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]", "server": "main.oneoker.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "main.oneoker.com", "grpc-opts": {"grpc-service-name": "api.v1.StreamService"}, "reality-opts": {"public-key": "yiX2T6z3GavNIgnnxsoU57vgq2pdfngXAU83vhBDQlA", "short-id": "a9b0c08836bad3c5"}}
-  - {"name": "🇬🇧 GB | VLESS | @hope_net #1 [fast]", "server": "185.238.228.212", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "juzibaipiao.5112233.xyz", "ws-opts": {"path": "", "headers": {"Host": "185.238.228.212"}}}
-  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]", "server": "45.86.159.140", "port": 2085, "type": "vless", "skip-cert-verify": true, "uuid": "e6b8004d-2b34-487a-9cd2-d080c4eecf5d", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "vless"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
       - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
-      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
       - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
-      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -14,6 +14,8 @@ proxies:
   - {"name": "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]", "server": "s1.streemmovie.shop", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "76b7834c-75d4-4fce-a90b-2639739e8e3e", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "goo.gl", "reality-opts": {"public-key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo", "short-id": "45352a7b45"}}
   - {"name": "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]", "server": "tv.myblog.org.tr", "port": 25520, "type": "vless", "skip-cert-verify": true, "uuid": "27bb7bca-1335-4f1a-91e6-14c2974cffb1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "yahoo.com", "reality-opts": {"public-key": "CdbZitEgBioklscSAiU8eGR_sRvzLPrH3davu5DrNBc", "short-id": "a8de8bc1e9f5ef"}}
   - {"name": "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]", "server": "tv.myblog.org.tr", "port": 25520, "type": "vless", "skip-cert-verify": true, "uuid": "db1aebd3-7599-4d9e-962f-0004ee87119e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "yahoo.com", "reality-opts": {"public-key": "CdbZitEgBioklscSAiU8eGR_sRvzLPrH3davu5DrNBc", "short-id": "a8de8bc1e9f5ef"}}
+  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "nbg.edgeptr.org", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e97317ee-4562-402e-9623-172b18376290", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.lovelive-anime.jp", "reality-opts": {"public-key": "EtKRG8sxUJsdy-KwUOtYUNJnSn5VMx2sfKvvdpzg2X0", "short-id": "f0eb800bd980b00b"}}
+  - {"name": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]", "server": "naran-de-ow.fizikade.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "993055af-0b6b-4487-8065-8892d0684f64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "V2FVglvB5lw4cSrkhSPRpve27gV2Wp7sO6NUAyxXGQs", "short-id": "68cd"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -29,6 +31,8 @@ proxy-groups:
       - '🇨🇿 CZ | VLESS | @netmellianti #1 [fast]'
       - '🇩🇪 DE | VLESS | @savagev2ray #1 [fast]'
       - '🇩🇪 DE | VLESS | @savagev2ray #2 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
+      - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -44,6 +48,8 @@ proxy-groups:
       - '🇨🇿 CZ | VLESS | @netmellianti #1 [fast]'
       - '🇩🇪 DE | VLESS | @savagev2ray #1 [fast]'
       - '🇩🇪 DE | VLESS | @savagev2ray #2 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
+      - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
