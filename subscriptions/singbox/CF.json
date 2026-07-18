@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VMESS | @mehrosaboran #1 [fast]",
         "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
         "🇽🇽 XX | VLESS | @ehsawn8 #1 [fast]",
@@ -100,7 +99,7 @@
         "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
-        "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
@@ -111,8 +110,6 @@
         "🇽🇽 XX | VLESS | @proxie #4 [fast]",
         "🇽🇽 XX | VLESS | @proxie #5 [fast]",
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @kesslervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kesslervpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kesslervpn #3 [fast]",
@@ -121,6 +118,7 @@
         "🇽🇽 XX | VLESS | @outline_ir #2 [fast]",
         "🇽🇽 XX | VLESS | @outline_ir #3 [fast]",
         "🇽🇽 XX | VLESS | @outline_ir #4 [fast]",
+        "🇽🇽 XX | VLESS | @outline_ir #5 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #3 [fast]",
@@ -214,7 +212,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VMESS | @mehrosaboran #1 [fast]",
         "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
         "🇽🇽 XX | VLESS | @ehsawn8 #1 [fast]",
@@ -264,7 +261,7 @@
         "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
-        "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
@@ -275,8 +272,6 @@
         "🇽🇽 XX | VLESS | @proxie #4 [fast]",
         "🇽🇽 XX | VLESS | @proxie #5 [fast]",
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @kesslervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kesslervpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kesslervpn #3 [fast]",
@@ -285,6 +280,7 @@
         "🇽🇽 XX | VLESS | @outline_ir #2 [fast]",
         "🇽🇽 XX | VLESS | @outline_ir #3 [fast]",
         "🇽🇽 XX | VLESS | @outline_ir #4 [fast]",
+        "🇽🇽 XX | VLESS | @outline_ir #5 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #3 [fast]",
@@ -375,30 +371,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
-      "server": "172.64.145.2",
-      "server_port": 443,
-      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "t1s1.rittbo.kdns.fr",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "t1s1.rittbo.kdns.fr"
-        }
-      }
     },
     {
       "type": "vmess",
@@ -1240,14 +1212,14 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-      "server": "172.66.44.153",
+      "server": "188.114.97.3",
       "server_port": 443,
-      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "uuid": "1c596bf0-74ad-42aa-afd9-f944aa8f5c44",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ziad.pAGeS.dEV",
+        "server_name": "pPaL03.roNOSoc318.worKERs.DeV",
         "alpn": [
           "h2",
           "http/1.1"
@@ -1259,84 +1231,52 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/5gha2IF1vFz6Hmiq?ed=2560",
+        "path": "/gtncdFMCQNcNSYEE?ed=2560",
         "headers": {
-          "Host": "zIAD.PageS.DEv"
+          "Host": "ppaL03.ronosOC318.WORKeRS.dEV"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
-      "server": "172.67.134.51",
-      "server_port": 443,
-      "uuid": "8cdc6e73-cbc6-4d4c-abe2-d2eb29fce6c2",
-      "network": "grpc",
+      "server": "188.114.99.30",
+      "server_port": 8080,
+      "uuid": "01a307f6-c715-47b9-a329-96aef97a39f5",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "noodturk.parsianboton.ir",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
-        "type": "grpc",
-        "service_name": "BuT9Wfa6u5bLQUgA9"
+        "type": "ws",
+        "path": "/TELEGRAM,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-ray,mainv2-raymainv2-raymainv2-raymainv2-raymainv2-raymainv2-raymainv2-raymainv2-raymainv2-raymainv2-raymainv2-ray?ed=2048",
+        "headers": {
+          "Host": "www.speedtest.netmain145.mralpha-vpn.COM"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
-      "server": "104.18.27.94",
-      "server_port": 2083,
-      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "server": "104.18.26.94",
+      "server_port": 80,
+      "uuid": "fed517b1-ca69-48f2-a0e8-b6e56641664b",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "aZadNet-FrEeDom-IRAniAn.PagES.DEv",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "/QXS4if0mTpJECqlO?ed=2560",
+        "path": "/?ed=2560@ELiV2Ray@ELiV2ray@ELiV2ray",
         "headers": {
-          "Host": "aZAdnet-FrEeDom-iranIan.pageS.Dev"
+          "Host": "esetsecuritylicense.kaxlmn.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
-      "server": "adamak1.phacode.ir",
-      "server_port": 2053,
-      "uuid": "f5887006-d4da-48c7-81e7-92595a2703fd",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "adamak.phacode.ir",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "tag": "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
+      "server": "104.21.28.188",
+      "server_port": 8880,
+      "uuid": "c328b3a6-78ce-442e-a5cb-cd752928a3dc",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vmess",
@@ -1564,50 +1504,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "cdn.9889888.xyz",
-      "server_port": 443,
-      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "t1s1.rittbo.kdns.fr"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "t1s1.rittbo.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 443,
-      "uuid": "fbca467d-cb8a-4dac-b513-efe5fdd5c591",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "PlAiN-Shadow-821f.pFegEHeJrrjrJJrj.wOrKeRs.DEV",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiUkhRNE9DUE81UCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @kesslervpn #1 [fast]",
       "server": "188.114.98.0",
       "server_port": 443,
@@ -1710,49 +1606,6 @@
       "tag": "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
       "server": "162.159.38.119",
       "server_port": 443,
-      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "t1s1.rittbo.kdns.fr"
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "t1s1.rittbo.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @outline_ir #2 [fast]",
-      "server": "188.114.97.8",
-      "server_port": 8443,
-      "uuid": "9c63fd59-f9ee-446e-97ec-0bf2de21ed7b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dRy-GLITTer-ef10.gFRYubCdrYujVRtH.WorkErS.DEV",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiVVhGU1pOZ1oxaTFUUldyVCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560",
-        "headers": {
-          "Host": "dry-glitter-ef10.gfryubcdryujvrth.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @outline_ir #3 [fast]",
-      "server": "162.159.38.119",
-      "server_port": 443,
       "uuid": "8ad6f598-cd8d-4fca-848e-05fc9be15ff3",
       "network": "ws",
       "packet_encoding": "xudp",
@@ -1770,7 +1623,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @outline_ir #4 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @outline_ir #2 [fast]",
       "server": "104.18.42.163",
       "server_port": 2095,
       "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
@@ -1781,6 +1634,58 @@
         "path": "/",
         "headers": {
           "Host": "download.pusytroller.gq"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @outline_ir #3 [fast]",
+      "server": "ser.coolfrog-bot.ir",
+      "server_port": 8080,
+      "uuid": "979de091-2f70-40ed-b333-be7e46d4d912",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/steam",
+        "headers": {
+          "Host": "ser.coolfrog-bot.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @outline_ir #4 [fast]",
+      "server": "ser.coolfrog-bot.ir",
+      "server_port": 8080,
+      "uuid": "2f208a6f-e77b-4046-93ce-4cdf6f4b1cdb",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/steam",
+        "headers": {
+          "Host": "ser.coolfrog-bot.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @outline_ir #5 [fast]",
+      "server": "nexusmods.com",
+      "server_port": 443,
+      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "t1s1.rittbo.kdns.fr"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "t1s1.rittbo.kdns.fr"
         }
       }
     },
@@ -2334,14 +2239,14 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "104.16.72.50",
+      "server": "104.21.74.63",
       "server_port": 443,
-      "uuid": "7e544a9d-7667-413b-bbb0-b3bb1aac6d77",
+      "uuid": "72d1797c-cef8-410a-b8fd-db9104dc3cb0",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "shegeftihaaa.net",
+        "server_name": "amooaliii.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -2349,45 +2254,53 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/rsedgws",
+        "path": "/jdhfyws",
         "headers": {
-          "Host": "shegeftihaaa.net"
+          "Host": "amooaliii.net"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "172.67.161.104",
-      "server_port": 8880,
-      "uuid": "11046a7c-fa1b-4653-ab87-400feb465540",
+      "server": "172.66.45.6",
+      "server_port": 443,
+      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "nameless-poetry-12fb.8-0a2.workers.dev"
+        "server_name": "t1s1.rittbo.kdns.fr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed",
         "headers": {
-          "Host": "nameless-poetry-12fb.8-0a2.workers.dev"
+          "Host": "t1s1.rittbo.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #3 [fast]",
-      "server": "172.67.148.26",
-      "server_port": 80,
-      "uuid": "95de071f-747c-dc07-36ac-5c0854a9e50e",
+      "server": "172.64.40.84",
+      "server_port": 443,
+      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "t1s1.rittbo.kdns.fr"
+      },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/fp",
         "headers": {
-          "Host": "restless-boat-ebf2.moha102030.workers.dev"
+          "Host": "t1s1.rittbo.kdns.fr"
         }
       }
     },

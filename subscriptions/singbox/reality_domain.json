@@ -54,17 +54,17 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #6 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -77,17 +77,17 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #6 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]"
+        "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -161,24 +161,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
-      "server": "s1.streemmovie.shop",
-      "server_port": 8443,
-      "uuid": "76b7834c-75d4-4fce-a90b-2639739e8e3e",
-      "network": "xhttp",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+      "server": "api.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yt.be",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
+        "server_name": "api.oneokgames.com",
         "reality": {
           "enabled": true,
-          "public_key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo",
-          "short_id": "408aded4"
+          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+          "short_id": "a30b344b5214d62f"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "push.v2.FeedService"
       }
     },
     {
@@ -209,6 +209,32 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
+      "server": "link.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "link.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x9m8Vxk2YlwXy8CLrHeEMDzLJWuRQ3mh6CPWA34u2yY",
+          "short_id": "ad613873130544ab"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.SyncService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
       "server": "cherry-lt-01.live",
       "server_port": 8443,
@@ -224,6 +250,32 @@
           "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
           "short_id": "2cfb5a0ae8ab0cb0"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @nofiltering2 #6 [fast]",
+      "server": "tracker.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tracker.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+          "short_id": "a30b344b5214d62f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "push.v2.FeedService"
       }
     },
     {
@@ -359,54 +411,6 @@
           "enabled": true,
           "public_key": "CdbZitEgBioklscSAiU8eGR_sRvzLPrH3davu5DrNBc",
           "short_id": "a8de8bc1e9f5ef"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "tracker.oneokgames.com",
-      "server_port": 443,
-      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "tracker.oneokgames.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
-          "short_id": "a30b344b5214d62f"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "push.v2.FeedService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-      "server": "naran-de-ow.fizikade.ir",
-      "server_port": 443,
-      "uuid": "993055af-0b6b-4487-8065-8892d0684f64",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "V2FVglvB5lw4cSrkhSPRpve27gV2Wp7sO6NUAyxXGQs",
-          "short_id": "68cd"
         }
       }
     },
