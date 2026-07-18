@@ -79,6 +79,7 @@
         "🇽🇽 XX | VLESS | @lockey_vpn #4 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #5 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #6 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -96,10 +97,9 @@
         "🇽🇽 XX | VLESS | @free4allvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @miov2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @miov2ray #2 [fast]",
-        "🇽🇽 XX | VMESS | @hope_net #1 [fast]",
-        "🇽🇽 XX | VMESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
@@ -146,6 +146,7 @@
         "🇽🇽 XX | VLESS | @renetvpn #3 [fast]",
         "🇽🇽 XX | VLESS | @renetvpn #4 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
+        "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @eliteproxyv2 #1 [fast]",
         "🇽🇽 XX | VLESS | @garnet_free #1 [fast]",
         "🇽🇽 XX | VLESS | @garnet_free #2 [fast]",
@@ -237,6 +238,7 @@
         "🇽🇽 XX | VLESS | @lockey_vpn #4 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #5 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #6 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -254,10 +256,9 @@
         "🇽🇽 XX | VLESS | @free4allvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @miov2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @miov2ray #2 [fast]",
-        "🇽🇽 XX | VMESS | @hope_net #1 [fast]",
-        "🇽🇽 XX | VMESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
@@ -304,6 +305,7 @@
         "🇽🇽 XX | VLESS | @renetvpn #3 [fast]",
         "🇽🇽 XX | VLESS | @renetvpn #4 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
+        "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @eliteproxyv2 #1 [fast]",
         "🇽🇽 XX | VLESS | @garnet_free #1 [fast]",
         "🇽🇽 XX | VLESS | @garnet_free #2 [fast]",
@@ -884,6 +886,31 @@
     },
     {
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
+      "server": "104.18.151.10",
+      "server_port": 8443,
+      "uuid": "2c67d2be-27fa-49f6-94cd-336d6288ecb0",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "1.paarsa.info",
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "1.paarsa.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
       "server": "104.26.14.85",
       "server_port": 8443,
@@ -1201,50 +1228,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇽🇽 XX | VMESS | @hope_net #1 [fast]",
-      "server": "104.19.46.27",
-      "server_port": 2086,
-      "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇽🇽 XX | VMESS | @hope_net #2 [fast]",
-      "server": "104.19.46.59",
-      "server_port": 2086,
-      "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-      "server": "104.17.148.22",
-      "server_port": 8880,
-      "uuid": "a9e7c2b0-8693-432c-9dc5-36d1bb8476f6",
+      "server": "www.speedtest.net",
+      "server_port": 80,
+      "uuid": "574857fc-98ad-4ce4-8b63-ac3dcf9ceecc",
       "network": "ws",
       "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
-        "path": "/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2056",
+        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2560",
         "headers": {
-          "Host": "www.speedtest.net.A.lightning-6.LiVE."
+          "Host": "shhproxy.com.www.speedtest.net.www.zula.ir.cloudflare.com.developsp.ir."
         }
       }
     },
@@ -1266,6 +1261,27 @@
         "path": "/",
         "headers": {
           "Host": "sni.jpmj.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @configv2rayforfree #1 [fast]",
+      "server": "adamak1.phacode.ir",
+      "server_port": 2053,
+      "uuid": "f5887006-d4da-48c7-81e7-92595a2703fd",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "adamak.phacode.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
@@ -2214,6 +2230,30 @@
         "path": "/VPNCUSTOMIZE,VPNCUSTOMIZE?ed=1080",
         "headers": {
           "Host": "aparat.com.bing.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.netrag.com.px.com.s95017.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.h99.ddns-ip.net."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "104.18.35.13",
+      "server_port": 443,
+      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "t1s1.rittbo.kdns.fr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "t1s1.rittbo.kdns.fr"
         }
       }
     },

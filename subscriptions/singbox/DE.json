@@ -62,6 +62,7 @@
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | SS | @nofilter_v2rayng #1 [fast]",
+        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
@@ -89,6 +90,7 @@
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | SS | @nofilter_v2rayng #1 [fast]",
+        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
@@ -360,17 +362,31 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
+      "server": "18.195.205.161",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "server": "static.lotussec.com",
       "server_port": 443,
       "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
-      "network": "tcp",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
+        "server_name": "static.lotussec.com",
         "alpn": [
           "h2"
-        ]
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
