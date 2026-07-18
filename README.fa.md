@@ -5,10 +5,10 @@
 ### سازنده اشتراک پروکسی
 
 ![Updated](https://img.shields.io/badge/بروزرسانی-2026-07-18-blue?style=flat-square)
-![Configs](https://img.shields.io/badge/کانفیگ-307-green?style=flat-square)
-![Lite](https://img.shields.io/badge/سبک-161-cyan?style=flat-square)
+![Configs](https://img.shields.io/badge/کانفیگ-313-green?style=flat-square)
+![Lite](https://img.shields.io/badge/سبک-162-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/کانال-92-orange?style=flat-square)
-![Countries](https://img.shields.io/badge/کشور-30-purple?style=flat-square)
+![Countries](https://img.shields.io/badge/کشور-29-purple?style=flat-square)
 
 [**English**](README.md)
 
@@ -20,17 +20,17 @@
 
 | | |
 |:---|:---|
-| 🔢 **307** کانفیگ | 🪶 **161** سبک |
-| 📡 **92** کانال | 🌍 **30** کشور |
-| ☁️ **245** کلودفلر | ⚡ **473** سریع |
+| 🔢 **313** کانفیگ | 🪶 **162** سبک |
+| 📡 **92** کانال | 🌍 **29** کشور |
+| ☁️ **247** کلودفلر | ⚡ **487** سریع |
 
 <details>
 <summary><b>⚡ توزیع پروتکل‌ها</b></summary>
 
-> 🔒 **VLESS** `███████████████` 401 (130.6%)
-> ⚡ **REALITY** `█░░░░░░░░░░░░░░` 51 (16.6%)
-> 🛡️ **VMESS** `░░░░░░░░░░░░░░░` 21 (6.8%)
-> 🔑 **SS** `░░░░░░░░░░░░░░░` 19 (6.2%)
+> 🔒 **VLESS** `███████████████` 400 (127.8%)
+> ⚡ **REALITY** `█░░░░░░░░░░░░░░` 51 (16.3%)
+> 🔑 **SS** `░░░░░░░░░░░░░░░` 22 (7.0%)
+> 🛡️ **VMESS** `░░░░░░░░░░░░░░░` 21 (6.7%)
 > 🌊 **HY2** `░░░░░░░░░░░░░░░` 3 (1.0%)
 
 </details>
@@ -38,12 +38,12 @@
 <details>
 <summary><b>🌍 توزیع کشورها</b></summary>
 
-> 🇽🇽 **XX** `████████████` 245
+> 🇽🇽 **XX** `████████████` 247
 > 🇸🇪 **SE** `██░░░░░░░░░░` 51
 > 🇺🇸 **US** `██░░░░░░░░░░` 50
-> 🇩🇪 **DE** `█░░░░░░░░░░░` 28
-> 🇮🇷 **IR** `░░░░░░░░░░░░` 17
-> 🇬🇧 **GB** `░░░░░░░░░░░░` 17
+> 🇩🇪 **DE** `█░░░░░░░░░░░` 25
+> 🇮🇷 **IR** `░░░░░░░░░░░░` 19
+> 🇬🇧 **GB** `░░░░░░░░░░░░` 19
 > 🇸🇨 **SC** `░░░░░░░░░░░░` 14
 > 🇳🇱 **NL** `░░░░░░░░░░░░` 13
 > 🇫🇷 **FR** `░░░░░░░░░░░░` 10
@@ -52,15 +52,15 @@
 > 🇵🇱 **PL** `░░░░░░░░░░░░` 6
 > 🇦🇪 **AE** `░░░░░░░░░░░░` 5
 > 🇨🇿 **CZ** `░░░░░░░░░░░░` 3
-> 🇱🇻 **LV** `░░░░░░░░░░░░` 3
+> 🇱🇹 **LT** `░░░░░░░░░░░░` 2
 
 </details>
 
 <details>
 <summary><b>🚀 توزیع سرعت</b></summary>
 
-> ⚡ **سریع** — 473 کانفیگ (کمتر از ۲۰۰ms)
-> 🟡 **متوسط** — 21 کانفیگ (۲۰۰-۵۰۰ms)
+> ⚡ **سریع** — 487 کانفیگ (کمتر از ۲۰۰ms)
+> 🟡 **متوسط** — 9 کانفیگ (۲۰۰-۵۰۰ms)
 > 🐢 **کند** — 1 کانفیگ (بیش از ۵۰۰ms)
 
 </details>
@@ -128,10 +128,10 @@
 
 ## 📡 کانال‌ها (92)
 
-1. **@prrofile_purple** — 63 configs — سرور - V2rayNG
+1. **@prrofile_purple** — 60 configs — سرور - V2rayNG
 2. **@kafing_2** — 38 configs — کافینگ رایگان
 3. **@meli_v2rayng** — 21 configs — V2rayng iran کانال کانفیگ فیلت
-4. **@NamiraConfigs** — 18 configs — NamiraNet
+4. **@NamiraConfigs** — 17 configs — NamiraNet
 5. **@lockey_vpn** — 15 configs — LOCKEY_VPN
 6. **@manstervpn** — 15 configs — KingVPN
 7. **@nepo_v2ray** — 13 configs — Nepo_v2ray
@@ -156,8 +156,8 @@
 26. **@proxy48** — 6 configs — فیلترشکنv2rayپروکسی proxy
 27. **@new_proxy_channel** — 6 configs — New Proxy
 28. **@flyv2ray** — 5 configs — FlyV2ray
-29. **@jokerv2ray** — 5 configs — JOKER V2Ray کانفیگ اختصاصی
-30. **@netfreedom0** — 5 configs — NetFreedom
+29. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
+30. **@jokerv2ray** — 5 configs — JOKER V2Ray کانفیگ اختصاصی
 
 ---
 

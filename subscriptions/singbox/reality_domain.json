@@ -55,13 +55,15 @@
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
@@ -76,13 +78,15 @@
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇨🇿 CZ | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -174,6 +178,51 @@
           "enabled": true,
           "public_key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo",
           "short_id": "408aded4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+      "server": "api.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+          "short_id": "a30b344b5214d62f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "push.v2.FeedService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
+      "server": "cherry-lt-01.live",
+      "server_port": 8443,
+      "uuid": "a1472a7d-ca70-4490-a5a5-81537599861c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandex.net",
+        "reality": {
+          "enabled": true,
+          "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
+          "short_id": "2cfb5a0ae8ab0cb0"
         }
       }
     },
@@ -315,25 +364,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "nbg.edgeptr.org",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "tracker.oneokgames.com",
       "server_port": 443,
-      "uuid": "e97317ee-4562-402e-9623-172b18376290",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.lovelive-anime.jp",
+        "server_name": "tracker.oneokgames.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EtKRG8sxUJsdy-KwUOtYUNJnSn5VMx2sfKvvdpzg2X0",
-          "short_id": "f0eb800bd980b00b"
+          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+          "short_id": "a30b344b5214d62f"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "push.v2.FeedService"
       }
     },
     {

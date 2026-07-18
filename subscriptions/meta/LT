@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]", "server": "cherry-lt-01.live", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "a1472a7d-ca70-4490-a5a5-81537599861c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA", "short-id": "2cfb5a0ae8ab0cb0"}}
   - {"name": "🇱🇹 LT | VLESS | @jiedianf #1 [fast]", "server": "45.194.10.79", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]'
       - '🇱🇹 LT | VLESS | @jiedianf #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]'
       - '🇱🇹 LT | VLESS | @jiedianf #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
