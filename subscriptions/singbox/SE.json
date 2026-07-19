@@ -52,6 +52,7 @@
         "auto",
         "🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]",
         "🇸🇪 SE | VLESS | @prrofile_purple #2 [fast]",
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @free1_vpn #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
@@ -84,6 +85,7 @@
       "outbounds": [
         "🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]",
         "🇸🇪 SE | VLESS | @prrofile_purple #2 [fast]",
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @free1_vpn #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
@@ -159,6 +161,32 @@
       "transport": {
         "type": "ws",
         "path": "/LiL?ed"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
+      "server": "static.oneoneok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.oneoneok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oVbonPGBPZ_qGyhHPe-LwsyPc0oobby2YknsPE90iRo",
+          "short_id": "0b46e0908285b078"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {

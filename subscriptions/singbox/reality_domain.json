@@ -54,11 +54,12 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #6 [fast]",
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
@@ -77,11 +78,12 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #6 [fast]",
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
         "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
@@ -161,7 +163,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
       "server": "api.oneokgames.com",
       "server_port": 443,
       "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
@@ -276,6 +278,32 @@
       "transport": {
         "type": "grpc",
         "service_name": "push.v2.FeedService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
+      "server": "static.oneoneok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.oneoneok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oVbonPGBPZ_qGyhHPe-LwsyPc0oobby2YknsPE90iRo",
+          "short_id": "0b46e0908285b078"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {
