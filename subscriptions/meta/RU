@@ -5,21 +5,18 @@ log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "45.8.211.217", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vangoghhh.info", "ws-opts": {"path": "", "headers": {"Host": "vangoghhh.info"}}}
   - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [medium]", "server": "217.198.5.45", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a3114afe-ea45-4705-b3c5-4e7162fad687", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "flow": "xtls-rprx-vision", "servername": "rf1.o4ka-internet.com", "reality-opts": {"public-key": "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8", "short-id": "5629431325884ff0"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

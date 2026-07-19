@@ -4,22 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]", "server": "fi.linuxbase.ir", "port": 1152, "type": "vless", "skip-cert-verify": true, "uuid": "1e7e0537-c23d-43c2-afd5-4d7753831278", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "YzQz4D9KFIpJ5YB4W5UqPs8wgowbeujf9KEOyuATSE4", "short-id": "e5115b6a2127146d"}}
-  - {"name": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]", "server": "65.109.219.124", "port": 52525, "type": "vmess", "skip-cert-verify": true, "uuid": "358f44f0-2686-46c8-9cc6-ec52abd66df4", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
-  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]", "server": "65.109.219.124", "port": 10485, "type": "vless", "skip-cert-verify": true, "uuid": "358f44f0-2686-46c8-9cc6-ec52abd66df4", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]", "server": "mx.bexumconnect.ltd", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1e06c388-d31c-420e-916a-94a990648e34", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "mx.bexumconnect.ltd"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]'
-      - '🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]'
+      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]'
-      - '🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]'
+      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
