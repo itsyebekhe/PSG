@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]", "server": "main.oneoker.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "main.oneoker.com", "grpc-opts": {"grpc-service-name": "api.v1.StreamService"}, "reality-opts": {"public-key": "yiX2T6z3GavNIgnnxsoU57vgq2pdfngXAU83vhBDQlA", "short-id": "a9b0c08836bad3c5"}}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "8.208.25.123", "port": 10002, "type": "vless", "skip-cert-verify": true, "uuid": "2e8dd587-3540-4066-8e19-b266043e096f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "G90QHqX9hS3dcSfGKSZtxfjW_eFiaIeEMzw3BKIzwkg", "short-id": "8a430229"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

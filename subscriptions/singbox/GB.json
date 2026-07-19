@@ -51,8 +51,8 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -63,8 +63,8 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -85,32 +85,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
-      "server": "main.oneoker.com",
-      "server_port": 443,
-      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "main.oneoker.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "yiX2T6z3GavNIgnnxsoU57vgq2pdfngXAU83vhBDQlA",
-          "short_id": "a9b0c08836bad3c5"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "api.v1.StreamService"
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
@@ -120,6 +94,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "8.208.25.123",
+      "server_port": 10002,
+      "uuid": "2e8dd587-3540-4066-8e19-b266043e096f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G90QHqX9hS3dcSfGKSZtxfjW_eFiaIeEMzw3BKIzwkg",
+          "short_id": "8a430229"
+        }
       }
     },
     {

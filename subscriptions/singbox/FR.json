@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
+        "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -64,9 +64,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
+        "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -78,7 +78,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
       "server": "151.80.147.30",
       "server_port": 443,
       "uuid": "a1750ade-801f-4e3e-a5d2-de825771205d",
@@ -122,12 +122,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "35.180.184.27",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "eventloophub.org",
+      "server_port": 8443,
+      "uuid": "aa28b265-baff-42e4-927e-7a8dee0ef623",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "eventloophub.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
     },
     {
       "type": "vless",
