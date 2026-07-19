@@ -51,14 +51,12 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+        "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -68,14 +66,12 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+        "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -96,21 +92,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
-      "server": "static.lotussec.com",
-      "server_port": 443,
-      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
-      "network": "xhttp",
+      "tag": "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
+      "server": "147.45.136.213",
+      "server_port": 40443,
+      "uuid": "f040b49a-14d3-4b83-af82-1f84ec7317c2",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "static.lotussec.com",
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1XGOxBopp223HFaTlswL3QE_1KW3WLgEbcHMA5cX9iM",
+          "short_id": "80ba"
         }
       }
     },
@@ -168,38 +167,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-      "server": "206.71.158.124",
-      "server_port": 443,
-      "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dey.lnmarketplace.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outline_ir #1 [fast]",
-      "server": "158.173.20.208",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
       "server": "193.142.59.97",
@@ -215,7 +182,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

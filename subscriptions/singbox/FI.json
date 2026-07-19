@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQ1k=
+//profile-title: base64:UFNHIHwgRkk=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+        "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
+        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]"
+        "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
+        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,11 +72,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
-      "server": "germany.fast.hosting-ip.com",
-      "server_port": 80,
-      "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",
-      "network": "xhttp",
+      "tag": "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
+      "server": "fi.linuxbase.ir",
+      "server_port": 1152,
+      "uuid": "1e7e0537-c23d-43c2-afd5-4d7753831278",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YzQz4D9KFIpJ5YB4W5UqPs8wgowbeujf9KEOyuATSE4",
+          "short_id": "e5115b6a2127146d"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
+      "server": "65.109.219.124",
+      "server_port": 52525,
+      "uuid": "358f44f0-2686-46c8-9cc6-ec52abd66df4",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [medium]",
+      "server": "65.109.219.124",
+      "server_port": 10485,
+      "uuid": "358f44f0-2686-46c8-9cc6-ec52abd66df4",
+      "network": "tcp",
       "packet_encoding": "xudp"
     },
     {

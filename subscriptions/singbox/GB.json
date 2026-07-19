@@ -51,8 +51,9 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [medium]",
+        "🇬🇧 GB | SS | @red2ray #2 [medium]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -63,8 +64,9 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [medium]",
+        "🇬🇧 GB | SS | @red2ray #2 [medium]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -86,37 +88,38 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-      "server": "82.38.31.205",
+      "tag": "🇬🇧 GB | SS | @red2ray #1 [medium]",
+      "server": "82.38.31.26",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
       "tls": {
         "enabled": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "8.208.25.123",
-      "server_port": 10002,
-      "uuid": "2e8dd587-3540-4066-8e19-b266043e096f",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @red2ray #2 [medium]",
+      "server": "82.38.31.7",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "G90QHqX9hS3dcSfGKSZtxfjW_eFiaIeEMzw3BKIzwkg",
-          "short_id": "8a430229"
-        }
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
+      "server": "82.38.31.181",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

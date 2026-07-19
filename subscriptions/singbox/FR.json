@@ -51,11 +51,13 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
+        "🇫🇷 FR | VLESS | @netmellianti #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -65,11 +67,13 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
+        "🇫🇷 FR | VLESS | @netmellianti #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -79,6 +83,15 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
+      "server": "45.154.96.227",
+      "server_port": 443,
+      "uuid": "6de9e008-6a98-4d2c-bb8f-6d2ea3ca905a",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @netmellianti #2 [fast]",
       "server": "151.80.147.30",
       "server_port": 443,
       "uuid": "a1750ade-801f-4e3e-a5d2-de825771205d",
@@ -122,24 +135,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "eventloophub.org",
-      "server_port": 8443,
-      "uuid": "aa28b265-baff-42e4-927e-7a8dee0ef623",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "eventloophub.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+      "server": "15.224.94.156",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+      "server": "13.37.254.201",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -183,7 +193,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

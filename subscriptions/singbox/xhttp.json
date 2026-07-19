@@ -55,22 +55,20 @@
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #3 [fast]",
         "🇽🇽 XX | VLESS | @proxie #4 [fast]",
         "🇽🇽 XX | VLESS | @proxie #5 [fast]",
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
-        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -84,22 +82,20 @@
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #3 [fast]",
         "🇽🇽 XX | VLESS | @proxie #4 [fast]",
         "🇽🇽 XX | VLESS | @proxie #5 [fast]",
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
-        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]"
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -162,6 +158,27 @@
       "uuid": "02d87d00-c769-48d8-91cb-bd05e2f62790",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "69.46.46.56",
+      "server_port": 443,
+      "uuid": "ba6b41b3-509e-9624-ea36-c47e7af8919a",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x4g-production-5eb20.up.railway.app",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "vless",
@@ -301,26 +318,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-      "server": "206.71.158.124",
-      "server_port": 443,
-      "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dey.lnmarketplace.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
       "server": "45.130.125.160",
       "server_port": 443,
@@ -370,26 +367,6 @@
       "uuid": "qeshmserver",
       "network": "xhttp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
-      "server": "static.lotussec.com",
-      "server_port": 443,
-      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.lotussec.com",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
     },
     {
       "type": "vless",
@@ -462,15 +439,6 @@
           "fingerprint": "firefox"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
-      "server": "germany.fast.hosting-ip.com",
-      "server_port": 80,
-      "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
