@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇼 TW | VLESS | @hope_net #1 [fast]", "server": "114.34.202.224", "port": 10004, "type": "vless", "skip-cert-verify": true, "uuid": "93b99881-df03-4597-9146-0c11e46387f7", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "cfv.cscfwoker.fun", "ws-opts": {"path": "", "headers": {"Host": "114.34.202.224"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇼 TW | VLESS | @hope_net #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇼 TW | VLESS | @hope_net #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
