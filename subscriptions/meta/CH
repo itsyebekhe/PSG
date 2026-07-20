@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇨🇭 CH | VLESS | @orange_vpns #1 [fast]", "server": "179.237.75.199", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "t.me.TradeIP", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "HL-IrEO6_mXNGgiBztNWX0VY3nb-JQ3thK_7gFbk4Bg", "short-id": "218cdbeddf1a"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇨🇭 CH | VLESS | @orange_vpns #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇨🇭 CH | VLESS | @orange_vpns #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

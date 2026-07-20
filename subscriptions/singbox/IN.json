@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 IN | VMESS | @NamiraConfigs #1 [slow]",
         "🇮🇳 IN | SS | @netfreedom0 #1 [medium]",
         "direct"
       ],
@@ -60,30 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 IN | VMESS | @NamiraConfigs #1 [slow]",
         "🇮🇳 IN | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 IN | VMESS | @NamiraConfigs #1 [slow]",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
     },
     {
       "type": "shadowsocks",
