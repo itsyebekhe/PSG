@@ -53,6 +53,7 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
@@ -72,6 +73,7 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
@@ -123,6 +125,28 @@
       "transport": {
         "type": "ws",
         "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+      "server": "api.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.oneokgames.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+          "short_id": "a30b344b5214d62f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "push.v2.FeedService"
       }
     },
     {

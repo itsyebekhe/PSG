@@ -51,6 +51,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
+        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]"
+        "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
+        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -88,6 +92,28 @@
           "short_id": "e5115b6a2127146d"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
+      "server": "65.109.219.124",
+      "server_port": 10485,
+      "uuid": "bf973a3b-b285-4369-8c01-1f1e50024a38",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
+      "server": "65.109.219.124",
+      "server_port": 52525,
+      "uuid": "358f44f0-2686-46c8-9cc6-ec52abd66df4",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
     },
     {
       "type": "direct",

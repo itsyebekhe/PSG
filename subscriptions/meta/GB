@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "91.193.58.201", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vangoghhh.info", "ws-opts": {"path": "", "headers": {"Host": "vangoghhh.info"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

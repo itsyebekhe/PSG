@@ -54,7 +54,8 @@
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
@@ -69,7 +70,8 @@
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
@@ -148,26 +150,37 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "188.164.248.140",
-      "server_port": 2083,
-      "uuid": "663cf772-829c-4bc6-893d-b7d021d42f5b",
-      "network": "ws",
+      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+      "server": "static.lotussec.com",
+      "server_port": 443,
+      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "vp3.cc.cd",
+        "server_name": "static.lotussec.com",
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vp3.cc.cd"
-        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
+      "server": "static.lotussec.com",
+      "server_port": 443,
+      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "alpn": [
+          "h2"
+        ]
       }
     },
     {
