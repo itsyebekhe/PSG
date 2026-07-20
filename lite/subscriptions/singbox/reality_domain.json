@@ -53,7 +53,8 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
@@ -71,7 +72,8 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇱🇹 LT | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
@@ -125,28 +127,54 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-      "server": "fetch.anotherok.com",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+      "server": "api.oneokgames.com",
       "server_port": 443,
       "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
       "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "fetch.anotherok.com",
+        "server_name": "api.oneokgames.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "U7O4wCUNinuk5M-ADV1e4sJ_iA7-JVBEXB8nev6kzzs",
-          "short_id": "335555b164619360"
+          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+          "short_id": "a30b344b5214d62f"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "api.v1.StreamService"
+        "service_name": "push.v2.FeedService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
+      "server": "link.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "link.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x9m8Vxk2YlwXy8CLrHeEMDzLJWuRQ3mh6CPWA34u2yY",
+          "short_id": "ad613873130544ab"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.SyncService"
       }
     },
     {

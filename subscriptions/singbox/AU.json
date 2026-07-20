@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 AU | VLESS | @NamiraConfigs #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "direct"
       ],
@@ -60,26 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 AU | VLESS | @NamiraConfigs #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 AU | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "82.115.16.211",
-      "server_port": 2082,
-      "uuid": "1c404fde-0aa5-482c-ab00-0b34db703ac8",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
     },
     {
       "type": "vmess",
