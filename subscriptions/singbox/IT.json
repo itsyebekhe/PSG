@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRkk=
+//profile-title: base64:UFNHIHwgSVQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
-        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
+        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
+        "🇮🇹 IT | VLESS | @outline_ir #2 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
-        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]"
+        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
+        "🇮🇹 IT | VLESS | @outline_ir #2 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,39 +72,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @prrofile_purple #1 [fast]",
-      "server": "fi.linuxbase.ir",
-      "server_port": 1152,
-      "uuid": "1e7e0537-c23d-43c2-afd5-4d7753831278",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
+      "server": "151.115.167.97",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "YzQz4D9KFIpJ5YB4W5UqPs8wgowbeujf9KEOyuATSE4",
-          "short_id": "e5115b6a2127146d"
-        }
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
-      "server": "65.109.219.124",
-      "server_port": 52525,
-      "uuid": "358f44f0-2686-46c8-9cc6-ec52abd66df4",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @outline_ir #2 [fast]",
+      "server": "ronaldo15.fordnsdirect.shop",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "151.115.166.69",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
     },
     {
       "type": "direct",

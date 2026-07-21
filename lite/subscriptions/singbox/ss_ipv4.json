@@ -55,8 +55,9 @@
         "KingRezaPahlavi",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -70,8 +71,9 @@
         "KingRezaPahlavi",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
-        "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]"
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -143,7 +145,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
       "server": "193.29.139.235",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -160,6 +162,18 @@
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @outline_ir #1 [fast]",
+      "server": "82.38.31.212",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
       "network": "tcp",
       "tls": {
         "enabled": true

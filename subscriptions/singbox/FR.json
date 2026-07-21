@@ -50,14 +50,15 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @configasli #1 [fast]",
-        "🇫🇷 FR | VLESS | @netmellianti #1 [medium]",
+        "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -66,19 +67,46 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @configasli #1 [fast]",
-        "🇫🇷 FR | VLESS | @netmellianti #1 [medium]",
+        "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+      "server": "b95a29ad12426134.nimaghaffarzadeh.ir",
+      "server_port": 56625,
+      "uuid": "f3d05beb-ea6f-46c9-afc8-fe98c191f82e",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM",
+          "short_id": "db418071da7fcb7b"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
     },
     {
       "type": "vless",
@@ -104,7 +132,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "15.237.47.97",
+      "server": "15.188.114.69",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -113,7 +141,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "15.188.114.69",
+      "server": "15.188.124.12",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -143,7 +171,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @netmellianti #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
       "server": "151.80.147.30",
       "server_port": 443,
       "uuid": "a1750ade-801f-4e3e-a5d2-de825771205d",
@@ -182,7 +210,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -206,7 +234,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",
