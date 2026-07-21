@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
         "direct"
       ],
@@ -60,7 +61,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "🇹🇷 TR | VLESS | @netmellianti #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -70,7 +72,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "ger1.fastcodz.ir",
+      "server_port": 52077,
+      "uuid": "99cb4cc4-e435-4626-ad83-8fc181836fbd",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9TjYilelwbIgUs6du2chsTvUyv_TemHoAJuVbsdYRUY",
+          "short_id": "c1fcab160b4c8bed"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
       "server": "213.156.152.221",
       "server_port": 8080,
       "uuid": "7377227f-358d-497a-8a83-52460b905e80",

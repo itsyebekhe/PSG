@@ -51,10 +51,10 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [slow]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | SS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
@@ -66,10 +66,10 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [slow]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | SS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | HY2 | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
@@ -92,7 +92,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [slow]",
       "server": "193.29.139.235",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -125,37 +125,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-      "server": "static.lotussec.com",
-      "server_port": 443,
-      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "sut.sesssutacc.ir",
+      "server_port": 8443,
+      "uuid": "0271655d-e862-4329-b303-076e96c4ede1",
       "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "static.lotussec.com",
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ezGpPvn1Rvoid-QVp70I7lTc5B3tx7jYXc6_JoVeQWk",
+          "short_id": "297daa14f06e95"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]",
-      "server": "static.lotussec.com",
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @NamiraConfigs #1 [fast]",
+      "server": "switcher-nick-croquet.freesocks.work",
       "server_port": 443,
-      "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5",
+      "method": "chacha20-ietf-poly1305",
+      "password": "9tqhMdIrTkgQ46PvhyAtMH",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "alpn": [
-          "h2"
-        ]
+        "enabled": true
       }
     },
     {
