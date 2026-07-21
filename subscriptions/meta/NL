@@ -3,34 +3,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]", "server": "147.45.136.213", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "f040b49a-14d3-4b83-af82-1f84ec7317c2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "1XGOxBopp223HFaTlswL3QE_1KW3WLgEbcHMA5cX9iM", "short-id": "80ba"}}
   - {"name": "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]", "server": "c1.fineartsnet.org", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "668869b1-860e-4308-b1da-386e222defce", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "Ikaho.soralink.ir"}
   - {"name": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "static.lotussec.com"}
   - {"name": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]", "server": "static.lotussec.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ca2c927-f8ba-4475-94cb-f85e0fb03ff5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "147.45.136.213", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "f040b49a-14d3-4b83-af82-1f84ec7317c2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "1XGOxBopp223HFaTlswL3QE_1KW3WLgEbcHMA5cX9iM", "short-id": "80ba"}}
-  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "45.88.172.154", "port": 11594, "type": "vless", "skip-cert-verify": true, "uuid": "0370b162-baff-4757-86cc-cce4bf07f6f1", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]'
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
       - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]'
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
       - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #2 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

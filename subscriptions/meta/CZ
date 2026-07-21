@@ -5,18 +5,21 @@ log-level: info
 proxies:
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
   - {"name": "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]", "server": "s1.streemmovie.shop", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "76b7834c-75d4-4fce-a90b-2639739e8e3e", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "goo.gl", "reality-opts": {"public-key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo", "short-id": "45352a7b45"}}
+  - {"name": "🇨🇿 CZ | VLESS | @NamiraConfigs #1 [fast]", "server": "193.124.57.208", "port": 20342, "type": "vless", "skip-cert-verify": true, "uuid": "5eecb34f-c905-4c77-b7fb-d830b451cd11", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
       - '🇨🇿 CZ | VLESS | @netmellianti #1 [fast]'
+      - '🇨🇿 CZ | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
       - '🇨🇿 CZ | VLESS | @netmellianti #1 [fast]'
+      - '🇨🇿 CZ | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
