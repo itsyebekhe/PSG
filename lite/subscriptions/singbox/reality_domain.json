@@ -53,14 +53,13 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
-        "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
-        "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
+        "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -72,14 +71,13 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @savagev2ray #1 [fast]",
-        "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
-        "🇩🇪 DE | VLESS | @netmellianti #1 [fast]"
+        "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -127,24 +125,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-      "server": "api.oneokgames.com",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+      "server": "de.edge-9d7c.com",
       "server_port": 443,
-      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
-      "network": "grpc",
+      "uuid": "bbae962a-b6e9-46e6-990c-6abf13e6b075",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "api.oneokgames.com",
+        "server_name": "de.edge-9d7c.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
-          "short_id": "a30b344b5214d62f"
+          "public_key": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
+          "short_id": "9d84de9d9f7b85e9"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "push.v2.FeedService"
       }
     },
     {
@@ -275,45 +274,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇱 AL | VLESS | @netmellianti #1 [fast]",
-      "server": "albanyao.consolgame.ir",
-      "server_port": 1002,
-      "uuid": "7691d590-be40-411f-ab11-1e1ab4b03570",
-      "network": "tcp",
+      "tag": "🇨🇿 CZ | VLESS | @netmellianti #1 [fast]",
+      "server": "s1.streemmovie.shop",
+      "server_port": 8443,
+      "uuid": "76b7834c-75d4-4fce-a90b-2639739e8e3e",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "goo.gl",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "E5n-njx-57MxDzVpCwsqmc9wKeYRjyd2tg2yAUJ_sFU",
-          "short_id": "28711478c2a20a18"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-      "server": "mreal2.varzesh361.ir",
-      "server_port": 1153,
-      "uuid": "7691d590-be40-411f-ab11-1e1ab4b03570",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "E5n-njx-57MxDzVpCwsqmc9wKeYRjyd2tg2yAUJ_sFU",
-          "short_id": "28711478c2a20a18"
+          "public_key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo",
+          "short_id": "45352a7b45"
         }
       }
     },
