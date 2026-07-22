@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]", "server": "144.225.65.176", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "680071d4-42e8-4931-ad42-592d21721da6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "yahoo.com", "reality-opts": {"public-key": "CAbWQrIYdOiesS2NdHLVJm0yPB9w4yCgryBrsnmxLU8", "short-id": "077b6fec7a"}}
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "panel1.molock.click", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5b8eb4fd-c93c-4149-b4ae-167df0db7d84", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "Vy3SV8aqcsKp3Xjtib_tTLj-n7FGLOOqxuCI-8aWHzU", "short-id": "8d8017ae"}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "panel1.molock.click", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5b8eb4fd-c93c-4149-b4ae-167df0db7d84", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "Vy3SV8aqcsKp3Xjtib_tTLj-n7FGLOOqxuCI-8aWHzU", "short-id": "8d8017ae"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @orange_vpns #1 [medium]'
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @orange_vpns #1 [medium]'
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
