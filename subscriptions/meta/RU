@@ -3,20 +3,26 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "ru.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a96373c2-6c78-44dc-ac4b-33fd3d32c68b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "findmypackets.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "93ae75024604f796"}}
-  - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
+  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]", "server": "ru.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a96373c2-6c78-44dc-ac4b-33fd3d32c68b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "findmypackets.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "93ae75024604f796"}}
+  - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [medium]", "server": "130.49.219.126", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1bfd045c-3c64-4f27-874f-8e0b9da23fc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "sun6-22.userapi.com", "reality-opts": {"public-key": "fp_r7Tz3YdOZUY1wmo21U5xAoqyhHhb8l0q-py3JARo", "short-id": "f5e89824"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #2 [medium]", "server": "94.126.204.93", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "971adc95-c9f1-437c-8964-8dbdaaaec2b8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandexcloud.net", "reality-opts": {"public-key": "97m6bc1WSj1DJ-QzBU6Fx5s0NxA4uSvVKTcZAcjlHF8", "short-id": "138dcd25cce7ab07"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
-      - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [medium]'
+      - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
-      - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [medium]'
+      - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

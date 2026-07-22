@@ -50,14 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]",
+        "🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]",
         "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @hope_net #1 [fast]",
-        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
+        "🇬🇧 GB | SS | @NamiraConfigs #2 [medium]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -67,14 +67,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]",
+        "🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]",
         "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @hope_net #1 [fast]",
-        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
+        "🇬🇧 GB | SS | @NamiraConfigs #2 [medium]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -84,7 +84,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]",
+      "tag": "🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]",
       "server": "186.190.211.188",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -124,7 +124,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -136,19 +136,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @hope_net #1 [fast]",
-      "server": "141.98.101.182",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @father_vpn #1 [medium]",
       "server": "82.38.31.176",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -160,8 +148,8 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
-      "server": "82.38.31.195",
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
+      "server": "82.38.31.217",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ",
@@ -172,7 +160,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #2 [medium]",
+      "server": "82.38.31.180",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
       "server": "82.38.31.181",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",

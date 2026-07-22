@@ -52,7 +52,6 @@
         "auto",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
-        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
@@ -61,12 +60,15 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -91,7 +93,6 @@
       "outbounds": [
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
-        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
@@ -100,12 +101,15 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -165,15 +169,6 @@
           "Host": "pan1.global.ssl.fastly.net"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
-      "server": "199.232.78.159",
-      "server_port": 80,
-      "uuid": "2c9af5d8-8e1c-40e7-8b6b-c200fc5488e8",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -297,6 +292,22 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+      "server": "151.101.66.219",
+      "server_port": 80,
+      "uuid": "77d19746-328e-4938-92b5-faf379be7046",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048",
+        "headers": {
+          "Host": "barkatc2.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
       "server": "151.101.64.155",
       "server_port": 80,
@@ -336,6 +347,33 @@
         "path": "/",
         "headers": {
           "Host": "Fastapi.Org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "tmesubgift.up.railway.app",
+      "server_port": 443,
+      "uuid": "da462d02-eb32-51c6-a1f5-bb6938e03091",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tmesubgift.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/da462d02-eb32-51c6-a1f5-bb6938e03091",
+        "headers": {
+          "Host": "tmesubgift.up.railway.app"
         }
       }
     },
@@ -410,6 +448,15 @@
           "Host": "towndtime.global.ssl.fastly.neT."
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
+      "server": "199.232.78.159",
+      "server_port": 80,
+      "uuid": "2c9af5d8-8e1c-40e7-8b6b-c200fc5488e8",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

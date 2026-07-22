@@ -3,23 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "ger1.fastcodz.ir", "port": 52077, "type": "vless", "skip-cert-verify": true, "uuid": "99cb4cc4-e435-4626-ad83-8fc181836fbd", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "yahoo.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "9TjYilelwbIgUs6du2chsTvUyv_TemHoAJuVbsdYRUY", "short-id": "c1fcab160b4c8bed"}}
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "213.156.152.221", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "7377227f-358d-497a-8a83-52460b905e80", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]", "server": "panel1.molock.click", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5b8eb4fd-c93c-4149-b4ae-167df0db7d84", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "Vy3SV8aqcsKp3Xjtib_tTLj-n7FGLOOqxuCI-8aWHzU", "short-id": "8d8017ae"}}
+  - {"name": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]", "server": "144.225.65.176", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "680071d4-42e8-4931-ad42-592d21721da6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "yahoo.com", "reality-opts": {"public-key": "CAbWQrIYdOiesS2NdHLVJm0yPB9w4yCgryBrsnmxLU8", "short-id": "077b6fec7a"}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "panel1.molock.click", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5b8eb4fd-c93c-4149-b4ae-167df0db7d84", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "Vy3SV8aqcsKp3Xjtib_tTLj-n7FGLOOqxuCI-8aWHzU", "short-id": "8d8017ae"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VLESS | @orange_vpns #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VLESS | @orange_vpns #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

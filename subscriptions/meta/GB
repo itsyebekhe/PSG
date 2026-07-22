@@ -3,19 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
+  - {"name": "🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
   - {"name": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]'
+      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]'
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]'
+      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]'
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

@@ -50,8 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 IN | SS | @NamiraConfigs #1 [medium]",
-        "🇮🇳 IN | SS | @NamiraConfigs #2 [medium]",
         "🇮🇳 IN | SS | @netfreedom0 #1 [medium]",
         "direct"
       ],
@@ -61,38 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 IN | SS | @NamiraConfigs #1 [medium]",
-        "🇮🇳 IN | SS | @NamiraConfigs #2 [medium]",
         "🇮🇳 IN | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 IN | SS | @NamiraConfigs #1 [medium]",
-      "server": "103.111.114.71",
-      "server_port": 28061,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 IN | SS | @NamiraConfigs #2 [medium]",
-      "server": "103.111.114.61",
-      "server_port": 28061,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "shadowsocks",
