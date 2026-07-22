@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇨🇭 CH | VLESS | @nofiltering2 #1 [medium]", "server": "onkwo.ojcenter.com", "port": 3468, "type": "vless", "skip-cert-verify": true, "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.telewebion.ir", "reality-opts": {"public-key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4", "short-id": "b6eae5ce"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇨🇭 CH | VLESS | @nofiltering2 #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇨🇭 CH | VLESS | @nofiltering2 #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

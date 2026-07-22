@@ -50,7 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @bored_vpn #1 [medium]",
+        "🇦🇪 AE | HY2 | @bored_vpn #2 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [slow]",
         "🇦🇪 AE | HY2 | @netfreedom0 #2 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
@@ -61,7 +63,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @bored_vpn #1 [medium]",
+        "🇦🇪 AE | HY2 | @bored_vpn #2 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [slow]",
         "🇦🇪 AE | HY2 | @netfreedom0 #2 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
@@ -72,7 +76,32 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+      "tag": "🇦🇪 AE | HY2 | @bored_vpn #1 [medium]",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "obfs": {
+        "type": "salamander",
+        "password": "salamander"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 AE | HY2 | @bored_vpn #2 [medium]",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [slow]",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
