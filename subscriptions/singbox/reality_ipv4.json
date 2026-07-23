@@ -63,9 +63,10 @@
         "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
         "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
+        "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @outline_ir #1 [fast]",
-        "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
+        "🇱🇻 LV | VLESS | @megavpn_link #1 [slow]",
         "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -91,9 +92,10 @@
         "🇫🇷 FR | VLESS | @netmellianti #1 [fast]",
         "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
+        "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @outline_ir #1 [fast]",
-        "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
+        "🇱🇻 LV | VLESS | @megavpn_link #1 [slow]",
         "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
         "🇸🇨 SC | VLESS | @rez1vpn #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -357,28 +359,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "31.77.131.97",
-      "server_port": 8444,
-      "uuid": "b05346a9-4d13-41a4-8d2a-6b7b64e73ffc",
-      "network": "grpc",
+      "tag": "🇸🇨 SC | VLESS | @red2ray #1 [fast]",
+      "server": "45.196.201.65",
+      "server_port": 443,
+      "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "cloudflare.com",
+        "server_name": "storage.yandex.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "DYhUefVTZg0ol7QLdgp6hqcZ_TjIt02uoZk8iQz4WHM",
-          "short_id": "d6b2e9f1a4c8d3f5"
+          "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
+          "short_id": "c6ef72e4635d15a5"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "auragrpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
+      "server": "83.228.251.208",
+      "server_port": 3468,
+      "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.telewebion.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4",
+          "short_id": "b6eae5ce"
+        }
       }
     },
     {
@@ -406,7 +427,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1 [fast]",
+      "tag": "🇱🇻 LV | VLESS | @megavpn_link #1 [slow]",
       "server": "91.218.143.194",
       "server_port": 43798,
       "uuid": "b7725d23-840a-4f8e-993c-69b40424cfc0",

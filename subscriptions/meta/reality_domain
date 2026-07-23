@@ -15,7 +15,6 @@ proxies:
   - {"name": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]", "server": "de.edge-9d7c.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bbae962a-b6e9-46e6-990c-6abf13e6b075", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "de.edge-9d7c.com", "reality-opts": {"public-key": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM", "short-id": "9d84de9d9f7b85e9"}}
   - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "panel1.molock.click", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5b8eb4fd-c93c-4149-b4ae-167df0db7d84", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "Vy3SV8aqcsKp3Xjtib_tTLj-n7FGLOOqxuCI-8aWHzU", "short-id": "8d8017ae"}}
   - {"name": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]", "server": "edge1.oneokgames.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "edge1.oneokgames.com", "grpc-opts": {"grpc-service-name": "home.v1.ApiService"}, "reality-opts": {"public-key": "0ffnN7CdnOgEEFJ3AY1lnuTtsOPDL059UaTTxGxDjTA", "short-id": "66ffd800ba2ec7c3"}}
-  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "naran-de-ow.fizikade.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5efee26b-003c-4cfb-b20b-46253a0ba368", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "V2FVglvB5lw4cSrkhSPRpve27gV2Wp7sO6NUAyxXGQs", "short-id": "68cd"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -32,7 +31,6 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @free1_vpn #1 [fast]'
       - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - '🇩🇪 DE | VLESS | @bored_vpn #1 [fast]'
-      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -49,7 +47,6 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @free1_vpn #1 [fast]'
       - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - '🇩🇪 DE | VLESS | @bored_vpn #1 [fast]'
-      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
