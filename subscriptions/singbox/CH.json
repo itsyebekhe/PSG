@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]",
         "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]",
-        "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,13 +60,35 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]",
-        "🇨🇭 CH | VLESS | @red2ray #1 [fast]"
+        "🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]",
+        "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]",
+      "server": "animall-zooke.fardaty.ir",
+      "server_port": 8080,
+      "uuid": "e912f8d6-f59a-48b1-b5ad-bbe548d7ebf3",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bkj8m8COBtgcxZZ0ankB6vbxWRwnnreXjDTZA5CUVB0",
+          "short_id": "4da5c8a61cc588e8"
+        }
+      }
     },
     {
       "type": "vless",
@@ -82,28 +104,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4",
-          "short_id": "b6eae5ce"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
-      "server": "83.228.251.208",
-      "server_port": 3468,
-      "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.telewebion.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
