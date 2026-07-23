@@ -4,11 +4,11 @@
 
 ### Premium Proxy Subscription Generator
 
-![Updated](https://img.shields.io/badge/Updated-2026-07-22-blue?style=flat-square)
-![Configs](https://img.shields.io/badge/Configs-322-green?style=flat-square)
-![Lite](https://img.shields.io/badge/Lite-167-cyan?style=flat-square)
-![Channels](https://img.shields.io/badge/Channels-95-orange?style=flat-square)
-![Countries](https://img.shields.io/badge/Countries-32-purple?style=flat-square)
+![Updated](https://img.shields.io/badge/Updated-2026-07-23-blue?style=flat-square)
+![Configs](https://img.shields.io/badge/Configs-316-green?style=flat-square)
+![Lite](https://img.shields.io/badge/Lite-166-cyan?style=flat-square)
+![Channels](https://img.shields.io/badge/Channels-94-orange?style=flat-square)
+![Countries](https://img.shields.io/badge/Countries-31-purple?style=flat-square)
 
 [**فارسی**](README.fa.md)
 
@@ -20,17 +20,17 @@
 
 | | |
 |:---|:---|
-| 🔢 **322** configs | 🪶 **167** lite |
-| 📡 **95** channels | 🌍 **32** countries |
-| ☁️ **240** Cloudflare | ⚡ **439** fast |
+| 🔢 **316** configs | 🪶 **166** lite |
+| 📡 **94** channels | 🌍 **31** countries |
+| ☁️ **243** Cloudflare | ⚡ **490** fast |
 
 <details>
 <summary><b>⚡ Protocol Distribution</b></summary>
 
-> 🔒 **VLESS** `███████████████` 396 (123.0%)
-> ⚡ **REALITY** `██░░░░░░░░░░░░░` 56 (17.4%)
-> 🛡️ **VMESS** `█░░░░░░░░░░░░░░` 27 (8.4%)
-> 🔑 **SS** `░░░░░░░░░░░░░░░` 19 (5.9%)
+> 🔒 **VLESS** `███████████████` 402 (127.2%)
+> ⚡ **REALITY** `█░░░░░░░░░░░░░░` 53 (16.8%)
+> 🛡️ **VMESS** `░░░░░░░░░░░░░░░` 24 (7.6%)
+> 🔑 **SS** `░░░░░░░░░░░░░░░` 20 (6.3%)
 > 🌊 **HY2** `░░░░░░░░░░░░░░░` 6 (1.9%)
 
 </details>
@@ -38,30 +38,30 @@
 <details>
 <summary><b>🌍 Country Distribution</b></summary>
 
-> 🇽🇽 **XX** `████████████` 244
-> 🇺🇸 **US** `██░░░░░░░░░░` 56
-> 🇸🇪 **SE** `██░░░░░░░░░░` 47
-> 🇩🇪 **DE** `█░░░░░░░░░░░` 32
+> 🇽🇽 **XX** `████████████` 243
+> 🇺🇸 **US** `██░░░░░░░░░░` 52
+> 🇸🇪 **SE** `██░░░░░░░░░░` 46
+> 🇩🇪 **DE** `█░░░░░░░░░░░` 33
 > 🇮🇷 **IR** `░░░░░░░░░░░░` 18
-> 🇸🇨 **SC** `░░░░░░░░░░░░` 16
-> 🇳🇱 **NL** `░░░░░░░░░░░░` 15
-> 🇬🇧 **GB** `░░░░░░░░░░░░` 15
+> 🇸🇨 **SC** `░░░░░░░░░░░░` 18
+> 🇬🇧 **GB** `░░░░░░░░░░░░` 16
+> 🇳🇱 **NL** `░░░░░░░░░░░░` 13
 > 🇫🇷 **FR** `░░░░░░░░░░░░` 12
+> 🇨🇦 **CA** `░░░░░░░░░░░░` 9
 > 🇦🇪 **AE** `░░░░░░░░░░░░` 8
-> 🇨🇦 **CA** `░░░░░░░░░░░░` 6
 > 🇵🇱 **PL** `░░░░░░░░░░░░` 5
-> 🇷🇺 **RU** `░░░░░░░░░░░░` 3
-> 🇹🇷 **TR** `░░░░░░░░░░░░` 3
-> 🇫🇮 **FI** `░░░░░░░░░░░░` 2
+> 🇷🇺 **RU** `░░░░░░░░░░░░` 4
+> 🇫🇮 **FI** `░░░░░░░░░░░░` 3
+> 🇨🇿 **CZ** `░░░░░░░░░░░░` 3
 
 </details>
 
 <details>
 <summary><b>🚀 Speed Distribution</b></summary>
 
-> ⚡ **Fast** — 439 configs (< 200ms)
-> 🟡 **Medium** — 61 configs (200-500ms)
-> 🐢 **Slow** — 4 configs (> 500ms)
+> ⚡ **Fast** — 490 configs (< 200ms)
+> 🟡 **Medium** — 14 configs (200-500ms)
+> 🐢 **Slow** — 1 configs (> 500ms)
 
 </details>
 
@@ -126,9 +126,9 @@
 
 ---
 
-## 📡 Channels (95)
+## 📡 Channels (94)
 
-1. **@prrofile_purple** — 65 configs — سرور - V2rayNG
+1. **@prrofile_purple** — 72 configs — سرور - V2rayNG
 2. **@kafing_2** — 38 configs — کافینگ رایگان
 3. **@meli_v2rayng** — 21 configs — V2rayng iran کانال کانفیگ فیلت
 4. **@manstervpn** — 15 configs — KingVPN
@@ -148,16 +148,16 @@
 18. **@ai_duet** — 8 configs — خرید فیلترشکن V2rayNG خرید کان
 19. **@realvpnmaster** — 8 configs — Vpn master
 20. **@lockey_vpn** — 7 configs — LOCKEY_VPN
-21. **@iranvipnet** — 7 configs — VIP_V2rayNG
-22. **@netfreedom0** — 7 configs — NetFreedom
+21. **@jiedianf** — 7 configs — 免费节点 分享频道
+22. **@iranvipnet** — 7 configs — VIP_V2rayNG
 23. **@frev2rayng** — 7 configs — پروکسی ملی Proxy v2rayng کانفی
 24. **@free_vip3** — 7 configs — Free Service
 25. **@father_vpn** — 6 configs — Father vpn Proxy V2rayNg
-26. **@jiedianf** — 6 configs — 免费节点 分享频道
+26. **@netfreedom0** — 6 configs — NetFreedom
 27. **@proxy48** — 6 configs — فیلترشکنv2rayپروکسی proxy
 28. **@new_proxy_channel** — 6 configs — New Proxy
 29. **@nofiltering2** — 5 configs — Nofiltering2 V2rayng رفع فیلتر
-30. **@hope_net** — 5 configs — Hope Net
+30. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
 
 ---
 

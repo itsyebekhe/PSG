@@ -50,9 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
+        "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
+        "🇨🇦 CA | VLESS | @frev2rayng #1 [fast]",
         "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]",
         "direct"
       ],
@@ -62,15 +65,34 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
+        "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
+        "🇨🇦 CA | VLESS | @frev2rayng #1 [fast]",
         "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @novinology #1 [fast]",
+      "server": "104.31.16.65",
+      "server_port": 2095,
+      "uuid": "38ace213-5184-477b-ac3e-d800d0cf3cd9",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "de1.vlessx.xyz"
+        }
+      }
     },
     {
       "type": "vless",
@@ -153,6 +175,39 @@
         "path": "/",
         "headers": {
           "Host": "capitalnet.sameasyou.sbs"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
+      "server": "104.31.16.65",
+      "server_port": 2096,
+      "uuid": "281a5a7c-6530-4cd6-b0f2-a2666e6c3b36",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tel.v-2rayngvpn.sbs"
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @frev2rayng #1 [fast]",
+      "server": "104.31.16.160",
+      "server_port": 80,
+      "uuid": "e4a52f75-474e-449e-bcd2-05ea177f1403",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "41.中華民族哭了1.tech"
         }
       }
     },
