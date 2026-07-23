@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]", "server": "192.71.82.2", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a5c05c1e-aa68-443f-8598-09800244bd4b", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "kingcloud.biack.ir", "ws-opts": {"path": "", "headers": {"Host": "192.71.82.2"}}}
   - {"name": "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]", "server": "static.oneoneok.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "static.oneoneok.com", "grpc-opts": {"grpc-service-name": "api.v1.StreamService"}, "reality-opts": {"public-key": "oVbonPGBPZ_qGyhHPe-LwsyPc0oobby2YknsPE90iRo", "short-id": "0b46e0908285b078"}}
   - {"name": "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]", "server": "185.146.173.37", "port": 2095, "type": "vless", "skip-cert-verify": true, "uuid": "50858d39-fb35-452c-96af-9d4f028dd631", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "V2ray-_-_-_-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com."}}}
   - {"name": "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]", "server": "185.146.173.95", "port": 2095, "type": "vless", "skip-cert-verify": true, "uuid": "50858d39-fb35-452c-96af-9d4f028dd631", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "V2ray-_-_-_-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com."}}}
@@ -30,7 +29,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]'
       - '🇸🇪 SE | VLESS | @flyv2ray #1 [fast]'
       - '🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]'
       - '🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]'
@@ -57,7 +55,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇸🇪 SE | VLESS | @prrofile_purple #1 [fast]'
       - '🇸🇪 SE | VLESS | @flyv2ray #1 [fast]'
       - '🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]'
       - '🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]'

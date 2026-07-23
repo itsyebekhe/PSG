@@ -5,7 +5,7 @@ log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]", "server": "c1.fineartsnet.org", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "668869b1-860e-4308-b1da-386e222defce", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "Ikaho.soralink.ir"}
   - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "31.77.131.97", "port": 8444, "type": "vless", "skip-cert-verify": true, "uuid": "b05346a9-4d13-41a4-8d2a-6b7b64e73ffc", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "cloudflare.com", "grpc-opts": {"grpc-service-name": "auragrpc"}, "reality-opts": {"public-key": "DYhUefVTZg0ol7QLdgp6hqcZ_TjIt02uoZk8iQz4WHM", "short-id": "d6b2e9f1a4c8d3f5"}}
-  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "193.233.174.195", "port": 27331, "type": "vless", "skip-cert-verify": true, "uuid": "af1e0692-6c91-4d61-bc6b-108f2e897c37", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [medium]", "server": "193.233.174.195", "port": 27331, "type": "vless", "skip-cert-verify": true, "uuid": "af1e0692-6c91-4d61-bc6b-108f2e897c37", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
@@ -13,7 +13,7 @@ proxy-groups:
     proxies:
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [medium]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -21,7 +21,7 @@ proxy-groups:
     proxies:
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [medium]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
