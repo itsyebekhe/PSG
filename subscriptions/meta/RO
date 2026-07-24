@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇴 RO | VLESS | @outline_ir #1 [fast]", "server": "205.237.109.210", "port": 448, "type": "vless", "skip-cert-verify": true, "uuid": "70df38ff-5a22-4ffc-a3f9-1725515e0ea5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.samsung.com", "reality-opts": {"public-key": "IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU", "short-id": "113241ad01e99a2d"}}
   - {"name": "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]", "server": "205.237.109.211", "port": 448, "type": "vless", "skip-cert-verify": true, "uuid": "70df38ff-5a22-4ffc-a3f9-1725515e0ea5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.samsung.com", "reality-opts": {"public-key": "IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU", "short-id": "113241ad01e99a2d"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇴 RO | VLESS | @outline_ir #1 [fast]'
       - '🇷🇴 RO | VLESS | @orange_vpns #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇴 RO | VLESS | @outline_ir #1 [fast]'
       - '🇷🇴 RO | VLESS | @orange_vpns #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

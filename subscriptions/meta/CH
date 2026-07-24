@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]", "server": "animall-zooke.fardaty.ir", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "e912f8d6-f59a-48b1-b5ad-bbe548d7ebf3", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.yahoo.com", "reality-opts": {"public-key": "bkj8m8COBtgcxZZ0ankB6vbxWRwnnreXjDTZA5CUVB0", "short-id": "4da5c8a61cc588e8"}}
-  - {"name": "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]", "server": "onkwo.ojcenter.com", "port": 3468, "type": "vless", "skip-cert-verify": true, "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.telewebion.ir", "reality-opts": {"public-key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4", "short-id": "b6eae5ce"}}
+  - {"name": "🇨🇭 CH | VLESS | @nofiltering2 #1 [medium]", "server": "onkwo.ojcenter.com", "port": 3468, "type": "vless", "skip-cert-verify": true, "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.telewebion.ir", "reality-opts": {"public-key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4", "short-id": "b6eae5ce"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]'
-      - '🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]'
+      - '🇨🇭 CH | VLESS | @nofiltering2 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]'
-      - '🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]'
+      - '🇨🇭 CH | VLESS | @nofiltering2 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

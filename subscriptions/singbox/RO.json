@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO | VLESS | @outline_ir #1 [fast]",
         "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
@@ -60,31 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO | VLESS | @outline_ir #1 [fast]",
         "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @outline_ir #1 [fast]",
-      "server": "205.237.109.210",
-      "server_port": 448,
-      "uuid": "70df38ff-5a22-4ffc-a3f9-1725515e0ea5",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU",
-          "short_id": "113241ad01e99a2d"
-        }
-      }
     },
     {
       "type": "vless",
