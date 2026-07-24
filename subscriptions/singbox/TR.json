@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]"
+        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,32 +68,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-      "server": "213.156.152.221",
-      "server_port": 8080,
-      "uuid": "7377227f-358d-497a-8a83-52460b905e80",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
-      "server": "panel1.molock.click",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+      "server": "212.87.198.123",
       "server_port": 443,
-      "uuid": "5b8eb4fd-c93c-4149-b4ae-167df0db7d84",
-      "network": "tcp",
+      "uuid": "5368b830-5434-4ba1-a45d-b61eeecf4a59",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "www.amd.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Vy3SV8aqcsKp3Xjtib_tTLj-n7FGLOOqxuCI-8aWHzU",
-          "short_id": "8d8017ae"
+          "public_key": "F15h9pglTbLeUVFgPxHBg3jlRr5481zkAEE7vKC0eTs",
+          "short_id": "f3e5e8e333db"
         }
       }
     },
