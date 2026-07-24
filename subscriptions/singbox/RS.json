@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUk8=
+//profile-title: base64:UFNHIHwgUlM=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO | VLESS | @outline_ir #1 [fast]",
-        "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇸 RS | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO | VLESS | @outline_ir #1 [fast]",
-        "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]"
+        "🇷🇸 RS | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,43 +68,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @outline_ir #1 [fast]",
-      "server": "205.237.109.210",
-      "server_port": 448,
-      "uuid": "70df38ff-5a22-4ffc-a3f9-1725515e0ea5",
+      "tag": "🇷🇸 RS | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "195.133.18.161",
+      "server_port": 30153,
+      "uuid": "da97d2d7-d255-4efd-8398-7101d698768e",
       "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU",
-          "short_id": "113241ad01e99a2d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]",
-      "server": "205.237.109.211",
-      "server_port": 448,
-      "uuid": "70df38ff-5a22-4ffc-a3f9-1725515e0ea5",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU",
-          "short_id": "113241ad01e99a2d"
-        }
-      }
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

@@ -56,8 +56,6 @@
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #3 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -75,8 +73,6 @@
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #3 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -133,7 +129,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "13.39.58.127",
+      "server": "15.224.131.242",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -142,7 +138,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "15.224.131.242",
+      "server": "13.37.22.60",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -174,29 +170,18 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "45.13.119.219",
-      "server_port": 8888,
-      "uuid": "eb77be10-9d9e-527b-a78d-8caaf58992d6",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "13.39.58.127",
-      "server_port": 22224,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #3 [fast]",
-      "server": "13.39.58.127",
-      "server_port": 22223,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "server": "de.vpnbase.net",
+      "server_port": 80,
+      "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/http",
+        "headers": {
+          "Host": "de.vpnbase.net"
+        }
+      }
     },
     {
       "type": "vless",

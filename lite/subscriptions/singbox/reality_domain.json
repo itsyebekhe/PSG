@@ -53,10 +53,11 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
-        "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,10 +69,11 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]"
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -119,6 +121,81 @@
     },
     {
       "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
+      "server": "static.oneoneok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.oneoneok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oVbonPGBPZ_qGyhHPe-LwsyPc0oobby2YknsPE90iRo",
+          "short_id": "0b46e0908285b078"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+      "server": "de.edge-9d7c.com",
+      "server_port": 443,
+      "uuid": "bbae962a-b6e9-46e6-990c-6abf13e6b075",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.edge-9d7c.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
+          "short_id": "9d84de9d9f7b85e9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+      "server": "edge1.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge1.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0ffnN7CdnOgEEFJ3AY1lnuTtsOPDL059UaTTxGxDjTA",
+          "short_id": "66ffd800ba2ec7c3"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "home.v1.ApiService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
       "server": "de.edge-9d7c.com",
       "server_port": 443,
@@ -157,58 +234,6 @@
           "public_key": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM",
           "short_id": "9d84de9d9f7b85e9"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
-      "server": "static.oneoneok.com",
-      "server_port": 443,
-      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.oneoneok.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oVbonPGBPZ_qGyhHPe-LwsyPc0oobby2YknsPE90iRo",
-          "short_id": "0b46e0908285b078"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "api.v1.StreamService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
-      "server": "edge1.oneokgames.com",
-      "server_port": 443,
-      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "edge1.oneokgames.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0ffnN7CdnOgEEFJ3AY1lnuTtsOPDL059UaTTxGxDjTA",
-          "short_id": "66ffd800ba2ec7c3"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "home.v1.ApiService"
       }
     },
     {
