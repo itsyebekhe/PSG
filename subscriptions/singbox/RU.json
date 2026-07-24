@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]"
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -87,6 +89,22 @@
           "public_key": "Loc9rXCMgSkksa4TGr203UCppZh9epDs8tdTVCjiCRw",
           "short_id": "c39843c687af3383"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "212.67.9.113",
+      "server_port": 2200,
+      "uuid": "2aa7f4b1-e859-46d0-b8ac-8587811ab7b1",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v1"
       }
     },
     {
