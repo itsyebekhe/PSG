@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @netmellianti #1 [medium]", "server": "65.109.187.194", "port": 8888, "type": "vless", "skip-cert-verify": true, "uuid": "d233e659-98c9-445d-9a77-b9391f5e1f01", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "hosieei.dearhossein-taktaz.ir", "grpc-opts": {"grpc-service-name": "grpc"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @netmellianti #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @netmellianti #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
