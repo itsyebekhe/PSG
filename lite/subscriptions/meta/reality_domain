@@ -8,7 +8,6 @@ proxies:
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]", "server": "de.edge-9d7c.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bbae962a-b6e9-46e6-990c-6abf13e6b075", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "de.edge-9d7c.com", "reality-opts": {"public-key": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM", "short-id": "9d84de9d9f7b85e9"}}
   - {"name": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]", "server": "de.edge-9d7c.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bbae962a-b6e9-46e6-990c-6abf13e6b075", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "de.edge-9d7c.com", "reality-opts": {"public-key": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM", "short-id": "9d84de9d9f7b85e9"}}
-  - {"name": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]", "server": "germany2.avrilon.us", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d0e2ae3e-0be7-4dcf-9abb-dcc82aabc076", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "qapartners.sec.samsung.com", "reality-opts": {"public-key": "rA_ItMaIiG_OUjcaTLpxOoF-OHh4WJsNUfWh7QUn_xU", "short-id": "0a3ff4a7"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -18,7 +17,6 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
-      - '🇫🇷 FR | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -28,7 +26,6 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
-      - '🇫🇷 FR | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

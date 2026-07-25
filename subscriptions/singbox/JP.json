@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
-        "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
@@ -62,7 +61,6 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
-        "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -80,30 +78,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
-      "server": "138.2.31.37",
-      "server_port": 443,
-      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "t1s1.rittbo.kdns.fr",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "t1s1.rittbo.kdns.fr"
-        }
       }
     },
     {

@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "212.87.198.123", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5368b830-5434-4ba1-a45d-b61eeecf4a59", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.amd.com", "reality-opts": {"public-key": "F15h9pglTbLeUVFgPxHBg3jlRr5481zkAEE7vKC0eTs", "short-id": "f3e5e8e333db"}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "212.87.198.123", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5368b830-5434-4ba1-a45d-b61eeecf4a59", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.amd.com", "reality-opts": {"public-key": "F15h9pglTbLeUVFgPxHBg3jlRr5481zkAEE7vKC0eTs", "short-id": "f3e5e8e333db"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
