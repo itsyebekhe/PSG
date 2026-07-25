@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
+        "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]"
+        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
+        "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -85,6 +87,18 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]",
+      "server": "s1.esantion.info",
+      "server_port": 24206,
+      "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true
       }
     },
     {

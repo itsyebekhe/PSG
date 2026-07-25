@@ -58,9 +58,10 @@
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | SS | @NamiraConfigs #1 [fast]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
-        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
@@ -81,9 +82,10 @@
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | SS | @NamiraConfigs #1 [fast]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
-        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
@@ -222,6 +224,32 @@
       "packet_encoding": "xudp"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇮🇷 IR | SS | @NamiraConfigs #1 [fast]",
+      "server": "coco3.farajet.net",
+      "server_port": 3030,
+      "method": "chacha20-ietf-poly1305",
+      "password": "0u47xJvp2_pGbA5c13ASHK87DxDwk5zm",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "a.samrayan.ir",
+      "server_port": 443,
+      "uuid": "23d6295f-0337-438f-be52-388bbe321ae4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "a.samrayan.ir"
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
       "server": "195.254.165.243",
@@ -260,19 +288,6 @@
         "type": "ws",
         "path": "/websocket/"
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
-      "server": "78.47.131.39",
-      "server_port": 8443,
-      "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
     },
     {
       "type": "vless",

@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
         "direct"
       ],
@@ -60,34 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
-      "server": "de.pub.accuratenetworkchecker.ir",
-      "server_port": 2053,
-      "uuid": "StableInternet",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "grc.accuratenetworkchecker.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "StableInternet"
-      }
     },
     {
       "type": "vless",
