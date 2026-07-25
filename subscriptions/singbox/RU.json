@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]"
+        "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
+      "server": "de.pub.accuratenetworkchecker.ir",
+      "server_port": 2053,
+      "uuid": "StableInternet",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "grc.accuratenetworkchecker.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "StableInternet"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
       "server": "2.26.8.55",
       "server_port": 443,
       "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45",
