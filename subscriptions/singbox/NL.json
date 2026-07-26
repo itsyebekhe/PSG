@@ -51,12 +51,10 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
+        "🇳🇱 NL | SS | @hope_net #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -67,12 +65,10 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
+        "🇳🇱 NL | SS | @hope_net #1 [fast]",
         "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -93,24 +89,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
-      "server": "de.pub.accuratenetworkchecker.ir",
-      "server_port": 2053,
-      "uuid": "StableInternet",
-      "network": "grpc",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @hope_net #1 [fast]",
+      "server": "109.201.152.181",
+      "server_port": 443,
+      "method": "aes-128-cfb",
+      "password": "shadowsocks",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "grc.accuratenetworkchecker.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "StableInternet"
+        "enabled": true
       }
     },
     {
@@ -131,29 +118,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "cdn.netraidly.ru",
-      "server_port": 40443,
-      "uuid": "4bf5a71c-d726-4585-b095-7396675706d5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU",
-          "short_id": "c84f"
         }
       }
     },
@@ -187,15 +151,6 @@
           "short_id": "a99e"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "45.88.172.154",
-      "server_port": 11594,
-      "uuid": "0370b162-baff-4757-86cc-cce4bf07f6f1",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

@@ -10,7 +10,8 @@ proxies:
   - {"name": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]", "server": "h2.zynovax.ir", "port": 1080, "type": "vless", "skip-cert-verify": true, "uuid": "1b73f053-2709-4698-bbec-cb20e8a5f288", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "RsO3PRzPHqGLfioO6C1kQOWatqjo15KnUUbkdE7VKEs", "short-id": "8ffa8cbc6d67cffa"}}
   - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]", "server": "tracker.oneokgames.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "tracker.oneokgames.com", "grpc-opts": {"grpc-service-name": "push.v2.FeedService"}, "reality-opts": {"public-key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU", "short-id": "a30b344b5214d62f"}}
   - {"name": "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]", "server": "onkwo.ojcenter.com", "port": 3468, "type": "vless", "skip-cert-verify": true, "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.telewebion.ir", "reality-opts": {"public-key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4", "short-id": "b6eae5ce"}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "cdn.netraidly.ru", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "4bf5a71c-d726-4585-b095-7396675706d5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU", "short-id": "c84f"}}
+  - {"name": "🇮🇷 IR | VLESS | @red2ray #1 [fast]", "server": "nl1-azad.albertwize.ir", "port": 4588, "type": "vless", "skip-cert-verify": true, "uuid": "0c5853e1-a606-4aa2-bbfa-86a7b58d43b1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "aparat.com", "reality-opts": {"public-key": "49LjRovubjQuO8F6gMKlHZ7eTCbhpx-61rUszaTJYWk", "short-id": "fa2401aad82386b5"}}
+  - {"name": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]", "server": "mail.netraidly.ru", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "e2047d88-9aa0-4e47-9218-12c0859913db", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "tSSohVG0_iZYMpoSAzt_qAxTkWPo5Hfj7kNsQHbjITI", "short-id": "a99e"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -22,7 +23,8 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
       - '🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇮🇷 IR | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -34,7 +36,8 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
       - '🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇮🇷 IR | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -3,20 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @bored_vpn #1 [fast]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
-  - {"name": "🇬🇧 GB | VLESS | @hope_net #1 [fast]", "server": "94.247.142.241", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "775213ac-3976-439a-8977-3277c0e4735d", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "fq521.6789.cloudns.be", "ws-opts": {"path": "", "headers": {"Host": "94.247.142.241"}}}
+  - {"name": "🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
+  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]", "server": "165.232.100.206", "port": 41941, "type": "vless", "skip-cert-verify": true, "uuid": "81f9b6e0-638a-4e94-9119-f93909b6bebd", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]", "server": "139.59.166.159", "port": 18795, "type": "vless", "skip-cert-verify": true, "uuid": "b01b34a5-bceb-4f06-8055-ab1a28902eb1", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @bored_vpn #1 [fast]'
-      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
+      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]'
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @bored_vpn #1 [fast]'
-      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
+      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]'
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

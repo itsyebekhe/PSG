@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]",
+        "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]"
+        "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,27 +70,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-      "server": "217.26.28.58",
-      "server_port": 443,
-      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "t1s1.rittbo.kdns.fr"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "t1s1.rittbo.kdns.fr"
-        }
-      }
+      "tag": "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
+      "server": "movies.vipdatacloud.com",
+      "server_port": 24504,
+      "uuid": "6682b6ba-0dd1-42a7-b3f6-05d0f545a98c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
       "server": "2.26.8.55",
       "server_port": 443,
       "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45",
@@ -113,35 +99,6 @@
           "public_key": "Loc9rXCMgSkksa4TGr203UCppZh9epDs8tdTVCjiCRw",
           "short_id": "c39843c687af3383"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "130.17.2.27",
-      "server_port": 4100,
-      "uuid": "155e8dd4-a559-407a-9ea8-13a5e829f066",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/v1",
-        "headers": {
-          "Host": "live.ok.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]",
-      "server": "31.172.67.215",
-      "server_port": 2200,
-      "uuid": "d4aad26f-70b6-4411-8517-17f7b4281886",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/v1"
       }
     },
     {
