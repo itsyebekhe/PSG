@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇲🇾 MY | VMESS | @NamiraConfigs #1 [medium]", "server": "47.250.135.244", "port": 10000, "type": "vmess", "skip-cert-verify": true, "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇲🇾 MY | VMESS | @NamiraConfigs #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇲🇾 MY | VMESS | @NamiraConfigs #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -61,10 +61,9 @@
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇸🇨 SC | VLESS | @selinc #1 [fast]",
         "🇸🇨 SC | VLESS | @bored_vpn #1 [fast]",
-        "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
+        "🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [slow]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #2 [fast]",
@@ -93,10 +92,9 @@
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇸🇨 SC | VLESS | @selinc #1 [fast]",
         "🇸🇨 SC | VLESS | @bored_vpn #1 [fast]",
-        "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
+        "🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [slow]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #2 [fast]",
@@ -331,7 +329,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
+      "tag": "🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]",
       "server": "77.73.232.61",
       "server_port": 19747,
       "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
@@ -376,46 +374,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [slow]",
-      "server": "178.104.225.122",
-      "server_port": 44444,
-      "uuid": "e044297a-304f-40a9-a9fb-d17b744fa781",
-      "network": "tcp",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+      "server": "85.133.202.219",
+      "server_port": 2626,
+      "uuid": "8755c911-f14a-4d4e-b933-882b4acb0bed",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com.",
+        "server_name": "www.speedtest.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "79ji8OAmCVQTKcJmvf-iqZypOSKwuTD_sbatB4RHXXM",
-          "short_id": "f37329647c9a1886"
+          "public_key": "hBTi8-ZyCqFGio30s5fekBrPM9rUZmuIxnfWEAZRZE4",
+          "short_id": "b9"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-      "server": "109.176.202.22",
-      "server_port": 1155,
-      "uuid": "9fb7bd98-9d35-c441-2394-41aa925804ad",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "X5Ge9DYHJsT9TuO9nfTz2FSLANY0IbrtNbHgJ66q5QQ",
-          "short_id": "753cd5c2"
-        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {

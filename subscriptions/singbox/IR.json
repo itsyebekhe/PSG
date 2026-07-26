@@ -57,11 +57,11 @@
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
-        "🇮🇷 IR | SS | @NamiraConfigs #1 [fast]",
-        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
+        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
@@ -81,11 +81,11 @@
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
-        "🇮🇷 IR | SS | @NamiraConfigs #1 [fast]",
-        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
+        "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @frev2rayng #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
@@ -216,38 +216,38 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+      "server": "85.133.202.219",
+      "server_port": 2626,
+      "uuid": "8755c911-f14a-4d4e-b933-882b4acb0bed",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.speedtest.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hBTi8-ZyCqFGio30s5fekBrPM9rUZmuIxnfWEAZRZE4",
+          "short_id": "b9"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
       "server": "tamin.ir",
       "server_port": 80,
       "uuid": "aa5e25fc-c7d7-4e6e-b7f7-105a35c0175a",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @NamiraConfigs #1 [fast]",
-      "server": "coco3.farajet.net",
-      "server_port": 3030,
-      "method": "chacha20-ietf-poly1305",
-      "password": "0u47xJvp2_pGbA5c13ASHK87DxDwk5zm",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "a.samrayan.ir",
-      "server_port": 443,
-      "uuid": "23d6295f-0337-438f-be52-388bbe321ae4",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "a.samrayan.ir"
-      }
     },
     {
       "type": "vless",
@@ -288,6 +288,19 @@
         "type": "ws",
         "path": "/websocket/"
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
+      "server": "78.47.131.39",
+      "server_port": 8443,
+      "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
     },
     {
       "type": "vless",
