@@ -3,20 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]", "server": "storage.vipdatanetwork.com", "port": 24504, "type": "vless", "skip-cert-verify": true, "uuid": "6682b6ba-0dd1-42a7-b3f6-05d0f545a98c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision"}
-  - {"name": "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]", "server": "65.109.187.194", "port": 8888, "type": "vless", "skip-cert-verify": true, "uuid": "d233e659-98c9-445d-9a77-b9391f5e1f01", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "hosieei.dearhossein-taktaz.ir", "grpc-opts": {"grpc-service-name": "grpc"}}
+  - {"name": "🇫🇮 FI | VLESS | @netmellianti #2 [fast]", "server": "storage.vipdatanetwork.com", "port": 24504, "type": "vless", "skip-cert-verify": true, "uuid": "6682b6ba-0dd1-42a7-b3f6-05d0f545a98c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision"}
+  - {"name": "🇫🇮 FI | VLESS | @evay_vpn #1 [slow]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @netmellianti #1 [fast]'
-      - '🇫🇮 FI | VLESS | @evay_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @netmellianti #2 [fast]'
+      - '🇫🇮 FI | VLESS | @evay_vpn #1 [slow]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @netmellianti #1 [fast]'
-      - '🇫🇮 FI | VLESS | @evay_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @netmellianti #2 [fast]'
+      - '🇫🇮 FI | VLESS | @evay_vpn #1 [slow]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

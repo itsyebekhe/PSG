@@ -6,7 +6,7 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]", "server": "de.edge-9d7c.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bbae962a-b6e9-46e6-990c-6abf13e6b075", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "de.edge-9d7c.com", "reality-opts": {"public-key": "qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM", "short-id": "9d84de9d9f7b85e9"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "cdn.netraidly.ru", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "4bf5a71c-d726-4585-b095-7396675706d5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU", "short-id": "c84f"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +22,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
