@@ -50,14 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
@@ -73,14 +72,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @netfreedom0 #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
@@ -93,31 +91,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-      "server": "185.143.233.235",
-      "server_port": 80,
-      "uuid": "22109ab6-bfdd-4062-ae1c-054c74353e39",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-      "server": "185.143.234.235",
-      "server_port": 80,
-      "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vixon.portab.org"
-        }
-      }
     },
     {
       "type": "vless",
@@ -203,23 +176,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
-      "server": "nl1-azad.albertwize.ir",
-      "server_port": 4588,
-      "uuid": "0c5853e1-a606-4aa2-bbfa-86a7b58d43b1",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+      "server": "185.143.233.235",
+      "server_port": 80,
+      "uuid": "22109ab6-bfdd-4062-ae1c-054c74353e39",
       "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
+      "server": "185.143.234.235",
+      "server_port": 80,
+      "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "aparat.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "49LjRovubjQuO8F6gMKlHZ7eTCbhpx-61rUszaTJYWk",
-          "short_id": "fa2401aad82386b5"
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vixon.portab.org"
         }
       }
     },

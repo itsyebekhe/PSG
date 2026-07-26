@@ -3,23 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
-  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]", "server": "165.232.100.206", "port": 41941, "type": "vless", "skip-cert-verify": true, "uuid": "81f9b6e0-638a-4e94-9119-f93909b6bebd", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]", "server": "139.59.166.159", "port": 18795, "type": "vless", "skip-cert-verify": true, "uuid": "b01b34a5-bceb-4f06-8055-ab1a28902eb1", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]'
+      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [slow]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
-      - '🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]'
+      - '🇬🇧 GB | VLESS | @mehrosaboran #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

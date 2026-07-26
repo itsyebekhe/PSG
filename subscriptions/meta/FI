@@ -5,18 +5,21 @@ log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]", "server": "storage.vipdatanetwork.com", "port": 24504, "type": "vless", "skip-cert-verify": true, "uuid": "6682b6ba-0dd1-42a7-b3f6-05d0f545a98c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision"}
   - {"name": "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]", "server": "mx.bexumconnect.ltd", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1e06c388-d31c-420e-916a-94a990648e34", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "mx.bexumconnect.ltd"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @netmellianti #1 [fast]'
       - '🇫🇮 FI | VLESS | @evay_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @netmellianti #1 [fast]'
       - '🇫🇮 FI | VLESS | @evay_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

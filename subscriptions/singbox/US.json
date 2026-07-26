@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
@@ -65,16 +66,14 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
-        "🇺🇸 US | SS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #2 [medium]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -103,6 +102,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
@@ -118,16 +118,14 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
-        "🇺🇸 US | SS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #2 [medium]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -153,6 +151,22 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
+      "server": "clfconnect.pishipishi.pro",
+      "server_port": 8880,
+      "uuid": "vpn_connects",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hamon.hamimelectronic.ir"
+        }
+      }
     },
     {
       "type": "vless",
@@ -424,34 +438,22 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @hope_net #1 [fast]",
-      "server": "156.146.38.170",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
-      "server": "66.81.247.19",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "66.81.247.244",
+      "server_port": 443,
+      "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "a.ssll.gay"
+        "server_name": "cfed.tgzdyz2.top"
       },
       "transport": {
         "type": "ws",
-        "path": "twitter苏小柠securityfp=chrome",
+        "path": "tg@zdyz2securityfp=chrome",
         "headers": {
-          "Host": "a.ssll.gay"
+          "Host": "cfed.tgzdyz2.top"
         }
       }
     },
@@ -553,65 +555,44 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-      "server": "clfconnect.pishipishi.pro",
-      "server_port": 8880,
-      "uuid": "vpn_connects",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "ezaccess1-x4g-ezaccess1-f1bf.up.railway.app",
+      "server_port": 443,
+      "uuid": "e78a5cfe-42c3-fbf5-6dbf-e4602250e39b",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ezaccess1-x4g-ezaccess1-f1bf.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/ws/e78a5cfe-42c3-fbf5-6dbf-e4602250e39b",
         "headers": {
-          "Host": "hamon.hamimelectronic.ir"
+          "Host": "ezaccess1-x4g-ezaccess1-f1bf.up.railway.app"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "2.26.91.98",
-      "server_port": 1443,
-      "uuid": "f6ec5f55-3d2a-4289-a2b1-d419976cd43e",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "uspanel.unixzone.us",
+      "server_port": 30016,
+      "uuid": "03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
+        "path": "/usserver",
         "headers": {
-          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #2 [medium]",
-      "server": "116.204.164.17",
-      "server_port": 7443,
-      "uuid": "4e2efa26-2969-486b-ae60-390ba54af31b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+          "Host": "uspanel.unixzone.us"
         }
       }
     },
