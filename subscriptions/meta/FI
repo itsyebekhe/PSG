@@ -5,18 +5,21 @@ log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]", "server": "storage.vipdatanetwork.com", "port": 24504, "type": "vless", "skip-cert-verify": true, "uuid": "6682b6ba-0dd1-42a7-b3f6-05d0f545a98c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision"}
   - {"name": "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "62.238.44.10", "port": 50653, "type": "vless", "skip-cert-verify": true, "uuid": "c913aaad-7c27-4639-a830-5c99c79da80e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.microsoft.com", "reality-opts": {"public-key": "4lp5kcYnQrNUiXBwI4HOWOFtydwZuGF88OECrc7n6To", "short-id": "3377f10596d510de"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @netmellianti #1 [fast]'
       - '🇫🇮 FI | VLESS | @evay_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @netmellianti #1 [fast]'
       - '🇫🇮 FI | VLESS | @evay_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

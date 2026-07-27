@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "abqwe.gfdcty.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eeb75ded-02ad-4e8f-9bb1-ccc5cd96e7cc", "network": "httpupgrade", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "abqwe.gfdcty.ir"}
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]", "server": "abqwe.gfdcty.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eeb75ded-02ad-4e8f-9bb1-ccc5cd96e7cc", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "abqwe.gfdcty.ir", "grpc-opts": {"grpc-service-name": "graphql-grpc-t7XyZ"}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "abqwe.gfdcty.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eeb75ded-02ad-4e8f-9bb1-ccc5cd96e7cc", "network": "httpupgrade", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "abqwe.gfdcty.ir"}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #2 [medium]", "server": "abqwe.gfdcty.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eeb75ded-02ad-4e8f-9bb1-ccc5cd96e7cc", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "abqwe.gfdcty.ir", "grpc-opts": {"grpc-service-name": "graphql-grpc-t7XyZ"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

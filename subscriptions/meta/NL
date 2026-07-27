@@ -3,29 +3,29 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]", "server": "77.233.214.166", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "e2047d88-9aa0-4e47-9218-12c0859913db", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "tSSohVG0_iZYMpoSAzt_qAxTkWPo5Hfj7kNsQHbjITI", "short-id": "a99e"}}
   - {"name": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]", "server": "31.57.250.65", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "id_telegram_MimiTdL", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA", "short-id": "5b409d9a2b5b8dbf"}}
   - {"name": "🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]", "server": "c1.fineartsnet.org", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "668869b1-860e-4308-b1da-386e222defce", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "Ikaho.soralink.ir"}
-  - {"name": "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]", "server": "77.233.214.166", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "e2047d88-9aa0-4e47-9218-12c0859913db", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "tSSohVG0_iZYMpoSAzt_qAxTkWPo5Hfj7kNsQHbjITI", "short-id": "a99e"}}
   - {"name": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]", "server": "mail.netraidly.ru", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "e2047d88-9aa0-4e47-9218-12c0859913db", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "tSSohVG0_iZYMpoSAzt_qAxTkWPo5Hfj7kNsQHbjITI", "short-id": "a99e"}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]'
       - '🇳🇱 NL | VLESS | @mimitdl #1 [fast]'
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
-      - '🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]'
       - '🇳🇱 NL | VLESS | @mimitdl #1 [fast]'
       - '🇳🇱 NL | VLESS | @configv2rayforfree #1 [fast]'
-      - '🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
