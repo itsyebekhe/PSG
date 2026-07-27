@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]", "server": "onkwo.ojcenter.com", "port": 3468, "type": "vless", "skip-cert-verify": true, "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.telewebion.ir", "reality-opts": {"public-key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4", "short-id": "b6eae5ce"}}
-  - {"name": "🇨🇭 CH | VLESS | @red2ray #1 [fast]", "server": "45.59.125.228", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "691a9a35-76a6-48ea-9379-4f4f638c2b66", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.amd.com", "reality-opts": {"public-key": "BjickB5Lt_-JIEj40uiaI1Sq4aDh1bzhWI1yBY9nbVc", "short-id": "29fcba01"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]'
-      - '🇨🇭 CH | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]'
-      - '🇨🇭 CH | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

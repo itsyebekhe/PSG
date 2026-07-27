@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]", "server": "83.168.71.216", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
-  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "144.31.0.100", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7b81d175-d180-4ec8-bbc5-dfe80e8d3b68", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "vaultivo-hgooe.ru", "reality-opts": {"public-key": "CxMPFpwhcR9Ocp-Xy_1J08mo-atdHKUf58WLOy_XlgM", "short-id": "5e3ab3ab228625"}}
+  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [medium]", "server": "144.31.0.100", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7b81d175-d180-4ec8-bbc5-dfe80e8d3b68", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "vaultivo-hgooe.ru", "reality-opts": {"public-key": "CxMPFpwhcR9Ocp-Xy_1J08mo-atdHKUf58WLOy_XlgM", "short-id": "5e3ab3ab228625"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
+      - '🇵🇱 PL | VLESS | @outline_ir #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
+      - '🇵🇱 PL | VLESS | @outline_ir #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
