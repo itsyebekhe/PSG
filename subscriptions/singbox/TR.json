@@ -71,29 +71,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-      "server": "6bb59ba7.nip.io",
-      "server_port": 22010,
-      "uuid": "4886e233-f065-49e8-b2d3-ea221667fbb9",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "login.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tPJyCBqGbs1ehngAU77tazO3hT83jPlS-Z2B6_pnqCE",
-          "short_id": "aa603d3c2603c9f2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
       "server": "abqwe.gfdcty.ir",
       "server_port": 443,
       "uuid": "eeb75ded-02ad-4e8f-9bb1-ccc5cd96e7cc",
@@ -102,6 +79,23 @@
       "tls": {
         "enabled": true,
         "server_name": "abqwe.gfdcty.ir"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+      "server": "abqwe.gfdcty.ir",
+      "server_port": 443,
+      "uuid": "eeb75ded-02ad-4e8f-9bb1-ccc5cd96e7cc",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "abqwe.gfdcty.ir"
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "graphql-grpc-t7XyZ"
       }
     },
     {

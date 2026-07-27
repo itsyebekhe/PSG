@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
+        "🇧🇬 BG | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @red2ray #1 [fast]"
+        "🇧🇬 BG | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,12 +68,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
-      "server": "de.vrsvpn.com",
-      "server_port": 443,
+      "tag": "🇧🇬 BG | VLESS | @orange_vpns #1 [fast]",
+      "server": "93.152.205.216",
+      "server_port": 444,
       "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -84,9 +83,13 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "QocXHwad0mV7WA5jSAcqDac3uuVBEp1WF775-CilniE",
-          "short_id": "45ba18f429ad1f28"
+          "public_key": "X-YL5VNtlMNIaBrwaHt3hJCeF_gMT9gPRDDlK1Qg7Tc",
+          "short_id": "8321461729abcdef"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "web.max.ru"
       }
     },
     {

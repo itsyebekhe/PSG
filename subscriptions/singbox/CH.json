@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]",
+        "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]"
+        "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]",
+        "🇨🇭 CH | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -85,6 +87,28 @@
           "enabled": true,
           "public_key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4",
           "short_id": "b6eae5ce"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
+      "server": "45.59.125.228",
+      "server_port": 443,
+      "uuid": "691a9a35-76a6-48ea-9379-4f4f638c2b66",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BjickB5Lt_-JIEj40uiaI1Sq4aDh1bzhWI1yBY9nbVc",
+          "short_id": "29fcba01"
         }
       }
     },
