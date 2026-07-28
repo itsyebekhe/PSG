@@ -51,7 +51,9 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @hope_net #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +63,9 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | VLESS | @netmellianti #1 [fast]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]"
+        "🇷🇺 RU | VLESS | @hope_net #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -80,7 +84,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @hope_net #1 [fast]",
+      "server": "45.67.215.81",
+      "server_port": 443,
+      "uuid": "c82f8880-bdd8-4a35-b8e7-ad5aa880f7d0",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yv.ylkszy.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
       "server": "2.26.8.55",
       "server_port": 443,
       "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45",
@@ -98,6 +119,26 @@
           "enabled": true,
           "public_key": "Loc9rXCMgSkksa4TGr203UCppZh9epDs8tdTVCjiCRw",
           "short_id": "c39843c687af3383"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+      "server": "159.194.200.159",
+      "server_port": 443,
+      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "t1s1.rittbo.kdns.fr"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "t1s1.rittbo.kdns.fr"
         }
       }
     },

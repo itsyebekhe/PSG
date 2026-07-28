@@ -52,7 +52,6 @@
         "auto",
         "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
-        "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [medium]"
+        "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -90,29 +88,6 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
-      "server": "62.238.44.10",
-      "server_port": 50653,
-      "uuid": "c913aaad-7c27-4639-a830-5c99c79da80e",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4lp5kcYnQrNUiXBwI4HOWOFtydwZuGF88OECrc7n6To",
-          "short_id": "3377f10596d510de"
-        }
       }
     },
     {
