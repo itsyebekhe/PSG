@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]",
-        "🇰🇿 KZ | VLESS | @hope_net #1 [fast]",
+        "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]",
-        "🇰🇿 KZ | VLESS | @hope_net #1 [fast]"
+        "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 KZ | VLESS | @filterk0sh #1 [medium]",
+      "tag": "🇰🇿 KZ | VLESS | @filterk0sh #1 [slow]",
       "server": "77.73.232.61",
       "server_port": 19747,
       "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
@@ -88,23 +86,6 @@
           "public_key": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
           "short_id": "2001"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 KZ | VLESS | @hope_net #1 [fast]",
-      "server": "31.43.179.84",
-      "server_port": 2083,
-      "uuid": "9af577f2-0a7a-4448-ae0b-6985c53ea634",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "t-netplus1.pages.dev"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?edfp"
       }
     },
     {
