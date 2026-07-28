@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇪🇪 EE | VLESS | @hope_net #1 [fast]", "server": "45.80.110.161", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "a.ssll.gay", "ws-opts": {"path": "", "headers": {"Host": "45.80.110.161"}}}
+  - {"name": "🇪🇪 EE | VLESS | @hope_net #1 [fast]", "server": "45.80.110.211", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "a.ssll.gay", "ws-opts": {"path": "", "headers": {"Host": "45.80.110.211"}}}
+  - {"name": "🇪🇪 EE | VLESS | @hope_net #2 [fast]", "server": "45.80.110.223", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "a.ssll.gay", "ws-opts": {"path": "", "headers": {"Host": "45.80.110.223"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇪🇪 EE | VLESS | @hope_net #1 [fast]'
+      - '🇪🇪 EE | VLESS | @hope_net #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇪🇪 EE | VLESS | @hope_net #1 [fast]'
+      - '🇪🇪 EE | VLESS | @hope_net #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
