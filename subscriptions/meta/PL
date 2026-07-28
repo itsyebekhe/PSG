@@ -4,19 +4,22 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]", "server": "83.168.71.216", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
-  - {"name": "🇵🇱 PL | VLESS | @netmellianti #1 [fast]", "server": "168.222.49.20", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "ea3e24c1-6bc1-4a7a-9711-88f937f08bbb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ap-author.led.samsung.com", "reality-opts": {"public-key": "h6tCZV3ayNpiX72wvOSJhk-ggk8jqqcfQtVy04OBAE8", "short-id": "73"}}
+  - {"name": "🇵🇱 PL | VLESS | @netmellianti #1 [medium]", "server": "168.222.49.20", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "ea3e24c1-6bc1-4a7a-9711-88f937f08bbb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ap-author.led.samsung.com", "reality-opts": {"public-key": "h6tCZV3ayNpiX72wvOSJhk-ggk8jqqcfQtVy04OBAE8", "short-id": "73"}}
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "77.83.246.92", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "1f29762d-3f23-4207-9e39-f774de5d49ba", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "grpc"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]'
-      - '🇵🇱 PL | VLESS | @netmellianti #1 [fast]'
+      - '🇵🇱 PL | VLESS | @netmellianti #1 [medium]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]'
-      - '🇵🇱 PL | VLESS | @netmellianti #1 [fast]'
+      - '🇵🇱 PL | VLESS | @netmellianti #1 [medium]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

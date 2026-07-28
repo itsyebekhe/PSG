@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRUU=
+//profile-title: base64:UFNHIHwgSFU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE | VLESS | @hope_net #1 [fast]",
-        "🇪🇪 EE | VLESS | @hope_net #2 [fast]",
+        "🇭🇺 HU | SS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE | VLESS | @hope_net #1 [fast]",
-        "🇪🇪 EE | VLESS | @hope_net #2 [fast]"
+        "🇭🇺 HU | SS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,37 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @hope_net #1 [fast]",
-      "server": "45.80.110.211",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "network": "ws",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇭🇺 HU | SS | @red2ray #1 [fast]",
+      "server": "146.70.203.254",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XF0klw7870vXn3uQIxe19Q",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "a.ssll.gay"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "twitterfreecodesfp"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @hope_net #2 [fast]",
-      "server": "45.80.110.223",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "a.ssll.gay"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "twitterfreecodessecurity"
+        "enabled": true
       }
     },
     {

@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]",
         "direct"
       ],
@@ -60,23 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
-      "server": "storage.vipdatanetwork.com",
-      "server_port": 24504,
-      "uuid": "6682b6ba-0dd1-42a7-b3f6-05d0f545a98c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

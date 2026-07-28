@@ -3,26 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @netmellianti #1 [fast]", "server": "movies.vipdatacloud.com", "port": 24504, "type": "vless", "skip-cert-verify": true, "uuid": "6682b6ba-0dd1-42a7-b3f6-05d0f545a98c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision"}
-  - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "159.194.200.159", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "t1s1.rittbo.kdns.fr", "ws-opts": {"path": "", "headers": {"Host": "t1s1.rittbo.kdns.fr"}}}
-  - {"name": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]", "server": "81.85.78.193", "port": 4100, "type": "vless", "skip-cert-verify": true, "uuid": "2aa7f4b1-e859-46d0-b8ac-8587811ab7b1", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "live.ok.ru"}}}
+  - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
+  - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]", "server": "mx.bexumconnect.ltd", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1e06c388-d31c-420e-916a-94a990648e34", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "mx.bexumconnect.ltd"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @netmellianti #1 [fast]'
-      - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
-      - '🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
+      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @netmellianti #1 [fast]'
-      - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
-      - '🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
+      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
