@@ -5,18 +5,24 @@ log-level: info
 proxies:
   - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "abqwe.gfdcty.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eeb75ded-02ad-4e8f-9bb1-ccc5cd96e7cc", "network": "httpupgrade", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "abqwe.gfdcty.ir"}
   - {"name": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]", "server": "abqwe.gfdcty.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eeb75ded-02ad-4e8f-9bb1-ccc5cd96e7cc", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "abqwe.gfdcty.ir", "grpc-opts": {"grpc-service-name": "graphql-grpc-t7XyZ"}}
+  - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]", "server": "5.188.190.252", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]", "server": "nodde.soft88.site", "port": 45141, "type": "vless", "skip-cert-verify": true, "uuid": "dce873e4-10be-4d1b-ae61-8b0d551d5bec", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

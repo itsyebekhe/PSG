@@ -52,6 +52,8 @@
         "auto",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+        "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +63,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]"
+        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+        "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -97,6 +101,28 @@
         "type": "grpc",
         "service_name": "graphql-grpc-t7XyZ"
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
+      "server": "5.188.190.252",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "nodde.soft88.site",
+      "server_port": 45141,
+      "uuid": "dce873e4-10be-4d1b-ae61-8b0d551d5bec",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

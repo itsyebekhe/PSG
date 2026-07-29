@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]"
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,14 +68,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]",
-      "server": "s1.esantion.info",
-      "server_port": 24206,
-      "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288",
-      "network": "httpupgrade",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "77.42.83.112",
+      "server_port": 8443,
+      "uuid": "e315526f-c838-44db-9bd4-01ccb03450b9",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "amzn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SpAT1bZbRpAZa_gf61IapZMZ0CUMz4HTT5Yxvn7Nw1k",
+          "short_id": "14fae250"
+        }
       }
     },
     {

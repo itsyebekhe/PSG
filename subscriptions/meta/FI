@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @evay_vpn #1 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "77.42.83.112", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "e315526f-c838-44db-9bd4-01ccb03450b9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "amzn.com", "reality-opts": {"public-key": "SpAT1bZbRpAZa_gf61IapZMZ0CUMz4HTT5Yxvn7Nw1k", "short-id": "14fae250"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @evay_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @evay_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
