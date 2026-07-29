@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @ehsawn8 #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
@@ -107,8 +106,6 @@
         "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
-        "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
-        "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
@@ -213,7 +210,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @ehsawn8 #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
@@ -270,8 +266,6 @@
         "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
-        "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
-        "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
@@ -376,35 +370,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
-      "server": "104.18.1.1",
-      "server_port": 2053,
-      "uuid": "3193066d-6f38-4466-80b6-40ce3bcd4b54",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "late-leaf-f4d0.java00code.workers.dev",
-        "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "late-leaf-f4d0.java00code.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @ehsawn8 #1 [fast]",
       "server": "104.24.132.66",
       "server_port": 80,
@@ -422,6 +387,30 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
+      "server": "172.64.145.2",
+      "server_port": 443,
+      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "t1s1.rittbo.kdns.fr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "t1s1.rittbo.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
       "server": "173.245.59.162",
       "server_port": 443,
       "uuid": "c35050ce-01ab-45a9-91b8-54cec637d0a8",
@@ -445,45 +434,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
-      "server": "162.159.38.119",
-      "server_port": 443,
-      "uuid": "0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "unnes.ac.id.yxls.eu.cc"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "unnes.ac.id.yxls.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
-      "server": "172.64.145.2",
+      "server": "www.speedtest.net",
       "server_port": 443,
-      "uuid": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "uuid": "insta:mahan_vpn",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "t1s1.rittbo.kdns.fr",
+        "server_name": "mAhaNrEaliteAm.MaHkHan.iR",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed",
         "headers": {
-          "Host": "t1s1.rittbo.kdns.fr"
+          "Host": "mAhaNrEaliteAm.MaHkHan.iR"
         }
       }
     },
@@ -1412,15 +1381,28 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-      "server": "speedtest.org",
-      "server_port": 80,
-      "uuid": "893b9f79-d947-441b-8ce5-ea6a72ff85b0",
+      "server": "172.66.47.55",
+      "server_port": 2096,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "telgRAMcxrOlVPn.pagES.deV",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
       "transport": {
         "type": "ws",
+        "path": "/zpNsGJjjOIfDrkqr/c3BlZWR0ZXN0LW1pbjQuZ2NvcmUuY29t?ed=2560",
         "headers": {
-          "Host": "WwW.SpeedTest.Net.WhiteBer.InsisTom.D6625996.V21.SiMansaNaT.Ir."
+          "Host": "TeLgrAmCxROLVpN.PAgEs.DEV"
         }
       }
     },
@@ -1428,48 +1410,26 @@
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
       "server": "www.speedtest.net",
-      "server_port": 2052,
-      "uuid": "TELEGRAM-NUFiLTER",
+      "server_port": 8880,
+      "uuid": "telegram-id-ArV2ray",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
-      "server": "speedtest.org",
-      "server_port": 80,
-      "uuid": "893b9f79-d947-441b-8ce5-ea6a72ff85b0",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "WwW.SpeedTest.Net.WhiteBer.InsisTom.D6625996.V06.SiMansaNaT.Ir."
-        }
-      }
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "telegram-id-ArV2ray",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
-      "server": "speedtest.org",
-      "server_port": 80,
-      "uuid": "8dbcaf09-aa30-4367-9d8e-2762e66141d1",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "WwW.SpeedTest.Net.WhiteBer.InsisTom.D6625996.V04.SiMansaNaT.Ir."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
-      "server": "104.16.100.84",
+      "server": "104.17.93.85",
       "server_port": 8080,
-      "uuid": "e6fa4064-2834-471c-bdaf-93a59bc5390c",
+      "uuid": "b907aea0-cf1a-489f-aef7-b55a1ac04f34",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -1481,21 +1441,6 @@
         "path": "/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=8080",
         "headers": {
           "Host": "join-to.vmessorg.Community."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
-      "server": "speedtest.org",
-      "server_port": 80,
-      "uuid": "893b9f79-d947-441b-8ce5-ea6a72ff85b0",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "WwW.SpeedTest.Net.WhiteBer.InsisTom.D6625996.V19.SiMansaNaT.Ir."
         }
       }
     },

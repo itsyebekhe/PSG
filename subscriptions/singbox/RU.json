@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,31 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+      "server": "158.160.198.58",
+      "server_port": 443,
+      "uuid": "596b215c-3743-4893-b24a-4e396c4ab80f",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "DQW3GuEvmRgUQnnKdHjSZhgaEDcu_07Ijuqibd72-0I",
+          "short_id": "ca7dd27a72c7c203"
+        }
+      }
     },
     {
       "type": "vless",
