@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇩🇪 DE | VMESS | @red2ray #1 [fast]", "server": "82.198.246.233", "port": 180, "type": "vmess", "skip-cert-verify": true, "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]", "server": "82.198.246.97", "port": 180, "type": "vmess", "skip-cert-verify": true, "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]", "server": "5.188.190.252", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]", "server": "142.132.163.200", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "142.132.163.200"}}}
@@ -16,7 +15,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇩🇪 DE | VMESS | @red2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]'
       - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
@@ -29,7 +27,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇩🇪 DE | VMESS | @red2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]'
       - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'

@@ -59,8 +59,8 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
-        "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]",
         "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -80,6 +80,7 @@
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
@@ -120,8 +121,8 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
-        "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]",
         "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -141,6 +142,7 @@
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
@@ -293,28 +295,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH | VLESS | @nofiltering2 #1 [fast]",
-      "server": "onkwo.ojcenter.com",
-      "server_port": 3468,
-      "uuid": "ef340ab7-b1a5-a3de-cdcd-5e5d4f2cf9fd",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.telewebion.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SvSapHrt3EpoN_JcW195G48r5nJVuioGP7LNABKWxG4",
-          "short_id": "b6eae5ce"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
       "server": "cf.levikogjgfdd.ir",
       "server_port": 443,
@@ -324,6 +304,30 @@
       "tls": {
         "enabled": true,
         "server_name": "bbc.zjxc.de5.net"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @nofiltering2 #2 [fast]",
+      "server": "one-for-all.levikogjgfdd.ir",
+      "server_port": 443,
+      "uuid": "7e544a9d-7667-413b-bbb0-b3bb1aac6d77",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "shegeftihaaa.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/rsedgws",
+        "headers": {
+          "Host": "shegeftihaaa.net"
+        }
       }
     },
     {
@@ -669,6 +673,33 @@
           "enabled": true,
           "public_key": "9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4",
           "short_id": "89105c2e8f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
+      "server": "piracy-android.video-streams.org",
+      "server_port": 443,
+      "uuid": "ecbc4229-e8d3-4607-8f02-fd592c9a0743",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "piracy-android.video-streams.org",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "piracy-android.video-streams.org"
         }
       }
     },

@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFc=
+//profile-title: base64:UFNHIHwgQUw=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 TW | SS | @orange_vpns #1 [medium]",
+        "🇦🇱 AL | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 TW | SS | @orange_vpns #1 [medium]"
+        "🇦🇱 AL | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,29 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 TW | SS | @orange_vpns #1 [medium]",
-      "server": "r3mrcg001286ek2.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇦🇱 AL | VLESS | @netfreedom0 #1 [fast]",
+      "server": "144.31.129.42",
+      "server_port": 443,
+      "uuid": "7b81d175-d180-4ec8-bbc5-dfe80e8d3b68",
+      "network": "grpc",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "morphbinerkkw.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CxMPFpwhcR9Ocp-Xy_1J08mo-atdHKUf58WLOy_XlgM",
+          "short_id": "d9662905"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "nexusGrpc"
       }
     },
     {
