@@ -3,19 +3,22 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "arme.biscuitnazari.ir", "port": 9443, "type": "vless", "skip-cert-verify": true, "uuid": "fd5d3017-c682-46dd-9259-a6a884e918df", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "play.google.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "aJw9xFr6q48MQ2EAl0DeJunqw0X5hob0qUEMPeX-7k0", "short-id": "1f0dfe11"}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "arme.biscuitnazari.ir", "port": 9443, "type": "vless", "skip-cert-verify": true, "uuid": "fd5d3017-c682-46dd-9259-a6a884e918df", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "play.google.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "aJw9xFr6q48MQ2EAl0DeJunqw0X5hob0qUEMPeX-7k0", "short-id": "1f0dfe11"}}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "tk2.lion-game.ir", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "a2ec0704-f70c-4b1e-b3ef-fc26d76dabdc", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "s.yimg.com", "reality-opts": {"public-key": "TaAUGFXiXMWoPGxTWMs-ApIn8RCw4KgfAto_DzaxrB4", "short-id": "e7f20310a9097f4d"}}
   - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]", "server": "5.188.190.252", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT

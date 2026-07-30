@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
-  - {"name": "🇸🇬 SG | VLESS | @hope_net #1 [fast]", "server": "206.238.236.186", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vh.ylks.xyz", "ws-opts": {"path": "", "headers": {"Host": "206.238.236.186"}}}
   - {"name": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "qzc6tbpu04c4.dop69.com", "port": 10962, "type": "vless", "skip-cert-verify": true, "uuid": "d2c548f1-27c4-4364-bd70-feb2c159f534", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]", "server": "qzc6tbpu04c4.dop69.com", "port": 10962, "type": "vless", "skip-cert-verify": true, "uuid": "be0fa2b7-fcf9-4636-8a89-b2a245fc4e02", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
@@ -12,7 +11,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @hope_net #1 [fast]'
       - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]'
       - DIRECT
@@ -20,7 +18,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @hope_net #1 [fast]'
       - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]'
 rules:

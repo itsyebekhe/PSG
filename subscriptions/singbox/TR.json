@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
@@ -60,7 +61,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -70,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
       "server": "arme.biscuitnazari.ir",
       "server_port": 9443,
       "uuid": "fd5d3017-c682-46dd-9259-a6a884e918df",
@@ -92,6 +94,28 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "tk2.lion-game.ir",
+      "server_port": 8080,
+      "uuid": "a2ec0704-f70c-4b1e-b3ef-fc26d76dabdc",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s.yimg.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TaAUGFXiXMWoPGxTWMs-ApIn8RCw4KgfAto_DzaxrB4",
+          "short_id": "e7f20310a9097f4d"
+        }
       }
     },
     {
