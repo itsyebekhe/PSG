@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @flyv2ray #1 [slow]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
         "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]",
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,37 +62,15 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @flyv2ray #1 [slow]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
         "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]"
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @flyv2ray #1 [slow]",
-      "server": "cdn-xui185.korvexe.ir",
-      "server_port": 45367,
-      "uuid": "05d30a1a-7525-46af-897a-504035ef2633",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "qapartners.sec.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OeFiglavZSIdPfUbSXwiNgOZQ2P_CiyW9VrV1hXIVmI",
-          "short_id": "9d79bd"
-        }
-      }
     },
     {
       "type": "vless",
@@ -121,6 +99,22 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+      "server": "newtr.karmatel.ir",
+      "server_port": 20727,
+      "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
+    },
+    {
       "type": "vmess",
       "tag": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
       "server": "5.188.190.252",
@@ -135,7 +129,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
       "server": "nodde.soft88.site",
       "server_port": 45141,
       "uuid": "dce873e4-10be-4d1b-ae61-8b0d551d5bec",
