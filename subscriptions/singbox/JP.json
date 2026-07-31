@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
+        "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
@@ -61,6 +62,7 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
+        "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -78,6 +80,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
+      "server": "jp-ak.astralweb.tech",
+      "server_port": 443,
+      "uuid": "3ad1d277-5715-4ca1-84db-5baea72f822d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp-ak.astralweb.tech",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z2c9dK70_0OWBEZGgeaXJyt9dup9h2-hZlCCvIGLg1Q",
+          "short_id": "496ee75c2f91f51d"
+        }
       }
     },
     {
