@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQ0g=
+//profile-title: base64:UFNHIHwgSVQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH | VLESS | @YeBeKhe #1 [fast]",
+        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH | VLESS | @YeBeKhe #1 [fast]"
+        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,25 +68,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH | VLESS | @YeBeKhe #1 [fast]",
-      "server": "channel.tradeip.store",
-      "server_port": 8443,
-      "uuid": "t.me.TradeIP",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
+      "server": "it1.levikogjgfdd.ir",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HL-IrEO6_mXNGgiBztNWX0VY3nb-JQ3thK_7gFbk4Bg",
-          "short_id": "c214"
-        }
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {

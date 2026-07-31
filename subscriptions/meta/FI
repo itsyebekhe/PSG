@@ -1,0 +1,25 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "3bcd331c14bcf7a0.mbcloudynias.ir", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "8f0a9c91-ec47-4351-a8e8-93dfd493cd5f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs", "short-id": "c077229044b68285"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #2 [medium]", "server": "62.238.63.51", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "1b74b98a-619f-47ab-bbb9-a7650f6c4d4c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #3 [medium]", "server": "62.238.53.197", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "1b74b98a-619f-47ab-bbb9-a7650f6c4d4c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #2 [medium]'
+      - '🇫🇮 FI | VLESS | @red2ray #3 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #2 [medium]'
+      - '🇫🇮 FI | VLESS | @red2ray #3 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
