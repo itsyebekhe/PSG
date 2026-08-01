@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇰🇿 KZ | VLESS | @red2ray #1 [fast]", "server": "raff-vpn-kz-server1.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6fdfdb73-51b0-4a14-89a5-c9355a0e0397", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "google.com", "reality-opts": {"public-key": "vCxfuNNmogA1DlPkjvmKb7_hSgXqe4MboPfi2s1JZG0", "short-id": "b318242471ba4f5b"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇰🇿 KZ | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇰🇿 KZ | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

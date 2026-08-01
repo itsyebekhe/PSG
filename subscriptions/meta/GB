@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇬🇧 GB | VLESS | @hope_net #1 [fast]", "server": "uk2.waldron.ir", "port": 2052, "type": "vless", "skip-cert-verify": true, "uuid": "71bcc995-3ac4-4ec7-b0d3-124dbc85091d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "play.google.com", "reality-opts": {"public-key": "Sh2F8IDDBaFvXPI59IwN-25UR1G0fjXNmuVqwNbTpUk", "short-id": "c87bfa39a28a95b9"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
