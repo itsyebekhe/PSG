@@ -52,6 +52,7 @@
         "auto",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]"
+        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -107,6 +109,28 @@
         "path": "/",
         "headers": {
           "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
+      "server": "cdn-xui45.korvexe.ir",
+      "server_port": 47402,
+      "uuid": "589bbd33-6fbf-4f6d-9ecb-ffec56dded72",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DmeABR7lSmvueMDp80Y7A9SteIlbGUhExedf_rmTGBY",
+          "short_id": "4e55576b"
         }
       }
     },
