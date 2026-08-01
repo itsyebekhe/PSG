@@ -50,10 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @hope_net #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +63,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @hope_net #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,7 +76,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -94,6 +96,23 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @hope_net #1 [fast]",
+      "server": "194.152.44.250",
+      "server_port": 443,
+      "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cfed.tgzdyz2.top"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "tg@zdyz2"
       }
     },
     {
@@ -118,7 +137,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

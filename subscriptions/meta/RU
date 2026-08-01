@@ -3,23 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]", "server": "158.160.198.58", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "596b215c-3743-4893-b24a-4e396c4ab80f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "api-maps.yandex.ru", "reality-opts": {"public-key": "DQW3GuEvmRgUQnnKdHjSZhgaEDcu_07Ijuqibd72-0I", "short-id": "ca7dd27a72c7c203"}}
-  - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
-  - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]", "server": "62.152.59.224", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "efa7cb19-2845-4eb7-bcd7-e860a8a4628d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "pPzR1XhpFrEIwevI7lPPvw4faRcRQmqiNySYHkSdVBU", "short-id": "2a552b0d4d15e0f7"}}
+  - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
+  - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]", "server": "62.152.59.224", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "efa7cb19-2845-4eb7-bcd7-e860a8a4628d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "pPzR1XhpFrEIwevI7lPPvw4faRcRQmqiNySYHkSdVBU", "short-id": "2a552b0d4d15e0f7"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]'
-      - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
-      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]'
+      - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
+      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]'
-      - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
-      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]'
+      - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
+      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
