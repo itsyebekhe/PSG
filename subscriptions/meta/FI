@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]", "server": "pi.paydar.site", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "136a87e1-c414-4010-b73b-18d0fca70d68", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "h.telegram-tirexnet.kdns.fr", "port": 23961, "type": "vless", "skip-cert-verify": true, "uuid": "8d0718bd-5b4b-4e6a-92af-669a65740869", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": ""}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

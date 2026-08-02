@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
+        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,22 +74,6 @@
       "uuid": "136a87e1-c414-4010-b73b-18d0fca70d68",
       "network": "tcp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "h.telegram-tirexnet.kdns.fr",
-      "server_port": 23961,
-      "uuid": "8d0718bd-5b4b-4e6a-92af-669a65740869",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
     },
     {
       "type": "direct",
