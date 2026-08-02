@@ -50,11 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇸🇨 SC | VLESS | @mehrosaboran #1 [fast]",
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
+        "🇸🇨 SC | VLESS | @jiedianf #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,16 +65,41 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇸🇨 SC | VLESS | @mehrosaboran #1 [fast]",
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
-        "🇸🇨 SC | VLESS | @arv2ray #1 [fast]"
+        "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
+        "🇸🇨 SC | VLESS | @jiedianf #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
+      "server": "45.196.201.111",
+      "server_port": 443,
+      "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
+          "short_id": "c6ef72e4635d15a5"
+        }
+      }
     },
     {
       "type": "vless",
@@ -184,6 +211,29 @@
         "path": "/-Arfilter-TEL--@Arfilter-TEL--@Arfilter-TEL--@ArFilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@ArFilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEl--@Arfilter?ed=2048",
         "headers": {
           "Host": "cdn-alman1.arfilter2.blog"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @jiedianf #1 [fast]",
+      "server": "45.196.201.62",
+      "server_port": 443,
+      "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
+          "short_id": "c6ef72e4635d15a5"
         }
       }
     },

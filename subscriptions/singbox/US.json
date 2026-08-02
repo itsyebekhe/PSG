@@ -54,7 +54,9 @@
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
+        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | SS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
@@ -66,7 +68,6 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -103,7 +104,9 @@
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
+        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | SS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
@@ -115,7 +118,6 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -220,6 +222,15 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+      "server": "spd-mynames.global.ssl.fastly.net",
+      "server_port": 80,
+      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
+    },
+    {
       "type": "hysteria2",
       "tag": "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
       "server": "150.241.102.127",
@@ -228,6 +239,18 @@
       "tls": {
         "enabled": true,
         "server_name": "usp.noesissite.ru"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @free1_vpn #1 [fast]",
+      "server": "70.39.198.35",
+      "server_port": 54166,
+      "method": "chacha20-ietf-poly1305",
+      "password": "EvLfWGe0AKvK",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
@@ -312,14 +335,14 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "152.55.176.3marzban-node-production-88eb.up.railway.app",
+      "server": "x4g-production-8fac4.up.railway.app",
       "server_port": 443,
-      "uuid": "6cf40f97-b385-4d20-8dfb-410e882f3e26",
+      "uuid": "9da6747c-ea27-836f-48dd-00745676b04d",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "marzban-node-production-88eb.up.railway.app",
+        "server_name": "x4g-production-8fac4.up.railway.app",
         "alpn": [
           "http/1.1"
         ],
@@ -330,9 +353,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/ws/9da6747c-ea27-836f-48dd-00745676b04d",
         "headers": {
-          "Host": "marzban-node-production-88eb.up.railway.app"
+          "Host": "x4g-production-8fac4.up.railway.app"
         }
       }
     },
@@ -419,15 +442,6 @@
       "tls": {
         "enabled": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-      "server": "spd-mynames.global.ssl.fastly.net",
-      "server_port": 80,
-      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

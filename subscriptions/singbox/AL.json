@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgU0c=
+//profile-title: base64:UFNHIHwgQUw=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇦🇱 AL | VLESS | @netfreedom0 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]"
+        "🇦🇱 AL | VLESS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,21 +68,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
-      "server": "qzc6tbpu04c4.dop69.com",
-      "server_port": 10962,
-      "uuid": "d2c548f1-27c4-4364-bd70-feb2c159f534",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]",
-      "server": "qzc6tbpu04c4.dop69.com",
-      "server_port": 10962,
-      "uuid": "be0fa2b7-fcf9-4636-8a89-b2a245fc4e02",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "tag": "🇦🇱 AL | VLESS | @netfreedom0 #1 [medium]",
+      "server": "144.31.129.42",
+      "server_port": 443,
+      "uuid": "7b81d175-d180-4ec8-bbc5-dfe80e8d3b68",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "morphbinerkkw.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CxMPFpwhcR9Ocp-Xy_1J08mo-atdHKUf58WLOy_XlgM",
+          "short_id": "d9662905"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "nexusGrpc"
+      }
     },
     {
       "type": "direct",
