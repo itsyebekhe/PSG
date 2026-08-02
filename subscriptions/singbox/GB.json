@@ -50,11 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
@@ -67,11 +67,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
@@ -81,6 +81,18 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
+      "server": "82.38.31.57",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "shadowsocks",
@@ -119,25 +131,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
-      "server": "185.193.29.38",
-      "server_port": 443,
-      "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfed.tgzdyz2.top"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "tg@zdyz2"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @outline_ir #1 [fast]",
       "server": "82.38.31.162",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
