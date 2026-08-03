@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "newtr.karmatel.ir", "port": 20727, "type": "vless", "skip-cert-verify": true, "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]", "server": "apiapi.gold-temas.com", "port": 52632, "type": "vless", "skip-cert-verify": true, "uuid": "7f34b2d2-f06c-4c9d-8a40-40aab0f80976", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "newtr.karmatel.ir", "port": 20727, "type": "vless", "skip-cert-verify": true, "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #2 [medium]", "server": "apiapi.gold-temas.com", "port": 52632, "type": "vless", "skip-cert-verify": true, "uuid": "7f34b2d2-f06c-4c9d-8a40-40aab0f80976", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

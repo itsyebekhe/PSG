@@ -3,23 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "62.238.63.51", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "cf546c96-ed5e-46cc-b080-1cacf1770a5c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇫🇮 FI | VLESS | @red2ray #2 [fast]", "server": "fl.lorzema.ir", "port": 2050, "type": "vless", "skip-cert-verify": true, "uuid": "83e13b2f-250f-43e4-8257-486c341ffb81", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "yahoo.com", "reality-opts": {"public-key": "d00ZgCDuY5ncLM1aF9nocq5oBthFMFetgobyJ2qUTg4", "short-id": "339d7c53d8832086"}}
-  - {"name": "🇫🇮 FI | VLESS | @red2ray #3 [fast]", "server": "fl.lorzema.ir", "port": 2583, "type": "vless", "skip-cert-verify": true, "uuid": "83e13b2f-250f-43e4-8257-486c341ffb81", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "grpc-opts": {"grpc-service-name": "yourServiceName"}, "reality-opts": {"public-key": "noT46H0V_OysEB7xcYbl-YdWRpvBQ87C8TOlSwqrcVg", "short-id": "99a46066104c46f9"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "fi2.levikogjgfdd.ir", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "a481265c-a4d8-4d1a-9ae1-48eb3f7fccb4", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [slow]", "server": "62.238.63.51", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "cf546c96-ed5e-46cc-b080-1cacf1770a5c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @outline_ir #2 [medium]", "server": "62.238.55.96", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "5de3f60c-7cc2-4f66-9177-706a2693dc19", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
-      - '🇫🇮 FI | VLESS | @red2ray #2 [fast]'
-      - '🇫🇮 FI | VLESS | @red2ray #3 [fast]'
+      - '🇫🇮 FI | VLESS | @outline_ir #1 [slow]'
+      - '🇫🇮 FI | VLESS | @outline_ir #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
-      - '🇫🇮 FI | VLESS | @red2ray #2 [fast]'
-      - '🇫🇮 FI | VLESS | @red2ray #3 [fast]'
+      - '🇫🇮 FI | VLESS | @outline_ir #1 [slow]'
+      - '🇫🇮 FI | VLESS | @outline_ir #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

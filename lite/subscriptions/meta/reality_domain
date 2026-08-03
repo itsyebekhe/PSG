@@ -6,8 +6,9 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇧🇬 BG | VLESS | @red2ray #1 [fast]", "server": "de.vrsvpn.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "web.max.ru", "reality-opts": {"public-key": "QocXHwad0mV7WA5jSAcqDac3uuVBEp1WF775-CilniE", "short-id": "45ba18f429ad1f28"}}
+  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "pl1.levikogjgfdd.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6f98a077-004e-4b86-8b78-8d09308d3868", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "stats.vk-portal.net", "reality-opts": {"public-key": "XBBVeMURFu7jmYJ9MZwjEWgfQlGTnRs0B5So5Fy7jWs", "short-id": "992f3294e2336744"}}
   - {"name": "🇫🇷 FR | VLESS | @oonfig #1 [fast]", "server": "my.filpower.shop", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "09bb1018-47b1-4968-964c-d9bf96bb052b", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "m7WfiFH6HcPxlTgzNjq035kpMnkGaNG3UBo4OyS2kGA", "short-id": "f2c5768a"}}
+  - {"name": "🇺🇸 US | VLESS | @outline_ir #1 [fast]", "server": "ua1.levikogjgfdd.ir", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "17d29827-7cf1-4115-b40d-548e10ec355d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM", "short-id": "aa3c"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -15,8 +16,9 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - '🇫🇷 FR | VLESS | @oonfig #1 [fast]'
+      - '🇺🇸 US | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -24,8 +26,9 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - '🇫🇷 FR | VLESS | @oonfig #1 [fast]'
+      - '🇺🇸 US | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
