@@ -53,10 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #2 [fast]",
         "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #2 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #3 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #3 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
@@ -72,10 +71,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #2 [fast]",
         "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #2 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #3 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #3 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
@@ -127,53 +125,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
-      "server": "nod4.kaafserver.ir",
-      "server_port": 8443,
-      "uuid": "f3d2dbde-f8c1-4fd1-a4ff-32c2fd476d65",
+      "tag": "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
+      "server": "de.vrsvpn.com",
+      "server_port": 443,
+      "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QCLXkk19RkRbBuMqyCggYr_57_eT9f3Xe-vnr_IrQhY",
-          "short_id": "79b983feac02921c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-      "server": "fr.fastraytel9880.ir",
-      "server_port": 2087,
-      "uuid": "0188427e-e55b-49f3-bd4a-1b2e34a87032",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
+        "server_name": "web.max.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Te0ColQDcNHarIngKbt7eBIr1rrZLW3h7UEINhbhHxk",
-          "short_id": "5967"
+          "public_key": "QocXHwad0mV7WA5jSAcqDac3uuVBEp1WF775-CilniE",
+          "short_id": "45ba18f429ad1f28"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #2 [fast]",
-      "server": "fr.lorzema.ir",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #2 [fast]",
+      "server": "fl.lorzema.ir",
       "server_port": 2050,
       "uuid": "83e13b2f-250f-43e4-8257-486c341ffb81",
       "network": "tcp",
@@ -194,25 +170,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
-      "server": "de.vrsvpn.com",
-      "server_port": 443,
-      "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #3 [fast]",
+      "server": "fl.lorzema.ir",
+      "server_port": 2583,
+      "uuid": "83e13b2f-250f-43e4-8257-486c341ffb81",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "web.max.ru",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "QocXHwad0mV7WA5jSAcqDac3uuVBEp1WF775-CilniE",
-          "short_id": "45ba18f429ad1f28"
+          "public_key": "noT46H0V_OysEB7xcYbl-YdWRpvBQ87C8TOlSwqrcVg",
+          "short_id": "99a46066104c46f9"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "yourServiceName"
       }
     },
     {
