@@ -52,8 +52,9 @@
         "auto",
         "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
         "🇫🇮 FI | VLESS | @outline_ir #1 [slow]",
-        "🇫🇮 FI | VLESS | @outline_ir #2 [medium]",
         "🇫🇮 FI | SS | @outline_ir #1 [medium]",
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -64,8 +65,9 @@
       "outbounds": [
         "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
         "🇫🇮 FI | VLESS | @outline_ir #1 [slow]",
-        "🇫🇮 FI | VLESS | @outline_ir #2 [medium]",
-        "🇫🇮 FI | SS | @outline_ir #1 [medium]"
+        "🇫🇮 FI | SS | @outline_ir #1 [medium]",
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -75,9 +77,9 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
-      "server": "fi2.levikogjgfdd.ir",
+      "server": "62.238.53.197",
       "server_port": 1234,
-      "uuid": "a481265c-a4d8-4d1a-9ae1-48eb3f7fccb4",
+      "uuid": "8b0c48db-c228-47d9-b634-6ea6edf81e22",
       "network": "tcp",
       "packet_encoding": "xudp"
     },
@@ -91,15 +93,6 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #2 [medium]",
-      "server": "62.238.55.96",
-      "server_port": 1234,
-      "uuid": "5de3f60c-7cc2-4f66-9177-706a2693dc19",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇫🇮 FI | SS | @outline_ir #1 [medium]",
       "server": "31.76.30.79",
@@ -109,6 +102,42 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+      "server": "m.telewebion.ir.varzesh3.com.de",
+      "server_port": 443,
+      "uuid": "e9085087-c930-463c-830f-ca78f5cc4755",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "mahdipok.paydar.site",
+      "server_port": 80,
+      "uuid": "116f860d-c67a-4443-b478-18e11d193592",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com"
       }
     },
     {

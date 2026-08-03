@@ -1,0 +1,22 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]", "server": "142.93.37.97", "port": 18319, "type": "vless", "skip-cert-verify": true, "uuid": "6d238427-e07d-4820-9782-bfe47ecf05c9", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]", "server": "165.22.125.200", "port": 35252, "type": "vless", "skip-cert-verify": true, "uuid": "1aa1b792-e3ca-4264-85b0-b0e629e00485", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

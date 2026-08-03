@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
         "🇹🇷 TR | VLESS | @netmellianti #2 [medium]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,14 +61,26 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
-        "🇹🇷 TR | VLESS | @netmellianti #2 [medium]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [medium]"
+        "🇹🇷 TR | VLESS | @netmellianti #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
+      "server": "188.41.249.20",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rYfi4cQ3z7zts7BO4-Y9_A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",
@@ -94,18 +106,6 @@
       "uuid": "7f34b2d2-f06c-4c9d-8a40-40aab0f80976",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
-      "server": "188.41.249.20",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rYfi4cQ3z7zts7BO4-Y9_A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "direct",

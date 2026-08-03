@@ -51,10 +51,11 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @selinc #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [medium]",
+        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [medium]",
         "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
@@ -68,10 +69,11 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @selinc #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [medium]",
+        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [medium]",
         "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
@@ -96,7 +98,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
       "server": "82.38.31.194",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -120,27 +122,33 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-      "server": "82.38.31.205",
+      "tag": "🇬🇧 GB | SS | @red2ray #1 [medium]",
+      "server": "82.38.31.164",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
       "tls": {
         "enabled": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @selinc #1 [fast]",
-      "server": "hg1.levikogjgfdd.ir",
-      "server_port": 40028,
-      "method": "chacha20-ietf-poly1305",
-      "password": "28789988-887e-4e41-83cd-27bbfb7999ad",
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "142.93.37.97",
+      "server_port": 18319,
+      "uuid": "6d238427-e07d-4820-9782-bfe47ecf05c9",
       "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "165.22.125.200",
+      "server_port": 35252,
+      "uuid": "1aa1b792-e3ca-4264-85b0-b0e629e00485",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "shadowsocks",
