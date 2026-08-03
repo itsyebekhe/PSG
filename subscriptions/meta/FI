@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]", "server": "pi.paydar.site", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "136a87e1-c414-4010-b73b-18d0fca70d68", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "62.238.63.51", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "cf546c96-ed5e-46cc-b080-1cacf1770a5c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
