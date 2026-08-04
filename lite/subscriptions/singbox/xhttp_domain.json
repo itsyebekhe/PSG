@@ -55,8 +55,8 @@
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
-        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [slow]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
@@ -71,8 +71,8 @@
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
-        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [slow]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -139,7 +139,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [slow]",
       "server": "static.lotussec.com",
       "server_port": 443,
       "uuid": "14b48651-3738-4926-bc09-4c04e87ff80b",
@@ -159,12 +159,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
-      "server": "germany.fast.hosting-ip.com",
-      "server_port": 80,
-      "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "iran-tehran.co.uk",
+      "server_port": 443,
+      "uuid": "509c0aa6-f98b-4f57-b73c-c707129f556e",
       "network": "xhttp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "iran-tehran.co.uk",
+        "alpn": [
+          "h2",
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "vless",

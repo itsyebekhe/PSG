@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇨🇭 CH | VLESS | @red2ray #1 [fast]", "server": "dl12sw.cdn-ir-prime.shop", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "4f985006-8cb0-cf98-2c37-51c111780604", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "78B5e70YAkLUjm7Pg2OlJcPVUWIR-vjDh0u6enzqqUs", "short-id": "f1e1aa97"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇨🇭 CH | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇨🇭 CH | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
