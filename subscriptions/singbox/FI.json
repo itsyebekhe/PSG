@@ -50,11 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
-        "🇫🇮 FI | SS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | SS | @flyv2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @flyv2ray #2 [fast]",
+        "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
+        "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,11 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
-        "🇫🇮 FI | SS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | SS | @flyv2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @flyv2ray #2 [fast]"
+        "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
+        "🇫🇮 FI | VLESS | @outline_ir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -75,26 +73,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-      "server": "62.238.63.51",
-      "server_port": 1234,
-      "uuid": "cf546c96-ed5e-46cc-b080-1cacf1770a5c",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
-      "server": "62.238.55.96",
-      "server_port": 1234,
-      "uuid": "5de3f60c-7cc2-4f66-9177-706a2693dc19",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇮 FI | SS | @outline_ir #1 [fast]",
+      "tag": "🇫🇮 FI | SS | @flyv2ray #1 [fast]",
       "server": "31.76.30.79",
       "server_port": 10808,
       "method": "chacha20-ietf-poly1305",
@@ -129,10 +109,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @flyv2ray #2 [fast]",
-      "server": "d.mytopmedia.net",
-      "server_port": 200,
-      "uuid": "6bc19aa1-d94b-488c-9b25-47214d371851",
+      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
+      "server": "62.238.63.51",
+      "server_port": 1234,
+      "uuid": "cf546c96-ed5e-46cc-b080-1cacf1770a5c",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
+      "server": "62.238.55.96",
+      "server_port": 1234,
+      "uuid": "5de3f60c-7cc2-4f66-9177-706a2693dc19",
       "network": "tcp",
       "packet_encoding": "xudp"
     },

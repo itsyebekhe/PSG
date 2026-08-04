@@ -51,8 +51,9 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+        "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +63,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]"
+        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+        "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -95,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
       "server": "newtr.karmatel.ir",
       "server_port": 20727,
       "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de",
@@ -111,7 +113,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
       "server": "188.41.249.20",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
@@ -119,6 +121,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
+      "server": "62.133.63.202",
+      "server_port": 13868,
+      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FaX6hUpswBFFN-GaXFmFK8bVWYcPlrB4KP26n_INgko",
+          "short_id": "e852dc"
+        }
       }
     },
     {

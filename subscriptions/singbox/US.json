@@ -60,6 +60,7 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
@@ -111,6 +112,7 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
@@ -300,6 +302,23 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+      "server": "135.84.76.105",
+      "server_port": 443,
+      "uuid": "c82f8880-bdd8-4a35-b8e7-ad5aa880f7d0",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ve.ylkszy.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?proxyip"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
       "server": "151.101.64.155",
       "server_port": 80,
@@ -325,20 +344,27 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "172.66.0.169",
+      "server": "69.46.46.10",
       "server_port": 443,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "uuid": "939fdc89-ccc5-b335-3bb7-f21c14ef5a1f",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "b8k86.z3xq.fzi.hh.vavava.kdns.fr"
+        "server_name": "x4g-production-e38b.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/ws/939fdc89-ccc5-b335-3bb7-f21c14ef5a1f",
         "headers": {
-          "Host": "b8k86.z3xq.fzi.hh.vavava.kdns.fr"
+          "Host": "x4g-production-e38b.up.railway.app"
         }
       }
     },

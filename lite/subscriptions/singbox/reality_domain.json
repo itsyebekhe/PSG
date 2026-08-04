@@ -54,9 +54,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇵🇱 PL | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -69,9 +69,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]"
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇵🇱 PL | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @oonfig #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -142,28 +142,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 CH | VLESS | @red2ray #1 [fast]",
-      "server": "dl12sw.cdn-ir-prime.shop",
-      "server_port": 2053,
-      "uuid": "4f985006-8cb0-cf98-2c37-51c111780604",
-      "network": "grpc",
+      "tag": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+      "server": "m.telewebion.ir.varzesh3.com.de",
+      "server_port": 443,
+      "uuid": "e9085087-c930-463c-830f-ca78f5cc4755",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "tg.riotvpn.eu",
+      "server_port": 443,
+      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "78B5e70YAkLUjm7Pg2OlJcPVUWIR-vjDh0u6enzqqUs",
-          "short_id": "f1e1aa97"
+          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "short_id": "2f49bccf11150ef2"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
@@ -190,29 +209,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-      "server": "m.telewebion.ir.varzesh3.com.de",
-      "server_port": 443,
-      "uuid": "e9085087-c930-463c-830f-ca78f5cc4755",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
-        }
       }
     },
     {
