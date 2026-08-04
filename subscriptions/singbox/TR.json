@@ -51,9 +51,8 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,9 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]"
+        "🇹🇷 TR | SS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -96,18 +94,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-      "server": "188.41.249.20",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rYfi4cQ3z7zts7BO4-Y9_A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
       "server": "newtr.karmatel.ir",
@@ -124,13 +110,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
-      "server": "apiapi.gold-temas.com",
-      "server_port": 52632,
-      "uuid": "7f34b2d2-f06c-4c9d-8a40-40aab0f80976",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
+      "type": "shadowsocks",
+      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+      "server": "188.41.249.20",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rYfi4cQ3z7zts7BO4-Y9_A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "direct",

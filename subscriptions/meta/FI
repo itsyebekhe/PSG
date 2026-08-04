@@ -6,7 +6,7 @@ proxies:
   - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]", "server": "62.238.63.51", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "cf546c96-ed5e-46cc-b080-1cacf1770a5c", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇮 FI | VLESS | @outline_ir #2 [fast]", "server": "62.238.55.96", "port": 1234, "type": "vless", "skip-cert-verify": true, "uuid": "5de3f60c-7cc2-4f66-9177-706a2693dc19", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]", "server": "m.telewebion.ir.varzesh3.com.de", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e9085087-c930-463c-830f-ca78f5cc4755", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs", "short-id": "e915"}}
-  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "iran-tehran.co.uk", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "509c0aa6-f98b-4f57-b73c-c707129f556e", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "iran-tehran.co.uk"}
+  - {"name": "🇫🇮 FI | VLESS | @flyv2ray #2 [fast]", "server": "d.mytopmedia.net", "port": 200, "type": "vless", "skip-cert-verify": true, "uuid": "6bc19aa1-d94b-488c-9b25-47214d371851", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
       - '🇫🇮 FI | VLESS | @outline_ir #2 [fast]'
       - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @flyv2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +22,7 @@ proxy-groups:
       - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
       - '🇫🇮 FI | VLESS | @outline_ir #2 [fast]'
       - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @flyv2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

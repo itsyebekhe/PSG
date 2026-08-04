@@ -98,6 +98,7 @@
         "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
+        "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #2 [fast]",
@@ -192,6 +193,7 @@
         "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
+        "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #2 [fast]",
@@ -853,7 +855,7 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-      "server": "104.18.234.70",
+      "server": "104.21.20.134",
       "server_port": 80,
       "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
       "network": "ws",
@@ -869,16 +871,19 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
-      "server": "104.17.148.101",
-      "server_port": 80,
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+      "server": "172.67.180.79",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev"
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
-          "Host": "us3.rtacg.com"
+          "Host": "mmdv2.pages.dev"
         }
       }
     },
@@ -1171,6 +1176,26 @@
         "utls": {
           "enabled": true,
           "fingerprint": "random"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
+      "server": "162.159.38.119",
+      "server_port": 443,
+      "uuid": "84ec3636-ebf9-47b1-994c-6e5f995675d6",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "shh2.rfgb.shop",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
