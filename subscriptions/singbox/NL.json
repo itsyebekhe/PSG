@@ -52,7 +52,9 @@
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -64,7 +66,9 @@
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -97,6 +101,30 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
+      "server": "apjhdggyx.com",
+      "server_port": 443,
+      "uuid": "5f72f180-b21b-4b7a-8484-240759012604",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "apjhdggyx.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/5f72f180-b21b-4b7a-8484-240759096785",
+        "headers": {
+          "Host": "apjhdggyx.com"
+        }
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "server": "dey.lnmarketplace.net",
@@ -114,6 +142,18 @@
           "enabled": true,
           "fingerprint": "firefox"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+      "server": "108.181.58.239",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "CJmTCCx7Ltud",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

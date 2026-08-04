@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]", "server": "apjhdggyx.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "5f72f180-b21b-4b7a-8484-240759012604", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/5f72f180-b21b-4b7a-8484-240759096785", "headers": {"Host": "apjhdggyx.com"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
