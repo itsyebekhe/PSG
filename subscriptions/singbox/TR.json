@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
+        "🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @mtpv2ray #1 [medium]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
+        "🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]"
+        "🇹🇷 TR | VLESS | @mtpv2ray #1 [medium]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]",
       "server": "nod4.kaafserver.ir",
       "server_port": 8443,
       "uuid": "f3d2dbde-f8c1-4fd1-a4ff-32c2fd476d65",
@@ -112,20 +112,31 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-      "server": "188.41.249.20",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rYfi4cQ3z7zts7BO4-Y9_A",
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @mtpv2ray #1 [medium]",
+      "server": "45.92.219.204",
+      "server_port": 8088,
+      "uuid": "06f86f1b-1fa0-437e-9e5d-8f8cf27bdf96",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6m_clJWpXHndi176bB428JqroczCuJVMyhfMGuI9wRI",
+          "short_id": "11e9"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
       "server": "62.133.63.202",
       "server_port": 13868,
       "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",

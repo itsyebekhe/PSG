@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | SS | @flyv2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
+        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,27 +60,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | SS | @flyv2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #2 [fast]"
+        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI | SS | @flyv2ray #1 [fast]",
-      "server": "31.76.30.79",
-      "server_port": 10808,
-      "method": "chacha20-ietf-poly1305",
-      "password": "TmXSpcRBbhvHDg66bo2w89bToxQsbMoa",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vless",
@@ -108,22 +92,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-      "server": "62.238.63.51",
-      "server_port": 1234,
-      "uuid": "cf546c96-ed5e-46cc-b080-1cacf1770a5c",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
-      "server": "62.238.55.96",
-      "server_port": 1234,
-      "uuid": "5de3f60c-7cc2-4f66-9177-706a2693dc19",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "type": "hysteria2",
+      "tag": "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [medium]",
+      "server": "fi-one.quiet-rogue.site",
+      "server_port": 443,
+      "password": "71cada65-d23e-418c-88e4-a06188d14689",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi-one.quiet-rogue.site"
+      }
     },
     {
       "type": "direct",

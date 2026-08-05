@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇪🇪 EE | VLESS | @red2ray #1 [fast]", "server": "est.vrsvpn.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "web.max.ru", "reality-opts": {"public-key": "SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4", "short-id": "15aa18f971da1f81"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇪🇪 EE | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇪🇪 EE | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -51,11 +51,12 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @hope_net #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -66,11 +67,12 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @hope_net #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -88,6 +90,32 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
+      "server": "31.77.170.228",
+      "server_port": 2096,
+      "uuid": "2181d0c8-448a-4f75-b848-1718029baef9",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-Dg4mGAAM5Lwe9ri7Bx5WlYdPBsyYJy-Pai2Z0FGlyc",
+          "short_id": "afee962d"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc2"
       }
     },
     {
@@ -128,22 +156,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @hope_net #1 [fast]",
-      "server": "45.131.208.37",
-      "server_port": 8880,
-      "uuid": "82fdc77c-5def-4930-89a6-afb5cc609d4b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "VPNPROXY?ed=8080",
-        "headers": {
-          "Host": "github_vpn_proxy66_marg_bar_khamenei.proxy66.shop."
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "server": "dey.lnmarketplace.net",
       "server_port": 443,
@@ -165,13 +177,36 @@
     {
       "type": "shadowsocks",
       "tag": "🇳🇱 NL | SS | @outline_ir #1 [fast]",
-      "server": "108.181.58.239",
-      "server_port": 8388,
+      "server": "193.29.139.225",
+      "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
-      "password": "CJmTCCx7Ltud",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+      "server": "185.130.226.64",
+      "server_port": 443,
+      "uuid": "631ee34f-4faf-4ad7-b49d-e6f50403cf0e",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "anyfile2file.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
+          "short_id": "64c1fe36c7846400"
+        }
       }
     },
     {

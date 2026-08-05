@@ -55,6 +55,7 @@
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
         "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -67,7 +68,8 @@
         "🇷🇺 RU | VLESS | @orange_vpns #2 [fast]",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]"
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -175,6 +177,24 @@
       "transport": {
         "type": "ws",
         "path": "/v1"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]",
+      "server": "78.159.245.32",
+      "server_port": 28474,
+      "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "secure.furrycdn.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
