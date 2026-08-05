@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]", "server": "apjhdggyx.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "5f72f180-b21b-4b7a-8484-240759012604", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/5f72f180-b21b-4b7a-8484-240759096785", "headers": {"Host": "apjhdggyx.com"}}}
-  - {"name": "🇳🇱 NL | VLESS | @hope_net #1 [fast]", "server": "199.212.90.209", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "cfed.tgzdyz2.top", "ws-opts": {"path": "", "headers": {"Host": "199.212.90.209"}}}
   - {"name": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "dey.lnmarketplace.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "dey.lnmarketplace.net"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
@@ -12,7 +11,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇳🇱 NL | VLESS | @hope_net #1 [fast]'
       - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
@@ -20,7 +18,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇳🇱 NL | VLESS | @hope_net #1 [fast]'
       - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:

@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [medium]", "server": "81.85.93.108", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c96cac1f-b41a-4357-93ce-1ea03752a23c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ns.cloudflare.com", "reality-opts": {"public-key": "MMaMNq7UrbMXznJDgKScOaUML1GuDQrP2pLiqR0sJgE", "short-id": "9d728b"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

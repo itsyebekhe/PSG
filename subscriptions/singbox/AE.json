@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
       ],
@@ -61,6 +62,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -78,6 +80,28 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
+      "server": "81.85.93.108",
+      "server_port": 443,
+      "uuid": "c96cac1f-b41a-4357-93ce-1ea03752a23c",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ns.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMaMNq7UrbMXznJDgKScOaUML1GuDQrP2pLiqR0sJgE",
+          "short_id": "9d728b"
+        }
       }
     },
     {
