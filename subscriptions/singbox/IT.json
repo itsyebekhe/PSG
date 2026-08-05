@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | SS | @selinc #1 [fast]",
         "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | SS | @selinc #1 [fast]",
-        "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]"
+        "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,21 +69,22 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 IT | SS | @selinc #1 [fast]",
-      "server": "it2.levikogjgfdd.ir",
-      "server_port": 10901,
-      "method": "aes-256-gcm",
-      "password": "d1fa2f4b98a38bc8",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "it1.levikogjgfdd.ir",
+      "server_port": 8880,
+      "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "it1.levikogjgfdd.ir",
+      "tag": "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
+      "server": "sca34.mysilipdir.com",
       "server_port": 8880,
       "uuid": "8dc7722c-2767-4eea-a28b-2f8daacc07e3",
       "network": "grpc",

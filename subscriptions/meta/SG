@@ -4,22 +4,25 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
+  - {"name": "🇸🇬 SG | VLESS | @red2ray #1 [medium]", "server": "54.254.145.25", "port": 6768, "type": "vless", "skip-cert-verify": true, "uuid": "edd5f4a0-19dd-4017-8d67-03482fd6472a", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"}}}
   - {"name": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "qzc6tbpu04c4.dop69.com", "port": 10962, "type": "vless", "skip-cert-verify": true, "uuid": "d2c548f1-27c4-4364-bd70-feb2c159f534", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]", "server": "qzc6tbpu04c4.dop69.com", "port": 10962, "type": "vless", "skip-cert-verify": true, "uuid": "be0fa2b7-fcf9-4636-8a89-b2a245fc4e02", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [medium]", "server": "qzc6tbpu04c4.dop69.com", "port": 10962, "type": "vless", "skip-cert-verify": true, "uuid": "be0fa2b7-fcf9-4636-8a89-b2a245fc4e02", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
+      - '🇸🇬 SG | VLESS | @red2ray #1 [medium]'
       - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]'
-      - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]'
+      - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
+      - '🇸🇬 SG | VLESS | @red2ray #1 [medium]'
       - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]'
-      - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]'
+      - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

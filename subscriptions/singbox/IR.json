@@ -50,14 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR | VLESS | @orange_vpns #1 [slow]",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @hope_net #1 [medium]",
+        "🇮🇷 IR | VMESS | @free1_vpn #1 [medium]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
@@ -73,14 +73,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR | VLESS | @orange_vpns #1 [slow]",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @hope_net #1 [medium]",
+        "🇮🇷 IR | VMESS | @free1_vpn #1 [medium]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
@@ -96,7 +96,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [slow]",
+      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
       "server": "vl1.salar4040.ir",
       "server_port": 4040,
       "uuid": "b1d2a517-3ff2-4eb7-a9cd-2a42a2eb1c29",
@@ -204,20 +204,17 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @hope_net #1 [medium]",
-      "server": "zula.ir",
-      "server_port": 80,
-      "uuid": "ecf707e8-b535-4ee1-8d7b-2e10fbd7e602",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/AllV2ray?ed=2048",
-        "headers": {
-          "Host": "aryav0ray.askubuntu.com.discord.com.www.speedtest.net.check-host.net.ariarate.roghanali.ir."
-        }
-      }
+      "type": "vmess",
+      "tag": "🇮🇷 IR | VMESS | @free1_vpn #1 [medium]",
+      "server": "185.173.104.79",
+      "server_port": 2030,
+      "uuid": "e4b36391-014f-4462-809c-8e64aa84359e",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
     },
     {
       "type": "vless",

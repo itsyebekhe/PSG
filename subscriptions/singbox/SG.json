@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
         "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,13 +61,38 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
         "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]"
+        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
+      "server": "54.254.145.25",
+      "server_port": 6768,
+      "uuid": "edd5f4a0-19dd-4017-8d67-03482fd6472a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
     },
     {
       "type": "vless",
@@ -79,7 +105,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [fast]",
+      "tag": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #2 [medium]",
       "server": "qzc6tbpu04c4.dop69.com",
       "server_port": 10962,
       "uuid": "be0fa2b7-fcf9-4636-8a89-b2a245fc4e02",

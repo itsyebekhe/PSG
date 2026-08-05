@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇪🇪 EE | VLESS | @red2ray #1 [fast]", "server": "est.vrsvpn.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "web.max.ru", "reality-opts": {"public-key": "SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4", "short-id": "15aa18f971da1f81"}}
+  - {"name": "🇪🇪 EE | VLESS | @red2ray #1 [fast]", "server": "185.215.184.31", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "631ee34f-4faf-4ad7-b49d-e6f50403cf0e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
+  - {"name": "🇪🇪 EE | VLESS | @red2ray #2 [fast]", "server": "45.80.108.236", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ef9d2063-0140-472b-8b17-ba02ba4b4435", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "lively-resonance-4e12.electrocellco-cf-059.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "lively-resonance-4e12.electrocellco-cf-059.workers.dev"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇪🇪 EE | VLESS | @red2ray #1 [fast]'
+      - '🇪🇪 EE | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇪🇪 EE | VLESS | @red2ray #1 [fast]'
+      - '🇪🇪 EE | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

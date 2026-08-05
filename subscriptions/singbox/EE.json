@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇪🇪 EE | VLESS | @red2ray #1 [fast]",
+        "🇪🇪 EE | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE | VLESS | @red2ray #1 [fast]"
+        "🇪🇪 EE | VLESS | @red2ray #1 [fast]",
+        "🇪🇪 EE | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,23 +71,47 @@
     {
       "type": "vless",
       "tag": "🇪🇪 EE | VLESS | @red2ray #1 [fast]",
-      "server": "est.vrsvpn.com",
-      "server_port": 443,
-      "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
+      "server": "185.215.184.31",
+      "server_port": 8443,
+      "uuid": "631ee34f-4faf-4ad7-b49d-e6f50403cf0e",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "web.max.ru",
+        "server_name": "anyfile2file.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4",
-          "short_id": "15aa18f971da1f81"
+          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
+          "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @red2ray #2 [fast]",
+      "server": "45.80.108.236",
+      "server_port": 443,
+      "uuid": "ef9d2063-0140-472b-8b17-ba02ba4b4435",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "lively-resonance-4e12.electrocellco-cf-059.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip",
+        "headers": {
+          "Host": "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
         }
       }
     },

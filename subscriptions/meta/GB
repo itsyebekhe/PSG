@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "165.232.108.151", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d006fdc7-9aed-4763-bc40-e45aa7c54658", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rzwsyya1.ujstc4eymicyxtacnf7r.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "rzwsyya1.ujstc4eymicyxtacnf7r.workers.dev"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
