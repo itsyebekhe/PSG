@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 JP | VMESS | @NamiraConfigs #1 [slow]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
@@ -60,26 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 JP | VMESS | @NamiraConfigs #1 [slow]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 JP | VMESS | @NamiraConfigs #1 [slow]",
-      "server": "140.235.37.128",
-      "server_port": 32203,
-      "uuid": "0e288730-2200-4578-8e70-bc2b562bef7f",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
     },
     {
       "type": "vless",

@@ -71,10 +71,12 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #2 [fast]",
         "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇵🇱 PL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [medium]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
@@ -83,7 +85,7 @@
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
         "🇽🇽 XX | VLESS | @dailyv2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @iranproxypro #1 [fast]",
@@ -132,10 +134,12 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #2 [fast]",
         "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇵🇱 PL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [medium]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
@@ -144,7 +148,7 @@
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
-        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
         "🇽🇽 XX | VLESS | @dailyv2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @iranproxypro #1 [fast]",
@@ -483,6 +487,22 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #2 [fast]",
+      "server": "cdn.discordapp.com",
+      "server_port": 8880,
+      "uuid": "82fdc77c-5def-4930-89a6-afb5cc609d4b",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "VPNPROXY?ed=8080",
+        "headers": {
+          "Host": "github_vpn_proxy66_marg_bar_khamenei.proxy66.shop."
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇹 IT | VLESS | @mtproxy22_v2ray #1 [fast]",
       "server": "it1.levikogjgfdd.ir",
       "server_port": 8880,
@@ -553,6 +573,33 @@
         "path": "/@Artemis_vpn",
         "headers": {
           "Host": "free-02.artemis-03.sbs"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "line-vpn-production-b046.up.railway.app",
+      "server_port": 443,
+      "uuid": "9f561c34-8615-4fa6-2350-e77b34a8b0dc",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "line-vpn-production-b046.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/9f561c34-8615-4fa6-2350-e77b34a8b0dc",
+        "headers": {
+          "Host": "line-vpn-production-b046.up.railway.app"
         }
       }
     },
@@ -717,7 +764,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [medium]",
       "server": "germany.fast.hosting-ip.com",
       "server_port": 80,
       "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",

@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇯🇵 JP | VMESS | @NamiraConfigs #1 [slow]", "server": "140.235.37.128", "port": 32203, "type": "vmess", "skip-cert-verify": true, "uuid": "0e288730-2200-4578-8e70-bc2b562bef7f", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]", "server": "134.122.194.186", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "2-ee1.pages.dev", "ws-opts": {"path": "", "headers": {"Host": "2-ee1.pages.dev"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇯🇵 JP | VMESS | @NamiraConfigs #1 [slow]'
       - '🇯🇵 JP | VLESS | @megavpn_link #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇯🇵 JP | VMESS | @NamiraConfigs #1 [slow]'
       - '🇯🇵 JP | VLESS | @megavpn_link #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
