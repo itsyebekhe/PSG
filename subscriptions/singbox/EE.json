@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE | VLESS | @red2ray #1 [fast]",
-        "🇪🇪 EE | VLESS | @red2ray #2 [fast]",
+        "🇪🇪 EE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE | VLESS | @red2ray #1 [fast]",
-        "🇪🇪 EE | VLESS | @red2ray #2 [fast]"
+        "🇪🇪 EE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @red2ray #1 [fast]",
+      "tag": "🇪🇪 EE | VLESS | @outline_ir #1 [fast]",
       "server": "185.215.184.31",
       "server_port": 8443,
       "uuid": "631ee34f-4faf-4ad7-b49d-e6f50403cf0e",
@@ -88,30 +86,6 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @red2ray #2 [fast]",
-      "server": "45.80.108.236",
-      "server_port": 443,
-      "uuid": "ef9d2063-0140-472b-8b17-ba02ba4b4435",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "lively-resonance-4e12.electrocellco-cf-059.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip",
-        "headers": {
-          "Host": "lively-resonance-4e12.electrocellco-cf-059.workers.dev"
         }
       }
     },

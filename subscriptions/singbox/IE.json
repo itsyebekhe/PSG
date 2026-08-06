@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVk4=
+//profile-title: base64:UFNHIHwgSUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 VN | VLESS | @outline_ir #1 [medium]",
+        "🇮🇪 IE | SS | @NamiraConfigs #1 [fast]",
+        "🇮🇪 IE | SS | @NamiraConfigs #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 VN | VLESS | @outline_ir #1 [medium]"
+        "🇮🇪 IE | SS | @NamiraConfigs #1 [fast]",
+        "🇮🇪 IE | SS | @NamiraConfigs #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,13 +69,28 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇻🇳 VN | VLESS | @outline_ir #1 [medium]",
-      "server": "103.118.29.142",
-      "server_port": 35730,
-      "uuid": "376dc930-a905-4e75-a2d5-bb801a6adc25",
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE | SS | @NamiraConfigs #1 [fast]",
+      "server": "20.123.9.48",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "o917uvp3jWIMky5u",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE | SS | @NamiraConfigs #2 [fast]",
+      "server": "104.46.88.136",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "BLenXy8jlIgSbafc",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "direct",

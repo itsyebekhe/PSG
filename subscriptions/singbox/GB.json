@@ -50,9 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
@@ -65,9 +63,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
@@ -80,18 +76,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
-      "server": "82.38.31.57",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
       "server_port": 8080,
@@ -100,30 +84,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "165.232.108.151",
-      "server_port": 443,
-      "uuid": "d006fdc7-9aed-4763-bc40-e45aa7c54658",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "rzwsyya1.ujstc4eymicyxtacnf7r.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "rzwsyya1.ujstc4eymicyxtacnf7r.workers.dev"
-        }
       }
     },
     {
