@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]", "server": "m.telewebion.ir.varzesh3.com.de", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e9085087-c930-463c-830f-ca78f5cc4755", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs", "short-id": "e915"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "node16.mxvpn.dev", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "node16.mxvpn.dev", "reality-opts": {"public-key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw", "short-id": "bbc68cec8bb8d2e3"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

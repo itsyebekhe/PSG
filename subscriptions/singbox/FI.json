@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]"
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,36 +68,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-      "server": "m.telewebion.ir.varzesh3.com.de",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "node16.mxvpn.dev",
       "server_port": 443,
-      "uuid": "e9085087-c930-463c-830f-ca78f5cc4755",
+      "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "node16.mxvpn.dev",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
+          "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
+          "short_id": "bbc68cec8bb8d2e3"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "fi-one.quiet-rogue.site",
-      "server_port": 443,
-      "password": "71cada65-d23e-418c-88e4-a06188d14689",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi-one.quiet-rogue.site"
       }
     },
     {

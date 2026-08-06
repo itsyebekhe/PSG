@@ -50,11 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @orange_vpns #2 [fast]",
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+        "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -63,11 +65,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @orange_vpns #2 [fast]",
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]"
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+        "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,7 +80,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
       "server": "186.246.9.44",
       "server_port": 50057,
       "uuid": "e6acf17c-b19c-45ee-afda-373ba72795ce",
@@ -98,7 +102,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #2 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
       "server": "api.univesalsrv.com",
       "server_port": 443,
       "uuid": "1b92d620-add7-42bd-ac1b-93ee4dfacee0",
@@ -125,7 +129,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
       "server": "158.160.198.58",
       "server_port": 443,
       "uuid": "596b215c-3743-4893-b24a-4e396c4ab80f",
@@ -142,8 +146,42 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "usa1.spectrumproxy.shop",
+      "server_port": 443,
+      "password": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa1.spectrumproxy.shop"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "nl.srv.dvzh.net",
+      "server_port": 443,
+      "uuid": "d078d5e0-d273-4ade-a2e6-4602760a9199",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.srv.dvzh.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
+          "short_id": "e4e77e76e6e49da7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
       "server": "2.26.8.55",
       "server_port": 443,
       "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45",
@@ -166,7 +204,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
       "server": "72.56.247.70",
       "server_port": 2200,
       "uuid": "59525c39-e731-4c27-bc9e-6d8cef67572c",

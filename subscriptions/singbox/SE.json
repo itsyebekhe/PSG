@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [medium]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #3 [fast]",
@@ -81,6 +82,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [medium]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #1 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #2 [fast]",
         "🇸🇪 SE | VLESS | @meli_v2rayng #3 [fast]",
@@ -109,6 +111,28 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @flyv2ray #1 [medium]",
+      "server": "142.111.244.75",
+      "server_port": 448,
+      "uuid": "f128bc2c-8018-43a1-8ed7-66eabc8f157c",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r8ljXJO_4yLUonHdkPeWbD9A__XqoudwWAiXx9fbcj8",
+          "short_id": "39a997621a3598c9"
+        }
+      }
     },
     {
       "type": "vless",
