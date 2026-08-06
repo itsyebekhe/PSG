@@ -51,14 +51,12 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | HY2 | @outlinereleasedkey #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @hope_net #1 [fast]",
+        "🇫🇷 FR | SS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,14 +66,12 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | HY2 | @outlinereleasedkey #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @hope_net #1 [fast]",
+        "🇫🇷 FR | SS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -85,17 +81,6 @@
     {
       "type": "hysteria2",
       "tag": "🇫🇷 FR | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "194.180.174.69",
-      "server_port": 443,
-      "password": "qIg7TMxfJvx6t27er0c9P0osebAAPu2PYlB_aoWelV5kVVQ2",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr2.h2corp.org"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 FR | HY2 | @outlinereleasedkey #2 [fast]",
       "server": "fr2.h2corp.org",
       "server_port": 443,
       "password": "qIg7TMxfJvx6t27er0c9P0osebAAPu2PYlB_aoWelV5kVVQ2",
@@ -125,20 +110,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @hope_net #1 [fast]",
-      "server": "217.163.76.55",
-      "server_port": 443,
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
-      "network": "ws",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outline_ir #1 [fast]",
+      "server": "38.180.92.242",
+      "server_port": 32245,
+      "method": "chacha20-ietf-poly1305",
+      "password": "pFNN9jKe8jwD",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "hkx.ylks.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?proxyip"
+        "enabled": true
       }
     },
     {
@@ -165,27 +145,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "nasnet-162191099-direct.mbghalibaf.com",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
       }
     },
     {
@@ -230,7 +189,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

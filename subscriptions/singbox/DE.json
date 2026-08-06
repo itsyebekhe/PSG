@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
@@ -58,19 +59,19 @@
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-        "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
-        "🇩🇪 DE | VLESS | @bored_vpn #1 [medium]",
-        "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇩🇪 DE | VMESS | @NamiraConfigs #1 [slow]",
+        "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
         "🇩🇪 DE | VMESS | @NamiraConfigs #2 [fast]",
+        "🇩🇪 DE | VMESS | @NamiraConfigs #3 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -80,6 +81,7 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
@@ -87,19 +89,19 @@
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-        "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
-        "🇩🇪 DE | VLESS | @bored_vpn #1 [medium]",
-        "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇩🇪 DE | VMESS | @NamiraConfigs #1 [slow]",
+        "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
         "🇩🇪 DE | VMESS | @NamiraConfigs #2 [fast]",
+        "🇩🇪 DE | VMESS | @NamiraConfigs #3 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -130,6 +132,29 @@
       "transport": {
         "type": "grpc",
         "service_name": "api.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+      "server": "93.152.217.55",
+      "server_port": 8443,
+      "uuid": "5bb07942-ca80-4577-acd0-e5935c3cd523",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk-portal.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4uDjB4cV22HwhNwXkyicoWN5ocwxBB85i08lcRpN7Xc",
+          "short_id": "ad5cfe18"
+        }
       }
     },
     {
@@ -253,28 +278,6 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-      "server": "168.119.156.101",
-      "server_port": 443,
-      "uuid": "38df5518-26c5-449b-98d9-a4f456f5f689",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "login.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg",
-          "short_id": "c6e19c434dc87df7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
       "server": "datisde2.datgame.ir",
       "server_port": 30305,
       "uuid": "fcc26389-a451-4d51-b9d0-c75f0d7ce860",
@@ -283,34 +286,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [medium]",
-      "server": "204.168.172.119",
-      "server_port": 8443,
-      "uuid": "9faad682-fbcd-7b3f-b70c-22fae8774236",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "169.40.42.179",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "169.40.42.184",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xXaCtONWKzYdCWya3nzOe3_UYfHplbmdThukm0__smI",
-          "short_id": "f49da53c"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
-      "server": "3.126.31.60",
-      "server_port": 443,
-      "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -378,7 +396,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @NamiraConfigs #1 [slow]",
+      "tag": "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
       "server": "195.133.193.18",
       "server_port": 27726,
       "uuid": "98e2be3c-8f84-4b85-996b-b68dcc2fbcb6",
@@ -393,6 +411,19 @@
       "type": "vmess",
       "tag": "🇩🇪 DE | VMESS | @NamiraConfigs #2 [fast]",
       "server": "82.198.246.250",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 DE | VMESS | @NamiraConfigs #3 [fast]",
+      "server": "82.198.246.97",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto",
@@ -458,7 +489,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
       "server": "167.235.205.182",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -471,7 +502,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
       "server": "168.119.174.229",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",

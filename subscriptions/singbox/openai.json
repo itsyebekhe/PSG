@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUk8=
+//profile-title: base64:UFNHIHwgT1BFTkFJ
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇽🇽 XX | VLESS | @outline_ir #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇽🇽 XX | VLESS | @outline_ir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,24 +74,57 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "205.237.109.211",
-      "server_port": 448,
-      "uuid": "70df38ff-5a22-4ffc-a3f9-1725515e0ea5",
-      "network": "tcp",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @outline_ir #2 [fast]",
+      "server": "chatgpt-async-webps-prod-centralus-0.chatgpt.com",
+      "server_port": 443,
+      "uuid": "3666e25b-a1c2-48ec-b060-075392b1aa6e",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU",
-          "short_id": "113241ad01e99a2d"
-        }
+        "server_name": "GERMAN.sarzamiiinahang.ir",
+        "alpn": [
+          "h2"
+        ]
       }
     },
     {
