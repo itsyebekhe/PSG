@@ -64,8 +64,8 @@
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
+        "🇺🇸 US | SS | @NamiraConfigs #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -112,8 +112,8 @@
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
+        "🇺🇸 US | SS | @NamiraConfigs #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -358,27 +358,24 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "x4g-production-ec06.up.railway.app",
-      "server_port": 443,
-      "uuid": "9497676f-7346-e27b-2d5b-c91c8db590f4",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "alpn": [
-          "http%2…"
-        ]
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
       "server": "193.42.38.209",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
       "password": "XF0klw7870vXn3uQIxe19Q",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @NamiraConfigs #2 [fast]",
+      "server": "156.146.38.169",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
       "network": "tcp",
       "tls": {
         "enabled": true

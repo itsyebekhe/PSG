@@ -6,7 +6,7 @@ proxies:
   - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "186.246.9.44", "port": 50057, "type": "vless", "skip-cert-verify": true, "uuid": "e6acf17c-b19c-45ee-afda-373ba72795ce", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "rubr5.cheburnetnastalgia1998.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "rpL009qP-arj5haMdPrIM3csahxln-xlV3PhyvwrhBk", "short-id": "1c52b34d46469887"}}
   - {"name": "🇷🇺 RU | VLESS | @orange_vpns #2 [fast]", "server": "api.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b92d620-add7-42bd-ac1b-93ee4dfacee0", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "safari", "servername": "api.univesalsrv.com", "grpc-opts": {"grpc-service-name": "rpc.v2.FeedService"}, "reality-opts": {"public-key": "eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc", "short-id": "93762a4ddf178703"}}
   - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "158.160.198.58", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "596b215c-3743-4893-b24a-4e396c4ab80f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "api-maps.yandex.ru", "reality-opts": {"public-key": "DQW3GuEvmRgUQnnKdHjSZhgaEDcu_07Ijuqibd72-0I", "short-id": "ca7dd27a72c7c203"}}
-  - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
+  - {"name": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]", "server": "2.26.8.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lk-tra.riseads.in"}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @orange_vpns #2 [fast]'
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
-      - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
+      - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +22,7 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @orange_vpns #2 [fast]'
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
-      - '🇷🇺 RU | VLESS | @jiedianf #1 [medium]'
+      - '🇷🇺 RU | VLESS | @jiedianf #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
