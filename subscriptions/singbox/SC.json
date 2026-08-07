@@ -50,12 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC | VLESS | @mehrosaboran #1 [medium]",
+        "🇸🇨 SC | VLESS | @mehrosaboran #1 [fast]",
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]",
-        "🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇸🇨 SC | VLESS | @outlinereleasedkey #2 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
+        "🇸🇨 SC | VLESS | @jiedianf #1 [fast]",
+        "🇸🇨 SC | VLESS | @netfreedom0 #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -64,12 +66,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC | VLESS | @mehrosaboran #1 [medium]",
+        "🇸🇨 SC | VLESS | @mehrosaboran #1 [fast]",
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @freevirgoolnet #1 [fast]",
-        "🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇸🇨 SC | VLESS | @outlinereleasedkey #2 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
-        "🇸🇨 SC | VLESS | @arv2ray #1 [fast]"
+        "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
+        "🇸🇨 SC | VLESS | @jiedianf #1 [fast]",
+        "🇸🇨 SC | VLESS | @netfreedom0 #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -78,7 +82,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇨 SC | VLESS | @mehrosaboran #1 [medium]",
+      "tag": "🇸🇨 SC | VLESS | @mehrosaboran #1 [fast]",
       "server": "45.196.201.129",
       "server_port": 443,
       "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
@@ -146,10 +150,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "154.222.9.240",
+      "tag": "🇸🇨 SC | VLESS | @outlinereleasedkey #2 [fast]",
+      "server": "45.198.96.153",
       "server_port": 443,
-      "uuid": "7216b4e8-e935-4d68-b959-73d145accdee",
+      "uuid": "83ab4443-ec22-4b3d-a587-53090be7beb2",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -162,8 +166,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo",
-          "short_id": "8d3293f0066e129a"
+          "public_key": "9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8",
+          "short_id": "764f497dda21c4fc"
         }
       }
     },
@@ -209,6 +213,52 @@
         "path": "/-Arfilter-TEL--@Arfilter-TEL--@Arfilter-TEL--@ArFilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@ArFilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEl--@Arfilter?ed=2048",
         "headers": {
           "Host": "cdn-alman1.arfilter2.blog"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @jiedianf #1 [fast]",
+      "server": "45.196.201.62",
+      "server_port": 443,
+      "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
+          "short_id": "c6ef72e4635d15a5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @netfreedom0 #2 [fast]",
+      "server": "45.196.201.163",
+      "server_port": 443,
+      "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
+          "short_id": "c6ef72e4635d15a5"
         }
       }
     },

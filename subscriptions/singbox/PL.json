@@ -53,6 +53,7 @@
         "🇵🇱 PL | VLESS | @mehrosaboran #1 [fast]",
         "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
         "🇵🇱 PL | VLESS | @prrofile_purple #2 [fast]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,7 +64,8 @@
       "outbounds": [
         "🇵🇱 PL | VLESS | @mehrosaboran #1 [fast]",
         "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
-        "🇵🇱 PL | VLESS | @prrofile_purple #2 [fast]"
+        "🇵🇱 PL | VLESS | @prrofile_purple #2 [fast]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -117,22 +119,32 @@
     {
       "type": "vless",
       "tag": "🇵🇱 PL | VLESS | @prrofile_purple #2 [fast]",
-      "server": "83.168.71.216",
+      "server": "alapo.sannest.ir",
       "server_port": 443,
-      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "uuid": "1d798021-6b6e-4bff-8e8c-b7efc51d51b9",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
+      "server": "144.31.2.48",
+      "server_port": 443,
+      "uuid": "64d997dd-fa2d-450b-b736-beada89ed9aa",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ads.x5.ru",
+        "server_name": "pl.convert-flow.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-          "short_id": "2f49bccf11150ef2"
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
         }
       }
     },

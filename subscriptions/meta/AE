@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [fast]", "server": "19.07-7.yunus.guru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a5ea9247-79f3-4655-aece-3fb51e1e669e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "19.07-7.yunus.guru", "reality-opts": {"public-key": "APXp2igsjxFmGkpb3L98I__FTySIY6saN6skP2y0ank", "short-id": "c6d439fd92614ab0"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
