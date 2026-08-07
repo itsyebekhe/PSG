@@ -50,13 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
         "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]",
         "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -66,13 +64,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
         "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]",
         "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -82,7 +78,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -90,29 +86,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "cdn.pinecloud.net",
-      "server_port": 443,
-      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.pinecloud.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vWSgdMDirb9aDZLWijSXXXl-NCTrtBgEe9MQqcgV6h8",
-          "short_id": "6a2e3af684799b19"
-        }
       }
     },
     {
@@ -141,19 +114,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
-      "server": "82.38.31.174",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
       "server": "82.38.31.198",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -165,7 +126,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #3 [fast]",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
       "server": "146.70.61.37",
       "server_port": 8080,
       "method": "rc4-md5",

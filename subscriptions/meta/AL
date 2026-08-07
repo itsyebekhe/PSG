@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇱 AL | VLESS | @netfreedom0 #1 [fast]", "server": "144.31.129.42", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7b81d175-d180-4ec8-bbc5-dfe80e8d3b68", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "morphbinerkkw.ru", "grpc-opts": {"grpc-service-name": "nexusGrpc"}, "reality-opts": {"public-key": "CxMPFpwhcR9Ocp-Xy_1J08mo-atdHKUf58WLOy_XlgM", "short-id": "d9662905"}}
+  - {"name": "🇦🇱 AL | VLESS | @netfreedom0 #1 [medium]", "server": "144.31.129.42", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7b81d175-d180-4ec8-bbc5-dfe80e8d3b68", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "morphbinerkkw.ru", "grpc-opts": {"grpc-service-name": "nexusGrpc"}, "reality-opts": {"public-key": "CxMPFpwhcR9Ocp-Xy_1J08mo-atdHKUf58WLOy_XlgM", "short-id": "d9662905"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇱 AL | VLESS | @netfreedom0 #1 [fast]'
+      - '🇦🇱 AL | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇱 AL | VLESS | @netfreedom0 #1 [fast]'
+      - '🇦🇱 AL | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

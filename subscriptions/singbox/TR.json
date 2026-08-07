@@ -51,9 +51,9 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @mtpv2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+        "🇹🇷 TR | VLESS | @free1_vpn #2 [medium]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -63,9 +63,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @mtpv2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]"
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+        "🇹🇷 TR | VLESS | @free1_vpn #2 [medium]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -97,23 +97,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-      "server": "newtr.karmatel.ir",
-      "server_port": 20727,
-      "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de",
-      "network": "ws",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+      "server": "62.133.63.202",
+      "server_port": 13868,
+      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "play.google.com"
+      "tls": {
+        "enabled": true,
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FaX6hUpswBFFN-GaXFmFK8bVWYcPlrB4KP26n_INgko",
+          "short_id": "e852dc"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @mtpv2ray #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #2 [medium]",
       "server": "45.92.219.204",
       "server_port": 8088,
       "uuid": "06f86f1b-1fa0-437e-9e5d-8f8cf27bdf96",
@@ -136,24 +143,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
-      "server": "62.133.63.202",
-      "server_port": 13868,
-      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+      "server": "newtr.karmatel.ir",
+      "server_port": 20727,
+      "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FaX6hUpswBFFN-GaXFmFK8bVWYcPlrB4KP26n_INgko",
-          "short_id": "e852dc"
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play.google.com"
         }
       }
     },

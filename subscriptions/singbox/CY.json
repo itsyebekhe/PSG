@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRkk=
+//profile-title: base64:UFNHIHwgQ1k=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [medium]",
+        "🇨🇾 CY | VLESS | @red2ray #1 [medium]",
+        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [medium]"
+        "🇨🇾 CY | VLESS | @red2ray #1 [medium]",
+        "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +69,36 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [medium]",
-      "server": "fi-one.quiet-rogue.site",
-      "server_port": 443,
-      "password": "71cada65-d23e-418c-88e4-a06188d14689",
+      "type": "vless",
+      "tag": "🇨🇾 CY | VLESS | @red2ray #1 [medium]",
+      "server": "5.253.42.164",
+      "server_port": 40443,
+      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "fi-one.quiet-rogue.site"
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
+          "short_id": "68a8"
+        }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
+      "server": "germany.fast.hosting-ip.com",
+      "server_port": 80,
+      "uuid": "55d7c587-7d65-4cd2-a51a-0a7fb6a63285",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

@@ -3,21 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "cdn.pinecloud.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "cdn.pinecloud.net", "reality-opts": {"public-key": "vWSgdMDirb9aDZLWijSXXXl-NCTrtBgEe9MQqcgV6h8", "short-id": "6a2e3af684799b19"}}
   - {"name": "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "9913a211-19e0-4c7f-b813-841d30d28168", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #2 [fast]'
 rules:
