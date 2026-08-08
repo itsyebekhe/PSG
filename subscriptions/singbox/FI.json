@@ -52,6 +52,7 @@
         "auto",
         "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -94,6 +96,19 @@
       "tls": {
         "enabled": true
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]",
+      "server": "65.109.208.236",
+      "server_port": 46962,
+      "uuid": "c896406b-ccc4-4c37-8b8c-15964f32a9a2",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
     },
     {
       "type": "direct",
