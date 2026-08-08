@@ -3,21 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]", "server": "nod4.kaafserver.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f3d2dbde-f8c1-4fd1-a4ff-32c2fd476d65", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "QCLXkk19RkRbBuMqyCggYr_57_eT9f3Xe-vnr_IrQhY", "short-id": "79b983feac02921c"}}
+  - {"name": "🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]", "server": "nod4.kaafserver.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f3d2dbde-f8c1-4fd1-a4ff-32c2fd476d65", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "QCLXkk19RkRbBuMqyCggYr_57_eT9f3Xe-vnr_IrQhY", "short-id": "79b983feac02921c"}}
   - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "newtr.karmatel.ir", "port": 20727, "type": "vless", "skip-cert-verify": true, "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
   - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]", "server": "5.188.190.252", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]'
+      - '🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]'
       - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @mehrosaboran #1 [fast]'
+      - '🇹🇷 TR | VLESS | @mehrosaboran #1 [medium]'
       - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
 rules:

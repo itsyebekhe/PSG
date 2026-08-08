@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
@@ -60,36 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
-      "server": "64.176.61.124",
-      "server_port": 443,
-      "uuid": "44ebd5d8-c8a3-408c-8195-1cb1e97c5c21",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "products.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kOzjn-aqsOrs5AXRAYKOsU-xY-NdK3Q8ZH0XdwitFRI",
-          "short_id": "069fba81c72d1e"
-        }
-      }
     },
     {
       "type": "vless",
