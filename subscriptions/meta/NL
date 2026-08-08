@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]", "server": "31.77.170.228", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "2181d0c8-448a-4f75-b848-1718029baef9", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "max.ru", "grpc-opts": {"grpc-service-name": "grpc2"}, "reality-opts": {"public-key": "-Dg4mGAAM5Lwe9ri7Bx5WlYdPBsyYJy-Pai2Z0FGlyc", "short-id": "afee962d"}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "85.155.226.156", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "getsavesafe.net", "reality-opts": {"public-key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs", "short-id": "82f5d3a1e9c0b661"}}
   - {"name": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "dey.lnmarketplace.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "dey.lnmarketplace.net"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
@@ -12,7 +11,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @flyv2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
@@ -20,7 +18,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @flyv2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:

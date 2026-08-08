@@ -51,7 +51,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
-        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [slow]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
-        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]"
+        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [slow]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -84,17 +84,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]",
-      "server": "65.109.208.236",
-      "server_port": 46962,
-      "uuid": "c896406b-ccc4-4c37-8b8c-15964f32a9a2",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
+      "type": "hysteria2",
+      "tag": "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [slow]",
+      "server": "fi-one.quiet-rogue.site",
+      "server_port": 443,
+      "password": "71cada65-d23e-418c-88e4-a06188d14689",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi-one.quiet-rogue.site"
+      }
     },
     {
       "type": "direct",
