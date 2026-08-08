@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇯🇵 JP | VLESS | @red2ray #1 [fast]", "server": "64.176.61.124", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "44ebd5d8-c8a3-408c-8195-1cb1e97c5c21", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "products.amd.com", "reality-opts": {"public-key": "kOzjn-aqsOrs5AXRAYKOsU-xY-NdK3Q8ZH0XdwitFRI", "short-id": "069fba81c72d1e"}}
   - {"name": "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]", "server": "134.122.194.186", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "2-ee1.pages.dev", "ws-opts": {"path": "", "headers": {"Host": "2-ee1.pages.dev"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇯🇵 JP | VLESS | @red2ray #1 [fast]'
       - '🇯🇵 JP | VLESS | @megavpn_link #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇯🇵 JP | VLESS | @red2ray #1 [fast]'
       - '🇯🇵 JP | VLESS | @megavpn_link #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT

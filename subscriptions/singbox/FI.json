@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]"
+        "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -79,6 +81,18 @@
       "tls": {
         "enabled": true,
         "server_name": "assets.gateway-stream.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "65.109.208.236",
+      "server_port": 26795,
+      "uuid": "c896406b-ccc4-4c37-8b8c-15964f32a9a2",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true
       }
     },
     {

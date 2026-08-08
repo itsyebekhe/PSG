@@ -6,7 +6,6 @@ proxies:
   - {"name": "🇵🇱 PL | VLESS | @mehrosaboran #1 [fast]", "server": "83.168.71.216", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
   - {"name": "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]", "server": "83.168.71.216", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
   - {"name": "🇵🇱 PL | VLESS | @prrofile_purple #2 [fast]", "server": "alapo.sannest.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1d798021-6b6e-4bff-8e8c-b7efc51d51b9", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "144.31.2.48", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "64d997dd-fa2d-450b-b736-beada89ed9aa", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pl.convert-flow.net", "reality-opts": {"public-key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w", "short-id": "00a61d55a07de885"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +13,6 @@ proxy-groups:
       - '🇵🇱 PL | VLESS | @mehrosaboran #1 [fast]'
       - '🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]'
       - '🇵🇱 PL | VLESS | @prrofile_purple #2 [fast]'
-      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +20,6 @@ proxy-groups:
       - '🇵🇱 PL | VLESS | @mehrosaboran #1 [fast]'
       - '🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]'
       - '🇵🇱 PL | VLESS | @prrofile_purple #2 [fast]'
-      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
