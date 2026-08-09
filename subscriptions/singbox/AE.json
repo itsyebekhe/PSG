@@ -51,9 +51,9 @@
       "outbounds": [
         "auto",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
-        "🇦🇪 AE | VLESS | @outline_ir #1 [medium]",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
       ],
@@ -64,9 +64,9 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
-        "🇦🇪 AE | VLESS | @outline_ir #1 [medium]",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -88,26 +88,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @outline_ir #1 [medium]",
-      "server": "78.17.150.127",
-      "server_port": 443,
-      "uuid": "3f02f5cd-3e03-436c-a151-02a9b9ac5966",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "78.17.105.52",
+      "server_port": 13868,
+      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "smartcaptcha.yandexcloud.net",
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg",
-          "short_id": "03a70b17f8036009"
+          "public_key": "XxzDVidmyjuPnBKrFDwCpowaIdLth4-kJsqrDvdPPx8",
+          "short_id": "e852dc"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
       "server": "pk-google.mobileemdad.top",
       "server_port": 443,
       "uuid": "1ee46997-c514-4ab0-a6d3-ad0492adab15",
@@ -129,7 +133,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",

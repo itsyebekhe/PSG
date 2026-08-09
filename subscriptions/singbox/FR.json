@@ -51,13 +51,14 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | SS | @outline_ir #1 [medium]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
-        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | SS | @outline_ir #1 [medium]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | SS | @outline_ir #2 [fast]",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,13 +68,14 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | SS | @outline_ir #1 [medium]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
-        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | SS | @outline_ir #1 [medium]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | SS | @outline_ir #2 [fast]",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -98,50 +100,6 @@
         "path": "/",
         "headers": {
           "Host": "sub.mot.ip-ddns.com"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @outline_ir #1 [medium]",
-      "server": "antony.athforce.ir",
-      "server_port": 51058,
-      "method": "aes-128-gcm",
-      "password": "SySWDaP8rm1NEK0wdLdoaV5ClkSjFDfw",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
-      "server": "75.119.151.16",
-      "server_port": 80,
-      "uuid": "71286f3b-ec0f-4d12-9d3b-8d2941dee6ae",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-      "server": "node5.get-tres.ru",
-      "server_port": 443,
-      "uuid": "fa5072f6-c902-4d26-9859-7399f8c4f20b",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "telegraf.lv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
-          "short_id": "e5f67890"
         }
       }
     },
@@ -172,8 +130,64 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outline_ir #1 [medium]",
+      "server": "antony.athforce.ir",
+      "server_port": 51058,
+      "method": "aes-128-gcm",
+      "password": "SySWDaP8rm1NEK0wdLdoaV5ClkSjFDfw",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+      "server": "75.119.151.16",
+      "server_port": 80,
+      "uuid": "71286f3b-ec0f-4d12-9d3b-8d2941dee6ae",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outline_ir #2 [fast]",
+      "server": "38.180.92.242",
+      "server_port": 32245,
+      "method": "chacha20-ietf-poly1305",
+      "password": "pFNN9jKe8jwD",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+      "server": "node5.get-tres.ru",
+      "server_port": 443,
+      "uuid": "fa5072f6-c902-4d26-9859-7399f8c4f20b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "telegraf.lv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
+          "short_id": "e5f67890"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
       "server": "199.232.169.135",
       "server_port": 80,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -189,7 +203,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -213,7 +227,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

@@ -59,7 +59,8 @@
         "🇽🇽 XX | VLESS | @bored_vpn #2 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #3 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
@@ -74,8 +75,8 @@
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇵🇱 PL | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
@@ -96,7 +97,8 @@
         "🇽🇽 XX | VLESS | @bored_vpn #2 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #3 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
@@ -111,8 +113,8 @@
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇵🇱 PL | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇨🇾 CY | VLESS | @eliteproxyv2 #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
@@ -265,7 +267,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "199.232.237.80",
+      "server_port": 443,
+      "uuid": "2c26ed61-be8a-45d1-978c-3774e062ac2b",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "global.fastly.com",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
       "server": "75.119.151.16",
       "server_port": 80,
       "uuid": "71286f3b-ec0f-4d12-9d3b-8d2941dee6ae",
@@ -536,6 +559,15 @@
     },
     {
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+      "server": "tr.web.doctor-alan-cloud.ir",
+      "server_port": 8080,
+      "uuid": "205a1240-ff84-4ac1-a84d-82175bddf999",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "server": "de-d-178105.homelanderwins.com",
       "server_port": 40840,
@@ -553,26 +585,6 @@
           "enabled": true,
           "public_key": "RPJb-M8Bj08XgL-ou8yr5eBNPlG-GT6iG5rxTBxX9iw",
           "short_id": "899530"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-      "server": "dey.lnmarketplace.net",
-      "server_port": 443,
-      "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dey.lnmarketplace.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
         }
       }
     },
