@@ -52,7 +52,10 @@
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @selinc #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -64,7 +67,10 @@
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @selinc #1 [fast]",
         "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -111,6 +117,37 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+      "server": "109.104.154.163",
+      "server_port": 2375,
+      "method": "aes-256-gcm",
+      "password": "faBAoD54k87UJG7",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @selinc #1 [fast]",
+      "server": "nl4.levikogjgfdd.ir",
+      "server_port": 40443,
+      "uuid": "69a74770-7152-4a27-bef0-2615ca16e1b1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "D0AQp0cWaQR55Q-zPwp6__AxN9CoT9neZj0UzlNcLCk",
+          "short_id": "bd72"
+        }
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "server": "dey.lnmarketplace.net",
@@ -127,6 +164,29 @@
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+      "server": "51.158.206.8",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
         }
       }
     },

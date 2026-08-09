@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]"
+        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,34 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
-      "server": "api.univesalsrv.com",
-      "server_port": 443,
-      "uuid": "1b92d620-add7-42bd-ac1b-93ee4dfacee0",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.univesalsrv.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc",
-          "short_id": "93762a4ddf178703"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "rpc.v2.FeedService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
       "server": "2.26.8.55",
       "server_port": 443,
       "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45",

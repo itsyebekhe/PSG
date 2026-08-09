@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -72,7 +71,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -91,28 +89,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
-      "server": "vl1.salar4040.ir",
-      "server_port": 4040,
-      "uuid": "b1d2a517-3ff2-4eb7-a9cd-2a42a2eb1c29",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H9OGLRos1CxS7C197U2G6vmAINTN6GMasevL3gX9uEI",
-          "short_id": "c57bcc26"
-        }
-      }
     },
     {
       "type": "vless",
