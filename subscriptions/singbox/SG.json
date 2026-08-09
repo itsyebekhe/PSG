@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇸🇬 SG | VLESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇸🇬 SG | VLESS | @NamiraConfigs #1 [medium]"
+        "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,26 +74,6 @@
       "uuid": "be0fa2b7-fcf9-4636-8a89-b2a245fc4e02",
       "network": "tcp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "206.189.146.23",
-      "server_port": 17658,
-      "uuid": "7362c389-7f4b-4c41-9594-fdb847570243",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "zoom.us"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Free+By+Tharuwa+(0767597317)",
-        "headers": {
-          "Host": "zoom.us"
-        }
-      }
     },
     {
       "type": "direct",

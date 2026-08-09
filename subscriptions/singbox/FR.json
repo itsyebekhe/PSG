@@ -51,13 +51,12 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-        "🇫🇷 FR | SS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | SS | @outline_ir #1 [medium]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
         "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [medium]",
+        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
         "direct"
       ],
@@ -68,13 +67,12 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-        "🇫🇷 FR | SS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | SS | @outline_ir #1 [medium]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [medium]",
         "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [medium]",
+        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -104,34 +102,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-      "server": "my.filpower.shop",
-      "server_port": 443,
-      "uuid": "09bb1018-47b1-4968-964c-d9bf96bb052b",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "m7WfiFH6HcPxlTgzNjq035kpMnkGaNG3UBo4OyS2kGA",
-          "short_id": "f2c5768a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @outline_ir #1 [fast]",
+      "tag": "🇫🇷 FR | SS | @outline_ir #1 [medium]",
       "server": "antony.athforce.ir",
       "server_port": 51058,
       "method": "aes-128-gcm",
@@ -175,18 +147,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "135.125.184.182",
-      "server_port": 50559,
-      "uuid": "3fd3909b-238f-42c4-9170-38d10014b1d8",
-      "network": "ws",
+      "tag": "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
+      "server": "my.filpower.shop",
+      "server_port": 443,
+      "uuid": "09bb1018-47b1-4968-964c-d9bf96bb052b",
+      "network": "grpc",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Play.googel.com"
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "m7WfiFH6HcPxlTgzNjq035kpMnkGaNG3UBo4OyS2kGA",
+          "short_id": "f2c5768a"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -207,7 +189,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
