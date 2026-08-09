@@ -53,14 +53,14 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
+        "🇩🇪 DE | VLESS | @mehrosaboran #2 [medium]",
         "🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]",
         "🇳🇱 NL | VLESS | @selinc #1 [fast]",
-        "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @bored_vpn #1 [medium]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -72,14 +72,14 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
+        "🇩🇪 DE | VLESS | @mehrosaboran #2 [medium]",
         "🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]",
         "🇳🇱 NL | VLESS | @selinc #1 [fast]",
-        "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @bored_vpn #1 [medium]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
-        "🇫🇷 FR | VLESS | @oonfig #1 [fast]"
+        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -127,30 +127,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-      "server": "node5.get-tres.ru",
-      "server_port": 443,
-      "uuid": "fa5072f6-c902-4d26-9859-7399f8c4f20b",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "telegraf.lv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
-          "short_id": "e5f67890"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #2 [medium]",
       "server": "germany.avrilon.us",
       "server_port": 443,
       "uuid": "71c92c65-61d4-445a-a307-aa163a41c180",
@@ -214,7 +191,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @bored_vpn #1 [medium]",
       "server": "nod4.kaafserver.ir",
       "server_port": 8443,
       "uuid": "f3d2dbde-f8c1-4fd1-a4ff-32c2fd476d65",
@@ -303,6 +280,29 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+      "server": "node5.get-tres.ru",
+      "server_port": 443,
+      "uuid": "fa5072f6-c902-4d26-9859-7399f8c4f20b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "telegraf.lv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
+          "short_id": "e5f67890"
+        }
       }
     },
     {

@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VLESS | @outline_ir #1 [fast]", "server": "78.17.150.127", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3f02f5cd-3e03-436c-a151-02a9b9ac5966", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "smartcaptcha.yandexcloud.net", "reality-opts": {"public-key": "oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg", "short-id": "03a70b17f8036009"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
