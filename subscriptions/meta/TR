@@ -3,26 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "newtr.karmatel.ir", "port": 20727, "type": "vless", "skip-cert-verify": true, "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
-  - {"name": "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]", "server": "nod4.kaafserver.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f3d2dbde-f8c1-4fd1-a4ff-32c2fd476d65", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "QCLXkk19RkRbBuMqyCggYr_57_eT9f3Xe-vnr_IrQhY", "short-id": "79b983feac02921c"}}
-  - {"name": "🇹🇷 TR | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "103.215.218.159", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cd0e14f8-b4d4-4a60-b23d-32f4037856b9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "play.google.com", "reality-opts": {"public-key": "nsOaa6uaTS6rRjJRbS5bj3Ge9jlKaGjleyC2WBdp8xQ", "short-id": "546050"}}
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "titi.k44lawm.ir", "port": 2547, "type": "vless", "skip-cert-verify": true, "uuid": "e86c6e2a-382d-4f03-8f52-f52a5ab38a3f", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "newtr.karmatel.ir", "port": 20727, "type": "vless", "skip-cert-verify": true, "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
+  - {"name": "🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]", "server": "45.74.178.41", "port": 719, "type": "vless", "skip-cert-verify": true, "uuid": "ae9bcc43-5fd8-4891-b06e-1c93e2747ed9", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
+  - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]", "server": "5.188.190.252", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
-      - '🇹🇷 TR | VLESS | @bored_vpn #1 [fast]'
-      - '🇹🇷 TR | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]'
+      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
-      - '🇹🇷 TR | VLESS | @bored_vpn #1 [fast]'
-      - '🇹🇷 TR | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]'
+      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

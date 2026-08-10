@@ -5,21 +5,21 @@ log-level: info
 proxies:
   - {"name": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]", "server": "pk-google.mobileemdad.top", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ee46997-c514-4ab0-a6d3-ad0492adab15", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "play.google.com", "reality-opts": {"public-key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ", "short-id": "377d"}}
   - {"name": "🇦🇪 AE | VLESS | @free1_vpn #1 [fast]", "server": "78.17.105.53", "port": 13868, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "amd.com", "reality-opts": {"public-key": "XxzDVidmyjuPnBKrFDwCpowaIdLth4-kJsqrDvdPPx8", "short-id": "e852dc"}}
-  - {"name": "🇦🇪 AE | VLESS | @outline_ir #1 [fast]", "server": "78.17.150.127", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3f02f5cd-3e03-436c-a151-02a9b9ac5966", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "smartcaptcha.yandexcloud.net", "reality-opts": {"public-key": "oX_8IyRmI_X4pPWaGTbduLyvlZWwLkZlxJKmtvjmqEg", "short-id": "03a70b17f8036009"}}
+  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [medium]", "server": "144.31.128.140", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "9ffabf5d-d8d6-4d0e-acab-3cbdd3457fc0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.booking.com", "reality-opts": {"public-key": "a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA", "short-id": "b4"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇪 AE | VLESS | @orange_vpns #1 [medium]'
       - '🇦🇪 AE | VLESS | @free1_vpn #1 [fast]'
-      - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
+      - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇪 AE | VLESS | @orange_vpns #1 [medium]'
       - '🇦🇪 AE | VLESS | @free1_vpn #1 [fast]'
-      - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
+      - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

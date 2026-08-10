@@ -51,11 +51,9 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
-        "🇬🇧 GB | VLESS | @netmellianti #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
         "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]",
         "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]",
-        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
@@ -67,11 +65,9 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
-        "🇬🇧 GB | VLESS | @netmellianti #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
         "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]",
         "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]",
-        "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
@@ -83,29 +79,26 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
-      "server": "186.190.211.188",
+      "server": "91.193.58.201",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "network": "tcp",
+      "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "186.190.211.188",
-        "insecure": true
+        "server_name": "vangoghhh.info"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/rdfgtws",
+        "headers": {
+          "Host": "vangoghhh.info"
+        }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @netmellianti #1 [fast]",
-      "server": "cdn.devmixa.ir",
-      "server_port": 8880,
-      "uuid": "6d4cce6a-dbc6-43af-9146-067847483fce",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -138,15 +131,6 @@
       "tls": {
         "enabled": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "169.197.113.179",
-      "server_port": 20190,
-      "uuid": "ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "shadowsocks",
