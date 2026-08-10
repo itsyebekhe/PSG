@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSFkyX0RPTUFJTg==
+//profile-title: base64:UFNHIHwgRUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇪🇪 EE | VLESS | @red2ray #1 [medium]",
+        "🇪🇪 EE | VLESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]"
+        "🇪🇪 EE | VLESS | @red2ray #1 [medium]",
+        "🇪🇪 EE | VLESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,55 +70,38 @@
     },
     {
       "type": "vless",
-      "tag": "همکاری_ملی",
-      "server": "127.0.0.1",
+      "tag": "🇪🇪 EE | VLESS | @red2ray #1 [medium]",
+      "server": "217.9.12.233",
       "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
+      "uuid": "02e2d68f-9982-4467-ad47-00cbeeae30e6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "جاویدشاه",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "KingRezaPahlavi",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "ro.h2corp.org",
-      "server_port": 443,
-      "password": "uj7XGZGUqRlmdpk6rysyZMN333RWsxTFj0hBIMaFV-NUCd5r",
       "tls": {
         "enabled": true,
-        "server_name": "ro.h2corp.org",
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "ee.cdn-global.pro",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0",
+          "short_id": "7a3f9e2b1c8d4f6a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @NamiraConfigs #1 [medium]",
+      "server": "95.85.224.3",
+      "server_port": 8443,
+      "uuid": "7e8f7489-e65f-4be6-93ed-867a74ec6759",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {

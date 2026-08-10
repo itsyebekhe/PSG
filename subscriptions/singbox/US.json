@@ -63,7 +63,7 @@
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | SS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -113,7 +113,7 @@
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | SS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -347,15 +347,23 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @red2ray #1 [fast]",
-      "server": "216.105.168.18",
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "199.232.78.159",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "hCCWOcIsK5wrFz4OX70rWf",
-      "network": "tcp",
+      "uuid": "7d7f101d-2a2a-425a-ad90-838a79eac404",
+      "network": "ws",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "towndtime.global.ssl.fastly.neT."
+        }
       }
     },
     {
