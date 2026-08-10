@@ -53,14 +53,14 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
         "🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]",
         "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
         "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
-        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -72,14 +72,14 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
         "🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]",
         "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
         "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
-        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]"
+        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -123,6 +123,51 @@
       "transport": {
         "type": "ws",
         "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+      "server": "node5.get-tres.ru",
+      "server_port": 443,
+      "uuid": "fa5072f6-c902-4d26-9859-7399f8c4f20b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "telegraf.lv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
+          "short_id": "e5f67890"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
+      "server": "pk-google.mobileemdad.top",
+      "server_port": 443,
+      "uuid": "1ee46997-c514-4ab0-a6d3-ad0492adab15",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ",
+          "short_id": "377d"
+        }
       }
     },
     {
@@ -256,51 +301,6 @@
           "enabled": true,
           "public_key": "RPJb-M8Bj08XgL-ou8yr5eBNPlG-GT6iG5rxTBxX9iw",
           "short_id": "15662a5e4d4bd0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
-      "server": "node5.get-tres.ru",
-      "server_port": 443,
-      "uuid": "fa5072f6-c902-4d26-9859-7399f8c4f20b",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "telegraf.lv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
-          "short_id": "e5f67890"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
-      "server": "pk-google.mobileemdad.top",
-      "server_port": 443,
-      "uuid": "1ee46997-c514-4ab0-a6d3-ad0492adab15",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ",
-          "short_id": "377d"
         }
       }
     },

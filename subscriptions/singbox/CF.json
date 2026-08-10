@@ -101,7 +101,9 @@
         "🇽🇽 XX | VLESS | @miov2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-        "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
+        "🇽🇽 XX | VMESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -128,6 +130,7 @@
         "🇽🇽 XX | VLESS | @proxie #5 [fast]",
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
+        "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #3 [fast]",
@@ -254,7 +257,9 @@
         "🇽🇽 XX | VLESS | @miov2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-        "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
+        "🇽🇽 XX | VMESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -281,6 +286,7 @@
         "🇽🇽 XX | VLESS | @proxie #5 [fast]",
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
+        "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #3 [fast]",
@@ -1324,33 +1330,53 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-      "server": "104.17.55.100",
-      "server_port": 80,
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+      "server": "172.67.185.140",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev"
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @hope_net #1 [fast]",
+      "server": "104.19.45.243",
+      "server_port": 2095,
+      "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "us3.rtacg.com"
+          "Host": "onea.flha.ru"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
-      "server": "104.18.33.36",
-      "server_port": 443,
-      "uuid": "029b2274-47e2-4831-9f03-3bbe9d7ad0e8",
+      "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+      "server": "162.159.135.232",
+      "server_port": 2053,
+      "uuid": "db9cf031-33ec-4a39-b27e-6da323144963",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "nezuko.raidenshogun.cloudns.org",
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "shakhle.jd-vpn.shop.",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1358,9 +1384,29 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/VLESS/fr-freevmess.privateip.net",
+        "path": "/@Jd_Vpn",
         "headers": {
-          "Host": "nezuko.raidenshogun.cloudns.org"
+          "Host": "shakhle.jd-vpn.shop."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
+      "server": "104.21.69.44",
+      "server_port": 8080,
+      "uuid": "34376d1b-efcb-4e9d-81b8-914f63b79ff1",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "unlimiteddev-vpn.unlimiteddev.Community."
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram:@UnlimitedDev-Telegram:@UnlimitedDev?ed=8080",
+        "headers": {
+          "Host": "unlimiteddev-vpn.unlimiteddev.Community."
         }
       }
     },
@@ -1914,6 +1960,34 @@
         "path": "/@v2rayNG_VPNN",
         "headers": {
           "Host": "7.arsalanv2.sbs"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "172.67.152.162",
+      "server_port": 443,
+      "uuid": "07f9bc85-613f-4a33-8da1-191973c43c0a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "app-q0zc4t.user-4gfyh5.workers.dev",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cmh",
+        "headers": {
+          "Host": "app-q0zc4t.user-4gfyh5.workers.dev"
         }
       }
     },

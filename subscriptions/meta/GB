@@ -4,22 +4,28 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]", "server": "186.190.211.188", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "186.190.211.188"}
+  - {"name": "🇬🇧 GB | VLESS | @netmellianti #1 [fast]", "server": "cdn.devmixa.ir", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "6d4cce6a-dbc6-43af-9146-067847483fce", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "9913a211-19e0-4c7f-b813-841d30d28168", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]", "server": "169.197.113.179", "port": 20190, "type": "vless", "skip-cert-verify": true, "uuid": "ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
+      - '🇬🇧 GB | VLESS | @netmellianti #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #2 [fast]'
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
+      - '🇬🇧 GB | VLESS | @netmellianti #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #2 [fast]'
+      - '🇬🇧 GB | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

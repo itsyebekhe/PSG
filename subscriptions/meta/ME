@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇲🇪 ME | VLESS | @NamiraConfigs #1 [fast]", "server": "92.42.96.240", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4038f946-bd95-5505-a111-196c05d6d92f", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "mAhaNrEaliteAm.MaHkHan.iR", "ws-opts": {"path": "", "headers": {"Host": "mAhaNrEaliteAm.MaHkHan.iR"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇲🇪 ME | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇲🇪 ME | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
