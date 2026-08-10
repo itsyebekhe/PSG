@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [fast]", "server": "78.17.105.52", "port": 13868, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "amd.com", "reality-opts": {"public-key": "XxzDVidmyjuPnBKrFDwCpowaIdLth4-kJsqrDvdPPx8", "short-id": "e852dc"}}
-  - {"name": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]", "server": "pk-google.mobileemdad.top", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ee46997-c514-4ab0-a6d3-ad0492adab15", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "play.google.com", "reality-opts": {"public-key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ", "short-id": "377d"}}
+  - {"name": "🇦🇪 AE | VLESS | @free1_vpn #1 [fast]", "server": "78.17.105.53", "port": 13868, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "amd.com", "reality-opts": {"public-key": "XxzDVidmyjuPnBKrFDwCpowaIdLth4-kJsqrDvdPPx8", "short-id": "e852dc"}}
+  - {"name": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]", "server": "pk-google.mobileemdad.top", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1ee46997-c514-4ab0-a6d3-ad0492adab15", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "play.google.com", "reality-opts": {"public-key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ", "short-id": "377d"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
-      - '🇦🇪 AE | VLESS | @orange_vpns #1 [fast]'
+      - '🇦🇪 AE | VLESS | @free1_vpn #1 [fast]'
+      - '🇦🇪 AE | VLESS | @orange_vpns #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
-      - '🇦🇪 AE | VLESS | @orange_vpns #1 [fast]'
+      - '🇦🇪 AE | VLESS | @free1_vpn #1 [fast]'
+      - '🇦🇪 AE | VLESS | @orange_vpns #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -8,8 +8,8 @@ proxies:
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]", "server": "s1.streemmovie.shop", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "76b7834c-75d4-4fce-a90b-2639739e8e3e", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yt.be", "reality-opts": {"public-key": "6GfyVeO2GgIndTfBl4mFIgJi6eVSpQv7PDeV5F5RLyo", "short-id": "408aded4"}}
   - {"name": "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]", "server": "nod4.kaafserver.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f3d2dbde-f8c1-4fd1-a4ff-32c2fd476d65", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "play.google.com", "reality-opts": {"public-key": "QCLXkk19RkRbBuMqyCggYr_57_eT9f3Xe-vnr_IrQhY", "short-id": "79b983feac02921c"}}
+  - {"name": "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "teain.org", "port": 1000, "type": "vless", "skip-cert-verify": true, "uuid": "6f436a44-f703-93da-7e45-615824a39d3b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "knox.cdn-apple.com", "reality-opts": {"public-key": "ECxm-BdHYhxYK9MtN33NkkrFSdFZXp-OB-yhN8AleRY", "short-id": "a62d513cd709744a"}}
   - {"name": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "de-d-178105.homelanderwins.com", "port": 40840, "type": "vless", "skip-cert-verify": true, "uuid": "ff45e582-ade8-4656-a291-74df0fdceb2d", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.neshan.org", "reality-opts": {"public-key": "RPJb-M8Bj08XgL-ou8yr5eBNPlG-GT6iG5rxTBxX9iw", "short-id": "899530"}}
-  - {"name": "🇫🇷 FR | VLESS | @oonfig #1 [fast]", "server": "my.filpower.shop", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "09bb1018-47b1-4968-964c-d9bf96bb052b", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "m7WfiFH6HcPxlTgzNjq035kpMnkGaNG3UBo4OyS2kGA", "short-id": "f2c5768a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -19,8 +19,8 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]'
       - '🇹🇷 TR | VLESS | @bored_vpn #1 [fast]'
+      - '🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]'
-      - '🇫🇷 FR | VLESS | @oonfig #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -30,8 +30,8 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]'
       - '🇹🇷 TR | VLESS | @bored_vpn #1 [fast]'
+      - '🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]'
-      - '🇫🇷 FR | VLESS | @oonfig #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

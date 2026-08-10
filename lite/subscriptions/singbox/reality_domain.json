@@ -55,8 +55,8 @@
         "KingRezaPahlavi",
         "🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]",
         "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
+        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -70,8 +70,8 @@
         "KingRezaPahlavi",
         "🇨🇿 CZ | VLESS | @prrofile_purple #1 [fast]",
         "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇫🇷 FR | VLESS | @oonfig #1 [fast]"
+        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -164,6 +164,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "teain.org",
+      "server_port": 1000,
+      "uuid": "6f436a44-f703-93da-7e45-615824a39d3b",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "knox.cdn-apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ECxm-BdHYhxYK9MtN33NkkrFSdFZXp-OB-yhN8AleRY",
+          "short_id": "a62d513cd709744a"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
       "server": "de-d-178105.homelanderwins.com",
       "server_port": 40840,
@@ -182,32 +204,6 @@
           "public_key": "RPJb-M8Bj08XgL-ou8yr5eBNPlG-GT6iG5rxTBxX9iw",
           "short_id": "899530"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @oonfig #1 [fast]",
-      "server": "my.filpower.shop",
-      "server_port": 443,
-      "uuid": "09bb1018-47b1-4968-964c-d9bf96bb052b",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "m7WfiFH6HcPxlTgzNjq035kpMnkGaNG3UBo4OyS2kGA",
-          "short_id": "f2c5768a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
