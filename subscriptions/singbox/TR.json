@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,14 +61,36 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
         "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]"
+        "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
+      "server": "141.98.118.70",
+      "server_port": 443,
+      "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ",
+          "short_id": "44"
+        }
+      }
     },
     {
       "type": "vless",
@@ -106,22 +128,6 @@
           "enabled": true,
           "public_key": "QCLXkk19RkRbBuMqyCggYr_57_eT9f3Xe-vnr_IrQhY",
           "short_id": "79b983feac02921c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]",
-      "server": "45.74.178.41",
-      "server_port": 719,
-      "uuid": "ae9bcc43-5fd8-4891-b06e-1c93e2747ed9",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/api/v2/xtrnwqjbkr?ed=2560",
-        "headers": {
-          "Host": "play.google.com"
         }
       }
     },
