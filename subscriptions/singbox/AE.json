@@ -52,9 +52,12 @@
         "auto",
         "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇦🇪 AE | VLESS | @free1_vpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @free1_vpn #2 [fast]",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "🇦🇪 AE | VLESS | @outline_ir #1 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
       ],
@@ -66,9 +69,12 @@
       "outbounds": [
         "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇦🇪 AE | VLESS | @free1_vpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @free1_vpn #2 [fast]",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "🇦🇪 AE | VLESS | @outline_ir #1 [fast]",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -122,6 +128,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @free1_vpn #2 [fast]",
+      "server": "78.17.112.103",
+      "server_port": 13868,
+      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.epicgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk",
+          "short_id": "e852dc"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
       "server": "217.60.249.112",
@@ -131,6 +160,52 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]",
+      "server": "78.17.112.103",
+      "server_port": 13868,
+      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.epicgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk",
+          "short_id": "e852dc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "78.17.126.222",
+      "server_port": 13868,
+      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "booking.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sgpya-5ohMKCjzyrDe4RWz7b8O9XegDzQ88oHCV45Gk",
+          "short_id": "e852dc"
+        }
       }
     },
     {
@@ -154,7 +229,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",

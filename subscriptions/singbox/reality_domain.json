@@ -55,11 +55,11 @@
         "KingRezaPahlavi",
         "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #1 [medium]",
-        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [slow]",
-        "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [medium]",
+        "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @bored_vpn #2 [fast]",
+        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇦🇱 AL | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "direct"
@@ -75,11 +75,11 @@
         "KingRezaPahlavi",
         "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #1 [medium]",
-        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [slow]",
-        "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [medium]",
+        "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @bored_vpn #2 [fast]",
+        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇦🇱 AL | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]"
       ],
@@ -174,7 +174,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @bored_vpn #1 [fast]",
+      "server": "nod4.kaafserver.ir",
+      "server_port": 8443,
+      "uuid": "f3d2dbde-f8c1-4fd1-a4ff-32c2fd476d65",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QCLXkk19RkRbBuMqyCggYr_57_eT9f3Xe-vnr_IrQhY",
+          "short_id": "79b983feac02921c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @bored_vpn #2 [fast]",
       "server": "germany.avrilon.us",
       "server_port": 443,
       "uuid": "71c92c65-61d4-445a-a307-aa163a41c180",
@@ -197,7 +220,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [slow]",
+      "tag": "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
       "server": "teain.org",
       "server_port": 1000,
       "uuid": "6f436a44-f703-93da-7e45-615824a39d3b",
@@ -219,7 +242,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
+      "tag": "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [fast]",
       "server": "free.soundfiy.ir",
       "server_port": 4554,
       "uuid": "7f3c3105-bc39-47fa-812d-1833b3709a9f",
@@ -242,45 +265,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "conf.apexi.shop",
-      "server_port": 2020,
-      "uuid": "a901e691-874d-49a9-be08-c1343edd5e5d",
+      "tag": "🇦🇱 AL | VLESS | @red2ray #1 [fast]",
+      "server": "yt.alba.xanka.best",
+      "server_port": 1337,
+      "uuid": "f62a37f3-f7df-4673-a7c8-06a9fc72c6ea",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "yt.alba.xanka.best",
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "e0cX3oFZmjV2A0WzpsvnnxtvL7qfwpdzv4xpJpT7xEk",
-          "short_id": "6114263f10c4be1b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [medium]",
-      "server": "conf.apexi.shop",
-      "server_port": 2086,
-      "uuid": "a901e691-874d-49a9-be08-c1343edd5e5d",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bzcsde9yya7qtM_50rHMD9vO9R11PkpRPCXFAvGn2VI",
-          "short_id": "d1bce33d398e9503"
+          "public_key": "0OajRGdqF2S2JJgKYcsq6nIF3K_ypFYCTUzCjR8Wh1o",
+          "short_id": "c692a719"
         }
       }
     },
