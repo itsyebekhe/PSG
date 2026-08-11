@@ -50,9 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]",
         "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]",
         "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]",
@@ -64,9 +63,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]",
         "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]",
         "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]"
@@ -75,26 +73,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
-      "server": "91.193.58.201",
-      "server_port": 443,
-      "uuid": "14b59caf-a196-4ec2-8c70-c7b388062f5b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "vangoghhh.info"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/rdfgtws",
-        "headers": {
-          "Host": "vangoghhh.info"
-        }
-      }
     },
     {
       "type": "shadowsocks",
@@ -109,15 +87,22 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
-      "server": "141.98.101.182",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "89.125.124.104",
+      "server_port": 1337,
+      "uuid": "ccd2bfcd-b949-476d-bd6e-710a41021b1c",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "eng.xanka.best",
+        "reality": {
+          "enabled": true,
+          "public_key": "MKoeqrRMeryTxhSbcrPmoMZKKtd9268vwsiZ22w2Gig",
+          "short_id": "be901ea3"
+        }
       }
     },
     {

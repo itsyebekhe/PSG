@@ -51,13 +51,16 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #2 [fast]",
+        "🇳🇱 NL | SS | @outline_ir #2 [slow]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,13 +70,16 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #2 [fast]",
+        "🇳🇱 NL | SS | @outline_ir #2 [slow]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -90,6 +96,26 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+      "server": "206.71.158.124",
+      "server_port": 443,
+      "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dey.lnmarketplace.net",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -120,7 +146,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "51.158.206.25",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -139,7 +165,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
       "server": "144.31.54.85",
       "server_port": 443,
       "uuid": "06ee3130-cb1e-4d66-b61c-d221eec984ed",
@@ -157,9 +183,44 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+      "server": "193.29.139.168",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QCXDxuDlTTMD7jtgHUjIoj",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-      "server": "51.158.206.8",
+      "server": "72.56.81.165",
+      "server_port": 40443,
+      "uuid": "4bf5a71c-d726-4585-b095-7396675706d5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU",
+          "short_id": "c84f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #2 [fast]",
+      "server": "51.158.206.93",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -181,11 +242,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outline_ir #1 [fast]",
-      "server": "193.29.139.168",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QCXDxuDlTTMD7jtgHUjIoj",
+      "tag": "🇳🇱 NL | SS | @outline_ir #2 [slow]",
+      "server": "158.173.20.208",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
       "network": "tcp",
       "tls": {
         "enabled": true
@@ -205,7 +266,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",
