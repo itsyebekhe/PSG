@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇻🇬 VG | VLESS | @red2ray #1 [fast]",
         "🇻🇬 VG | VLESS | @dailyv2ray #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,32 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇻🇬 VG | VLESS | @red2ray #1 [fast]",
         "🇻🇬 VG | VLESS | @dailyv2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇬 VG | VLESS | @red2ray #1 [fast]",
+      "server": "fin1.panel11.ru",
+      "server_port": 443,
+      "uuid": "8aeda8e3-dd32-4071-bcbb-f793e646eb13",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fin1.panel11.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "lQ8pnlOU0kqS77TA7Fftl8nSzktXLzFpOLGqCZEAhjg",
+          "short_id": "aaec521b22bbe6cb"
+        }
+      }
     },
     {
       "type": "vless",

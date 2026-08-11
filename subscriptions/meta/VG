@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇻🇬 VG | VLESS | @red2ray #1 [fast]", "server": "fin1.panel11.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8aeda8e3-dd32-4071-bcbb-f793e646eb13", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "fin1.panel11.ru", "reality-opts": {"public-key": "lQ8pnlOU0kqS77TA7Fftl8nSzktXLzFpOLGqCZEAhjg", "short-id": "aaec521b22bbe6cb"}}
   - {"name": "🇻🇬 VG | VLESS | @dailyv2ray #1 [fast]", "server": "mtn.ircf.space", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "7f64eeb1-b5f1-40a0-d80e-e6c718f6bd6a", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "("}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇻🇬 VG | VLESS | @red2ray #1 [fast]'
       - '🇻🇬 VG | VLESS | @dailyv2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇻🇬 VG | VLESS | @red2ray #1 [fast]'
       - '🇻🇬 VG | VLESS | @dailyv2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
