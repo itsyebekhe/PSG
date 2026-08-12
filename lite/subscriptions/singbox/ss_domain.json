@@ -54,7 +54,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇳🇱 NL | SS | @outline_ir #2 [fast]",
-        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
+        "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
+        "🇮🇷 IR | SS | @sobi_vpn #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -67,7 +68,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇳🇱 NL | SS | @outline_ir #2 [fast]",
-        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]"
+        "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
+        "🇮🇷 IR | SS | @sobi_vpn #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -127,8 +129,20 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
+      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
       "server": "tt.hsrdnr.ir",
+      "server_port": 2044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "3rfnj11q5xvg72y1",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇷 IR | SS | @sobi_vpn #2 [medium]",
+      "server": "page.hsrdnr.ir",
       "server_port": 2044,
       "method": "chacha20-ietf-poly1305",
       "password": "3rfnj11q5xvg72y1",

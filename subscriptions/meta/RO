@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]", "server": "93.114.194.114", "port": 448, "type": "vless", "skip-cert-verify": true, "uuid": "bc5b801f-49a7-4db7-ac92-a2c57d42d132", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.samsung.com", "reality-opts": {"public-key": "qX6IJfWNN-SNray6xJugb8pCpgY_zjeyCfvq9IUyd3w", "short-id": "e1bdc95c1554c8eb"}}
+  - {"name": "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [medium]", "server": "93.114.194.114", "port": 448, "type": "vless", "skip-cert-verify": true, "uuid": "bc5b801f-49a7-4db7-ac92-a2c57d42d132", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.samsung.com", "reality-opts": {"public-key": "qX6IJfWNN-SNray6xJugb8pCpgY_zjeyCfvq9IUyd3w", "short-id": "e1bdc95c1554c8eb"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇷🇴 RO | VLESS | @outlinereleasedkey #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇷🇴 RO | VLESS | @outlinereleasedkey #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
