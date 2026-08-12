@@ -3,19 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [medium]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
+  - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
   - {"name": "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "qzc6tbpu04c4.dop69.com", "port": 10962, "type": "vless", "skip-cert-verify": true, "uuid": "be0fa2b7-fcf9-4636-8a89-b2a245fc4e02", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [medium]'
+      - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
       - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [medium]'
+      - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
       - '🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

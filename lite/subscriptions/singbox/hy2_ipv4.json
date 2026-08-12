@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTUQ=
+//profile-title: base64:UFNHIHwgSFkyX0lQVjQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD | VLESS | @red2ray #1 [fast]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD | VLESS | @red2ray #1 [fast]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,25 +74,52 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @red2ray #1 [fast]",
-      "server": "md.voxyvpn.ru",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
       "server_port": 443,
-      "uuid": "e16c49e6-fca7-4c4e-b717-c4b12b1859bc",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "185.225.19.39",
+      "server_port": 443,
+      "password": "uj7XGZGUqRlmdpk6rysyZMN333RWsxTFj0hBIMaFV-NUCd5r",
       "tls": {
         "enabled": true,
-        "server_name": "ign.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L7DF7bQGLb1hLQxHoDqnsd7WMAo8bklWteoXqKYwAl8",
-          "short_id": "deadbeef"
-        }
+        "server_name": "ro.h2corp.org"
       }
     },
     {

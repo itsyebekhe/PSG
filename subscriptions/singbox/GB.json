@@ -52,7 +52,8 @@
         "auto",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,7 +64,8 @@
       "outbounds": [
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]"
+        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -96,11 +98,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
       "server": "82.38.31.42",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @proxy48 #1 [fast]",
+      "server": "series-a2.samanehha.co",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mps3FwmDjLrWaOVg",
       "network": "tcp",
       "tls": {
         "enabled": true

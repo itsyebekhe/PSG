@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [medium]",
-        "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [medium]",
-        "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [medium]"
+        "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,31 +68,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [medium]",
+      "tag": "🇷🇴 RO | HY2 | @outlinereleasedkey #1 [fast]",
       "server": "185.225.19.39",
       "server_port": 443,
       "password": "uj7XGZGUqRlmdpk6rysyZMN333RWsxTFj0hBIMaFV-NUCd5r",
       "tls": {
         "enabled": true,
         "server_name": "ro.h2corp.org"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [medium]",
-      "server": "93.114.194.114",
-      "server_port": 448,
-      "uuid": "bc5b801f-49a7-4db7-ac92-a2c57d42d132",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "qX6IJfWNN-SNray6xJugb8pCpgY_zjeyCfvq9IUyd3w",
-          "short_id": "e1bdc95c1554c8eb"
-        }
       }
     },
     {

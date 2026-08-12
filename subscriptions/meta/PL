@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇵🇱 PL | VMESS | @free1_vpn #1 [fast]", "server": "168.222.49.188", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "20e840a9-b3d6-4941-ab1f-d37cd958b0b8", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇵🇱 PL | VMESS | @free1_vpn #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇵🇱 PL | VMESS | @free1_vpn #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
