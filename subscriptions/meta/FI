@@ -1,0 +1,22 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "95.216.160.158", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "22199ed8-5f22-4906-9917-67e3609d8776", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "XS_4X8Ti1WuBEYbWCFuN2gEc-YG0EwN3cNPRV4dAvCg", "short-id": "29fd3dc0210c"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #2 [fast]", "server": "95.216.161.19", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "22199ed8-5f22-4906-9917-67e3609d8776", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "XS_4X8Ti1WuBEYbWCFuN2gEc-YG0EwN3cNPRV4dAvCg", "short-id": "29fd3dc0210c"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #2 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #2 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSFky
+//profile-title: base64:UFNHIHwgQkc=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,10 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇸🇪 SE | HY2 | @outlinereleasedkey #1 [medium]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #1 [fast]",
+        "🇧🇬 BG | SS | @NamiraConfigs #1 [fast]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇸🇪 SE | HY2 | @outlinereleasedkey #1 [medium]"
+        "🇧🇬 BG | VLESS | @NamiraConfigs #1 [fast]",
+        "🇧🇬 BG | SS | @NamiraConfigs #1 [fast]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,53 +72,33 @@
     },
     {
       "type": "vless",
-      "tag": "همکاری_ملی",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
+      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "93.123.13.7",
+      "server_port": 15755,
+      "uuid": "c863c8f0-cda1-429c-be76-cbefc8a418a1",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
-      "type": "vless",
-      "tag": "جاویدشاه",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "KingRezaPahlavi",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 SE | HY2 | @outlinereleasedkey #1 [medium]",
-      "server": "87.121.105.108",
-      "server_port": 443,
-      "password": "71cada65-d23e-418c-88e4-a06188d14689",
+      "type": "shadowsocks",
+      "tag": "🇧🇬 BG | SS | @NamiraConfigs #1 [fast]",
+      "server": "93.123.13.7",
+      "server_port": 25783,
+      "method": "chacha20-ietf-poly1305",
+      "password": "8cmuvza9gyetx0z8",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "swe-one.quiet-rogue.site"
+        "enabled": true
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "93.123.13.7",
+      "server_port": 40312,
+      "uuid": "9f108161-c3cf-444b-989a-2d864b165435",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

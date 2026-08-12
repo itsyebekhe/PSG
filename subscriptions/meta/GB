@@ -3,26 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "89.125.124.104", "port": 1337, "type": "vless", "skip-cert-verify": true, "uuid": "ccd2bfcd-b949-476d-bd6e-710a41021b1c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "eng.xanka.best", "reality-opts": {"public-key": "MKoeqrRMeryTxhSbcrPmoMZKKtd9268vwsiZ22w2Gig", "short-id": "be901ea3"}}
   - {"name": "🇬🇧 GB | VLESS | @evay_vpn #1 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "b90bc52c-d95b-49d2-8061-598ddb44e288", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @evay_vpn #2 [fast]", "server": "s1.esantion.info", "port": 24206, "type": "vless", "skip-cert-verify": true, "uuid": "9913a211-19e0-4c7f-b813-841d30d28168", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VMESS | @NamiraConfigs #1 [medium]", "server": "66.163.117.58", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #2 [fast]'
-      - '🇬🇧 GB | VMESS | @NamiraConfigs #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @evay_vpn #2 [fast]'
-      - '🇬🇧 GB | VMESS | @NamiraConfigs #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

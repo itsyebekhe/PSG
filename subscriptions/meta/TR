@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "newtr.karmatel.ir", "port": 20727, "type": "vless", "skip-cert-verify": true, "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
-  - {"name": "🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]", "server": "45.74.178.41", "port": 719, "type": "vless", "skip-cert-verify": true, "uuid": "ae9bcc43-5fd8-4891-b06e-1c93e2747ed9", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "newtr.karmatel.ir", "port": 20727, "type": "vless", "skip-cert-verify": true, "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
+  - {"name": "🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]", "server": "45.74.178.41", "port": 719, "type": "vless", "skip-cert-verify": true, "uuid": "ae9bcc43-5fd8-4891-b06e-1c93e2747ed9", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
-      - '🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
+      - '🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
-      - '🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
+      - '🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
