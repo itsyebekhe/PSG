@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇵🇹 PT | VLESS | @outlinereleasedkey #1 [fast]", "server": "93.119.168.215", "port": 60771, "type": "vless", "skip-cert-verify": true, "uuid": "060a5db6-7ff9-4a64-87c1-8a27be4f11ab", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇵🇹 PT | VLESS | @outlinereleasedkey #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇵🇹 PT | VLESS | @outlinereleasedkey #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

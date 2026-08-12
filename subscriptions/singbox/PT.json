@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRkk=
+//profile-title: base64:UFNHIHwgUFQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #2 [fast]",
+        "🇵🇹 PT | VLESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #2 [fast]"
+        "🇵🇹 PT | VLESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,47 +68,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-      "server": "95.216.160.158",
-      "server_port": 443,
-      "uuid": "22199ed8-5f22-4906-9917-67e3609d8776",
+      "tag": "🇵🇹 PT | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "93.119.168.215",
+      "server_port": 60771,
+      "uuid": "060a5db6-7ff9-4a64-87c1-8a27be4f11ab",
       "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XS_4X8Ti1WuBEYbWCFuN2gEc-YG0EwN3cNPRV4dAvCg",
-          "short_id": "29fd3dc0210c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #2 [fast]",
-      "server": "95.216.161.19",
-      "server_port": 443,
-      "uuid": "22199ed8-5f22-4906-9917-67e3609d8776",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XS_4X8Ti1WuBEYbWCFuN2gEc-YG0EwN3cNPRV4dAvCg",
-          "short_id": "29fd3dc0210c"
-        }
-      }
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

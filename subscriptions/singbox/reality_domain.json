@@ -57,9 +57,10 @@
         "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
-        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
         "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "direct"
@@ -77,9 +78,10 @@
         "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
-        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
         "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]"
       ],
@@ -226,25 +228,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
-      "server": "germany.avrilon.us",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
+      "server": "media.oneokgames.com",
       "server_port": 443,
-      "uuid": "71c92c65-61d4-445a-a307-aa163a41c180",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "semiconductor.samsung.com",
+        "server_name": "media.oneokgames.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wXs2Zk6eIv4p2Rj1MQqXeT8h7z6-ff6ALExacKW71DQ",
-          "short_id": "60e1"
+          "public_key": "aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38",
+          "short_id": "dbdbeaf4aa6e1a5c"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v2.ObjectService"
       }
     },
     {
@@ -286,6 +291,29 @@
           "enabled": true,
           "public_key": "Slau4DRZkIFgAeKGsPz5MWOp5xB1ecTNzLtbCBUGeQM",
           "short_id": "8059df"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @red2ray #1 [fast]",
+      "server": "md.voxyvpn.ru",
+      "server_port": 443,
+      "uuid": "e16c49e6-fca7-4c4e-b717-c4b12b1859bc",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L7DF7bQGLb1hLQxHoDqnsd7WMAo8bklWteoXqKYwAl8",
+          "short_id": "deadbeef"
         }
       }
     },
