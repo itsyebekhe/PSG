@@ -64,15 +64,19 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
+        "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
+        "🇺🇸 US | VLESS | @netfreedom0 #2 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -92,6 +96,7 @@
         "🇺🇸 US | VLESS | @serverv2ray00 #2 [fast]",
         "🇺🇸 US | VLESS | @buffalo_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @manstervpn #1 [fast]",
+        "🇺🇸 US | VMESS | @ir_netproxy #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -114,15 +119,19 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
+        "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
+        "🇺🇸 US | VLESS | @netfreedom0 #2 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -141,7 +150,8 @@
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
         "🇺🇸 US | VLESS | @serverv2ray00 #2 [fast]",
         "🇺🇸 US | VLESS | @buffalo_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @manstervpn #1 [fast]"
+        "🇺🇸 US | VLESS | @manstervpn #1 [fast]",
+        "🇺🇸 US | VMESS | @ir_netproxy #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -390,6 +400,33 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "69.46.46.30",
+      "server_port": 443,
+      "uuid": "dd997a36-bc8a-6423-10d2-61f84190a37e",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rvg-production-3524.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/dd997a36-bc8a-6423-10d2-61f84190a37e",
+        "headers": {
+          "Host": "rvg-production-3524.up.railway.app"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
       "server": "199.232.86.11",
       "server_port": 80,
@@ -405,6 +442,26 @@
         "path": "/",
         "headers": {
           "Host": "Fastapi.Org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
+      "server": "www.true.th",
+      "server_port": 80,
+      "uuid": "ff485c50-b364-4b4f-90be-ea576b949dd3",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3gxy6d0a9fs18.cloudfront.net"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fnetvpn2026",
+        "headers": {
+          "Host": "d3gxy6d0a9fs18.cloudfront.net"
         }
       }
     },
@@ -476,6 +533,30 @@
           "enabled": true,
           "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
           "short_id": "bbc68cec8bb8d2e3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "116.204.164.30",
+      "server_port": 7443,
+      "uuid": "8dd3f783-aa97-420b-8aaa-d8a6c9679dad",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
         }
       }
     },
@@ -585,6 +666,29 @@
         "path": "/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE?ed=2560",
         "headers": {
           "Host": "JoinBedeeeeee--VPNCUSTOMIZE.ir."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @netfreedom0 #2 [fast]",
+      "server": "77.110.115.95",
+      "server_port": 40443,
+      "uuid": "641baa2f-6f74-4ecf-b948-032d19ba0142",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I",
+          "short_id": "e5f60718293a4b5c"
         }
       }
     },
@@ -1005,6 +1109,30 @@
         "path": "/Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray?ed=2048",
         "headers": {
           "Host": "barkatc2.ir"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @ir_netproxy #1 [fast]",
+      "server": "172.67.207.114",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "ophelia.mom"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "linkvws",
+        "headers": {
+          "Host": "ophelia.mom"
         }
       }
     },

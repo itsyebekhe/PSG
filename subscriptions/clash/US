@@ -7,6 +7,7 @@ proxies:
   - {"name": "🇺🇸 US | VMESS | @mi_pn_official #1 [fast]", "server": "auth.speedtest.net", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "nelly.homes"}}}
   - {"name": "🇺🇸 US | VMESS | @mi_pn_official #2 [fast]", "server": "172.67.71.160", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "nelly.homes"}}}
   - {"name": "🇺🇸 US | VMESS | @proxy48 #1 [fast]", "server": "188.114.97.3", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkws", "headers": {"Host": "afrhms16v.bestxray.buzz"}}}
+  - {"name": "🇺🇸 US | VMESS | @ir_netproxy #1 [fast]", "server": "172.67.207.114", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 1, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "linkvws", "headers": {"Host": "ophelia.mom"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -15,6 +16,7 @@ proxy-groups:
       - '🇺🇸 US | VMESS | @mi_pn_official #1 [fast]'
       - '🇺🇸 US | VMESS | @mi_pn_official #2 [fast]'
       - '🇺🇸 US | VMESS | @proxy48 #1 [fast]'
+      - '🇺🇸 US | VMESS | @ir_netproxy #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -23,6 +25,7 @@ proxy-groups:
       - '🇺🇸 US | VMESS | @mi_pn_official #1 [fast]'
       - '🇺🇸 US | VMESS | @mi_pn_official #2 [fast]'
       - '🇺🇸 US | VMESS | @proxy48 #1 [fast]'
+      - '🇺🇸 US | VMESS | @ir_netproxy #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
