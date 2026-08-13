@@ -50,7 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]"
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +72,46 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+      "server": "188.225.83.179",
+      "server_port": 443,
+      "uuid": "ff1b0b50-70dc-4bae-866e-55cff86f4d6d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru.falsemirrov.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sbvKAdRy_0h33iRxgGwHAD1HC62WGwlkWwj0S5ptJEU",
+          "short_id": "9c2378562188c3cb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+      "server": "5.129.252.140",
+      "server_port": 4100,
+      "uuid": "eb135f2b-4b9e-4abb-9a89-78242613da61",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/v1",
+        "headers": {
+          "Host": "live.ok.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
       "server": "2.26.8.55",
       "server_port": 443,
       "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45",

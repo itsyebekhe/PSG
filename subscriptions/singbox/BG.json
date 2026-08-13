@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG | VLESS | @NamiraConfigs #1 [fast]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #1 [medium]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #2 [medium]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #3 [medium]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #4 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @NamiraConfigs #1 [fast]"
+        "🇧🇬 BG | VLESS | @NamiraConfigs #1 [medium]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #2 [medium]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #3 [medium]",
+        "🇧🇬 BG | VLESS | @NamiraConfigs #4 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,10 +74,37 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #1 [fast]",
+      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #1 [medium]",
       "server": "93.123.13.7",
       "server_port": 10079,
       "uuid": "c8d2ebd5-d3cb-445e-923a-84f952a71917",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #2 [medium]",
+      "server": "93.123.13.7",
+      "server_port": 15755,
+      "uuid": "c863c8f0-cda1-429c-be76-cbefc8a418a1",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #3 [medium]",
+      "server": "93.123.13.7",
+      "server_port": 15139,
+      "uuid": "ab16b404-1d3a-4ba6-a37c-67bed61e3b5d",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #4 [medium]",
+      "server": "93.123.13.7",
+      "server_port": 40312,
+      "uuid": "9f108161-c3cf-444b-989a-2d864b165435",
       "network": "tcp",
       "packet_encoding": "xudp"
     },
