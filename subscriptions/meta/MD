@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇲🇩 MD | VLESS | @outlinereleasedkey #1 [fast]", "server": "144.31.131.241", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "b406bc51-9002-474c-beae-b194b02c91da", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "mold.speedload.online", "reality-opts": {"public-key": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs", "short-id": "a20d3ed244c76426"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇲🇩 MD | VLESS | @outlinereleasedkey #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇲🇩 MD | VLESS | @outlinereleasedkey #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
