@@ -4,8 +4,9 @@ skip-proxy = 127.0.0.1, localhost, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 19
 dns-server = 8.8.8.8, 8.8.4.4
 [Proxy]
 🇵🇱 PL | VMESS | @free1_vpn #1 [fast] = vmess, 168.222.49.188, 80, username = 20e840a9-b3d6-4941-ab1f-d37cd958b0b8, ws = false, tls = false
+🇵🇱 PL | VMESS | @NamiraConfigs #1 [fast] = vmess, 168.222.49.188, 80, username = 20e840a9-b3d6-4941-ab1f-d37cd958b0b8, ws = false, tls = false
 [Proxy Group]
-PROXY = select, 🇵🇱 PL | VMESS | @free1_vpn #1 [fast]
+PROXY = select, 🇵🇱 PL | VMESS | @free1_vpn #1 [fast], 🇵🇱 PL | VMESS | @NamiraConfigs #1 [fast]
 [Rule]
 GEOSITE,category-ads-all,REJECT
 GEOIP,LAN,DIRECT

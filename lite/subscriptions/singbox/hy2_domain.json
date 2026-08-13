@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFI=
+//profile-title: base64:UFNHIHwgSFkyX0RPTUFJTg==
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇫🇮 FI | HY2 | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-        "🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇫🇮 FI | HY2 | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,34 +74,56 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
-      "server": "newtr.karmatel.ir",
-      "server_port": 20727,
-      "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
       "network": "ws",
       "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "play.google.com"
-        }
+        "path": "/"
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @configv2rayforfree #1 [medium]",
-      "server": "45.74.178.41",
-      "server_port": 719,
-      "uuid": "ae9bcc43-5fd8-4891-b06e-1c93e2747ed9",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
       "network": "ws",
       "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
-        "path": "/api/v2/xtrnwqjbkr?ed=2560",
-        "headers": {
-          "Host": "play.google.com"
-        }
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 FI | HY2 | @red2ray #1 [fast]",
+      "server": "assets.gateway-stream.com",
+      "server_port": 52025,
+      "password": "3ff7b2e75ce84d05ae16572b60a9b707",
+      "obfs": {
+        "type": "salamander",
+        "password": "salamander"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "assets.gateway-stream.com"
       }
     },
     {

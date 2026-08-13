@@ -52,11 +52,11 @@
         "auto",
         "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @flyv2ray #1 [medium]",
+        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -67,11 +67,11 @@
       "outbounds": [
         "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @flyv2ray #1 [medium]",
+        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -125,6 +125,24 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "62.210.24.143",
+      "server_port": 32202,
+      "uuid": "28148be2-61a7-4f36-8adb-030cc9f82bd0",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc",
+          "short_id": "f57d8f26"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
       "server": "84.247.129.205",
       "server_port": 4433,
@@ -143,15 +161,6 @@
           "Host": "sub.mot.ip-ddns.com"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "35.181.74.17",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -195,7 +204,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",
