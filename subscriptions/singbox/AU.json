@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
         "🇦🇺 AU | SS | @outline_ir #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "direct"
@@ -60,6 +61,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
         "🇦🇺 AU | SS | @outline_ir #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]"
       ],
@@ -67,6 +69,32 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
+      "server": "vpncustomize.website",
+      "server_port": 443,
+      "uuid": "ecc70b1d-99ab-41bd-ad2c-b448e77daa49",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.iranserver.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "55xH-tqPd6c0VZpbwlxRxhmfvp9lVUtp45CDJLpcw2I",
+          "short_id": "6b0541cd"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "@VPNCUSTOMIZE"
+      }
     },
     {
       "type": "shadowsocks",

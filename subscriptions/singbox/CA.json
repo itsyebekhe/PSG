@@ -50,6 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇦 CA | VLESS | @meli_v2rayng #1 [fast]",
+        "🇨🇦 CA | VLESS | @meli_v2rayng #2 [fast]",
         "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
@@ -65,6 +67,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇨🇦 CA | VLESS | @meli_v2rayng #1 [fast]",
+        "🇨🇦 CA | VLESS | @meli_v2rayng #2 [fast]",
         "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
@@ -77,6 +81,43 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @meli_v2rayng #1 [fast]",
+      "server": "104.31.16.65",
+      "server_port": 2087,
+      "uuid": "5a8105ff-3844-4f93-c3c1-a0be7dbeed65",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Pm.RxV2ray.space"
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "@RxV2ray"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @meli_v2rayng #2 [fast]",
+      "server": "104.31.16.65",
+      "server_port": 2053,
+      "uuid": "8ea4ff0b-3dae-4476-8fe1-8423c58d97f4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Pm.RxV2ray.space"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Pm.RxV2ray.space"
+        }
+      }
     },
     {
       "type": "vless",

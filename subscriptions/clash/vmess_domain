@@ -3,7 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [slow]", "server": "nycqg19zkwacpm1b.v.3dns.vip", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/ws-vmess", "headers": {"Host": "NYcQg19zkwaCPM1B.v.3dns.vip"}}}
+  - {"name": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]", "server": "nycqg19zkwacpm1b.v.3dns.vip", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/ws-vmess", "headers": {"Host": "NYcQg19zkwaCPM1B.v.3dns.vip"}}}
   - {"name": "🇩🇪 DE | VMESS | @outlinereleasedkey #1 [fast]", "server": "deapp.jisuyun.top", "port": 2053, "type": "vmess", "skip-cert-verify": true, "uuid": "9a1a05d9-69be-45d3-e326-c6621edf7b31", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/devm", "headers": {"Host": "deapp.jisuyun.top"}}}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #1 [fast]", "server": "xcf037.facai2024.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d9863037-0463-4615-e972-36ba9662d1e9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/d9863037", "headers": {"Host": "xcf037.facai2024.com"}}}
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
@@ -24,7 +24,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [slow]'
+      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇩🇪 DE | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
@@ -45,7 +45,7 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [slow]'
+      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇩🇪 DE | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'

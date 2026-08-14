@@ -57,9 +57,11 @@
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
+        "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
         "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -75,9 +77,11 @@
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
+        "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
         "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]"
+        "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -225,6 +229,32 @@
     },
     {
       "type": "vless",
+      "tag": "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
+      "server": "vpncustomize.website",
+      "server_port": 443,
+      "uuid": "ecc70b1d-99ab-41bd-ad2c-b448e77daa49",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.iranserver.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "55xH-tqPd6c0VZpbwlxRxhmfvp9lVUtp45CDJLpcw2I",
+          "short_id": "6b0541cd"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "@VPNCUSTOMIZE"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
       "server": "free.soundfiy.ir",
       "server_port": 4554,
@@ -287,6 +317,25 @@
           "enabled": true,
           "public_key": "RPJb-M8Bj08XgL-ou8yr5eBNPlG-GT6iG5rxTBxX9iw",
           "short_id": "15662a5e4d4bd0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "br1.levikogjgfdd.ir",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
