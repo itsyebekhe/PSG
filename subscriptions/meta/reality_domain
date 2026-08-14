@@ -13,8 +13,6 @@ proxies:
   - {"name": "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]", "server": "free.soundfiy.ir", "port": 4554, "type": "vless", "skip-cert-verify": true, "uuid": "7f3c3105-bc39-47fa-812d-1833b3709a9f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "v-ydSy2Eb-YyiWYd3WyFoJc4Bjs9QPGRTsVac6SyO14", "short-id": "e3"}}
   - {"name": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]", "server": "de-d-178105.homelanderwins.com", "port": 40840, "type": "vless", "skip-cert-verify": true, "uuid": "ff45e582-ade8-4656-a291-74df0fdceb2d", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.neshan.org", "reality-opts": {"public-key": "RPJb-M8Bj08XgL-ou8yr5eBNPlG-GT6iG5rxTBxX9iw", "short-id": "899530"}}
   - {"name": "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]", "server": "de-d-178105.homelanderwins.com", "port": 40840, "type": "vless", "skip-cert-verify": true, "uuid": "948f3b4d-e0d5-4038-80a4-8b40b0e4c033", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "neshan.org", "reality-opts": {"public-key": "RPJb-M8Bj08XgL-ou8yr5eBNPlG-GT6iG5rxTBxX9iw", "short-id": "15662a5e4d4bd0"}}
-  - {"name": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]", "server": "br1.levikogjgfdd.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg", "short-id": "c39cc7310a"}}
-  - {"name": "🇫🇷 FR | VLESS | @red2ray #1 [fast]", "server": "xfr.saturn-cloud.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "95ae0de8-d944-4b1e-b450-d34d80f9a528", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "xfr.saturn-cloud.net", "reality-opts": {"public-key": "UjwVdSvY-6dV5UKCNO7ROokiSF_aLaXYyUaG6RybOmI", "short-id": "2762604ed2e0fa2f"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -29,8 +27,6 @@ proxy-groups:
       - '🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]'
       - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]'
-      - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
-      - '🇫🇷 FR | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -45,8 +41,6 @@ proxy-groups:
       - '🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]'
       - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]'
       - '🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]'
-      - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
-      - '🇫🇷 FR | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

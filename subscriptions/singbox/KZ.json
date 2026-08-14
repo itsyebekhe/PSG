@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgT1BFTkFJ
+//profile-title: base64:UFNHIHwgS1o=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,10 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]"
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -73,59 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "همکاری_ملی",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "جاویدشاه",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "KingRezaPahlavi",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "chatgpt-async-webps-prod-centralus-0.chatgpt.com",
-      "server_port": 443,
-      "uuid": "3666e25b-a1c2-48ec-b060-075392b1aa6e",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
+      "server": "77.240.38.27",
+      "server_port": 8443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "fkXtvCEQ1ZU1rzF3fIK0fw==",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "german.sarzamiiinahang.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
+        "enabled": true
       }
     },
     {

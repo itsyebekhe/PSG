@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSU4=
+//profile-title: base64:UFNHIHwgSlA=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 IN | SS | @red2ray #1 [medium]",
+        "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 IN | SS | @red2ray #1 [medium]"
+        "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,23 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 IN | SS | @red2ray #1 [medium]",
-      "server": "103.120.178.193",
-      "server_port": 31348,
-      "method": "chacha20-ietf-poly1305",
-      "password": "EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
+      "server": "134.122.194.186",
+      "server_port": 443,
+      "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9",
+      "network": "ws",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "2-ee1.pages.dev"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp",
+        "headers": {
+          "Host": "2-ee1.pages.dev"
+        }
       }
     },
     {
