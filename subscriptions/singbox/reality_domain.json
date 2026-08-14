@@ -53,15 +53,15 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
-        "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
+        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -73,15 +73,15 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
-        "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
+        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇮🇷 IR | VLESS | @mtproxy22_v2ray #1 [medium]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #2 [fast]",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]"
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -125,28 +125,6 @@
       "transport": {
         "type": "ws",
         "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
-      "server": "pk-google.mobileemdad.top",
-      "server_port": 443,
-      "uuid": "1ee46997-c514-4ab0-a6d3-ad0492adab15",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ",
-          "short_id": "377d"
-        }
       }
     },
     {
@@ -229,28 +207,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 AU | VLESS | @meli_v2rayng #1 [fast]",
-      "server": "vpncustomize.website",
-      "server_port": 443,
-      "uuid": "ecc70b1d-99ab-41bd-ad2c-b448e77daa49",
-      "network": "grpc",
+      "tag": "🇮🇹 IT | VLESS | @selinc #1 [fast]",
+      "server": "it.feywebsite.ir",
+      "server_port": 8008,
+      "uuid": "b91abe1a-80ca-417b-998b-2b542661c16f",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.iranserver.com",
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "55xH-tqPd6c0VZpbwlxRxhmfvp9lVUtp45CDJLpcw2I",
-          "short_id": "6b0541cd"
+          "public_key": "yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8",
+          "short_id": "5f9a"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "@VPNCUSTOMIZE"
       }
     },
     {
@@ -336,6 +310,25 @@
           "enabled": true,
           "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
           "short_id": "c39cc7310a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "xfr.saturn-cloud.net",
+      "server_port": 443,
+      "uuid": "95ae0de8-d944-4b1e-b450-d34d80f9a528",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "xfr.saturn-cloud.net",
+        "reality": {
+          "enabled": true,
+          "public_key": "UjwVdSvY-6dV5UKCNO7ROokiSF_aLaXYyUaG6RybOmI",
+          "short_id": "2762604ed2e0fa2f"
         }
       }
     },

@@ -52,11 +52,13 @@
         "auto",
         "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | VLESS | @mpproxy #1 [medium]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,11 +69,13 @@
       "outbounds": [
         "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | VLESS | @mpproxy #1 [medium]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -120,7 +124,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @mpproxy #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+      "server": "15.237.222.37",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
       "server": "84.247.129.205",
       "server_port": 4433,
       "uuid": "00000000-0000-4000-8000-000000000000",
@@ -141,7 +154,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "xfr.saturn-cloud.net",
+      "server_port": 443,
+      "uuid": "95ae0de8-d944-4b1e-b450-d34d80f9a528",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "xfr.saturn-cloud.net",
+        "reality": {
+          "enabled": true,
+          "public_key": "UjwVdSvY-6dV5UKCNO7ROokiSF_aLaXYyUaG6RybOmI",
+          "short_id": "2762604ed2e0fa2f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
       "server": "89.208.113.16",
       "server_port": 443,
       "uuid": "adce7c2a-3191-49ae-b61c-9b8258ea1b0e",
@@ -153,7 +185,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
       "server": "199.232.169.135",
       "server_port": 80,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -169,7 +201,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -193,7 +225,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

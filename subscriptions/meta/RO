@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇷🇴 RO | VLESS | @outline_ir #1 [medium]", "server": "87.58.205.88", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "google.com", "reality-opts": {"public-key": "v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0", "short-id": "72cd47c079c0a3df"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇷🇴 RO | VLESS | @outline_ir #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇷🇴 RO | VLESS | @outline_ir #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
