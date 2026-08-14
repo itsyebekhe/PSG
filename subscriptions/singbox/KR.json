@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQkc=
+//profile-title: base64:UFNHIHwgS1I=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG | VLESS | @NamiraConfigs #1 [medium]",
-        "🇧🇬 BG | VLESS | @NamiraConfigs #2 [medium]",
-        "🇧🇬 BG | VLESS | @NamiraConfigs #3 [medium]",
-        "🇧🇬 BG | VLESS | @NamiraConfigs #4 [medium]",
+        "🇰🇷 KR | SS | @red2ray #1 [medium]",
+        "🇰🇷 KR | SS | @red2ray #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @NamiraConfigs #1 [medium]",
-        "🇧🇬 BG | VLESS | @NamiraConfigs #2 [medium]",
-        "🇧🇬 BG | VLESS | @NamiraConfigs #3 [medium]",
-        "🇧🇬 BG | VLESS | @NamiraConfigs #4 [medium]"
+        "🇰🇷 KR | SS | @red2ray #1 [medium]",
+        "🇰🇷 KR | SS | @red2ray #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -73,40 +69,28 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "93.123.13.7",
-      "server_port": 10079,
-      "uuid": "c8d2ebd5-d3cb-445e-923a-84f952a71917",
+      "type": "shadowsocks",
+      "tag": "🇰🇷 KR | SS | @red2ray #1 [medium]",
+      "server": "141.164.45.187",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "tls": {
+        "enabled": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #2 [medium]",
-      "server": "93.123.13.7",
-      "server_port": 15755,
-      "uuid": "c863c8f0-cda1-429c-be76-cbefc8a418a1",
+      "type": "shadowsocks",
+      "tag": "🇰🇷 KR | SS | @red2ray #2 [medium]",
+      "server": "141.164.45.187",
+      "server_port": 2376,
+      "method": "aes-256-gcm",
+      "password": "faBAoD54k87UJG7",
       "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #3 [medium]",
-      "server": "93.123.13.7",
-      "server_port": 15139,
-      "uuid": "ab16b404-1d3a-4ba6-a37c-67bed61e3b5d",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @NamiraConfigs #4 [medium]",
-      "server": "93.123.13.7",
-      "server_port": 40312,
-      "uuid": "9f108161-c3cf-444b-989a-2d864b165435",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "direct",
