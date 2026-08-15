@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇭🇰 HK | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇭🇰 HK | VLESS | @red2ray #1 [medium]"
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -89,29 +87,6 @@
         "path": "/ws-vmess",
         "headers": {
           "Host": "U2FRxj0G13vDI0Wo.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 HK | VLESS | @red2ray #1 [medium]",
-      "server": "103.149.183.198",
-      "server_port": 13779,
-      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
-          "short_id": "af1bdd293097b664"
         }
       }
     },

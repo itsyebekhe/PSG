@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+        "🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
-        "🇹🇷 TR | VLESS | @netmellianti #1 [medium]"
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+        "🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
       "server": "141.98.118.70",
       "server_port": 443,
       "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c",
@@ -92,7 +94,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
       "server": "newtr.karmatel.ir",
       "server_port": 20727,
       "uuid": "bc903fe3-865f-4f2e-87f9-24c4b58854de",
@@ -101,6 +103,22 @@
       "transport": {
         "type": "ws",
         "path": "/",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @configv2rayforfree #1 [fast]",
+      "server": "45.74.178.41",
+      "server_port": 719,
+      "uuid": "ae9bcc43-5fd8-4891-b06e-1c93e2747ed9",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/api/v2/xtrnwqjbkr?ed=2560",
         "headers": {
           "Host": "play.google.com"
         }

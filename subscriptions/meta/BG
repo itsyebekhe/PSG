@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇧🇬 BG | VLESS | @red2ray #1 [fast]", "server": "93.123.13.7", "port": 15139, "type": "vless", "skip-cert-verify": true, "uuid": "ab16b404-1d3a-4ba6-a37c-67bed61e3b5d", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

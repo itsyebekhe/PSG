@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]", "server": "u2frxj0g13vdi0wo.v.3dns.vip", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/ws-vmess", "headers": {"Host": "U2FRxj0G13vDI0Wo.v.3dns.vip"}}}
-  - {"name": "🇭🇰 HK | VLESS | @red2ray #1 [medium]", "server": "103.149.183.198", "port": 13779, "type": "vless", "skip-cert-verify": true, "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "tesla.com", "reality-opts": {"public-key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg", "short-id": "af1bdd293097b664"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
