@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
         "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,13 +62,38 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
         "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]"
+        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+      "server": "ru-1.p-esmy.icu",
+      "server_port": 2066,
+      "uuid": "24f8209b-6689-4e7a-b067-f886e04dfc43",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XIBKbglsQ9pI4eo26LoUkmNxnVqlKtxZRO0H91v3jF0",
+          "short_id": "1b2a3f"
+        }
+      }
     },
     {
       "type": "vless",
@@ -111,6 +138,22 @@
           "enabled": true,
           "public_key": "Loc9rXCMgSkksa4TGr203UCppZh9epDs8tdTVCjiCRw",
           "short_id": "c39843c687af3383"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
+      "server": "77.222.37.89",
+      "server_port": 2200,
+      "uuid": "b79c54f3-68e9-4e9d-8b57-22cbbe978730",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/v1",
+        "headers": {
+          "Host": "rzd.ru"
         }
       }
     },
