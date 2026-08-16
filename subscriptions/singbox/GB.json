@@ -51,9 +51,10 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -64,9 +65,10 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]",
-        "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
+        "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -95,7 +97,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -103,6 +105,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "31.76.39.176",
+      "server_port": 443,
+      "uuid": "7a3fa6b9-e862-4b3f-b742-a9168c4fa3b6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk.velajio.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6rrQ09njNw0wrfGg_S48ySsl4v17Q6uTAIMnECMWbyU",
+          "short_id": "c1fda2f8f007e108"
+        }
       }
     },
     {
@@ -120,7 +145,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
       "server": "82.38.31.42",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",

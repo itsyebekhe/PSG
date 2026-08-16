@@ -50,10 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
-        "🇹🇷 TR | VLESS | @orange_vpns #2 [medium]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
-        "🇹🇷 TR | VLESS | @outline_ir #1 [medium]",
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
+        "🇹🇷 TR | SS | @outlinereleasedkey #1 [fast]",
+        "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
-        "🇹🇷 TR | VLESS | @orange_vpns #2 [medium]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
-        "🇹🇷 TR | VLESS | @outline_ir #1 [medium]"
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
+        "🇹🇷 TR | SS | @outlinereleasedkey #1 [fast]",
+        "🇹🇷 TR | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,29 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
-      "server": "141.98.118.70",
-      "server_port": 443,
-      "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ",
-          "short_id": "44"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @orange_vpns #2 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
       "server": "89.251.8.180",
       "server_port": 43080,
       "uuid": "64430c88-1b87-48b2-b472-135a3f4c765e",
@@ -117,26 +93,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
-      "server": "141.98.118.70",
-      "server_port": 443,
-      "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇹🇷 TR | SS | @outlinereleasedkey #1 [fast]",
+      "server": "tr-1.stunnel.cc",
+      "server_port": 8444,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tunnel-fbrof",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ",
-          "short_id": "44"
-        }
+        "enabled": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
       "server": "89.251.8.180",
       "server_port": 43080,
       "uuid": "64430c88-1b87-48b2-b472-135a3f4c765e",

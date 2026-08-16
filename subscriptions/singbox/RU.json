@@ -51,9 +51,10 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | HY2 | @outlinereleasedkey #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
+        "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,9 +64,10 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | HY2 | @outlinereleasedkey #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]"
+        "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -84,26 +86,36 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
-      "server": "188.225.83.179",
+      "type": "hysteria2",
+      "tag": "🇷🇺 RU | HY2 | @outlinereleasedkey #2 [fast]",
+      "server": "138.124.68.188",
       "server_port": 443,
-      "uuid": "ff1b0b50-70dc-4bae-866e-55cff86f4d6d",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "password": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa1.spectrumproxy.shop"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "95.163.232.183",
+      "server_port": 443,
+      "uuid": "e38a8d62-0c3a-4f6b-b341-0429b7df1f5b",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ru.falsemirrov.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
+        "server_name": "5post-gate.x5.ru",
         "reality": {
           "enabled": true,
-          "public_key": "sbvKAdRy_0h33iRxgGwHAD1HC62WGwlkWwj0S5ptJEU",
-          "short_id": "9c2378562188c3cb"
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "abcd"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "5post.gate.v1"
       }
     },
     {
@@ -131,7 +143,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]",
       "server": "31.76.34.146",
       "server_port": 443,
       "uuid": "7bc2c010-dffd-4c81-8fa3-25e8f3781dca",
