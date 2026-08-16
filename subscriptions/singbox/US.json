@@ -51,10 +51,10 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
@@ -65,12 +65,12 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | SS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
+        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -112,10 +112,10 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
@@ -126,12 +126,12 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | SS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
+        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -190,22 +190,6 @@
           "enabled": true,
           "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
           "short_id": "bbc68cec8bb8d2e3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-      "server": "clfconnect.pishipishi.pro",
-      "server_port": 8880,
-      "uuid": "vpn_connects",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hamon.hamimelectronic.ir"
         }
       }
     },
@@ -287,6 +271,33 @@
         "path": "/",
         "headers": {
           "Host": "Appxdn.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
+      "server": "marzban-node-production-9471.up.railway.app",
+      "server_port": 443,
+      "uuid": "84c36cec-6ac4-449f-a9ef-dbed2e892195",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "marzban-node-production-9471.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "marzban-node-production-9471.up.railway.app"
         }
       }
     },
@@ -451,18 +462,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @red2ray #1 [fast]",
-      "server": "198.98.53.130",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "eDfN7SODQceIOmIAbtJJtK",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
       "server": "199.232.86.11",
@@ -570,6 +569,22 @@
           "enabled": true,
           "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
           "short_id": "bbc68cec8bb8d2e3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
+      "server": "clfconnect.pishipishi.pro",
+      "server_port": 8880,
+      "uuid": "vpn_connects",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hamon.hamimelectronic.ir"
         }
       }
     },

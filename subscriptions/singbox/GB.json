@@ -52,9 +52,9 @@
         "auto",
         "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -66,9 +66,9 @@
       "outbounds": [
         "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
+        "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -108,29 +108,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "31.76.39.176",
-      "server_port": 443,
-      "uuid": "7a3fa6b9-e862-4b3f-b742-a9168c4fa3b6",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk.velajio.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6rrQ09njNw0wrfGg_S48ySsl4v17Q6uTAIMnECMWbyU",
-          "short_id": "c1fda2f8f007e108"
-        }
-      }
-    },
-    {
       "type": "vmess",
       "tag": "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]",
       "server": "66.163.117.58",
@@ -150,6 +127,18 @@
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6",
       "network": "tcp",
       "tls": {
         "enabled": true

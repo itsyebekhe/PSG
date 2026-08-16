@@ -55,6 +55,8 @@
         "KingRezaPahlavi",
         "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
@@ -72,6 +74,8 @@
         "KingRezaPahlavi",
         "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
@@ -143,27 +147,79 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
-      "server": "grid.onetimeok.com",
+      "server": "api.oneokgames.com",
       "server_port": 443,
       "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
       "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "grid.onetimeok.com",
+        "server_name": "api.oneokgames.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "28oR3ji9c2CneMNkbvcDL8WfvNWHS3GfA3RdtaF-pSg",
-          "short_id": "89e97b6542785ca6"
+          "public_key": "VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU",
+          "short_id": "a30b344b5214d62f"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "gw.v1.MetricsService"
+        "service_name": "push.v2.FeedService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
+      "server": "dl.onetimeok.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.onetimeok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4o20JlNKKsAzSGEvEMw6g1A8Ij37tiSU1CFwTZI4b3o",
+          "short_id": "8ba32e7cefbf524a"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v2.PushService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #3 [fast]",
+      "server": "media.oneokgames.com",
+      "server_port": 443,
+      "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "media.oneokgames.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38",
+          "short_id": "dbdbeaf4aa6e1a5c"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v2.ObjectService"
       }
     },
     {
@@ -213,19 +269,19 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "de-193-58.neobo-tooth.ru",
-      "server_port": 2053,
-      "uuid": "b6c29ae7-4748-4049-b642-b695c0d2c776",
+      "server": "br1.levikogjgfdd.ir",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "vk.ru",
+        "server_name": "yahoo.com",
         "reality": {
           "enabled": true,
-          "public_key": "6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs",
-          "short_id": "a6bbc4aecf5d961f"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },

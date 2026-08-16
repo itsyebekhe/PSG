@@ -7,8 +7,7 @@ proxies:
   - {"name": "🇸🇨 SC | VLESS | @jiedianf #1 [fast]", "server": "45.196.201.62", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net"}
   - {"name": "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]", "server": "45.130.125.114", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "srv10.perfectbulk.info", "ws-opts": {"path": "", "headers": {"Host": "srv10.perfectbulk.info"}}}
   - {"name": "🇸🇨 SC | VLESS | @ai_duet #1 [fast]", "server": "45.130.125.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "de.lezzatzone.ir"}
-  - {"name": "🇸🇨 SC | VLESS | @netfreedom0 #1 [fast]", "server": "45.196.201.163", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04", "short-id": "c6ef72e4635d15a5"}}
-  - {"name": "🇸🇨 SC | VLESS | @netfreedom0 #2 [fast]", "server": "45.196.201.16", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04", "short-id": "c6ef72e4635d15a5"}}
+  - {"name": "🇸🇨 SC | VLESS | @netfreedom0 #1 [fast]", "server": "45.196.201.16", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04", "short-id": "c6ef72e4635d15a5"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -18,7 +17,6 @@ proxy-groups:
       - '🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]'
       - '🇸🇨 SC | VLESS | @ai_duet #1 [fast]'
       - '🇸🇨 SC | VLESS | @netfreedom0 #1 [fast]'
-      - '🇸🇨 SC | VLESS | @netfreedom0 #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -28,7 +26,6 @@ proxy-groups:
       - '🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]'
       - '🇸🇨 SC | VLESS | @ai_duet #1 [fast]'
       - '🇸🇨 SC | VLESS | @netfreedom0 #1 [fast]'
-      - '🇸🇨 SC | VLESS | @netfreedom0 #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
