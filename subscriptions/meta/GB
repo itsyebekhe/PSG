@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]", "server": "uk2.levikogjgfdd.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "gb1.murhost.network", "reality-opts": {"public-key": "-nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE", "short-id": "84f9881951050a30"}}
+  - {"name": "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]", "server": "66.163.117.58", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @orange_vpns #1 [fast]'
+      - '🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @orange_vpns #1 [fast]'
+      - '🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

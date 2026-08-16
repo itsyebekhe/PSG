@@ -53,11 +53,10 @@
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -70,11 +69,10 @@
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -139,15 +137,29 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-      "server": "193.29.139.212",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QCXDxuDlTTMD7jtgHUjIoj",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
+      "server": "31.57.250.65",
+      "server_port": 443,
+      "uuid": "id_telegram_MimiTdL",
+      "network": "grpc",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA",
+          "short_id": "5b409d9a2b5b8dbf"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -171,18 +183,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outline_ir #1 [fast]",
-      "server": "108.181.58.239",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "CJmTCCx7Ltud",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
       "server": "163.172.213.174",
@@ -200,7 +200,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
       "server": "193.29.139.230",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",

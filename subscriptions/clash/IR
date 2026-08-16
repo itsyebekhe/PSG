@@ -3,18 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇮🇷 IR | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "176.120.17.21", "port": 1015, "type": "vmess", "skip-cert-verify": true, "uuid": "5af8c5cc-7317-4542-8908-81be05ea1d1b", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
   - {"name": "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]", "server": "37.32.23.122", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d12bc882-43c7-415e-87c5-2a7fdc8371c0", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/websocket/", "headers": {"Host": "37.32.23.122"}}}
   - {"name": "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]", "server": "78.47.131.39", "port": 8443, "type": "vmess", "skip-cert-verify": true, "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇮🇷 IR | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇮🇷 IR | VMESS | @khoneproxy #1 [medium]'
       - '🇮🇷 IR | VMESS | @khoneproxy #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇮🇷 IR | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇮🇷 IR | VMESS | @khoneproxy #1 [medium]'
       - '🇮🇷 IR | VMESS | @khoneproxy #2 [fast]'
 rules:

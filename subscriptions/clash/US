@@ -4,6 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇺🇸 US | VMESS | @freev2rays #1 [fast]", "server": "xcf037.facai2024.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d9863037-0463-4615-e972-36ba9662d1e9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/d9863037", "headers": {"Host": "xcf037.facai2024.com"}}}
+  - {"name": "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]", "server": "57.129.132.223", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/vmess/", "headers": {"Host": "google.com"}}}
   - {"name": "🇺🇸 US | VMESS | @mi_pn_official #1 [fast]", "server": "auth.speedtest.net", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "nelly.homes"}}}
   - {"name": "🇺🇸 US | VMESS | @mi_pn_official #2 [fast]", "server": "172.67.71.160", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "nelly.homes"}}}
   - {"name": "🇺🇸 US | VMESS | @mi_pn_official #3 [fast]", "server": "104.21.15.212", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkws", "headers": {"Host": "glweidf.sbs"}}}
@@ -16,6 +17,7 @@ proxy-groups:
     type: select
     proxies:
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
+      - '🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]'
       - '🇺🇸 US | VMESS | @mi_pn_official #1 [fast]'
       - '🇺🇸 US | VMESS | @mi_pn_official #2 [fast]'
       - '🇺🇸 US | VMESS | @mi_pn_official #3 [fast]'
@@ -28,6 +30,7 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
+      - '🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]'
       - '🇺🇸 US | VMESS | @mi_pn_official #1 [fast]'
       - '🇺🇸 US | VMESS | @mi_pn_official #2 [fast]'
       - '🇺🇸 US | VMESS | @mi_pn_official #3 [fast]'

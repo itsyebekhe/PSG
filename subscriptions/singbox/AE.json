@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
       ],
@@ -60,36 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]",
-      "server": "78.17.112.103",
-      "server_port": 13868,
-      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.epicgames.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk",
-          "short_id": "e852dc"
-        }
-      }
     },
     {
       "type": "shadowsocks",

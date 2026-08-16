@@ -68,9 +68,8 @@
         "🇽🇽 XX | VLESS | @mester_v2ray #6 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
-        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
-        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
@@ -109,7 +108,8 @@
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
-        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
@@ -177,9 +177,8 @@
         "🇽🇽 XX | VLESS | @mester_v2ray #6 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
-        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
-        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
@@ -218,7 +217,8 @@
         "🇩🇪 DE | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇸🇬 SG | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
-        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
@@ -617,31 +617,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 2052,
-      "uuid": "DIGIV2RAY",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/tm-Digiv2-__teldIGIv2__-DIGiv",
-        "headers": {
-          "Host": "www.speedtest.net.ftp.debian.org.www.digikala.com.cloudflare.com.farsr0id.ir."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 2052,
-      "uuid": "DIGIV2RAY",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
       "server": "one-for-all.levikogjgfdd.ir",
       "server_port": 443,
@@ -651,6 +626,28 @@
       "tls": {
         "enabled": true,
         "server_name": "learn00.…</div>"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "api.noneok.com",
+      "server_port": 443,
+      "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.noneok.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w",
+          "short_id": "1ea59febb8d4fc8e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {
@@ -1265,30 +1262,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
-      "server": "ger-full.deepinsane.com",
-      "server_port": 2053,
-      "uuid": "42f3c6bc-fdc3-4d4e-b95d-f84f9e6bf27f",
+      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+      "server": "www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "DIGIV2RAY",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ger-full.deepinsane.com",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "/api/vote/number/row/n1",
+        "path": "/tm-Digiv2-__teldIGIv2__-DIGiv",
         "headers": {
-          "Host": "ger-full.deepinsane.com"
+          "Host": "www.speedtest.net.ftp.debian.org.www.digikala.com.cloudflare.com.farsr0id.ir."
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+      "server": "www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "DIGIV2RAY",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

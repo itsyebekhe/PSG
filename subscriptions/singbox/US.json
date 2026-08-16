@@ -73,7 +73,9 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
+        "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -135,7 +137,9 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
+        "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -610,12 +614,51 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
+      "server": "144.31.65.59",
+      "server_port": 443,
+      "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "node17.mxvpn.dev",
+        "reality": {
+          "enabled": true,
+          "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
+          "short_id": "bbc68cec8bb8d2e3"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
       "server": "199.232.78.159",
       "server_port": 80,
       "uuid": "2c9af5d8-8e1c-40e7-8b6b-c200fc5488e8",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
     },
     {
       "type": "vless",
