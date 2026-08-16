@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇮🇩 ID | VMESS | @nofiltering2 #1 [medium]", "server": "202.47.89.133", "port": 53548, "type": "vmess", "skip-cert-verify": true, "uuid": "3a03613b-bbac-4a22-bee6-2c9a751a2761", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/dkfjh222", "headers": {"Host": "202.47.89.133"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇮🇩 ID | VMESS | @nofiltering2 #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇮🇩 ID | VMESS | @nofiltering2 #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

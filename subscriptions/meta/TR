@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]", "server": "141.98.118.70", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.google.com", "reality-opts": {"public-key": "LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ", "short-id": "44"}}
+  - {"name": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]", "server": "141.98.118.70", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.google.com", "reality-opts": {"public-key": "LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ", "short-id": "44"}}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "141.98.118.70", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.google.com", "reality-opts": {"public-key": "LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ", "short-id": "44"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @orange_vpns #1 [medium]'
+      - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @orange_vpns #1 [medium]'
+      - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

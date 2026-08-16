@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇪 AE | VLESS | @configv2rayforfree #1 [medium]", "server": "78.17.112.103", "port": 13868, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.epicgames.com", "reality-opts": {"public-key": "8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk", "short-id": "e852dc"}}
+  - {"name": "🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]", "server": "78.17.112.103", "port": 13868, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.epicgames.com", "reality-opts": {"public-key": "8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk", "short-id": "e852dc"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇪 AE | VLESS | @configv2rayforfree #1 [medium]'
+      - '🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇪 AE | VLESS | @configv2rayforfree #1 [medium]'
+      - '🇦🇪 AE | VLESS | @configv2rayforfree #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -51,10 +51,11 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
         "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
+        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -64,10 +65,11 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
         "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]"
+        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
+        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -87,7 +89,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
       "server": "188.225.83.179",
       "server_port": 443,
       "uuid": "ff1b0b50-70dc-4bae-866e-55cff86f4d6d",
@@ -149,7 +151,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #2 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
       "server": "185.247.16.117",
       "server_port": 2200,
       "uuid": "b79c54f3-68e9-4e9d-8b57-22cbbe978730",
@@ -160,6 +162,29 @@
         "path": "/v1",
         "headers": {
           "Host": "rzd.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
+      "server": "31.76.34.146",
+      "server_port": 443,
+      "uuid": "7bc2c010-dffd-4c81-8fa3-25e8f3781dca",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn3-85.cdn-vkvideo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QC03TEA8YdxpkQyJ8duwrqaP1dWAIlCjONzicWlWDjs",
+          "short_id": "b0d8f964b7ac8ac0"
         }
       }
     },
