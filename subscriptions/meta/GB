@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]", "server": "uk2.levikogjgfdd.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "gb1.murhost.network", "reality-opts": {"public-key": "-nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE", "short-id": "84f9881951050a30"}}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "sitea.awexco.shop", "port": 2020, "type": "vless", "skip-cert-verify": true, "uuid": "00b41e07-68e6-46b0-928f-a02becd4e398", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "play.googleapis.com", "reality-opts": {"public-key": "V-4X2cijRTs7097yspcWqhSXP1AejmSMEM3epCS-EFY", "short-id": "d5f57af384c851d0"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @orange_vpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @orange_vpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

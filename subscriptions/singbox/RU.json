@@ -51,10 +51,9 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
+        "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -64,10 +63,9 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
-        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]"
+        "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -83,6 +81,32 @@
       "tls": {
         "enabled": true,
         "server_name": "usa1.spectrumproxy.shop"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "95.163.232.183",
+      "server_port": 443,
+      "uuid": "5366b9aa-b989-4b3e-96b6-f415d548424b",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "5post-gate.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
+          "short_id": "abcd"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "5post.gate.v1"
       }
     },
     {
@@ -110,43 +134,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "82.117.87.199",
-      "server_port": 4100,
-      "uuid": "2a88091e-e3f8-4478-9751-6ce0557a7f2e",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "live.ok.ru"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/v1",
-        "headers": {
-          "Host": "live.ok.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "87.228.122.100",
-      "server_port": 2200,
-      "uuid": "099c6e3f-e8d3-41d4-95f2-ef2eafb51cdc",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/v1",
-        "headers": {
-          "Host": "rzd.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]",
       "server": "31.76.34.146",
       "server_port": 443,
       "uuid": "7bc2c010-dffd-4c81-8fa3-25e8f3781dca",

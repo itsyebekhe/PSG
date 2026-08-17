@@ -3,9 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "193.233.126.82", "port": 9443, "type": "vless", "skip-cert-verify": true, "uuid": "37a098ab-8fec-4352-8ee8-294ae5bca68f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.amd.com", "reality-opts": {"public-key": "Te5lrfzw_MytTzQJB92DhWw7fk1qTK3mhzz7Bz41gVc", "short-id": "0240e83f65a25e"}}
-  - {"name": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]", "server": "nl1.panel11.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9aff0732-7ce4-4b34-ba20-e67c6df64fdd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl1.panel11.ru", "reality-opts": {"public-key": "2acMB9wUyI8FlUJQ6lI-Ig3qq4lYVSEQx18DReJyzAc", "short-id": "ebaea79f00bd5b6f"}}
-  - {"name": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]", "server": "206.71.158.124", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "dey.lnmarketplace.net"}
+  - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "nl1.panel11.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9aff0732-7ce4-4b34-ba20-e67c6df64fdd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl1.panel11.ru", "reality-opts": {"public-key": "2acMB9wUyI8FlUJQ6lI-Ig3qq4lYVSEQx18DReJyzAc", "short-id": "ebaea79f00bd5b6f"}}
   - {"name": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]", "server": "31.57.250.65", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "id_telegram_MimiTdL", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA", "short-id": "5b409d9a2b5b8dbf"}}
   - {"name": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]", "server": "85.192.41.222", "port": 25565, "type": "vless", "skip-cert-verify": true, "uuid": "086422b2-3347-45f8-b527-d9e1be25dc56", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yandex.ru", "grpc-opts": {"grpc-service-name": "UpdateService"}, "reality-opts": {"public-key": "pBd5IOD_sCDpIDqgi6EtZ6DAAMGns9n2C3qPH0i3Tno", "short-id": "0e29dc68"}}
   - {"name": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "144.31.237.76", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d2aeb078-90db-4f90-b334-623bcbea8d31", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdnjs.cloudflare.com", "reality-opts": {"public-key": "xxqv2JF09vb9H5GUrGXvXZx46-dlNtNvdTNgOe_W1A0", "short-id": "da8198896a34e6ec"}}
@@ -15,8 +13,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
-      - '🇳🇱 NL | VLESS | @orange_vpns #2 [fast]'
-      - '🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]'
       - '🇳🇱 NL | VLESS | @mimitdl #1 [fast]'
       - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
@@ -26,8 +22,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
-      - '🇳🇱 NL | VLESS | @orange_vpns #2 [fast]'
-      - '🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]'
       - '🇳🇱 NL | VLESS | @mimitdl #1 [fast]'
       - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'

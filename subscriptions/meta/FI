@@ -5,21 +5,18 @@ log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "132.243.223.144", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "fin3.o4ka-internet.com", "reality-opts": {"public-key": "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8", "short-id": "5629431325884ff0"}}
   - {"name": "🇫🇮 FI | VLESS | @configv2rayforfree #1 [fast]", "server": "78.17.112.103", "port": 13868, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.epicgames.com", "reality-opts": {"public-key": "8SX8GXMe3lXOyY_acO4HFXXYJn_rOOf4zkYFrifV1Tk", "short-id": "e852dc"}}
-  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "65.109.12.58", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "c7e9c591-2764-423a-afca-efbd010fd396", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "forfreeuse.rtqa.ru", "ws-opts": {"path": "", "headers": {"Host": "forfreeuse.rtqa.ru"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇫🇮 FI | VLESS | @configv2rayforfree #1 [fast]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇫🇮 FI | VLESS | @configv2rayforfree #1 [fast]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

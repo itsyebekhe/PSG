@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
@@ -64,6 +63,8 @@
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -108,7 +109,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
@@ -122,6 +122,8 @@
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -163,29 +165,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-      "server": "144.31.65.59",
-      "server_port": 443,
-      "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "node17.mxvpn.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
-          "short_id": "bbc68cec8bb8d2e3"
-        }
-      }
     },
     {
       "type": "vless",
@@ -414,6 +393,60 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "spider-panel-production-e564.up.railway.app",
+      "server_port": 443,
+      "uuid": "c78e9098-1281-49d8-932a-6b6691094eb1",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "spider-panel-production-e564.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/c78e9098-1281-49d8-932a-6b6691094eb1",
+        "headers": {
+          "Host": "spider-panel-production-e564.up.railway.app"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
+      "server": "spider-panel-production-c21d.up.railway.app",
+      "server_port": 443,
+      "uuid": "c2ab50ae-7520-4d34-bd34-d6d5cf1b6faa",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "spider-panel-production-c21d.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/c2ab50ae-7520-4d34-bd34-d6d5cf1b6faa",
+        "headers": {
+          "Host": "spider-panel-production-c21d.up.railway.app"
+        }
       }
     },
     {

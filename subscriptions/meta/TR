@@ -4,21 +4,18 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]", "server": "89.251.8.180", "port": 43080, "type": "vless", "skip-cert-verify": true, "uuid": "64430c88-1b87-48b2-b472-135a3f4c765e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "_XtSAi2l8vY_YH5ZnFahRL3eenmStUUFAjsCYg15p0Y", "short-id": "02f1"}}
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "custom.zelnora.ir", "port": 64584, "type": "vless", "skip-cert-verify": true, "uuid": "a19bdc9c-042f-4ee6-a1a7-3dedd2ef337b", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [fast]", "server": "89.251.8.180", "port": 43080, "type": "vless", "skip-cert-verify": true, "uuid": "64430c88-1b87-48b2-b472-135a3f4c765e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "_XtSAi2l8vY_YH5ZnFahRL3eenmStUUFAjsCYg15p0Y", "short-id": "02f1"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - '🇹🇷 TR | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - '🇹🇷 TR | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

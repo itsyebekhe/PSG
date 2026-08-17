@@ -50,8 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
@@ -59,7 +57,9 @@
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @hope_net #1 [fast]",
         "🇮🇷 IR | VMESS | @mtproxy22_v2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
@@ -74,8 +74,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
@@ -83,7 +81,9 @@
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @hope_net #1 [fast]",
         "🇮🇷 IR | VMESS | @mtproxy22_v2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
@@ -95,31 +95,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-      "server": "185.143.233.235",
-      "server_port": 80,
-      "uuid": "22109ab6-bfdd-4062-ae1c-054c74353e39",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-      "server": "185.143.234.235",
-      "server_port": 80,
-      "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vixon.portab.org"
-        }
-      }
     },
     {
       "type": "vless",
@@ -238,12 +213,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
-      "server": "netherland.zelnora.ir",
-      "server_port": 64584,
-      "uuid": "a19bdc9c-042f-4ee6-a1a7-3dedd2ef337b",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
+      "server": "185.143.233.235",
+      "server_port": 80,
+      "uuid": "22109ab6-bfdd-4062-ae1c-054c74353e39",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
+      "server": "185.143.234.235",
+      "server_port": 80,
+      "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vixon.portab.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "a.samrayan.ir",
+      "server_port": 443,
+      "uuid": "23d6295f-0337-438f-be52-388bbe321ae4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "a.samrayan.ir"
+      }
     },
     {
       "type": "shadowsocks",
