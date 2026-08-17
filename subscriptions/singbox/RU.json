@@ -51,7 +51,9 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
         "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
         "direct"
       ],
@@ -62,7 +64,9 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
+        "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
         "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -83,7 +87,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
       "server": "2.26.8.55",
       "server_port": 443,
       "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45",
@@ -101,6 +105,42 @@
           "enabled": true,
           "public_key": "Loc9rXCMgSkksa4TGr203UCppZh9epDs8tdTVCjiCRw",
           "short_id": "c39843c687af3383"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #1 [medium]",
+      "server": "82.117.87.199",
+      "server_port": 4100,
+      "uuid": "2a88091e-e3f8-4478-9751-6ce0557a7f2e",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "live.ok.ru"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/v1",
+        "headers": {
+          "Host": "live.ok.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "87.228.122.100",
+      "server_port": 2200,
+      "uuid": "099c6e3f-e8d3-41d4-95f2-ef2eafb51cdc",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/v1",
+        "headers": {
+          "Host": "rzd.ru"
         }
       }
     },
