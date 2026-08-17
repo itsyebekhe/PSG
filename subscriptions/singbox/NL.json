@@ -51,14 +51,14 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+        "🇳🇱 NL | VLESS | @prrofile_purple #1 [medium]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -68,14 +68,14 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+        "🇳🇱 NL | VLESS | @prrofile_purple #1 [medium]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+        "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -108,7 +108,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @prrofile_purple #1 [medium]",
       "server": "206.71.158.124",
       "server_port": 443,
       "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
@@ -153,15 +153,25 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-      "server": "193.29.139.212",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QCXDxuDlTTMD7jtgHUjIoj",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "85.192.41.222",
+      "server_port": 25565,
+      "uuid": "086422b2-3347-45f8-b527-d9e1be25dc56",
+      "network": "grpc",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "pBd5IOD_sCDpIDqgi6EtZ6DAAMGns9n2C3qPH0i3Tno",
+          "short_id": "0e29dc68"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "UpdateService"
       }
     },
     {
@@ -188,24 +198,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-      "server": "163.172.213.174",
-      "server_port": 80,
-      "uuid": "e73df646-1f62-41bf-8c50-653497d603d0",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "SC-TheNetherlands2.09vpn.comfreenettirThe"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
       "server": "193.29.139.151",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -216,8 +210,17 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "94.237.124.107",
+      "server_port": 3389,
+      "uuid": "d024662a-397e-4fac-9643-8b7939e6bf33",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
       "server": "193.29.139.230",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -229,7 +232,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

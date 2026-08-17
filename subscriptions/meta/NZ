@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇳🇿 NZ | VLESS | @free1_vpn #1 [fast]", "server": "202.37.33.80", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5aafc2be-9348-4dec-b896-f4a91253bbca", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "support.zoom.us.yxls.eu.cc", "ws-opts": {"path": "", "headers": {"Host": "support.zoom.us.yxls.eu.cc"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇳🇿 NZ | VLESS | @free1_vpn #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇳🇿 NZ | VLESS | @free1_vpn #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
