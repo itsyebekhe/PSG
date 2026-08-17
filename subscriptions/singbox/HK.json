@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFI=
+//profile-title: base64:UFNHIHwgSEs=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,9 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
-        "🇹🇷 TR | SS | @outlinereleasedkey #1 [fast]",
-        "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
-        "🇹🇷 TR | SS | @outlinereleasedkey #1 [fast]",
-        "🇹🇷 TR | VLESS | @outline_ir #1 [fast]"
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -71,58 +67,26 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
-      "server": "89.251.8.180",
-      "server_port": 43080,
-      "uuid": "64430c88-1b87-48b2-b472-135a3f4c765e",
-      "network": "tcp",
-      "packet_encoding": "xudp",
+      "type": "vmess",
+      "tag": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
+      "server": "n1761296892.4u9ma.icu",
+      "server_port": 443,
+      "uuid": "d6db128f-42b9-40b1-b979-5e0095fa593c",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_XtSAi2l8vY_YH5ZnFahRL3eenmStUUFAjsCYg15p0Y",
-          "short_id": "02f1"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @outlinereleasedkey #1 [fast]",
-      "server": "tr-1.stunnel.cc",
-      "server_port": 8444,
-      "method": "chacha20-ietf-poly1305",
-      "password": "tunnel-fbrof",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
-      "server": "89.251.8.180",
-      "server_port": 43080,
-      "uuid": "64430c88-1b87-48b2-b472-135a3f4c765e",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_XtSAi2l8vY_YH5ZnFahRL3eenmStUUFAjsCYg15p0Y",
-          "short_id": "02f1"
+        "server_name": "n1761296892.4u9ma.icu"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "n1761296892.4u9ma.icu"
         }
       }
     },

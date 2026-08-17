@@ -3,28 +3,28 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "nl1.panel11.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9aff0732-7ce4-4b34-ba20-e67c6df64fdd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl1.panel11.ru", "reality-opts": {"public-key": "2acMB9wUyI8FlUJQ6lI-Ig3qq4lYVSEQx18DReJyzAc", "short-id": "ebaea79f00bd5b6f"}}
-  - {"name": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]", "server": "31.57.250.65", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "id_telegram_MimiTdL", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA", "short-id": "5b409d9a2b5b8dbf"}}
+  - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "147.45.50.24", "port": 13868, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "booking.com", "reality-opts": {"public-key": "sgpya-5ohMKCjzyrDe4RWz7b8O9XegDzQ88oHCV45Gk", "short-id": "e852dc"}}
   - {"name": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]", "server": "85.192.41.222", "port": 25565, "type": "vless", "skip-cert-verify": true, "uuid": "086422b2-3347-45f8-b527-d9e1be25dc56", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yandex.ru", "grpc-opts": {"grpc-service-name": "UpdateService"}, "reality-opts": {"public-key": "pBd5IOD_sCDpIDqgi6EtZ6DAAMGns9n2C3qPH0i3Tno", "short-id": "0e29dc68"}}
   - {"name": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "144.31.237.76", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d2aeb078-90db-4f90-b334-623bcbea8d31", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdnjs.cloudflare.com", "reality-opts": {"public-key": "xxqv2JF09vb9H5GUrGXvXZx46-dlNtNvdTNgOe_W1A0", "short-id": "da8198896a34e6ec"}}
+  - {"name": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]", "server": "85.155.226.87", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "getsavesafe.net", "reality-opts": {"public-key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs", "short-id": "82f5d3a1e9c0b661"}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
-      - '🇳🇱 NL | VLESS | @mimitdl #1 [fast]'
       - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
-      - '🇳🇱 NL | VLESS | @mimitdl #1 [fast]'
       - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
