@@ -50,9 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇭🇰 HK | VLESS | @NamiraConfigs #1 [slow]",
-        "🇭🇰 HK | VLESS | @NamiraConfigs #2 [slow]",
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇭🇰 HK | VLESS | @NamiraConfigs #1 [slow]",
-        "🇭🇰 HK | VLESS | @NamiraConfigs #2 [slow]"
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,7 +68,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]",
       "server": "n1761296892.4u9ma.icu",
       "server_port": 443,
       "uuid": "d6db128f-42b9-40b1-b979-5e0095fa593c",
@@ -92,27 +88,6 @@
         "headers": {
           "Host": "n1761296892.4u9ma.icu"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 HK | VLESS | @NamiraConfigs #1 [slow]",
-      "server": "182.16.61.2",
-      "server_port": 45647,
-      "uuid": "caec0d8d-ab2f-4247-b97d-7fb1a34ab195",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 HK | VLESS | @NamiraConfigs #2 [slow]",
-      "server": "182.16.61.4",
-      "server_port": 45647,
-      "uuid": "431fe973-a43a-4fac-bf83-2a772e0d0625",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true
       }
     },
     {

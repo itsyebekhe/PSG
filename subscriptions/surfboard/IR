@@ -3,11 +3,10 @@ loglevel = notify
 skip-proxy = 127.0.0.1, localhost, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 192.168.*, 10.*, 172.16.*, 172.17.*, 172.18.*, 172.19.*, 172.20.*, 172.21.*, 172.22.*, 172.23.*, 172.24.*, 172.25.*, 172.26.*, 172.27.*, 172.28.*, 172.29.*, 172.30.*, 172.31.*, localhost, *.local, e.crashlynatics.com
 dns-server = 8.8.8.8, 8.8.4.4
 [Proxy]
-🇮🇷 IR | VMESS | @mtproxy22_v2ray #1 [fast] = vmess, 176.120.17.21, 1015, username = 5af8c5cc-7317-4542-8908-81be05ea1d1b, ws = false, tls = true
 🇮🇷 IR | VMESS | @khoneproxy #1 [medium] = vmess, 37.32.23.122, 443, username = d12bc882-43c7-415e-87c5-2a7fdc8371c0, ws = true, tls = false, ws-path = /websocket/, ws-headers = Host:"37.32.23.122"
 🇮🇷 IR | VMESS | @khoneproxy #2 [fast] = vmess, 78.47.131.39, 8443, username = 4d598e48-234f-4c60-fdd3-fa90e084770d, ws = false, tls = false
 [Proxy Group]
-PROXY = select, 🇮🇷 IR | VMESS | @mtproxy22_v2ray #1 [fast], 🇮🇷 IR | VMESS | @khoneproxy #1 [medium], 🇮🇷 IR | VMESS | @khoneproxy #2 [fast]
+PROXY = select, 🇮🇷 IR | VMESS | @khoneproxy #1 [medium], 🇮🇷 IR | VMESS | @khoneproxy #2 [fast]
 [Rule]
 GEOSITE,category-ads-all,REJECT
 GEOIP,LAN,DIRECT

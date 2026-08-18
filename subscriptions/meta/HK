@@ -3,23 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]", "server": "n1761296892.4u9ma.icu", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d6db128f-42b9-40b1-b979-5e0095fa593c", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "n1761296892.4u9ma.icu"}}}
-  - {"name": "🇭🇰 HK | VLESS | @NamiraConfigs #1 [slow]", "server": "182.16.61.2", "port": 45647, "type": "vless", "skip-cert-verify": true, "uuid": "caec0d8d-ab2f-4247-b97d-7fb1a34ab195", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇭🇰 HK | VLESS | @NamiraConfigs #2 [slow]", "server": "182.16.61.4", "port": 45647, "type": "vless", "skip-cert-verify": true, "uuid": "431fe973-a43a-4fac-bf83-2a772e0d0625", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]", "server": "n1761296892.4u9ma.icu", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d6db128f-42b9-40b1-b979-5e0095fa593c", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "n1761296892.4u9ma.icu"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇭🇰 HK | VLESS | @NamiraConfigs #1 [slow]'
-      - '🇭🇰 HK | VLESS | @NamiraConfigs #2 [slow]'
+      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇭🇰 HK | VLESS | @NamiraConfigs #1 [slow]'
-      - '🇭🇰 HK | VLESS | @NamiraConfigs #2 [slow]'
+      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

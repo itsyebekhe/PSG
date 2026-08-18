@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @red2ray #1 [medium]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [slow]",
+        "🇵🇱 PL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @red2ray #1 [medium]"
+        "🇵🇱 PL | VLESS | @red2ray #1 [slow]",
+        "🇵🇱 PL | VLESS | @azadi_az_inja_migzare #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [medium]",
+      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [slow]",
       "server": "pl154.slovovpn.com",
       "server_port": 26417,
       "uuid": "187b1ee2-9b91-4dae-a59a-7af87621167f",
@@ -87,6 +89,15 @@
           "short_id": "73b1"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @azadi_az_inja_migzare #1 [fast]",
+      "server": "168.222.49.215",
+      "server_port": 16089,
+      "uuid": "9a85fe34-213a-43ef-acbd-bb84552302f3",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
