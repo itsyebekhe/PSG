@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]", "server": "n1761296892.4u9ma.icu", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d6db128f-42b9-40b1-b979-5e0095fa593c", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "n1761296892.4u9ma.icu"}}}
+  - {"name": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]", "server": "n1761296892.4u9ma.icu", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d6db128f-42b9-40b1-b979-5e0095fa593c", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "n1761296892.4u9ma.icu"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]'
+      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]'
+      - '🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

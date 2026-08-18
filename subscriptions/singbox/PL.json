@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @red2ray #1 [slow]",
         "🇵🇱 PL | VLESS | @azadi_az_inja_migzare #1 [fast]",
         "direct"
       ],
@@ -60,35 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @red2ray #1 [slow]",
         "🇵🇱 PL | VLESS | @azadi_az_inja_migzare #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [slow]",
-      "server": "pl154.slovovpn.com",
-      "server_port": 26417,
-      "uuid": "187b1ee2-9b91-4dae-a59a-7af87621167f",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UIW5K60pwiph20ht5dLF22CmD68KphGRiYTBK0wBXXw",
-          "short_id": "73b1"
-        }
-      }
     },
     {
       "type": "vless",
