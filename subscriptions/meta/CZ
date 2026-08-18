@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
+  - {"name": "🇨🇿 CZ | VLESS | @red2ray #1 [fast]", "server": "ge-isdf.slovovpn.com", "port": 42321, "type": "vless", "skip-cert-verify": true, "uuid": "2475bea4-6e40-4351-aa5c-dff9e22fbeee", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.github.com", "reality-opts": {"public-key": "C8lo017EXpVnG_TxCYibs_NBzbgoW-61IQH4qZhHGmw", "short-id": "4304dc07d6a4b236"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
+      - '🇨🇿 CZ | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
+      - '🇨🇿 CZ | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

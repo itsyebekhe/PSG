@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
+        "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]"
+        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
+        "🇨🇿 CZ | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -87,6 +89,28 @@
         "path": "/",
         "headers": {
           "Host": "shs111.kejixiaoqi666.store"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
+      "server": "ge-isdf.slovovpn.com",
+      "server_port": 42321,
+      "uuid": "2475bea4-6e40-4351-aa5c-dff9e22fbeee",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C8lo017EXpVnG_TxCYibs_NBzbgoW-61IQH4qZhHGmw",
+          "short_id": "4304dc07d6a4b236"
         }
       }
     },

@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [medium]", "server": "pl154.slovovpn.com", "port": 26417, "type": "vless", "skip-cert-verify": true, "uuid": "187b1ee2-9b91-4dae-a59a-7af87621167f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "github.com", "reality-opts": {"public-key": "UIW5K60pwiph20ht5dLF22CmD68KphGRiYTBK0wBXXw", "short-id": "73b1"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
