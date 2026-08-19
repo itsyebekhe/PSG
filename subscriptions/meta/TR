@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "member-23q.mobileahmad.ir", "port": 9093, "type": "vless", "skip-cert-verify": true, "uuid": "10c651c8-aeca-4817-8d85-a01f104ff88f", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "93.114.98.129", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "855f8f52-d22a-4278-84ad-1dc968677626", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

@@ -69,11 +69,11 @@
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | SS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | SS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -131,11 +131,11 @@
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | SS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | SS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -543,19 +543,66 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "140.99.223.19",
+      "server": "x4g-production-0db6.up.railway.app",
       "server_port": 443,
-      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "7f283745-b268-8689-81ee-f073c5fe0622",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "savesafe.run",
-        "reality": {
+        "server_name": "x4g-production-0db6.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
           "enabled": true,
-          "public_key": "wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8",
-          "short_id": "e4f6a3446ac34a24"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/7f283745-b268-8689-81ee-f073c5fe0622",
+        "headers": {
+          "Host": "x4g-production-0db6.up.railway.app"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @red2ray #1 [fast]",
+      "server": "154.12.242.150",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "Hi9wk14VntzGq7kq",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
+      "server": "x4g-production-a62c.up.railway.app",
+      "server_port": 443,
+      "uuid": "83bb20ed-746f-63dc-6546-41df4cb33588",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x4g-production-a62c.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/83bb20ed-746f-63dc-6546-41df4cb33588",
+        "headers": {
+          "Host": "x4g-production-a62c.up.railway.app"
         }
       }
     },
@@ -629,30 +676,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "jkrv2ry"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @outline_ir #1 [fast]",
-      "server": "198.98.53.130",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "eDfN7SODQceIOmIAbtJJtK",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "180.178.60.252",
-      "server_port": 10000,
-      "uuid": "431fe973-a43a-4fac-bf83-2a772e0d0625",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true
       }
     },
     {

@@ -5,21 +5,18 @@ log-level: info
 proxies:
   - {"name": "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]", "server": "188.127.247.129", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "33aa2b47-484b-49f6-8f23-fb34602d221f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4", "short-id": "0c"}}
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
-  - {"name": "🇨🇿 CZ | VLESS | @red2ray #1 [fast]", "server": "85.137.25.49", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "04fbe278-69c4-4f31-991f-7bc1700758da", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ops.gx.nvidia.com", "reality-opts": {"public-key": "TcDTltrrg2CtLhmNcIXRQRp4NKPfb66Niv_I4O2yNQo", "short-id": "fd"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
-      - '🇨🇿 CZ | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
-      - '🇨🇿 CZ | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUEw=
+//profile-title: base64:UFNHIHwgSEs=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇵🇱 PL | SS | @outline_ir #1 [fast]",
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-        "🇵🇱 PL | SS | @outline_ir #1 [fast]"
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,24 +67,27 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @azadi_az_inja_migzare #1 [fast]",
-      "server": "168.222.49.215",
-      "server_port": 16089,
-      "uuid": "9a85fe34-213a-43ef-acbd-bb84552302f3",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @outline_ir #1 [fast]",
-      "server": "92.118.205.211",
-      "server_port": 5600,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC",
-      "network": "tcp",
+      "type": "vmess",
+      "tag": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]",
+      "server": "nycqg19zkwacpm1b.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "NYcQg19zkwaCPM1B.v.3dns.vip"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "NYcQg19zkwaCPM1B.v.3dns.vip"
+        }
       }
     },
     {

@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
@@ -63,7 +63,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
@@ -76,25 +76,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "129.121.95.159",
+      "tag": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
+      "server": "au.trxlnsnet.ir",
       "server_port": 443,
-      "uuid": "f6190ff2-864c-46cf-ac16-93908c069b75",
-      "network": "ws",
+      "uuid": "afd63042-1c62-472f-9b56-5904d71e44d1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "129.121.95.159",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/connect",
-        "headers": {
-          "Host": "129.121.95.159"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c",
+          "short_id": "aaea1528e22abe1a"
         }
       }
     },

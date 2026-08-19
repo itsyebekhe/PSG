@@ -71,9 +71,11 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
@@ -126,9 +128,11 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
@@ -499,6 +503,33 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "x4g-production-0db6.up.railway.app",
+      "server_port": 443,
+      "uuid": "7f283745-b268-8689-81ee-f073c5fe0622",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x4g-production-0db6.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/7f283745-b268-8689-81ee-f073c5fe0622",
+        "headers": {
+          "Host": "x4g-production-0db6.up.railway.app"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
       "server": "artemis.sbs",
       "server_port": 80,
@@ -558,6 +589,29 @@
         "path": "/60156344",
         "headers": {
           "Host": "wasmer-earth.jzy88.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "de.trxlnsnet.ir",
+      "server_port": 443,
+      "uuid": "afd63042-1c62-472f-9b56-5904d71e44d1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c",
+          "short_id": "aaea1528e22abe1a"
         }
       }
     },

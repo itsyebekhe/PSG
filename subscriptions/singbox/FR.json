@@ -50,8 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -63,8 +66,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -73,6 +79,22 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+      "server": "188.130.207.202",
+      "server_port": 443,
+      "uuid": "_id_telegram_MimiTdi",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=1024",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
     },
     {
       "type": "vless",
@@ -114,6 +136,38 @@
         "path": "/",
         "headers": {
           "Host": "sub.mot.ip-ddns.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "news-blf.mobileahmad.ir",
+      "server_port": 9090,
+      "uuid": "10c651c8-aeca-4817-8d85-a01f104ff88f",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+      "server": "node5.get-tres.ru",
+      "server_port": 443,
+      "uuid": "d67af820-f54c-48ab-862c-19086357f276",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "telegraf.lv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
+          "short_id": "e5f67890"
         }
       }
     },

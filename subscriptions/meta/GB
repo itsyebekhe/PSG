@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "164.37.104.234", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "gb1.murhost.network", "reality-opts": {"public-key": "-nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE", "short-id": "84f9881951050a30"}}
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "129.121.95.159", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f6190ff2-864c-46cf-ac16-93908c069b75", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "129.121.95.159", "ws-opts": {"path": "", "headers": {"Host": "129.121.95.159"}}}
+  - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "au.trxlnsnet.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "afd63042-1c62-472f-9b56-5904d71e44d1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c", "short-id": "aaea1528e22abe1a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
