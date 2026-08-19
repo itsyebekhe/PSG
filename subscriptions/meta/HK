@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]", "server": "43.132.192.16", "port": 9527, "type": "vmess", "skip-cert-verify": true, "uuid": "ae862e1d-3b8c-443a-027b-37c6c69ef43c", "alterId": 0, "cipher": "chacha20-poly1305", "network": "tcp", "tls": false}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

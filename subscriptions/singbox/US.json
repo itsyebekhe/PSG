@@ -63,16 +63,17 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VMESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
-        "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -124,16 +125,17 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VMESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
-        "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -458,6 +460,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "15.204.97.216",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
       "server": "151.101.64.155",
       "server_port": 80,
@@ -481,17 +506,23 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @red2ray #1 [fast]",
-      "server": "165.140.216.141",
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "140.99.223.19",
       "server_port": 443,
-      "uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
+      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
-      "packet_encoding": ""
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "savesafe.run",
+        "reality": {
+          "enabled": true,
+          "public_key": "wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8",
+          "short_id": "e4f6a3446ac34a24"
+        }
+      }
     },
     {
       "type": "vless",
@@ -510,26 +541,6 @@
         "path": "/",
         "headers": {
           "Host": "Fastapi.Org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
-      "server": "www.true.th",
-      "server_port": 80,
-      "uuid": "ff485c50-b364-4b4f-90be-ea576b949dd3",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "d3gxy6d0a9fs18.cloudfront.net"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fnetvpn2026",
-        "headers": {
-          "Host": "d3gxy6d0a9fs18.cloudfront.net"
         }
       }
     },
@@ -621,6 +632,26 @@
       "uuid": "02d87d00-c769-48d8-91cb-bd05e2f62790",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "react.dev",
+      "server_port": 443,
+      "uuid": "c0899a53-cc3b-4066-a3b4-d6d07b4853ee",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "react.dev",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "vless",

@@ -3,23 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]", "server": "132.243.223.88", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fbb74aa8-b89a-4f20-9504-6b25aadf6681", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "fin2.freeinternat.com", "reality-opts": {"public-key": "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk", "short-id": "ff776ff77be48b88"}}
-  - {"name": "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]", "server": "132.243.223.144", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "fin3.o4ka-internet.com", "reality-opts": {"public-key": "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8", "short-id": "5629431325884ff0"}}
-  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "83.143.112.146", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nordic.cendora.ru", "reality-opts": {"public-key": "YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU", "short-id": "2186a755ed67b034"}}
+  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "132.243.223.88", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fbb74aa8-b89a-4f20-9504-6b25aadf6681", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "fin2.freeinternat.com", "reality-opts": {"public-key": "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk", "short-id": "ff776ff77be48b88"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @orange_vpns #1 [medium]'
-      - '🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]'
-      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @orange_vpns #1 [medium]'
-      - '🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]'
-      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
