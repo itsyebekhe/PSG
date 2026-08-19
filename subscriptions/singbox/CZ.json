@@ -50,7 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
+        "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,12 +61,37 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]"
+        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
+        "🇨🇿 CZ | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "188.127.247.129",
+      "server_port": 443,
+      "uuid": "33aa2b47-484b-49f6-8f23-fb34602d221f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4",
+          "short_id": "0c"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -87,6 +114,29 @@
         "path": "/",
         "headers": {
           "Host": "shs111.kejixiaoqi666.store"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
+      "server": "85.137.25.49",
+      "server_port": 443,
+      "uuid": "04fbe278-69c4-4f31-991f-7bc1700758da",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ops.gx.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TcDTltrrg2CtLhmNcIXRQRp4NKPfb66Niv_I4O2yNQo",
+          "short_id": "fd"
         }
       }
     },

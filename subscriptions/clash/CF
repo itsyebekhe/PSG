@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]", "server": "rush-72frf.meeopp.site", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/video/o2nwt7/r0r2dmbb.m3u8", "headers": {"Host": "rush-72frf.meeopp.site"}}}
   - {"name": "🇽🇽 XX | VMESS | @hope_net #1 [fast]", "server": "104.19.45.243", "port": 2095, "type": "vmess", "skip-cert-verify": true, "uuid": "7a737f41-b792-4260-94ff-3d864da67b80", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "onea.flha.ru"}}}
   - {"name": "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]", "server": "mute-math-d64e.0e503992ad7026.WOrKERs.deV", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/aveiror.com:443/linkvws", "headers": {"Host": "mute-math-d64e.0e503992ad7026.woRKERS.DeV"}}}
   - {"name": "🇽🇽 XX | VMESS | @proxy48 #1 [fast]", "server": "172.66.213.38", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "dfbbc8de-8a4f-407d-8069-6de38d83c4e1", "alterId": 0, "cipher": "chacha20-poly1305", "network": "grpc", "tls": true, "grpc-opts": {"grpc-service-name": "WgCmp8p80KDzo64uHE"}}
@@ -12,7 +11,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
       - '🇽🇽 XX | VMESS | @iranvpnet #1 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
@@ -21,7 +19,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
       - '🇽🇽 XX | VMESS | @iranvpnet #1 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'

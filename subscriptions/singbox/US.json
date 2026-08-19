@@ -50,12 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #4 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
@@ -64,7 +64,7 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [medium]",
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #3 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
@@ -73,10 +73,7 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-        "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -115,12 +112,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #4 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
@@ -129,7 +126,7 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [medium]",
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #3 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
@@ -138,10 +135,7 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-        "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -177,6 +171,22 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
+      "server": "clfconnect.pishipishi.pro",
+      "server_port": 8880,
+      "uuid": "vpn_connects",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hamon.hamimelectronic.ir"
+        }
+      }
     },
     {
       "type": "vless",
@@ -289,30 +299,6 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "199.232.222.178",
-      "server_port": 443,
-      "uuid": "cbcf2255-6d66-4039-b7d6-c10d6ffc99e7",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed",
-        "headers": {
-          "Host": "pan1.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
       "server": "199.232.78.159",
       "server_port": 443,
       "uuid": "79a5be11-ec1f-4e18-b7fc-aef854234c43",
@@ -489,7 +475,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
+      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [medium]",
       "server": "66.78.40.202",
       "server_port": 443,
       "uuid": "302c2e89-6f2d-4500-90ce-26d075c7e84f",
@@ -659,62 +645,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-      "server": "clfconnect.pishipishi.pro",
-      "server_port": 8880,
-      "uuid": "vpn_connects",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hamon.hamimelectronic.ir"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-      "server": "151.101.25.242",
-      "server_port": 80,
-      "uuid": "02d87d00-c769-48d8-91cb-bd05e2f62790",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "react.dev",
-      "server_port": 443,
-      "uuid": "c0899a53-cc3b-4066-a3b4-d6d07b4853ee",
+      "server": "180.178.60.252",
+      "server_port": 10000,
+      "uuid": "431fe973-a43a-4fac-bf83-2a772e0d0625",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "react.dev",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "x4g-production-ed65.up.railway.app",
-      "server_port": 443,
-      "uuid": "13998a36-160f-f413-d3e9-94686ae2cbcf",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "alpn": [
-          "http%2…"
-        ]
+        "enabled": true
       }
     },
     {

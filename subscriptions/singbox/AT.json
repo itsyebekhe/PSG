@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSEs=
+//profile-title: base64:UFNHIHwgQVQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
+        "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]"
+        "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,17 +67,27 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
-      "server": "43.132.192.16",
-      "server_port": 9527,
-      "uuid": "ae862e1d-3b8c-443a-027b-37c6c69ef43c",
-      "security": "chacha20-poly1305",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
+      "type": "vless",
+      "tag": "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "as.tunnelx.space",
+      "server_port": 443,
+      "uuid": "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
-      "packet_encoding": ""
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "as.tunnelx.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA",
+          "short_id": "4e9b0c2d1a3f5768"
+        }
+      }
     },
     {
       "type": "direct",
