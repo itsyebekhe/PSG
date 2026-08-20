@@ -50,16 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @mpproxy #1 [medium]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [slow]",
-        "🇫🇷 FR | VLESS | @mimitdl #1 [medium]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
+        "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,16 +65,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @mpproxy #1 [medium]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [slow]",
-        "🇫🇷 FR | VLESS | @mimitdl #1 [medium]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-        "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
+        "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -86,29 +80,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
-      "server": "31.220.86.213",
+      "tag": "🇫🇷 FR | VLESS | @prrofile_purple #1 [fast]",
+      "server": "pizzashop.dearhossein-taktaz.ir",
       "server_port": 443,
-      "uuid": "74ed8b25-5ff1-40bf-bcd7-3db03be19f53",
-      "network": "xhttp",
+      "uuid": "77c9a41e-70bd-47c2-b5e1-bff49df325d9",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "status.play.google.com",
+        "server_name": "pizzashop.dearhossein-taktaz.ir",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VHidBoU58xA5kEh8pmXf0gQYzvz-KVH9-XAuM4TrMUs",
-          "short_id": "49bcf0de6392f0"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "pizzashop.dearhossein-taktaz.ir"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @mpproxy #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
       "server": "84.247.129.205",
       "server_port": 4433,
       "uuid": "00000000-0000-4000-8000-000000000000",
@@ -129,16 +125,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-      "server": "account-cc9.mobileahmad.ir",
-      "server_port": 2091,
-      "uuid": "10c651c8-aeca-4817-8d85-a01f104ff88f",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [slow]",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
       "server": "node5.get-tres.ru",
       "server_port": 443,
       "uuid": "d67af820-f54c-48ab-862c-19086357f276",
@@ -161,7 +148,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @mimitdl #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
       "server": "188.130.207.202",
       "server_port": 443,
       "uuid": "_id_telegram_MimiTdi",
@@ -177,43 +164,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "usejh2.neobo-tooth.ru",
-      "server_port": 2096,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "usejh2.neobo-tooth.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "finite-node.rtxconfigz.com",
-      "server_port": 443,
-      "uuid": "25f3beef-a4b6-40bc-aa74-17a0f89f683c",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "finite-node.rtxconfigz.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "telegram.us"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
       "server": "199.232.169.135",
       "server_port": 80,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -229,7 +180,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -253,7 +204,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

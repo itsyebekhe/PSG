@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgWkE=
+//profile-title: base64:UFNHIHwgRUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 ZA | SS | @NamiraConfigs #1 [medium]",
+        "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 ZA | SS | @NamiraConfigs #1 [medium]"
+        "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,16 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 ZA | SS | @NamiraConfigs #1 [medium]",
-      "server": "20.164.205.35",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "0JtCfjPIHnLCzDia",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "95.85.224.3",
+      "server_port": 8443,
+      "uuid": "7e8f7489-e65f-4be6-93ed-867a74ec6759",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {

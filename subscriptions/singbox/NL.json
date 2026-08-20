@@ -50,14 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -66,42 +64,17 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "147.45.50.24",
-      "server_port": 13868,
-      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "booking.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sgpya-5ohMKCjzyrDe4RWz7b8O9XegDzQ88oHCV45Gk",
-          "short_id": "e852dc"
-        }
-      }
     },
     {
       "type": "shadowsocks",
@@ -117,7 +90,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
       "server": "193.29.139.144",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -128,43 +101,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @red2ray #1 [fast]",
-      "server": "108.181.58.239",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "CJmTCCx7Ltud",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "195.184.247.224",
-      "server_port": 443,
-      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "savesafe.co",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI",
-          "short_id": "f63805c3ecc7a483"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
       "server": "85.155.226.140",
       "server_port": 443,
       "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
@@ -183,7 +121,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+      "server": "193.29.139.168",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QCXDxuDlTTMD7jtgHUjIoj",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
       "server": "193.29.139.230",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -195,7 +145,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",
