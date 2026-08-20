@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTlo=
+//profile-title: base64:UFNHIHwgWkE=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇿 NZ | VLESS | @free1_vpn #1 [fast]",
+        "🇿🇦 ZA | SS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇿 NZ | VLESS | @free1_vpn #1 [fast]"
+        "🇿🇦 ZA | SS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,23 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇳🇿 NZ | VLESS | @free1_vpn #1 [fast]",
-      "server": "202.37.33.80",
+      "type": "shadowsocks",
+      "tag": "🇿🇦 ZA | SS | @NamiraConfigs #1 [medium]",
+      "server": "20.164.205.35",
       "server_port": 443,
-      "uuid": "5aafc2be-9348-4dec-b896-f4a91253bbca",
-      "network": "ws",
-      "packet_encoding": "xudp",
+      "method": "chacha20-ietf-poly1305",
+      "password": "0JtCfjPIHnLCzDia",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "support.zoom.us.yxls.eu.cc"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/id-tksi?ed=2048_/@sil3nt_network",
-        "headers": {
-          "Host": "support.zoom.us.yxls.eu.cc"
-        }
+        "enabled": true
       }
     },
     {

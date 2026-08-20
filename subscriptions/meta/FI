@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "132.243.223.88", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fbb74aa8-b89a-4f20-9504-6b25aadf6681", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "fin2.freeinternat.com", "reality-opts": {"public-key": "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk", "short-id": "ff776ff77be48b88"}}
+  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]", "server": "132.243.223.88", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fbb74aa8-b89a-4f20-9504-6b25aadf6681", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "fin2.freeinternat.com", "reality-opts": {"public-key": "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk", "short-id": "ff776ff77be48b88"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

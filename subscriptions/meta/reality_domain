@@ -12,7 +12,7 @@ proxies:
   - {"name": "🇺🇸 US | VLESS | @outline_ir #1 [fast]", "server": "us.trxlnsnet.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "afd63042-1c62-472f-9b56-5904d71e44d1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c", "short-id": "aaea1528e22abe1a"}}
   - {"name": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]", "server": "de.trxlnsnet.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "afd63042-1c62-472f-9b56-5904d71e44d1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c", "short-id": "aaea1528e22abe1a"}}
   - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "au.trxlnsnet.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "afd63042-1c62-472f-9b56-5904d71e44d1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c", "short-id": "aaea1528e22abe1a"}}
-  - {"name": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]", "server": "node5.get-tres.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d67af820-f54c-48ab-862c-19086357f276", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "telegraf.lv", "reality-opts": {"public-key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI", "short-id": "e5f67890"}}
+  - {"name": "🇫🇷 FR | VLESS | @outline_ir #1 [slow]", "server": "node5.get-tres.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d67af820-f54c-48ab-862c-19086357f276", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "telegraf.lv", "reality-opts": {"public-key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI", "short-id": "e5f67890"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -26,7 +26,7 @@ proxy-groups:
       - '🇺🇸 US | VLESS | @outline_ir #1 [fast]'
       - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
-      - '🇫🇷 FR | VLESS | @outline_ir #1 [fast]'
+      - '🇫🇷 FR | VLESS | @outline_ir #1 [slow]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -40,7 +40,7 @@ proxy-groups:
       - '🇺🇸 US | VLESS | @outline_ir #1 [fast]'
       - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
-      - '🇫🇷 FR | VLESS | @outline_ir #1 [fast]'
+      - '🇫🇷 FR | VLESS | @outline_ir #1 [slow]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
