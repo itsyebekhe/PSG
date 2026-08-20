@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
         "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
@@ -60,6 +61,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
         "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
@@ -67,6 +69,18 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+      "server": "217.60.249.112",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "0eC4ZBvStOgQEzTpCYjWN5",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "hysteria2",

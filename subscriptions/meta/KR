@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇰🇷 KR | VLESS | @outlinereleasedkey #1 [medium]", "server": "3.39.4.109", "port": 13672, "type": "vless", "skip-cert-verify": true, "uuid": "814bd064-544d-4255-a070-5705c03f6da9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0", "short-id": "48050fab"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇰🇷 KR | VLESS | @outlinereleasedkey #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇰🇷 KR | VLESS | @outlinereleasedkey #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
