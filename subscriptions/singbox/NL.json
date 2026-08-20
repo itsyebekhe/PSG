@@ -53,6 +53,8 @@
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
@@ -68,6 +70,8 @@
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
@@ -123,6 +127,41 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @red2ray #1 [fast]",
+      "server": "108.181.58.239",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "CJmTCCx7Ltud",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "195.184.247.224",
+      "server_port": 443,
+      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "savesafe.co",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI",
+          "short_id": "f63805c3ecc7a483"
+        }
       }
     },
     {

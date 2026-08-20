@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQ1k=
+//profile-title: base64:UFNHIHwgSU4=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇮🇳 IN | SS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY | VLESS | @outlinereleasedkey #1 [fast]"
+        "🇮🇳 IN | SS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,21 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇨🇾 CY | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "194.76.154.31",
-      "server_port": 40443,
-      "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
+      "type": "shadowsocks",
+      "tag": "🇮🇳 IN | SS | @red2ray #1 [medium]",
+      "server": "103.120.178.193",
+      "server_port": 31348,
+      "method": "chacha20-ietf-poly1305",
+      "password": "EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ",
-          "short_id": "a8ae"
-        }
+        "enabled": true
       }
     },
     {

@@ -4,6 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "147.45.50.24", "port": 13868, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "booking.com", "reality-opts": {"public-key": "sgpya-5ohMKCjzyrDe4RWz7b8O9XegDzQ88oHCV45Gk", "short-id": "e852dc"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "195.184.247.224", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "savesafe.co", "reality-opts": {"public-key": "6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI", "short-id": "f63805c3ecc7a483"}}
   - {"name": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]", "server": "85.155.226.140", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "getsavesafe.net", "reality-opts": {"public-key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs", "short-id": "82f5d3a1e9c0b661"}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
@@ -11,6 +12,7 @@ proxy-groups:
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
@@ -18,6 +20,7 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:

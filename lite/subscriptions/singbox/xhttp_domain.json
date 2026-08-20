@@ -53,10 +53,11 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇽🇽 XX | VLESS | @mehrosaboran #2 [fast]",
+        "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,10 +69,11 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇽🇽 XX | VLESS | @mehrosaboran #2 [fast]",
+        "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
-        "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]"
+        "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -119,7 +121,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @mehrosaboran #2 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
       "server": "www.speedtest.net",
       "server_port": 443,
       "uuid": "XpnTeam-28",
@@ -177,6 +179,27 @@
       "uuid": "9fd3bdf1-d158-4055-869d-390738793020",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
+      "server": "securitytrails.com",
+      "server_port": 443,
+      "uuid": "90c09d42-c5f6-4602-bba8-957df1ed5598",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.nimrome.dpdns.org",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "direct",

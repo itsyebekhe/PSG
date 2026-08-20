@@ -50,11 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -66,11 +68,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -79,22 +83,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-      "server": "188.130.207.202",
-      "server_port": 443,
-      "uuid": "_id_telegram_MimiTdi",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=1024",
-        "headers": {
-          "Host": "play.google.com"
-        }
-      }
     },
     {
       "type": "vless",
@@ -142,8 +130,8 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-      "server": "news-blf.mobileahmad.ir",
-      "server_port": 9090,
+      "server": "account-cc9.mobileahmad.ir",
+      "server_port": 2091,
       "uuid": "10c651c8-aeca-4817-8d85-a01f104ff88f",
       "network": "tcp",
       "packet_encoding": "xudp"
@@ -168,6 +156,58 @@
           "enabled": true,
           "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
           "short_id": "e5f67890"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+      "server": "188.130.207.202",
+      "server_port": 443,
+      "uuid": "_id_telegram_MimiTdi",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=1024",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "usejh2.neobo-tooth.ru",
+      "server_port": 2096,
+      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "usejh2.neobo-tooth.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "finite-node.rtxconfigz.com",
+      "server_port": 443,
+      "uuid": "25f3beef-a4b6-40bc-aa74-17a0f89f683c",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "finite-node.rtxconfigz.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "telegram.us"
         }
       }
     },
