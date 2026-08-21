@@ -50,12 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #4 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #5 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #6 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -65,12 +65,9 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇺🇸 US | VMESS | @hope_net #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -110,12 +107,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #4 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #5 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #6 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -125,12 +122,9 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇺🇸 US | VMESS | @hope_net #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -167,22 +161,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @easy_free_vpn #1 [fast]",
-      "server": "clfconnect.pishipishi.pro",
-      "server_port": 8880,
-      "uuid": "vpn_connects",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hamon.hamimelectronic.ir"
-        }
-      }
     },
     {
       "type": "vless",
@@ -298,6 +276,33 @@
       "server": "140.248.186.45",
       "server_port": 443,
       "uuid": "XpnTeam-38",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Appxdn.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #6 [fast]",
+      "server": "140.248.186.45",
+      "server_port": 443,
+      "uuid": "XpnTeam-40",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -494,49 +499,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "66.78.40.202",
-      "server_port": 443,
-      "uuid": "302c2e89-6f2d-4500-90ce-26d075c7e84f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A",
-          "short_id": "61"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "uuid": "e0454af2-6fe9-4983-a55d-05e1da202602",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "towndtime.global.ssl.fastly.neT."
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "15.204.247.124",
@@ -570,33 +532,6 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "69.46.46.123",
-      "server_port": 443,
-      "uuid": "aa817985-4a53-47c0-bbaf-0c121f117685",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "spiderpanel-production-b008.up.railway.app",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/aa817985-4a53-47c0-bbaf-0c121f117685",
-        "headers": {
-          "Host": "spiderpanel-production-b008.up.railway.app"
-        }
       }
     },
     {
@@ -701,45 +636,40 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "151.101.56.6",
+      "server": "irhub-production.up.railway.app",
       "server_port": 443,
-      "uuid": "b4b3b4e3-5b3c-48f7-800a-ce69aeb25c51",
+      "uuid": "5502dc8c-1939-aa92-9436-9b8d28bb48ee",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "irhub-production.up.railway.app",
         "alpn": [
-          "h2"
+          "http/1.1"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN",
+        "path": "/ws/5502dc8c-1939-aa92-9436-9b8d28bb48ee",
         "headers": {
-          "Host": "c12.com"
+          "Host": "irhub-production.up.railway.app"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "167.104.217.250",
-      "server_port": 443,
-      "uuid": "efd400cd-98e1-4a9b-a98c-6f4a3b7cce7f",
+      "server": "180.178.60.253",
+      "server_port": 10000,
+      "uuid": "431fe973-a43a-4fac-bf83-2a772e0d0625",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "nl-spec-1.atlanta-api.com",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
+        "enabled": true
       }
     },
     {

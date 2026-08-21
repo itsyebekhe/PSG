@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇨🇭 CH | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "cdn7-02.cdn-vkvideo.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f4f2229e-ca2a-40b1-b4ae-24248c21b645", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdn7-02.cdn-vkvideo.com", "reality-opts": {"public-key": "MpuwI3YH2g3YWHKLuQwwgD_qLo-UmUtZe8L1KXOKxhA", "short-id": "b0d8f964b7ac8ac0"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇨🇭 CH | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇨🇭 CH | VLESS | @mtproxy22_v2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
