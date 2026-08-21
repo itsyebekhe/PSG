@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "93.114.98.129", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "855f8f52-d22a-4278-84ad-1dc968677626", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "93.114.98.129", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "855f8f52-d22a-4278-84ad-1dc968677626", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -64,8 +64,8 @@
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
-        "🇺🇸 US | VMESS | @hope_net #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -74,6 +74,8 @@
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #3 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -121,8 +123,8 @@
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #1 [fast]",
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
-        "🇺🇸 US | VMESS | @hope_net #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -131,6 +133,8 @@
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #3 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -479,26 +483,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @hope_net #1 [fast]",
-      "server": "cn2.soow.win",
-      "server_port": 50027,
-      "uuid": "c1d0ae9e-f08a-3f81-962d-ca19b52c760d",
-      "security": "auto",
-      "alter_id": 2,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/video",
-        "headers": {
-          "Host": "cn2.soow.win"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "15.204.247.124",
@@ -508,6 +492,25 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "rssm-1btto92.joxenly.com",
+      "server_port": 443,
+      "uuid": "83c18ff2-0565-4b53-89ad-57357fef153b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "bHGC7iI4Q50nxoYStP3TjBaRXih6O0bmuemexki0aXY",
+          "short_id": "29ff8963a9fe281c"
+        }
       }
     },
     {
@@ -636,14 +639,14 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "irhub-production.up.railway.app",
+      "server": "69.46.46.5",
       "server_port": 443,
-      "uuid": "5502dc8c-1939-aa92-9436-9b8d28bb48ee",
+      "uuid": "f5507df1-ba48-4dea-aba1-d3770aac4e1d",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "irhub-production.up.railway.app",
+        "server_name": "web-production-7bd3d.up.railway.app",
         "alpn": [
           "http/1.1"
         ],
@@ -654,22 +657,91 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/5502dc8c-1939-aa92-9436-9b8d28bb48ee",
+        "path": "/ws/vless/f5507df1-ba48-4dea-aba1-d3770aac4e1d?ed=2048",
         "headers": {
-          "Host": "irhub-production.up.railway.app"
+          "Host": "web-production-7bd3d.up.railway.app"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "180.178.60.253",
-      "server_port": 10000,
-      "uuid": "431fe973-a43a-4fac-bf83-2a772e0d0625",
-      "network": "tcp",
+      "server": "69.46.46.4",
+      "server_port": 443,
+      "uuid": "869a7792-7f60-43fb-bfaf-1510ec7bb719",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "hphphphph-production.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/vless/869a7792-7f60-43fb-bfaf-1510ec7bb719?ed=2048",
+        "headers": {
+          "Host": "hphphphph-production.up.railway.app"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #3 [fast]",
+      "server": "hphphphph-production.up.railway.app",
+      "server_port": 443,
+      "uuid": "869a7792-7f60-43fb-bfaf-1510ec7bb719",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "hphphphph-production.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/vless/869a7792-7f60-43fb-bfaf-1510ec7bb719?ed=2048",
+        "headers": {
+          "Host": "hphphphph-production.up.railway.app"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #4 [fast]",
+      "server": "web-production-7bd3d.up.railway.app",
+      "server_port": 443,
+      "uuid": "f5507df1-ba48-4dea-aba1-d3770aac4e1d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web-production-7bd3d.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/vless/f5507df1-ba48-4dea-aba1-d3770aac4e1d?ed=2048",
+        "headers": {
+          "Host": "web-production-7bd3d.up.railway.app"
+        }
       }
     },
     {
