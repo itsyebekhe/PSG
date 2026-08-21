@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
-        "🇫🇮 FI | VLESS | @orange_vpns #2 [fast]",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [slow]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
         "direct"
       ],
@@ -61,8 +62,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
-        "🇫🇮 FI | VLESS | @orange_vpns #2 [fast]",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [slow]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @outline_ir #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -72,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [slow]",
       "server": "132.243.223.88",
       "server_port": 443,
       "uuid": "fbb74aa8-b89a-4f20-9504-6b25aadf6681",
@@ -95,25 +97,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @orange_vpns #2 [fast]",
-      "server": "85.192.49.151",
+      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "0fbff144-bbed-44c0-972b-3ecb0d5579d6",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "-Oj9x6Ts_2S_DdORCDilSpcLJcIYpL67uQ8VBFHL4yk",
+          "short_id": "2606b22a3c3b3971"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "node5.mxvpn.dev",
       "server_port": 443,
-      "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907",
+      "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "de.servers.gracevpnbuy.com",
-        "insecure": true,
+        "server_name": "node5.mxvpn.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
-          "short_id": "b91a73752053b039"
+          "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
+          "short_id": "bbc68cec8bb8d2e3"
         }
       }
     },

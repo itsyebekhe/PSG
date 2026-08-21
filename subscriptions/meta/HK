@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇭🇰 HK | VLESS | @outlinereleasedkey #1 [medium]", "server": "35.241.98.220", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "96563f88-f743-4395-a3b2-27ec462ae45e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "bSK8gtmPMlw7gP415tmh6kQzzFiwzxBsT3Kuqql6cRo", "short-id": "ec2c7091fe76336c"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇭🇰 HK | VLESS | @outlinereleasedkey #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇭🇰 HK | VLESS | @outlinereleasedkey #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

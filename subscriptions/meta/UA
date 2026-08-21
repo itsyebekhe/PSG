@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇺🇦 UA | VLESS | @red2ray #1 [fast]", "server": "ultrapl.scalenot.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9e27f64b-7ae9-461b-b4c4-99696276633b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandexcloud.net", "reality-opts": {"public-key": "UR-ELTbCCTAAvg_y8vIznWFkGkCKFFaEAVgTtPYNCCk", "short-id": "54861d36"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇺🇦 UA | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇺🇦 UA | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -57,16 +57,17 @@
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VMESS | @hope_net #1 [fast]",
         "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
         "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | SS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
+        "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -82,16 +83,17 @@
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VMESS | @hope_net #1 [fast]",
         "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
         "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | SS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
+        "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -101,24 +103,27 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
-      "server": "109.163.239.64",
+      "server": "core.noneok.com",
       "server_port": 443,
-      "uuid": "c6a420c7-3bdb-40cd-8a57-f5ce870e9b83",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "340e4de3-144b-49c4-ad72-b49b35713728",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "cdn4-35.yahoo.com",
+        "server_name": "core.noneok.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw",
-          "short_id": "c252dea48965065b"
+          "public_key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs",
+          "short_id": "fde63d9c58210bf9"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {
@@ -217,9 +222,29 @@
       "packet_encoding": "xudp"
     },
     {
+      "type": "vmess",
+      "tag": "🇩🇪 DE | VMESS | @hope_net #1 [fast]",
+      "server": "zula.ir",
+      "server_port": 80,
+      "uuid": "62aa5f80-0328-4004-a375-7f5a59df4022",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/T,E,L,E,G,R,A,M,X,V,2,R,A,Y",
+        "headers": {
+          "Host": "rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.apaspeedtest.netrat.com.eu.com.sde103.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--g28h.dns-dynamic.net."
+        }
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
-      "server": "63.188.40.90",
+      "server": "3.78.22.74",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -228,37 +253,11 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-      "server": "63.183.163.238",
+      "server": "35.157.103.248",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "ge3.app-sync-data.space",
-      "server_port": 443,
-      "uuid": "ded4cb63-e401-47f6-9bb3-83f07ea559a3",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BgpHV3rnigdHVH1np44BH-aB8c5NJbso5AoMeqHmG3c",
-          "short_id": "9c3f2a7e1d8b4056"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "auragrpc"
-      }
     },
     {
       "type": "shadowsocks",
@@ -284,6 +283,19 @@
         "type": "grpc",
         "service_name": "grpc"
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
     },
     {
       "type": "vless",
@@ -354,7 +366,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
       "server": "168.119.174.229",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",

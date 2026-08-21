@@ -50,8 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | VMESS | @hope_net #1 [medium]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
@@ -64,8 +62,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | VMESS | @hope_net #1 [medium]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
@@ -75,49 +71,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 GB | VMESS | @hope_net #1 [medium]",
-      "server": "172.67.171.43",
-      "server_port": 80,
-      "uuid": "b79a6959-6feb-43ba-b3c7-f1afae9ea32c",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Uk2.vmess.site."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "23.81.34.120",
-      "server_port": 443,
-      "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "gb.servers.gracevpnbuy.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
-          "short_id": "b91a73752053b039"
-        }
-      }
     },
     {
       "type": "shadowsocks",

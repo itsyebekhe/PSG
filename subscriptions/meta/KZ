@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇰🇿 KZ | VLESS | @hope_net #1 [fast]", "server": "194.76.18.189", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "xini.ylks.link", "ws-opts": {"path": "", "headers": {"Host": "194.76.18.189"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇰🇿 KZ | VLESS | @hope_net #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇰🇿 KZ | VLESS | @hope_net #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

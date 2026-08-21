@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "31.56.185.19", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5dc56757-458e-4df2-9e71-2a14ce47e8af", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "nl1-akn.astralweb.tech"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
