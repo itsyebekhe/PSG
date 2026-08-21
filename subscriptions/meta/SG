@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
-  - {"name": "🇸🇬 SG | VLESS | @red2ray #1 [medium]", "server": "162.128.44.164", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8d1e0577-bfcb-4cbd-91c0-1f8788d4ba44", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "rJ-aDop3jUC-FzyETfI2uDSXQ659PFlehr7XWm5Cm0A", "short-id": "fe1a104caf309f5a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
@@ -62,6 +63,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #2 [fast]",
@@ -71,6 +73,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "87.117.234.19",
+      "server_port": 443,
+      "uuid": "4d583b2c-2f5a-47d0-8181-e95217fe8cd9",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "strapi.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
+          "short_id": "fd55b698ee8c3629"
+        }
+      }
     },
     {
       "type": "shadowsocks",

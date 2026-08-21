@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ | VLESS | @hope_net #1 [fast]",
         "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
         "direct"
       ],
@@ -60,30 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ | VLESS | @hope_net #1 [fast]",
         "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 KZ | VLESS | @hope_net #1 [fast]",
-      "server": "194.76.18.189",
-      "server_port": 443,
-      "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "xini.ylks.link"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
     },
     {
       "type": "shadowsocks",

@@ -55,12 +55,12 @@
         "KingRezaPahlavi",
         "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇨🇭 CH | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-        "🇺🇦 UA | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -74,12 +74,12 @@
         "KingRezaPahlavi",
         "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇨🇭 CH | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-        "🇺🇦 UA | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]"
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -175,6 +175,25 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "cz.helper-internet.com",
+      "server_port": 443,
+      "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cz.helper-internet.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇹 IT | VLESS | @selinc #1 [fast]",
       "server": "it.feywebsite.ir",
       "server_port": 8008,
@@ -239,52 +258,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-      "server": "node5.mxvpn.dev",
-      "server_port": 443,
-      "uuid": "564082ff-cf3c-48db-9e10-8ad2312847b4",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "node5.mxvpn.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw",
-          "short_id": "bbc68cec8bb8d2e3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇦 UA | VLESS | @red2ray #1 [fast]",
-      "server": "ultrapl.scalenot.com",
-      "server_port": 443,
-      "uuid": "9e27f64b-7ae9-461b-b4c4-99696276633b",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "storage.yandexcloud.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UR-ELTbCCTAAvg_y8vIznWFkGkCKFFaEAVgTtPYNCCk",
-          "short_id": "54861d36"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
       "server": "node5.get-tres.ru",
       "server_port": 443,
@@ -303,6 +276,28 @@
           "enabled": true,
           "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
           "short_id": "e5f67890"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+      "server": "tg.riotvpn.eu",
+      "server_port": 443,
+      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "short_id": "2f49bccf11150ef2"
         }
       }
     },

@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,32 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "cz.helper-internet.com",
+      "server_port": 443,
+      "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cz.helper-internet.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      }
     },
     {
       "type": "vmess",
