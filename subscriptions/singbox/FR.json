@@ -52,11 +52,10 @@
         "auto",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [slow]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,11 +66,10 @@
       "outbounds": [
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [slow]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -117,35 +115,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [slow]",
       "server": "france.me.pingsf.ir",
       "server_port": 443,
       "uuid": "d33d2dd1-04c1-4d43-b2e6-77c56297128e",
       "network": "tcp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
-      "server": "node5.get-tres.ru",
-      "server_port": 443,
-      "uuid": "d67af820-f54c-48ab-862c-19086357f276",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "telegraf.lv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI",
-          "short_id": "e5f67890"
-        }
-      }
     },
     {
       "type": "vless",
@@ -189,7 +164,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",
