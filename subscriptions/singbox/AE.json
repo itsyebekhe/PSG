@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
       ],
@@ -60,7 +60,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
+        "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -69,18 +69,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
-      "server": "130.49.161.70",
+      "type": "shadowsocks",
+      "tag": "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+      "server": "217.60.249.112",
       "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "obfs": {
-        "type": "salamander",
-        "password": "salamander"
-      },
+      "method": "chacha20-ietf-poly1305",
+      "password": "0eC4ZBvStOgQEzTpCYjWN5",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz"
+        "enabled": true
       }
     },
     {

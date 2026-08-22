@@ -5,6 +5,7 @@ log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "177.3.212.127", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "14da77da-4fb3-4e49-ac4f-7881ea19b267", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "neth6.lckdwn.ru"}
   - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]", "server": "neth6.lckdwn.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "14da77da-4fb3-4e49-ac4f-7881ea19b267", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "neth6.lckdwn.ru"}}}
+  - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #3 [fast]", "server": "vip-nl-1.hkd4fwmg.vip", "port": 31883, "type": "vless", "skip-cert-verify": true, "uuid": "20593145-d975-46f9-9bad-d9f3c8e2d899", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "vip-nl-1.hkd4fwmg.vip"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
@@ -12,6 +13,7 @@ proxy-groups:
     proxies:
       - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #3 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -19,6 +21,7 @@ proxy-groups:
     proxies:
       - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]'
+      - '🇳🇱 NL | VLESS | @NamiraConfigs #3 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

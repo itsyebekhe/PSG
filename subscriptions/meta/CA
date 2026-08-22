@@ -3,12 +3,10 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇨🇦 CA | VLESS | @free1_vpn #1 [fast]", "server": "184.107.141.174", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ca.servers.gracevpnbuy.com", "reality-opts": {"public-key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500", "short-id": "b91a73752053b039"}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]", "server": "23.227.60.12", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.jokerv2ray.store", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.jokerv2ray.store"}}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]", "server": "23.227.60.12", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.sameasyou.sbs", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.sameasyou.sbs"}}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]", "server": "104.31.16.133", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.sameasyou.sbs", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.sameasyou.sbs"}}}
   - {"name": "🇨🇦 CA | VLESS | @novinology #1 [fast]", "server": "104.31.16.65", "port": 2095, "type": "vless", "skip-cert-verify": true, "uuid": "38ace213-5184-477b-ac3e-d800d0cf3cd9", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "de1.vlessx.xyz"}}}
-  - {"name": "🇨🇦 CA | VLESS | @NamiraConfigs #1 [fast]", "server": "lizca2.footballfantasyforum.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "716426fa-bcb7-4eb9-b460-36399ebf740d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "lizca2.footballfantasyforum.com"}
   - {"name": "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]", "server": "104.31.16.65", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "281a5a7c-6530-4cd6-b0f2-a2666e6c3b36", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "tel.v-2rayngvpn.sbs", "grpc-opts": {"grpc-service-name": ""}}
   - {"name": "🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]", "server": "23.227.60.7", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d672ec4f-afba-4f61-af09-eec872f97e99", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "test43.pages.dev", "ws-opts": {"path": "", "headers": {"Host": "test43.pages.dev"}}}
   - {"name": "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]", "server": "104.31.16.36", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "376b9861-2fc6-4647-959c-18185cd9c95a", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "wrk1701790178919.lmn66.sbs", "ws-opts": {"path": "", "headers": {"Host": "lmn1701789842450.lmn66.sbs"}}}
@@ -16,12 +14,10 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇨🇦 CA | VLESS | @free1_vpn #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]'
       - '🇨🇦 CA | VLESS | @novinology #1 [fast]'
-      - '🇨🇦 CA | VLESS | @NamiraConfigs #1 [fast]'
       - '🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]'
       - '🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]'
       - '🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]'
@@ -29,12 +25,10 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇨🇦 CA | VLESS | @free1_vpn #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]'
       - '🇨🇦 CA | VLESS | @novinology #1 [fast]'
-      - '🇨🇦 CA | VLESS | @NamiraConfigs #1 [fast]'
       - '🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]'
       - '🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]'
       - '🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]'

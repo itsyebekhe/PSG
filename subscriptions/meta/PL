@@ -6,7 +6,7 @@ proxies:
   - {"name": "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]", "server": "83.168.71.216", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
   - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "tg.riotvpn.eu", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
   - {"name": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]", "server": "tg.riotvpn.eu", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
-  - {"name": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [medium]", "server": "31.133.0.133", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "c7e9c591-2764-423a-afca-efbd010fd396", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "forfreeuse.rtqa.ru", "ws-opts": {"path": "", "headers": {"Host": "forfreeuse.rtqa.ru"}}}
+  - {"name": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]", "server": "31.133.0.133", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "c7e9c591-2764-423a-afca-efbd010fd396", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "forfreeuse.rtqa.ru", "ws-opts": {"path": "", "headers": {"Host": "forfreeuse.rtqa.ru"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - '🇵🇱 PL | VLESS | @free1_vpn #1 [fast]'
       - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
-      - '🇵🇱 PL | VLESS | @NamiraConfigs #1 [medium]'
+      - '🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +22,7 @@ proxy-groups:
       - '🇵🇱 PL | VLESS | @free1_vpn #1 [fast]'
       - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
-      - '🇵🇱 PL | VLESS | @NamiraConfigs #1 [medium]'
+      - '🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

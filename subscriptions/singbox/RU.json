@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | SS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
         "direct"
       ],
@@ -61,14 +62,27 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | SS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 RU | SS | @red2ray #1 [fast]",
+      "server": "89.23.97.95",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "_cHgXl6zRL9IXuQpPYITG_LIX76WLNji",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",
@@ -95,7 +109,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
       "server": "5.129.249.118",
       "server_port": 443,
       "uuid": "fe0138b5-ca60-4a67-91aa-b5a49266eeb5",

@@ -50,13 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 CA | VLESS | @free1_vpn #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
         "🇨🇦 CA | SS | @outline_ir #1 [fast]",
         "🇨🇦 CA | VLESS | @novinology #1 [fast]",
-        "🇨🇦 CA | VLESS | @NamiraConfigs #1 [fast]",
         "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
         "🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]",
         "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]",
@@ -68,13 +66,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 CA | VLESS | @free1_vpn #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
         "🇨🇦 CA | SS | @outline_ir #1 [fast]",
         "🇨🇦 CA | VLESS | @novinology #1 [fast]",
-        "🇨🇦 CA | VLESS | @NamiraConfigs #1 [fast]",
         "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
         "🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]",
         "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]"
@@ -83,29 +79,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 CA | VLESS | @free1_vpn #1 [fast]",
-      "server": "184.107.141.174",
-      "server_port": 443,
-      "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ca.servers.gracevpnbuy.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
-          "short_id": "b91a73752053b039"
-        }
-      }
     },
     {
       "type": "vless",
@@ -216,27 +189,6 @@
         "path": "/?ed=2048",
         "headers": {
           "Host": "de1.vlessx.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 CA | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "lizca2.footballfantasyforum.com",
-      "server_port": 443,
-      "uuid": "716426fa-bcb7-4eb9-b460-36399ebf740d",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "lizca2.footballfantasyforum.com",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         }
       }
     },
