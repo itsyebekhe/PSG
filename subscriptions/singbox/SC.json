@@ -51,9 +51,10 @@
       "outbounds": [
         "auto",
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
+        "🇸🇨 SC | VLESS | @free1_vpn #1 [medium]",
+        "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @jiedianf #1 [medium]",
-        "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,9 +64,10 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
+        "🇸🇨 SC | VLESS | @free1_vpn #1 [medium]",
+        "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇸🇨 SC | VLESS | @arv2ray #1 [fast]",
-        "🇸🇨 SC | VLESS | @jiedianf #1 [medium]",
-        "🇸🇨 SC | VLESS | @ai_duet #1 [fast]"
+        "🇸🇨 SC | VLESS | @jiedianf #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -93,6 +95,50 @@
         "path": "/",
         "headers": {
           "Host": "srv10.perfectbulk.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @free1_vpn #1 [medium]",
+      "server": "45.195.228.198",
+      "server_port": 443,
+      "uuid": "d5b44b89-ca73-4b82-a494-a72054c31df3",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "66-fz0xjwauydj29EfFKyPHjJ2CIGaGSsJ6hsB--zAc",
+          "short_id": "de8d3223e7d85761"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
+      "server": "45.130.125.160",
+      "server_port": 443,
+      "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.lezzatzone.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
@@ -140,27 +186,6 @@
           "enabled": true,
           "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
           "short_id": "c6ef72e4635d15a5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
-      "server": "45.130.125.160",
-      "server_port": 443,
-      "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.lezzatzone.ir",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         }
       }
     },

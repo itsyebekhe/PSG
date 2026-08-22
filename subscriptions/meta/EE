@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]", "server": "95.85.224.3", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "7e8f7489-e65f-4be6-93ed-867a74ec6759", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "grpc"}}
+  - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]", "server": "95.85.224.3", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "7e8f7489-e65f-4be6-93ed-867a74ec6759", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "grpc"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

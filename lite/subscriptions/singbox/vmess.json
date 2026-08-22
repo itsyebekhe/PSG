@@ -192,21 +192,22 @@
     {
       "type": "vmess",
       "tag": "🇽🇽 XX | VMESS | @hope_net #1 [fast]",
-      "server": "104.19.45.80",
-      "server_port": 2095,
-      "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
+      "server": "www.speedtest.net",
+      "server_port": 2053,
+      "uuid": "00fb7867-95ad-4eaf-99f1-22255beb6251",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
-      "network": "ws",
+      "network": "grpc",
       "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "1S0tbpcysTVzKnnfkbaxK8mykaiYYhDrH2jYGrv2q5zbCzAjl.protonix.ir."
+      },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "onea.flha.ru"
-        }
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {

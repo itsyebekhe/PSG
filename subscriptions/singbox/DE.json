@@ -56,12 +56,8 @@
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [medium]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
         "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
@@ -83,12 +79,8 @@
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [medium]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
         "🇩🇪 DE | VMESS | @NamiraConfigs #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
@@ -216,67 +208,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
-      "server": "63.183.228.38",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-      "server": "3.69.99.40",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "194.87.24.10",
-      "server_port": 443,
-      "uuid": "22419260-5475-49d8-a29c-01905c54d1b8",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "de1.de-cdn.ru",
-        "reality": {
-          "enabled": true,
-          "public_key": "bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg",
-          "short_id": "f7d0420b8ab26060"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-      "server": "164.90.171.176",
-      "server_port": 55397,
-      "uuid": "2b9889fd-c379-46a0-88bf-0b1c13df2de1",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
-      "server": "helixgaming.ir",
-      "server_port": 8080,
-      "uuid": "d5ab8565-e676-48ec-b675-a7b73fe1017b",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
       "server": "3.126.31.60",
       "server_port": 443,
       "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [medium]",
+      "server": "node2.onepanel123.ru",
+      "server_port": 2087,
+      "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "node2.onepanel123.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/de-vless-ws",
+        "headers": {
+          "Host": "node2.onepanel123.ru"
+        }
+      }
     },
     {
       "type": "vless",

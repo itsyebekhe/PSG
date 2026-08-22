@@ -51,12 +51,12 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -66,12 +66,12 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -95,18 +95,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-      "server": "fr4.levikogjgfdd.ir",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "zRZNBszYyWo5",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
       "server": "84.247.129.205",
@@ -126,6 +114,15 @@
           "Host": "sub.mot.ip-ddns.com"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "france.me.pingsf.ir",
+      "server_port": 443,
+      "uuid": "d33d2dd1-04c1-4d43-b2e6-77c56297128e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -192,7 +189,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",
