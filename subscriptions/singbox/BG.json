@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQ1o=
+//profile-title: base64:UFNHIHwgQkc=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,9 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
-        "🇨🇿 CZ | VLESS | @NamiraConfigs #1 [medium]",
+        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
-        "🇨🇿 CZ | VLESS | @NamiraConfigs #1 [medium]"
+        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,65 +68,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "cz.helper-internet.com",
+      "tag": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [medium]",
+      "server": "195.123.226.21",
       "server_port": 443,
-      "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "33851d53-ede0-45f7-9eb8-9aa961f7d200",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "cz.helper-internet.com",
-        "reality": {
+        "utls": {
           "enabled": true,
-          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
-          "short_id": "ff776ff77be48b88"
+          "fingerprint": "edge"
         }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
-      "server": "time.is",
-      "server_port": 443,
-      "uuid": "b526926d-1474-4f41-985e-8b877cb840cd",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "time.is"
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "shs111.kejixiaoqi666.store"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 CZ | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "195.133.94.188",
-      "server_port": 2053,
-      "uuid": "c7e9c591-2764-423a-afca-efbd010fd396",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "forfreeuse.rtqa.ru"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed",
-        "headers": {
-          "Host": "forfreeuse.rtqa.ru"
-        }
+        "path": "/vless"
       }
     },
     {

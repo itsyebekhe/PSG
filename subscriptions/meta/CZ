@@ -5,18 +5,21 @@ log-level: info
 proxies:
   - {"name": "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]", "server": "cz.helper-internet.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "cz.helper-internet.com", "reality-opts": {"public-key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE", "short-id": "ff776ff77be48b88"}}
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
+  - {"name": "🇨🇿 CZ | VLESS | @NamiraConfigs #1 [medium]", "server": "195.133.94.188", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "c7e9c591-2764-423a-afca-efbd010fd396", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "forfreeuse.rtqa.ru", "ws-opts": {"path": "", "headers": {"Host": "forfreeuse.rtqa.ru"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
+      - '🇨🇿 CZ | VLESS | @NamiraConfigs #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
+      - '🇨🇿 CZ | VLESS | @NamiraConfigs #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -50,9 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @mehrosaboran #1 [fast]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
         "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [medium]"
+        "🇫🇮 FI | VLESS | @mehrosaboran #1 [fast]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @mehrosaboran #1 [fast]",
       "server": "85.192.49.151",
       "server_port": 443,
       "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907",
@@ -82,7 +84,6 @@
       "tls": {
         "enabled": true,
         "server_name": "de.servers.gracevpnbuy.com",
-        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -96,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "0fbff144-bbed-44c0-972b-3ecb0d5579d6",
@@ -132,6 +133,30 @@
           "enabled": true,
           "public_key": "gHG_cbbi-OJKY2tBQTqz1QryfmmRZEQ7BQgymimukkQ",
           "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
+      "server": "85.192.49.151",
+      "server_port": 443,
+      "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.servers.gracevpnbuy.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
+          "short_id": "b91a73752053b039"
         }
       }
     },
