@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -75,6 +76,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -97,6 +99,30 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "41.216.182.105",
+      "server_port": 443,
+      "uuid": "e911c552-3a98-41e0-b5fb-0dd3879887b7",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vod.ensf.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/irc",
+        "headers": {
+          "Host": "vod.ensf.top"
+        }
+      }
     },
     {
       "type": "vless",

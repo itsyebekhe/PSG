@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | SS | @red2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
+        "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | SS | @red2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+        "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]"
+        "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -73,20 +73,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @red2ray #1 [fast]",
-      "server": "89.23.97.95",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "_cHgXl6zRL9IXuQpPYITG_LIX76WLNji",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @jiedianf #1 [fast]",
       "server": "2.26.8.55",
       "server_port": 443,
       "uuid": "10ea33f2-1a66-4dec-99f2-8068a6b56a45",
@@ -104,6 +92,29 @@
           "enabled": true,
           "public_key": "Loc9rXCMgSkksa4TGr203UCppZh9epDs8tdTVCjiCRw",
           "short_id": "c39843c687af3383"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
+      "server": "185.147.26.175",
+      "server_port": 443,
+      "uuid": "7d2bac5e-6ff9-45c9-844e-6bfc5a384a42",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yt.orpheous.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
+          "short_id": "9e4eced6e98ed4d4"
         }
       }
     },
@@ -132,7 +143,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]",
       "server": "31.76.34.146",
       "server_port": 443,
       "uuid": "7bc2c010-dffd-4c81-8fa3-25e8f3781dca",
