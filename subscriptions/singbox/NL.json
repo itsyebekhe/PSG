@@ -51,10 +51,10 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #3 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -64,10 +64,10 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
-        "🇳🇱 NL | VLESS | @NamiraConfigs #3 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -88,28 +88,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "177.3.212.127",
-      "server_port": 8443,
-      "uuid": "14da77da-4fb3-4e49-ac4f-7881ea19b267",
+      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "crm.3c6.ir",
+      "server_port": 2053,
+      "uuid": "18eca719-30b7-4ad0-aa9e-26f73776d214",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "neth6.lckdwn.ru",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "server_name": "amp-api-edge.apps.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4IKvs8eW0jsPyqg4dwZOrxdMBO7wqNyxANurwYabhgE",
+          "short_id": "42ca3d7d21d32519"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
       "server": "neth6.lckdwn.ru",
       "server_port": 443,
       "uuid": "14da77da-4fb3-4e49-ac4f-7881ea19b267",
@@ -121,7 +123,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #3 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
       "server": "vip-nl-1.hkd4fwmg.vip",
       "server_port": 31883,
       "uuid": "20593145-d975-46f9-9bad-d9f3c8e2d899",
@@ -140,7 +142,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

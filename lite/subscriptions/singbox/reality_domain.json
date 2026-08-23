@@ -53,9 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,9 +67,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]"
+        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇮🇹 IT | VLESS | @selinc #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -117,21 +117,50 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 CZ | VLESS | @outlinereleasedkey #1 [medium]",
-      "server": "cz.helper-internet.com",
+      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+      "server": "tg.riotvpn.eu",
       "server_port": 443,
-      "uuid": "670decfe-68cc-499e-8cb1-22b39c20acbb",
-      "flow": "xtls-rprx-vision",
+      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "cz.helper-internet.com",
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
-          "short_id": "ff776ff77be48b88"
+          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "short_id": "2f49bccf11150ef2"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+      "server": "core.noneok.com",
+      "server_port": 443,
+      "uuid": "340e4de3-144b-49c4-ad72-b49b35713728",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "core.noneok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs",
+          "short_id": "fde63d9c58210bf9"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {
@@ -153,28 +182,6 @@
           "enabled": true,
           "public_key": "yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8",
           "short_id": "5f9a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
-      "server": "tg.riotvpn.eu",
-      "server_port": 443,
-      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-          "short_id": "2f49bccf11150ef2"
         }
       }
     },

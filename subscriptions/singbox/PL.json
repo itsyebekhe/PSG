@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
         "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
         "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [medium]",
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,15 +62,37 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
         "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
         "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [medium]"
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+      "server": "tg.riotvpn.eu",
+      "server_port": 443,
+      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "short_id": "2f49bccf11150ef2"
+        }
+      }
     },
     {
       "type": "vless",
@@ -118,29 +140,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
-      "server": "tg.riotvpn.eu",
-      "server_port": 443,
-      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-          "short_id": "2f49bccf11150ef2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [medium]",
+      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
       "server": "31.133.0.133",
       "server_port": 2053,
       "uuid": "c7e9c591-2764-423a-afca-efbd010fd396",

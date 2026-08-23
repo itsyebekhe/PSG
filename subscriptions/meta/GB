@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "185.193.30.94", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b2f6aa3a-2550-4a1c-b2c0-1c94b1207217", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "terazhediii.info", "ws-opts": {"path": "", "headers": {"Host": "terazhediii.info"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
