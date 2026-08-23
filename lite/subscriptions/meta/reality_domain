@@ -9,6 +9,7 @@ proxies:
   - {"name": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]", "server": "tg.riotvpn.eu", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
   - {"name": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]", "server": "core.noneok.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "340e4de3-144b-49c4-ad72-b49b35713728", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "core.noneok.com", "grpc-opts": {"grpc-service-name": "api.v1.StreamService"}, "reality-opts": {"public-key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs", "short-id": "fde63d9c58210bf9"}}
   - {"name": "🇮🇹 IT | VLESS | @selinc #1 [fast]", "server": "it.feywebsite.ir", "port": 8008, "type": "vless", "skip-cert-verify": true, "uuid": "b91abe1a-80ca-417b-998b-2b542661c16f", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8", "short-id": "5f9a"}}
+  - {"name": "🇺🇸 US | VLESS | @red2ray #1 [fast]", "server": "us20.levikogjgfdd.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "savesafe.run", "reality-opts": {"public-key": "wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8", "short-id": "e4f6a3446ac34a24"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -19,6 +20,7 @@ proxy-groups:
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
       - '🇮🇹 IT | VLESS | @selinc #1 [fast]'
+      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -29,6 +31,7 @@ proxy-groups:
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
       - '🇮🇹 IT | VLESS | @selinc #1 [fast]'
+      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

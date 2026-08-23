@@ -88,14 +88,14 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
         "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇨🇾 CY | VLESS | @outline_ir #1 [medium]",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @novinology #5 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
@@ -188,14 +188,14 @@
         "🇺🇸 US | VLESS | @nofilter_v2rayng #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
         "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇨🇾 CY | VLESS | @outline_ir #1 [medium]",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @novinology #5 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
@@ -817,7 +817,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
       "server": "crm.3c6.ir",
       "server_port": 2053,
       "uuid": "18eca719-30b7-4ad0-aa9e-26f73776d214",
@@ -840,6 +840,25 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "us20.levikogjgfdd.ir",
+      "server_port": 443,
+      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "savesafe.run",
+        "reality": {
+          "enabled": true,
+          "public_key": "wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8",
+          "short_id": "e4f6a3446ac34a24"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
       "server": "ed8d.wdz.de5.net",
       "server_port": 443,
@@ -847,8 +866,24 @@
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "node2.onepanel123.ru",
+      "server_port": 2087,
+      "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
         "enabled": true,
-        "server_name": "ed8d.wdz.de5.net",
+        "server_name": "node2.onepanel123.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -856,33 +891,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=chrome"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "a2.arshia-nova.ir",
-      "server_port": 443,
-      "uuid": "63650025-84ff-4272-cfd4-61e7b9ee8834",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
+        "path": "/de-vless-ws",
         "headers": {
-          "Host": "c12.com"
+          "Host": "node2.onepanel123.ru"
         }
       }
     },
@@ -961,25 +972,6 @@
           "enabled": true,
           "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
           "short_id": "88b6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-      "server": "us3.levikogjgfdd.ir",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
         }
       }
     },

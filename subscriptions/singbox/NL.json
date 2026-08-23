@@ -51,7 +51,8 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
+        "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -64,7 +65,8 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
+        "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
@@ -88,7 +90,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
       "server": "crm.3c6.ir",
       "server_port": 2053,
       "uuid": "18eca719-30b7-4ad0-aa9e-26f73776d214",
@@ -107,6 +109,18 @@
           "public_key": "4IKvs8eW0jsPyqg4dwZOrxdMBO7wqNyxANurwYabhgE",
           "short_id": "42ca3d7d21d32519"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
+      "server": "109.201.152.181",
+      "server_port": 443,
+      "method": "aes-128-cfb",
+      "password": "shadowsocks",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
