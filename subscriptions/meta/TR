@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "158.94.216.61", "port": 57728, "type": "vless", "skip-cert-verify": true, "uuid": "13efddd3-1a20-49f3-bbbe-f5b530398bb6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.yahoo.com", "reality-opts": {"public-key": "_msWT9DtUixMc55dabeo7IqbWGikrSNz35GkoGllFBM", "short-id": "85436cc1"}}
+  - {"name": "🇹🇷 TR | VLESS | @hope_net #1 [fast]", "server": "77.92.145.153", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f53f1a5d-6a86-48ca-b897-f673daf45021", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "google.com", "reality-opts": {"public-key": "Y6NJmcTdR_w9hSOlAFxPaqz37sYhbj_MhuJT3DddnCI", "short-id": "bfc2e70f"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - '🇹🇷 TR | VLESS | @hope_net #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - '🇹🇷 TR | VLESS | @hope_net #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

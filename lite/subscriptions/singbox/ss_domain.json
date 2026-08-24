@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSVQ=
+//profile-title: base64:UFNHIHwgU1NfRE9NQUlO
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @selinc #1 [fast]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,24 +74,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @selinc #1 [fast]",
-      "server": "it.feywebsite.ir",
-      "server_port": 8008,
-      "uuid": "b91abe1a-80ca-417b-998b-2b542661c16f",
-      "network": "xhttp",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
+      "server": "tt.hsrdnr.ir",
+      "server_port": 2044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "3rfnj11q5xvg72y1",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8",
-          "short_id": "5f9a"
-        }
+        "enabled": true
       }
     },
     {
