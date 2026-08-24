@@ -7,9 +7,9 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]", "server": "tg.riotvpn.eu", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
-  - {"name": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]", "server": "core.noneok.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "340e4de3-144b-49c4-ad72-b49b35713728", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "core.noneok.com", "grpc-opts": {"grpc-service-name": "api.v1.StreamService"}, "reality-opts": {"public-key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs", "short-id": "fde63d9c58210bf9"}}
   - {"name": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "crm.3c6.ir", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "18eca719-30b7-4ad0-aa9e-26f73776d214", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "4IKvs8eW0jsPyqg4dwZOrxdMBO7wqNyxANurwYabhgE", "short-id": "42ca3d7d21d32519"}}
   - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "pl1.nihaovpn.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00506574-3b10-4f7d-9b2f-8afdc5919b93", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pl1.nihaovpn.ru", "reality-opts": {"public-key": "2stsLH56yUXFwc7ICrN111GveMOIrWSDFiUr6XWFhx4", "short-id": "d9622c6fea10c1"}}
+  - {"name": "🇨🇾 CY | VLESS | @outline_ir #1 [medium]", "server": "in1.levikogjgfdd.ir", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0", "short-id": "88b6"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -18,9 +18,9 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
-      - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
+      - '🇨🇾 CY | VLESS | @outline_ir #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -29,9 +29,9 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
-      - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
+      - '🇨🇾 CY | VLESS | @outline_ir #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
