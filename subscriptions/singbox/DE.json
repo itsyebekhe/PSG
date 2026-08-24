@@ -57,12 +57,9 @@
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
@@ -83,12 +80,9 @@
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
@@ -237,61 +231,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
-      "server": "35.156.140.181",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
-      "server": "63.187.217.79",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "194.5.65.36",
+      "tag": "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
+      "server": "91.99.82.11",
       "server_port": 443,
-      "uuid": "d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02",
-      "network": "xhttp",
+      "uuid": "2ee2a715-d541-416a-8713-d66567448c2e",
+      "network": "grpc",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "reality": {
-          "enabled": true,
-          "public_key": "v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0",
-          "short_id": "72cd47c079c0a3df"
-        }
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-      "server": "node2.onepanel123.ru",
-      "server_port": 2087,
-      "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
-      "network": "ws",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "br1.levikogjgfdd.ir",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "node2.onepanel123.ru",
-        "utls": {
+        "server_name": "yahoo.com",
+        "reality": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/de-vless-ws",
-        "headers": {
-          "Host": "node2.onepanel123.ru"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
@@ -303,19 +269,6 @@
       "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
       "network": "tcp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
-      "server": "91.99.82.11",
-      "server_port": 443,
-      "uuid": "2ee2a715-d541-416a-8713-d66567448c2e",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
     },
     {
       "type": "vless",

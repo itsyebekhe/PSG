@@ -9,7 +9,8 @@ proxies:
   - {"name": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]", "server": "tg.riotvpn.eu", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
   - {"name": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]", "server": "core.noneok.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "340e4de3-144b-49c4-ad72-b49b35713728", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "core.noneok.com", "grpc-opts": {"grpc-service-name": "api.v1.StreamService"}, "reality-opts": {"public-key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs", "short-id": "fde63d9c58210bf9"}}
   - {"name": "🇮🇹 IT | VLESS | @selinc #1 [fast]", "server": "it.feywebsite.ir", "port": 8008, "type": "vless", "skip-cert-verify": true, "uuid": "b91abe1a-80ca-417b-998b-2b542661c16f", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.google.com", "reality-opts": {"public-key": "yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8", "short-id": "5f9a"}}
-  - {"name": "🇺🇸 US | VLESS | @red2ray #1 [fast]", "server": "us20.levikogjgfdd.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "savesafe.run", "reality-opts": {"public-key": "wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8", "short-id": "e4f6a3446ac34a24"}}
+  - {"name": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "crm.3c6.ir", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "18eca719-30b7-4ad0-aa9e-26f73776d214", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "4IKvs8eW0jsPyqg4dwZOrxdMBO7wqNyxANurwYabhgE", "short-id": "42ca3d7d21d32519"}}
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "pl1.nihaovpn.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00506574-3b10-4f7d-9b2f-8afdc5919b93", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pl1.nihaovpn.ru", "reality-opts": {"public-key": "2stsLH56yUXFwc7ICrN111GveMOIrWSDFiUr6XWFhx4", "short-id": "d9622c6fea10c1"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -20,7 +21,8 @@ proxy-groups:
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
       - '🇮🇹 IT | VLESS | @selinc #1 [fast]'
-      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -31,7 +33,8 @@ proxy-groups:
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
       - '🇮🇹 IT | VLESS | @selinc #1 [fast]'
-      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

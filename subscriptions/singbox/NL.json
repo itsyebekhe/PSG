@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇳🇱 NL | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
@@ -64,8 +65,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇳🇱 NL | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]",
@@ -75,6 +77,18 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @orange_vpns #1 [fast]",
+      "server": "193.29.139.249",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "shadowsocks",
@@ -90,7 +104,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [slow]",
+      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
       "server": "crm.3c6.ir",
       "server_port": 2053,
       "uuid": "18eca719-30b7-4ad0-aa9e-26f73776d214",

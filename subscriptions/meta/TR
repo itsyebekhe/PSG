@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "158.94.216.61", "port": 57728, "type": "vless", "skip-cert-verify": true, "uuid": "13efddd3-1a20-49f3-bbbe-f5b530398bb6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.yahoo.com", "reality-opts": {"public-key": "_msWT9DtUixMc55dabeo7IqbWGikrSNz35GkoGllFBM", "short-id": "85436cc1"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

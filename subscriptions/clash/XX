@@ -3,8 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇽🇽 XX | VMESS | @hope_net #1 [fast]", "server": "172.67.138.140", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkws", "headers": {"Host": "ivideos.sbs"}}}
-  - {"name": "🇽🇽 XX | VMESS | @hope_net #2 [fast]", "server": "zula.ir", "port": 2096, "type": "vmess", "skip-cert-verify": true, "uuid": "2f86e97a-1ea0-4221-96cc-12210730e0c9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "kingo.hightechservice.ir"}}}
   - {"name": "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]", "server": "mute-math-d64e.0e503992ad7026.WOrKERs.deV", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/aveiror.com:443/linkvws", "headers": {"Host": "mute-math-d64e.0e503992ad7026.woRKERS.DeV"}}}
   - {"name": "🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]", "server": "104.21.15.212", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkws", "headers": {"Host": "glweidf.sbs"}}}
   - {"name": "🇽🇽 XX | VMESS | @proxy48 #1 [fast]", "server": "172.66.213.38", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "dfbbc8de-8a4f-407d-8069-6de38d83c4e1", "alterId": 0, "cipher": "chacha20-poly1305", "network": "grpc", "tls": true, "grpc-opts": {"grpc-service-name": "WgCmp8p80KDzo64uHE"}}
@@ -16,8 +14,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
-      - '🇽🇽 XX | VMESS | @hope_net #2 [fast]'
       - '🇽🇽 XX | VMESS | @iranvpnet #1 [fast]'
       - '🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
@@ -29,8 +25,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
-      - '🇽🇽 XX | VMESS | @hope_net #2 [fast]'
       - '🇽🇽 XX | VMESS | @iranvpnet #1 [fast]'
       - '🇽🇽 XX | VMESS | @mi_pn_official #1 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'

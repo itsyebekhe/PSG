@@ -56,7 +56,8 @@
         "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -71,7 +72,8 @@
         "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]"
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -189,20 +191,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "us20.levikogjgfdd.ir",
-      "server_port": 443,
-      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
+      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "crm.3c6.ir",
+      "server_port": 2053,
+      "uuid": "18eca719-30b7-4ad0-aa9e-26f73776d214",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "savesafe.run",
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "wx4B5IBeGc_0h6XZW6714G7951zLUYILv6eNRSgPDl8",
-          "short_id": "e4f6a3446ac34a24"
+          "public_key": "4IKvs8eW0jsPyqg4dwZOrxdMBO7wqNyxANurwYabhgE",
+          "short_id": "42ca3d7d21d32519"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
+      "server": "pl1.nihaovpn.ru",
+      "server_port": 443,
+      "uuid": "00506574-3b10-4f7d-9b2f-8afdc5919b93",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl1.nihaovpn.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2stsLH56yUXFwc7ICrN111GveMOIrWSDFiUr6XWFhx4",
+          "short_id": "d9622c6fea10c1"
         }
       }
     },

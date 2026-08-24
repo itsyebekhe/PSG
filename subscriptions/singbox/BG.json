@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
+        "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]"
+        "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
+        "🇧🇬 BG | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,22 +70,46 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "195.123.226.21",
-      "server_port": 443,
-      "uuid": "33851d53-ede0-45f7-9eb8-9aa961f7d200",
-      "network": "ws",
+      "tag": "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
+      "server": "universe.whit3.net",
+      "server_port": 4443,
+      "uuid": "a6cf4b28-ba72-4e8c-90f8-6a884107ab3c",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
+        "server_name": "universe.whit3.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4p9HuPujWxxtdp0GB_cJN42sFnF-woybk26SXLb1qAo",
+          "short_id": "4eb17bfdb000bef0"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
+      "server": "universe.whit3.net",
+      "server_port": 4443,
+      "uuid": "a6cf4b28-ba72-4e8c-90f8-6a884107ab3c",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "universe.whit3.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4p9HuPujWxxtdp0GB_cJN42sFnF-woybk26SXLb1qAo",
+          "short_id": "4eb17bfdb000bef0"
+        }
       }
     },
     {

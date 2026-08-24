@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]", "server": "195.123.226.21", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "33851d53-ede0-45f7-9eb8-9aa961f7d200", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "edge", "ws-opts": {"path": "", "headers": {"Host": "195.123.226.21"}}}
+  - {"name": "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]", "server": "universe.whit3.net", "port": 4443, "type": "vless", "skip-cert-verify": true, "uuid": "a6cf4b28-ba72-4e8c-90f8-6a884107ab3c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "universe.whit3.net", "reality-opts": {"public-key": "4p9HuPujWxxtdp0GB_cJN42sFnF-woybk26SXLb1qAo", "short-id": "4eb17bfdb000bef0"}}
+  - {"name": "🇧🇬 BG | VLESS | @red2ray #1 [fast]", "server": "universe.whit3.net", "port": 4443, "type": "vless", "skip-cert-verify": true, "uuid": "a6cf4b28-ba72-4e8c-90f8-6a884107ab3c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "universe.whit3.net", "reality-opts": {"public-key": "4p9HuPujWxxtdp0GB_cJN42sFnF-woybk26SXLb1qAo", "short-id": "4eb17bfdb000bef0"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇧🇬 BG | VLESS | @free1_vpn #1 [fast]'
+      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇧🇬 BG | VLESS | @free1_vpn #1 [fast]'
+      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

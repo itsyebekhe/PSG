@@ -66,7 +66,7 @@
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
         "🇺🇸 US | VMESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+        "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
         "direct"
       ],
@@ -92,7 +92,7 @@
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
         "🇺🇸 US | VMESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+        "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -409,16 +409,20 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
-      "server": "5.75.150.23",
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
+      "server": "37.32.23.122",
       "server_port": 443,
-      "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
+      "uuid": "d12bc882-43c7-415e-87c5-2a7fdc8371c0",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/websocket/"
+      }
     },
     {
       "type": "vmess",
