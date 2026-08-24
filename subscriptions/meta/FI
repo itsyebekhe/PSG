@@ -5,7 +5,6 @@ log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "85.192.49.151", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "de.servers.gracevpnbuy.com", "reality-opts": {"public-key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500", "short-id": "b91a73752053b039"}}
   - {"name": "🇫🇮 FI | VLESS | @mehrosaboran #1 [fast]", "server": "85.192.49.151", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "de.servers.gracevpnbuy.com", "reality-opts": {"public-key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500", "short-id": "b91a73752053b039"}}
-  - {"name": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]", "server": "95.216.27.15", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "0fbff144-bbed-44c0-972b-3ecb0d5579d6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.google.com", "reality-opts": {"public-key": "-Oj9x6Ts_2S_DdORCDilSpcLJcIYpL67uQ8VBFHL4yk", "short-id": "2606b22a3c3b3971"}}
   - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "81.27.110.79", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "cde8e374-bf71-4a1f-9386-db050bc46190", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
@@ -13,7 +12,6 @@ proxy-groups:
     proxies:
       - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
       - '🇫🇮 FI | VLESS | @mehrosaboran #1 [fast]'
-      - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -21,7 +19,6 @@ proxy-groups:
     proxies:
       - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
       - '🇫🇮 FI | VLESS | @mehrosaboran #1 [fast]'
-      - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

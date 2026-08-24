@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 JP | VLESS | @free1_vpn #1 [fast]",
         "🇯🇵 JP | VLESS | @free4allvpn #1 [fast]",
+        "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
@@ -61,40 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 JP | VLESS | @free1_vpn #1 [fast]",
         "🇯🇵 JP | VLESS | @free4allvpn #1 [fast]",
+        "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 JP | VLESS | @free1_vpn #1 [fast]",
-      "server": "31.76.91.138",
-      "server_port": 2087,
-      "uuid": "309b0ce3-09a8-4883-bfe4-bd56e215be44",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JfuItzJ81sJehx1PbxyliWSJvuBMKoa9ahNgPO3R7R4",
-          "short_id": "c226283c4de5b1ad"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
     },
     {
       "type": "vless",
@@ -115,6 +89,29 @@
           "enabled": true,
           "public_key": "vP8gpoNVFYROBMtlCswj3S7q6ypRdE9VMGdg5KPKFG0",
           "short_id": "232c6f7b520b89"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
+      "server": "45.66.218.187",
+      "server_port": 50159,
+      "uuid": "fdb25e5e-d99a-468c-aa13-0fe9892771b6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBSyMDmBSz4C-brs0GYG6HXNb2CyWANvkBrd8W1GDU0",
+          "short_id": "6b22ad2202d70547"
         }
       }
     },

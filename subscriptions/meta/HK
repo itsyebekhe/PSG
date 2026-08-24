@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇭🇰 HK | VLESS | @free1_vpn #1 [fast]", "server": "128.1.12.164", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e01b5875-0b0b-4056-bbf5-0b0ecdc97937", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "Z41OxiwFrf0VAEv7_qXoEMKSmLJPjEPPJzXpP1s6gGk", "short-id": "977a84fa5512be5a"}}
+  - {"name": "🇭🇰 HK | VLESS | @free1_vpn #1 [medium]", "server": "128.1.12.164", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e01b5875-0b0b-4056-bbf5-0b0ecdc97937", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "Z41OxiwFrf0VAEv7_qXoEMKSmLJPjEPPJzXpP1s6gGk", "short-id": "977a84fa5512be5a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇭🇰 HK | VLESS | @free1_vpn #1 [fast]'
+      - '🇭🇰 HK | VLESS | @free1_vpn #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇭🇰 HK | VLESS | @free1_vpn #1 [fast]'
+      - '🇭🇰 HK | VLESS | @free1_vpn #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
