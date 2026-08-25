@@ -4,6 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "194.93.61.70", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdnjs.com", "reality-opts": {"public-key": "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY", "short-id": "cbb0a5c1dc905505"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "plot.whit3.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "32bf865b-e98c-494d-bcb6-23c3cde2429c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "plot.whit3.net", "reality-opts": {"public-key": "Hcg9T_s9LuWkVQW14TzIPuyZio32WbA6irp782TUXnM", "short-id": "0138875bd7d8725a"}}
   - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "neth6.lckdwn.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "14da77da-4fb3-4e49-ac4f-7881ea19b267", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "neth6.lckdwn.ru"}}}
   - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]", "server": "vip-nl-1.hkd4fwmg.vip", "port": 31883, "type": "vless", "skip-cert-verify": true, "uuid": "20593145-d975-46f9-9bad-d9f3c8e2d899", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "vip-nl-1.hkd4fwmg.vip"}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
@@ -12,6 +13,7 @@ proxy-groups:
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
@@ -20,6 +22,7 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
       - '🇳🇱 NL | VLESS | @NamiraConfigs #2 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
