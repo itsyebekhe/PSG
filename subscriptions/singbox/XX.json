@@ -92,6 +92,8 @@
         "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -121,6 +123,7 @@
         "🇽🇽 XX | VLESS | @novinology #4 [fast]",
         "🇽🇽 XX | VLESS | @novinology #5 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
+        "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #2 [fast]",
@@ -182,6 +185,7 @@
         "🇽🇽 XX | VMESS | @manstervpn #2 [fast]",
         "🇽🇽 XX | VLESS | @manstervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @manstervpn #2 [fast]",
+        "🇽🇽 XX | VLESS | @manstervpn #3 [fast]",
         "🇽🇽 XX | VLESS | @goldenshiinevpn #1 [fast]",
         "🇽🇽 XX | VLESS | @goldenshiinevpn #2 [fast]",
         "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]",
@@ -236,6 +240,8 @@
         "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -265,6 +271,7 @@
         "🇽🇽 XX | VLESS | @novinology #4 [fast]",
         "🇽🇽 XX | VLESS | @novinology #5 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
+        "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #2 [fast]",
@@ -326,6 +333,7 @@
         "🇽🇽 XX | VMESS | @manstervpn #2 [fast]",
         "🇽🇽 XX | VLESS | @manstervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @manstervpn #2 [fast]",
+        "🇽🇽 XX | VLESS | @manstervpn #3 [fast]",
         "🇽🇽 XX | VLESS | @goldenshiinevpn #1 [fast]",
         "🇽🇽 XX | VLESS | @goldenshiinevpn #2 [fast]",
         "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]",
@@ -982,64 +990,119 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-      "server": "198.41.209.222",
-      "server_port": 80,
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
-      "network": "ws",
+      "server": "162.159.3.239",
+      "server_port": 2087,
+      "uuid": "06430296-e070-4048-ba38-3662c09e52bc",
+      "network": "grpc",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "finland.hiytocloud.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "us3.rtacg.com"
-        }
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
-      "server": "104.17.161.117",
-      "server_port": 80,
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+      "server": "104.18.86.70",
+      "server_port": 8080,
+      "uuid": "406d0357-ecd8-46ce-afa8-22b0e139348c",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "join-to.vmessorg.Community."
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
-          "Host": "us3.rtacg.com"
+          "Host": "join-to.vmessorg.Community."
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
-      "server": "104.16.253.201",
+      "server": "104.17.167.171",
       "server_port": 80,
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+      "uuid": "7d96f544-c496-41cf-dd61-337f0aff062a",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "kr1.175852.xyz"
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/abcde",
         "headers": {
-          "Host": "us3.rtacg.com"
+          "Host": "kr1.175852.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
-      "server": "104.17.54.221",
-      "server_port": 80,
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+      "server": "104.19.221.177",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev"
+      },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "us3.rtacg.com"
+          "Host": "mmdv2.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
+      "server": "172.67.73.163",
+      "server_port": 80,
+      "uuid": "91d02941-4711-42ce-93c7-ce2bad504630",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN",
+        "headers": {
+          "Host": "PanelDghSGdgh54.com.net.ir.bargo.lol."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
+      "server": "104.21.69.44",
+      "server_port": 443,
+      "uuid": "74d415a2-4876-4090-9be4-59a1823b9b37",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "my.halachicago.com.",
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=1024",
+        "headers": {
+          "Host": "my.halachicago.com."
         }
       }
     },
@@ -1661,6 +1724,34 @@
         "path": "/@Artemis_vpn",
         "headers": {
           "Host": "free-02.artemis-03.sbs"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "b2n.ir",
+      "server_port": 2083,
+      "uuid": "b8e0eb1a-9967-4753-b278-6ef1226dd195",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s.dpiccolo.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hero",
+        "headers": {
+          "Host": "s.dpiccolo.ir"
         }
       }
     },
@@ -2848,6 +2939,26 @@
       "uuid": "155da7c1-4d5f-4479-a214-d2d1414d07f6",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @manstervpn #3 [fast]",
+      "server": "172.66.47.67",
+      "server_port": 443,
+      "uuid": "782efefc-aac2-a7f2-6e2b-e42f7bc5d75a",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wwwd7e1909f3a7e4477.jostar-data.nl",
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "vless",

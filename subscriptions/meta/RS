@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇸 RS | VLESS | @outline_ir #1 [fast]", "server": "150.40.126.22", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs4.univesalsrv.com", "grpc-opts": {"grpc-service-name": "media.v1.StreamService"}, "reality-opts": {"public-key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs", "short-id": "861ac7d66953e55f"}}
+  - {"name": "🇷🇸 RS | VLESS | @outline_ir #1 [medium]", "server": "150.40.126.22", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs4.univesalsrv.com", "grpc-opts": {"grpc-service-name": "media.v1.StreamService"}, "reality-opts": {"public-key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs", "short-id": "861ac7d66953e55f"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇸 RS | VLESS | @outline_ir #1 [fast]'
+      - '🇷🇸 RS | VLESS | @outline_ir #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇸 RS | VLESS | @outline_ir #1 [fast]'
+      - '🇷🇸 RS | VLESS | @outline_ir #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

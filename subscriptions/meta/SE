@@ -3,6 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇸🇪 SE | VLESS | @outline_ir #1 [medium]", "server": "sw.crsmaps.com", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "2f14c4d7-5d16-4914-918c-3a6a54576ccb", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "sw.crsmaps.com", "grpc-opts": {"grpc-service-name": "sw.crsmaps.com"}, "reality-opts": {"public-key": "-jcUzfOTPLc80yQX1ft1liPFOTsTYvzS6IG0QENc9yg", "short-id": "22d4b2747bc9e1"}}
   - {"name": "🇸🇪 SE | VLESS | @minovpnch #1 [fast]", "server": "185.146.173.200", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "f8d2a4a1-5ccb-49dc-a1fb-36904313c2e4", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "www.speedtest.net.B.lightning-6.LiVE."}}}
   - {"name": "🇸🇪 SE | VLESS | @deli_servers #1 [fast]", "server": "185.146.173.59", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-deli-servers", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "kia来自我们团队的爱01我爱熟食店lovedeli.speedtest.net.gOogle.com.Arvancloud.ir.realKiaa.ninjA."}}}
   - {"name": "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]", "server": "185.146.173.68", "port": 2095, "type": "vless", "skip-cert-verify": true, "uuid": "-DIGIV2RAY-", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "QUENTIN--_--DiG.radiotehran.org."}}}
@@ -24,6 +25,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇸🇪 SE | VLESS | @outline_ir #1 [medium]'
       - '🇸🇪 SE | VLESS | @minovpnch #1 [fast]'
       - '🇸🇪 SE | VLESS | @deli_servers #1 [fast]'
       - '🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]'
@@ -45,6 +47,7 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇸🇪 SE | VLESS | @outline_ir #1 [medium]'
       - '🇸🇪 SE | VLESS | @minovpnch #1 [fast]'
       - '🇸🇪 SE | VLESS | @deli_servers #1 [fast]'
       - '🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]'
