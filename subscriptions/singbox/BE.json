@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTFQ=
+//profile-title: base64:UFNHIHwgQkU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
+        "🇧🇪 BE | SS | @prrofile_purple #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT | VLESS | @hope_net #1 [fast]"
+        "🇧🇪 BE | SS | @prrofile_purple #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,29 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
-      "server": "86.38.214.142",
-      "server_port": 2096,
-      "uuid": "1149be91-5a4f-47de-995f-66f8d7d64498",
-      "network": "ws",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇧🇪 BE | SS | @prrofile_purple #1 [fast]",
+      "server": "185.210.217.94",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XF0klw7870vXn3uQIxe19Q",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "De14.SiMaNsAnAt.Ir.",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "De14.SiMaNsAnAt.Ir."
-        }
+        "enabled": true
       }
     },
     {

@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]",
         "🇫🇮 FI | VLESS | @bored_vpn #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
@@ -61,26 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]",
         "🇫🇮 FI | VLESS | @bored_vpn #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "fast.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE",
-      "tls": {
-        "enabled": true,
-        "server_name": "fast.wwwinternetvideo.click",
-        "insecure": true
-      }
     },
     {
       "type": "vless",
@@ -102,6 +90,28 @@
           "enabled": true,
           "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
           "short_id": "b91a73752053b039"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "31.76.80.69",
+      "server_port": 443,
+      "uuid": "8975546a-375c-4966-8064-19fc0f66f30a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk",
+          "short_id": "5caa2ef81132c306"
         }
       }
     },

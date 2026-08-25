@@ -50,6 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
+        "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
         "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
@@ -60,6 +62,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
+        "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
         "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
@@ -67,6 +71,41 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
+      "server": "162.35.231.31",
+      "server_port": 443,
+      "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "162.35.231.31.sslip.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI",
+          "short_id": "f41bc0b00ca1a978"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+      "server": "217.60.249.112",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "0eC4ZBvStOgQEzTpCYjWN5",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "hysteria2",

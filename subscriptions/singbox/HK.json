@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇭🇰 HK | VLESS | @free1_vpn #1 [fast]",
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]",
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇭🇰 HK | VLESS | @free1_vpn #1 [fast]"
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]",
+        "🇭🇰 HK | VMESS | @outlinereleasedkey #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +70,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇭🇰 HK | VMESS | @outlinereleasedkey #1 [medium]",
       "server": "drbkg16egf3fzlm3.v.3dns.vip",
       "server_port": 443,
       "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
@@ -93,21 +93,26 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 HK | VLESS | @free1_vpn #1 [fast]",
-      "server": "128.1.12.164",
+      "type": "vmess",
+      "tag": "🇭🇰 HK | VMESS | @outlinereleasedkey #2 [medium]",
+      "server": "47.83.19.148",
       "server_port": 443,
-      "uuid": "e01b5875-0b0b-4056-bbf5-0b0ecdc97937",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "Z41OxiwFrf0VAEv7_qXoEMKSmLJPjEPPJzXpP1s6gGk",
-          "short_id": "977a84fa5512be5a"
+        "server_name": "6JDvArazgU3qQR6Q.v.3dns.vip"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
         }
       }
     },
