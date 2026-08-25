@@ -7,7 +7,7 @@ proxies:
   - {"name": "🇺🇸 US | VMESS | @beshkan #1 [fast]", "server": "165.140.216.141", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]", "server": "142.132.163.200", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "142.132.163.200"}}}
   - {"name": "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]", "server": "37.32.23.122", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d12bc882-43c7-415e-87c5-2a7fdc8371c0", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/websocket/", "headers": {"Host": "37.32.23.122"}}}
-  - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -16,7 +16,7 @@ proxy-groups:
       - '🇺🇸 US | VMESS | @beshkan #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇮🇷 IR | VMESS | @khoneproxy #1 [medium]'
-      - '🇩🇪 DE | VMESS | @magickey_shop #1 [medium]'
+      - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -25,7 +25,7 @@ proxy-groups:
       - '🇺🇸 US | VMESS | @beshkan #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇮🇷 IR | VMESS | @khoneproxy #1 [medium]'
-      - '🇩🇪 DE | VMESS | @magickey_shop #1 [medium]'
+      - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

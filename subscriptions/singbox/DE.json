@@ -50,6 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @mehrosaboran #1 [slow]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | HY2 | @outlinereleasedkey #1 [fast]",
@@ -57,9 +59,12 @@
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #4 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #2 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
@@ -67,7 +72,7 @@
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -76,6 +81,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @mehrosaboran #1 [slow]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | HY2 | @outlinereleasedkey #1 [fast]",
@@ -83,9 +90,12 @@
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #4 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #2 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
@@ -93,12 +103,57 @@
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+      "server": "45.155.70.123",
+      "server_port": 8443,
+      "uuid": "f82332b2-dc8c-eac4-ac12-f276e37e278a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s1.test.anti-zapret.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY",
+          "short_id": "58fbcddfaae3ade9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #1 [slow]",
+      "server": "103.109.234.129",
+      "server_port": 443,
+      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dep.opngtr.nl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gA6-Fj5hl4x-HOtbCcYqD99qsml4ActHRmw-VTkFU14",
+          "short_id": "7d6b6b7a606c21cf"
+        }
+      }
     },
     {
       "type": "vless",
@@ -212,7 +267,43 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @privatevpns #1 [fast]",
+      "server": "63.188.101.151",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @privatevpns #2 [fast]",
+      "server": "18.198.221.49",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "63.188.101.151",
+      "server_port": 22224,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "63.188.101.151",
+      "server_port": 22223,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
       "server": "194.31.223.87",
       "server_port": 3443,
       "uuid": "8fe31772-a4b7-4a70-9fa2-34124c7284ca",
@@ -229,34 +320,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #4 [fast]",
       "server": "18.198.221.49",
-      "server_port": 22223,
+      "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
-      "server": "45.134.38.204",
-      "server_port": 8052,
-      "uuid": "a88e2744-3555-4a0a-9635-0aae23e038f8",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hjJ1VN2xwcl1n7vrwvOspB2NFWrXNySUNPexutOVvAM",
-          "short_id": "84c94774c54ba6"
-        }
-      }
     },
     {
       "type": "vless",
@@ -374,7 +443,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
       "server": "168.119.174.229",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",

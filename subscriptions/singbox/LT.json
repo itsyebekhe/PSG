@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUEw=
+//profile-title: base64:UFNHIHwgTFQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
+        "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]"
+        "🇱🇹 LT | VLESS | @hope_net #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,23 +68,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
-      "server": "83.168.71.216",
-      "server_port": 443,
-      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
-      "network": "tcp",
+      "tag": "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
+      "server": "86.38.214.142",
+      "server_port": 2096,
+      "uuid": "1149be91-5a4f-47de-995f-66f8d7d64498",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ads.x5.ru",
+        "server_name": "De14.SiMaNsAnAt.Ir.",
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-          "short_id": "2f49bccf11150ef2"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "De14.SiMaNsAnAt.Ir."
         }
       }
     },
