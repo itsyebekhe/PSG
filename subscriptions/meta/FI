@@ -3,22 +3,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @bored_vpn #1 [medium]", "server": "85.192.49.151", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "de.servers.gracevpnbuy.com", "reality-opts": {"public-key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500", "short-id": "b91a73752053b039"}}
-  - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [slow]", "server": "31.76.80.69", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8975546a-375c-4966-8064-19fc0f66f30a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.amd.com", "reality-opts": {"public-key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk", "short-id": "5caa2ef81132c306"}}
+  - {"name": "🇫🇮 FI | VLESS | @bored_vpn #1 [fast]", "server": "85.192.49.151", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "de.servers.gracevpnbuy.com", "reality-opts": {"public-key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500", "short-id": "b91a73752053b039"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "77.110.108.231", "port": 8898, "type": "vless", "skip-cert-verify": true, "uuid": "b91abe1a-80ca-417b-998b-2b542661c16f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.googleapis.com", "reality-opts": {"public-key": "y2ciDMmaLyu1U7wEG7Wi9buO91wWHnRtWfPLGjSZHC8", "short-id": "6633e065744286"}}
+  - {"name": "🇫🇮 FI | VMESS | @red2ray #1 [fast]", "server": "65.109.211.136", "port": 33120, "type": "vmess", "skip-cert-verify": true, "uuid": "d9c919c2-872e-429d-a680-1e6c6bfe681b", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "81.27.110.79", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "cde8e374-bf71-4a1f-9386-db050bc46190", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @bored_vpn #1 [medium]'
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [slow]'
+      - '🇫🇮 FI | VLESS | @bored_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
+      - '🇫🇮 FI | VMESS | @red2ray #1 [fast]'
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @bored_vpn #1 [medium]'
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [slow]'
+      - '🇫🇮 FI | VLESS | @bored_vpn #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
+      - '🇫🇮 FI | VMESS | @red2ray #1 [fast]'
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

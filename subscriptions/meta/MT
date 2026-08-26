@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇲🇹 MT | VLESS | @netmellianti #1 [fast]", "server": "cdn.devmixa.ir", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "6d4cce6a-dbc6-43af-9146-067847483fce", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇲🇹 MT | VLESS | @red2ray #1 [fast]", "server": "cdn.devmixa.ir", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "625bc320-a51c-446b-a006-ac1c1d8d507e", "network": "httpupgrade", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇲🇹 MT | VLESS | @netmellianti #1 [fast]'
+      - '🇲🇹 MT | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇲🇹 MT | VLESS | @netmellianti #1 [fast]'
+      - '🇲🇹 MT | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

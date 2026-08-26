@@ -53,9 +53,12 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
-        "🇸🇪 SE | VLESS | @outline_ir #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+        "🇸🇪 SE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,9 +70,12 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
-        "🇸🇪 SE | VLESS | @outline_ir #1 [medium]"
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+        "🇸🇪 SE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -117,6 +123,30 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+      "server": "holand.zulacdn.ir",
+      "server_port": 50581,
+      "uuid": "13474472-ab43-4749-be44-769321b0d683",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rY0p9bslbo1BOCOy-KL3V7sVPyp-eJv0IR6NxysFtW8",
+          "short_id": "a8d541d18fe72bc5"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
       "server": "yt.orpheous.ru",
       "server_port": 443,
@@ -136,6 +166,32 @@
           "public_key": "9rdvkUGJyNbRvsB0Pp06h1URq9AHDPRtH9-wmNB1-j4",
           "short_id": "e4aa362b5f9d07d7"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+      "server": "core.noneok.com",
+      "server_port": 443,
+      "uuid": "340e4de3-144b-49c4-ad72-b49b35713728",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "core.noneok.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs",
+          "short_id": "fde63d9c58210bf9"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.StreamService"
       }
     },
     {
@@ -162,7 +218,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+      "server": "nt02.hirbilon.net",
+      "server_port": 443,
+      "uuid": "c72997ae-c6e1-4ead-8ca1-dd39dcde8384",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nt02.hirbilon.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7ktX54khBm6yULcC-MYNj_qElBu6hwmcAsJjP5UcXHk",
+          "short_id": "05f6a5418c2a6865"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @outline_ir #1 [fast]",
       "server": "sw.crsmaps.com",
       "server_port": 2053,
       "uuid": "2f14c4d7-5d16-4914-918c-3a6a54576ccb",

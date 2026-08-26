@@ -50,11 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 CA | SS | @outlinereleasedkey #1 [fast]",
+        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
-        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
+        "🇨🇦 CA | SS | @outline_ir #1 [fast]",
         "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
         "🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]",
         "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]",
@@ -66,11 +66,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 CA | SS | @outlinereleasedkey #1 [fast]",
+        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
-        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
+        "🇨🇦 CA | SS | @outline_ir #1 [fast]",
         "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
         "🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]",
         "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]"
@@ -81,15 +81,19 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 CA | SS | @outlinereleasedkey #1 [fast]",
-      "server": "154.127.56.212",
-      "server_port": 65443,
-      "method": "aes-256-cfb",
-      "password": "7eadc6dbe2ae",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @novinology #1 [fast]",
+      "server": "104.31.16.65",
+      "server_port": 2095,
+      "uuid": "38ace213-5184-477b-ac3e-d800d0cf3cd9",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "de1.vlessx.xyz"
+        }
       }
     },
     {
@@ -177,19 +181,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇦 CA | VLESS | @novinology #1 [fast]",
-      "server": "104.31.16.65",
-      "server_port": 2095,
-      "uuid": "38ace213-5184-477b-ac3e-d800d0cf3cd9",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "de1.vlessx.xyz"
-        }
+      "type": "shadowsocks",
+      "tag": "🇨🇦 CA | SS | @outline_ir #1 [fast]",
+      "server": "15.235.75.71",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "FD3rCuOsxOay",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
