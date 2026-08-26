@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -57,7 +58,7 @@
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
-        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
+        "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
@@ -71,6 +72,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -78,7 +80,7 @@
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
-        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
+        "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
@@ -89,6 +91,30 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+      "server": "holand.zulacdn.ir",
+      "server_port": 50581,
+      "uuid": "13474472-ab43-4749-be44-769321b0d683",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rY0p9bslbo1BOCOy-KL3V7sVPyp-eJv0IR6NxysFtW8",
+          "short_id": "a8d541d18fe72bc5"
+        }
+      }
     },
     {
       "type": "vless",
@@ -199,7 +225,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
+      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
       "server": "tt.hsrdnr.ir",
       "server_port": 2044,
       "method": "chacha20-ietf-poly1305",
