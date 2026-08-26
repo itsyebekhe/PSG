@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇬🇧 GB | VLESS | @hope_net #1 [fast]", "server": "217.163.76.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "hkh.ylks.link", "ws-opts": {"path": "", "headers": {"Host": "217.163.76.55"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
