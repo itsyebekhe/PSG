@@ -4,8 +4,9 @@ skip-proxy = 127.0.0.1, localhost, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 19
 dns-server = 8.8.8.8, 8.8.4.4
 [Proxy]
 🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast] = vmess, 47.83.19.148, 443, username = f23bb427-c1f9-4373-876c-2f43e9f790f3, ws = true, tls = true, ws-path = /ws-vmess, ws-headers = Host:"6JDvArazgU3qQR6Q.v.3dns.vip"
+🇭🇰 HK | VMESS | @outlinereleasedkey #2 [fast] = vmess, drbkg16egf3fzlm3.v.3dns.vip, 443, username = f23bb427-c1f9-4373-876c-2f43e9f790f3, ws = true, tls = true, ws-path = /ws-vmess, ws-headers = Host:"DrBKg16eGf3FZlM3.v.3dns.vip"
 [Proxy Group]
-PROXY = select, 🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast]
+PROXY = select, 🇭🇰 HK | VMESS | @outlinereleasedkey #1 [fast], 🇭🇰 HK | VMESS | @outlinereleasedkey #2 [fast]
 [Rule]
 GEOSITE,category-ads-all,REJECT
 GEOIP,LAN,DIRECT

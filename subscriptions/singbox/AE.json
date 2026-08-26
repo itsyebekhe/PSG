@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [slow]",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]",
         "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
@@ -62,8 +64,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [slow]",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]",
         "🇦🇪 AE | HY2 | @netfreedom0 #1 [medium]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
@@ -74,7 +78,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [slow]",
+      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
       "server": "162.35.231.31",
       "server_port": 443,
       "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
@@ -106,6 +110,34 @@
       "tls": {
         "enabled": true
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "162.35.231.130",
+      "server_port": 443,
+      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "savesafe.co",
+        "reality": {
+          "enabled": true,
+          "public_key": "6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI",
+          "short_id": "f63805c3ecc7a483"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "germanndnew.mamadhpbot.ir",
+      "server_port": 50118,
+      "uuid": "93ee032f-b67f-4cac-a239-da1295aec528",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "hysteria2",

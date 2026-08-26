@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,22 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "test.soundfiy.ir",
+      "server_port": 31579,
+      "uuid": "b7f48f17-98db-4379-9b48-943ea54346b9",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

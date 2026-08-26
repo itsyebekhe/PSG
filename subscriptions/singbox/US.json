@@ -54,14 +54,16 @@
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇺🇸 US | SS | @outlinereleasedkey #1 [medium]",
+        "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
+        "🇺🇸 US | VMESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -103,14 +105,16 @@
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇺🇸 US | SS | @outlinereleasedkey #1 [medium]",
+        "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
+        "🇺🇸 US | VMESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -238,7 +242,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
       "server": "autodiscover.fuzzyaytor.cyou",
       "server_port": 42982,
       "method": "chacha20-ietf-poly1305",
@@ -350,19 +354,33 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @beshkan #1 [fast]",
+      "server": "67.220.95.3",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
-      "server": "104.254.140.126",
-      "server_port": 80,
-      "uuid": "bb2a93b9-2f48-4c3a-9355-c044caa70511",
+      "server": "69.84.182.90",
+      "server_port": 443,
+      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "kkh.ylks.link"
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "speedtest.net.xn--mgbfubi1jl.pinocchio1.ir."
-        }
+        "path": "/blue"
       }
     },
     {
@@ -387,6 +405,28 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "usvip.soundfiy.ir",
+      "server_port": 3389,
+      "uuid": "aaab254f-a9bf-4c57-96a0-50f4269ab784",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fJgfoeTonZ3FfIXETWnn65nJeuioFkRcwlqFzwlAlwU",
+          "short_id": "25e1eaeece23a4ca"
+        }
       }
     },
     {

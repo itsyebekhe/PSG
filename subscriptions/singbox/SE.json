@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
-        "🇸🇪 SE | VLESS | @outline_ir #1 [medium]",
+        "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -77,8 +76,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
-        "🇸🇪 SE | VLESS | @outline_ir #1 [medium]",
+        "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -104,51 +102,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
-      "server": "sw.volnalink.uk",
-      "server_port": 2083,
-      "uuid": "4f8efa61-96db-1391-b134-9ce844e31228",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
+      "server": "185.146.173.37",
+      "server_port": 2095,
+      "uuid": "feb7b2e8-7abc-4ada-96fc-d2fdcc369bbb",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.booking.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA",
-          "short_id": "b4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @outline_ir #1 [medium]",
-      "server": "sw.crsmaps.com",
-      "server_port": 2053,
-      "uuid": "2f14c4d7-5d16-4914-918c-3a6a54576ccb",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "sw.crsmaps.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-jcUzfOTPLc80yQX1ft1liPFOTsTYvzS6IG0QENc9yg",
-          "short_id": "22d4b2747bc9e1"
-        }
-      },
       "transport": {
-        "type": "grpc",
-        "service_name": "sw.crsmaps.com"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "V2ray-_-_-_-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com."
+        }
       }
     },
     {

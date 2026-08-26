@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇷🇴 RO | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇴 RO | VLESS | @free1_vpn #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO | VLESS | @free1_vpn #1 [fast]"
+        "🇷🇴 RO | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇴 RO | VLESS | @free1_vpn #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,6 +71,29 @@
     {
       "type": "vless",
       "tag": "🇷🇴 RO | VLESS | @free1_vpn #1 [fast]",
+      "server": "103.126.50.203",
+      "server_port": 443,
+      "uuid": "76f6b7fe-5de8-4637-87a0-6ddd33d67b3e",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ro.getvlessvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xp7g5asMyVx4aI7vEwfZZPrpd57izUvnNzAOpBs4mh0",
+          "short_id": "b9f8f9772217538f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO | VLESS | @free1_vpn #2 [fast]",
       "server": "103.126.50.203",
       "server_port": 443,
       "uuid": "76f6b7fe-5de8-4637-87a0-6ddd33d67b3e",

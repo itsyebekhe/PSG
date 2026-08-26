@@ -50,7 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
+        "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
@@ -60,7 +62,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
+        "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -70,7 +74,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "s1.orangesms.ir",
+      "server_port": 3389,
+      "uuid": "aaab254f-a9bf-4c57-96a0-50f4269ab784",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fJgfoeTonZ3FfIXETWnn65nJeuioFkRcwlqFzwlAlwU",
+          "short_id": "25e1eaeece23a4ca"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
       "server": "31.76.80.69",
       "server_port": 443,
       "uuid": "8975546a-375c-4966-8064-19fc0f66f30a",
@@ -87,6 +113,28 @@
           "enabled": true,
           "public_key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk",
           "short_id": "5caa2ef81132c306"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @outline_ir #2 [fast]",
+      "server": "31.76.80.69",
+      "server_port": 2083,
+      "uuid": "8975546a-375c-4966-8064-19fc0f66f30a",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk",
+          "short_id": "29b21343ab4d"
         }
       }
     },
