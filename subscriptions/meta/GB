@@ -4,16 +4,28 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "51.24.175.55", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "18.168.171.125", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "18.168.171.125", "port": 22224, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #2 [fast]", "server": "18.168.171.125", "port": 22223, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #3 [fast]", "server": "18.168.171.125", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #3 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #3 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

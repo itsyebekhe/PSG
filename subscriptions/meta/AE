@@ -4,21 +4,18 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]", "server": "162.35.231.31", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "419f25c1-bc35-412e-93fb-258efee859b5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "162.35.231.31.sslip.io", "reality-opts": {"public-key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI", "short-id": "f41bc0b00ca1a978"}}
-  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [fast]", "server": "162.35.231.130", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "savesafe.co", "reality-opts": {"public-key": "6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI", "short-id": "f63805c3ecc7a483"}}
   - {"name": "🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]", "server": "germanndnew.mamadhpbot.ir", "port": 50118, "type": "vless", "skip-cert-verify": true, "uuid": "93ee032f-b67f-4cac-a239-da1295aec528", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇪 AE | VLESS | @orange_vpns #1 [fast]'
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
       - '🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇪 AE | VLESS | @orange_vpns #1 [fast]'
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
       - '🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

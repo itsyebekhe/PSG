@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "test.soundfiy.ir", "port": 31579, "type": "vless", "skip-cert-verify": true, "uuid": "b7f48f17-98db-4379-9b48-943ea54346b9", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]", "server": "turk.mamadhpbot.ir", "port": 50118, "type": "vless", "skip-cert-verify": true, "uuid": "93ee032f-b67f-4cac-a239-da1295aec528", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
+  - {"name": "🇸🇬 SG | VLESS | @hope_net #1 [fast]", "server": "206.238.237.151", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "hkh.ylks.link", "ws-opts": {"path": "", "headers": {"Host": "206.238.237.151"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
+      - '🇸🇬 SG | VLESS | @hope_net #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
+      - '🇸🇬 SG | VLESS | @hope_net #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
