@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇴 NO | VLESS | @outline_ir #1 [fast]", "server": "151.242.169.44", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3e5cc22b-a471-412d-bf84-6da9c929a0d9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "frantax.my3cx.de", "reality-opts": {"public-key": "oXYB-DXrI08UVBRFq8MERP36betSSd7Yb6MLN88F2R4", "short-id": "f6b5862c1f73ab80"}}
+  - {"name": "🇳🇴 NO | VLESS | @outline_ir #1 [medium]", "server": "151.242.169.44", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3e5cc22b-a471-412d-bf84-6da9c929a0d9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "frantax.my3cx.de", "reality-opts": {"public-key": "oXYB-DXrI08UVBRFq8MERP36betSSd7Yb6MLN88F2R4", "short-id": "f6b5862c1f73ab80"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇳🇴 NO | VLESS | @outline_ir #1 [fast]'
+      - '🇳🇴 NO | VLESS | @outline_ir #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇳🇴 NO | VLESS | @outline_ir #1 [fast]'
+      - '🇳🇴 NO | VLESS | @outline_ir #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

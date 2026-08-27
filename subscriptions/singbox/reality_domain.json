@@ -53,10 +53,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,10 +68,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
+        "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
+        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -119,7 +119,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
       "server": "yt.orpheous.ru",
       "server_port": 443,
       "uuid": "00ca2ff9-c6a1-48e2-812d-2b15f7b6c3a5",
@@ -142,6 +142,51 @@
     },
     {
       "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+      "server": "tr.alertyagency.com",
+      "server_port": 443,
+      "uuid": "a704443d-655e-4d9f-8ce6-12eeb17a9a08",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DAdWhCSXRRcho_XopxBKq2-KDupbSY_i2r-FJCy58kY",
+          "short_id": "5a3874f1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @selinc #1 [fast]",
+      "server": "it.feywebsite.ir",
+      "server_port": 8008,
+      "uuid": "b91abe1a-80ca-417b-998b-2b542661c16f",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8",
+          "short_id": "5f9a"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
       "server": "node-fra01.rkitman.ru",
       "server_port": 443,
@@ -156,50 +201,6 @@
           "enabled": true,
           "public_key": "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU",
           "short_id": "88d9dc52ef39c8bd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "usvip.soundfiy.ir",
-      "server_port": 3389,
-      "uuid": "aaab254f-a9bf-4c57-96a0-50f4269ab784",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fJgfoeTonZ3FfIXETWnn65nJeuioFkRcwlqFzwlAlwU",
-          "short_id": "25e1eaeece23a4ca"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-      "server": "s1.orangesms.ir",
-      "server_port": 3389,
-      "uuid": "aaab254f-a9bf-4c57-96a0-50f4269ab784",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fJgfoeTonZ3FfIXETWnn65nJeuioFkRcwlqFzwlAlwU",
-          "short_id": "25e1eaeece23a4ca"
         }
       }
     },

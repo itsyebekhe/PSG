@@ -55,8 +55,9 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
@@ -76,8 +77,9 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #2 [fast]",
@@ -162,6 +164,15 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+      "server": "tamin.ir",
+      "server_port": 80,
+      "uuid": "aa5e25fc-c7d7-4e6e-b7f7-105a35c0175a",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
       "server": "parspack.com",
       "server_port": 443,
@@ -190,12 +201,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
-      "server": "tamin.ir",
-      "server_port": 80,
-      "uuid": "aa5e25fc-c7d7-4e6e-b7f7-105a35c0175a",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
+      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+      "server": "s4.zynetraq.ir",
+      "server_port": 2087,
+      "uuid": "a5335530-af41-4a11-5a72-082783e3d565",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s4.zynetraq.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "shadowsocks",
