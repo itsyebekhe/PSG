@@ -50,9 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+        "🇫🇷 FR | SS | @netfreedom0 #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -64,9 +65,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+        "🇫🇷 FR | SS | @netfreedom0 #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -78,30 +80,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-      "server": "188.130.207.202",
-      "server_port": 443,
-      "uuid": "_id_telegram_MimiTdi",
-      "network": "ws",
+      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "62.210.24.143",
+      "server_port": 32202,
+      "uuid": "28148be2-61a7-4f36-8adb-030cc9f82bd0",
+      "network": "xhttp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=1024",
-        "headers": {
-          "Host": "play.google.com"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-      "server": "51.255.13.232",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "BqnqToih0PbU",
-      "network": "tcp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc",
+          "short_id": "f57d8f26"
+        }
       }
     },
     {
@@ -123,6 +119,34 @@
         "headers": {
           "Host": "sub.mot.ip-ddns.com"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
+      "server": "188.130.207.202",
+      "server_port": 443,
+      "uuid": "_id_telegram_MimiTdi",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=1024",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @netfreedom0 #1 [fast]",
+      "server": "51.255.13.232",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "BqnqToih0PbU",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

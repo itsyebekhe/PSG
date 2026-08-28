@@ -54,7 +54,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇮🇹 IT | VLESS | @selinc #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,7 +69,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇮🇹 IT | VLESS | @selinc #1 [fast]"
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -138,23 +142,73 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @selinc #1 [fast]",
-      "server": "it.feywebsite.ir",
-      "server_port": 8008,
-      "uuid": "b91abe1a-80ca-417b-998b-2b542661c16f",
-      "network": "xhttp",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+      "server": "r.telewebion.ir.varzesh3.com.de",
+      "server_port": 443,
+      "uuid": "edae0c5c-6979-44ba-b82b-1575cb5804d6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+      "server": "rs2.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs2.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE",
+          "short_id": "1469af2040b7c323"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
+      "server": "tr.alertyagency.com",
+      "server_port": 443,
+      "uuid": "a704443d-655e-4d9f-8ce6-12eeb17a9a08",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8",
-          "short_id": "5f9a"
+          "public_key": "DAdWhCSXRRcho_XopxBKq2-KDupbSY_i2r-FJCy58kY",
+          "short_id": "5a3874f1"
         }
       }
     },

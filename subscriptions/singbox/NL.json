@@ -52,10 +52,12 @@
         "auto",
         "🇳🇱 NL | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #2 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -69,10 +71,12 @@
       "outbounds": [
         "🇳🇱 NL | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #2 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
@@ -107,26 +111,27 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-      "server": "194.93.61.95",
-      "server_port": 443,
-      "uuid": "d11613a1-2e1f-4209-a275-aabd986b7ad1",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
+      "server": "193.168.199.192",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "YzYwZ",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "cdnjs.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY",
-          "short_id": "58fbcddfaae3ade9"
-        }
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @free1_vpn #2 [fast]",
+      "server": "217.23.13.210",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Lo1q87FqgIGUJ7k1NFoF1w",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
@@ -182,6 +187,18 @@
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+      "server": "193.29.139.234",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4a2rfixophdjffa8KVA4Aa",
       "network": "tcp",
       "tls": {
         "enabled": true
