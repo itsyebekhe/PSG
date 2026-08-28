@@ -77,7 +77,6 @@
         "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
         "🇽🇽 XX | VLESS | @netmellianti #3 [fast]",
-        "🇽🇽 XX | VLESS | @netmellianti #4 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
@@ -86,6 +85,7 @@
         "🇽🇽 XX | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @ai_duet #2 [fast]",
         "🇽🇽 XX | VLESS | @ai_duet #3 [fast]",
+        "🇽🇽 XX | VLESS | @ai_duet #4 [fast]",
         "🇽🇽 XX | VLESS | @novinology #1 [fast]",
         "🇽🇽 XX | VLESS | @novinology #2 [fast]",
         "🇽🇽 XX | VLESS | @novinology #3 [fast]",
@@ -101,6 +101,7 @@
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -227,7 +228,6 @@
         "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
         "🇽🇽 XX | VLESS | @netmellianti #3 [fast]",
-        "🇽🇽 XX | VLESS | @netmellianti #4 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
@@ -236,6 +236,7 @@
         "🇽🇽 XX | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @ai_duet #2 [fast]",
         "🇽🇽 XX | VLESS | @ai_duet #3 [fast]",
+        "🇽🇽 XX | VLESS | @ai_duet #4 [fast]",
         "🇽🇽 XX | VLESS | @novinology #1 [fast]",
         "🇽🇽 XX | VLESS | @novinology #2 [fast]",
         "🇽🇽 XX | VLESS | @novinology #3 [fast]",
@@ -251,6 +252,7 @@
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
+        "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -782,15 +784,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @netmellianti #4 [fast]",
-      "server": "cf-mci.coixconqwe1.ir",
-      "server_port": 8880,
-      "uuid": "6d4cce6a-dbc6-43af-9146-067847483fce",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
       "server": "104.17.19.109",
       "server_port": 2083,
@@ -948,6 +941,30 @@
           "h2",
           "http/1.1"
         ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/uploader.php",
+        "headers": {
+          "Host": "maple.adaspoloandco.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @ai_duet #4 [fast]",
+      "server": "141.101.115.71",
+      "server_port": 8443,
+      "uuid": "e8c61352-444f-4154-ba34-9d3141154a8d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "maple.adaspoloandco.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1154,7 +1171,7 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-      "server": "104.16.98.72",
+      "server": "104.18.85.68",
       "server_port": 80,
       "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
       "network": "ws",
@@ -1170,34 +1187,7 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
-      "server": "172.67.130.66",
-      "server_port": 2096,
-      "uuid": "1149be91-5a4f-47de-995f-66f8d7d64498",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "v7pro.drlimit.online",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "GeR13.SimAnSaNat.iR.",
-        "headers": {
-          "Host": "GeR13.SimAnSaNat.iR."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
-      "server": "104.17.42.113",
+      "server": "104.17.126.105",
       "server_port": 80,
       "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
       "network": "ws",
@@ -1212,38 +1202,86 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
-      "server": "172.67.144.41",
+      "tag": "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
+      "server": "172.67.223.133",
       "server_port": 443,
-      "uuid": "f1a234f6-c946-4024-ba79-882f58c22727",
+      "uuid": "dac5b2de-7df9-4d38-ba41-f98ceb19bd75",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "c2ray-free.pages.dev"
+        "server_name": "sandWorm.PaGES.DEv",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/07n1q4ys4Pwba7qM",
         "headers": {
-          "Host": "c2ray-free.pages.dev"
+          "Host": "sANDWOrm.pAGEs.DeV"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
+      "server": "104.18.92.237",
+      "server_port": 80,
+      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "us3.rtacg.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
-      "server": "104.20.25.32",
-      "server_port": 8080,
-      "uuid": "f50e0469-3e74-4583-96bc-b6baa355093d",
+      "server": "104.16.249.65",
+      "server_port": 80,
+      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
       "network": "ws",
       "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
-        "path": "/Telegram:@vmessorg-Telegram:@vmessorg-Telegram:@vmessorg?ed=8080",
+        "path": "/",
         "headers": {
-          "Host": "join-to.vmessorg.Community."
+          "Host": "us3.rtacg.com"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @hope_net #6 [fast]",
+      "server": "104.21.20.148",
+      "server_port": 8443,
+      "uuid": "1c71bd88-0477-4f4b-a6c0-9dd69e2ab456",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Iran.harchi.monster",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -1400,50 +1438,27 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "parstoday.ir",
-      "server_port": 443,
-      "uuid": "3398b8c0-6025-42d5-9afe-99652482a527",
+      "server": "vips.irhubby.ir",
+      "server_port": 8080,
+      "uuid": "b6894804-ae5d-463c-9e4a-3619776c1098",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudhet.dearhossein-taktaz.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "cloudhet.dearhossein-taktaz.ir"
+          "Host": "vips.irhubby.ir"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
-      "server": "mahdroo.ir",
-      "server_port": 443,
-      "uuid": "3398b8c0-6025-42d5-9afe-99652482a527",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudhet.dearhossein-taktaz.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cloudhet.dearhossein-taktaz.ir"
-        }
-      }
+      "server": "sourceforge.net",
+      "server_port": 80,
+      "uuid": "60b7a047-db7e-47a9-894b-e99d36556dce",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vmess",

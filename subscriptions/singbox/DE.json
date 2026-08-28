@@ -56,14 +56,16 @@
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
-        "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -78,14 +80,16 @@
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
-        "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -207,15 +211,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
-      "server": "3.126.31.60",
-      "server_port": 443,
-      "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @free4allvpn #1 [fast]",
       "server": "91.99.82.11",
       "server_port": 443,
@@ -248,7 +243,69 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "www.tgd.soft9.ir",
+      "server_port": 443,
+      "uuid": "326f7cc5-274c-4d15-81b7-750175a94c6f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM",
+          "short_id": "5002b5329814b487"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "www.homaxcorp.com.homaxcorp.com",
+      "server_port": 2055,
+      "uuid": "042adee0-9b4f-43f5-a915-a627313f28c0",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "images.mzstatic.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "de.alertyagency.com",
+      "server_port": 443,
+      "uuid": "a704443d-655e-4d9f-8ce6-12eeb17a9a08",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wDJibB6Rd20xkiSeIKLLo60DsKqB3il6gtXlpYxITj4",
+          "short_id": "977aa6df"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
       "server": "92.223.124.29",
       "server_port": 443,
       "uuid": "e1034c59-c944-4a60-bdba-8f9cea0324b1",
@@ -272,7 +329,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
       "server": "142.132.163.200",
       "server_port": 80,
       "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a",
@@ -289,7 +346,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
       "server": "5.75.150.23",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -302,7 +359,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
       "server": "167.235.205.182",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -315,7 +372,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
       "server": "168.119.174.229",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",

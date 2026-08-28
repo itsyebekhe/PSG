@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "13.134.132.121", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [medium]", "server": "144.31.213.150", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdn.pinecloud.net", "reality-opts": {"public-key": "vWSgdMDirb9aDZLWijSXXXl-NCTrtBgEe9MQqcgV6h8", "short-id": "6a2e3af684799b19"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

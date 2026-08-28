@@ -53,10 +53,13 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
-        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
         "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,10 +71,13 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
-        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
         "🇮🇹 IT | VLESS | @selinc #1 [fast]",
-        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]"
+        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -119,7 +125,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #2 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
       "server": "yt.orpheous.ru",
       "server_port": 443,
       "uuid": "00ca2ff9-c6a1-48e2-812d-2b15f7b6c3a5",
@@ -142,7 +148,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+      "tag": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+      "server": "rs2.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs2.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE",
+          "short_id": "1469af2040b7c323"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
       "server": "tr.alertyagency.com",
       "server_port": 443,
       "uuid": "a704443d-655e-4d9f-8ce6-12eeb17a9a08",
@@ -201,6 +233,52 @@
           "enabled": true,
           "public_key": "8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU",
           "short_id": "88d9dc52ef39c8bd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "www.tgd.soft9.ir",
+      "server_port": 443,
+      "uuid": "326f7cc5-274c-4d15-81b7-750175a94c6f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM",
+          "short_id": "5002b5329814b487"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "de.alertyagency.com",
+      "server_port": 443,
+      "uuid": "a704443d-655e-4d9f-8ce6-12eeb17a9a08",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wDJibB6Rd20xkiSeIKLLo60DsKqB3il6gtXlpYxITj4",
+          "short_id": "977aa6df"
         }
       }
     },

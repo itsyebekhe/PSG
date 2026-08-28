@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
       "server": "tr.alertyagency.com",
       "server_port": 443,
       "uuid": "a704443d-655e-4d9f-8ce6-12eeb17a9a08",
@@ -90,15 +88,6 @@
           "short_id": "5a3874f1"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "turk.mamadhpbot.ir",
-      "server_port": 50118,
-      "uuid": "93ee032f-b67f-4cac-a239-da1295aec528",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
