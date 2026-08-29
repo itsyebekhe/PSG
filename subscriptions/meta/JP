@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇯🇵 JP | VLESS | @red2ray #1 [fast]", "server": "18.177.61.231", "port": 30203, "type": "vless", "skip-cert-verify": true, "uuid": "0346a35f-8e11-4b33-852d-00fa9c642878", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.sony.com", "reality-opts": {"public-key": "dsJ2WwzENgTAgd8okJPXLpwzdsDjU67mBEnhUhgvvTk", "short-id": "40150721499a92"}}
   - {"name": "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]", "server": "134.122.194.186", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ce069292-c8bf-40dd-a6b1-87818a1e64e9", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "2-ee1.pages.dev", "ws-opts": {"path": "", "headers": {"Host": "2-ee1.pages.dev"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇯🇵 JP | VLESS | @red2ray #1 [fast]'
       - '🇯🇵 JP | VLESS | @megavpn_link #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇯🇵 JP | VLESS | @red2ray #1 [fast]'
       - '🇯🇵 JP | VLESS | @megavpn_link #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT

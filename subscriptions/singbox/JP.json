@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
@@ -60,36 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 JP | VLESS | @red2ray #1 [fast]",
-      "server": "18.177.61.231",
-      "server_port": 30203,
-      "uuid": "0346a35f-8e11-4b33-852d-00fa9c642878",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.sony.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dsJ2WwzENgTAgd8okJPXLpwzdsDjU67mBEnhUhgvvTk",
-          "short_id": "40150721499a92"
-        }
-      }
     },
     {
       "type": "vless",
