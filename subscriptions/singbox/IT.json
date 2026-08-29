@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTVQ=
+//profile-title: base64:UFNHIHwgSVQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇹 MT | VLESS | @netmellianti #1 [fast]",
+        "🇮🇹 IT | SS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇹 MT | VLESS | @netmellianti #1 [fast]"
+        "🇮🇹 IT | SS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,13 +67,16 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇲🇹 MT | VLESS | @netmellianti #1 [fast]",
-      "server": "cdn.devmixa.ir",
-      "server_port": 8880,
-      "uuid": "6d4cce6a-dbc6-43af-9146-067847483fce",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
+      "type": "shadowsocks",
+      "tag": "🇮🇹 IT | SS | @outline_ir #1 [fast]",
+      "server": "57.131.48.45",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "itzvpn@321",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "direct",

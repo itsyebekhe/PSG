@@ -9,7 +9,7 @@ proxies:
   - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "153.75.87.192", "port": 110, "type": "vless", "skip-cert-verify": true, "uuid": "11992f2b-181b-403a-9521-813fcd7927a8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇳🇱 NL | VLESS | @red2ray #2 [fast]", "server": "153.75.87.192", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "11992f2b-181b-403a-9521-813fcd7927a8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]", "server": "vip-nl-1.hkd4fwmg.vip", "port": 31883, "type": "vless", "skip-cert-verify": true, "uuid": "20593145-d975-46f9-9bad-d9f3c8e2d899", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "vip-nl-1.hkd4fwmg.vip"}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -20,7 +20,7 @@ proxy-groups:
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
       - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -31,7 +31,7 @@ proxy-groups:
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
       - '🇳🇱 NL | VLESS | @NamiraConfigs #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

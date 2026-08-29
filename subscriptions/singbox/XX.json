@@ -50,6 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
+        "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #1 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #2 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #3 [fast]",
@@ -82,6 +84,7 @@
         "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
         "🇽🇽 XX | VLESS | @netmellianti #3 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #4 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
@@ -113,7 +116,6 @@
         "🇽🇽 XX | VLESS | @iran_access #5 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #2 [fast]",
@@ -201,6 +203,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
+        "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #1 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #2 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #3 [fast]",
@@ -233,6 +237,7 @@
         "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
         "🇽🇽 XX | VLESS | @netmellianti #3 [fast]",
+        "🇽🇽 XX | VLESS | @netmellianti #4 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
@@ -264,7 +269,6 @@
         "🇽🇽 XX | VLESS | @iran_access #5 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #2 [fast]",
@@ -349,6 +353,54 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
+      "server": "one-for-all.levikogjgfdd.ir",
+      "server_port": 443,
+      "uuid": "29ca503d-e6b8-4509-b666-48133f450857",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn00.evany.de5.net"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fdip",
+        "headers": {
+          "Host": "learn00.evany.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
+      "server": "one-for-all.levikogjgfdd.ir",
+      "server_port": 2053,
+      "uuid": "e7961655-9674-4cbd-a36f-ec0d5d7d660c",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "po.fastbrokencompony.com",
+        "alpn": [
+          "h3",
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "po.fastbrokencompony.com"
+        }
+      }
     },
     {
       "type": "vless",
@@ -858,7 +910,7 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @netmellianti #1 [fast]",
-      "server": "s2.eldoradu.ir",
+      "server": "cdn.devmixa.ir",
       "server_port": 8880,
       "uuid": "6d4cce6a-dbc6-43af-9146-067847483fce",
       "network": "httpupgrade",
@@ -867,7 +919,7 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @netmellianti #2 [fast]",
-      "server": "s1.eldoradu.ir",
+      "server": "s2.eldoradu.ir",
       "server_port": 8880,
       "uuid": "6d4cce6a-dbc6-43af-9146-067847483fce",
       "network": "httpupgrade",
@@ -876,6 +928,15 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @netmellianti #3 [fast]",
+      "server": "s1.eldoradu.ir",
+      "server_port": 8880,
+      "uuid": "6d4cce6a-dbc6-43af-9146-067847483fce",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @netmellianti #4 [fast]",
       "server": "s2.eldoradu.ir",
       "server_port": 8880,
       "uuid": "cbc5c74f-95f8-4c52-835c-c6e3429cb9f4",
@@ -1505,33 +1566,20 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "vips.irhubby.ir",
-      "server_port": 8080,
-      "uuid": "a935c493-361d-464e-9808-dc0e199be718",
+      "server": "104.21.54.140",
+      "server_port": 443,
+      "uuid": "d9f94532-c4d4-4f94-ba23-6eb6d35bfc7d",
       "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vips.irhubby.ir"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
-      "server": "104.18.151.14",
-      "server_port": 2053,
-      "uuid": "fef1a72a-5a44-4e22-8439-3670924b7805",
-      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "de.ginnaro.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+        "server_name": "small-scene-f215.amiralizarefast1.workers.dev"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZW5GMjJSRmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0",
+        "headers": {
+          "Host": "small-scene-f215.amiralizarefast1.workers.dev"
         }
       }
     },

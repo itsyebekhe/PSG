@@ -50,12 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | SS | @prrofile_purple #1 [fast]",
+        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -65,12 +67,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | SS | @prrofile_purple #1 [fast]",
+        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -79,15 +83,43 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
+      "server": "178.83.157.130",
+      "server_port": 2551,
+      "uuid": "d8b42cd5-a149-4356-9e61-000000000000",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @prrofile_purple #1 [fast]",
-      "server": "188.119.149.27",
-      "server_port": 1080,
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+      "server": "82.38.31.34",
+      "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
-      "password": "XF0klw7870vXn3uQIxe19Q",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
+      "server": "95.154.196.63",
+      "server_port": 443,
+      "uuid": "bae47c97-9bc1-48f6-a133-a383ee71c12e",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "foodnetwork.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "o3OWFYnKad6q2C-eo6-rA74OCbjQoZfaUFYZsNqJJz0",
+          "short_id": "1e977d0b52eab755"
+        }
       }
     },
     {
@@ -140,7 +172,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
       "server": "94.156.250.148",
       "server_port": 7001,
       "method": "aes-256-gcm",

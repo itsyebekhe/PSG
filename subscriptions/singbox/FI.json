@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [medium]",
         "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
-        "🇫🇮 FI | VLESS | @outline_ir #2 [medium]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
@@ -63,37 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [medium]",
         "🇫🇮 FI | VLESS | @outline_ir #1 [medium]",
-        "🇫🇮 FI | VLESS | @outline_ir #2 [medium]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "132-243-223-227.sslip.io",
-      "server_port": 2101,
-      "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "132-243-223-227.sslip.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "fi-grpc-test"
-      }
     },
     {
       "type": "vless",
@@ -136,28 +111,6 @@
           "enabled": true,
           "public_key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk",
           "short_id": "5caa2ef81132c306"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #2 [medium]",
-      "server": "31.76.80.69",
-      "server_port": 2083,
-      "uuid": "8975546a-375c-4966-8064-19fc0f66f30a",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk",
-          "short_id": "29b21343ab4d"
         }
       }
     },
