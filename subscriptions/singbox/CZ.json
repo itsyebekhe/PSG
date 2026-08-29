@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇿 CZ | SS | @prrofile_purple #1 [fast]",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇨🇿 CZ | SS | @prrofile_purple #1 [fast]",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇿 CZ | SS | @prrofile_purple #1 [fast]",
+      "server": "146.70.222.126",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XF0klw7870vXn3uQIxe19Q",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vmess",

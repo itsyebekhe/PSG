@@ -50,14 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
+        "🇬🇧 GB | SS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
       ],
@@ -67,14 +67,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
+        "🇬🇧 GB | SS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
+        "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -83,13 +83,16 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
-      "server": "178.83.157.130",
-      "server_port": 2551,
-      "uuid": "d8b42cd5-a149-4356-9e61-000000000000",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @prrofile_purple #1 [fast]",
+      "server": "188.119.149.27",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XF0klw7870vXn3uQIxe19Q",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "shadowsocks",
@@ -172,7 +175,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
       "server": "94.156.250.148",
       "server_port": 7001,
       "method": "aes-256-gcm",
