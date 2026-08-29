@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]", "server": "82.118.18.202", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "316dda83-17f1-4f29-a05f-b84b7f991b82", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "HDiwGAN66V77CrlCWrDZupEiSQk204dkWRjJok0zYhk", "short-id": "720148f2fea16d0f"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

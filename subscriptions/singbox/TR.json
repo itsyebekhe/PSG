@@ -52,9 +52,7 @@
         "auto",
         "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | SS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇹🇷 TR | SS | @free1_vpn #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -65,9 +63,7 @@
       "outbounds": [
         "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | SS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
+        "🇹🇷 TR | SS | @free1_vpn #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -111,41 +107,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @red2ray #1 [fast]",
-      "server": "tr.privatevip.ir",
-      "server_port": 2007,
+      "tag": "🇹🇷 TR | SS | @free1_vpn #2 [fast]",
+      "server": "176.53.17.241",
+      "server_port": 1943,
       "method": "2022-blake3-aes-256-gcm",
-      "password": "Fusj7pLGoTnL/75NXyzycJJUxrp80H1ZoiMmp+CNS3A=:wkuwz7nei8K9TU5pVbNjf/tnubfQGNUqrhGcqx3lHws=",
+      "password": "f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:aE6MxBTe+MXHd9HoF2FF/BzKFqGTReMpMevlQhvsu0s=",
       "network": "tcp",
       "tls": {
         "enabled": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-      "server": "tr.privatevip.ir",
-      "server_port": 2502,
-      "uuid": "85b27fbd-33d6-4a3a-bf5b-c3cf97772893",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "tr.privatevip.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "turk.mamadhpbot.ir",
-      "server_port": 50118,
-      "uuid": "93ee032f-b67f-4cac-a239-da1295aec528",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
