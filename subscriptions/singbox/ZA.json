@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇿🇦 ZA | VLESS | @mehrosaboran #1 [fast]",
         "🇿🇦 ZA | SS | @beshkan #1 [medium]",
         "direct"
       ],
@@ -59,12 +60,36 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇿🇦 ZA | VLESS | @mehrosaboran #1 [fast]",
         "🇿🇦 ZA | SS | @beshkan #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 ZA | VLESS | @mehrosaboran #1 [fast]",
+      "server": "192.142.37.217",
+      "server_port": 443,
+      "uuid": "d62d49cb-a9b5-4f1f-90a4-316ecc3dadc4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.oracle.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc",
+          "short_id": "89e0494514ec"
+        }
+      }
     },
     {
       "type": "shadowsocks",
