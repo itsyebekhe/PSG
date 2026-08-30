@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇦🇪 AE | VLESS | @mehrosaboran #1 [fast]",
         "🇦🇪 AE | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇦🇪 AE | VLESS | @bored_vpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]",
         "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
@@ -62,7 +65,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇦🇪 AE | VLESS | @mehrosaboran #1 [fast]",
         "🇦🇪 AE | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇦🇪 AE | VLESS | @bored_vpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]",
         "🇦🇪 AE | HY2 | @netfreedom0 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
@@ -71,6 +77,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @mehrosaboran #1 [fast]",
+      "server": "162.35.231.31",
+      "server_port": 443,
+      "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "162.35.231.31.sslip.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI",
+          "short_id": "f41bc0b00ca1a978"
+        }
+      }
     },
     {
       "type": "hysteria2",
@@ -82,6 +111,47 @@
         "enabled": true,
         "server_name": "cabinet.wwwinternetvideo.click",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @bored_vpn #1 [fast]",
+      "server": "162.35.231.31",
+      "server_port": 443,
+      "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "162.35.231.31.sslip.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI",
+          "short_id": "f41bc0b00ca1a978"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "162.35.231.81",
+      "server_port": 443,
+      "uuid": "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "net.savesafe.run",
+        "reality": {
+          "enabled": true,
+          "public_key": "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8",
+          "short_id": "812609fa663c57fb"
+        }
       }
     },
     {

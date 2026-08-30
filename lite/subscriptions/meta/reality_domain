@@ -8,6 +8,7 @@ proxies:
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]", "server": "r.telewebion.ir.varzesh3.com.de", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "edae0c5c-6979-44ba-b82b-1575cb5804d6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs", "short-id": "e915"}}
   - {"name": "🇷🇸 RS | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "rs2.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs2.univesalsrv.com", "grpc-opts": {"grpc-service-name": "media.v1.ObjectService"}, "reality-opts": {"public-key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE", "short-id": "1469af2040b7c323"}}
+  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "shop.jarorobo.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "056fe52c-e28f-43fd-a1f5-e87b14b59d6b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "github.com", "reality-opts": {"public-key": "9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4", "short-id": "ab5b"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -17,6 +18,7 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
       - '🇷🇸 RS | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -26,6 +28,7 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
       - '🇷🇸 RS | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
