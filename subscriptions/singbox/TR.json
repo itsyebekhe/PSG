@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | SS | @free1_vpn #1 [medium]"
+        "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -77,6 +79,15 @@
       "tls": {
         "enabled": true
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "turk.mamadhpbot.ir",
+      "server_port": 50118,
+      "uuid": "93ee032f-b67f-4cac-a239-da1295aec528",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

@@ -3,19 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇧🇾 BY | VLESS | @outlinereleasedkey #1 [medium]", "server": "by01.botovod.space", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a817d012-0eeb-4b13-9f8e-0269e939d6f6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "by01.botovod.space"}
+  - {"name": "🇧🇾 BY | VLESS | @outlinereleasedkey #1 [fast]", "server": "by01.botovod.space", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a817d012-0eeb-4b13-9f8e-0269e939d6f6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "by01.botovod.space"}
   - {"name": "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]", "server": "5.161.156.196", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d20e38ef-1a4d-4009-a00d-2f0d44e3c65a", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇧🇾 BY | VLESS | @outlinereleasedkey #1 [medium]'
+      - '🇧🇾 BY | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇧🇾 BY | VLESS | @outlinereleasedkey #1 [medium]'
+      - '🇧🇾 BY | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
