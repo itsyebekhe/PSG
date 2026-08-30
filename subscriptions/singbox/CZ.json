@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ | SS | @prrofile_purple #1 [fast]",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
+        "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,25 +60,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ | SS | @prrofile_purple #1 [fast]",
-        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]"
+        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
+        "🇨🇿 CZ | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇿 CZ | SS | @prrofile_purple #1 [fast]",
-      "server": "146.70.222.126",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "XF0klw7870vXn3uQIxe19Q",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vmess",
@@ -101,6 +89,29 @@
         "path": "/",
         "headers": {
           "Host": "shs111.kejixiaoqi666.store"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
+      "server": "duchland1.vodniki.monster",
+      "server_port": 443,
+      "uuid": "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "duchland1.vodniki.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0",
+          "short_id": "0c13e8822e7f58aa"
         }
       }
     },

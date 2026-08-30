@@ -3,20 +3,26 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]", "server": "178.83.157.130", "port": 2551, "type": "vless", "skip-cert-verify": true, "uuid": "d8b42cd5-a149-4356-9e61-000000000000", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]", "server": "95.154.196.63", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bae47c97-9bc1-48f6-a133-a383ee71c12e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "foodnetwork.com", "reality-opts": {"public-key": "o3OWFYnKad6q2C-eo6-rA74OCbjQoZfaUFYZsNqJJz0", "short-id": "1e977d0b52eab755"}}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "13.43.176.25", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "18.130.61.248", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "13.42.99.148", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
       - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]'
       - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

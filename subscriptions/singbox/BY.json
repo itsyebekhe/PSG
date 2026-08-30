@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 BY | VLESS | @outlinereleasedkey #1 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
         "direct"
       ],
@@ -60,34 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 BY | VLESS | @outlinereleasedkey #1 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇾 BY | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "by01.botovod.space",
-      "server_port": 443,
-      "uuid": "a817d012-0eeb-4b13-9f8e-0269e939d6f6",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "by01.botovod.space",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
     },
     {
       "type": "vmess",
