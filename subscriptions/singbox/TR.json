@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
         "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
@@ -60,7 +60,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
         "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -69,16 +69,13 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-      "server": "176.53.17.241",
-      "server_port": 1943,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:aE6MxBTe+MXHd9HoF2FF/BzKFqGTReMpMevlQhvsu0s=",
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
+      "server": "91.228.227.172",
+      "server_port": 443,
+      "uuid": "96172b09-2ec8-418d-a539-7e9fb118caf8",
       "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @selinc #1 [fast]", "server": "31.76.80.69", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "8975546a-375c-4966-8064-19fc0f66f30a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.amd.com", "reality-opts": {"public-key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk", "short-id": "29b21343ab4d"}}
-  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "fin.hostingdayam.com.tr", "port": 8452, "type": "vless", "skip-cert-verify": true, "uuid": "34c6b520-fa66-49e9-a337-b7a6a3af28ba", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "n7_Ddz9DUWdhhtPh92wOWNehjZr1ewHMvJmVyRYGhX4", "short-id": "68d2d5f8"}}
   - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]", "server": "31.76.80.69", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "8975546a-375c-4966-8064-19fc0f66f30a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.amd.com", "reality-opts": {"public-key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk", "short-id": "29b21343ab4d"}}
   - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "81.27.110.79", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "cde8e374-bf71-4a1f-9386-db050bc46190", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
@@ -12,7 +11,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @selinc #1 [fast]'
-      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
@@ -20,7 +18,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @selinc #1 [fast]'
-      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:

@@ -52,8 +52,8 @@
         "auto",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
@@ -62,6 +62,7 @@
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
+        "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -98,8 +99,8 @@
       "outbounds": [
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
@@ -108,6 +109,7 @@
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
+        "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -170,35 +172,32 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
-      "server": "199.232.78.160",
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+      "server": "xcf037.facai2024.com",
       "server_port": 443,
-      "uuid": "XpnTeam-33",
+      "uuid": "d9863037-0463-4615-e972-36ba9662d1e9",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
       "network": "ws",
-      "packet_encoding": "xudp",
+      "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "xcf037.facai2024.com"
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/d9863037",
         "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
+          "Host": "xcf037.facai2024.com"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
       "server": "199.232.78.160",
       "server_port": 443,
       "uuid": "XpnTeam-35",
@@ -287,23 +286,27 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "usa1.selqora.ir",
-      "server_port": 50303,
-      "uuid": "640a1f84-3273-4e3e-8465-7633ab16a585",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "server": "151.101.193.242",
+      "server_port": 443,
+      "uuid": "b0cf4078-96b8-4e11-80a8-0f9352565a16",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
+        "server_name": "adheres-scruple.quick-cdn.net",
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XhfHr5VYPbNs6BrrsYc7Wd6-D2nJAO8QrixRuJarFkU",
-          "short_id": "4fd1b3b30e82af52"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "adheres-scruple.quick-cdn.net"
         }
       }
     },
@@ -377,6 +380,18 @@
       "transport": {
         "type": "grpc",
         "service_name": "jkrv2ry"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
+      "server": "15.204.247.124",
+      "server_port": 2375,
+      "method": "aes-256-gcm",
+      "password": "faBAoD54k87UJG7",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
