@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "api-as.data-media-social.org", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ef4f4c3d-0b16-48ad-a8d8-2d22512b3b36", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "api-as.data-media-social.org", "reality-opts": {"public-key": "D-lJlqG_tR0QSqyKj4KZRImMRfZbhp88loaf8jP0mhc", "short-id": "f3a9d2b1c7d4f608"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -5,33 +5,24 @@ log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]", "server": "185.209.15.198", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl8.helper-internet.com", "reality-opts": {"public-key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE", "short-id": "ff776ff77be48b88"}}
   - {"name": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]", "server": "5.255.126.104", "port": 46142, "type": "vless", "skip-cert-verify": true, "uuid": "255386a8-aec5-4425-bfe7-ca49b7448deb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.yahoo.com", "reality-opts": {"public-key": "l-OE7EwER1Z_jAifGE_UZ3FqHDMGzaR0jQHFYj5RNAk", "short-id": "39feeba3085c"}}
-  - {"name": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "194.93.61.91", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdnjs.com", "reality-opts": {"public-key": "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY", "short-id": "cbb0a5c1dc905505"}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "193.23.194.167", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "32349ee8-8551-45fa-a265-8704cec72936", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "193.23.194.167"}}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #2 [fast]", "server": "144.31.224.72", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d53f098c-c146-4c16-b8fc-263743fdb6b3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "nlplay.tgflow.me", "reality-opts": {"public-key": "4mlryhYiCf6KtnCEU55-CSuVZ4dlRhSv9MpNDBqeSAs", "short-id": "1bc96deb0a9e3f6a"}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #3 [medium]", "server": "132.243.235.53", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "60e2a548-96aa-4850-a279-1edab743c39b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "dhlparcel.nl", "reality-opts": {"public-key": "0XSgK4OAEjNPsjYdhNBV5xl5mCCRRzYucSQ9LIO0Gkg", "short-id": "3dad96f8693ea653"}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "hadikeikei.ir", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "f1a22614-ff7a-423c-8cb4-d322c88985ae", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "jPjDwxHaOIVV7mnCccqLoY_t3-Cd0h__EMCp1Yd_KX8", "short-id": "a7f31c9d"}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]'
       - '🇳🇱 NL | VLESS | @free1_vpn #1 [fast]'
-      - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #3 [medium]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]'
       - '🇳🇱 NL | VLESS | @free1_vpn #1 [fast]'
-      - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #3 [medium]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
