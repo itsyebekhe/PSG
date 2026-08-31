@@ -58,8 +58,8 @@
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]",
         "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
         "🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
@@ -77,8 +77,8 @@
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]",
         "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
         "🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -246,6 +246,32 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+      "server": "de1.cnyvpn.com",
+      "server_port": 2053,
+      "uuid": "60e2a548-96aa-4850-a279-1edab743c39b",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "finanzfluss.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5_kjhGPcPUiUNJ0Mt4-YoRjphhDz3Hfvx1YCdbBRUA0",
+          "short_id": "8b71da690c3d5d03"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "remnagrpc"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]",
       "server": "api-as.data-media-social.org",
       "server_port": 443,
@@ -264,28 +290,6 @@
           "enabled": true,
           "public_key": "D-lJlqG_tR0QSqyKj4KZRImMRfZbhp88loaf8jP0mhc",
           "short_id": "f3a9d2b1c7d4f608"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "hadikeikei.ir",
-      "server_port": 2053,
-      "uuid": "f1a22614-ff7a-423c-8cb4-d322c88985ae",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jPjDwxHaOIVV7mnCccqLoY_t3-Cd0h__EMCp1Yd_KX8",
-          "short_id": "a7f31c9d"
         }
       }
     },

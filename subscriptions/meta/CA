@@ -4,6 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇨🇦 CA | VLESS | @novinology #1 [fast]", "server": "104.31.16.65", "port": 2095, "type": "vless", "skip-cert-verify": true, "uuid": "38ace213-5184-477b-ac3e-d800d0cf3cd9", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "de1.vlessx.xyz"}}}
+  - {"name": "🇨🇦 CA | VLESS | @red2ray #1 [fast]", "server": "maple.adaspoloandco.com", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "db3f09ae-23f2-42b8-abee-7b89fb392c5e", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "maple.adaspoloandco.com", "ws-opts": {"path": "", "headers": {"Host": "maple.adaspoloandco.com"}}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]", "server": "23.227.60.12", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.jokerv2ray.store", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.jokerv2ray.store"}}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]", "server": "23.227.60.12", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.sameasyou.sbs", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.sameasyou.sbs"}}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]", "server": "104.31.16.133", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.sameasyou.sbs", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.sameasyou.sbs"}}}
@@ -15,6 +16,7 @@ proxy-groups:
     type: select
     proxies:
       - '🇨🇦 CA | VLESS | @novinology #1 [fast]'
+      - '🇨🇦 CA | VLESS | @red2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]'
@@ -26,6 +28,7 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇨🇦 CA | VLESS | @novinology #1 [fast]'
+      - '🇨🇦 CA | VLESS | @red2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]'
