@@ -51,7 +51,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [medium]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
@@ -59,6 +59,7 @@
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -98,7 +99,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [medium]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
@@ -106,6 +107,7 @@
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -164,7 +166,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+      "tag": "🇺🇸 US | VLESS | @free1_vpn #1 [medium]",
       "server": "193.160.32.36",
       "server_port": 2053,
       "uuid": "255386a8-aec5-4425-bfe7-ca49b7448deb",
@@ -317,6 +319,29 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "167.104.223.179",
+      "server_port": 443,
+      "uuid": "c6cff605-90cf-4953-bf97-0a44e43f229d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "gb5.murhost.network",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo",
+          "short_id": "fc36b4a584871aa5"
+        }
       }
     },
     {

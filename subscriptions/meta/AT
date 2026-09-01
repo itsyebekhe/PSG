@@ -4,22 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]", "server": "152.53.114.186", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "as.tunnelx.space", "reality-opts": {"public-key": "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA", "short-id": "4e9b0c2d1a3f5768"}}
-  - {"name": "🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "api-as.data-media-social.org", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ef4f4c3d-0b16-48ad-a8d8-2d22512b3b36", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "api-as.data-media-social.org", "reality-opts": {"public-key": "D-lJlqG_tR0QSqyKj4KZRImMRfZbhp88loaf8jP0mhc", "short-id": "f3a9d2b1c7d4f608"}}
-  - {"name": "🇦🇹 AT | VLESS | @red2ray #1 [fast]", "server": "159.195.240.82", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "626c0789-16d1-4815-be8b-bd03959d7d12", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "vie1.tsumshop.org", "reality-opts": {"public-key": "tzOeyllk2VtPXZ_BJ2lOZcGtsnn41ZHBa9dE6s9sFiQ", "short-id": "c8c75aaf699259b4"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇦🇹 AT | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇦🇹 AT | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

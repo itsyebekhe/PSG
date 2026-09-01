@@ -56,10 +56,11 @@
         "🇫🇷 FR | VLESS | @orange_vpns #2 [fast]",
         "🇮🇹 IT | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]",
         "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
         "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
-        "🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @mtproxy22_v2ray #1 [slow]",
+        "🇷🇴 RO | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
@@ -75,10 +76,11 @@
         "🇫🇷 FR | VLESS | @orange_vpns #2 [fast]",
         "🇮🇹 IT | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]",
         "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
         "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
-        "🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @mtproxy22_v2ray #1 [slow]",
+        "🇷🇴 RO | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -194,25 +196,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
-      "server": "r.telewebion.ir.varzesh3.com.de",
+      "tag": "🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]",
+      "server": "us.differentok.com",
       "server_port": 443,
-      "uuid": "edae0c5c-6979-44ba-b82b-1575cb5804d6",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "eb1c3a3c-c828-404d-bf98-b878c5435600",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "us.differentok.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
+          "public_key": "Jxwj8rNcJnXop1Xk9Ydst_wFPJsQOtZ74g50saIgokU",
+          "short_id": "a5668d2759baa4ac"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v2.RelayService"
       }
     },
     {
@@ -269,24 +274,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 AT | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "api-as.data-media-social.org",
+      "tag": "🇫🇷 FR | VLESS | @mtproxy22_v2ray #1 [slow]",
+      "server": "ww1.levikogjgfdd.ir",
       "server_port": 443,
-      "uuid": "ef4f4c3d-0b16-48ad-a8d8-2d22512b3b36",
+      "uuid": "af348651-1624-4710-b55f-0307a22d891f",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "status.play.google.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo",
+          "short_id": "5030"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 RO | VLESS | @red2ray #1 [fast]",
+      "server": "mold.freeinternat.com",
+      "server_port": 443,
+      "uuid": "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "api-as.data-media-social.org",
+        "server_name": "mold.freeinternat.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "D-lJlqG_tR0QSqyKj4KZRImMRfZbhp88loaf8jP0mhc",
-          "short_id": "f3a9d2b1c7d4f608"
+          "public_key": "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk",
+          "short_id": "ff776ff77be48b88"
         }
       }
     },
