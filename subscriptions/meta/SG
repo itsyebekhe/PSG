@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
-  - {"name": "🇸🇬 SG | VLESS | @red2ray #1 [fast]", "server": "u.tlpyun.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5ba437f3-f2f4-42e6-be33-5c144eb11b83", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "lukas.irandoc.info", "ws-opts": {"path": "", "headers": {"Host": "lukashost.irandoc.info"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

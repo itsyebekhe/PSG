@@ -50,12 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
@@ -66,12 +68,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
@@ -81,20 +85,17 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-      "server": "82.38.31.35",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @prrofile_purple #1 [fast]",
+      "server": "178.83.157.130",
+      "server_port": 2551,
+      "uuid": "d8b42cd5-a149-4356-9e61-000000000000",
       "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
+      "packet_encoding": "xudp"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
       "server": "146.70.61.37",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -102,6 +103,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "78.129.150.216",
+      "server_port": 443,
+      "uuid": "7ec31525-7ac3-4597-8f39-a2d4edc46342",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "strapi.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
+          "short_id": "fd55b698ee8c3629"
+        }
       }
     },
     {
@@ -131,7 +155,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-      "server": "16.61.111.198",
+      "server": "16.61.172.239",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -139,9 +163,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-      "server": "16.61.172.239",
-      "server_port": 22222,
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "188.220.67.140",
+      "server_port": 2087,
+      "uuid": "90da514d-8888-4a53-912e-ac2981c8c6ee",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/8f2690e2d016"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+      "server": "16.61.111.198",
+      "server_port": 22223,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
       "packet_encoding": "xudp"

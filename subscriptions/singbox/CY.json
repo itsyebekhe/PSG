@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUEw=
+//profile-title: base64:UFNHIHwgQ1k=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
+        "🇨🇾 CY | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]"
+        "🇨🇾 CY | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,25 +68,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
-      "server": "82.40.62.229",
-      "server_port": 443,
-      "uuid": "5bfc6650-8b56-0012-b0e9-b98fc6367c0d",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇨🇾 CY | VLESS | @red2ray #1 [fast]",
+      "server": "45.9.2.171",
+      "server_port": 8443,
+      "uuid": "167610e4-bcaf-4074-bc2d-0c08dc4ea294",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "auto.api-yandex.net",
+        "server_name": "torr.wlrus.cfd",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo",
-          "short_id": "0f4dacffd272e65f"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
