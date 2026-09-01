@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQVQ=
+//profile-title: base64:UFNHIHwgSUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇮🇪 IE | SS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]"
+        "🇮🇪 IE | SS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,26 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "152.53.114.186",
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE | SS | @outlinereleasedkey #1 [fast]",
+      "server": "3.250.223.202",
       "server_port": 443,
-      "uuid": "ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2",
-      "flow": "xtls-rprx-vision",
+      "method": "aes-256-cfb",
+      "password": "amazonskr05",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "as.tunnelx.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UO3EObgU3xUrhIGEE0gfCn5ZOz8YxNcwwW6ZaYzD3SA",
-          "short_id": "4e9b0c2d1a3f5768"
-        }
+        "enabled": true
       }
     },
     {

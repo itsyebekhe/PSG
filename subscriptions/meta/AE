@@ -5,21 +5,18 @@ log-level: info
 proxies:
   - {"name": "🇦🇪 AE | VLESS | @mehrosaboran #1 [fast]", "server": "162.35.231.31", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "419f25c1-bc35-412e-93fb-258efee859b5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "162.35.231.31.sslip.io", "reality-opts": {"public-key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI", "short-id": "f41bc0b00ca1a978"}}
   - {"name": "🇦🇪 AE | VLESS | @bored_vpn #1 [fast]", "server": "162.35.231.31", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "419f25c1-bc35-412e-93fb-258efee859b5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "162.35.231.31.sslip.io", "reality-opts": {"public-key": "XOcyZvF63CHDPnh3UCL-u-X8HYeNGiRtrwDVRLBC1DI", "short-id": "f41bc0b00ca1a978"}}
-  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [fast]", "server": "pl5.lckdwn.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "98673856-cd6f-4aa0-b2c9-d2ec90c0f47b", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "pl5.lckdwn.ru"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇪 AE | VLESS | @mehrosaboran #1 [fast]'
       - '🇦🇪 AE | VLESS | @bored_vpn #1 [fast]'
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇪 AE | VLESS | @mehrosaboran #1 [fast]'
       - '🇦🇪 AE | VLESS | @bored_vpn #1 [fast]'
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -10,7 +10,6 @@ proxies:
   - {"name": "🇸🇨 SC | VLESS | @ai_duet #1 [fast]", "server": "45.130.125.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "de.lezzatzone.ir"}
   - {"name": "🇸🇨 SC | VLESS | @arv2ray #1 [fast]", "server": "156.243.83.167", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-Arfilter", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "cdn-alman1.arfilter2.blog", "ws-opts": {"path": "", "headers": {"Host": "cdn-alman1.arfilter2.blog"}}}
   - {"name": "🇸🇨 SC | VLESS | @jiedianf #1 [fast]", "server": "45.196.201.62", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net"}
-  - {"name": "🇸🇨 SC | VLESS | @outline_ir #1 [fast]", "server": "45.195.111.108", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "219762a7-b918-4e2b-8a3d-d309ef98bb61", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandex.net", "reality-opts": {"public-key": "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg", "short-id": "f4b4a6365558ea2e"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -22,7 +21,6 @@ proxy-groups:
       - '🇸🇨 SC | VLESS | @ai_duet #1 [fast]'
       - '🇸🇨 SC | VLESS | @arv2ray #1 [fast]'
       - '🇸🇨 SC | VLESS | @jiedianf #1 [fast]'
-      - '🇸🇨 SC | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -34,7 +32,6 @@ proxy-groups:
       - '🇸🇨 SC | VLESS | @ai_duet #1 [fast]'
       - '🇸🇨 SC | VLESS | @arv2ray #1 [fast]'
       - '🇸🇨 SC | VLESS | @jiedianf #1 [fast]'
-      - '🇸🇨 SC | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
