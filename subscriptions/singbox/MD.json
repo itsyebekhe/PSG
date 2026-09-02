@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇲🇩 MD | VLESS | @orange_vpns #1 [fast]",
+        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD | VLESS | @orange_vpns #1 [fast]"
+        "🇲🇩 MD | VLESS | @orange_vpns #1 [fast]",
+        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -90,6 +92,32 @@
       "transport": {
         "type": "grpc",
         "service_name": "hub.v1.ApiService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "89.35.14.32",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "md3.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
+          "short_id": "9a72d40f1ff882b3"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "stats.v2.PushService"
       }
     },
     {

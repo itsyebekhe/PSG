@@ -57,10 +57,8 @@
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @filtershekan_channel #1 [fast]",
-        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇦🇱 AL | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
-        "🇺🇸 US | VLESS | @netfreedom0 #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
@@ -78,10 +76,8 @@
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @filtershekan_channel #1 [fast]",
-        "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇦🇱 AL | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
-        "🇺🇸 US | VLESS | @netfreedom0 #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
@@ -222,47 +218,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "70.34.203.254",
-      "server_port": 32855,
-      "uuid": "8c96a2a4-5fc0-47c9-a2ca-33b179b4acc7",
-      "network": "tcp",
+      "tag": "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "89.35.14.32",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
+        "server_name": "md3.univesalsrv.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fRtTW1zQqje-Yh1DqPAHA8nWOMsX983pZUxy58FaY10",
-          "short_id": "deb7a9e5a6e1d41a"
+          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
+          "short_id": "9a72d40f1ff882b3"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇱 AL | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "45.82.13.150",
-      "server_port": 8443,
-      "uuid": "51231507-67c3-4141-ab08-a69eb121c716",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "B0S7A-ceRt0c3aRqbeQG69FVSkK-si6NWLBEM_QuC3U",
-          "short_id": "1688"
-        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "stats.v2.PushService"
       }
     },
     {
@@ -284,29 +261,6 @@
           "enabled": true,
           "public_key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk",
           "short_id": "29b21343ab4d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @netfreedom0 #1 [fast]",
-      "server": "77.110.115.95",
-      "server_port": 40443,
-      "uuid": "641baa2f-6f74-4ecf-b948-032d19ba0142",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I",
-          "short_id": "e5f60718293a4b5c"
         }
       }
     },
