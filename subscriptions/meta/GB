@@ -4,8 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]", "server": "95.154.196.63", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bae47c97-9bc1-48f6-a133-a383ee71c12e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "foodnetwork.com", "reality-opts": {"public-key": "o3OWFYnKad6q2C-eo6-rA74OCbjQoZfaUFYZsNqJJz0", "short-id": "1e977d0b52eab755"}}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "51.24.184.231", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "52.56.123.186", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "52.56.123.186", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "82.24.203.10", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "3165b4d0-40f7-4df0-9f59-4c89ccdac92d", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "82.24.203.10"}}}
   - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "129.121.95.159", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f6190ff2-864c-46cf-ac16-93908c069b75", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "129.121.95.159", "ws-opts": {"path": "", "headers": {"Host": "129.121.95.159"}}}
 proxy-groups:
@@ -14,7 +13,6 @@ proxy-groups:
     proxies:
       - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
       - DIRECT
@@ -23,7 +21,6 @@ proxy-groups:
     proxies:
       - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
 rules:

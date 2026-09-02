@@ -51,11 +51,11 @@
       "outbounds": [
         "auto",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
+        "🇩🇪 DE | VLESS | @mimitdl #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | HY2 | @outlinereleasedkey #1 [fast]",
@@ -64,7 +64,6 @@
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
@@ -80,11 +79,11 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇩🇪 DE | VLESS | @mehrosaboran #2 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
+        "🇩🇪 DE | VLESS | @mimitdl #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | HY2 | @outlinereleasedkey #1 [fast]",
@@ -93,7 +92,6 @@
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
@@ -109,29 +107,6 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-      "server": "185.194.177.120",
-      "server_port": 2096,
-      "uuid": "60e2a548-96aa-4850-a279-1edab743c39b",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "conrad.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pVUUDlLKPprJgV_ZcehzuhOFmw44Gk1DlRsny1zyxCI",
-          "short_id": "e3e76808b9fcd591"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
       "server": "91.107.241.29",
       "server_port": 443,
       "uuid": "5fb3ebfe-a998-4ffa-b854-3cffacbb9b67",
@@ -237,6 +212,15 @@
           "short_id": "1c3e8241a8743df9"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @mimitdl #1 [fast]",
+      "server": "49.13.36.171",
+      "server_port": 23746,
+      "uuid": "de43a9ca-6cc0-441e-981d-53208760cd90",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -374,32 +358,6 @@
         "path": "/",
         "headers": {
           "Host": "sub.mot.ip-ddns.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "178.105.134.66",
-      "server_port": 101,
-      "uuid": "40c81dcc-bc8a-4690-abdf-75ea8530234b",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
-        "alpn": [
-          "h3",
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VxFkVk2SKEQrRnBnhzvl29UpHlS2i5t6Is__HGPmuRU",
-          "short_id": "03e5ac759d2e7e90"
         }
       }
     },

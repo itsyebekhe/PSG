@@ -4,6 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "65.109.217.127", "port": 53618, "type": "vless", "skip-cert-verify": true, "uuid": "4db504c3-f945-41f4-80c5-78a06434e4cb", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇮 FI | VLESS | @selinc #1 [fast]", "server": "31.76.80.69", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "8975546a-375c-4966-8064-19fc0f66f30a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.amd.com", "reality-opts": {"public-key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk", "short-id": "29b21343ab4d"}}
   - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "81.27.110.79", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "cde8e374-bf71-4a1f-9386-db050bc46190", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
@@ -11,6 +12,7 @@ proxy-groups:
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - '🇫🇮 FI | VLESS | @selinc #1 [fast]'
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
@@ -18,6 +20,7 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - '🇫🇮 FI | VLESS | @selinc #1 [fast]'
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:

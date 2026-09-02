@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VMESS | @Fr33C0nfig #1 [medium]", "server": "dashboard.lunaramarket.top", "port": 41501, "type": "vmess", "skip-cert-verify": true, "uuid": "1af1b7f5-eb1e-4176-ab60-c134fd283b6c", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VMESS | @Fr33C0nfig #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VMESS | @Fr33C0nfig #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
