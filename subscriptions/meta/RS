@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇷🇸 RS | VLESS | @free1_vpn #1 [medium]", "server": "150.40.126.19", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs2.univesalsrv.com", "grpc-opts": {"grpc-service-name": "media.v1.ObjectService"}, "reality-opts": {"public-key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE", "short-id": "1469af2040b7c323"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇷🇸 RS | VLESS | @free1_vpn #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇷🇸 RS | VLESS | @free1_vpn #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

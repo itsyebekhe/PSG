@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]"
+        "🇵🇱 PL | VLESS | @outline_ir #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,30 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-      "server": "82.118.20.109",
-      "server_port": 443,
-      "uuid": "e459d26c-0957-4695-b1ac-0719e8df64f6",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "U1X__Tg779LinTpcP65AVLHtxAGPSKzr04K1Fq_mDy8",
-          "short_id": "146c918c71da5d81"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [medium]",
       "server": "83.168.71.216",
       "server_port": 443,
       "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",

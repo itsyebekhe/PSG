@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQlI=
+//profile-title: base64:UFNHIHwgSEs=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR | VLESS | @netfreedom0 #1 [fast]",
+        "🇭🇰 HK | SS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR | VLESS | @netfreedom0 #1 [fast]"
+        "🇭🇰 HK | SS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,26 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇧🇷 BR | VLESS | @netfreedom0 #1 [fast]",
-      "server": "23.251.55.216",
-      "server_port": 443,
-      "uuid": "c396fa08-e07a-459b-b894-389456fd6a82",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇭🇰 HK | SS | @red2ray #1 [fast]",
+      "server": "us1002.lunartrace.io",
+      "server_port": 40013,
+      "method": "chacha20-ietf-poly1305",
+      "password": "86bf33ea-62d9-49a1-9bd0-73e45f6e1403",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "m89wjPa2LxODyi8U5pRVI4E1fwVawIaftC3fLY0ZLw4",
-          "short_id": "9ea177c3c147119b"
-        }
+        "enabled": true
       }
     },
     {
