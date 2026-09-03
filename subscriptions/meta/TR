@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]", "server": "turk.mamadhpbot.ir", "port": 50118, "type": "vless", "skip-cert-verify": true, "uuid": "93ee032f-b67f-4cac-a239-da1295aec528", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

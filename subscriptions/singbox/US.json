@@ -50,12 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @filtershekan_channel #1 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
@@ -98,12 +100,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @filtershekan_channel #1 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
@@ -143,6 +147,33 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "uuid": "XpnTeam-52",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Appxdn.global.ssl.fastly.net"
+        }
+      }
     },
     {
       "type": "vless",
@@ -243,6 +274,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "nddjsiowowooeoeieijd.vahidzhv.ir",
+      "server_port": 52970,
+      "uuid": "5ac40f9b-2c41-4173-8589-4a69d0914390",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GUFegdYriD2BtuhNH9d_rVaR_bFxExagRB_rB09zMAY",
+          "short_id": "ea09ec0ab22a1d24"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
       "server": "151.101.64.155",
       "server_port": 80,
@@ -268,67 +321,48 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "trolley.proxy.rlwy.net",
-      "server_port": 17116,
-      "uuid": "c9806e98-f664-438c-a239-773b5b5afc8d",
-      "network": "ws",
+      "server": "66.33.22.220",
+      "server_port": 12226,
+      "uuid": "318514c9-7b0e-4f7f-8895-72edb2db7079",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "tls": {
+        "enabled": true,
+        "server_name": "nihongo.life",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RnxVXwkhs6cfzsFoQF3tlio2IfFlJIosbt8nElWFwhY",
+          "short_id": "d865a1fc"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
-      "server": "grimness-backlogs.cdn-content.com",
-      "server_port": 443,
-      "uuid": "fe0de9ee-7e0b-4f93-8d11-abe860b9aae1",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "grimness-backlogs.cdn-content.com",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "grimness-backlogs.cdn-content.com"
-        }
-      }
+      "server": "zmaoz.faculty.ucdavis.edu",
+      "server_port": 80,
+      "uuid": "caf0d393-101a-4ac6-81e4-172fd8f87f5b",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #3 [fast]",
-      "server": "bounded-crammed.video-streams.org",
+      "server": "199.232.245.94",
       "server_port": 443,
-      "uuid": "fe0de9ee-7e0b-4f93-8d11-abe860b9aae1",
-      "network": "ws",
+      "uuid": "caf0d393-101a-4ac6-81e4-172fd8f87f5b",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "bounded-crammed.video-streams.org",
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "global.fastly.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "bounded-crammed.video-streams.org"
         }
       }
     },
