@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgS1o=
+//profile-title: base64:UFNHIHwgSU4=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
+        "🇮🇳 IN | VLESS | @mtproxy22_v2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]"
+        "🇮🇳 IN | VLESS | @mtproxy22_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,22 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
-      "server": "77.240.38.27",
-      "server_port": 8443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "fkXtvCEQ1ZU1rzF3fIK0fw==",
+      "type": "vless",
+      "tag": "🇮🇳 IN | VLESS | @mtproxy22_v2ray #1 [medium]",
+      "server": "172.237.44.80",
+      "server_port": 19567,
+      "uuid": "0faaa1ee-f3d2-49ec-92af-3228329f3000",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI",
+          "short_id": "87714fc3c52a"
+        }
       }
     },
     {
