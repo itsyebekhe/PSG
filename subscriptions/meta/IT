@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇮🇹 IT | VLESS | @orange_vpns #1 [fast]", "server": "it2.milkabebar.ir", "port": 10694, "type": "vless", "skip-cert-verify": true, "uuid": "8c2d5e7e-116a-49c4-8437-937f4bfce346", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28", "short-id": "a0fbc54d937aaccb"}}
   - {"name": "🇮🇹 IT | VLESS | @freeconfigsplus #1 [fast]", "server": "31.76.113.51", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "dfc0cb9d-f005-41b0-848c-7703bd39d0de", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "it.s3-cloud.xyz", "reality-opts": {"public-key": "zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY", "short-id": "7a3f9e2b1c8d4f6a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇮🇹 IT | VLESS | @orange_vpns #1 [fast]'
       - '🇮🇹 IT | VLESS | @freeconfigsplus #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇮🇹 IT | VLESS | @orange_vpns #1 [fast]'
       - '🇮🇹 IT | VLESS | @freeconfigsplus #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

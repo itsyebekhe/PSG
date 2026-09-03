@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
@@ -60,6 +61,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
@@ -67,6 +69,17 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 FI | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "fast.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE",
+      "tls": {
+        "enabled": true,
+        "server_name": "fast.wwwinternetvideo.click"
+      }
     },
     {
       "type": "vless",

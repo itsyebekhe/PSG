@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "18.169.49.13", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "129.121.95.159", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f6190ff2-864c-46cf-ac16-93908c069b75", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "129.121.95.159", "ws-opts": {"path": "", "headers": {"Host": "129.121.95.159"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

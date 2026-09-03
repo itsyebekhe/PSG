@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]", "server": "estproxy4.lockdwn.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "estproxy4.lockdwn.com"}}}
-  - {"name": "🇪🇪 EE | VLESS | @red2ray #1 [fast]", "server": "s---t---o.cd2-ger1.ir", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "2b9581e5-dc45-4ed6-90b2-6ec817f7dab5", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇪🇪 EE | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇪🇪 EE | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

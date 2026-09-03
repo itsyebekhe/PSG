@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
-        "🇹🇷 TR | VLESS | @red2ray #2 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
@@ -61,8 +60,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
-        "🇹🇷 TR | VLESS | @red2ray #2 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -72,21 +70,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
-      "server": "91.228.227.172",
-      "server_port": 110,
-      "uuid": "1dd0ed41-4555-48f8-b3ae-5a5b37b261a3",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "www.dd.mobilesari.ir",
+      "server_port": 443,
+      "uuid": "ef1ffeed-f622-494d-8eec-659dd16591f9",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #2 [medium]",
-      "server": "91.228.227.172",
-      "server_port": 8080,
-      "uuid": "1dd0ed41-4555-48f8-b3ae-5a5b37b261a3",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM",
+          "short_id": "5002b5329814b487"
+        }
+      }
     },
     {
       "type": "vless",

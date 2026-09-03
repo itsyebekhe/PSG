@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇦🇪 AE | VMESS | @Fr33C0nfig #1 [medium]", "server": "dashboard.lunaramarket.top", "port": 41501, "type": "vmess", "skip-cert-verify": true, "uuid": "1af1b7f5-eb1e-4176-ab60-c134fd283b6c", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
-  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [fast]", "server": "31.58.144.31", "port": 18149, "type": "vless", "skip-cert-verify": true, "uuid": "8997dde9-498b-48f2-ae64-89cdad2cfcdf", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "LBlScaTInFivNfOiYzDW8ExpwR2O3p4j-vJ8f-4JGWw", "short-id": "a4f78af8c177c10a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇪 AE | VMESS | @Fr33C0nfig #1 [medium]'
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇪 AE | VMESS | @Fr33C0nfig #1 [medium]'
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

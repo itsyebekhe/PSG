@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
   - {"name": "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]", "server": "84.38.187.134", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "53ffd172-de4c-0037-aa77-1a6830a36cf8", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "git.xpkg.ru", "reality-opts": {"public-key": "QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc", "short-id": "2c9431dc7a306018"}}
-  - {"name": "🇷🇺 RU | VLESS | @hope_net #1 [fast]", "server": "45.67.215.133", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vf.ylks.link", "ws-opts": {"path": "", "headers": {"Host": "45.67.215.133"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]'
-      - '🇷🇺 RU | VLESS | @hope_net #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]'
-      - '🇷🇺 RU | VLESS | @hope_net #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
