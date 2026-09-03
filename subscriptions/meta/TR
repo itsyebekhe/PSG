@@ -3,16 +3,22 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]", "server": "turk.mamadhpbot.ir", "port": 50118, "type": "vless", "skip-cert-verify": true, "uuid": "93ee032f-b67f-4cac-a239-da1295aec528", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [medium]", "server": "91.228.227.172", "port": 110, "type": "vless", "skip-cert-verify": true, "uuid": "1dd0ed41-4555-48f8-b3ae-5a5b37b261a3", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #2 [medium]", "server": "91.228.227.172", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "1dd0ed41-4555-48f8-b3ae-5a5b37b261a3", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]", "server": "germanndnew.mamadhpbot.ir", "port": 50118, "type": "vless", "skip-cert-verify": true, "uuid": "93ee032f-b67f-4cac-a239-da1295aec528", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
+      - '🇹🇷 TR | VLESS | @red2ray #2 [medium]'
       - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
+      - '🇹🇷 TR | VLESS | @red2ray #2 [medium]'
       - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

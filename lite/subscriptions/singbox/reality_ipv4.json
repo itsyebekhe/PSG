@@ -55,9 +55,12 @@
         "KingRezaPahlavi",
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
-        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇦🇱 AL | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @filtershekan_channel #1 [fast]",
-        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
+        "🇮🇳 IN | VLESS | @mtproxy22_v2ray #1 [medium]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -74,9 +77,12 @@
         "KingRezaPahlavi",
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
-        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇦🇱 AL | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @filtershekan_channel #1 [fast]",
-        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
+        "🇮🇳 IN | VLESS | @mtproxy22_v2ray #1 [medium]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
@@ -172,24 +178,50 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
-      "server": "95.154.196.63",
+      "tag": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+      "server": "150.40.126.19",
       "server_port": 443,
-      "uuid": "bae47c97-9bc1-48f6-a133-a383ee71c12e",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "foodnetwork.com",
+        "server_name": "rs2.univesalsrv.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "o3OWFYnKad6q2C-eo6-rA74OCbjQoZfaUFYZsNqJJz0",
-          "short_id": "1e977d0b52eab755"
+          "public_key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE",
+          "short_id": "1469af2040b7c323"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇱 AL | VLESS | @free1_vpn #1 [fast]",
+      "server": "45.82.13.150",
+      "server_port": 8443,
+      "uuid": "51231507-67c3-4141-ab08-a69eb121c716",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "B0S7A-ceRt0c3aRqbeQG69FVSkK-si6NWLBEM_QuC3U",
+          "short_id": "1688"
         }
       }
     },
@@ -218,28 +250,65 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
-      "server": "89.35.14.32",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
+      "tag": "🇮🇳 IN | VLESS | @mtproxy22_v2ray #1 [medium]",
+      "server": "172.237.44.80",
+      "server_port": 19567,
+      "uuid": "0faaa1ee-f3d2-49ec-92af-3228329f3000",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "md3.univesalsrv.com",
+        "server_name": "www.nvidia.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "tzm4xWHOerooioq4QQkI7VCvIapECgody_vJGDzX3UI",
+          "short_id": "87714fc3c52a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "31.58.144.31",
+      "server_port": 18149,
+      "uuid": "8997dde9-498b-48f2-ae64-89cdad2cfcdf",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
-          "short_id": "9a72d40f1ff882b3"
+          "public_key": "LBlScaTInFivNfOiYzDW8ExpwR2O3p4j-vJ8f-4JGWw",
+          "short_id": "a4f78af8c177c10a"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "stats.v2.PushService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+      "server": "83.168.71.216",
+      "server_port": 443,
+      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "short_id": "2f49bccf11150ef2"
+        }
       }
     },
     {

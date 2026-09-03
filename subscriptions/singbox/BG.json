@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTUQ=
+//profile-title: base64:UFNHIHwgQkc=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD | VLESS | @orange_vpns #1 [fast]",
-        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
+        "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD | VLESS | @orange_vpns #1 [fast]",
-        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]"
+        "🇧🇬 BG | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,55 +68,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @orange_vpns #1 [fast]",
-      "server": "89.35.14.33",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "md4.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg",
-          "short_id": "8e07337954f9823f"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "hub.v1.ApiService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
-      "server": "89.35.14.32",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "md3.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
-          "short_id": "9a72d40f1ff882b3"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "stats.v2.PushService"
-      }
+      "tag": "🇧🇬 BG | VLESS | @red2ray #1 [fast]",
+      "server": "b---u----l.cd2-ger1.ir",
+      "server_port": 2087,
+      "uuid": "2b9581e5-dc45-4ed6-90b2-6ec817f7dab5",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

@@ -74,7 +74,6 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
@@ -93,7 +92,7 @@
         "🇽🇽 XX | VLESS | @freev2flyng #2 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]",
@@ -129,7 +128,6 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @jiedianf #1 [fast]",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
@@ -148,7 +146,7 @@
         "🇽🇽 XX | VLESS | @freev2flyng #2 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]"
@@ -499,11 +497,29 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "zmaoz.faculty.ucdavis.edu",
-      "server_port": 80,
-      "uuid": "caf0d393-101a-4ac6-81e4-172fd8f87f5b",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
+      "server": "minimize-evenness.cdn-content.com",
+      "server_port": 443,
+      "uuid": "e836302b-2ab2-4286-b584-c1dcf2c2e6a0",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "minimize-evenness.cdn-content.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "minimize-evenness.cdn-content.com"
+        }
+      }
     },
     {
       "type": "vless",
@@ -526,29 +542,6 @@
         "path": "/60156344",
         "headers": {
           "Host": "wasmer-earth.jzy88.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-      "server": "de.alertyagency.com",
-      "server_port": 443,
-      "uuid": "a704443d-655e-4d9f-8ce6-12eeb17a9a08",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-maps.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wDJibB6Rd20xkiSeIKLLo60DsKqB3il6gtXlpYxITj4",
-          "short_id": "977aa6df"
         }
       }
     },
@@ -891,7 +884,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
       "server": "allsms.rozfa.com",
       "server_port": 443,
       "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
