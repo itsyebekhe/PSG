@@ -57,6 +57,8 @@
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #3 [fast]",
@@ -66,10 +68,11 @@
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @selinc #1 [fast]",
+        "🇫🇮 FI | VLESS | @selinc #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
@@ -86,6 +89,8 @@
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #3 [fast]",
@@ -95,10 +100,11 @@
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @selinc #1 [fast]",
+        "🇫🇮 FI | VLESS | @selinc #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -218,6 +224,49 @@
       "uuid": "02d87d00-c769-48d8-91cb-bd05e2f62790",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+      "server": "217.144.106.130",
+      "server_port": 8080,
+      "uuid": "675ee872-adb2-4c66-8358-bd360259311f",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "german2.hopegiver.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "78.17.187.134",
+      "server_port": 2027,
+      "uuid": "fe1bec5d-e2f7-4d59-9ad9-4765588e8c04",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fn.skysafe.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0",
+          "short_id": "6ba7b8109dad11d1"
+        }
+      }
     },
     {
       "type": "vless",
@@ -421,7 +470,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @selinc #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @selinc #1 [medium]",
       "server": "31.76.80.69",
       "server_port": 2083,
       "uuid": "8975546a-375c-4966-8064-19fc0f66f30a",
@@ -480,6 +529,28 @@
       "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "panel.freesavesafe.com",
+      "server_port": 443,
+      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "panel.freesavesafe.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8",
+          "short_id": "812609fa663c58fb"
+        }
+      }
     },
     {
       "type": "vless",

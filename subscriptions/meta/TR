@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "www.dd.mobilesari.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ef1ffeed-f622-494d-8eec-659dd16591f9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM", "short-id": "5002b5329814b487"}}
-  - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]", "server": "germanndnew.mamadhpbot.ir", "port": 50118, "type": "vless", "skip-cert-verify": true, "uuid": "93ee032f-b67f-4cac-a239-da1295aec528", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "www.d.mobilenarges.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d2a8c7bf-e263-4f77-8720-f8888c7c19d1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM", "short-id": "5002b5329814b487"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
