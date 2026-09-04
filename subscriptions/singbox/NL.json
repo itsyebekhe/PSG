@@ -50,15 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,42 +66,19 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "138.16.141.59",
-      "server_port": 7443,
-      "uuid": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k",
-          "short_id": "a09ff9f8"
-        }
-      }
     },
     {
       "type": "shadowsocks",
@@ -199,7 +175,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
       "server": "85.17.145.65",
       "server_port": 12068,
       "uuid": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
@@ -224,7 +200,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

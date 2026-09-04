@@ -53,13 +53,13 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -71,13 +71,13 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -125,7 +125,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
       "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
@@ -174,7 +174,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "node-fra02.rkitman.ru",
       "server_port": 443,
       "uuid": "64774bd8-3116-4eaa-a046-5ea4fc230b81",
@@ -218,6 +218,32 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @free1_vpn #2 [fast]",
+      "server": "rs1.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs1.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY",
+          "short_id": "ed0cd5cc2e26e6e7"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "node.v2.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
       "server": "shop.jarorobo.ir",
       "server_port": 443,
@@ -257,29 +283,6 @@
           "enabled": true,
           "public_key": "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8",
           "short_id": "812609fa663c58fb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-      "server": "www.d.mobilenarges.ir",
-      "server_port": 443,
-      "uuid": "d2a8c7bf-e263-4f77-8720-f8888c7c19d1",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6yOrgIsMRfTe-Gr9TYgyan-0mnKTNfk6fDBxVOiT4HM",
-          "short_id": "5002b5329814b487"
         }
       }
     },

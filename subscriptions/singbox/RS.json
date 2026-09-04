@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS | VLESS | @free1_vpn #1 [medium]"
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @free1_vpn #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @free1_vpn #1 [medium]",
+      "tag": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
       "server": "150.40.126.19",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
@@ -90,6 +92,32 @@
       "transport": {
         "type": "grpc",
         "service_name": "media.v1.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @free1_vpn #2 [fast]",
+      "server": "rs1.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs1.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY",
+          "short_id": "ed0cd5cc2e26e6e7"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "node.v2.ObjectService"
       }
     },
     {
