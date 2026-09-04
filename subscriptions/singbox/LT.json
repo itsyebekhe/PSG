@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
+        "🇱🇹 LT | SS | @netfreedom0 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
+        "🇱🇹 LT | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,24 +67,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-      "server": "89.116.180.40",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed",
-        "headers": {
-          "Host": "vms.lifetime09.workers.dev"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇱🇹 LT | SS | @netfreedom0 #1 [medium]",
       "server": "195.238.126.20",
       "server_port": 9008,
       "method": "aes-256-cfb",

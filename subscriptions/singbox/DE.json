@@ -50,8 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
@@ -59,16 +57,19 @@
         "🇩🇪 DE | VMESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @bored_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -77,8 +78,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
@@ -86,65 +85,24 @@
         "🇩🇪 DE | VMESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @bored_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-      "server": "89.34.90.68",
-      "server_port": 8443,
-      "uuid": "fe8e2ffb-8796-408c-af5b-0d4774215e00",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "360.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dTdncizxtVTqDZDkQoYdRTkf2Mn6XuKtkzg8vZhrkzA",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @mehrosaboran #1 [fast]",
-      "server": "203.23.179.147",
-      "server_port": 8443,
-      "uuid": "d53f098c-c146-4c16-b8fc-263743fdb6b3",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "palworld.mega-play.app",
-        "reality": {
-          "enabled": true,
-          "public_key": "ADsgS2NlS_Mi16n8h1beCVgWL4KvNj5tnRg9qYzFG14",
-          "short_id": "ae47480fa46b76b0"
-        }
-      }
     },
     {
       "type": "vless",
@@ -299,32 +257,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @free1_vpn #2 [fast]",
-      "server": "89.34.90.68",
-      "server_port": 8443,
-      "uuid": "fe8e2ffb-8796-408c-af5b-0d4774215e00",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "360.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dTdncizxtVTqDZDkQoYdRTkf2Mn6XuKtkzg8vZhrkzA",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
       "server": "datisde2.datgame.ir",
       "server_port": 30305,
@@ -335,6 +267,24 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+      "server": "203.23.179.147",
+      "server_port": 8443,
+      "uuid": "d53f098c-c146-4c16-b8fc-263743fdb6b3",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "palworld.mega-play.app",
+        "reality": {
+          "enabled": true,
+          "public_key": "ADsgS2NlS_Mi16n8h1beCVgWL4KvNj5tnRg9qYzFG14",
+          "short_id": "ae47480fa46b76b0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @bored_vpn #2 [fast]",
       "server": "shop.jarorobo.ir",
       "server_port": 443,
       "uuid": "44973e51-dab2-4df6-bc35-fb4849746114",
@@ -393,6 +343,47 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "88.216.190.205",
+      "server_port": 443,
+      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "apiv91.jarvesitw.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0",
+          "short_id": "b0ffeec3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "5.75.196.249",
+      "server_port": 2095,
+      "uuid": "01e5bbe0-03b1-4e03-bd10-9760a8401fdf",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "163.8.195.241",
+      "server_port": 2087,
+      "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/29c8fed7ca22"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
       "server": "92.223.124.29",
       "server_port": 443,
@@ -417,7 +408,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
       "server": "142.132.163.200",
       "server_port": 80,
       "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a",
@@ -434,7 +425,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
       "server": "5.75.150.23",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -447,7 +438,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
       "server": "167.235.205.182",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -460,7 +451,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
       "server": "168.119.174.229",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",

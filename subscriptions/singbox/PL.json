@@ -51,7 +51,7 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+        "🇵🇱 PL | SS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]"
+        "🇵🇱 PL | SS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -81,25 +81,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-      "server": "83.168.71.216",
-      "server_port": 443,
-      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "type": "shadowsocks",
+      "tag": "🇵🇱 PL | SS | @outline_ir #1 [fast]",
+      "server": "194.61.121.93",
+      "server_port": 7538,
+      "method": "chacha20-ietf-poly1305",
+      "password": "U9YAoqBgg5VyGBc6vQv1sN",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-          "short_id": "2f49bccf11150ef2"
-        }
+        "enabled": true
       }
     },
     {

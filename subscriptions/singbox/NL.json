@@ -51,12 +51,15 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @free1_vpn #1 [slow]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -66,12 +69,15 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @free1_vpn #1 [slow]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -101,6 +107,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+      "server": "72.56.92.177",
+      "server_port": 40443,
+      "uuid": "4480161e-2c59-4d37-8736-675c9af32bf1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y",
+          "short_id": "01d1bf2d4755d40c"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
@@ -122,6 +151,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [slow]",
+      "server": "153.80.249.125",
+      "server_port": 443,
+      "uuid": "901e6dca-1b73-4266-978b-f7dc1266a7f6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1_a2G1x-DIEjDogZAiV4WFuOczGWcj-3zPiPxenUZhs",
+          "short_id": "23ae46816e87c7b8"
+        }
       }
     },
     {
@@ -149,15 +201,40 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-      "server": "85.17.145.65",
-      "server_port": 12068,
-      "uuid": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
-      "network": "ws",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "84.32.102.254",
+      "server_port": 443,
+      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "tls": {
+        "enabled": true,
+        "server_name": "apiv3.jarvesitw.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "2zLFL9xRZ_hAqBHIUpZrj3z5o5Bvt3OAFy5yDat7h0U",
+          "short_id": "2aef5875"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+      "server": "84.32.176.6",
+      "server_port": 443,
+      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "apiv13.betust.net",
+        "reality": {
+          "enabled": true,
+          "public_key": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo",
+          "short_id": "ef5d4ad5"
+        }
       }
     },
     {
@@ -174,7 +251,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",
