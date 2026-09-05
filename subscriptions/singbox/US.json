@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
@@ -61,11 +62,11 @@
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VMESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #3 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
@@ -103,6 +104,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
+        "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
@@ -113,11 +115,11 @@
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VMESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #3 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
@@ -158,6 +160,33 @@
       "server": "199.232.78.160",
       "server_port": 443,
       "uuid": "XpnTeam-54",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Appxdn.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "uuid": "XpnTeam-62",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -330,24 +359,47 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "199.232.78.159",
+      "server": "a2.arshia-nova.ir",
       "server_port": 443,
-      "uuid": "746a8f42-6d95-4117-b0d9-08bce6824757",
+      "uuid": "607f4f6c-2a71-43aa-e047-1ff5b5c23f67",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "ssl.fastly.com",
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "yaSharClass.global.ssl.fastly.net"
+          "Host": "c12.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @red2ray #1 [fast]",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
         }
       }
     },
@@ -439,29 +491,6 @@
         "path": "/",
         "headers": {
           "Host": "c12.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
-      "server": "15.204.97.195",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
         }
       }
     },

@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQUw=
+//profile-title: base64:UFNHIHwgQkc=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL | VLESS | @free1_vpn #1 [fast]",
+        "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL | VLESS | @free1_vpn #1 [fast]"
+        "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,25 +68,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇱 AL | VLESS | @free1_vpn #1 [fast]",
-      "server": "45.82.13.150",
-      "server_port": 8443,
-      "uuid": "51231507-67c3-4141-ab08-a69eb121c716",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]",
+      "server": "bg4.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "B0S7A-ceRt0c3aRqbeQG69FVSkK-si6NWLBEM_QuC3U",
-          "short_id": "1688"
+          "public_key": "k-vH6pkyAv26L1_dXKOFhp0Kesur9-FCUDoj-IIpVhc",
+          "short_id": "51f45d4fd58cc319"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cloud.v1.RelayService"
       }
     },
     {

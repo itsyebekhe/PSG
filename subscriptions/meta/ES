@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]", "server": "us.differentok.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eb1c3a3c-c828-404d-bf98-b878c5435600", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "us.differentok.com", "grpc-opts": {"grpc-service-name": "media.v2.RelayService"}, "reality-opts": {"public-key": "Jxwj8rNcJnXop1Xk9Ydst_wFPJsQOtZ74g50saIgokU", "short-id": "a5668d2759baa4ac"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇪🇸 ES | VLESS | @prrofile_purple #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
