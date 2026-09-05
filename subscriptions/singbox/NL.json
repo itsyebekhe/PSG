@@ -53,13 +53,14 @@
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -71,13 +72,14 @@
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -154,7 +156,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
       "server": "193.29.139.151",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -166,7 +168,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
       "server": "193.29.139.249",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -174,29 +176,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-      "server": "153.80.249.125",
-      "server_port": 443,
-      "uuid": "901e6dca-1b73-4266-978b-f7dc1266a7f6",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1_a2G1x-DIEjDogZAiV4WFuOczGWcj-3zPiPxenUZhs",
-          "short_id": "23ae46816e87c7b8"
-        }
       }
     },
     {
@@ -225,19 +204,37 @@
     {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "85.17.61.196",
+      "server_port": 443,
+      "uuid": "d7430ae7-320c-4658-808b-3006d0627d82",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "mint.ubuntuhosting.host",
+        "reality": {
+          "enabled": true,
+          "public_key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng",
+          "short_id": "3fa234ea9feaa048"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gun"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
       "server": "72.56.75.54",
       "server_port": 443,
-      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
+      "uuid": "5d8cf280-e0f4-4539-b35c-7ff90659c0d0",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "app2.jarvesitw.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
         "reality": {
           "enabled": true,
           "public_key": "iTCQz0n0AolvGxU2ZASJIsSVoKOR9PAFbnZVQDnSnF8",
@@ -246,8 +243,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+      "server": "95.211.164.115",
+      "server_port": 443,
+      "uuid": "d7430ae7-320c-4658-808b-3006d0627d82",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "mx.ubuntuhosting.host",
+        "reality": {
+          "enabled": true,
+          "public_key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng",
+          "short_id": "3fa234ea9feaa048"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gun"
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
       "server": "109.201.152.181",
       "server_port": 443,
       "method": "aes-128-cfb",
@@ -259,7 +278,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

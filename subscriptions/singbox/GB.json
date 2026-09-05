@@ -50,12 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #1 [medium]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
-        "🇬🇧 GB | SS | @beshkan #3 [fast]",
-        "🇬🇧 GB | SS | @beshkan #4 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #3 [medium]",
+        "🇬🇧 GB | SS | @beshkan #4 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
@@ -67,12 +66,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #1 [medium]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
-        "🇬🇧 GB | SS | @beshkan #3 [fast]",
-        "🇬🇧 GB | SS | @beshkan #4 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #3 [medium]",
+        "🇬🇧 GB | SS | @beshkan #4 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
@@ -83,31 +81,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "5.152.223.97",
-      "server_port": 443,
-      "uuid": "be5b6ad6-8184-4b63-82ac-3bc00c09c98c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "strapi.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs",
-          "short_id": "1aa9f3c9021280c0"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @beshkan #1 [medium]",
       "server": "82.38.31.204",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -131,7 +106,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #3 [fast]",
+      "tag": "🇬🇧 GB | SS | @beshkan #3 [medium]",
       "server": "82.38.31.149",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -143,7 +118,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #4 [fast]",
+      "tag": "🇬🇧 GB | SS | @beshkan #4 [medium]",
       "server": "82.38.31.212",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -155,7 +130,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -168,14 +143,24 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
-      "server": "188.220.67.181",
-      "server_port": 2087,
-      "uuid": "90da514d-8888-4a53-912e-ac2981c8c6ee",
-      "network": "ws",
+      "server": "109.169.84.94",
+      "server_port": 443,
+      "uuid": "3bcb31ef-840e-415d-abb3-28628add98d0",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/8f2690e2d016"
+      "tls": {
+        "enabled": true,
+        "server_name": "strapi.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ",
+          "short_id": "ff6975658b6cefce"
+        }
       }
     },
     {
