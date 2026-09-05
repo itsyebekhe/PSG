@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 AU | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "direct"
       ],
@@ -60,30 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 AU | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 AU | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "103.169.142.151",
-      "server_port": 443,
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "kkf.ylks.link"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
     },
     {
       "type": "vmess",

@@ -56,6 +56,7 @@
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @beshkan #4 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
@@ -73,6 +74,7 @@
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @beshkan #4 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
@@ -163,6 +165,34 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @hope_net #1 [fast]",
+      "server": "185.170.166.124",
+      "server_port": 443,
+      "uuid": "05214830-5d65-4ee1-a3d4-68f36cbea637",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api5.htve.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "api5.htve.ir"
+        }
       }
     },
     {

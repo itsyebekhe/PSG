@@ -4,18 +4,21 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]", "server": "5.152.223.97", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "be5b6ad6-8184-4b63-82ac-3bc00c09c98c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "flow": "xtls-rprx-vision", "servername": "strapi.io", "reality-opts": {"public-key": "IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs", "short-id": "1aa9f3c9021280c0"}}
+  - {"name": "🇬🇧 GB | VLESS | @hope_net #1 [fast]", "server": "185.170.166.124", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "05214830-5d65-4ee1-a3d4-68f36cbea637", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "api5.htve.ir", "ws-opts": {"path": "", "headers": {"Host": "api5.htve.ir"}}}
   - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "188.220.67.181", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "90da514d-8888-4a53-912e-ac2981c8c6ee", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "188.220.67.181"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

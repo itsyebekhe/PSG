@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]"
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
       "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
@@ -86,6 +88,29 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "80.66.65.51",
+      "server_port": 443,
+      "uuid": "78eb4455-0d07-24b8-93e3-7c8654f11d74",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.geodema.network",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+          "short_id": "1ed136481e0ede74"
         }
       }
     },
