@@ -54,7 +54,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,7 +68,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]"
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -138,23 +140,46 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "axial.medic-ml.ru",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "romania.epicserver.web.tr",
       "server_port": 443,
-      "uuid": "935ed92d-68c3-42c7-8c32-2db2595737e6",
-      "network": "xhttp",
+      "uuid": "d448dfdd-6021-4ba5-af88-0adc2d429fe8",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "axial.medic-ml.ru",
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oXExOCUJVNDMKvPkXg9LBbekTpy9K-bOWzJSk9O7Elo",
+          "short_id": "b58af03efc0cde74"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "nether.velqixa.ir",
+      "server_port": 8448,
+      "uuid": "4143a135-cacc-48fc-b349-6ad8c88d8417",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "660bDah5b-PtCfAbQ3g2tJySO41zsfaXCPb7L3nQCQc",
-          "short_id": "e1ac2faf5e5f309e"
+          "public_key": "FrL9e7VL4vyMK6P9haw7--RGPC1irebFEFfVt7PDz3I",
+          "short_id": "68d2d5f8"
         }
       }
     },

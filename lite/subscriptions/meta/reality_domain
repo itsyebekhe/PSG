@@ -7,7 +7,8 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "axial.medic-ml.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "935ed92d-68c3-42c7-8c32-2db2595737e6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "axial.medic-ml.ru", "reality-opts": {"public-key": "660bDah5b-PtCfAbQ3g2tJySO41zsfaXCPb7L3nQCQc", "short-id": "e1ac2faf5e5f309e"}}
+  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "romania.epicserver.web.tr", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d448dfdd-6021-4ba5-af88-0adc2d429fe8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "oXExOCUJVNDMKvPkXg9LBbekTpy9K-bOWzJSk9O7Elo", "short-id": "b58af03efc0cde74"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "nether.velqixa.ir", "port": 8448, "type": "vless", "skip-cert-verify": true, "uuid": "4143a135-cacc-48fc-b349-6ad8c88d8417", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "FrL9e7VL4vyMK6P9haw7--RGPC1irebFEFfVt7PDz3I", "short-id": "68d2d5f8"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -16,7 +17,8 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [medium]'
-      - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -25,7 +27,8 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [medium]'
-      - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

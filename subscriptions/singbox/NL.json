@@ -52,14 +52,15 @@
         "auto",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [slow]",
+        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -70,14 +71,15 @@
       "outbounds": [
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [slow]",
+        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -130,6 +132,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
+      "server": "sv13.betust.net",
+      "server_port": 443,
+      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "apiv13.betust.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo",
+          "short_id": "ef5d4ad5"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
@@ -155,7 +180,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [slow]",
+      "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
       "server": "153.80.249.125",
       "server_port": 443,
       "uuid": "901e6dca-1b73-4266-978b-f7dc1266a7f6",
@@ -202,38 +227,44 @@
     {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "84.32.102.254",
-      "server_port": 443,
-      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
-      "flow": "xtls-rprx-vision",
+      "server": "nether.velqixa.ir",
+      "server_port": 8448,
+      "uuid": "4143a135-cacc-48fc-b349-6ad8c88d8417",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "apiv3.jarvesitw.ru",
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "2zLFL9xRZ_hAqBHIUpZrj3z5o5Bvt3OAFy5yDat7h0U",
-          "short_id": "2aef5875"
+          "public_key": "FrL9e7VL4vyMK6P9haw7--RGPC1irebFEFfVt7PDz3I",
+          "short_id": "68d2d5f8"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
-      "server": "84.32.176.6",
-      "server_port": 443,
-      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
-      "flow": "xtls-rprx-vision",
+      "server": "pamstr1.plasdomain.ir",
+      "server_port": 32855,
+      "uuid": "cc24b2ac-26f2-48ad-9ce4-b2b37d14490a",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "apiv13.betust.net",
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo",
-          "short_id": "ef5d4ad5"
+          "public_key": "fRtTW1zQqje-Yh1DqPAHA8nWOMsX983pZUxy58FaY10",
+          "short_id": "deb7a9e5a6e1d41a"
         }
       }
     },
@@ -251,7 +282,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",
