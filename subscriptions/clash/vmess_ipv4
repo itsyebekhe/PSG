@@ -4,6 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇩🇪 DE | VMESS | @beshkan #1 [fast]", "server": "82.198.246.37", "port": 180, "type": "vmess", "skip-cert-verify": true, "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇺🇸 US | VMESS | @hope_net #1 [fast]", "server": "51.81.223.36", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "c0156451-4efb-45e2-84fc-8d315c4650db", "alterId": 32, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]", "server": "142.132.163.200", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "142.132.163.200"}}}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]", "server": "167.235.205.182", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
@@ -14,6 +15,7 @@ proxy-groups:
     type: select
     proxies:
       - '🇩🇪 DE | VMESS | @beshkan #1 [fast]'
+      - '🇺🇸 US | VMESS | @hope_net #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
@@ -24,6 +26,7 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇩🇪 DE | VMESS | @beshkan #1 [fast]'
+      - '🇺🇸 US | VMESS | @hope_net #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'

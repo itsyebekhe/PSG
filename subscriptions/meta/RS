@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]", "server": "rs1.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs1.univesalsrv.com", "grpc-opts": {"grpc-service-name": "node.v2.ObjectService"}, "reality-opts": {"public-key": "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY", "short-id": "ed0cd5cc2e26e6e7"}}
-  - {"name": "🇷🇸 RS | VLESS | @free1_vpn #2 [fast]", "server": "81.18.48.97", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "60e2a548-96aa-4850-a279-1edab743c39b", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "finanzfluss.de", "grpc-opts": {"grpc-service-name": "remnagrpc"}, "reality-opts": {"public-key": "5_kjhGPcPUiUNJ0Mt4-YoRjphhDz3Hfvx1YCdbBRUA0", "short-id": "8b71da690c3d5d03"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇸 RS | VLESS | @free1_vpn #1 [fast]'
-      - '🇷🇸 RS | VLESS | @free1_vpn #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇸 RS | VLESS | @free1_vpn #1 [fast]'
-      - '🇷🇸 RS | VLESS | @free1_vpn #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
