@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇳🇴 NO | VLESS | @outline_ir #1 [fast]", "server": "194.110.207.59", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "676e31b1-da5a-49ae-86d5-803031549189", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "kibi-institut.de", "reality-opts": {"public-key": "mWzXDVWUhjGcuizZHA-rEnRpxv2wgeSZUIuHmQdteiA", "short-id": "f576da5e05a1d4d2"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇳🇴 NO | VLESS | @outline_ir #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇳🇴 NO | VLESS | @outline_ir #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

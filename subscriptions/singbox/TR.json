@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | SS | @mtproxy22_v2ray #1 [slow]",
         "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
@@ -60,25 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | SS | @mtproxy22_v2ray #1 [slow]",
         "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @mtproxy22_v2ray #1 [slow]",
-      "server": "91.228.227.175",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LxYLzv_qX4cuTq6xJr2k2zxml7Z8rJg7",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vless",

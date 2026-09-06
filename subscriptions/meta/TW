@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇼 TW | VMESS | @red2ray #1 [medium]", "server": "165.154.195.38", "port": 35034, "type": "vmess", "skip-cert-verify": true, "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇼 TW | VMESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇼 TW | VMESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

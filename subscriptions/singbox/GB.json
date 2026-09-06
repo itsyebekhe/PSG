@@ -57,6 +57,9 @@
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @beshkan #4 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
@@ -75,6 +78,9 @@
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @beshkan #4 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
@@ -166,6 +172,64 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
+      "server": "3.9.135.156",
+      "server_port": 51847,
+      "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
+          "short_id": "0eec442e7b34d2f2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "51.38.70.192",
+      "server_port": 443,
+      "uuid": "9343f183-7a16-4bdd-9c65-b0c21feca40b",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+          "short_id": "98fa0b00d09419f7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+      "server": "82.24.203.9",
+      "server_port": 2087,
+      "uuid": "3165b4d0-40f7-4df0-9f59-4c89ccdac92d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/3bfc3e3ed603"
       }
     },
     {

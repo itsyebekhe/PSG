@@ -54,14 +54,14 @@
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇺🇸 US | VMESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -77,6 +77,7 @@
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
         "🇺🇸 US | SS | @netfreedom0 #1 [fast]",
+        "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -108,14 +109,14 @@
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇺🇸 US | VMESS | @hope_net #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -131,6 +132,7 @@
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
         "🇺🇸 US | SS | @netfreedom0 #1 [fast]",
+        "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -255,24 +257,32 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "30a6ad20-2d4c-4c4d-a301-66b74d15f000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "lsjaoijji.global.ssl.fastly.neT"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
       "server": "spd-mynames.global.ssl.fastly.net",
       "server_port": 80,
       "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
       "network": "xhttp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
-      "server": "37.19.198.244",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vmess",
@@ -389,17 +399,31 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @hope_net #1 [fast]",
-      "server": "51.81.223.36",
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+      "server": "151.101.42.154",
       "server_port": 443,
-      "uuid": "c0156451-4efb-45e2-84fc-8d315c4650db",
-      "security": "auto",
-      "alter_id": 32,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
+      "uuid": "c6c2ffe5-f762-4b5d-b637-26e2fe889349",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/5mDjILdUDmBqo0zg6V4b",
+        "headers": {
+          "Host": "violine.com.global.prod.fastly.net"
+        }
+      }
     },
     {
       "type": "vless",
@@ -684,6 +708,21 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
+      "server": "2.27.249.79",
+      "server_port": 443,
+      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "obfs": {
+        "type": "salamander",
+        "password": "salamander"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "nl1.sferavpn.pro"
       }
     },
     {

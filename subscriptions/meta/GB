@@ -3,16 +3,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "51.38.70.192", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9343f183-7a16-4bdd-9c65-b0c21feca40b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "play.google.com", "reality-opts": {"public-key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M", "short-id": "98fa0b00d09419f7"}}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #2 [fast]", "server": "82.24.203.9", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "3165b4d0-40f7-4df0-9f59-4c89ccdac92d", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "82.24.203.9"}}}
   - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "109.169.84.94", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3bcb31ef-840e-415d-abb3-28628add98d0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "strapi.io", "reality-opts": {"public-key": "vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ", "short-id": "ff6975658b6cefce"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
