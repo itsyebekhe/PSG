@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgU0c=
+//profile-title: base64:UFNHIHwgVFc=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 SG | VLESS | @outline_ir #1 [fast]",
+        "🇹🇼 TW | SS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 SG | VLESS | @outline_ir #1 [fast]"
+        "🇹🇼 TW | SS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,24 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @outline_ir #1 [fast]",
-      "server": "img.yhxjlb.com",
-      "server_port": 443,
-      "uuid": "79af209c-dd50-4751-8100-9107b536a022",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇹🇼 TW | SS | @outline_ir #1 [fast]",
+      "server": "r3mrcg001286ek2.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "channel.irandoc.info",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "enabled": true
       }
     },
     {

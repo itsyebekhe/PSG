@@ -59,10 +59,10 @@
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
+        "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #3 [fast]",
@@ -112,10 +112,10 @@
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
+        "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #3 [fast]",
@@ -345,6 +345,33 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "uuid": "XpnTeam-64",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Appxdn.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
       "server": "151.101.25.242",
       "server_port": 80,
@@ -375,15 +402,6 @@
       "tls": {
         "enabled": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "138.124.123.127",
-      "server_port": 2086,
-      "uuid": "b6606cb0-e15d-4813-94af-985028c4b9f3",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

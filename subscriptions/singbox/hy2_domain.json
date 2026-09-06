@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgWkE=
+//profile-title: base64:UFNHIHwgSFkyX0RPTUFJTg==
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 ZA | VLESS | @hope_net #1 [fast]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 ZA | VLESS | @hope_net #1 [fast]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,19 +74,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 ZA | VLESS | @hope_net #1 [fast]",
-      "server": "160.123.255.67",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
       "server_port": 443,
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
+      "uuid": "00000000-0000-0000-0000-000000000000",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "kkg.ylks.link"
-      },
       "transport": {
         "type": "ws",
-        "path": "/blue"
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "admin.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
