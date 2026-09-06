@@ -51,15 +51,12 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #2 [fast]",
-        "🇬🇧 GB | SS | @beshkan #3 [fast]",
-        "🇬🇧 GB | SS | @beshkan #4 [fast]",
+        "🇬🇧 GB | VLESS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #3 [fast]",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
@@ -72,15 +69,12 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #2 [fast]",
-        "🇬🇧 GB | SS | @beshkan #3 [fast]",
-        "🇬🇧 GB | SS | @beshkan #4 [fast]",
+        "🇬🇧 GB | VLESS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #3 [fast]",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
@@ -103,63 +97,16 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-      "server": "31.57.35.41",
-      "server_port": 65443,
-      "method": "aes-256-cfb",
-      "password": "7eadc6dbe2ae",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #1 [fast]",
-      "server": "82.38.31.204",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #2 [fast]",
-      "server": "82.38.31.35",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #3 [fast]",
-      "server": "82.38.31.149",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #4 [fast]",
-      "server": "82.38.31.212",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @beshkan #1 [fast]",
+      "server": "188.220.67.245",
+      "server_port": 2087,
+      "uuid": "90da514d-8888-4a53-912e-ac2981c8c6ee",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/8f2690e2d016"
       }
     },
     {
@@ -200,6 +147,19 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "82.24.203.2",
+      "server_port": 2087,
+      "uuid": "3165b4d0-40f7-4df0-9f59-4c89ccdac92d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/3bfc3e3ed603"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
       "server": "51.38.70.192",
       "server_port": 443,
       "uuid": "9343f183-7a16-4bdd-9c65-b0c21feca40b",
@@ -221,15 +181,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
-      "server": "82.24.203.9",
-      "server_port": 2087,
-      "uuid": "3165b4d0-40f7-4df0-9f59-4c89ccdac92d",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #3 [fast]",
+      "server": "fcs013.getdcz.me",
+      "server_port": 443,
+      "uuid": "f081b5e2-f3a0-4ef5-833b-1ea59e0797b6",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fcs013.getdcz.me",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/3bfc3e3ed603"
+        "path": "/6d2fed050b30",
+        "headers": {
+          "Host": "fcs013.getdcz.me"
+        }
       }
     },
     {

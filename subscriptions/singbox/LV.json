@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇱🇻 LV | HY2 | @outlinereleasedkey #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,24 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇱🇻 LV | HY2 | @outlinereleasedkey #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 LV | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "hy2-latvia2.unlimited-access.ru",
+      "server_port": 443,
+      "password": "GSPOBvG-ZwYcBFMr0ekFGO_Zga3wK6v_",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-latvia2.unlimited-access.ru"
+      }
     },
     {
       "type": "vless",

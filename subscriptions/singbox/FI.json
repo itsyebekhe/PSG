@@ -51,7 +51,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
@@ -63,7 +64,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
@@ -95,18 +97,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
-      "server": "65.109.238.140",
-      "server_port": 443,
-      "uuid": "05bfcbaa-cba0-4bce-9103-09fe3f5f0667",
+      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "31.76.103.109",
+      "server_port": 8444,
+      "uuid": "15e83ced-7544-422e-863d-deafe29a1dbe",
       "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "hel1.nordlinkcloud.com",
-        "alpn": [
-          "h2"
-        ]
+        "server_name": "images.samsung.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ",
+          "short_id": "635a76c25a4b1820"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "fi.horlutr.ir",
+      "server_port": 11437,
+      "uuid": "30980395-1884-483f-95d1-2b7c26928e3c",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XW53yYaevp21yOZsWMV_mVg58iYCNp91sYndl95qnmI",
+          "short_id": "7de83d0e31eb75ef"
+        }
       }
     },
     {
