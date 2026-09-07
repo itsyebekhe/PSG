@@ -51,6 +51,8 @@
       "outbounds": [
         "auto",
         "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
+        "🇷🇸 RS | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]"
+        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
+        "🇷🇸 RS | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,27 +73,79 @@
     {
       "type": "vless",
       "tag": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
-      "server": "rs1.univesalsrv.com",
+      "server": "150.40.126.21",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
       "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "rs1.univesalsrv.com",
+        "server_name": "rs3.univesalsrv.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY",
-          "short_id": "ed0cd5cc2e26e6e7"
+          "public_key": "gHDoSWGWMVZKWNKONWHw-Cpl0-bdI6GaKusgJIQ-vWQ",
+          "short_id": "35d05b666e2c6cdf"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "node.v2.ObjectService"
+        "service_name": "edge.v2.FeedService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
+      "server": "rs4.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs4.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
+          "short_id": "861ac7d66953e55f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @red2ray #2 [fast]",
+      "server": "150.40.126.22",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs4.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
+          "short_id": "861ac7d66953e55f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.StreamService"
       }
     },
     {

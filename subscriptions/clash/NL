@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "104.248.80.136", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "df756db8-a7de-4ff9-a847-d2632bd021e2", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "104.248.80.136"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
