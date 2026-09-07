@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTUQ=
+//profile-title: base64:UFNHIHwgSUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD | VLESS | @mehrosaboran #1 [fast]",
-        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
+        "🇮🇪 IE | SS | @prrofile_purple #1 [slow]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD | VLESS | @mehrosaboran #1 [fast]",
-        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]"
+        "🇮🇪 IE | SS | @prrofile_purple #1 [slow]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,55 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @mehrosaboran #1 [fast]",
-      "server": "89.35.14.33",
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE | SS | @prrofile_purple #1 [slow]",
+      "server": "20.123.9.48",
       "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
+      "method": "chacha20-ietf-poly1305",
+      "password": "bX297As31bQMRsLP",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "md4.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg",
-          "short_id": "8e07337954f9823f"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "hub.v1.ApiService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
-      "server": "89.35.14.33",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "md4.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg",
-          "short_id": "8e07337954f9823f"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "hub.v1.ApiService"
+        "enabled": true
       }
     },
     {

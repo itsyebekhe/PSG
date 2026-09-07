@@ -52,11 +52,10 @@
         "auto",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
-        "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
@@ -69,11 +68,10 @@
       "outbounds": [
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
-        "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
@@ -108,7 +106,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -143,30 +141,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "109.169.76.39",
-      "server_port": 443,
-      "uuid": "972f1d1c-08e5-4485-a888-65688b5c7557",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+      "server": "16.61.72.183",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "slashdot.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY",
-          "short_id": "fd55b698ee8c3629"
-        }
-      }
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
       "server": "104.194.151.4",
       "server_port": 8880,
       "uuid": "6aae65d3-a4a3-4af3-bf97-029be9890e83",
@@ -183,29 +167,6 @@
           "enabled": true,
           "public_key": "vUfN7Cy6Z9IOitFS544BFUa_a1KThS0NgJH6TKzvAHg",
           "short_id": "ea"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
-      "server": "109.169.84.94",
-      "server_port": 443,
-      "uuid": "3bcb31ef-840e-415d-abb3-28628add98d0",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "strapi.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ",
-          "short_id": "ff6975658b6cefce"
         }
       }
     },
