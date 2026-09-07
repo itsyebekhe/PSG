@@ -4,22 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "16.61.72.183", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "104.194.151.4", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "6aae65d3-a4a3-4af3-bf97-029be9890e83", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "vUfN7Cy6Z9IOitFS544BFUa_a1KThS0NgJH6TKzvAHg", "short-id": "ea"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -50,16 +50,15 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @prrofile_purple #1 [medium]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇳🇱 NL | VLESS | @orange_vpns #2 [medium]",
-        "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
@@ -69,22 +68,89 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @prrofile_purple #1 [medium]",
-        "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇳🇱 NL | VLESS | @orange_vpns #2 [medium]",
-        "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
-        "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+      "server": "axial.medic-ml.ru",
+      "server_port": 443,
+      "uuid": "935ed92d-68c3-42c7-8c32-2db2595737e6",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "axial.medic-ml.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "660bDah5b-PtCfAbQ3g2tJySO41zsfaXCPb7L3nQCQc",
+          "short_id": "e1ac2faf5e5f309e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+      "server": "72.56.92.177",
+      "server_port": 40443,
+      "uuid": "4480161e-2c59-4d37-8736-675c9af32bf1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y",
+          "short_id": "01d1bf2d4755d40c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
+      "server": "sv13.betust.net",
+      "server_port": 443,
+      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "apiv13.betust.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo",
+          "short_id": "ef5d4ad5"
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -100,19 +166,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @prrofile_purple #1 [medium]",
-      "server": "92.112.126.90",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "wwzVn2ZnHfqYa6l8EWh3eY",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
       "server": "193.29.139.225",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -164,7 +218,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
       "server": "95.211.164.115",
       "server_port": 443,
       "uuid": "d7430ae7-320c-4658-808b-3006d0627d82",
@@ -185,76 +239,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "axial.medic-ml.ru",
-      "server_port": 443,
-      "uuid": "935ed92d-68c3-42c7-8c32-2db2595737e6",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "axial.medic-ml.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "660bDah5b-PtCfAbQ3g2tJySO41zsfaXCPb7L3nQCQc",
-          "short_id": "e1ac2faf5e5f309e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #2 [medium]",
-      "server": "72.56.92.177",
-      "server_port": 40443,
-      "uuid": "4480161e-2c59-4d37-8736-675c9af32bf1",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y",
-          "short_id": "01d1bf2d4755d40c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]",
-      "server": "sv13.betust.net",
-      "server_port": 443,
-      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "apiv13.betust.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo",
-          "short_id": "ef5d4ad5"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
       "server": "109.201.152.181",
       "server_port": 443,
       "method": "aes-128-cfb",

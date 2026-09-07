@@ -52,10 +52,9 @@
         "auto",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
@@ -68,10 +67,9 @@
       "outbounds": [
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
@@ -106,7 +104,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -140,34 +138,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-      "server": "16.61.72.183",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
+      "server": "82.38.31.35",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "104.194.151.4",
-      "server_port": 8880,
-      "uuid": "6aae65d3-a4a3-4af3-bf97-029be9890e83",
-      "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "amp-api-edge.apps.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vUfN7Cy6Z9IOitFS544BFUa_a1KThS0NgJH6TKzvAHg",
-          "short_id": "ea"
-        }
+        "enabled": true
       }
     },
     {

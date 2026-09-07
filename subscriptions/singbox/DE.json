@@ -50,6 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
@@ -59,9 +61,11 @@
         "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @mimitdl #1 [medium]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #4 [fast]",
+        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
@@ -73,6 +77,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+        "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
@@ -82,9 +88,11 @@
         "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @mimitdl #1 [medium]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #4 [fast]",
+        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
@@ -93,6 +101,52 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
+      "server": "192.142.12.175",
+      "server_port": 443,
+      "uuid": "f0dc4d4f-c956-0004-bc3a-021424b8e879",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "jsonstudio.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+          "short_id": "1c3e8241a8743df9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #2 [fast]",
+      "server": "192.142.12.198",
+      "server_port": 443,
+      "uuid": "f0dc4d4f-c956-0004-bc3a-021424b8e879",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "jsonstudio.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
+          "short_id": "1c3e8241a8743df9"
+        }
+      }
     },
     {
       "type": "vless",
@@ -235,41 +289,93 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "104.167.24.227",
-      "server_port": 18443,
-      "uuid": "1c20357e-be52-4e5e-8eb6-6434adcb4b71",
-      "network": "grpc",
+      "server": "185.204.170.125",
+      "server_port": 442,
+      "uuid": "8482e162-25a3-48f0-a197-772650ed8a4d",
+      "network": "httpupgrade",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "gp1.steptofsvo.com",
+        "server_name": "185.204.170.125",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "gr.edge-cache.onevanet.ir",
+      "server_port": 8887,
+      "uuid": "be39768d-9cee-4e2c-9861-38e7bfc44f90",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0",
-          "short_id": "5c766813929a1fdd"
+          "public_key": "B0q7cY2yDjgCheCSdnydRAimkLbNwZAX28yFTXWOVgk",
+          "short_id": "9262c6710896560f"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @mimitdl #1 [medium]",
-      "server": "116.203.1.152",
-      "server_port": 23746,
-      "uuid": "MimiTdL",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+      "server": "gr.edge-cache.onevanet.ir",
+      "server_port": 8887,
+      "uuid": "36fb0222-0a1a-43d6-980e-eb484f1ebebd",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "B0q7cY2yDjgCheCSdnydRAimkLbNwZAX28yFTXWOVgk",
+          "short_id": "9262c6710896560f"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #4 [fast]",
+      "server": "gr.edge-cache.onevanet.ir",
+      "server_port": 8887,
+      "uuid": "4066dc4c-c0b7-4c81-a9e9-00d3a767d36f",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "B0q7cY2yDjgCheCSdnydRAimkLbNwZAX28yFTXWOVgk",
+          "short_id": "9262c6710896560f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
       "server": "92.223.124.29",
       "server_port": 443,
       "uuid": "e1034c59-c944-4a60-bdba-8f9cea0324b1",
@@ -293,7 +399,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
       "server": "142.132.163.200",
       "server_port": 80,
       "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a",

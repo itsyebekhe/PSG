@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
-  - {"name": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]", "server": "31.76.103.109", "port": 8444, "type": "vless", "skip-cert-verify": true, "uuid": "15e83ced-7544-422e-863d-deafe29a1dbe", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "images.samsung.com", "reality-opts": {"public-key": "jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ", "short-id": "635a76c25a4b1820"}}
   - {"name": "🇫🇮 FI | VLESS | @selinc #1 [medium]", "server": "31.76.80.69", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "8975546a-375c-4966-8064-19fc0f66f30a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.amd.com", "reality-opts": {"public-key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk", "short-id": "29b21343ab4d"}}
   - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [medium]", "server": "65.109.238.140", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "05bfcbaa-cba0-4bce-9103-09fe3f5f0667", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "hel1.nordlinkcloud.com"}
 proxy-groups:
@@ -12,7 +11,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
-      - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]'
       - '🇫🇮 FI | VLESS | @selinc #1 [medium]'
       - '🇫🇮 FI | VLESS | @outline_ir #1 [medium]'
       - DIRECT
@@ -20,7 +18,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
-      - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]'
       - '🇫🇮 FI | VLESS | @selinc #1 [medium]'
       - '🇫🇮 FI | VLESS | @outline_ir #1 [medium]'
 rules:
