@@ -5,21 +5,24 @@ log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
   - {"name": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [slow]", "server": "yt.orpheous.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "55ed97fc-77d1-4802-baf3-acef70776331", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "yt.orpheous.ru", "reality-opts": {"public-key": "9rdvkUGJyNbRvsB0Pp06h1URq9AHDPRtH9-wmNB1-j4", "short-id": "e4aa362b5f9d07d7"}}
+  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "yt.orpheous.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "55ed97fc-77d1-4802-baf3-acef70776331", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "yt.orpheous.ru", "reality-opts": {"public-key": "9rdvkUGJyNbRvsB0Pp06h1URq9AHDPRtH9-wmNB1-j4", "short-id": "e4aa362b5f9d07d7"}}
+  - {"name": "🇷🇺 RU | VLESS | @netazadchannel #1 [medium]", "server": "5.42.82.167", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "26a1e667-19e3-4817-bec9-80122da80675", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "www.speedtest.net", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "JfjZapoZVCvAfLcULqEVuYH57CFQmGOnckAXHlOHcVo", "short-id": "ce30532c"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - '🇷🇺 RU | VLESS | @free1_vpn #1 [fast]'
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [slow]'
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
+      - '🇷🇺 RU | VLESS | @netazadchannel #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - '🇷🇺 RU | VLESS | @free1_vpn #1 [fast]'
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [slow]'
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
+      - '🇷🇺 RU | VLESS | @netazadchannel #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

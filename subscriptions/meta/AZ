@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇿 AZ | VLESS | @red2ray #1 [fast]", "server": "az.horlutr.ir", "port": 11437, "type": "vless", "skip-cert-verify": true, "uuid": "30980395-1884-483f-95d1-2b7c26928e3c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "XW53yYaevp21yOZsWMV_mVg58iYCNp91sYndl95qnmI", "short-id": "7de83d0e31eb75ef"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇿 AZ | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇿 AZ | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -6,8 +6,10 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]", "server": "rs1.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs1.univesalsrv.com", "grpc-opts": {"grpc-service-name": "node.v2.ObjectService"}, "reality-opts": {"public-key": "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY", "short-id": "ed0cd5cc2e26e6e7"}}
   - {"name": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
   - {"name": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]", "server": "shop.jarorobo.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "44973e51-dab2-4df6-bc35-fb4849746114", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "images.samsung.com", "reality-opts": {"public-key": "uSoNVrVIdQ5Y0YOpDCRkaYK5VAzYG6tCPtTc4cim7Tw", "short-id": "e075c3934f"}}
+  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "svvr1.xorfuno.ir", "port": 18149, "type": "vless", "skip-cert-verify": true, "uuid": "860b7321-21de-4611-94e2-79fe3d2d93c1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "LBlScaTInFivNfOiYzDW8ExpwR2O3p4j-vJ8f-4JGWw", "short-id": "a4f78af8c177c10a"}}
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "axial.medic-ml.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "935ed92d-68c3-42c7-8c32-2db2595737e6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "axial.medic-ml.ru", "reality-opts": {"public-key": "660bDah5b-PtCfAbQ3g2tJySO41zsfaXCPb7L3nQCQc", "short-id": "e1ac2faf5e5f309e"}}
 proxy-groups:
   - name: "PROXY"
@@ -16,8 +18,10 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
+      - '🇷🇸 RS | VLESS | @free1_vpn #1 [fast]'
       - '🇷🇺 RU | VLESS | @free1_vpn #1 [fast]'
       - '🇩🇪 DE | VLESS | @bored_vpn #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -26,8 +30,10 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
+      - '🇷🇸 RS | VLESS | @free1_vpn #1 [fast]'
       - '🇷🇺 RU | VLESS | @free1_vpn #1 [fast]'
       - '🇩🇪 DE | VLESS | @bored_vpn #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

@@ -7,7 +7,7 @@ proxies:
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "axial.medic-ml.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "935ed92d-68c3-42c7-8c32-2db2595737e6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "axial.medic-ml.ru", "reality-opts": {"public-key": "660bDah5b-PtCfAbQ3g2tJySO41zsfaXCPb7L3nQCQc", "short-id": "e1ac2faf5e5f309e"}}
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]", "server": "72.56.92.177", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "4480161e-2c59-4d37-8736-675c9af32bf1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y", "short-id": "01d1bf2d4755d40c"}}
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #3 [fast]", "server": "sv13.betust.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "apiv13.betust.net", "reality-opts": {"public-key": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo", "short-id": "ef5d4ad5"}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -16,7 +16,7 @@ proxy-groups:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #2 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #3 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -25,7 +25,7 @@ proxy-groups:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #2 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #3 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
