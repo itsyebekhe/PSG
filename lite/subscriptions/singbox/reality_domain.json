@@ -53,10 +53,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,10 +68,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]"
+        "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -119,23 +119,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "axial.medic-ml.ru",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+      "server": "sv13.betust.net",
       "server_port": 443,
-      "uuid": "935ed92d-68c3-42c7-8c32-2db2595737e6",
-      "network": "xhttp",
+      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "axial.medic-ml.ru",
+        "server_name": "apiv13.betust.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "660bDah5b-PtCfAbQ3g2tJySO41zsfaXCPb7L3nQCQc",
-          "short_id": "e1ac2faf5e5f309e"
+          "public_key": "xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo",
+          "short_id": "ef5d4ad5"
         }
       }
     },
@@ -163,6 +164,32 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
+      "server": "rs1.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs1.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY",
+          "short_id": "ed0cd5cc2e26e6e7"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "node.v2.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
@@ -181,28 +208,6 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
-      "server": "front.onlydreams.ir",
-      "server_port": 8443,
-      "uuid": "2279f738-e427-467f-9cd6-501943cf583c",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EOnpM7BpDK3Qhiz09EO2ufj89p7hx_zYWvT7VbYBxmo",
-          "short_id": "13724435"
         }
       }
     },

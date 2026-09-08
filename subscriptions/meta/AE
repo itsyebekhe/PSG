@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇪 AE | VLESS | @outline_ir #1 [fast]", "server": "31.56.189.224", "port": 3443, "type": "vless", "skip-cert-verify": true, "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "special.aeternavpn.space", "reality-opts": {"public-key": "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo", "short-id": "a1b2c3d4"}}
+  - {"name": "🇦🇪 AE | VLESS | @outline_ir #1 [medium]", "server": "31.56.189.224", "port": 3443, "type": "vless", "skip-cert-verify": true, "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "special.aeternavpn.space", "reality-opts": {"public-key": "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo", "short-id": "a1b2c3d4"}}
+  - {"name": "🇦🇪 AE | VLESS | @outline_ir #2 [medium]", "server": "31.56.189.224", "port": 3443, "type": "vless", "skip-cert-verify": true, "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "special.aeternavpn.space", "reality-opts": {"public-key": "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo", "short-id": "a1b2c3d4"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
+      - '🇦🇪 AE | VLESS | @outline_ir #1 [medium]'
+      - '🇦🇪 AE | VLESS | @outline_ir #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
+      - '🇦🇪 AE | VLESS | @outline_ir #1 [medium]'
+      - '🇦🇪 AE | VLESS | @outline_ir #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

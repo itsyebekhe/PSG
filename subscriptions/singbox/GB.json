@@ -51,10 +51,12 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
-        "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]",
+        "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "direct"
@@ -66,10 +68,12 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
-        "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]",
+        "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]"
       ],
@@ -92,11 +96,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-      "server": "149.102.132.184",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "g5h5jleTRSyO3Rk4",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
+      "server": "82.38.31.179",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
       "network": "tcp",
       "tls": {
         "enabled": true
@@ -104,7 +108,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -116,7 +120,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
+      "tag": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]",
       "server": "3.9.135.156",
       "server_port": 51847,
       "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
@@ -139,7 +143,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [medium]",
       "server": "82.38.31.35",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -147,6 +151,50 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "104.194.144.106",
+      "server_port": 9990,
+      "uuid": "81686214-6ce3-4345-ae4d-cf848c97160a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dealersource.electronics.sony.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bThKArw7XzgGi3dw6mXUtSMKeTDa8vhwGoK1YEzUaWk",
+          "short_id": "f7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+      "server": "104.194.144.106",
+      "server_port": 8880,
+      "uuid": "81686214-6ce3-4345-ae4d-cf848c97160a",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dealersource.electronics.sony.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "s2JoYpJo8tDvwDO0EOsvhICzzPb_GQZYCdoUesgU4h0",
+          "short_id": "27c69b4eb383ae"
+        }
       }
     },
     {

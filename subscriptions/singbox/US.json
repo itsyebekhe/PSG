@@ -61,13 +61,16 @@
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #3 [fast]",
-        "🇺🇸 US | HY2 | @free1_vpn #1 [fast]",
+        "🇺🇸 US | HY2 | @free1_vpn #1 [medium]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
@@ -77,7 +80,7 @@
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
         "🇺🇸 US | SS | @netfreedom0 #1 [fast]",
-        "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
+        "🇺🇸 US | HY2 | @netfreedom0 #1 [medium]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -116,13 +119,16 @@
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #3 [fast]",
-        "🇺🇸 US | HY2 | @free1_vpn #1 [fast]",
+        "🇺🇸 US | HY2 | @free1_vpn #1 [medium]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
@@ -132,7 +138,7 @@
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
         "🇺🇸 US | SS | @netfreedom0 #1 [fast]",
-        "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
+        "🇺🇸 US | HY2 | @netfreedom0 #1 [medium]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -406,6 +412,23 @@
       "packet_encoding": "xudp"
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+      "server": "63.141.128.34",
+      "server_port": 443,
+      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "jpd.ylks01.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "167.88.63.59",
@@ -439,6 +462,40 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "199.33.231.87",
+      "server_port": 443,
+      "uuid": "73a65dd6-92d6-43ac-8c68-52abcfe6202d",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "outland.manufacturingcity.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
+      "server": "interchange.proxy.rlwy.net",
+      "server_port": 32814,
+      "uuid": "a89fa790-a610-4d75-a540-c7c595de050a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -507,7 +564,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 US | HY2 | @free1_vpn #1 [fast]",
+      "tag": "🇺🇸 US | HY2 | @free1_vpn #1 [medium]",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -707,7 +764,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
+      "tag": "🇺🇸 US | HY2 | @netfreedom0 #1 [medium]",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",

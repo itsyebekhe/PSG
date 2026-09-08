@@ -3,17 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
+  - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "104.194.144.106", "port": 9990, "type": "vless", "skip-cert-verify": true, "uuid": "81686214-6ce3-4345-ae4d-cf848c97160a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "dealersource.electronics.sony.com", "reality-opts": {"public-key": "bThKArw7XzgGi3dw6mXUtSMKeTDa8vhwGoK1YEzUaWk", "short-id": "f7"}}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #2 [fast]", "server": "104.194.144.106", "port": 8880, "type": "vless", "skip-cert-verify": true, "uuid": "81686214-6ce3-4345-ae4d-cf848c97160a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "dealersource.electronics.sony.com", "reality-opts": {"public-key": "s2JoYpJo8tDvwDO0EOsvhICzzPb_GQZYCdoUesgU4h0", "short-id": "27c69b4eb383ae"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
+      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
+      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
