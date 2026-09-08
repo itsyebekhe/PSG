@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]"
+        "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +72,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
+      "server": "188.130.209.185",
+      "server_port": 443,
+      "uuid": "eaf8abff-0fbf-4b64-8d8f-18c1757c75df",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.mycdn-io.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vrtWpW_N3rBs9WEoV1Yz4uOYsci3Kpe7HitaYr4oQGc",
+          "short_id": "fbe42a5d4788bacc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
       "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
@@ -93,24 +118,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-      "server": "tgfree.rush-server.com",
+      "tag": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "eehfgs.save-node.com",
       "server_port": 443,
-      "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
+      "uuid": "57441186-17bd-40c6-ae68-e557099c9d77",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "anyfile2file.com",
+        "server_name": "eehfgs.save-node.com",
+        "alpn": [
+          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
-          "short_id": "64c1fe36c7846400"
+          "public_key": "mrWlgdMs8fEGDHvw3zdJYUw9oHm5LyGeeMo7ZiWc11Q",
+          "short_id": "45ee70d18247e5"
         }
       }
     },
