@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇱🇻 LV | SS | @outlinereleasedkey #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇱🇻 LV | SS | @outlinereleasedkey #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 LV | SS | @outlinereleasedkey #1 [fast]",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",

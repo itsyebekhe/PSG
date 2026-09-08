@@ -52,6 +52,7 @@
         "auto",
         "🇦🇪 AE | HY2 | @prrofile_purple #1 [fast]",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @outline_ir #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]",
         "direct"
       ],
@@ -63,6 +64,7 @@
       "outbounds": [
         "🇦🇪 AE | HY2 | @prrofile_purple #1 [fast]",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @outline_ir #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -95,6 +97,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @outline_ir #1 [fast]",
+      "server": "31.56.189.224",
+      "server_port": 3443,
+      "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "special.aeternavpn.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo",
+          "short_id": "a1b2c3d4"
+        }
       }
     },
     {
