@@ -3,22 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]", "server": "193.148.59.178", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE", "short-id": "e3daad69"}}
-  - {"name": "🇧🇬 BG | VLESS | @red2ray #1 [fast]", "server": "bulopksdhfoioppanelmarzjkyios.horlutr.ir", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "602ba9cb-2071-4559-a0b6-47b6e7b56272", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇧🇬 BG | VLESS | @free1_vpn #1 [fast]", "server": "bg3.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "bg3.univesalsrv.com", "grpc-opts": {"grpc-service-name": "home.v1.ApiService"}, "reality-opts": {"public-key": "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk", "short-id": "1be1bd931c98c84a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
       - '🇧🇬 BG | VLESS | @free1_vpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
       - '🇧🇬 BG | VLESS | @free1_vpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

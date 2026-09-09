@@ -5,18 +5,21 @@ log-level: info
 proxies:
   - {"name": "🇦🇪 AE | VLESS | @outline_ir #1 [fast]", "server": "31.56.189.224", "port": 3443, "type": "vless", "skip-cert-verify": true, "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "special.aeternavpn.space", "reality-opts": {"public-key": "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo", "short-id": "a1b2c3d4"}}
   - {"name": "🇦🇪 AE | VLESS | @outline_ir #2 [fast]", "server": "31.56.189.224", "port": 3443, "type": "vless", "skip-cert-verify": true, "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "special.aeternavpn.space", "reality-opts": {"public-key": "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo", "short-id": "a1b2c3d4"}}
+  - {"name": "🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]", "server": "germanndnew.mamadhpbot.ir", "port": 50118, "type": "vless", "skip-cert-verify": true, "uuid": "93ee032f-b67f-4cac-a239-da1295aec528", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
       - '🇦🇪 AE | VLESS | @outline_ir #2 [fast]'
+      - '🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
       - '🇦🇪 AE | VLESS | @outline_ir #2 [fast]'
+      - '🇦🇪 AE | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
