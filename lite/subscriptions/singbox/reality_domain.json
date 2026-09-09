@@ -53,8 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -66,8 +67,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]"
+        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -115,6 +117,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+      "server": "yt.orpheous.ru",
+      "server_port": 443,
+      "uuid": "55ed97fc-77d1-4802-baf3-acef70776331",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yt.orpheous.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9rdvkUGJyNbRvsB0Pp06h1URq9AHDPRtH9-wmNB1-j4",
+          "short_id": "e4aa362b5f9d07d7"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
       "server": "play-u1.soft9.ir",
       "server_port": 12345,
@@ -143,24 +168,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "nl6.mobileemdad.top",
+      "tag": "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+      "server": "md3.univesalsrv.com",
       "server_port": 443,
-      "uuid": "b560fbd2-b33d-43ae-930c-ed479758c518",
-      "network": "tcp",
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "delivery.mp.microsoft.com",
+        "server_name": "md3.univesalsrv.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ",
-          "short_id": "e8f4426268c05621"
+          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
+          "short_id": "9a72d40f1ff882b3"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "stats.v2.PushService"
       }
     },
     {

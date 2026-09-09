@@ -5,7 +5,6 @@ log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]", "server": "95.211.164.121", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d7430ae7-320c-4658-808b-3006d0627d82", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "devua.nubuntuhosting.host", "grpc-opts": {"grpc-service-name": "gun"}, "reality-opts": {"public-key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng", "short-id": "3fa234ea9feaa048"}}
   - {"name": "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "104.248.80.136", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "df756db8-a7de-4ff9-a847-d2632bd021e2", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "104.248.80.136"}}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "nl6.mobileemdad.top", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b560fbd2-b33d-43ae-930c-ed479758c518", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "delivery.mp.microsoft.com", "reality-opts": {"public-key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ", "short-id": "e8f4426268c05621"}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
@@ -13,7 +12,6 @@ proxy-groups:
     proxies:
       - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -21,7 +19,6 @@ proxy-groups:
     proxies:
       - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

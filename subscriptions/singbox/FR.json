@@ -52,8 +52,8 @@
         "auto",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -67,8 +67,8 @@
       "outbounds": [
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -97,18 +97,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-      "server": "54.36.174.134",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ytw2awn",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #2 [fast]",
       "server": "54.36.174.140",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -138,6 +126,15 @@
           "Host": "sub.mot.ip-ddns.com"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+      "server": "35.181.124.186",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",

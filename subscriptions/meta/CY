@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]", "server": "5.253.42.164", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw", "short-id": "68a8"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

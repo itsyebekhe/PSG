@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
@@ -62,6 +63,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
@@ -71,6 +73,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+      "server": "yt.orpheous.ru",
+      "server_port": 443,
+      "uuid": "55ed97fc-77d1-4802-baf3-acef70776331",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yt.orpheous.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9rdvkUGJyNbRvsB0Pp06h1URq9AHDPRtH9-wmNB1-j4",
+          "short_id": "e4aa362b5f9d07d7"
+        }
+      }
     },
     {
       "type": "vless",
