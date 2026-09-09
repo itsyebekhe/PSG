@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
         "🇸🇬 SG | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,29 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
         "🇸🇬 SG | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
+      "server": "95.111.197.114",
+      "server_port": 80,
+      "uuid": "5f82e7d7-38dc-4381-9ded-a025342fb330",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/FREE+by+Tharuwa+(0767597317)",
+        "headers": {
+          "Host": "m.zoom.us"
+        }
+      }
     },
     {
       "type": "vless",

@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]", "server": "80.96.112.163", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7bafeb9d-06ba-4c43-94f5-b8666354d1c6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rom.skysafe.online", "reality-opts": {"public-key": "EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0", "short-id": "6ba7b8109dad11d1"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇷🇴 RO | VLESS | @orange_vpns #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇷🇴 RO | VLESS | @orange_vpns #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
