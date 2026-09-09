@@ -51,9 +51,11 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -66,9 +68,11 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -95,18 +99,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-      "server": "54.36.174.140",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ytw2awn",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
       "server": "84.247.129.205",
@@ -130,11 +122,48 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "35.181.124.186",
+      "server": "15.188.69.42",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+      "server": "35.180.170.215",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "fr-jan.ramcalshoping.ir",
+      "server_port": 8088,
+      "uuid": "ff1dcb64-f13d-4ccd-a3c6-055218f7490b",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/bmi.ir",
+        "headers": {
+          "Host": "play-apps-features.googleusercontent.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+      "server": "54.36.174.140",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ytw2awn",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",

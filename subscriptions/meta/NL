@@ -3,22 +3,28 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]", "server": "95.211.164.121", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d7430ae7-320c-4658-808b-3006d0627d82", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "devua.nubuntuhosting.host", "grpc-opts": {"grpc-service-name": "gun"}, "reality-opts": {"public-key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng", "short-id": "3fa234ea9feaa048"}}
+  - {"name": "🇳🇱 NL | VLESS | @beshkan #1 [fast]", "server": "free-amsterdam-node-1.cloudwidecdn.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU", "short-id": "1d86d17709852910"}}
   - {"name": "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "104.248.80.136", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "df756db8-a7de-4ff9-a847-d2632bd021e2", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "104.248.80.136"}}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "153.76.204.161", "port": 3085, "type": "vless", "skip-cert-verify": true, "uuid": "d9d0f208-d582-41d5-bb7b-742671402810", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl4-6vkfut.vpvr4ib84nuv6hdkt.ru", "reality-opts": {"public-key": "ImWhg9OJ8xUd2Fj4ZkgnURYCABBqumTCqYZNRuxAf34", "short-id": "8ee637a5a05b603b"}}
+  - {"name": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]", "server": "95.211.164.121", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d7430ae7-320c-4658-808b-3006d0627d82", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "devua.nubuntuhosting.host", "grpc-opts": {"grpc-service-name": "gun"}, "reality-opts": {"public-key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng", "short-id": "3fa234ea9feaa048"}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
       - '🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
       - '🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

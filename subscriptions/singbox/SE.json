@@ -50,6 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
+        "🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -75,6 +77,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
+        "🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -97,6 +101,42 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
+      "server": "185.146.173.95",
+      "server_port": 80,
+      "uuid": "00baa831-7e66-4a9a-a622-86c25e0285e2",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/@Proxy_MTM-@Proxy_MTM-@Proxy_MTM-Proxy_@MTM?ed=2056",
+        "headers": {
+          "Host": "1.V2rayV2ray-_-_-V2ray.Zemestanil.Ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "62.182.192.195",
+      "server_port": 443,
+      "uuid": "9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws"
+      }
     },
     {
       "type": "vless",

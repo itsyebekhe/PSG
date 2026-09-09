@@ -54,7 +54,7 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [slow]",
         "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -75,8 +75,8 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇸🇬 SG | VLESS | @outline_ir #1 [fast]",
-        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -110,7 +110,7 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [slow]",
         "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -131,8 +131,8 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇸🇬 SG | VLESS | @outline_ir #1 [fast]",
-        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -224,7 +224,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [slow]",
       "server": "play-u1.soft9.ir",
       "server_port": 12345,
       "uuid": "986d9870-d16a-424f-91ca-d17bf2d18092",
@@ -559,15 +559,38 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @outline_ir #1 [fast]",
-      "server": "img.yhxjlb.com",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "cz.cloudtechone.org",
       "server_port": 443,
-      "uuid": "79af209c-dd50-4751-8100-9107b536a022",
-      "network": "httpupgrade",
+      "uuid": "2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "channel.irandoc.info",
+        "server_name": "cz.cloudtechone.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo",
+          "short_id": "f93c9d5127e622e4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "b2n.ir",
+      "server_port": 2083,
+      "uuid": "b8e0eb1a-9967-4753-b278-6ef1226dd195",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s.dpiccolo.ir",
         "alpn": [
           "h2",
           "http/1.1"
@@ -576,32 +599,13 @@
           "enabled": true,
           "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
-      "server": "md3.univesalsrv.com",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "md3.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
-          "short_id": "9a72d40f1ff882b3"
-        }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "stats.v2.PushService"
+        "type": "ws",
+        "path": "/hero",
+        "headers": {
+          "Host": "s.dpiccolo.ir"
+        }
       }
     },
     {

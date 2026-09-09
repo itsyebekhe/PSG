@@ -52,8 +52,10 @@
         "auto",
         "🇳🇱 NL | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
@@ -66,8 +68,10 @@
       "outbounds": [
         "🇳🇱 NL | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
@@ -102,6 +106,69 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
+      "server": "free-amsterdam-node-1.cloudwidecdn.com",
+      "server_port": 443,
+      "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+          "short_id": "1d86d17709852910"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "104.248.80.136",
+      "server_port": 80,
+      "uuid": "df756db8-a7de-4ff9-a847-d2632bd021e2",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/graphql"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "153.76.204.161",
+      "server_port": 3085,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl4-6vkfut.vpvr4ib84nuv6hdkt.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ImWhg9OJ8xUd2Fj4ZkgnURYCABBqumTCqYZNRuxAf34",
+          "short_id": "8ee637a5a05b603b"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "95.211.164.121",
       "server_port": 443,
@@ -124,23 +191,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "gun"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "104.248.80.136",
-      "server_port": 80,
-      "uuid": "df756db8-a7de-4ff9-a847-d2632bd021e2",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/graphql"
       }
     },
     {

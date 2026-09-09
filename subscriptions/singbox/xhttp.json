@@ -57,7 +57,6 @@
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #3 [fast]",
@@ -70,8 +69,7 @@
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
         "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+        "🇺🇦 UA | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
@@ -88,7 +86,6 @@
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #3 [fast]",
@@ -101,8 +98,7 @@
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
         "🇽🇽 XX | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+        "🇺🇦 UA | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -222,22 +218,6 @@
       "uuid": "02d87d00-c769-48d8-91cb-bd05e2f62790",
       "network": "xhttp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-      "server": "167.233.219.201",
-      "server_port": 443,
-      "uuid": "05bfcbaa-cba0-4bce-9103-09fe3f5f0667",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fsn1.nordlinkcloud.com",
-        "alpn": [
-          "h2"
-        ]
-      }
     },
     {
       "type": "vless",
@@ -477,21 +457,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "sourceforge.net",
-      "server_port": 2086,
-      "uuid": "59ad4ebd-ccb2-4399-a779-add3b2c74639",
+      "tag": "🇺🇦 UA | VLESS | @red2ray #1 [fast]",
+      "server": "pol.skysafe.online",
+      "server_port": 2027,
+      "uuid": "7bafeb9d-06ba-4c43-94f5-b8666354d1c6",
       "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
-      "server": "cdn.devmixa.ir",
-      "server_port": 2086,
-      "uuid": "59ad4ebd-ccb2-4399-a779-add3b2c74639",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "2gis.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0",
+          "short_id": "6ba7b8109dad11d1"
+        }
+      }
     },
     {
       "type": "vless",
