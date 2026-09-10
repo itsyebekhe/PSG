@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇭🇰 HK | VMESS | @NamiraConfigs #1 [fast]", "server": "47.244.120.197", "port": 23026, "type": "vmess", "skip-cert-verify": true, "uuid": "b9de1bc9-baa7-41ac-86f7-ccd59695cb21", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/arki", "headers": {"Host": "47.244.120.197"}}}
+  - {"name": "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]", "server": "47.244.120.197", "port": 44867, "type": "vmess", "skip-cert-verify": true, "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/arki?ed=2048", "headers": {"Host": "47.244.120.197"}}}
+  - {"name": "🇭🇰 HK | VMESS | @NamiraConfigs #2 [medium]", "server": "47.244.120.197", "port": 23026, "type": "vmess", "skip-cert-verify": true, "uuid": "b9de1bc9-baa7-41ac-86f7-ccd59695cb21", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/arki", "headers": {"Host": "47.244.120.197"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇭🇰 HK | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]'
+      - '🇭🇰 HK | VMESS | @NamiraConfigs #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇭🇰 HK | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]'
+      - '🇭🇰 HK | VMESS | @NamiraConfigs #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

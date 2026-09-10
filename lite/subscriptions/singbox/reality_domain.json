@@ -55,8 +55,8 @@
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇧🇬 BG | VLESS | @free1_vpn #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -70,8 +70,8 @@
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
-        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇧🇬 BG | VLESS | @free1_vpn #1 [medium]"
+        "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
+        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -169,6 +169,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
+      "server": "free-amsterdam-node-1.cloudwidecdn.com",
+      "server_port": 443,
+      "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+          "short_id": "1d86d17709852910"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
       "server": "eehfgs.save-node.com",
       "server_port": 443,
@@ -191,32 +214,6 @@
           "public_key": "mrWlgdMs8fEGDHvw3zdJYUw9oHm5LyGeeMo7ZiWc11Q",
           "short_id": "45ee70d18247e5"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @free1_vpn #1 [medium]",
-      "server": "bg3.univesalsrv.com",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "bg3.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk",
-          "short_id": "1be1bd931c98c84a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "home.v1.ApiService"
       }
     },
     {

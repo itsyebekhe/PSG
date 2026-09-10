@@ -58,7 +58,8 @@
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇧🇬 BG | VLESS | @free1_vpn #1 [medium]",
+        "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -75,7 +76,8 @@
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇧🇬 BG | VLESS | @free1_vpn #1 [medium]"
+        "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -245,28 +247,50 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @free1_vpn #1 [medium]",
-      "server": "bg3.univesalsrv.com",
+      "tag": "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "popos.ubuntuhosting.host",
       "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "uuid": "d7430ae7-320c-4658-808b-3006d0627d82",
       "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "bg3.univesalsrv.com",
+        "server_name": "popos.ubuntuhosting.host",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk",
-          "short_id": "1be1bd931c98c84a"
+          "public_key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng",
+          "short_id": "3fa234ea9feaa048"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "home.v1.ApiService"
+        "service_name": "gun"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "xyz.cdkshop.ir",
+      "server_port": 8443,
+      "uuid": "1b863ee9-5104-4574-874b-c7267eba2327",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4",
+          "short_id": "ab5b"
+        }
       }
     },
     {

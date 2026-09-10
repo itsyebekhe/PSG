@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
+        "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -77,6 +78,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
+        "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -103,16 +105,43 @@
     {
       "type": "vless",
       "tag": "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
-      "server": "185.146.173.200",
-      "server_port": 8880,
-      "uuid": "fe04082c-3ed6-40fc-ac9e-f11487996e39",
+      "server": "185.146.173.37",
+      "server_port": 2095,
+      "uuid": "cb2bba00-e328-4dde-ac07-d0751845d2c8",
       "network": "ws",
       "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
-          "Host": "xn--v2ray-qhantayawi--a-mwxzc08arba93xpvac79043ht5ia.xn--v2-gn1d638jbjx.xyz."
+          "Host": "V2ray-_-_-_-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com."
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "popos.ubuntuhosting.host",
+      "server_port": 443,
+      "uuid": "d7430ae7-320c-4658-808b-3006d0627d82",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "popos.ubuntuhosting.host",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng",
+          "short_id": "3fa234ea9feaa048"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gun"
       }
     },
     {

@@ -11,7 +11,8 @@ proxies:
   - {"name": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]", "server": "shop.jarorobo.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "44973e51-dab2-4df6-bc35-fb4849746114", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "images.samsung.com", "reality-opts": {"public-key": "uSoNVrVIdQ5Y0YOpDCRkaYK5VAzYG6tCPtTc4cim7Tw", "short-id": "e075c3934f"}}
   - {"name": "🇳🇱 NL | VLESS | @beshkan #1 [fast]", "server": "free-amsterdam-node-1.cloudwidecdn.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU", "short-id": "1d86d17709852910"}}
   - {"name": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "eehfgs.save-node.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "57441186-17bd-40c6-ae68-e557099c9d77", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "eehfgs.save-node.com", "reality-opts": {"public-key": "mrWlgdMs8fEGDHvw3zdJYUw9oHm5LyGeeMo7ZiWc11Q", "short-id": "45ee70d18247e5"}}
-  - {"name": "🇧🇬 BG | VLESS | @free1_vpn #1 [medium]", "server": "bg3.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "bg3.univesalsrv.com", "grpc-opts": {"grpc-service-name": "home.v1.ApiService"}, "reality-opts": {"public-key": "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk", "short-id": "1be1bd931c98c84a"}}
+  - {"name": "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]", "server": "popos.ubuntuhosting.host", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d7430ae7-320c-4658-808b-3006d0627d82", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "popos.ubuntuhosting.host", "grpc-opts": {"grpc-service-name": "gun"}, "reality-opts": {"public-key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng", "short-id": "3fa234ea9feaa048"}}
+  - {"name": "🇩🇪 DE | VLESS | @red2ray #2 [fast]", "server": "xyz.cdkshop.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "1b863ee9-5104-4574-874b-c7267eba2327", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "www.github.com", "reality-opts": {"public-key": "9LyZjKAQkh2_FwDS21QVW05gfBRR77KjatFS8EtRyU4", "short-id": "ab5b"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -24,7 +25,8 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @bored_vpn #1 [fast]'
       - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
       - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇧🇬 BG | VLESS | @free1_vpn #1 [medium]'
+      - '🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -37,7 +39,8 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @bored_vpn #1 [fast]'
       - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
       - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇧🇬 BG | VLESS | @free1_vpn #1 [medium]'
+      - '🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇩🇪 DE | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
