@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]", "server": "188.132.232.85", "port": 2086, "type": "vmess", "skip-cert-verify": true, "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]", "server": "188.132.232.85", "port": 2086, "type": "vmess", "skip-cert-verify": true, "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]'
+      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]'
+      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

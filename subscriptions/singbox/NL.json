@@ -52,11 +52,9 @@
         "auto",
         "🇳🇱 NL | SS | @orange_vpns #1 [medium]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
-        "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -67,11 +65,9 @@
       "outbounds": [
         "🇳🇱 NL | SS | @orange_vpns #1 [medium]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
-        "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -114,23 +110,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇳🇱 NL | VMESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "104.248.80.136",
-      "server_port": 80,
-      "uuid": "df756db8-a7de-4ff9-a847-d2632bd021e2",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/graphql"
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
@@ -140,32 +119,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "95.211.164.121",
-      "server_port": 443,
-      "uuid": "d7430ae7-320c-4658-808b-3006d0627d82",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "devua.nubuntuhosting.host",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng",
-          "short_id": "3fa234ea9feaa048"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "gun"
       }
     },
     {
@@ -182,7 +135,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

@@ -50,8 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
@@ -61,52 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
-      "server": "83.168.71.216",
-      "server_port": 443,
-      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-          "short_id": "2f49bccf11150ef2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-      "server": "pol-hhasca.ramcalshoping.ir",
-      "server_port": 8088,
-      "uuid": "ff1dcb64-f13d-4ccd-a3c6-055218f7490b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/bmi.ir",
-        "headers": {
-          "Host": "play-apps-features.googleusercontent.com"
-        }
-      }
     },
     {
       "type": "hysteria2",

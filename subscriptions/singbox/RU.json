@@ -50,11 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,39 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
+        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-      "server": "yt.orpheous.ru",
-      "server_port": 443,
-      "uuid": "55ed97fc-77d1-4802-baf3-acef70776331",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yt.orpheous.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9rdvkUGJyNbRvsB0Pp06h1URq9AHDPRtH9-wmNB1-j4",
-          "short_id": "e4aa362b5f9d07d7"
-        }
-      }
     },
     {
       "type": "vless",
@@ -163,22 +136,6 @@
           "enabled": true,
           "public_key": "mrWlgdMs8fEGDHvw3zdJYUw9oHm5LyGeeMo7ZiWc11Q",
           "short_id": "45ee70d18247e5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "az-hti-de.ramzshadi.ir",
-      "server_port": 8088,
-      "uuid": "ff1dcb64-f13d-4ccd-a3c6-055218f7490b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/bmi.ir",
-        "headers": {
-          "Host": "play-apps-features.googleusercontent.com"
         }
       }
     },

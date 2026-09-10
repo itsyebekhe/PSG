@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUlM=
+//profile-title: base64:UFNHIHwgSEs=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
+        "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]"
+        "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,29 +67,20 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @free1_vpn #1 [fast]",
-      "server": "150.40.126.21",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "rs3.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gHDoSWGWMVZKWNKONWHw-Cpl0-bdI6GaKusgJIQ-vWQ",
-          "short_id": "35d05b666e2c6cdf"
-        }
-      },
+      "type": "vmess",
+      "tag": "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
+      "server": "47.244.120.197",
+      "server_port": 44867,
+      "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "transport": {
-        "type": "grpc",
-        "service_name": "edge.v2.FeedService"
+        "type": "ws",
+        "path": "/arki?ed=2048"
       }
     },
     {

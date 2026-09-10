@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]"
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,8 +69,30 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "153.52.92.95",
+      "server_port": 8443,
+      "uuid": "5559d7b9-96ca-4bbe-888e-d1e67e5eb191",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play-apps-features.googleusercontent.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G4oiVIFLCYrlsImX2giX59IFtR815OZdyPkoGOgkwGE",
+          "short_id": "fd9de43dca4f1faa"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]",
+      "tag": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
       "server": "188.132.232.85",
       "server_port": 2086,
       "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
