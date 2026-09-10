@@ -5,18 +5,21 @@ log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
   - {"name": "🇫🇮 FI | VLESS | @selinc #1 [fast]", "server": "31.76.80.69", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "8975546a-375c-4966-8064-19fc0f66f30a", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.amd.com", "reality-opts": {"public-key": "zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk", "short-id": "29b21343ab4d"}}
+  - {"name": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]", "server": "snnsjsowowiwueieyeye.sobu.ir", "port": 40864, "type": "vmess", "skip-cert-verify": true, "uuid": "4a9a2ec3-91f4-46ed-a647-0a092bf4b6a3", "alterId": 0, "cipher": "auto", "network": "xhttp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
       - '🇫🇮 FI | VLESS | @selinc #1 [fast]'
+      - '🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
       - '🇫🇮 FI | VLESS | @selinc #1 [fast]'
+      - '🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

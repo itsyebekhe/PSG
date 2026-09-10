@@ -70,9 +70,10 @@
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #3 [fast]",
+        "🇺🇸 US | HY2 | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -127,9 +128,10 @@
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #3 [fast]",
+        "🇺🇸 US | HY2 | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
@@ -576,6 +578,21 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇺🇸 US | HY2 | @free1_vpn #1 [fast]",
+      "server": "2.27.249.79",
+      "server_port": 443,
+      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "obfs": {
+        "type": "salamander",
+        "password": "salamander"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "nl1.sferavpn.pro"
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
       "server": "66.235.200.51",
@@ -628,15 +645,30 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
-      "server": "15.204.247.124",
-      "server_port": 2375,
-      "method": "aes-256-gcm",
-      "password": "faBAoD54k87UJG7",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "spiderpanel-production-aedc.up.railway.app",
+      "server_port": 443,
+      "uuid": "b9724ecb-a72d-41e6-be9d-86d64fed9204",
+      "network": "ws",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "spiderpanel-production-aedc.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/b9724ecb-a72d-41e6-be9d-86d64fed9204",
+        "headers": {
+          "Host": "spiderpanel-production-aedc.up.railway.app"
+        }
       }
     },
     {

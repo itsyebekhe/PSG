@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
+        "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
+        "🇱🇹 LT | SS | @netfreedom0 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
+        "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
+        "🇱🇹 LT | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,8 +69,32 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
+      "server": "86.38.214.86",
+      "server_port": 443,
+      "uuid": "eae02a50-e329-4647-926e-8439e685f317",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "first.pinocchio1.ir.",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇱🇹 LT | SS | @netfreedom0 #1 [medium]",
       "server": "195.238.126.20",
       "server_port": 9008,
       "method": "aes-256-cfb",

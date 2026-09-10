@@ -50,15 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [slow]",
-        "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-        "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | SS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
@@ -72,15 +73,16 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [slow]",
-        "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-        "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | SS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
@@ -94,7 +96,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [slow]",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
       "server": "play-u1.soft9.ir",
       "server_port": 12345,
       "uuid": "986d9870-d16a-424f-91ca-d17bf2d18092",
@@ -117,6 +119,77 @@
           "enabled": true,
           "public_key": "1N8CIM6v_TgbIDNneyEPNQ92hyq5Eyh_irJWOXKDBDw",
           "short_id": "2b368990a94e8cbb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+      "server": "shop.jarorobo.ir",
+      "server_port": 443,
+      "uuid": "44973e51-dab2-4df6-bc35-fb4849746114",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uSoNVrVIdQ5Y0YOpDCRkaYK5VAzYG6tCPtTc4cim7Tw",
+          "short_id": "e075c3934f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
+      "server": "datisde2.datgame.ir",
+      "server_port": 30305,
+      "uuid": "fcc26389-a451-4d51-b9d0-c75f0d7ce860",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+      "server": "3.126.31.60",
+      "server_port": 443,
+      "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 DE | SS | @outline_ir #1 [fast]",
+      "server": "141.95.29.163",
+      "server_port": 2083,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "169.40.42.89",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
@@ -161,35 +234,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
-      "server": "shop.jarorobo.ir",
+      "type": "hysteria2",
+      "tag": "🇩🇪 DE | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "player.wwwinternetvideo.click",
       "server_port": 443,
-      "uuid": "44973e51-dab2-4df6-bc35-fb4849746114",
-      "network": "tcp",
-      "packet_encoding": "xudp",
+      "password": "V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8",
       "tls": {
         "enabled": true,
-        "server_name": "images.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uSoNVrVIdQ5Y0YOpDCRkaYK5VAzYG6tCPtTc4cim7Tw",
-          "short_id": "e075c3934f"
-        }
+        "server_name": "player.wwwinternetvideo.click",
+        "insecure": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-      "server": "datisde2.datgame.ir",
-      "server_port": 30305,
-      "uuid": "fcc26389-a451-4d51-b9d0-c75f0d7ce860",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -201,46 +255,6 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
-      "server": "3.126.31.60",
-      "server_port": 443,
-      "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-      "server": "169.40.42.89",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 DE | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "player.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8",
-      "tls": {
-        "enabled": true,
-        "server_name": "player.wwwinternetvideo.click",
-        "insecure": true
       }
     },
     {

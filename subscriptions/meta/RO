@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]", "server": "80.96.112.163", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7bafeb9d-06ba-4c43-94f5-b8666354d1c6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rom.skysafe.online", "reality-opts": {"public-key": "EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0", "short-id": "6ba7b8109dad11d1"}}
-  - {"name": "🇷🇴 RO | VLESS | @red2ray #1 [fast]", "server": "95.133.247.18", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3c95901c-10ce-4588-9c23-7684a09839a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "fr.atlanta-api.com", "reality-opts": {"public-key": "dJqaQL_kSl2DFR7Dx3igZXhPuw1uW9d7XejtyYSvkGg", "short-id": "aaa2ba7d45c12957"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇴 RO | VLESS | @orange_vpns #1 [fast]'
-      - '🇷🇴 RO | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇴 RO | VLESS | @orange_vpns #1 [fast]'
-      - '🇷🇴 RO | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

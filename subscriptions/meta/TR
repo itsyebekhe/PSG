@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "cz.cloudtechone.org", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cz.cloudtechone.org", "reality-opts": {"public-key": "_IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo", "short-id": "f93c9d5127e622e4"}}
-  - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]", "server": "87.120.106.180", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "us.demonware.net", "reality-opts": {"public-key": "pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk", "short-id": "e9518e9cb0754976"}}
+  - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]", "server": "188.132.232.85", "port": 2086, "type": "vmess", "skip-cert-verify": true, "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]", "server": "87.120.106.180", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "us.demonware.net", "reality-opts": {"public-key": "pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk", "short-id": "e9518e9cb0754976"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]'
+      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]'
+      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
