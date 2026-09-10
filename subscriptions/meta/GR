@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇬🇷 GR | VLESS | @NamiraConfigs #1 [medium]", "server": "185.126.238.87", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "7668f678-faee-40cc-9b56-9c39dc773388", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "security.debian.org"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇬🇷 GR | VLESS | @NamiraConfigs #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇬🇷 GR | VLESS | @NamiraConfigs #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

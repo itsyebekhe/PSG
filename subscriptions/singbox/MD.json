@@ -50,11 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
-        "🇲🇩 MD | VLESS | @bored_vpn #1 [fast]",
-        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
-        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+        "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]",
+        "🇲🇩 MD | VLESS | @bored_vpn #1 [medium]",
+        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -63,11 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
-        "🇲🇩 MD | VLESS | @bored_vpn #1 [fast]",
-        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
-        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]"
+        "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]",
+        "🇲🇩 MD | VLESS | @bored_vpn #1 [medium]",
+        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
+      "tag": "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]",
       "server": "89.35.14.33",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
@@ -102,7 +98,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @bored_vpn #1 [fast]",
+      "tag": "🇲🇩 MD | VLESS | @bored_vpn #1 [medium]",
       "server": "89.35.14.33",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
@@ -128,60 +124,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "tag": "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
       "server": "89.35.14.32",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "md3.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
-          "short_id": "9a72d40f1ff882b3"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "stats.v2.PushService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
-      "server": "89.35.14.30",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "md1.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
-          "short_id": "221ba6174224ca5b"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "hub.v1.RelayService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
-      "server": "md3.univesalsrv.com",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
       "network": "grpc",

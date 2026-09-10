@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
+        "🇱🇻 LV | VLESS | @free4allvpn #1 [medium]",
+        "🇱🇻 LV | SS | @outlinereleasedkey #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]"
+        "🇱🇻 LV | VLESS | @free4allvpn #1 [medium]",
+        "🇱🇻 LV | SS | @outlinereleasedkey #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
+      "tag": "🇱🇻 LV | VLESS | @free4allvpn #1 [medium]",
       "server": "195.135.252.28",
       "server_port": 443,
       "uuid": "099dbf2d-a8e0-406e-a85f-eba0ac9a68aa",
@@ -87,6 +89,18 @@
           "public_key": "hGGVm0PiHJwNL34pBG6NLtbFGYVdcWhDu5zHYDoct08",
           "short_id": "4360e536"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 LV | SS | @outlinereleasedkey #1 [medium]",
+      "server": "185.135.86.175",
+      "server_port": 9007,
+      "method": "aes-256-cfb",
+      "password": "kSPmvwdFzGMMW5pY",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

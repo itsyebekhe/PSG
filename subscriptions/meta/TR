@@ -3,22 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "153.52.92.95", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "5559d7b9-96ca-4bbe-888e-d1e67e5eb191", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "play-apps-features.googleusercontent.com", "reality-opts": {"public-key": "G4oiVIFLCYrlsImX2giX59IFtR815OZdyPkoGOgkwGE", "short-id": "fd9de43dca4f1faa"}}
-  - {"name": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]", "server": "188.132.232.85", "port": 2086, "type": "vmess", "skip-cert-verify": true, "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]", "server": "87.120.106.180", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "us.demonware.net", "reality-opts": {"public-key": "pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk", "short-id": "e9518e9cb0754976"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
       - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]'
       - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT

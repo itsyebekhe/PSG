@@ -3,23 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇸🇬 SG | VLESS | @orange_vpns #1 [fast]", "server": "lovesykun.cn", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00f8cbcc-bf10-418b-a842-35519f460c7f", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "lovesykun.cn", "ws-opts": {"path": "", "headers": {"Host": "dews.irandoc.info"}}}
+  - {"name": "🇸🇬 SG | VLESS | @orange_vpns #1 [medium]", "server": "lovesykun.cn", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00f8cbcc-bf10-418b-a842-35519f460c7f", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "lovesykun.cn", "ws-opts": {"path": "", "headers": {"Host": "dews.irandoc.info"}}}
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
-  - {"name": "🇸🇬 SG | VLESS | @hope_net #1 [fast]", "server": "206.238.237.119", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zdy667.kpcloud.eu.org", "ws-opts": {"path": "", "headers": {"Host": "206.238.237.119"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇸🇬 SG | VLESS | @orange_vpns #1 [fast]'
+      - '🇸🇬 SG | VLESS | @orange_vpns #1 [medium]'
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @hope_net #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇸🇬 SG | VLESS | @orange_vpns #1 [fast]'
+      - '🇸🇬 SG | VLESS | @orange_vpns #1 [medium]'
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @hope_net #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -1,0 +1,22 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇷🇸 RS | VLESS | @red2ray #1 [medium]", "server": "150.40.126.19", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs2.univesalsrv.com", "grpc-opts": {"grpc-service-name": "media.v1.ObjectService"}, "reality-opts": {"public-key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE", "short-id": "1469af2040b7c323"}}
+  - {"name": "🇷🇸 RS | VLESS | @red2ray #2 [medium]", "server": "150.40.126.24", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs5.univesalsrv.com", "grpc-opts": {"grpc-service-name": "gw.v1.ObjectService"}, "reality-opts": {"public-key": "X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE", "short-id": "4872856d5489c37d"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇷🇸 RS | VLESS | @red2ray #1 [medium]'
+      - '🇷🇸 RS | VLESS | @red2ray #2 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇷🇸 RS | VLESS | @red2ray #1 [medium]'
+      - '🇷🇸 RS | VLESS | @red2ray #2 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFI=
+//profile-title: base64:UFNHIHwgUlM=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
+        "🇷🇸 RS | VLESS | @red2ray #1 [medium]",
+        "🇷🇸 RS | VLESS | @red2ray #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]"
+        "🇷🇸 RS | VLESS | @red2ray #1 [medium]",
+        "🇷🇸 RS | VLESS | @red2ray #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,38 +70,55 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-      "server": "153.52.92.95",
-      "server_port": 8443,
-      "uuid": "5559d7b9-96ca-4bbe-888e-d1e67e5eb191",
-      "network": "tcp",
+      "tag": "🇷🇸 RS | VLESS | @red2ray #1 [medium]",
+      "server": "150.40.126.19",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play-apps-features.googleusercontent.com",
+        "server_name": "rs2.univesalsrv.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "G4oiVIFLCYrlsImX2giX59IFtR815OZdyPkoGOgkwGE",
-          "short_id": "fd9de43dca4f1faa"
+          "public_key": "tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE",
+          "short_id": "1469af2040b7c323"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.ObjectService"
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇷 TR | VMESS | @NamiraConfigs #1 [fast]",
-      "server": "188.132.232.85",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
+      "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @red2ray #2 [medium]",
+      "server": "150.40.126.24",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs5.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE",
+          "short_id": "4872856d5489c37d"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gw.v1.ObjectService"
+      }
     },
     {
       "type": "direct",
