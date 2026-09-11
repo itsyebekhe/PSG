@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇸🇬 SG | VLESS | @orange_vpns #1 [fast]",
-        "🇸🇬 SG | VLESS | @hope_net #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 SG | VLESS | @orange_vpns #1 [fast]",
-        "🇸🇬 SG | VLESS | @hope_net #1 [fast]"
+        "🇸🇬 SG | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -90,23 +88,6 @@
         "headers": {
           "Host": "dews.irandoc.info"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @hope_net #1 [fast]",
-      "server": "206.238.236.185",
-      "server_port": 443,
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "kkb.ylks.link"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/blue"
       }
     },
     {

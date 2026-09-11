@@ -54,6 +54,9 @@
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VMESS | @NamiraConfigs #1 [fast]",
+        "🇷🇺 RU | VMESS | @NamiraConfigs #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -65,7 +68,10 @@
         "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]"
+        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VMESS | @NamiraConfigs #1 [fast]",
+        "🇷🇺 RU | VMESS | @NamiraConfigs #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -161,6 +167,74 @@
           "enabled": true,
           "public_key": "mrWlgdMs8fEGDHvw3zdJYUw9oHm5LyGeeMo7ZiWc11Q",
           "short_id": "45ee70d18247e5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "185.154.193.137",
+      "server_port": 443,
+      "uuid": "238e492b-bc20-4380-92b6-135d39112ca4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api8.eaglors.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o",
+          "short_id": "52ccb3687fe0b7ec"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇷🇺 RU | VMESS | @NamiraConfigs #1 [fast]",
+      "server": "renderer-stream-2-62.mirra.now",
+      "server_port": 443,
+      "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "renderer-stream-2-62.mirra.now"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/gpu-stream/socket"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇷🇺 RU | VMESS | @NamiraConfigs #2 [fast]",
+      "server": "212.95.34.195",
+      "server_port": 443,
+      "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "renderer-stream-2-62.mirra.now"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/gpu-stream/socket",
+        "headers": {
+          "Host": "renderer-stream-2-62.mirra.now"
         }
       }
     },

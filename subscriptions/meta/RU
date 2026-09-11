@@ -7,6 +7,9 @@ proxies:
   - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "92.42.96.240", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "mahanvpn-mahanvpn", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "mAhaNrEaliteAm.MaHkHan.iR", "ws-opts": {"path": "", "headers": {"Host": "mAhaNrEaliteAm.MaHkHan.iR"}}}
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
   - {"name": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "eehfgs.save-node.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "57441186-17bd-40c6-ae68-e557099c9d77", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "eehfgs.save-node.com", "reality-opts": {"public-key": "mrWlgdMs8fEGDHvw3zdJYUw9oHm5LyGeeMo7ZiWc11Q", "short-id": "45ee70d18247e5"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "185.154.193.137", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "238e492b-bc20-4380-92b6-135d39112ca4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "api8.eaglors.com", "reality-opts": {"public-key": "Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o", "short-id": "52ccb3687fe0b7ec"}}
+  - {"name": "🇷🇺 RU | VMESS | @NamiraConfigs #1 [fast]", "server": "renderer-stream-2-62.mirra.now", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/api/v1/gpu-stream/socket", "headers": {"Host": "renderer-stream-2-62.mirra.now"}}}
+  - {"name": "🇷🇺 RU | VMESS | @NamiraConfigs #2 [fast]", "server": "212.95.34.195", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/api/v1/gpu-stream/socket", "headers": {"Host": "renderer-stream-2-62.mirra.now"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -15,6 +18,9 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇷🇺 RU | VMESS | @NamiraConfigs #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -23,6 +29,9 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇷🇺 RU | VMESS | @NamiraConfigs #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

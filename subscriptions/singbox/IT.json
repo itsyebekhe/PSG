@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
-        "🇮🇹 IT | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇮🇹 IT | VLESS | @outline_ir #1 [slow]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
-        "🇮🇹 IT | VLESS | @outlinereleasedkey #1 [fast]"
+        "🇮🇹 IT | VLESS | @outline_ir #1 [slow]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @outline_ir #1 [fast]",
+      "tag": "🇮🇹 IT | VLESS | @outline_ir #1 [slow]",
       "server": "57.131.21.102",
       "server_port": 8443,
       "uuid": "69ac162b-1643-4acb-9f49-09d8b0fad609",
@@ -83,28 +81,6 @@
       "transport": {
         "type": "ws",
         "path": "/RoBeRt"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "57.131.38.163",
-      "server_port": 2053,
-      "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc",
-          "short_id": "5b8a942318178e7b"
-        }
       }
     },
     {

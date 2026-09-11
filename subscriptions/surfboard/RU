@@ -1,0 +1,14 @@
+[General]
+loglevel = notify
+skip-proxy = 127.0.0.1, localhost, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 192.168.*, 10.*, 172.16.*, 172.17.*, 172.18.*, 172.19.*, 172.20.*, 172.21.*, 172.22.*, 172.23.*, 172.24.*, 172.25.*, 172.26.*, 172.27.*, 172.28.*, 172.29.*, 172.30.*, 172.31.*, localhost, *.local, e.crashlynatics.com
+dns-server = 8.8.8.8, 8.8.4.4
+[Proxy]
+🇷🇺 RU | VMESS | @NamiraConfigs #1 [fast] = vmess, renderer-stream-2-62.mirra.now, 443, username = db50a20e-7ff5-4e70-948f-17cc9ca7c154, ws = true, tls = true, ws-path = /api/v1/gpu-stream/socket, ws-headers = Host:"renderer-stream-2-62.mirra.now"
+🇷🇺 RU | VMESS | @NamiraConfigs #2 [fast] = vmess, 212.95.34.195, 443, username = db50a20e-7ff5-4e70-948f-17cc9ca7c154, ws = true, tls = true, ws-path = /api/v1/gpu-stream/socket, ws-headers = Host:"renderer-stream-2-62.mirra.now"
+[Proxy Group]
+PROXY = select, 🇷🇺 RU | VMESS | @NamiraConfigs #1 [fast], 🇷🇺 RU | VMESS | @NamiraConfigs #2 [fast]
+[Rule]
+GEOSITE,category-ads-all,REJECT
+GEOIP,LAN,DIRECT
+GEOIP,CN,DIRECT
+MATCH,PROXY
