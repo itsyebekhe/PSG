@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRVM=
+//profile-title: base64:UFNHIHwgSEs=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 ES | VLESS | @red2ray #1 [fast]",
+        "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 ES | VLESS | @red2ray #1 [fast]"
+        "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,26 +67,20 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 ES | VLESS | @red2ray #1 [fast]",
-      "server": "194.146.223.231",
-      "server_port": 443,
-      "uuid": "bf8c3d34-c16c-423f-8ff0-9341d6621e97",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "blog.api.www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CuGfoVwpKbDfXx5Lx657c-RpIyCJgWmd2xXsLgb5AhQ",
-          "short_id": "273288"
-        }
+      "type": "vmess",
+      "tag": "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
+      "server": "47.244.120.197",
+      "server_port": 44867,
+      "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/arki?ed=2048"
       }
     },
     {

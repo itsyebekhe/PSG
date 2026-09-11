@@ -3,6 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]", "server": "47.244.120.197", "port": 44867, "type": "vmess", "skip-cert-verify": true, "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/arki?ed=2048", "headers": {"Host": "47.244.120.197"}}}
   - {"name": "🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]", "server": "66.163.117.58", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]", "server": "165.140.217.2", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b65a2d69-5634-42a2-e4be-54e8a6176900", "alterId": 0, "cipher": "chacha20-poly1305", "network": "tcp", "tls": false}
   - {"name": "🇹🇼 TW | VMESS | @NamiraConfigs #1 [medium]", "server": "165.154.195.38", "port": 35034, "type": "vmess", "skip-cert-verify": true, "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
@@ -10,11 +11,12 @@ proxies:
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]", "server": "167.235.205.182", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇽🇽 XX | VMESS | @proxy48 #1 [fast]", "server": "172.66.213.38", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "dfbbc8de-8a4f-407d-8069-6de38d83c4e1", "alterId": 0, "cipher": "chacha20-poly1305", "network": "grpc", "tls": true, "grpc-opts": {"grpc-service-name": "WgCmp8p80KDzo64uHE"}}
-  - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]'
       - '🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]'
       - '🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]'
       - '🇹🇼 TW | VMESS | @NamiraConfigs #1 [medium]'
@@ -22,11 +24,12 @@ proxy-groups:
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
-      - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
+      - '🇩🇪 DE | VMESS | @magickey_shop #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]'
       - '🇬🇧 GB | VMESS | @NamiraConfigs #1 [fast]'
       - '🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]'
       - '🇹🇼 TW | VMESS | @NamiraConfigs #1 [medium]'
@@ -34,7 +37,7 @@ proxy-groups:
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
-      - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
+      - '🇩🇪 DE | VMESS | @magickey_shop #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

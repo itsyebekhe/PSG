@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]"
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,12 +71,25 @@
     {
       "type": "hysteria2",
       "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "45.192.12.93",
+      "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click"
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "94.183.209.59",
+      "server_port": 443,
+      "uuid": "d23cb516-40db-4aa4-8142-6b45ff882f90",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
