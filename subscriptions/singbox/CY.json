@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]",
+        "🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]"
+        "🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]",
+        "🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -86,6 +88,29 @@
           "enabled": true,
           "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
           "short_id": "68a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [fast]",
+      "server": "45.136.126.70",
+      "server_port": 8443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M",
+          "short_id": "67933d8be5b42f78"
         }
       }
     },

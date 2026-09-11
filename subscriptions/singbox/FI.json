@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
         "direct"
@@ -60,6 +61,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
         "🇫🇮 FI | VLESS | @selinc #1 [fast]",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]"
       ],
@@ -67,6 +69,34 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
+      "server": "65.109.181.138",
+      "server_port": 443,
+      "uuid": "52f3a0cb-b0e6-4602-9692-6e328ade89a6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play-apps-features.googleusercontent.com",
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9IfmFNL1K2E7LIJ6nn8osBFu5SnUDJOFmvPIlZu55xg",
+          "short_id": "a90a60655f61fa37"
+        }
+      }
     },
     {
       "type": "vless",

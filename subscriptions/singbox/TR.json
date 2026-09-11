@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSEs=
+//profile-title: base64:UFNHIHwgVFI=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
-        "🇭🇰 HK | VMESS | @NamiraConfigs #2 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
-        "🇭🇰 HK | VMESS | @NamiraConfigs #2 [medium]"
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,37 +67,23 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 HK | VMESS | @NamiraConfigs #1 [medium]",
-      "server": "47.244.120.197",
-      "server_port": 44867,
-      "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/arki?ed=2048"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 HK | VMESS | @NamiraConfigs #2 [medium]",
-      "server": "47.244.120.197",
-      "server_port": 23026,
-      "uuid": "b9de1bc9-baa7-41ac-86f7-ccd59695cb21",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/arki"
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "connect3.nyxserver.ir",
+      "server_port": 8444,
+      "uuid": "0b39a009-2a2a-4035-ba87-cc82894f8e21",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
