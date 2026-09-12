@@ -108,7 +108,6 @@
         "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
-        "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -129,7 +128,6 @@
         "🇽🇽 XX | VLESS | @outlinereleasedkey #1 [fast]",
         "🇽🇽 XX | VLESS | @outlinereleasedkey #2 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #2 [fast]",
@@ -265,7 +263,6 @@
         "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
         "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
-        "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -286,7 +283,6 @@
         "🇽🇽 XX | VLESS | @outlinereleasedkey #1 [fast]",
         "🇽🇽 XX | VLESS | @outlinereleasedkey #2 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #2 [fast]",
@@ -1371,27 +1367,42 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #1 [fast]",
-      "server": "104.17.26.248",
-      "server_port": 80,
-      "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
+      "server": "104.21.28.188",
+      "server_port": 443,
+      "uuid": "e8d8328d-4c66-4b96-9a4e-e005f4397c75",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloud.kiava.fun",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "us3.rtacg.com"
+          "Host": "cloud.kiava.fun"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #2 [fast]",
-      "server": "104.21.235.252",
+      "server": "104.17.116.66",
       "server_port": 80,
       "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "us3.rtacg.com"
+      },
       "transport": {
         "type": "ws",
         "path": "/",
@@ -1403,7 +1414,7 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #3 [fast]",
-      "server": "104.17.75.139",
+      "server": "104.17.145.78",
       "server_port": 80,
       "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
       "network": "ws",
@@ -1419,27 +1430,7 @@
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @hope_net #4 [fast]",
-      "server": "104.18.85.126",
-      "server_port": 80,
-      "uuid": "7d96f544-c496-41cf-dd61-337f0aff062a",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "kr1.175852.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/abcde",
-        "headers": {
-          "Host": "kr1.175852.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @hope_net #5 [fast]",
-      "server": "198.41.209.101",
+      "server": "104.17.170.217",
       "server_port": 80,
       "uuid": "435bda4c-fe5e-42c9-a3ad-15334943b38a",
       "network": "ws",
@@ -1882,22 +1873,6 @@
         "path": "/?u=3e3fff3b5b",
         "headers": {
           "Host": "nova-mango-vault-2e63.wolf-fbi-red.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 80,
-      "uuid": "63f1ef69-92fd-427a-b3e4-98ffddf81ac6",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=",
-        "headers": {
-          "Host": "young-rice-749e.heliy78750.workers.dev"
         }
       }
     },

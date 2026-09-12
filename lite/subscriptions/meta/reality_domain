@@ -8,6 +8,8 @@ proxies:
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]", "server": "play-u1.soft9.ir", "port": 12345, "type": "vless", "skip-cert-verify": true, "uuid": "986d9870-d16a-424f-91ca-d17bf2d18092", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "sheets.google.com", "reality-opts": {"public-key": "1N8CIM6v_TgbIDNneyEPNQ92hyq5Eyh_irJWOXKDBDw", "short-id": "2b368990a94e8cbb"}}
   - {"name": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "eehfgs.save-node.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "57441186-17bd-40c6-ae68-e557099c9d77", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "eehfgs.save-node.com", "reality-opts": {"public-key": "mrWlgdMs8fEGDHvw3zdJYUw9oHm5LyGeeMo7ZiWc11Q", "short-id": "45ee70d18247e5"}}
+  - {"name": "🇺🇸 US | VLESS | @red2ray #1 [fast]", "server": "cdn12usa.goonars.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "02722550-1915-4629-a653-cbe95e594f70", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdn12usa.goonars.com", "reality-opts": {"public-key": "vFnG0SzHIv43o3L8bw4reKp3EIFuSS-BCyBqbWUsYCo", "short-id": "6591f200"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "mst1ndch.goonars.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "02722550-1915-4629-a653-cbe95e594f70", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "apiv1nd.goonars.com", "reality-opts": {"public-key": "2zLFL9xRZ_hAqBHIUpZrj3z5o5Bvt3OAFy5yDat7h0U", "short-id": "2aef5875"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -17,6 +19,8 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -26,6 +30,8 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
