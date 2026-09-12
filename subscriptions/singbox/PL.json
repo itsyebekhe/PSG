@@ -50,10 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #2 [fast]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,15 +65,40 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | HY2 | @outlinereleasedkey #2 [fast]"
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #2 [fast]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
+      "server": "83.168.71.216",
+      "server_port": 443,
+      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "short_id": "2f49bccf11150ef2"
+        }
+      }
     },
     {
       "type": "hysteria2",
@@ -117,6 +145,49 @@
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
+      "server": "pl10.bexait.ir",
+      "server_port": 2434,
+      "uuid": "3d730013-2c01-42bd-9034-7aaf56da37bb",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0",
+          "short_id": "9de041877612a718"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "pl6.moritech.net",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl6.moritech.net",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
       }
     },
     {

@@ -6,7 +6,6 @@ proxies:
   - {"name": "🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]", "server": "188.130.209.185", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "eaf8abff-0fbf-4b64-8d8f-18c1757c75df", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "images.mycdn-io.ru", "reality-opts": {"public-key": "vrtWpW_N3rBs9WEoV1Yz4uOYsci3Kpe7HitaYr4oQGc", "short-id": "fbe42a5d4788bacc"}}
   - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "92.42.96.240", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "mahanvpn-mahanvpn", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "mAhaNrEaliteAm.MaHkHan.iR", "ws-opts": {"path": "", "headers": {"Host": "mAhaNrEaliteAm.MaHkHan.iR"}}}
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "eehfgs.save-node.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "57441186-17bd-40c6-ae68-e557099c9d77", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "eehfgs.save-node.com", "reality-opts": {"public-key": "mrWlgdMs8fEGDHvw3zdJYUw9oHm5LyGeeMo7ZiWc11Q", "short-id": "45ee70d18247e5"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +13,6 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]'
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +20,6 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @mehrosaboran #1 [fast]'
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
