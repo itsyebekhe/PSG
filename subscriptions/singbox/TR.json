@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSFkyX0RPTUFJTg==
+//profile-title: base64:UFNHIHwgVFI=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]"
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,53 +70,35 @@
     },
     {
       "type": "vless",
-      "tag": "همکاری_ملی",
-      "server": "127.0.0.1",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
+      "server": "trn7.mobileemdad.top",
       "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
+      "uuid": "ce89ab18-c812-4467-8cb2-122804cd51d8",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "جاویدشاه",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "KingRezaPahlavi",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "admin.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
-        "insecure": true
+        "server_name": "delivery.mp.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ",
+          "short_id": "cbe2503ffd040d"
+        }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "app.life-pro.ir",
+      "server_port": 8082,
+      "uuid": "79f98593-6a21-4783-a425-3d5609a79df1",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
