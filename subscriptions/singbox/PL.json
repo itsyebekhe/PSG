@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇵🇱 PL | SS | @outlinereleasedkey #1 [medium]",
+        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,37 +62,15 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇵🇱 PL | SS | @outlinereleasedkey #1 [medium]"
+        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
-      "server": "83.168.71.216",
-      "server_port": 443,
-      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
-          "short_id": "2f49bccf11150ef2"
-        }
-      }
     },
     {
       "type": "hysteria2",
@@ -107,7 +85,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "94.183.209.59",
       "server_port": 443,
       "uuid": "d23cb516-40db-4aa4-8142-6b45ff882f90",
@@ -120,7 +98,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
       "server": "217.30.10.44",
       "server_port": 9095,
       "method": "aes-256-cfb",
@@ -128,6 +106,17 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #2 [fast]",
+      "server": "45.192.12.93",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click"
       }
     },
     {

@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇱🇹 LT | VLESS | @hope_net #1 [fast]", "server": "86.38.214.29", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "ac41bbc1-5f69-4aca-a295-4114b15e1b1b", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "1.V2rayV2ray-_-_-V2ray.Zemestanil.Ir"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇱🇹 LT | VLESS | @hope_net #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇱🇹 LT | VLESS | @hope_net #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

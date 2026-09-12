@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]", "server": "5.253.42.164", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw", "short-id": "68a8"}}
-  - {"name": "🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [medium]", "server": "45.136.126.70", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.google.com", "reality-opts": {"public-key": "6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M", "short-id": "67933d8be5b42f78"}}
+  - {"name": "🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [fast]", "server": "45.136.126.70", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.google.com", "reality-opts": {"public-key": "6f8KzwYy7MVdBKzDM_Wt_SiKEjZyg1dl1zdR_MoUM3M", "short-id": "67933d8be5b42f78"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]'
-      - '🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [medium]'
+      - '🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇾 CY | VLESS | @mtproxy22_v2ray #1 [medium]'
-      - '🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [medium]'
+      - '🇨🇾 CY | VLESS | @mtproxy22_v2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
