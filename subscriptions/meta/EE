@@ -1,0 +1,22 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇪🇪 EE | VLESS | @netmellianti #1 [medium]", "server": "185.155.55.10", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "42d932cb-8768-41de-b57b-299252a493d2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ee-nf.reddotcorp.org", "reality-opts": {"public-key": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE", "short-id": "661766b2bcef440a"}}
+  - {"name": "🇪🇪 EE | VLESS | @red2ray #1 [medium]", "server": "95.85.243.72", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4cee7bf3-b928-4cd3-a230-3cef07a9468b", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "static.vhubtest.ru", "ws-opts": {"path": "", "headers": {"Host": "95.85.243.72"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇪🇪 EE | VLESS | @netmellianti #1 [medium]'
+      - '🇪🇪 EE | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇪🇪 EE | VLESS | @netmellianti #1 [medium]'
+      - '🇪🇪 EE | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

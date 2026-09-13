@@ -52,7 +52,6 @@
         "auto",
         "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]",
         "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
-        "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]",
-        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]",
-        "🇲🇩 MD | VLESS | @outline_ir #1 [medium]"
+        "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -120,32 +118,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "stats.v2.PushService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
-      "server": "89.35.14.30",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "md1.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
-          "short_id": "221ba6174224ca5b"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "hub.v1.RelayService"
       }
     },
     {

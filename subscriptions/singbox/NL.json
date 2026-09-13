@@ -51,11 +51,12 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @orange_vpns #1 [medium]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [medium]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [slow]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
@@ -67,11 +68,12 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @orange_vpns #1 [medium]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [medium]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [slow]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [medium]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
@@ -94,7 +96,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -171,7 +173,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "f096aca5fa345cbb.ainl.reknaro.ir",
+      "server_port": 53966,
+      "uuid": "d0f7d34c-9c00-4b2f-ab1d-25fbae5cc746",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tl3.tavqila.ir"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "tl3.tavqila.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [slow]",
       "server": "144.124.252.13",
       "server_port": 443,
       "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",

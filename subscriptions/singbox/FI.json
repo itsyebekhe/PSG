@@ -51,10 +51,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
         "🇫🇮 FI | VLESS | @mimitdl #1 [medium]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
-        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -64,10 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [medium]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
-        "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]"
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+        "🇫🇮 FI | VLESS | @mimitdl #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -104,7 +100,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
       "server": "132.243.223.227",
       "server_port": 2101,
       "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
@@ -138,42 +134,6 @@
           "Host": "play.google.com"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
-      "server": "31.76.21.179",
-      "server_port": 443,
-      "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fin.pinkmoon.pro",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk",
-          "short_id": "8ffa160e608bf539"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]",
-      "server": "65.109.189.128",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
     },
     {
       "type": "direct",
