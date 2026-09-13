@@ -51,7 +51,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #1 [medium]"
+        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -93,20 +93,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
-      "server": "107.161.174.96",
-      "server_port": 443,
-      "uuid": "97ecaad4-452c-45ec-b591-d68d3308aad4",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "188.132.237.20",
+      "server_port": 2095,
+      "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "partaa2.api3-max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "alpn": [
+          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+        ]
       }
     },
     {

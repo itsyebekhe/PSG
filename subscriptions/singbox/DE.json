@@ -57,12 +57,17 @@
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VLESS | @hope_net #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #2 [fast]",
+        "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -78,12 +83,17 @@
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VLESS | @hope_net #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #2 [fast]",
+        "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]"
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -228,6 +238,39 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @hope_net #1 [fast]",
+      "server": "185.135.9.15",
+      "server_port": 443,
+      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "zdyd.kpcloud.eu.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/blue"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "5.75.192.206",
+      "server_port": 34255,
+      "uuid": "d27b0343-a18a-4e0e-b804-3da9daf81107",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "5.75.192.206",
+        "headers": {
+          "Host": "5.75.192.206"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "170.101.109.37",
       "server_port": 443,
@@ -248,6 +291,32 @@
           "short_id": "ab88d256"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #2 [fast]",
+      "server": "rubifen.adaspoloandco.com",
+      "server_port": 443,
+      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rubifen.adaspoloandco.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/GOrbEh"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
+      "server": "germany2n.sarziva.ir",
+      "server_port": 2030,
+      "uuid": "cfd31dd3-80a0-4541-ac37-67696db2ecd7",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -292,7 +361,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
       "server": "5.75.150.23",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -305,7 +374,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
       "server": "167.235.205.182",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -318,7 +387,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
       "server": "168.119.174.229",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -328,6 +397,35 @@
       "authenticated_length": true,
       "network": "tcp",
       "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
+      "server": "49.13.27.100",
+      "server_port": 443,
+      "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "*.gsmarena.com",
+        "alpn": [
+          "@mehrosaboran"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AQ_czQOq5paFHTJMjxD-uLklfIDCammNofaA8QggRjg",
+          "short_id": "1fefa3a0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "@ipV2Ray"
+      }
     },
     {
       "type": "direct",

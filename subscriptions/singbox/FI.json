@@ -53,6 +53,7 @@
         "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
         "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,7 +64,8 @@
       "outbounds": [
         "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]"
+        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -132,6 +134,32 @@
         "path": "/?ed=1024",
         "headers": {
           "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "1cla9rpq6riwktu0yftq.gorvexo.ir",
+      "server_port": 443,
+      "uuid": "1a67126c-b9c4-4e78-b96e-eabd4002ab0c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Bj9X3UJ2D5Q14wfBOwTz3s09SkFRVgMKTcn93s6kNHo",
+          "short_id": "8c0d541cdfe5e68d"
         }
       }
     },
