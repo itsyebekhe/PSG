@@ -50,13 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @mehrosaboran #1 [medium]",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #3 [medium]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -65,41 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @mehrosaboran #1 [medium]",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #3 [medium]"
+        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @mehrosaboran #1 [medium]",
-      "server": "188.130.209.185",
-      "server_port": 443,
-      "uuid": "eaf8abff-0fbf-4b64-8d8f-18c1757c75df",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.mycdn-io.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vrtWpW_N3rBs9WEoV1Yz4uOYsci3Kpe7HitaYr4oQGc",
-          "short_id": "fbe42a5d4788bacc"
-        }
-      }
     },
     {
       "type": "vless",
@@ -146,7 +115,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
       "server": "84.252.100.49",
       "server_port": 443,
       "uuid": "3db8407b-1f96-4b82-bfeb-55258c1e57b4",
@@ -161,69 +130,6 @@
           "public_key": "HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU",
           "short_id": "1067b23f928e7618"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-      "server": "193.233.217.212",
-      "server_port": 443,
-      "uuid": "d73e3cdc-a80b-4e73-a11b-cc467d7a84f8",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.sdssv-vid.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NuS0Su5ozBXBDDBEeBHc2AaeL4qRxK-w9SN4t0VP8Bs",
-          "short_id": "d74a5340e604148e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #2 [medium]",
-      "server": "79.137.192.241",
-      "server_port": 443,
-      "uuid": "d73e3cdc-a80b-4e73-a11b-cc467d7a84f8",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.sdssv-vid.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NuS0Su5ozBXBDDBEeBHc2AaeL4qRxK-w9SN4t0VP8Bs",
-          "short_id": "d74a5340e604148e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #3 [medium]",
-      "server": "158.160.143.169",
-      "server_port": 443,
-      "uuid": "4cee7bf3-b928-4cd3-a230-3cef07a9468b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.vhubtest.ru"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/websocket?ed=2560"
       }
     },
     {

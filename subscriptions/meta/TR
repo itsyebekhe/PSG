@@ -4,18 +4,21 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]", "server": "trn7.mobileemdad.top", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ce89ab18-c812-4467-8cb2-122804cd51d8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "delivery.mp.microsoft.com", "reality-opts": {"public-key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ", "short-id": "cbe2503ffd040d"}}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [medium]", "server": "107.161.174.96", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "97ecaad4-452c-45ec-b591-d68d3308aad4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "partaa2.api3-max.ru"}
   - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]", "server": "87.120.106.180", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "us.demonware.net", "reality-opts": {"public-key": "pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk", "short-id": "e9518e9cb0754976"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @free1_vpn #1 [fast]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
       - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @free1_vpn #1 [fast]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
       - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
