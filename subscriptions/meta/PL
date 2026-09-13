@@ -4,25 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "poland-sgood.wopd.butnorwa.butter.silicore.ir", "port": 9000, "type": "vless", "skip-cert-verify": true, "uuid": "b33e4571-de3f-4249-b246-b2acf3db2f36", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sheets.google.com", "reality-opts": {"public-key": "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM", "short-id": "cd0a1986719e44c8"}}
-  - {"name": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]", "server": "94.183.209.59", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d23cb516-40db-4aa4-8142-6b45ff882f90", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "94.183.209.59"}}}
-  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "poland-sgood.wopd.butnorwa.butter.silicore.ir", "port": 9000, "type": "vless", "skip-cert-verify": true, "uuid": "b33e4571-de3f-4249-b246-b2acf3db2f36", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sheets.google.com", "reality-opts": {"public-key": "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM", "short-id": "cd0a1986719e44c8"}}
-  - {"name": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]", "server": "pl6.moritech.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "pl6.moritech.net"}
+  - {"name": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]", "server": "94.183.209.58", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "78791f9e-fe09-4d4f-88ec-895764bae0d6", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "pl2.lckdwn.ru"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
-      - '🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
-      - '🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -51,11 +51,9 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
+        "🇵🇱 PL | SS | @outlinereleasedkey #1 [medium]",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [medium]",
+        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -65,11 +63,9 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]"
+        "🇵🇱 PL | SS | @outlinereleasedkey #1 [medium]",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [medium]",
+        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -99,21 +95,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "94.183.209.59",
-      "server_port": 443,
-      "uuid": "d23cb516-40db-4aa4-8142-6b45ff882f90",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇵🇱 PL | SS | @outlinereleasedkey #1 [medium]",
       "server": "217.30.10.44",
       "server_port": 9095,
       "method": "aes-256-cfb",
@@ -125,7 +108,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+      "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [medium]",
       "server": "45.192.12.93",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
@@ -136,44 +119,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-      "server": "poland-sgood.wopd.butnorwa.butter.silicore.ir",
-      "server_port": 9000,
-      "uuid": "b33e4571-de3f-4249-b246-b2acf3db2f36",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "sheets.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM",
-          "short_id": "cd0a1986719e44c8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "pl6.moritech.net",
+      "tag": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]",
+      "server": "94.183.209.58",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "78791f9e-fe09-4d4f-88ec-895764bae0d6",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "pl2.lckdwn.ru"
         }
       }
     },

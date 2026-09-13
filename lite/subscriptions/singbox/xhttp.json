@@ -53,7 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]",
+        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
@@ -63,9 +65,6 @@
         "🇽🇽 XX | VLESS | @flyv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
-        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -77,7 +76,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]",
+        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
@@ -86,10 +87,7 @@
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
-        "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
-        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
+        "🇺🇸 US | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -137,23 +135,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]",
-      "server": "80.96.112.163",
-      "server_port": 443,
-      "uuid": "7bafeb9d-06ba-4c43-94f5-b8666354d1c6",
+      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+      "server": "spd-mynames.global.ssl.fastly.net",
+      "server_port": 80,
+      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
+      "server": "darsadgir.ir",
+      "server_port": 2087,
+      "uuid": "c75775e9-cf53-47b6-9d1d-29c3a46633fd",
       "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "rom.skysafe.online",
+        "server_name": "ratatouille.rahmatokaduie.ir",
+        "alpn": [
+          "h2",
+          "+http/1.1",
+          "+h3"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
+      "server": "securitytrails.com",
+      "server_port": 443,
+      "uuid": "90c09d42-c5f6-4602-bba8-957df1ed5598",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.nimrome.dpdns.org",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0",
-          "short_id": "6ba7b8109dad11d1"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -340,54 +364,6 @@
       "uuid": "qeshmserver",
       "network": "xhttp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-      "server": "spd-mynames.global.ssl.fastly.net",
-      "server_port": 80,
-      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @bored_vpn #1 [fast]",
-      "server": "darsadgir.ir",
-      "server_port": 2087,
-      "uuid": "c75775e9-cf53-47b6-9d1d-29c3a46633fd",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ratatouille.rahmatokaduie.ir",
-        "alpn": [
-          "h2",
-          "+http/1.1",
-          "+h3"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
-      "server": "securitytrails.com",
-      "server_port": 443,
-      "uuid": "90c09d42-c5f6-4602-bba8-957df1ed5598",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.nimrome.dpdns.org",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
     },
     {
       "type": "direct",

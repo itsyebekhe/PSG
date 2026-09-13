@@ -3,26 +3,29 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "65.109.181.138", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "52f3a0cb-b0e6-4602-9692-6e328ade89a6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "play-apps-features.googleusercontent.com", "reality-opts": {"public-key": "9IfmFNL1K2E7LIJ6nn8osBFu5SnUDJOFmvPIlZu55xg", "short-id": "a90a60655f61fa37"}}
+  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]", "server": "65.109.181.138", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "52f3a0cb-b0e6-4602-9692-6e328ade89a6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "play-apps-features.googleusercontent.com", "reality-opts": {"public-key": "9IfmFNL1K2E7LIJ6nn8osBFu5SnUDJOFmvPIlZu55xg", "short-id": "a90a60655f61fa37"}}
   - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
-  - {"name": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]", "server": "65.109.212.53", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "MIMITDL", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
-  - {"name": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]", "server": "65.109.189.128", "port": 2086, "type": "vmess", "skip-cert-verify": true, "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇫🇮 FI | VLESS | @mimitdl #1 [medium]", "server": "65.109.212.53", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "MIMITDL", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "31.76.21.179", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "fin.pinkmoon.pro", "reality-opts": {"public-key": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk", "short-id": "8ffa160e608bf539"}}
+  - {"name": "🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]", "server": "65.109.189.128", "port": 2086, "type": "vmess", "skip-cert-verify": true, "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [medium]'
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
-      - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
-      - '🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @mimitdl #1 [medium]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
+      - '🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [medium]'
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
-      - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
-      - '🇫🇮 FI | VMESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @mimitdl #1 [medium]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
+      - '🇫🇮 FI | VMESS | @NamiraConfigs #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
