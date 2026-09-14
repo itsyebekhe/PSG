@@ -63,6 +63,7 @@
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
+        "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -90,7 +91,7 @@
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VMESS | @mi_pn_official #1 [fast]",
         "🇺🇸 US | VMESS | @mi_pn_official #2 [fast]",
-        "🇺🇸 US | VLESS | @deli_servers #1 [fast]",
+        "🇺🇸 US | VLESS | @deli_servers #1 [slow]",
         "🇺🇸 US | VLESS | @public504 #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
         "🇺🇸 US | VMESS | @proxy48 #1 [fast]",
@@ -123,6 +124,7 @@
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
+        "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -150,7 +152,7 @@
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VMESS | @mi_pn_official #1 [fast]",
         "🇺🇸 US | VMESS | @mi_pn_official #2 [fast]",
-        "🇺🇸 US | VLESS | @deli_servers #1 [fast]",
+        "🇺🇸 US | VLESS | @deli_servers #1 [slow]",
         "🇺🇸 US | VLESS | @public504 #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
         "🇺🇸 US | VMESS | @proxy48 #1 [fast]",
@@ -426,7 +428,7 @@
       "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
       "server": "199.232.78.160",
       "server_port": 443,
-      "uuid": "XpnTeam-70",
+      "uuid": "XpnTeam-68",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -451,6 +453,33 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "uuid": "XpnTeam-70",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Appxdn.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
       "server": "199.232.78.170",
       "server_port": 443,
       "uuid": "XpnTeam-25",
@@ -1014,7 +1043,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @deli_servers #1 [fast]",
+      "tag": "🇺🇸 US | VLESS | @deli_servers #1 [slow]",
       "server": "www.gcore.com",
       "server_port": 80,
       "uuid": "2dc4a552-50e8-4200-95ee-f79b9a8b40c3",

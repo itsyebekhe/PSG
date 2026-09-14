@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇮🇶 IQ | VLESS | @free1_vpn #1 [medium]", "server": "81.90.25.123", "port": 46908, "type": "vless", "skip-cert-verify": true, "uuid": "8b6aceff-1db9-4d5b-b4b2-d727d55b0f96", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "it.nvidia.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "xnETFrUlaDiU4HMW9E0MnKMNNeihztGyA1QKLcyX_xU", "short-id": "d8f1"}}
+  - {"name": "🇮🇶 IQ | VLESS | @free1_vpn #1 [fast]", "server": "81.90.25.123", "port": 46908, "type": "vless", "skip-cert-verify": true, "uuid": "8b6aceff-1db9-4d5b-b4b2-d727d55b0f96", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "it.nvidia.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "xnETFrUlaDiU4HMW9E0MnKMNNeihztGyA1QKLcyX_xU", "short-id": "d8f1"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇮🇶 IQ | VLESS | @free1_vpn #1 [medium]'
+      - '🇮🇶 IQ | VLESS | @free1_vpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇮🇶 IQ | VLESS | @free1_vpn #1 [medium]'
+      - '🇮🇶 IQ | VLESS | @free1_vpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

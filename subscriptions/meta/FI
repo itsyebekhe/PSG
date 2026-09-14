@@ -4,25 +4,22 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "65.109.181.138", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "52f3a0cb-b0e6-4602-9692-6e328ade89a6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "play-apps-features.googleusercontent.com", "reality-opts": {"public-key": "9IfmFNL1K2E7LIJ6nn8osBFu5SnUDJOFmvPIlZu55xg", "short-id": "a90a60655f61fa37"}}
-  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
   - {"name": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]", "server": "65.109.212.53", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "MIMITDL", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
-  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "1cla9rpq6riwktu0yftq.gorvexo.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1a67126c-b9c4-4e78-b96e-eabd4002ab0c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "Bj9X3UJ2D5Q14wfBOwTz3s09SkFRVgMKTcn93s6kNHo", "short-id": "8c0d541cdfe5e68d"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
       - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
-      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
       - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
-      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

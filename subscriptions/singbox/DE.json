@@ -50,15 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
-        "🇩🇪 DE | VLESS | @hope_net #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #2 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
@@ -67,7 +66,7 @@
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -76,15 +75,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
-        "🇩🇪 DE | VLESS | @hope_net #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #2 [fast]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
@@ -93,40 +91,12 @@
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]"
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-      "server": "play-u1.soft9.ir",
-      "server_port": 12345,
-      "uuid": "986d9870-d16a-424f-91ca-d17bf2d18092",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "sheets.google.com",
-        "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1N8CIM6v_TgbIDNneyEPNQ92hyq5Eyh_irJWOXKDBDw",
-          "short_id": "2b368990a94e8cbb"
-        }
-      }
     },
     {
       "type": "vless",
@@ -238,23 +208,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @hope_net #1 [fast]",
-      "server": "185.135.9.15",
-      "server_port": 443,
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "zdyd.kpcloud.eu.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/blue"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
       "server": "5.75.192.206",
       "server_port": 34255,
@@ -266,6 +219,29 @@
         "path": "5.75.192.206",
         "headers": {
           "Host": "5.75.192.206"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "3.cdnpros.ir",
+      "server_port": 4055,
+      "uuid": "5a829c25-3056-4717-9ecd-a00a4bae823a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dynu.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H4CGZ7Ww5jslyTzgTdlR6zeyNoU5JSqiQ3pDR_JvyGw",
+          "short_id": "f7273ebb60699af8"
         }
       }
     },
@@ -400,7 +376,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
       "server": "49.13.27.100",
       "server_port": 443,
       "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af",
