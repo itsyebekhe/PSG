@@ -50,9 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+        "🇫🇮 FI | VLESS | @mimitdl #1 [medium]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +63,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]"
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+        "🇫🇮 FI | VLESS | @mimitdl #1 [medium]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,7 +76,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
       "server": "65.109.181.138",
       "server_port": 443,
       "uuid": "52f3a0cb-b0e6-4602-9692-6e328ade89a6",
@@ -100,7 +104,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
       "server": "132.243.223.227",
       "server_port": 2101,
       "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
@@ -121,7 +125,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @mimitdl #1 [medium]",
       "server": "65.109.212.53",
       "server_port": 80,
       "uuid": "MIMITDL",
@@ -132,6 +136,55 @@
         "path": "/?ed=1024",
         "headers": {
           "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "freeman.cvbesty.ir",
+      "server_port": 10210,
+      "uuid": "80c17f6f-4fbb-4055-b2b5-9f46ce00dd80",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "doctor-yab.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc",
+          "short_id": "13121b7150ad7fc6"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #2 [medium]",
+      "server": "64.188.80.82",
+      "server_port": 443,
+      "uuid": "d6b59299-2f48-4e9b-9130-b9e9cb5d0a51",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.hat.onl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc",
+          "short_id": "76132b3b39704c44"
         }
       }
     },
