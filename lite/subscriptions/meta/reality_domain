@@ -7,8 +7,7 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]", "server": "trn7.mobileemdad.top", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ce89ab18-c812-4467-8cb2-122804cd51d8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "delivery.mp.microsoft.com", "reality-opts": {"public-key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ", "short-id": "cbe2503ffd040d"}}
-  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "poland-sgood.wopd.butnorwa.butter.silicore.ir", "port": 9000, "type": "vless", "skip-cert-verify": true, "uuid": "b33e4571-de3f-4249-b246-b2acf3db2f36", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sheets.google.com", "reality-opts": {"public-key": "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM", "short-id": "cd0a1986719e44c8"}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "plot.whit3.net", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "c3775c08-f354-40f4-9c1c-9d358ec2acfe", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "plot.whit3.net", "grpc-opts": {"grpc-service-name": "plot_grpc"}, "reality-opts": {"public-key": "Hcg9T_s9LuWkVQW14TzIPuyZio32WbA6irp782TUXnM", "short-id": "0138875bd7d8725a"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "plot.whit3.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c3775c08-f354-40f4-9c1c-9d358ec2acfe", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "plot.whit3.net", "reality-opts": {"public-key": "Hcg9T_s9LuWkVQW14TzIPuyZio32WbA6irp782TUXnM", "short-id": "0138875bd7d8725a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -17,7 +16,6 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇹🇷 TR | VLESS | @free1_vpn #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -27,7 +25,6 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇹🇷 TR | VLESS | @free1_vpn #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

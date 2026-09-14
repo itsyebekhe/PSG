@@ -84,9 +84,7 @@
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
@@ -98,7 +96,8 @@
         "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #4 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #3 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #3 [medium]",
         "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
@@ -182,9 +181,7 @@
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
@@ -196,7 +193,8 @@
         "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #4 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #3 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #3 [medium]",
         "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
@@ -880,29 +878,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "lond.2clash.ru",
-      "server_port": 443,
-      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "lond.2clash.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F_ws7uB6_86TsgsC2wUnVT0Jp1qqTgmR0ucRwPRhETg",
-          "short_id": "32434434567654"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
       "server": "www.true.th",
       "server_port": 80,
@@ -918,28 +893,6 @@
         "path": "/fnetvpn2026",
         "headers": {
           "Host": "d3gxy6d0a9fs18.cloudfront.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-      "server": "poland-sgood.wopd.butnorwa.butter.silicore.ir",
-      "server_port": 9000,
-      "uuid": "b33e4571-de3f-4249-b246-b2acf3db2f36",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "sheets.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM",
-          "short_id": "cd0a1986719e44c8"
         }
       }
     },
@@ -1066,9 +1019,10 @@
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
       "server": "plot.whit3.net",
-      "server_port": 8443,
+      "server_port": 443,
       "uuid": "c3775c08-f354-40f4-9c1c-9d358ec2acfe",
-      "network": "grpc",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -1082,20 +1036,46 @@
           "public_key": "Hcg9T_s9LuWkVQW14TzIPuyZio32WbA6irp782TUXnM",
           "short_id": "0138875bd7d8725a"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "plot_grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #3 [fast]",
-      "server": "nbsowowujejrir.vipneninet.ir",
-      "server_port": 56231,
-      "uuid": "56831930-677b-4fdc-aa9a-46c9a77f9f7d",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+      "server": "plot.whit3.net",
+      "server_port": 4443,
+      "uuid": "c3775c08-f354-40f4-9c1c-9d358ec2acfe",
       "network": "xhttp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "plot.whit3.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Hcg9T_s9LuWkVQW14TzIPuyZio32WbA6irp782TUXnM",
+          "short_id": "0138875bd7d8725a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #3 [medium]",
+      "server": "dey.lnmarketplace.net",
+      "server_port": 443,
+      "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dey.lnmarketplace.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "vless",

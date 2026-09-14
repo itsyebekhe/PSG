@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]", "server": "94.183.170.135", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "estproxy4.lockdwn.com"}
-  - {"name": "🇪🇪 EE | VLESS | @netmellianti #1 [fast]", "server": "185.155.55.10", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "42d932cb-8768-41de-b57b-299252a493d2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ee-nf.reddotcorp.org", "reality-opts": {"public-key": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE", "short-id": "661766b2bcef440a"}}
+  - {"name": "🇪🇪 EE | VLESS | @netmellianti #1 [medium]", "server": "185.155.55.10", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "42d932cb-8768-41de-b57b-299252a493d2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ee-nf.reddotcorp.org", "reality-opts": {"public-key": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE", "short-id": "661766b2bcef440a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇪🇪 EE | VLESS | @netmellianti #1 [fast]'
+      - '🇪🇪 EE | VLESS | @netmellianti #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇪🇪 EE | VLESS | @netmellianti #1 [fast]'
+      - '🇪🇪 EE | VLESS | @netmellianti #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

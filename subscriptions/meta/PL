@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "poland-sgood.wopd.butnorwa.butter.silicore.ir", "port": 9000, "type": "vless", "skip-cert-verify": true, "uuid": "b33e4571-de3f-4249-b246-b2acf3db2f36", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sheets.google.com", "reality-opts": {"public-key": "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM", "short-id": "cd0a1986719e44c8"}}
-  - {"name": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]", "server": "144.31.5.64", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pl6.moritech.net"}
+  - {"name": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]", "server": "144.31.5.64", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pl6.moritech.net"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

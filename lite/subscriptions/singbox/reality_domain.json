@@ -54,7 +54,6 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
@@ -68,7 +67,6 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -140,33 +138,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-      "server": "poland-sgood.wopd.butnorwa.butter.silicore.ir",
-      "server_port": 9000,
-      "uuid": "b33e4571-de3f-4249-b246-b2acf3db2f36",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "sheets.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM",
-          "short_id": "cd0a1986719e44c8"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
       "server": "plot.whit3.net",
-      "server_port": 8443,
+      "server_port": 443,
       "uuid": "c3775c08-f354-40f4-9c1c-9d358ec2acfe",
-      "network": "grpc",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -180,10 +157,6 @@
           "public_key": "Hcg9T_s9LuWkVQW14TzIPuyZio32WbA6irp782TUXnM",
           "short_id": "0138875bd7d8725a"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "plot_grpc"
       }
     },
     {
