@@ -50,11 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [medium]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
         "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #2 [medium]",
+        "🇫🇮 FI | VLESS | @red2ray #2 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #3 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,11 +63,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [medium]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
         "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #2 [medium]"
+        "🇫🇮 FI | VLESS | @red2ray #2 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #3 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,35 +76,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]",
-      "server": "65.109.181.138",
-      "server_port": 443,
-      "uuid": "52f3a0cb-b0e6-4602-9692-6e328ade89a6",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play-apps-features.googleusercontent.com",
-        "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9IfmFNL1K2E7LIJ6nn8osBFu5SnUDJOFmvPIlZu55xg",
-          "short_id": "a90a60655f61fa37"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
       "server": "132.243.223.227",
       "server_port": 2101,
       "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
@@ -125,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @mimitdl #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
       "server": "65.109.212.53",
       "server_port": 80,
       "uuid": "MIMITDL",
@@ -142,32 +114,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-      "server": "freeman.cvbesty.ir",
-      "server_port": 10210,
-      "uuid": "80c17f6f-4fbb-4055-b2b5-9f46ce00dd80",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "doctor-yab.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc",
-          "short_id": "13121b7150ad7fc6"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #2 [medium]",
       "server": "64.188.80.82",
       "server_port": 443,
       "uuid": "d6b59299-2f48-4e9b-9130-b9e9cb5d0a51",
@@ -187,6 +133,32 @@
           "short_id": "76132b3b39704c44"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #2 [fast]",
+      "server": "144.31.156.247",
+      "server_port": 5432,
+      "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #3 [fast]",
+      "server": "nbsowowujejrir.vipneninet.ir",
+      "server_port": 56231,
+      "uuid": "56831930-677b-4fdc-aa9a-46c9a77f9f7d",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

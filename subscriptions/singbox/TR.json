@@ -51,7 +51,8 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]"
+        "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
+        "🇹🇷 TR | VLESS | @red2ray #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -93,18 +95,34 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "188.132.237.20",
-      "server_port": 2095,
-      "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [medium]",
+      "server": "204.10.192.92",
+      "server_port": 42452,
+      "uuid": "56831930-677b-4fdc-aa9a-46c9a77f9f7d",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "alpn": [
-          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-        ]
+        "server_name": "store-images.s-microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mtn90iIV7DvC2QL_mpTWQigkoKDr5FIGhXt36AHuaGU",
+          "short_id": "342ccbbf31566468"
+        }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #2 [medium]",
+      "server": "153.52.92.251",
+      "server_port": 32061,
+      "uuid": "4fa0a993-6003-45c1-991e-4c40eae45d38",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

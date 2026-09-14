@@ -3,19 +3,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @hope_net #1 [fast]", "server": "217.163.76.193", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zdy00.kpcloud.eu.org", "ws-opts": {"path": "", "headers": {"Host": "217.163.76.193"}}}
+  - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
+  - {"name": "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "lond.2clash.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "lond.2clash.ru", "reality-opts": {"public-key": "F_ws7uB6_86TsgsC2wUnVT0Jp1qqTgmR0ucRwPRhETg", "short-id": "32434434567654"}}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "18.169.108.88", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "51.38.70.192", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9343f183-7a16-4bdd-9c65-b0c21feca40b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "play.google.com", "reality-opts": {"public-key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M", "short-id": "98fa0b00d09419f7"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
+      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
+      - '🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @hope_net #1 [fast]'
+      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
+      - '🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
