@@ -54,10 +54,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇳🇴 NO | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇪🇪 EE | VLESS | @netmellianti #1 [medium]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
@@ -73,10 +73,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇳🇴 NO | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇪🇪 EE | VLESS | @netmellianti #1 [medium]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]"
@@ -150,6 +150,48 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+      "server": "77.233.213.106",
+      "server_port": 40443,
+      "uuid": "279a8eef-898f-44ef-b4f5-67a494f4b542",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "vAG5o6TQvpZAlvDnlyhHEFZBuSgEV_ybQigD_mGKh1M",
+          "short_id": "5b98"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @netmellianti #1 [medium]",
+      "server": "185.155.55.10",
+      "server_port": 8443,
+      "uuid": "42d932cb-8768-41de-b57b-299252a493d2",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ee-nf.reddotcorp.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ApMfbcEyBOve6DxXoBNVu3bCCzQ7XCEYB4ummsDtTBE",
+          "short_id": "661766b2bcef440a"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]",
       "server": "3.9.135.156",
       "server_port": 51847,
@@ -191,51 +233,6 @@
           "enabled": true,
           "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
-      "server": "66.33.22.238",
-      "server_port": 56933,
-      "uuid": "c6b9bdad-a8bb-40a8-b112-f7fea2ed1077",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "eerstekamer.nl",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OX0VS_KcAXqXowZCkYM-9N1g5nFsjr95Jm3jj4DGb3E",
-          "short_id": "f4789e57c7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
-      "server": "64.188.80.82",
-      "server_port": 443,
-      "uuid": "d6b59299-2f48-4e9b-9130-b9e9cb5d0a51",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi1.hat.onl",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc",
-          "short_id": "76132b3b39704c44"
         }
       }
     },

@@ -56,12 +56,14 @@
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
+        "🇮🇷 IR | VLESS | @netmellianti #2 [medium]",
         "🇮🇷 IR | VLESS | @netmellianti #3 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #4 [fast]",
+        "🇮🇷 IR | VLESS | @netmellianti #4 [medium]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [medium]",
-        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [medium]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
         "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
@@ -81,12 +83,14 @@
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
+        "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
+        "🇮🇷 IR | VLESS | @netmellianti #2 [medium]",
         "🇮🇷 IR | VLESS | @netmellianti #3 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #4 [fast]",
+        "🇮🇷 IR | VLESS | @netmellianti #4 [medium]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [medium]",
-        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #1 [medium]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
         "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
@@ -179,6 +183,34 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+      "server": "parspack.com",
+      "server_port": 443,
+      "uuid": "51905fd3-29de-4b4e-b351-83542f1d5390",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Bia.alLhub.Ltd",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "biA.ALlhub.LTD"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
       "server": "snapp.ir",
       "server_port": 2095,
@@ -195,7 +227,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @netmellianti #2 [medium]",
+      "server": "94.183.210.20",
+      "server_port": 2087,
+      "uuid": "ae80f2ed-7ec9-4b44-94e3-68745d6b0b9e",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "varzesh3.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "u6EUTgU4vTMmeki0jPNIwXOoURwAQS9RoV6i9-xxXmc",
+          "short_id": "8655c06d530b1fd3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @netmellianti #3 [fast]",
       "server": "snappfood.ir",
       "server_port": 2095,
       "uuid": "fa9eeceb-105d-4ab1-8f07-d072158522a9",
@@ -211,7 +265,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #3 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @netmellianti #4 [medium]",
       "server": "185.143.233.238",
       "server_port": 2087,
       "uuid": "fa9eeceb-105d-4ab1-8f07-d072158522a9",
@@ -224,22 +278,6 @@
       "transport": {
         "type": "ws",
         "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #4 [fast]",
-      "server": "snapp.ir",
-      "server_port": 2095,
-      "uuid": "fa9eeceb-105d-4ab1-8f07-d072158522a9",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/pgcfws-r4",
-        "headers": {
-          "Host": "uhvsbsj.velqoro.ir"
-        }
       }
     },
     {
@@ -257,7 +295,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @NamiraConfigs #1 [medium]",
       "server": "185.143.234.111",
       "server_port": 443,
       "uuid": "bc4d97ba-d54f-4555-ba71-f7421796d92c",
@@ -270,6 +308,20 @@
           "enabled": true,
           "fingerprint": "random"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
+      "server": "a.samrayan.ir",
+      "server_port": 443,
+      "uuid": "23d6295f-0337-438f-be52-388bbe321ae4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "a.samrayan.ir"
       }
     },
     {
