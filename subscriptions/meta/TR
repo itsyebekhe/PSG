@@ -4,21 +4,18 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]", "server": "trn7.mobileemdad.top", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ce89ab18-c812-4467-8cb2-122804cd51d8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "delivery.mp.microsoft.com", "reality-opts": {"public-key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ", "short-id": "cbe2503ffd040d"}}
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [medium]", "server": "87.120.106.181", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "4fa0a993-6003-45c1-991e-4c40eae45d38", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "play-apps-features.googleusercontent.com", "reality-opts": {"public-key": "UNxylQLY4RHp8gIhGvV5o5K_Xj053tFm6hkA6eOpZTM", "short-id": "641ca295f26e1a25"}}
   - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]", "server": "87.120.106.180", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "us.demonware.net", "reality-opts": {"public-key": "pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk", "short-id": "e9518e9cb0754976"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @free1_vpn #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
       - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @free1_vpn #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
       - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT

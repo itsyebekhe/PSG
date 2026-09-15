@@ -3,21 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
   - {"name": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]", "server": "65.109.212.53", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "MIMITDL", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
   - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "64.188.80.82", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d6b59299-2f48-4e9b-9130-b9e9cb5d0a51", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "fi1.hat.onl", "reality-opts": {"public-key": "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc", "short-id": "76132b3b39704c44"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
       - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
       - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
       - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
       - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
 rules:

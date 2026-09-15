@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "app-ss-97.deep-aispb-analytics.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a71ad164-3b29-4dbe-aa66-24d095ca7b6d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "assets-ss-97.deep-aispb-analytics.com", "reality-opts": {"public-key": "ie82DDS-JoUrtvRfEWWOdcp2cEqs6v0-t2QFw3v7qiE", "short-id": "e3f7fec3cfb3a806"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
