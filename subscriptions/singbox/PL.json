@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [slow]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | VLESS | @netmellianti #1 [fast]",
-        "🇵🇱 PL | VLESS | @netmellianti #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,36 +60,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [slow]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @netmellianti #1 [fast]",
-        "🇵🇱 PL | VLESS | @netmellianti #2 [fast]"
+        "🇵🇱 PL | VLESS | @netmellianti #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [slow]",
-      "server": "144.31.5.64",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
     },
     {
       "type": "hysteria2",
@@ -108,26 +83,6 @@
     {
       "type": "vless",
       "tag": "🇵🇱 PL | VLESS | @netmellianti #1 [fast]",
-      "server": "144.31.2.58",
-      "server_port": 443,
-      "uuid": "becd3b04-62a8-4b74-be67-be746008b4c2",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "mesh-8012.spliceflowtech.com",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @netmellianti #2 [fast]",
       "server": "196.240.109.117",
       "server_port": 443,
       "uuid": "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8",

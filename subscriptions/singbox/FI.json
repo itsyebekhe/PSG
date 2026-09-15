@@ -51,7 +51,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]"
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -86,7 +88,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
       "server": "132.243.223.227",
       "server_port": 2101,
       "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
@@ -104,6 +106,15 @@
         "type": "grpc",
         "service_name": "fi-grpc-test"
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
+      "server": "2.29.22.151",
+      "server_port": 443,
+      "uuid": "1a67126c-b9c4-4e78-b96e-eabd4002ab0c",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

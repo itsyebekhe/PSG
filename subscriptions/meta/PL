@@ -3,23 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [slow]", "server": "144.31.5.64", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pl6.moritech.net"}
-  - {"name": "🇵🇱 PL | VLESS | @netmellianti #1 [fast]", "server": "144.31.2.58", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "becd3b04-62a8-4b74-be67-be746008b4c2", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "mesh-8012.spliceflowtech.com"}
-  - {"name": "🇵🇱 PL | VLESS | @netmellianti #2 [fast]", "server": "196.240.109.117", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "arturito.nxxzxaw.beer", "reality-opts": {"public-key": "_MNu7iYAsOWPHNojVZIpfmjuUgsUIHYlmJ1UWjCgI3U", "short-id": "4a45359303431969"}}
+  - {"name": "🇵🇱 PL | VLESS | @netmellianti #1 [fast]", "server": "196.240.109.117", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ae8e0f7d-b661-41ca-b55d-d8c383adb2f8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "arturito.nxxzxaw.beer", "reality-opts": {"public-key": "_MNu7iYAsOWPHNojVZIpfmjuUgsUIHYlmJ1UWjCgI3U", "short-id": "4a45359303431969"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [slow]'
       - '🇵🇱 PL | VLESS | @netmellianti #1 [fast]'
-      - '🇵🇱 PL | VLESS | @netmellianti #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [slow]'
       - '🇵🇱 PL | VLESS | @netmellianti #1 [fast]'
-      - '🇵🇱 PL | VLESS | @netmellianti #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

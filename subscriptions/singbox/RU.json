@@ -52,7 +52,6 @@
         "auto",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [fast]"
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -96,47 +94,27 @@
     {
       "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "api.betust.net",
-      "server_port": 443,
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "server": "31.184.219.147",
+      "server_port": 9894,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "api.betust.net",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "YczbievYAOeZIypa58aRpil6XbfdyifK_0cFJWn8-yg",
-          "short_id": "d6c172d3"
+          "public_key": "sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc",
+          "short_id": "aabb"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
-      "server": "app4.betust.net",
-      "server_port": 443,
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "app4.betust.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NCW-zK60GXsiDdlbxww18Pqp4kz3zTG1URHWS_bnfDk",
-          "short_id": "3f7e0363"
-        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
