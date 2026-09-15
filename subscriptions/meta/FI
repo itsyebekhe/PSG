@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]", "server": "65.109.212.53", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "MIMITDL", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
   - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
-  - {"name": "🇫🇮 FI | VLESS | @mimitdl #1 [medium]", "server": "65.109.212.53", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "MIMITDL", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "play.google.com"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
-      - '🇫🇮 FI | VLESS | @mimitdl #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇫🇮 FI | VLESS | @mimitdl #1 [fast]'
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
-      - '🇫🇮 FI | VLESS | @mimitdl #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
