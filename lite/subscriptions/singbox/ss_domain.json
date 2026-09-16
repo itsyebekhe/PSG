@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSVQ=
+//profile-title: base64:UFNHIHwgU1NfRE9NQUlO
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [fast]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [fast]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,20 +74,50 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 IT | SS | @netfreedom0 #1 [fast]",
-      "server": "91.201.65.122",
-      "server_port": 9059,
-      "method": "aes-256-cfb",
-      "password": "9XwYyZsK8SNzQDtY",
+      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
+      "server": "tt.hsrdnr.ir",
+      "server_port": 2044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "3rfnj11q5xvg72y1",
       "network": "tcp",
       "tls": {
         "enabled": true

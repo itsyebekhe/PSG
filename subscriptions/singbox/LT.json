@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
         "🇱🇹 LT | VLESS | @netmellianti #1 [fast]",
+        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
+        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,12 +62,39 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT | VLESS | @netmellianti #1 [fast]"
+        "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
+        "🇱🇹 LT | VLESS | @netmellianti #1 [fast]",
+        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
+        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
+      "server": "86.38.214.55",
+      "server_port": 443,
+      "uuid": "a98d1e7d-e794-449c-b8a0-34fa6d4478b4",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fourth.pinocchio1.ir.",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
     },
     {
       "type": "vless",
@@ -84,6 +114,41 @@
         "headers": {
           "Host": "service-8d0658-3bb191.mojtabahdady1370-dcf8.workers.dev"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
+      "server": "84.32.215.117",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "lt.aether-runet.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk",
+          "short_id": "4fa44664f6a566d3"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
@@ -59,12 +60,35 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 JP | VLESS | @red2ray #1 [medium]",
+      "server": "18.182.44.185",
+      "server_port": 20270,
+      "uuid": "e016d072-ed97-40d4-a83f-04c00f8df2a5",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE",
+          "short_id": "28500ae15838f905"
+        }
+      }
     },
     {
       "type": "vless",

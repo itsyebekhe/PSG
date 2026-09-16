@@ -3,17 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇱🇹 LT | VLESS | @hope_net #1 [fast]", "server": "86.38.214.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a98d1e7d-e794-449c-b8a0-34fa6d4478b4", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "fourth.pinocchio1.ir.", "grpc-opts": {"grpc-service-name": ""}}
   - {"name": "🇱🇹 LT | VLESS | @netmellianti #1 [fast]", "server": "88.216.66.250", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "50414e45-4c5f-5a45-5553-57040e30dda6", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "service-8d0658-3bb191.mojtabahdady1370-dcf8.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "service-8d0658-3bb191.mojtabahdady1370-dcf8.workers.dev"}}}
+  - {"name": "🇱🇹 LT | VLESS | @red2ray #1 [fast]", "server": "84.32.215.117", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lt.aether-runet.top", "reality-opts": {"public-key": "vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk", "short-id": "4fa44664f6a566d3"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇱🇹 LT | VLESS | @hope_net #1 [fast]'
       - '🇱🇹 LT | VLESS | @netmellianti #1 [fast]'
+      - '🇱🇹 LT | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇱🇹 LT | VLESS | @hope_net #1 [fast]'
       - '🇱🇹 LT | VLESS | @netmellianti #1 [fast]'
+      - '🇱🇹 LT | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
