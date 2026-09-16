@@ -51,6 +51,8 @@
       "outbounds": [
         "auto",
         "🇧🇬 BG | VLESS | @orange_vpns #1 [fast]",
+        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
+        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @orange_vpns #1 [fast]"
+        "🇧🇬 BG | VLESS | @orange_vpns #1 [fast]",
+        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
+        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -87,6 +91,57 @@
           "public_key": "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc",
           "short_id": "76132b3b39704c44"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
+      "server": "45.9.156.42",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "bg5.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw",
+          "short_id": "1a3102bb8e51399e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gw.v2.RelayService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
+      "server": "bg5.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw",
+          "short_id": "1a3102bb8e51399e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gw.v2.RelayService"
       }
     },
     {

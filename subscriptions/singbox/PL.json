@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]"
+        "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -78,27 +76,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "pl6.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
       }
     },
     {

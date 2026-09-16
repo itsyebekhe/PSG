@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUkVBTElUWV9ET01BSU4=
+//profile-title: base64:UFNHIHwgU0c=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,11 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇸🇬 SG | VLESS | @hope_net #1 [fast]",
+        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -63,11 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
+        "🇸🇬 SG | VLESS | @hope_net #1 [fast]",
+        "🇸🇬 SG | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,12 +70,16 @@
     },
     {
       "type": "vless",
-      "tag": "همکاری_ملی",
-      "server": "127.0.0.1",
+      "tag": "🇸🇬 SG | VLESS | @hope_net #1 [fast]",
+      "server": "206.238.237.175",
       "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vd.ylks.link"
+      },
       "transport": {
         "type": "ws",
         "path": "/"
@@ -89,73 +87,24 @@
     },
     {
       "type": "vless",
-      "tag": "جاویدشاه",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "KingRezaPahlavi",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "lond.2clash.ru",
-      "server_port": 443,
-      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
+      "tag": "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
+      "server": "sg-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "e9e24ed8-b007-4e29-b54f-1ece641e60fb",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "lond.2clash.ru",
+        "server_name": "www.yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "F_ws7uB6_86TsgsC2wUnVT0Jp1qqTgmR0ucRwPRhETg",
-          "short_id": "32434434567654"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "api.betust.net",
-      "server_port": 443,
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.betust.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "YczbievYAOeZIypa58aRpil6XbfdyifK_0cFJWn8-yg",
-          "short_id": "d6c172d3"
+          "public_key": "q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0",
+          "short_id": "fc13d6208ebbae16"
         }
       }
     },

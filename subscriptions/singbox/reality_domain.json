@@ -55,9 +55,9 @@
         "KingRezaPahlavi",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
+        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -71,9 +71,9 @@
         "KingRezaPahlavi",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
+        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
+        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -167,70 +167,72 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "lond.2clash.ru",
+      "tag": "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
+      "server": "bg5.univesalsrv.com",
       "server_port": 443,
-      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "lond.2clash.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "F_ws7uB6_86TsgsC2wUnVT0Jp1qqTgmR0ucRwPRhETg",
-          "short_id": "32434434567654"
+          "public_key": "RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw",
+          "short_id": "1a3102bb8e51399e"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gw.v2.RelayService"
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-      "server": "publics.betust.net",
-      "server_port": 443,
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
+      "tag": "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
+      "server": "sg-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "e9e24ed8-b007-4e29-b54f-1ece641e60fb",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "publics.betust.net",
+        "server_name": "www.yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "vFnG0SzHIv43o3L8bw4reKp3EIFuSS-BCyBqbWUsYCo",
-          "short_id": "6591f200"
+          "public_key": "q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0",
+          "short_id": "fc13d6208ebbae16"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "api.betust.net",
-      "server_port": 443,
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "lfr1.plasmoon.ir",
+      "server_port": 56562,
+      "uuid": "853cbf00-0459-4514-98ad-15cd1069a4fe",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "api.betust.net",
+        "server_name": "play-apps-features.googleusercontent.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "YczbievYAOeZIypa58aRpil6XbfdyifK_0cFJWn8-yg",
-          "short_id": "d6c172d3"
+          "public_key": "33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM",
+          "short_id": "aa74a7a98e86f2ed"
         }
       }
     },

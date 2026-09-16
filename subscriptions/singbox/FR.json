@@ -52,11 +52,10 @@
         "auto",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [slow]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,11 +66,10 @@
       "outbounds": [
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [slow]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -117,21 +115,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "15.188.219.10",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "lfr1.plasmoon.ir",
+      "server_port": 56562,
+      "uuid": "853cbf00-0459-4514-98ad-15cd1069a4fe",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [slow]",
-      "server": "aqua.athforce.ir",
-      "server_port": 1585,
-      "uuid": "a66588d6-8d52-49ad-a137-6547607ed7e3",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play-apps-features.googleusercontent.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM",
+          "short_id": "aa74a7a98e86f2ed"
+        }
+      }
     },
     {
       "type": "vless",
@@ -175,7 +178,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",
