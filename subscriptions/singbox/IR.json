@@ -57,13 +57,11 @@
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @hope_net #1 [medium]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #3 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
-        "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
@@ -83,13 +81,11 @@
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @hope_net #1 [medium]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #3 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
-        "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
         "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
@@ -209,50 +205,54 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-      "server": "snappfood.ir",
-      "server_port": 2095,
-      "uuid": "fa9eeceb-105d-4ab1-8f07-d072158522a9",
+      "tag": "🇮🇷 IR | VLESS | @hope_net #1 [medium]",
+      "server": "188.121.118.55",
+      "server_port": 443,
+      "uuid": "c065bc89-d569-4455-a4f5-8f9b3a5dddb3",
       "network": "ws",
       "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vIrGiNiAvPn-uS.pAgEs.dEv",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/pgcfws-r4",
         "headers": {
-          "Host": "jy3olcb.pasarguardpro.ir"
+          "Host": "ViRgInIaVpN-US.PaGeS.DeV"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #2 [fast]",
-      "server": "185.143.233.238",
-      "server_port": 2087,
-      "uuid": "fa9eeceb-105d-4ab1-8f07-d072158522a9",
+      "tag": "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
+      "server": "t1fh.blazenetwork.ir",
+      "server_port": 443,
+      "uuid": "1b5a7a00-2bcf-463e-9f1f-c47756588fb5",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "jy3ole58cb.pasarguardpro.ir"
+        "server_name": "t1fh.blazenetwork.ir",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #3 [fast]",
-      "server": "snapp.ir",
-      "server_port": 2095,
-      "uuid": "fa9eeceb-105d-4ab1-8f07-d072158522a9",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/pgcfws-r4",
+        "path": "/t/assets",
         "headers": {
-          "Host": "uhvsbsj.velqoro.ir"
+          "Host": "t1fh.blazenetwork.ir"
         }
       }
     },
@@ -298,18 +298,6 @@
       "tls": {
         "enabled": true,
         "server_name": "a.samrayan.ir"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
-      "server": "tt.hsrdnr.ir",
-      "server_port": 2044,
-      "method": "chacha20-ietf-poly1305",
-      "password": "3rfnj11q5xvg72y1",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {

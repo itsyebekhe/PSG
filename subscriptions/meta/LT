@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇱🇹 LT | VLESS | @netmellianti #1 [fast]", "server": "88.216.66.250", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "50414e45-4c5f-5a45-5553-57040e30dda6", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "service-8d0658-3bb191.mojtabahdady1370-dcf8.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "service-8d0658-3bb191.mojtabahdady1370-dcf8.workers.dev"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇱🇹 LT | VLESS | @netmellianti #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇱🇹 LT | VLESS | @netmellianti #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
