@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
@@ -62,6 +63,7 @@
         "🇺🇸 US | VLESS | @bored_vpn #5 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #6 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -71,7 +73,6 @@
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
-        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
@@ -110,6 +111,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
@@ -122,6 +124,7 @@
         "🇺🇸 US | VLESS | @bored_vpn #5 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #6 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -131,7 +134,6 @@
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
-        "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
@@ -167,6 +169,22 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
+      "server": "151.101.56.9",
+      "server_port": 80,
+      "uuid": "d8b3f1c4-94c7-423e-a03a-bfa7f6af0ea1",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "freekabotar.global.ssl.fastly.net"
+        }
+      }
     },
     {
       "type": "vless",
@@ -447,6 +465,23 @@
       "packet_encoding": "xudp"
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
+      "server": "205.233.181.207",
+      "server_port": 443,
+      "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cfed.tgzdyz2.top"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "tg@zdyz2"
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "173.244.56.9",
@@ -629,22 +664,6 @@
         "path": "/",
         "headers": {
           "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
-      "server": "151.101.56.9",
-      "server_port": 80,
-      "uuid": "d8b3f1c4-94c7-423e-a03a-bfa7f6af0ea1",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "freekabotar.global.ssl.fastly.net"
         }
       }
     },

@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
+  - {"name": "🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "lond.2clash.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "lond.2clash.ru", "reality-opts": {"public-key": "F_ws7uB6_86TsgsC2wUnVT0Jp1qqTgmR0ucRwPRhETg", "short-id": "32434434567654"}}
+  - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]'
+      - '🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [medium]'
+      - '🇬🇧 GB | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

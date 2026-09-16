@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
         "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "direct"
       ],
@@ -61,30 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
         "🇫🇮 FI | VLESS | @netmellianti #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
-      "server": "65.109.212.53",
-      "server_port": 80,
-      "uuid": "MIMITDL",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=1024",
-        "headers": {
-          "Host": "play.google.com"
-        }
-      }
     },
     {
       "type": "vless",
@@ -105,6 +89,22 @@
       "transport": {
         "type": "grpc",
         "service_name": "fi-grpc-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
+      "server": "65.109.212.53",
+      "server_port": 80,
+      "uuid": "MIMITDL",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=1024",
+        "headers": {
+          "Host": "play.google.com"
+        }
       }
     },
     {
