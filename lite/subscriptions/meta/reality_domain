@@ -6,7 +6,8 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇫🇷 FR | VLESS | @red2ray #1 [fast]", "server": "lfr1.plasmoon.ir", "port": 56562, "type": "vless", "skip-cert-verify": true, "uuid": "853cbf00-0459-4514-98ad-15cd1069a4fe", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "play-apps-features.googleusercontent.com", "reality-opts": {"public-key": "33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM", "short-id": "aa74a7a98e86f2ed"}}
+  - {"name": "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]", "server": "cdn6.goonars.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdn6.goonars.com", "reality-opts": {"public-key": "VWDBW2RS3o-oFBrSNdpncoaVVU8KixbPNHoj4-Wy7lM", "short-id": "04a69fc6"}}
+  - {"name": "🇦🇺 AU | VLESS | @red2ray #1 [fast]", "server": "au1.gsafevpnapi.com", "port": 20270, "type": "vless", "skip-cert-verify": true, "uuid": "7647b321-4bfe-43f3-b21f-926c5de8f9b6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.yahoo.com", "reality-opts": {"public-key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE", "short-id": "e6a5a4a9115456de"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +15,8 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇫🇷 FR | VLESS | @red2ray #1 [fast]'
+      - '🇸🇨 SC | VLESS | @orange_vpns #1 [fast]'
+      - '🇦🇺 AU | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +24,8 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇫🇷 FR | VLESS | @red2ray #1 [fast]'
+      - '🇸🇨 SC | VLESS | @orange_vpns #1 [fast]'
+      - '🇦🇺 AU | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

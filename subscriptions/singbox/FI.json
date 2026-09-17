@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
-        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]"
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
       "server": "132.243.223.227",
       "server_port": 2101,
       "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
@@ -91,22 +87,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "fi-grpc-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @mimitdl #1 [fast]",
-      "server": "65.109.212.53",
-      "server_port": 80,
-      "uuid": "MIMITDL",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=1024",
-        "headers": {
-          "Host": "play.google.com"
-        }
       }
     },
     {
@@ -131,15 +111,6 @@
           "short_id": "68edd85a6549e28a"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
-      "server": "2.29.22.151",
-      "server_port": 443,
-      "uuid": "1a67126c-b9c4-4e78-b96e-eabd4002ab0c",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

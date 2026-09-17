@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 AU | VLESS | @hope_net #1 [fast]",
         "🇦🇺 AU | VLESS | @red2ray #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "direct"
@@ -61,7 +60,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 AU | VLESS | @hope_net #1 [fast]",
         "🇦🇺 AU | VLESS | @red2ray #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]"
       ],
@@ -69,23 +67,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 AU | VLESS | @hope_net #1 [fast]",
-      "server": "192.65.217.57",
-      "server_port": 443,
-      "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfed.tgzdyz2.top"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "tg@zdyz2"
-      }
     },
     {
       "type": "vless",
