@@ -55,7 +55,8 @@
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @flyv2ray #1 [slow]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
@@ -64,8 +65,8 @@
         "🇺🇸 US | VLESS | @bored_vpn #5 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #6 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
@@ -118,7 +119,8 @@
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @flyv2ray #1 [slow]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
@@ -127,8 +129,8 @@
         "🇺🇸 US | VLESS | @bored_vpn #5 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #6 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
@@ -216,14 +218,34 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "69.46.46.40",
+      "server": "199.232.78.159",
       "server_port": 443,
-      "uuid": "d1da87ee-28d8-f2ae-1c2f-5b81d3b6679b",
+      "uuid": "06f99c33-f12e-4249-8da6-d0fb00609afd",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "rvg-production-7574.up.railway.app",
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "SvnTeamChannel.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
+      "server": "69.46.46.20",
+      "server_port": 443,
+      "uuid": "5f505e1f-3dd7-a1f1-94d2-c1bee24cb28d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rvg-production-7de5.up.railway.app",
         "alpn": [
           "http/1.1"
         ],
@@ -234,18 +256,46 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/d1da87ee-28d8-f2ae-1c2f-5b81d3b6679b",
+        "path": "/ws/5f505e1f-3dd7-a1f1-94d2-c1bee24cb28d",
         "headers": {
-          "Host": "rvg-production-7574.up.railway.app"
+          "Host": "rvg-production-7de5.up.railway.app"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
-      "server": "151.101.56.6",
+      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+      "server": "spd-mynames.global.ssl.fastly.net",
+      "server_port": 80,
+      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @flyv2ray #1 [slow]",
+      "server": "80.91.79.136",
       "server_port": 443,
-      "uuid": "79c9514e-aa3c-4cd0-bf0d-dd6df42039f6",
+      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.logitech.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "g9uQwtqcqsPvzqQy2hM4rpvTIGXRQSAt-MAgHpz_gCI",
+          "short_id": "0b0bf0590fb9c138"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+      "server": "a2.arshia-nova.ir",
+      "server_port": 443,
+      "uuid": "bd5bbbac-adc3-4b23-d3ac-8506694c0ef9",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -264,34 +314,6 @@
         "path": "/",
         "headers": {
           "Host": "c12.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-      "server": "spd-mynames.global.ssl.fastly.net",
-      "server_port": 80,
-      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
-      "server": "80.91.79.136",
-      "server_port": 443,
-      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.logitech.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "g9uQwtqcqsPvzqQy2hM4rpvTIGXRQSAt-MAgHpz_gCI",
-          "short_id": "0b0bf0590fb9c138"
         }
       }
     },
@@ -324,7 +346,7 @@
       "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
       "server": "199.232.78.160",
       "server_port": 443,
-      "uuid": "XpnTeam-9",
+      "uuid": "XpnTeam-11",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -351,33 +373,6 @@
       "tag": "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
       "server": "199.232.78.160",
       "server_port": 443,
-      "uuid": "XpnTeam-11",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
-      "server": "199.232.78.160",
-      "server_port": 443,
       "uuid": "XpnTeam-13",
       "network": "ws",
       "packet_encoding": "xudp",
@@ -402,7 +397,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #4 [fast]",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
       "server": "199.232.78.170",
       "server_port": 443,
       "uuid": "XpnTeam-15",
@@ -429,7 +424,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #5 [fast]",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #4 [fast]",
       "server": "199.232.78.160",
       "server_port": 443,
       "uuid": "XpnTeam-19",
@@ -456,10 +451,37 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #6 [fast]",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #5 [fast]",
       "server": "199.232.78.170",
       "server_port": 443,
       "uuid": "XpnTeam-21",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Appxdn.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #6 [fast]",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "uuid": "XpnTeam-25",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -491,23 +513,6 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @hope_net #1 [fast]",
-      "server": "63.141.128.169",
-      "server_port": 443,
-      "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "zdyd.kpcloud.eu.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/blue"
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "173.244.56.9",
@@ -517,6 +522,33 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "eaglepanel-production-bc07.up.railway.app",
+      "server_port": 443,
+      "uuid": "9016cdb1-f78f-3a26-3981-0dad54ceb3a6",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "eaglepanel-production-bc07.up.railway.app",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/9016cdb1-f78f-3a26-3981-0dad54ceb3a6",
+        "headers": {
+          "Host": "eaglepanel-production-bc07.up.railway.app"
+        }
       }
     },
     {
@@ -620,7 +652,7 @@
       "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
       "server": "199.232.78.160",
       "server_port": 443,
-      "uuid": "XlnTeam-5",
+      "uuid": "XpnTeam-7",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -647,7 +679,7 @@
       "tag": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
       "server": "199.232.78.160",
       "server_port": 443,
-      "uuid": "XpnTeam-7",
+      "uuid": "XpnTeam-9",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {

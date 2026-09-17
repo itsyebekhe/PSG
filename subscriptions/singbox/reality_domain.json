@@ -54,8 +54,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
+        "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,8 +70,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
+        "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -142,6 +146,32 @@
     },
     {
       "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
+      "server": "md1.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "md1.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
+          "short_id": "221ba6174224ca5b"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hub.v1.RelayService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
       "server": "cdn6.goonars.com",
       "server_port": 443,
@@ -183,6 +213,29 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+      "server": "ai.trstcore.pro",
+      "server_port": 443,
+      "uuid": "a8f5e04b-be34-4b84-9359-684ad9c417b0",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ai.trstcore.pro",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9WRqVZFCPMEG_BOcWGhyxAzZh7Khr32Bwk_Chn1qe00",
+          "short_id": "68edd85a6549e28a"
         }
       }
     },

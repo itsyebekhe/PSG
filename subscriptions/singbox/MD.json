@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+        "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
+        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
         "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
@@ -60,7 +61,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+        "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
+        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
         "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -70,25 +72,54 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
-      "server": "94.103.2.251",
+      "tag": "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
+      "server": "md1.univesalsrv.com",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "io.ozone.ru",
+        "server_name": "md1.univesalsrv.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "a8huhMB5qb3Q0zYwG1QzPjSDTrXufkZMlADT-_EMPhc",
-          "short_id": "00000000"
+          "public_key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
+          "short_id": "221ba6174224ca5b"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hub.v1.RelayService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
+      "server": "89.35.14.33",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "md4.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg",
+          "short_id": "8e07337954f9823f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hub.v1.ApiService"
       }
     },
     {

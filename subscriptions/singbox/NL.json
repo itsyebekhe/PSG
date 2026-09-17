@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+        "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -65,10 +65,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+        "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
@@ -77,29 +77,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-      "server": "84.32.186.112",
-      "server_port": 443,
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "api37.betust.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "naFxXMoZGp3dHSEMiupvt7FsYtnxONkSN90c2JLWl38",
-          "short_id": "974acf45"
-        }
-      }
     },
     {
       "type": "vless",
@@ -140,15 +117,46 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @red2ray #1 [fast]",
-      "server": "158.173.221.214",
-      "server_port": 11001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c58d16e593d44f42",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
+      "server": "dey.lnmarketplace.net",
+      "server_port": 443,
+      "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "dey.lnmarketplace.net",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @netmellianti #1 [fast]",
+      "server": "5.83.134.28",
+      "server_port": 443,
+      "uuid": "7a5b8a98-7342-4bc0-9586-c6f6d9faea7e",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Figma.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NUZo5tzBqPtKtKiOqI1QD9vIi4ApAFgHpOVM73kjPnU",
+          "short_id": "c34b2da45a7dc973"
+        }
       }
     },
     {
