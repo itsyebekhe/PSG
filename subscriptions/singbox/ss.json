@@ -63,7 +63,9 @@
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
-        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | SS | @red2ray #1 [fast]",
         "🇨🇦 CA | SS | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
@@ -93,7 +95,9 @@
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
-        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | SS | @red2ray #1 [fast]",
         "🇨🇦 CA | SS | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
@@ -269,11 +273,35 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
+      "tag": "🇰🇿 KZ | SS | @configv2rayforfree #1 [fast]",
       "server": "77.240.38.27",
       "server_port": 8443,
       "method": "chacha20-ietf-poly1305",
       "password": "fkXtvCEQ1ZU1rzF3fIK0fw==",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
+      "server": "51.38.71.51",
+      "server_port": 2083,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @red2ray #1 [fast]",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42",
       "network": "tcp",
       "tls": {
         "enabled": true

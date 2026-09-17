@@ -61,6 +61,10 @@
         "🇽🇽 XX | VLESS | @free1_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -69,12 +73,8 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇦🇺 AU | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
-        "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -116,6 +116,10 @@
         "🇽🇽 XX | VLESS | @free1_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -124,12 +128,8 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇦🇺 AU | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
-        "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -322,6 +322,70 @@
     },
     {
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "4b75a44d-3c91-461e-b5a0-6060ac8aff68",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+      "server": "www.speedtest.net",
+      "server_port": 8880,
+      "uuid": "8a20ecfe-6a72-4e88-aa2c-65a9e43a8512",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+      "server": "turkyea.vanguardia.ir",
+      "server_port": 55348,
+      "uuid": "960e6852-9d2b-48bb-b1cf-5cb27ec27473",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "turkyea.vanguardia.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "Turkey"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]",
+      "server": "turkyea.vanguardia.ir",
+      "server_port": 57579,
+      "uuid": "960e6852-9d2b-48bb-b1cf-5cb27ec27473",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "turkyea.vanguardia.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
       "server": "c.rodia.ir",
       "server_port": 2053,
@@ -483,34 +547,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 AU | VLESS | @red2ray #1 [fast]",
-      "server": "au1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "7647b321-4bfe-43f3-b21f-926c5de8f9b6",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE",
-          "short_id": "e6a5a4a9115456de"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "fnd9f.artamireo.ir",
-      "server_port": 2087,
-      "uuid": "889671d3-3b23-4d81-842e-c98a1e23c8fd",
-      "network": "tcp",
+      "server": "cuibiffyygvuuuh.nvymkif.vyuj.admni.ir",
+      "server_port": 56231,
+      "uuid": "9a693fe2-cc5e-423e-9c03-a814217b06c8",
+      "network": "xhttp",
       "packet_encoding": "xudp"
     },
     {
@@ -530,51 +571,6 @@
         "path": "/fnetvpn2026",
         "headers": {
           "Host": "d3gxy6d0a9fs18.cloudfront.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 8880,
-      "uuid": "4b75a44d-3c91-461e-b5a0-6060ac8aff68",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 8880,
-      "uuid": "8a20ecfe-6a72-4e88-aa2c-65a9e43a8512",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-      "server": "t1fh.blazenetwork.ir",
-      "server_port": 443,
-      "uuid": "1b5a7a00-2bcf-463e-9f1f-c47756588fb5",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "t1fh.blazenetwork.ir",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/t/assets",
-        "headers": {
-          "Host": "t1fh.blazenetwork.ir"
         }
       }
     },

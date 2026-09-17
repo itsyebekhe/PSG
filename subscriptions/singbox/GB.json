@@ -58,7 +58,7 @@
         "🇬🇧 GB | SS | @beshkan #5 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "direct"
       ],
@@ -76,7 +76,7 @@
         "🇬🇧 GB | SS | @beshkan #5 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @red2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -181,13 +181,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "dv4.kontabox.ir",
-      "server_port": 2087,
-      "uuid": "889671d3-3b23-4d81-842e-c98a1e23c8fd",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @red2ray #1 [fast]",
+      "server": "51.38.71.51",
+      "server_port": 2083,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",

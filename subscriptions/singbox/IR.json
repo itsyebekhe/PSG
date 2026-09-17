@@ -53,11 +53,12 @@
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @netmellianti #1 [medium]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
+        "🇮🇷 IR | VLESS | @hope_net #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
@@ -77,11 +78,12 @@
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @netmellianti #1 [medium]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
+        "🇮🇷 IR | VLESS | @hope_net #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
@@ -129,6 +131,23 @@
       "uuid": "7b81a350-89c3-47da-a3a9-5f2b65313d03",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @netmellianti #1 [medium]",
+      "server": "81.12.35.185",
+      "server_port": 5003,
+      "uuid": "5fae84b3-9f6f-439f-a25a-26716acdd3a5",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "afr-data-16.myket.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      }
     },
     {
       "type": "vless",
@@ -205,28 +224,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-      "server": "t1fh.blazenetwork.ir",
-      "server_port": 443,
-      "uuid": "1b5a7a00-2bcf-463e-9f1f-c47756588fb5",
+      "tag": "🇮🇷 IR | VLESS | @hope_net #1 [fast]",
+      "server": "zula.ir",
+      "server_port": 80,
+      "uuid": "a18c532c-4437-4c66-a84f-144edeb39102",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "t1fh.blazenetwork.ir",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "/t/assets",
+        "path": "/",
         "headers": {
-          "Host": "t1fh.blazenetwork.ir"
+          "Host": "921b4f8a7cf8b6cf67c8a6ebb3afc69e974f5a4813d7bdd0293d29fe0f24d63b.speedtest.net.简化的.24.time.ir.double-standard.الله.under__line.سلام.pinobin.ir."
         }
       }
     },

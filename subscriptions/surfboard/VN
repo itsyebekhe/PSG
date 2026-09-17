@@ -1,0 +1,13 @@
+[General]
+loglevel = notify
+skip-proxy = 127.0.0.1, localhost, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 192.168.*, 10.*, 172.16.*, 172.17.*, 172.18.*, 172.19.*, 172.20.*, 172.21.*, 172.22.*, 172.23.*, 172.24.*, 172.25.*, 172.26.*, 172.27.*, 172.28.*, 172.29.*, 172.30.*, 172.31.*, localhost, *.local, e.crashlynatics.com
+dns-server = 8.8.8.8, 8.8.4.4
+[Proxy]
+🇻🇳 VN | VMESS | @mtproxy22_v2ray #1 [medium] = vmess, 103.56.160.184, 80, username = ef919c67-6638-4416-91af-9a13ffe5b9ca, ws = true, tls = false, ws-path = /tandung288.click, ws-headers = Host:"103.56.160.184"
+[Proxy Group]
+PROXY = select, 🇻🇳 VN | VMESS | @mtproxy22_v2ray #1 [medium]
+[Rule]
+GEOSITE,category-ads-all,REJECT
+GEOIP,LAN,DIRECT
+GEOIP,CN,DIRECT
+MATCH,PROXY

@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT | VLESS | @netmellianti #1 [fast]",
+        "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
@@ -60,7 +60,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT | VLESS | @netmellianti #1 [fast]",
+        "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -70,22 +70,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @netmellianti #1 [fast]",
-      "server": "88.216.66.250",
+      "tag": "🇱🇹 LT | VLESS | @hope_net #1 [fast]",
+      "server": "86.38.214.26",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-57040e30dda6",
-      "network": "ws",
+      "uuid": "0f3408b6-5db9-4a9b-9579-e978961d32b4",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "service-8d0658-3bb191.mojtabahdady1370-dcf8.workers.dev"
+        "server_name": "aLi.PinobiN.iR.",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/57040e30dda6",
-        "headers": {
-          "Host": "service-8d0658-3bb191.mojtabahdady1370-dcf8.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "/custom_config?ed=2048"
       }
     },
     {

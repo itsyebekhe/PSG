@@ -3,30 +3,24 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]", "server": "84.32.186.112", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "api37.betust.net", "reality-opts": {"public-key": "naFxXMoZGp3dHSEMiupvt7FsYtnxONkSN90c2JLWl38", "short-id": "974acf45"}}
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "31.56.184.132", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "cloudflare.com", "grpc-opts": {"grpc-service-name": "shiforgrpc"}, "reality-opts": {"public-key": "bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A", "short-id": "b4e3b0b55b8dc75b"}}
-  - {"name": "🇳🇱 NL | VLESS | @bored_vpn #1 [fast]", "server": "195.189.97.12", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "reg.jarbook.net", "grpc-opts": {"grpc-service-name": "BookCatalog"}, "reality-opts": {"public-key": "SiyX5MHMfE_232cYFpidAhU4eBxaoNphSSnNbVc1xnc", "short-id": "085f6d90"}}
-  - {"name": "🇳🇱 NL | VLESS | @outline_ir #1 [slow]", "server": "93.152.220.23", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0480039e-2e85-49e4-9087-ba85e738851a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl-3.it-crp.ru", "reality-opts": {"public-key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s", "short-id": "a1b2c3d4b5"}}
-  - {"name": "🇳🇱 NL | VLESS | @outline_ir #2 [fast]", "server": "84.32.186.112", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "api37.betust.net", "reality-opts": {"public-key": "naFxXMoZGp3dHSEMiupvt7FsYtnxONkSN90c2JLWl38", "short-id": "974acf45"}}
   - {"name": "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]", "server": "51.158.206.80", "port": 23576, "type": "vless", "skip-cert-verify": true, "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "fuck.rkn", "reality-opts": {"public-key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s", "short-id": "01"}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
-      - '🇳🇱 NL | VLESS | @bored_vpn #1 [fast]'
-      - '🇳🇱 NL | VLESS | @outline_ir #1 [slow]'
-      - '🇳🇱 NL | VLESS | @outline_ir #2 [fast]'
       - '🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
-      - '🇳🇱 NL | VLESS | @bored_vpn #1 [fast]'
-      - '🇳🇱 NL | VLESS | @outline_ir #1 [slow]'
-      - '🇳🇱 NL | VLESS | @outline_ir #2 [fast]'
       - '🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:

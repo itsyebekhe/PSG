@@ -50,9 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #3 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,14 +64,40 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]"
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #3 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
+      "server": "188.225.57.78",
+      "server_port": 443,
+      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "app4.betust.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NCW-zK60GXsiDdlbxww18Pqp4kz3zTG1URHWS_bnfDk",
+          "short_id": "3f7e0363"
+        }
+      }
     },
     {
       "type": "vless",
@@ -121,24 +150,70 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-      "server": "188.225.57.78",
-      "server_port": 443,
-      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "78.159.245.89",
+      "server_port": 6443,
+      "uuid": "bcc2f72f-62ea-4d2d-914a-8a6ae5409724",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "app4.betust.net",
+        "server_name": "docs.helpscenter.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NCW-zK60GXsiDdlbxww18Pqp4kz3zTG1URHWS_bnfDk",
-          "short_id": "3f7e0363"
+          "public_key": "o-QrksJtRE_UOjwUEAkN_T_3wo8HWXFo5F97BOmzKAw",
+          "short_id": "4c2f8435d7555b76"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+      "server": "78.159.245.188",
+      "server_port": 6443,
+      "uuid": "bcc2f72f-62ea-4d2d-914a-8a6ae5409724",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "docs.helpscenter.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "o-QrksJtRE_UOjwUEAkN_T_3wo8HWXFo5F97BOmzKAw",
+          "short_id": "4c2f8435d7555b76"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #3 [fast]",
+      "server": "78.159.245.51",
+      "server_port": 6443,
+      "uuid": "bcc2f72f-62ea-4d2d-914a-8a6ae5409724",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "docs.helpscenter.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "o-QrksJtRE_UOjwUEAkN_T_3wo8HWXFo5F97BOmzKAw",
+          "short_id": "4c2f8435d7555b76"
         }
       }
     },

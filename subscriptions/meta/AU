@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇺 AU | VLESS | @red2ray #1 [fast]", "server": "au1.gsafevpnapi.com", "port": 20270, "type": "vless", "skip-cert-verify": true, "uuid": "7647b321-4bfe-43f3-b21f-926c5de8f9b6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.yahoo.com", "reality-opts": {"public-key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE", "short-id": "e6a5a4a9115456de"}}
   - {"name": "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]", "server": "162.159.135.79", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "janett.click"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇺 AU | VLESS | @red2ray #1 [fast]'
       - '🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇺 AU | VLESS | @red2ray #1 [fast]'
       - '🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
