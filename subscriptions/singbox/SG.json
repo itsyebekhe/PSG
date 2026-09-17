@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇸🇬 SG | VLESS | @hope_net #1 [fast]",
-        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 SG | VLESS | @hope_net #1 [fast]",
-        "🇸🇬 SG | VLESS | @red2ray #1 [medium]"
+        "🇸🇬 SG | VLESS | @hope_net #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -83,29 +81,6 @@
       "transport": {
         "type": "ws",
         "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
-      "server": "sg-1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "e9e24ed8-b007-4e29-b54f-1ece641e60fb",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0",
-          "short_id": "fc13d6208ebbae16"
-        }
       }
     },
     {

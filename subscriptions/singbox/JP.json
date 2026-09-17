@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 JP | SS | @red2ray #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]",
         "direct"
       ],
@@ -60,25 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 JP | SS | @red2ray #1 [fast]",
         "🇯🇵 JP | VLESS | @megavpn_link #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 JP | SS | @red2ray #1 [fast]",
-      "server": "jp-2.gsafevpnapi.com",
-      "server_port": 31870,
-      "method": "aes-256-gcm",
-      "password": "5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vless",

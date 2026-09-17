@@ -55,9 +55,10 @@
         "KingRezaPahlavi",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
-        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇦🇺 AU | VLESS | @red2ray #1 [fast]",
+        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -71,9 +72,10 @@
         "KingRezaPahlavi",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
-        "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]"
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇦🇺 AU | VLESS | @red2ray #1 [fast]",
+        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -167,49 +169,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
-      "server": "bg5.univesalsrv.com",
+      "tag": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+      "server": "ai.trstcore.pro",
       "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw",
-          "short_id": "1a3102bb8e51399e"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "gw.v2.RelayService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @red2ray #1 [medium]",
-      "server": "sg-1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "e9e24ed8-b007-4e29-b54f-1ece641e60fb",
+      "uuid": "a8f5e04b-be34-4b84-9359-684ad9c417b0",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.yahoo.com",
+        "server_name": "ai.trstcore.pro",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0",
-          "short_id": "fc13d6208ebbae16"
+          "public_key": "9WRqVZFCPMEG_BOcWGhyxAzZh7Khr32Bwk_Chn1qe00",
+          "short_id": "68edd85a6549e28a"
         }
       }
     },
@@ -234,6 +211,54 @@
           "public_key": "33hVTwP-1rQYG0F92oXJ-o1zPo4Cc8n2Uml_i9tv6XM",
           "short_id": "aa74a7a98e86f2ed"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 AU | VLESS | @red2ray #1 [fast]",
+      "server": "au1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "7647b321-4bfe-43f3-b21f-926c5de8f9b6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE",
+          "short_id": "e6a5a4a9115456de"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
+      "server": "bg5.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw",
+          "short_id": "1a3102bb8e51399e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "gw.v2.RelayService"
       }
     },
     {

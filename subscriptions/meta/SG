@@ -5,21 +5,18 @@ log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @hope_net #1 [fast]", "server": "206.238.237.175", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "vd.ylks.link", "ws-opts": {"path": "", "headers": {"Host": "206.238.237.175"}}}
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
-  - {"name": "🇸🇬 SG | VLESS | @red2ray #1 [medium]", "server": "sg-1.gsafevpnapi.com", "port": 20270, "type": "vless", "skip-cert-verify": true, "uuid": "e9e24ed8-b007-4e29-b54f-1ece641e60fb", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.yahoo.com", "reality-opts": {"public-key": "q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0", "short-id": "fc13d6208ebbae16"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @hope_net #1 [fast]'
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @hope_net #1 [fast]'
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
