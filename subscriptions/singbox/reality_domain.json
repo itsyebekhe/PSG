@@ -53,12 +53,12 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
-        "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
+        "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
+        "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -70,12 +70,12 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
-        "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
+        "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
+        "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]"
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -123,32 +123,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @outline_ir #2 [fast]",
-      "server": "bg5.univesalsrv.com",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw",
-          "short_id": "1a3102bb8e51399e"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "gw.v2.RelayService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
       "server": "md1.univesalsrv.com",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
@@ -170,6 +145,32 @@
       "transport": {
         "type": "grpc",
         "service_name": "hub.v1.RelayService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
+      "server": "rs4.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs4.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
+          "short_id": "861ac7d66953e55f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "media.v1.StreamService"
       }
     },
     {
@@ -243,23 +244,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "jsv-us1.jmovies.ir",
-      "server_port": 443,
-      "uuid": "c26fe2f0-5c69-001F-8a1a-bf116ceb9215",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "mnbvxzqweiopmmmoo.admni.ir",
+      "server_port": 34604,
+      "uuid": "85e7a60d-9be7-4072-a4b4-31eb6926f066",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "numpy.org",
+        "server_name": "play-apps-features.googleusercontent.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fwS6bEyF28VsSapBZZ2vz6LJmVismH0NYupk6STFRWc",
-          "short_id": "f373df45a687eaff"
+          "public_key": "gAUGPdUe_TJFEmY35oytoVuHA1URh2ZANjoXsgEYiiU",
+          "short_id": "fad54a8a502edc49"
         }
       }
     },

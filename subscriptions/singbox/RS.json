@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
+        "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS | VLESS | @red2ray #1 [fast]"
+        "🇷🇸 RS | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,28 +68,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
-      "server": "150.40.126.24",
+      "tag": "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
+      "server": "rs4.univesalsrv.com",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
       "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "rs5.univesalsrv.com",
+        "server_name": "rs4.univesalsrv.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE",
-          "short_id": "4872856d5489c37d"
+          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
+          "short_id": "861ac7d66953e55f"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "gw.v1.ObjectService"
+        "service_name": "media.v1.StreamService"
       }
     },
     {
