@@ -55,6 +55,7 @@
         "KingRezaPahlavi",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [medium]",
+        "🇮🇷 IR | VLESS | @netmellianti #2 [medium]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
@@ -75,6 +76,7 @@
         "KingRezaPahlavi",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [medium]",
+        "🇮🇷 IR | VLESS | @netmellianti #2 [medium]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
@@ -161,6 +163,24 @@
         "enabled": true,
         "server_name": "afr-data-16.myket.ir",
         "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @netmellianti #2 [medium]",
+      "server": "185.215.231.58",
+      "server_port": 5001,
+      "uuid": "5fae84b3-9f6f-439f-a25a-26716acdd3a5",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "afr-data-16.myket.ir",
+        "alpn": [
+          "h3",
           "h2",
           "http/1.1"
         ]
