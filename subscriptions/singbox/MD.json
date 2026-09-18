@@ -52,6 +52,7 @@
         "auto",
         "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
         "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
+        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
         "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
@@ -63,6 +64,7 @@
       "outbounds": [
         "🇲🇩 MD | VLESS | @outline_ir #1 [fast]",
         "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
+        "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
         "🇲🇩 MD | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -120,6 +122,29 @@
       "transport": {
         "type": "grpc",
         "service_name": "hub.v1.ApiService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @free1_vpn #1 [fast]",
+      "server": "94.103.2.251",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "io.ozone.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "a8huhMB5qb3Q0zYwG1QzPjSDTrXufkZMlADT-_EMPhc",
+          "short_id": "00000000"
+        }
       }
     },
     {
