@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇮🇳 IN | VLESS | @hope_net #1 [medium]", "server": "172.105.252.35", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "99de7aac-d2a5-48fd-92cb-d1e6c3c719a4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "in-full.privateip.net"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇮🇳 IN | VLESS | @hope_net #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇮🇳 IN | VLESS | @hope_net #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
