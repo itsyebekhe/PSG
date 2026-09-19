@@ -50,10 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,41 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
+        "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-      "server": "31.184.219.147",
-      "server_port": 9894,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc",
-          "short_id": "aabb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
     },
     {
       "type": "vless",
@@ -123,7 +95,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
+      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
       "server": "130.49.189.158",
       "server_port": 43558,
       "method": "chacha20-ietf-poly1305",
@@ -135,12 +107,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "xn--swe-dw33b.netbazshop.ir",
-      "server_port": 33017,
-      "uuid": "361451c5-245e-46d8-b13e-d206c4f0536b",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+      "server": "31.184.219.147",
+      "server_port": 9894,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc",
+          "short_id": "aabb"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
     },
     {
       "type": "direct",

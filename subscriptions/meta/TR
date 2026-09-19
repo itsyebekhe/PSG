@@ -3,23 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "206.1.97.61", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "840bd8fb-7384-40b8-b119-04dff1537064", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "Miro.com", "reality-opts": {"public-key": "GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE", "short-id": "d7397feef49deef9"}}
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #2 [medium]", "server": "202.133.90.105", "port": 1819, "type": "vless", "skip-cert-verify": true, "uuid": "ea36bacb-7d11-4c2c-8998-f3ffd4cafd66", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]", "server": "87.120.106.180", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "us.demonware.net", "reality-opts": {"public-key": "pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk", "short-id": "e9518e9cb0754976"}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "206.1.97.61", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "840bd8fb-7384-40b8-b119-04dff1537064", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "Miro.com", "reality-opts": {"public-key": "GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE", "short-id": "d7397feef49deef9"}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #2 [fast]", "server": "202.133.90.105", "port": 1819, "type": "vless", "skip-cert-verify": true, "uuid": "ea36bacb-7d11-4c2c-8998-f3ffd4cafd66", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]", "server": "87.120.106.180", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0ed9a248-f693-46c1-ba1b-91d0a6dfa6a5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "us.demonware.net", "reality-opts": {"public-key": "pfPkmGdr3k9jKAov3mjdc_DXROO9fl4jK1FpBsJqujk", "short-id": "e9518e9cb0754976"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
-      - '🇹🇷 TR | VLESS | @netmellianti #2 [medium]'
-      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
-      - '🇹🇷 TR | VLESS | @netmellianti #2 [medium]'
-      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #2 [fast]'
+      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

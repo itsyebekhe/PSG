@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @bored_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
@@ -64,8 +65,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @bored_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
@@ -77,8 +79,20 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+      "server": "193.29.139.151",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
       "server": "31.56.184.132",
       "server_port": 8443,
       "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
@@ -103,15 +117,29 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-      "server": "193.29.139.151",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @bored_vpn #1 [fast]",
+      "server": "195.189.97.12",
+      "server_port": 443,
+      "uuid": "01a21e01-6098-4c3b-a6fd-1a04d64d0c7f",
+      "network": "grpc",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "reg.jarbook.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SiyX5MHMfE_232cYFpidAhU4eBxaoNphSSnNbVc1xnc",
+          "short_id": "085f6d90"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "BookCatalog"
       }
     },
     {

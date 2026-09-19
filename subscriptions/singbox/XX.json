@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -66,6 +65,7 @@
         "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
         "🇽🇽 XX | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @free1_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
         "🇽🇽 XX | VLESS | @selinc #3 [fast]",
@@ -94,6 +94,7 @@
         "🇽🇽 XX | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @ai_duet #2 [fast]",
         "🇽🇽 XX | VLESS | @ai_duet #3 [fast]",
+        "🇽🇽 XX | VLESS | @ai_duet #4 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @miov2ray #1 [fast]",
@@ -118,6 +119,7 @@
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
+        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #1 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #2 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #3 [fast]",
@@ -199,7 +201,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -215,6 +216,7 @@
         "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
         "🇽🇽 XX | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @free1_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
         "🇽🇽 XX | VLESS | @selinc #3 [fast]",
@@ -243,6 +245,7 @@
         "🇽🇽 XX | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @ai_duet #2 [fast]",
         "🇽🇽 XX | VLESS | @ai_duet #3 [fast]",
+        "🇽🇽 XX | VLESS | @ai_duet #4 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @miov2ray #1 [fast]",
@@ -267,6 +270,7 @@
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
+        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #1 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #2 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #3 [fast]",
@@ -345,26 +349,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
-      "server": "104.21.236.63",
-      "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
-        }
-      }
     },
     {
       "type": "vless",
@@ -682,6 +666,23 @@
           "h2",
           "http/1.1"
         ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @free1_vpn #1 [fast]",
+      "server": "xnforo.ir",
+      "server_port": 2087,
+      "uuid": "c75775e9-cf53-47b6-9d1d-29c3a46633fd",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ratatouille.rahmatokaduie.ir",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -1200,6 +1201,30 @@
     },
     {
       "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @ai_duet #4 [fast]",
+      "server": "141.101.115.71",
+      "server_port": 8443,
+      "uuid": "e8c61352-444f-4154-ba34-9d3141154a8d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "maple.adaspoloandco.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/uploader.php",
+        "headers": {
+          "Host": "maple.adaspoloandco.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
       "server": "norman.ns.cloudflare.com",
       "server_port": 443,
@@ -1702,6 +1727,26 @@
         "utls": {
           "enabled": true,
           "fingerprint": "random"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
+      "server": "104.21.236.63",
+      "server_port": 443,
+      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cfvvv-ev1.pages.dev"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cfvvv-ev1.pages.dev"
         }
       }
     },
