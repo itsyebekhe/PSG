@@ -6,9 +6,9 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇲🇩 MD | VLESS | @outline_ir #1 [fast]", "server": "md1.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "md1.univesalsrv.com", "grpc-opts": {"grpc-service-name": "hub.v1.RelayService"}, "reality-opts": {"public-key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY", "short-id": "221ba6174224ca5b"}}
+  - {"name": "🇲🇩 MD | VLESS | @outline_ir #1 [medium]", "server": "md1.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "md1.univesalsrv.com", "grpc-opts": {"grpc-service-name": "hub.v1.RelayService"}, "reality-opts": {"public-key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY", "short-id": "221ba6174224ca5b"}}
   - {"name": "🇷🇸 RS | VLESS | @outline_ir #1 [fast]", "server": "rs4.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rs4.univesalsrv.com", "grpc-opts": {"grpc-service-name": "media.v1.StreamService"}, "reality-opts": {"public-key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs", "short-id": "861ac7d66953e55f"}}
-  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "mnbvxzqweiopmmmoo.admni.ir", "port": 34604, "type": "vless", "skip-cert-verify": true, "uuid": "85e7a60d-9be7-4072-a4b4-31eb6926f066", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play-apps-features.googleusercontent.com", "reality-opts": {"public-key": "gAUGPdUe_TJFEmY35oytoVuHA1URh2ZANjoXsgEYiiU", "short-id": "fad54a8a502edc49"}}
+  - {"name": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]", "server": "ai.trstcore.pro", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a8f5e04b-be34-4b84-9359-684ad9c417b0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ai.trstcore.pro", "reality-opts": {"public-key": "9WRqVZFCPMEG_BOcWGhyxAzZh7Khr32Bwk_Chn1qe00", "short-id": "68edd85a6549e28a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -16,9 +16,9 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇲🇩 MD | VLESS | @outline_ir #1 [fast]'
+      - '🇲🇩 MD | VLESS | @outline_ir #1 [medium]'
       - '🇷🇸 RS | VLESS | @outline_ir #1 [fast]'
-      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -26,9 +26,9 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇲🇩 MD | VLESS | @outline_ir #1 [fast]'
+      - '🇲🇩 MD | VLESS | @outline_ir #1 [medium]'
       - '🇷🇸 RS | VLESS | @outline_ir #1 [fast]'
-      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

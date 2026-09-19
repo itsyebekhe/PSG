@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "31.184.219.147", "port": 9894, "type": "vless", "skip-cert-verify": true, "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "dl.google.com", "grpc-opts": {"grpc-service-name": "grpc-tunnel"}, "reality-opts": {"public-key": "sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc", "short-id": "aabb"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
