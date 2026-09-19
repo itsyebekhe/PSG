@@ -53,6 +53,8 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [medium]",
         "🇮🇷 IR | VLESS | @netmellianti #2 [medium]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
@@ -62,8 +64,6 @@
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
-        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -75,6 +75,8 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [medium]",
         "🇮🇷 IR | VLESS | @netmellianti #2 [medium]",
         "🇸🇨 SC | VLESS | @ai_duet #1 [fast]",
@@ -83,9 +85,7 @@
         "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
-        "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
-        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
+        "🇺🇸 US | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -129,6 +129,36 @@
       "transport": {
         "type": "ws",
         "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+      "server": "spd-mynames.global.ssl.fastly.net",
+      "server_port": 80,
+      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
+      "network": "xhttp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
+      "server": "securitytrails.com",
+      "server_port": 443,
+      "uuid": "90c09d42-c5f6-4602-bba8-957df1ed5598",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.nimrome.dpdns.org",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -305,36 +335,6 @@
       "uuid": "qeshmserver",
       "network": "xhttp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-      "server": "spd-mynames.global.ssl.fastly.net",
-      "server_port": 80,
-      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
-      "server": "securitytrails.com",
-      "server_port": 443,
-      "uuid": "90c09d42-c5f6-4602-bba8-957df1ed5598",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.nimrome.dpdns.org",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
     },
     {
       "type": "direct",

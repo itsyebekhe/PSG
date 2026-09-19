@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUlM=
+//profile-title: base64:UFNHIHwgUEw=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS | VLESS | @outline_ir #1 [fast]"
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,28 +68,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
-      "server": "rs4.univesalsrv.com",
+      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "pl6.moritech.net",
       "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "rs4.univesalsrv.com",
+        "server_name": "pl6.moritech.net",
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
-          "short_id": "861ac7d66953e55f"
+          "fingerprint": "safari"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "media.v1.StreamService"
       }
     },
     {

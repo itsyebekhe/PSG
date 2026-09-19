@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇱 AL | VLESS | @red2ray #1 [fast]", "server": "144.31.131.38", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "prod.pl-node-01.security-sbrf.ru", "reality-opts": {"public-key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI", "short-id": "db04ce8bdb8900f1"}}
+  - {"name": "🇦🇱 AL | VLESS | @orange_vpns #1 [fast]", "server": "144.31.131.38", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "prod.pl-node-01.security-sbrf.ru", "reality-opts": {"public-key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI", "short-id": "db04ce8bdb8900f1"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇱 AL | VLESS | @red2ray #1 [fast]'
+      - '🇦🇱 AL | VLESS | @orange_vpns #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇱 AL | VLESS | @red2ray #1 [fast]'
+      - '🇦🇱 AL | VLESS | @orange_vpns #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

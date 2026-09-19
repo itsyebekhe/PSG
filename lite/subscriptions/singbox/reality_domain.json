@@ -53,9 +53,8 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
-        "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,9 +66,8 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
-        "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
-        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]"
+        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -117,58 +115,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @outline_ir #1 [medium]",
-      "server": "md1.univesalsrv.com",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "md1.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xWejOQUn2koOUorUPSrHMLM-lyHlZ441KzxKc9bLmkY",
-          "short_id": "221ba6174224ca5b"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "hub.v1.RelayService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @outline_ir #1 [fast]",
-      "server": "rs4.univesalsrv.com",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "rs4.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
-          "short_id": "861ac7d66953e55f"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "media.v1.StreamService"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
       "server": "ai.trstcore.pro",
       "server_port": 443,
@@ -187,6 +133,29 @@
           "enabled": true,
           "public_key": "9WRqVZFCPMEG_BOcWGhyxAzZh7Khr32Bwk_Chn1qe00",
           "short_id": "68edd85a6549e28a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "srv-waw.kintecolas.com",
+      "server_port": 443,
+      "uuid": "4f8a1d19-4d21-47f5-816e-a8f475fbd3f7",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-waw.kintecolas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU",
+          "short_id": "22f534c530d37170"
         }
       }
     },

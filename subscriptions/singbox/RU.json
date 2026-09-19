@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
         "direct"
@@ -60,6 +61,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | SS | @flyv2ray #1 [fast]"
       ],
@@ -67,6 +69,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+      "server": "tgfree.rush-server.com",
+      "server_port": 443,
+      "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "anyfile2file.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
+          "short_id": "64c1fe36c7846400"
+        }
+      }
     },
     {
       "type": "vless",
