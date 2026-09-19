@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇱🇹 LT | VLESS | @red2ray #1 [fast]", "server": "103.139.51.21", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "auth.figmafound.org", "reality-opts": {"public-key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24", "short-id": "711ad7f475c35e5e"}}
+  - {"name": "🇱🇹 LT | VLESS | @red2ray #1 [slow]", "server": "103.139.51.21", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "auth.figmafound.org", "reality-opts": {"public-key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24", "short-id": "711ad7f475c35e5e"}}
+  - {"name": "🇱🇹 LT | VLESS | @red2ray #2 [fast]", "server": "cloud.figmafound.org", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "flow": "xtls-rprx-vision", "servername": "cloud.figmafound.org", "reality-opts": {"public-key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24", "short-id": "711ad7f475c35e5e"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇱🇹 LT | VLESS | @red2ray #1 [fast]'
+      - '🇱🇹 LT | VLESS | @red2ray #1 [slow]'
+      - '🇱🇹 LT | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇱🇹 LT | VLESS | @red2ray #1 [fast]'
+      - '🇱🇹 LT | VLESS | @red2ray #1 [slow]'
+      - '🇱🇹 LT | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

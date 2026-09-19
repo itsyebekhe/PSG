@@ -53,6 +53,7 @@
         "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,7 +64,8 @@
       "outbounds": [
         "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | SS | @flyv2ray #1 [fast]"
+        "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -126,6 +128,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
+      "server": "193.233.91.200",
+      "server_port": 443,
+      "uuid": "f211f0aa-db73-49f2-b2cd-5be20c034f36",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.callibri.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yCKV2xr725jI0sFhm4KbttKl8b9UZrnQTXxZLN2S4BM",
+          "short_id": "a284"
+        }
       }
     },
     {
