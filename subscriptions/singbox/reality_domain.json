@@ -53,9 +53,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
         "🇱🇹 LT | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
@@ -68,9 +69,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
         "🇱🇹 LT | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -119,7 +121,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
       "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
@@ -188,7 +190,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @red2ray #2 [fast]",
+      "tag": "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
       "server": "cloud.figmafound.org",
       "server_port": 443,
       "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
@@ -198,6 +200,29 @@
       "tls": {
         "enabled": true,
         "server_name": "cloud.figmafound.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
+          "short_id": "711ad7f475c35e5e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @red2ray #2 [fast]",
+      "server": "auth.figmafound.org",
+      "server_port": 443,
+      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "auth.figmafound.org",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
