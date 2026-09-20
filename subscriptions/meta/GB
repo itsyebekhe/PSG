@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]", "server": "82.24.203.20", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "5fcdc9b7-e70f-4a5c-85c3-e018ad818326", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "82.24.203.20"}}}
   - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
