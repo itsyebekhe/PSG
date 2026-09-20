@@ -3,19 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
   - {"name": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]", "server": "ai.trstcore.pro", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a8f5e04b-be34-4b84-9359-684ad9c417b0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ai.trstcore.pro", "reality-opts": {"public-key": "9WRqVZFCPMEG_BOcWGhyxAzZh7Khr32Bwk_Chn1qe00", "short-id": "68edd85a6549e28a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
       - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
       - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

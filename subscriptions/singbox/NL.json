@@ -52,16 +52,16 @@
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #2 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @bored_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @bored_vpn #2 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -72,16 +72,16 @@
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #2 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @bored_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @bored_vpn #2 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -128,7 +128,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "85.17.145.65",
       "server_port": 12068,
       "uuid": "05caca6c-9e97-4c0f-8edf-7b88a6e572c5",
@@ -266,13 +266,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "bv2.pconnectq.ir",
-      "server_port": 1151,
-      "uuid": "c4b13d22-205f-4ed2-a331-bdd912ffb692",
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
+      "server": "193.29.139.204",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "shadowsocks",
@@ -288,7 +291,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

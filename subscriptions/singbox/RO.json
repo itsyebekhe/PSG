@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRUU=
+//profile-title: base64:UFNHIHwgUk8=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]"
+        "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,18 +68,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tag": "🇷🇴 RO | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
         }
       }
     },
