@@ -3,20 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
-  - {"name": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]", "server": "ai.trstcore.pro", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a8f5e04b-be34-4b84-9359-684ad9c417b0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ai.trstcore.pro", "reality-opts": {"public-key": "9WRqVZFCPMEG_BOcWGhyxAzZh7Khr32Bwk_Chn1qe00", "short-id": "68edd85a6549e28a"}}
+  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "95.217.24.119", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "62.238.103.54", "reality-opts": {"public-key": "_FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc", "short-id": "e9fae729e40ae07e"}}
+  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "144.31.156.247", "port": 5432, "type": "vless", "skip-cert-verify": true, "uuid": "592ead02-6836-4987-a5c3-c75cea64948f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
-      - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
-      - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

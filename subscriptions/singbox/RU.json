@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
+        "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @flyv2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [slow]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
+        "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @flyv2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]"
+        "🇷🇺 RU | VLESS | @red2ray #1 [slow]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,7 +72,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
+      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
       "server": "130.49.189.158",
       "server_port": 43558,
       "method": "chacha20-ietf-poly1305",
@@ -107,24 +107,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
-      "server": "193.233.91.200",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [slow]",
+      "server": "159.194.217.26",
       "server_port": 443,
-      "uuid": "f211f0aa-db73-49f2-b2cd-5be20c034f36",
+      "uuid": "e48e4377-1f29-485b-80d4-85fd4fa27bfa",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.callibri.ru",
+        "server_name": "www.siemens.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "yCKV2xr725jI0sFhm4KbttKl8b9UZrnQTXxZLN2S4BM",
-          "short_id": "a284"
+          "public_key": "APL7UqMEGSeIQNe4evUy3gdFRnTD_l3UMtgTcIfh2XY",
+          "short_id": "babcbe551bde8268"
         }
       }
     },

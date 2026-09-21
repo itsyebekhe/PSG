@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
-        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
-        "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]"
+        "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +72,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
+      "server": "95.217.24.119",
+      "server_port": 2087,
+      "uuid": "ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "62.238.103.54",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc",
+          "short_id": "e9fae729e40ae07e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
       "server": "132.243.223.227",
       "server_port": 2101,
       "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
@@ -91,24 +116,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]",
-      "server": "ai.trstcore.pro",
-      "server_port": 443,
-      "uuid": "a8f5e04b-be34-4b84-9359-684ad9c417b0",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
+      "server": "144.31.156.247",
+      "server_port": 5432,
+      "uuid": "592ead02-6836-4987-a5c3-c75cea64948f",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ai.trstcore.pro",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9WRqVZFCPMEG_BOcWGhyxAzZh7Khr32Bwk_Chn1qe00",
-          "short_id": "68edd85a6549e28a"
+          "fingerprint": "safari"
         }
       }
     },

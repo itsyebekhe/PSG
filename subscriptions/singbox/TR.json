@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @outline_ir #1 [slow]",
-        "🇹🇷 TR | VLESS | @outline_ir #2 [medium]",
+        "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
+        "🇹🇷 TR | VLESS | @outline_ir #2 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @outline_ir #1 [slow]",
-        "🇹🇷 TR | VLESS | @outline_ir #2 [medium]"
+        "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
+        "🇹🇷 TR | VLESS | @outline_ir #2 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @outline_ir #1 [slow]",
+      "tag": "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
       "server": "194.93.63.246",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
@@ -93,12 +95,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @outline_ir #2 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @outline_ir #2 [fast]",
       "server": "167.104.219.193",
       "server_port": 40185,
       "uuid": "My-chanel-Telegram-ATOVPN",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "93.190.9.32",
+      "server_port": 3090,
+      "uuid": "1d375df0-ea6a-4d04-b0c4-947961da6cba",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
     },
     {
       "type": "direct",

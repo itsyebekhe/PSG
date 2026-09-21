@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSUU=
+//profile-title: base64:UFNHIHwgQ0w=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE | SS | @outline_ir #1 [fast]",
+        "🇨🇱 CL | VLESS | @beshkan #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE | SS | @outline_ir #1 [fast]"
+        "🇨🇱 CL | VLESS | @beshkan #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,25 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @outline_ir #1 [fast]",
-      "server": "20.238.35.153",
+      "type": "vless",
+      "tag": "🇨🇱 CL | VLESS | @beshkan #1 [fast]",
+      "server": "34.176.98.128",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LB2J8MvTt2SBgD6o",
+      "uuid": "4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw",
+          "short_id": "d7676b6a468a03b3"
+        }
       }
     },
     {
