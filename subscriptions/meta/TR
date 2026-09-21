@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [fast]", "server": "194.93.63.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl.bubahero.com", "reality-opts": {"public-key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00", "short-id": "9c2378562188c3cb"}}
-  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [medium]", "server": "206.1.97.61", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "840bd8fb-7384-40b8-b119-04dff1537064", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "Miro.com", "reality-opts": {"public-key": "GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE", "short-id": "d7397feef49deef9"}}
+  - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [medium]", "server": "194.93.63.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl.bubahero.com", "reality-opts": {"public-key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00", "short-id": "9c2378562188c3cb"}}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "turkey.hosting-96.ir", "port": 2242, "type": "vless", "skip-cert-verify": true, "uuid": "c4107be5-6cf0-8e55-7913-f45b832d6da8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "google-analytics.com", "reality-opts": {"public-key": "u8Lf72dhxHTC-UIxj9BlZTW52UiyjP-DfqssndWZI24", "short-id": "82e62428"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @outline_ir #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @outline_ir #1 [medium]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @outline_ir #1 [fast]'
-      - '🇹🇷 TR | VLESS | @netmellianti #1 [medium]'
+      - '🇹🇷 TR | VLESS | @outline_ir #1 [medium]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

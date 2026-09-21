@@ -50,16 +50,15 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @father_vpn #2 [medium]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
@@ -73,16 +72,15 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @father_vpn #2 [medium]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+        "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
@@ -93,29 +91,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-      "server": "2.26.51.75",
-      "server_port": 443,
-      "uuid": "57e2a48b-0cc2-4b60-aacd-b36358fcba96",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "4pda.to",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM",
-          "short_id": "d4f6a8c1b2e3f9aa"
-        }
-      }
     },
     {
       "type": "shadowsocks",
@@ -148,7 +123,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @father_vpn #2 [medium]",
       "server": "167.233.59.162",
       "server_port": 443,
       "uuid": "e2773031-7418-424e-ae49-99b4b474aeba",
@@ -193,6 +168,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
+      "server": "87.120.165.52",
+      "server_port": 443,
+      "uuid": "45016458-a8c5-4e3f-814a-437145e4dd4f",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play-apps-features.googleusercontent.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k3RpAUPrxLoiPxp2cG4oqReK1WEHGBbw8UeIbXpwfkQ",
+          "short_id": "29801776d0854b"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
       "server": "37.114.50.157",
       "server_port": 4002,
@@ -227,34 +224,28 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "91.98.44.116",
-      "server_port": 80,
-      "uuid": "39cd736f-d129-4e75-ac39-77f6cf233450",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "server": "09v4jqad.danqela.ir",
+      "server_port": 5065,
+      "uuid": "890aec5c-c029-473a-a4ae-a31917c88e42",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.yahoo.com",
+        "server_name": "www.reuters.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "KDmlFjsZuxHYEHYtFZh-3sLmrkt_KmcxA-sG8twBqxM",
-          "short_id": "d2549f367a3ed3cc"
+          "public_key": "iUiL4IUlpc_0c0AbhnIQqHzw9Uy3Fdmd2PUhlCngUyo",
+          "short_id": "e043f2d962b31f14"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-      "server": "umber39.fars-remen.ir",
-      "server_port": 443,
-      "uuid": "e7c5d2ac-567f-44e9-8d19-726fa15b16bb",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @minovpnch #1 [medium]",
       "server": "92.223.124.29",
       "server_port": 443,
       "uuid": "e1034c59-c944-4a60-bdba-8f9cea0324b1",
