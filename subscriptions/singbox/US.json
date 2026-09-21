@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 US | SS | @outline_ir #1 [fast]",
-        "🇺🇸 US | SS | @outline_ir #2 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
@@ -65,7 +64,6 @@
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-        "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #3 [fast]",
@@ -74,11 +72,13 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @evay_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
@@ -114,8 +114,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 US | SS | @outline_ir #1 [fast]",
-        "🇺🇸 US | SS | @outline_ir #2 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
@@ -129,7 +128,6 @@
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-        "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #3 [fast]",
@@ -138,11 +136,13 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @evay_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
@@ -177,27 +177,25 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @outline_ir #1 [fast]",
-      "server": "156.146.38.169",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+      "server": "31.57.46.193",
+      "server_port": 44119,
+      "uuid": "6112679e-7c59-43ca-af39-cdeeb59093a6",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @outline_ir #2 [fast]",
-      "server": "156.146.38.167",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "goo.gl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TQFjK_jO3yKVLsYWvDw_6_RZd1Z6Nj5DwT_JlrsA9CI",
+          "short_id": "dfdfecb2ec56bf"
+        }
       }
     },
     {
@@ -513,26 +511,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "uuid": "59d75dc8-0de0-452d-bf3b-10a4b1925abc",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053",
-        "headers": {
-          "Host": "fancii.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
       "server": "134.195.101.122",
       "server_port": 443,
@@ -638,6 +616,33 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "uuid": "XpnTeam-13",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Appxdn.global.ssl.fastly.net"
+        }
       }
     },
     {
@@ -753,6 +758,26 @@
         "path": "/?ed=2048?",
         "headers": {
           "Host": "c12.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "59d75dc8-0de0-452d-bf3b-10a4b1925abc",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053",
+        "headers": {
+          "Host": "fancii.global.ssl.fastly.net"
         }
       }
     },

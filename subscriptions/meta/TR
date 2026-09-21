@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [medium]", "server": "194.93.63.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl.bubahero.com", "reality-opts": {"public-key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00", "short-id": "9c2378562188c3cb"}}
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "turkey.hosting-96.ir", "port": 2242, "type": "vless", "skip-cert-verify": true, "uuid": "c4107be5-6cf0-8e55-7913-f45b832d6da8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "google-analytics.com", "reality-opts": {"public-key": "u8Lf72dhxHTC-UIxj9BlZTW52UiyjP-DfqssndWZI24", "short-id": "82e62428"}}
+  - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [slow]", "server": "194.93.63.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl.bubahero.com", "reality-opts": {"public-key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00", "short-id": "9c2378562188c3cb"}}
+  - {"name": "🇹🇷 TR | VLESS | @outline_ir #2 [medium]", "server": "167.104.219.193", "port": 40185, "type": "vless", "skip-cert-verify": true, "uuid": "My-chanel-Telegram-ATOVPN", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @outline_ir #1 [medium]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - '🇹🇷 TR | VLESS | @outline_ir #1 [slow]'
+      - '🇹🇷 TR | VLESS | @outline_ir #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @outline_ir #1 [medium]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - '🇹🇷 TR | VLESS | @outline_ir #1 [slow]'
+      - '🇹🇷 TR | VLESS | @outline_ir #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
