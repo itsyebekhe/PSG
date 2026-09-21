@@ -51,16 +51,19 @@
       "outbounds": [
         "auto",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
         "direct"
       ],
@@ -71,16 +74,19 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+        "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
-        "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
+        "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
+        "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
+        "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -109,6 +115,18 @@
           "public_key": "8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM",
           "short_id": "d4f6a8c1b2e3f9aa"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
+      "server": "web.turbooserver.net.tr",
+      "server_port": 2087,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
@@ -153,6 +171,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+      "server": "31.56.189.68",
+      "server_port": 7443,
+      "uuid": "ffc3fba4-1701-43c1-8c51-31d592cf769e",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AVxiaQZJQcydbWDweCO7BaRSf9StppuxicgPDgou3GI",
+          "short_id": "71e87186710e710e"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
       "server": "37.114.50.157",
       "server_port": 4002,
@@ -176,24 +216,39 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @beshkan #1 [fast]",
-      "server": "82.198.246.37",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
-    },
-    {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
       "server": "3.126.31.60",
       "server_port": 443,
       "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "91.98.44.116",
+      "server_port": 80,
+      "uuid": "39cd736f-d129-4e75-ac39-77f6cf233450",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "KDmlFjsZuxHYEHYtFZh-3sLmrkt_KmcxA-sG8twBqxM",
+          "short_id": "d2549f367a3ed3cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+      "server": "umber39.fars-remen.ir",
+      "server_port": 443,
+      "uuid": "e7c5d2ac-567f-44e9-8d19-726fa15b16bb",
       "network": "tcp",
       "packet_encoding": "xudp"
     },
@@ -223,7 +278,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #1 [medium]",
       "server": "142.132.163.200",
       "server_port": 80,
       "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a",
@@ -240,7 +295,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #2 [medium]",
       "server": "5.75.150.23",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -253,7 +308,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @khoneproxy #3 [medium]",
       "server": "167.235.205.182",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",
@@ -266,7 +321,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
+      "tag": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]",
       "server": "168.119.174.229",
       "server_port": 443,
       "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147",

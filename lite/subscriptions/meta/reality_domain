@@ -7,6 +7,7 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇫🇮 FI | VLESS | @flyv2ray #1 [fast]", "server": "ai.trstcore.pro", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a8f5e04b-be34-4b84-9359-684ad9c417b0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ai.trstcore.pro", "reality-opts": {"public-key": "9WRqVZFCPMEG_BOcWGhyxAzZh7Khr32Bwk_Chn1qe00", "short-id": "68edd85a6549e28a"}}
+  - {"name": "🇦🇱 AL | VLESS | @red2ray #1 [fast]", "server": "al.xelnivo.ir", "port": 7535, "type": "vless", "skip-cert-verify": true, "uuid": "38535888-4cc0-4823-9006-e48e1a045c7d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014", "short-id": "8f798d413a5dbf01"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -15,6 +16,7 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
+      - '🇦🇱 AL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -23,6 +25,7 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇫🇮 FI | VLESS | @flyv2ray #1 [fast]'
+      - '🇦🇱 AL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

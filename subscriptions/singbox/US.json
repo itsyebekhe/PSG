@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
@@ -64,7 +65,6 @@
         "🇺🇸 US | VLESS | @bored_vpn #4 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
-        "🇺🇸 US | VLESS | @netmellianti #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
@@ -80,13 +80,14 @@
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
-        "🇺🇸 US | HY2 | @netfreedom0 #1 [medium]",
+        "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -115,6 +116,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | SS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
@@ -128,7 +130,6 @@
         "🇺🇸 US | VLESS | @bored_vpn #4 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
-        "🇺🇸 US | VLESS | @netmellianti #3 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
@@ -144,13 +145,14 @@
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #3 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #4 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #5 [fast]",
-        "🇺🇸 US | HY2 | @netfreedom0 #1 [medium]",
+        "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #1 [fast]",
         "🇺🇸 US | VLESS | @minovpnch #2 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -186,6 +188,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+      "server": "144.31.242.69",
+      "server_port": 443,
+      "uuid": "188079af-1b15-4256-90f7-d1c4646d2062",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dk1.hat.onl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc",
+          "short_id": "76132b3b39704c44"
+        }
       }
     },
     {
@@ -468,15 +493,6 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
-      "server": "23.235.33.98",
-      "server_port": 80,
-      "uuid": "b742d8e7-ed7d-4f7d-bb16-bf49bdb4cb44",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @netmellianti #3 [fast]",
       "server": "23.235.33.98",
       "server_port": 80,
       "uuid": "b742d8e7-ed7d-4f7d-bb16-bf49bdb4cb44",
@@ -774,12 +790,31 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "dl-cf.f8r.ir",
+      "server": "66.33.22.239",
+      "server_port": 54034,
+      "uuid": "97024aee-bb90-4fd1-8262-aa73f6e6ba61",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
+      "server": "199.232.78.159",
       "server_port": 80,
-      "uuid": "010bf7ad-b6ec-482b-8392-ae038f466a0a",
-      "flow": "xtls-rprx-vision",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
+      "uuid": "50059c3d-02fa-44a2-8011-14e122fa400b",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "simorghgr.global.ssl.fastly.net"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -912,7 +947,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 US | HY2 | @netfreedom0 #1 [medium]",
+      "tag": "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
