@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @outline_ir #1 [medium]",
+        "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @outline_ir #1 [medium]"
+        "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @outline_ir #1 [fast]",
       "server": "194.93.63.246",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
@@ -86,6 +88,29 @@
           "enabled": true,
           "public_key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00",
           "short_id": "9c2378562188c3cb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+      "server": "213.156.152.124",
+      "server_port": 443,
+      "uuid": "7c393e48-7104-4d4c-98b4-c1640d80d509",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Miro.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MQwKv7mfS-Rd1h3cDtteSq5r8buY-EskhxLb2OA-LCE",
+          "short_id": "3149ce78f70b78fe"
         }
       }
     },

@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [medium]", "server": "95.217.24.119", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "62.238.103.54", "reality-opts": {"public-key": "_FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc", "short-id": "e9fae729e40ae07e"}}
-  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "95.217.24.119", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "62.238.103.54", "reality-opts": {"public-key": "_FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc", "short-id": "e9fae729e40ae07e"}}
+  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @orange_vpns #1 [medium]'
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @orange_vpns #1 [medium]'
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
+      - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

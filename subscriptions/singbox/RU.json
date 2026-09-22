@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @flyv2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @flyv2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @flyv2ray #1 [medium]"
+        "🇷🇺 RU | VLESS | @flyv2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,20 +67,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @flyv2ray #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @flyv2ray #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
       "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",

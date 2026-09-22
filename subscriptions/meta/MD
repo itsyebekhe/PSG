@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]", "server": "89.35.14.33", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "md4.univesalsrv.com", "grpc-opts": {"grpc-service-name": "hub.v1.ApiService"}, "reality-opts": {"public-key": "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg", "short-id": "8e07337954f9823f"}}
+  - {"name": "🇲🇩 MD | VLESS | @flyv2ray #1 [fast]", "server": "moldova.cdn-europe.org", "port": 4443, "type": "vless", "skip-cert-verify": true, "uuid": "d7c94b82-657a-4bb7-9b24-2ae566669835", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "flow": "xtls-rprx-vision", "servername": "moldova.cdn-europe.org", "reality-opts": {"public-key": "cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8", "short-id": "694ee64512cfcbef"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]'
+      - '🇲🇩 MD | VLESS | @flyv2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]'
+      - '🇲🇩 MD | VLESS | @flyv2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

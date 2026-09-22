@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [medium]", "server": "152.53.1.40", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "at.quattro-tech.ru", "reality-opts": {"public-key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc", "short-id": "43dcff53849b81e6"}}
+  - {"name": "🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]", "server": "152.53.1.40", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "at.quattro-tech.ru", "reality-opts": {"public-key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc", "short-id": "43dcff53849b81e6"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇹 AT | VLESS | @outlinereleasedkey #1 [medium]'
+      - '🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇹 AT | VLESS | @outlinereleasedkey #1 [medium]'
+      - '🇦🇹 AT | VLESS | @outlinereleasedkey #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

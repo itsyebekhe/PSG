@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]",
+        "🇲🇩 MD | VLESS | @flyv2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]"
+        "🇲🇩 MD | VLESS | @flyv2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,28 +68,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @nofiltering2 #1 [medium]",
-      "server": "89.35.14.33",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
+      "tag": "🇲🇩 MD | VLESS | @flyv2ray #1 [fast]",
+      "server": "moldova.cdn-europe.org",
+      "server_port": 4443,
+      "uuid": "d7c94b82-657a-4bb7-9b24-2ae566669835",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "md4.univesalsrv.com",
+        "server_name": "moldova.cdn-europe.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg",
-          "short_id": "8e07337954f9823f"
+          "public_key": "cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8",
+          "short_id": "694ee64512cfcbef"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "hub.v1.ApiService"
       }
     },
     {

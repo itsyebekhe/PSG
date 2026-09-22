@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [medium]", "server": "194.93.63.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl.bubahero.com", "reality-opts": {"public-key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00", "short-id": "9c2378562188c3cb"}}
+  - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [fast]", "server": "194.93.63.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl.bubahero.com", "reality-opts": {"public-key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00", "short-id": "9c2378562188c3cb"}}
+  - {"name": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]", "server": "213.156.152.124", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7c393e48-7104-4d4c-98b4-c1640d80d509", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "Miro.com", "reality-opts": {"public-key": "MQwKv7mfS-Rd1h3cDtteSq5r8buY-EskhxLb2OA-LCE", "short-id": "3149ce78f70b78fe"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @outline_ir #1 [medium]'
+      - '🇹🇷 TR | VLESS | @outline_ir #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @outline_ir #1 [medium]'
+      - '🇹🇷 TR | VLESS | @outline_ir #1 [fast]'
+      - '🇹🇷 TR | VLESS | @netmellianti #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
