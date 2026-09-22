@@ -62,7 +62,6 @@
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #2 [fast]",
         "🇺🇸 US | VLESS | @beshkan #1 [fast]",
@@ -96,7 +95,7 @@
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
-        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]",
         "direct"
       ],
@@ -118,7 +117,6 @@
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #2 [fast]",
         "🇺🇸 US | VLESS | @beshkan #1 [fast]",
@@ -152,7 +150,7 @@
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
-        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -337,22 +335,6 @@
       "uuid": "8a20ecfe-6a72-4e88-aa2c-65a9e43a8512",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-      "server": "snapp.ir",
-      "server_port": 80,
-      "uuid": "5b7fbdcd-411d-451f-bd70-ffa93efbddb0",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "www.netmanb1.ir"
-        }
-      }
     },
     {
       "type": "vless",
@@ -569,22 +551,10 @@
       "server": "de.huge-b.com",
       "server_port": 2053,
       "uuid": "522df6b1-a110-4163-a92f-9935561b1f77",
-      "network": "ws",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "de.huge-b.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Artemis_Vpn",
-        "headers": {
-          "Host": "de.huge-b.com"
-        }
+        "enabled": true
       }
     },
     {
@@ -1003,7 +973,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
       "server": "www.zula.ir",
       "server_port": 443,
       "uuid": "2b5e2b86-55b6-4571-abc1-c1dec8605725",

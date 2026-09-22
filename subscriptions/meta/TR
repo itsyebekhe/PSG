@@ -3,22 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [fast]", "server": "194.93.63.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl.bubahero.com", "reality-opts": {"public-key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00", "short-id": "9c2378562188c3cb"}}
-  - {"name": "🇹🇷 TR | VLESS | @outline_ir #2 [fast]", "server": "167.104.219.193", "port": 40185, "type": "vless", "skip-cert-verify": true, "uuid": "My-chanel-Telegram-ATOVPN", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇹🇷 TR | VLESS | @outline_ir #1 [medium]", "server": "194.93.63.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl.bubahero.com", "reality-opts": {"public-key": "GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00", "short-id": "9c2378562188c3cb"}}
   - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "93.190.9.32", "port": 3090, "type": "vless", "skip-cert-verify": true, "uuid": "1d375df0-ea6a-4d04-b0c4-947961da6cba", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "vless"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @outline_ir #1 [fast]'
-      - '🇹🇷 TR | VLESS | @outline_ir #2 [fast]'
+      - '🇹🇷 TR | VLESS | @outline_ir #1 [medium]'
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @outline_ir #1 [fast]'
-      - '🇹🇷 TR | VLESS | @outline_ir #2 [fast]'
+      - '🇹🇷 TR | VLESS | @outline_ir #1 [medium]'
       - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

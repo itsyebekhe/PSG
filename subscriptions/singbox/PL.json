@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+        "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]"
+        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+        "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,6 +74,29 @@
       "server": "82.40.62.92",
       "server_port": 443,
       "uuid": "521b29e7-8ce0-0012-a210-79069f701464",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "auto.api-yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo",
+          "short_id": "0f4dacffd272e65f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
+      "server": "82.40.62.92",
+      "server_port": 443,
+      "uuid": "7451a133-ca03-0012-b783-36449767dc13",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
