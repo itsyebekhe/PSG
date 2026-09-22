@@ -52,7 +52,6 @@
         "auto",
         "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [medium]"
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -112,23 +110,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "fi-grpc-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
-      "server": "144.31.156.247",
-      "server_port": 5432,
-      "uuid": "592ead02-6836-4987-a5c3-c75cea64948f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
       }
     },
     {
