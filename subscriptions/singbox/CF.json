@@ -131,6 +131,7 @@
         "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
         "🇽🇽 XX | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
@@ -290,6 +291,7 @@
         "🇽🇽 XX | VLESS | @nofiltering2 #1 [fast]",
         "🇽🇽 XX | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
@@ -1585,34 +1587,13 @@
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
       "server": "de.huge-b.com",
       "server_port": 8880,
-      "uuid": "522df6b1-a110-4163-a92f-9935561b1f77",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
-      "server": "de.huge-b.com",
-      "server_port": 2053,
-      "uuid": "522df6b1-a110-4163-a92f-9935561b1f77",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
-      "server": "de.huge-b.com",
-      "server_port": 8880,
       "uuid": "b3329b57-8b0b-4573-ae7a-67651eaba2a9",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #4 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
       "server": "de.huge-b.com",
       "server_port": 2053,
       "uuid": "b3329b57-8b0b-4573-ae7a-67651eaba2a9",
@@ -1636,7 +1617,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #5 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
       "server": "de.huge-b.com",
       "server_port": 8880,
       "uuid": "9d33a05a-a51f-4d9e-afa2-592adc5dc293",
@@ -1645,10 +1626,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #6 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #4 [fast]",
       "server": "de.huge-b.com",
       "server_port": 2053,
       "uuid": "9d33a05a-a51f-4d9e-afa2-592adc5dc293",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de.huge-b.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Artemis_Vpn",
+        "headers": {
+          "Host": "de.huge-b.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #5 [fast]",
+      "server": "de.huge-b.com",
+      "server_port": 8880,
+      "uuid": "c01ead94-927a-4a44-a0a3-7b6a8013935f",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #6 [fast]",
+      "server": "de.huge-b.com",
+      "server_port": 2053,
+      "uuid": "c01ead94-927a-4a44-a0a3-7b6a8013935f",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -1927,6 +1941,30 @@
         "path": "/dl-traffic/",
         "headers": {
           "Host": "irgc.my-test-bench.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+      "server": "172.67.130.187",
+      "server_port": 2083,
+      "uuid": "2b8738de-1af5-4267-b101-c05707769ed4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fans.liverpool.qzz.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "fans.liverpool.qzz.io"
         }
       }
     },

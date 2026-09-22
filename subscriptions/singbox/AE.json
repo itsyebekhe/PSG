@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVk4=
+//profile-title: base64:UFNHIHwgQUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 VN | VMESS | @mtproxy22_v2ray #1 [medium]",
+        "🇦🇪 AE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 VN | VMESS | @mtproxy22_v2ray #1 [medium]"
+        "🇦🇪 AE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,20 +67,26 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vmess",
-      "tag": "🇻🇳 VN | VMESS | @mtproxy22_v2ray #1 [medium]",
-      "server": "103.56.160.184",
-      "server_port": 80,
-      "uuid": "ef919c67-6638-4416-91af-9a13ffe5b9ca",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/tandung288.click"
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @outline_ir #1 [fast]",
+      "server": "31.57.18.56",
+      "server_port": 443,
+      "uuid": "4f8a1d19-4d21-47f5-816e-a8f475fbd3f7",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-waw.kintecolas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU",
+          "short_id": "22f534c530d37170"
+        }
       }
     },
     {

@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VLESS | @outline_ir #1 [fast]", "server": "31.57.18.56", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4f8a1d19-4d21-47f5-816e-a8f475fbd3f7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "srv-waw.kintecolas.com", "reality-opts": {"public-key": "qPgl3LmKAKs5K-KzGNRJyr5KTO0KoRNN5m2PTCMscXU", "short-id": "22f534c530d37170"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VLESS | @outline_ir #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

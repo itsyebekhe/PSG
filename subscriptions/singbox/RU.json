@@ -50,9 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @flyv2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @flyv2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @flyv2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
+        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @flyv2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,7 +70,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
+      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
       "server": "130.49.189.158",
       "server_port": 43558,
       "method": "chacha20-ietf-poly1305",
@@ -84,7 +82,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @flyv2ray #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @flyv2ray #1 [medium]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
       "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
@@ -102,29 +100,6 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "159.194.217.26",
-      "server_port": 443,
-      "uuid": "e48e4377-1f29-485b-80d4-85fd4fa27bfa",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.siemens.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "APL7UqMEGSeIQNe4evUy3gdFRnTD_l3UMtgTcIfh2XY",
-          "short_id": "babcbe551bde8268"
         }
       }
     },

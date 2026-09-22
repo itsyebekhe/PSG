@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
+  - {"name": "🇨🇿 CZ | VLESS | @red2ray #1 [medium]", "server": "153.76.185.88", "port": 3090, "type": "vless", "skip-cert-verify": true, "uuid": "5ba9f3dc-e8ec-4c8c-b273-68daed2fef12", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "vless"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
+      - '🇨🇿 CZ | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
+      - '🇨🇿 CZ | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
