@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRUU=
+//profile-title: base64:UFNHIHwgSUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE | VLESS | @free1_vpn #1 [medium]",
+        "🇮🇪 IE | SS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE | VLESS | @free1_vpn #1 [medium]"
+        "🇮🇪 IE | SS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,26 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @free1_vpn #1 [medium]",
-      "server": "132.243.65.161",
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE | SS | @free1_vpn #1 [fast]",
+      "server": "74.234.59.81",
       "server_port": 443,
-      "uuid": "4d08aa81-f729-4857-a2e9-06e48b8b9556",
-      "flow": "xtls-rprx-vision",
+      "method": "chacha20-ietf-poly1305",
+      "password": "znEtjgHLXH4FBLic",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "ee.global-cdn.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0",
-          "short_id": "7a3f9e2b1c8d4f6a"
-        }
+        "enabled": true
       }
     },
     {

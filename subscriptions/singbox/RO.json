@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSVQ=
+//profile-title: base64:UFNHIHwgUk8=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,9 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [medium]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
-        "🇮🇹 IT | SS | @netfreedom0 #2 [medium]",
+        "🇷🇴 RO | SS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [medium]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
-        "🇮🇹 IT | SS | @netfreedom0 #2 [medium]"
+        "🇷🇴 RO | SS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -71,33 +67,12 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [medium]",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
-      "server": "91.201.65.122",
-      "server_port": 9059,
-      "method": "aes-256-cfb",
-      "password": "9XwYyZsK8SNzQDtY",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 IT | SS | @netfreedom0 #2 [medium]",
-      "server": "91.201.65.122",
-      "server_port": 9092,
-      "method": "aes-256-cfb",
-      "password": "TyNkGmp9hs6eGpDK",
+      "tag": "🇷🇴 RO | SS | @red2ray #1 [medium]",
+      "server": "154.46.31.106",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE",
       "network": "tcp",
       "tls": {
         "enabled": true

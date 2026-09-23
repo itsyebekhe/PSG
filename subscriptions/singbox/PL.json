@@ -52,7 +52,7 @@
         "auto",
         "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]",
         "🇵🇱 PL | VLESS | @Proxymelimon #1 [medium]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -63,7 +63,7 @@
       "outbounds": [
         "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]",
         "🇵🇱 PL | VLESS | @Proxymelimon #1 [medium]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]"
+        "🇵🇱 PL | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -118,22 +118,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]",
-      "server": "pl6.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [medium]",
+      "server": "201.10.90.24",
+      "server_port": 2027,
+      "uuid": "a6b29052-e9ba-4714-a43c-4a660f452c44",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "2gis.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0",
+          "short_id": "6ba7b8109dad11d1"
         }
       }
     },

@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
-  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "9a2a6a9663a1d454.fn-1.globalmymusic.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "588152b9-2452-4495-be14-4b44eae3aa1f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "nr6.nl", "reality-opts": {"public-key": "lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw", "short-id": "b684d13617792bb2"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
-      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
-      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
