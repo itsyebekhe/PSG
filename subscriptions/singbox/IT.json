@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+        "🇮🇹 IT | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [slow]",
         "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
+        "🇮🇹 IT | SS | @netfreedom0 #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]"
+        "🇮🇹 IT | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [slow]",
+        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
+        "🇮🇹 IT | SS | @netfreedom0 #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +74,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+      "tag": "🇮🇹 IT | VLESS | @outlinereleasedkey #1 [medium]",
+      "server": "57.131.38.163",
+      "server_port": 2053,
+      "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc",
+          "short_id": "5b8a942318178e7b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [slow]",
       "server": "204.216.216.23",
       "server_port": 10086,
       "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923",
@@ -84,6 +110,18 @@
       "server_port": 9059,
       "method": "aes-256-cfb",
       "password": "9XwYyZsK8SNzQDtY",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 IT | SS | @netfreedom0 #2 [medium]",
+      "server": "91.201.65.122",
+      "server_port": 9092,
+      "method": "aes-256-cfb",
+      "password": "TyNkGmp9hs6eGpDK",
       "network": "tcp",
       "tls": {
         "enabled": true

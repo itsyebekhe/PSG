@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -68,6 +67,7 @@
         "🇽🇽 XX | VLESS | @mester_v2ray #6 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
+        "🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
         "🇽🇽 XX | VLESS | @selinc #3 [fast]",
@@ -208,7 +208,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -226,6 +225,7 @@
         "🇽🇽 XX | VLESS | @mester_v2ray #6 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
+        "🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
         "🇽🇽 XX | VLESS | @selinc #3 [fast]",
@@ -363,19 +363,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
-      "server": "darsadgir.ir",
-      "server_port": 443,
-      "uuid": "b6621c85-2b69-42e0-8067-8823659bdcb5",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "map.imisstheoldye.com"
-      }
     },
     {
       "type": "vless",
@@ -739,6 +726,30 @@
         "path": "/",
         "headers": {
           "Host": "tr-cd.sublink-vip2.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
+        "headers": {
+          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
         }
       }
     },
@@ -1583,7 +1594,7 @@
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
       "server": "de.huge-b.com",
       "server_port": 8880,
-      "uuid": "9d33a05a-a51f-4d9e-afa2-592adc5dc293",
+      "uuid": "e589de2a-af14-4f42-b18a-d9f8bdaaadc4",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
     },
@@ -1591,91 +1602,46 @@
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
       "server": "de.huge-b.com",
-      "server_port": 2053,
-      "uuid": "9d33a05a-a51f-4d9e-afa2-592adc5dc293",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.huge-b.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Artemis_Vpn",
-        "headers": {
-          "Host": "de.huge-b.com"
-        }
-      }
+      "server_port": 8880,
+      "uuid": "13011288-2737-489e-adf0-9314cd7dc4bd",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
-      "server": "de.huge-b.com",
+      "server": "ger.huge-b.com",
       "server_port": 8880,
-      "uuid": "c01ead94-927a-4a44-a0a3-7b6a8013935f",
+      "uuid": "c54fe54d-4192-4663-a778-c11db0f7d697",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #4 [fast]",
-      "server": "de.huge-b.com",
-      "server_port": 2053,
-      "uuid": "c01ead94-927a-4a44-a0a3-7b6a8013935f",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.huge-b.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Artemis_Vpn",
-        "headers": {
-          "Host": "de.huge-b.com"
-        }
-      }
+      "server": "ger.huge-b.com",
+      "server_port": 8880,
+      "uuid": "2b05bba4-4ce8-4820-9f74-449c6758309d",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #5 [fast]",
-      "server": "de.huge-b.com",
+      "server": "ger.huge-b.com",
       "server_port": 8880,
-      "uuid": "571259d4-9cd4-48c7-a2b8-0cfd7f41a953",
+      "uuid": "26687af7-46ef-40f7-b19c-09dce2c7bc3c",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
     },
     {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #6 [fast]",
-      "server": "de.huge-b.com",
-      "server_port": 2053,
-      "uuid": "571259d4-9cd4-48c7-a2b8-0cfd7f41a953",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.huge-b.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Artemis_Vpn",
-        "headers": {
-          "Host": "de.huge-b.com"
-        }
-      }
+      "server": "ger.huge-b.com",
+      "server_port": 8880,
+      "uuid": "004ebee8-b102-4e9b-a6dd-620d587f5ff4",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
