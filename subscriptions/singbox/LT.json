@@ -1,0 +1,126 @@
+//profile-title: base64:UFNHIHwgTFQ=
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://telegram.me/yebekhe
+//profile-web-page-url: https://github.com/itsyebekhe/PSG
+
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "tls://8.8.8.8",
+        "detour": "select"
+      },
+      {
+        "tag": "local",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": [
+          "any"
+        ],
+        "server": "local"
+      }
+    ],
+    "final": "google",
+    "strategy": "prefer_ipv4",
+    "optimistic": true,
+    "reverse_mapping": true
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 2080,
+      "set_system_proxy": false
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇱🇹 LT | SS | @netfreedom0 #1 [medium]",
+        "direct"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇱🇹 LT | SS | @netfreedom0 #1 [medium]"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 LT | SS | @netfreedom0 #1 [medium]",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "route",
+        "outbound": "select"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "store_dns": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": true
+    }
+  }
+}

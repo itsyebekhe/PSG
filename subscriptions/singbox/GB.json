@@ -53,7 +53,8 @@
         "🇬🇧 GB | SS | @father_vpn #1 [medium]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [medium]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [medium]",
         "direct"
@@ -67,7 +68,8 @@
         "🇬🇧 GB | SS | @father_vpn #1 [medium]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [medium]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [medium]"
       ],
@@ -91,18 +93,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
-      "server": "82.38.31.175",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [medium]",
       "server": "82.38.31.184",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -114,7 +104,42 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [medium]",
+      "server": "82.38.31.35",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "164.37.100.194",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "14ang88.snusoed.baby",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk",
+          "short_id": "2e124af254a65e7c"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",

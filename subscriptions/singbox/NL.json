@@ -51,10 +51,10 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
-        "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
@@ -65,10 +65,10 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
-        "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -86,29 +86,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
-      "server": "93.152.220.23",
-      "server_port": 443,
-      "uuid": "0480039e-2e85-49e4-9087-ba85e738851a",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl-3.it-crp.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
-          "short_id": "a1b2c3d4b5"
-        }
       }
     },
     {
@@ -170,6 +147,30 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+      "server": "45.148.62.113",
+      "server_port": 443,
+      "uuid": "c18b978e-1c4e-415c-8bea-07942b563a64",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "shuma.ccwu.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "shuma.ccwu.cc"
+        }
       }
     },
     {

@@ -54,6 +54,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
@@ -69,11 +71,11 @@
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
-        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
-        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -107,6 +109,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
@@ -122,11 +126,11 @@
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
-        "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
-        "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -200,6 +204,31 @@
       "server_port": 80,
       "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
       "network": "xhttp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
+      "server": "www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "DIGIV2RAY",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/tm-Digiv2-__teldIGIv2__-DIGiv",
+        "headers": {
+          "Host": "www.speedtest.net.ftp.debian.org.www.digikala.com.cloudflare.com.farsr0id.ir."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+      "server": "www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "DIGIV2RAY",
+      "network": "httpupgrade",
       "packet_encoding": "xudp"
     },
     {
@@ -494,6 +523,52 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "5dccc2ba02c049e8.us-1.globalmymusic.com",
+      "server_port": 443,
+      "uuid": "588152b9-2452-4495-be14-4b44eae3aa1f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "thestraightpath.ca",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw",
+          "short_id": "b684d13617792bb2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "9a2a6a9663a1d454.fn-1.globalmymusic.com",
+      "server_port": 443,
+      "uuid": "588152b9-2452-4495-be14-4b44eae3aa1f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nr6.nl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw",
+          "short_id": "b684d13617792bb2"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
       "server": "de.huge-b.com",
       "server_port": 8880,
@@ -529,31 +604,6 @@
           "Host": "d3gxy6d0a9fs18.cloudfront.net"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 2052,
-      "uuid": "DIGIV2RAY",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/tm-Digiv2-__teldIGIv2__-DIGiv",
-        "headers": {
-          "Host": "www.speedtest.net.ftp.debian.org.www.digikala.com.cloudflare.com.farsr0id.ir."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 2052,
-      "uuid": "DIGIV2RAY",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
