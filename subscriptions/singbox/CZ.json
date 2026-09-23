@@ -51,8 +51,6 @@
       "outbounds": [
         "auto",
         "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
-        "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
-        "🇨🇿 CZ | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]",
-        "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
-        "🇨🇿 CZ | VLESS | @red2ray #2 [fast]"
+        "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -91,41 +87,6 @@
         "path": "/",
         "headers": {
           "Host": "shs111.kejixiaoqi666.store"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 CZ | VLESS | @red2ray #1 [fast]",
-      "server": "153.76.185.88",
-      "server_port": 3090,
-      "uuid": "5ba9f3dc-e8ec-4c8c-b273-68daed2fef12",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 CZ | VLESS | @red2ray #2 [fast]",
-      "server": "95.182.87.221",
-      "server_port": 45326,
-      "uuid": "b0d375c3-72d9-4b55-847a-2500e12d5f6f",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "g.co",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ytF84T7vLvNCMqVgtEeOCyVtrUiYevvrfHdD14rjpmE",
-          "short_id": "68551e"
         }
       }
     },

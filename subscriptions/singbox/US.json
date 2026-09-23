@@ -63,6 +63,7 @@
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
@@ -73,6 +74,8 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
@@ -128,6 +131,7 @@
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
@@ -138,6 +142,8 @@
         "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
@@ -463,6 +469,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+      "server": "k2.cloud--vpn.site",
+      "server_port": 443,
+      "uuid": "9503e890-3702-4847-af0a-2bceac2f0da0",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "c12.com"
+        }
+      }
+    },
+    {
       "type": "vmess",
       "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
       "server": "xcf037.facai2024.com",
@@ -623,6 +656,49 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "72.56.41.33",
+      "server_port": 40443,
+      "uuid": "5be7fb02-b6a5-450f-b041-3243b98e8420",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE",
+          "short_id": "ee33"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "9129b5f6-d771-4072-b065-c2fae7b034b4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "towndtime.global.ssl.fastly.neT."
+        }
       }
     },
     {
