@@ -86,6 +86,8 @@
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
@@ -179,6 +181,8 @@
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
@@ -862,16 +866,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
-      "server": "de.huge-b.com",
-      "server_port": 8880,
-      "uuid": "13011288-2737-489e-adf0-9314cd7dc4bd",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "cb7144e9e019ff74.us-1.globalmymusic.com",
+      "server_port": 443,
+      "uuid": "fcc64e6f-bdcd-471a-a2d4-27c757578070",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "thestraightpath.ca",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw",
+          "short_id": "b684d13617792bb2"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "c5b47b423412e973.fn-1.globalmymusic.com",
+      "server_port": 443,
+      "uuid": "fcc64e6f-bdcd-471a-a2d4-27c757578070",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nr6.nl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw",
+          "short_id": "b684d13617792bb2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
       "server": "ger.huge-b.com",
       "server_port": 8880,
       "uuid": "c54fe54d-4192-4663-a778-c11db0f7d697",
@@ -880,7 +921,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
       "server": "ger.huge-b.com",
       "server_port": 8880,
       "uuid": "2b05bba4-4ce8-4820-9f74-449c6758309d",
@@ -889,7 +930,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #4 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
       "server": "ger.huge-b.com",
       "server_port": 8880,
       "uuid": "26687af7-46ef-40f7-b19c-09dce2c7bc3c",
@@ -898,7 +939,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #5 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #4 [fast]",
       "server": "ger.huge-b.com",
       "server_port": 8880,
       "uuid": "004ebee8-b102-4e9b-a6dd-620d587f5ff4",
@@ -907,10 +948,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #6 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #5 [fast]",
       "server": "ger.huge-b.com",
       "server_port": 8880,
       "uuid": "7b5ee755-9856-49aa-ab17-b3905bfecdfc",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #6 [fast]",
+      "server": "ger.huge-b.com",
+      "server_port": 8880,
+      "uuid": "c3696fac-db8e-4093-9740-87329d9ebeb0",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
     },

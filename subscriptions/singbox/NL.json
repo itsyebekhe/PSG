@@ -52,8 +52,9 @@
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @filtershekan_channel #1 [medium]",
+        "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
@@ -65,8 +66,9 @@
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @filtershekan_channel #1 [medium]",
+        "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -114,7 +116,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @filtershekan_channel #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
       "server": "51.158.206.80",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -145,6 +147,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+      "server": "212.46.33.90",
+      "server_port": 443,
+      "uuid": "dac0bd30-008f-42c9-b377-bfc0dcfa6f0b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "slowkd.sadiepinki.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo",
+          "short_id": "9c2378562188c3cb"
+        }
       }
     },
     {
