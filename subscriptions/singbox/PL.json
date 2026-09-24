@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]",
-        "🇵🇱 PL | VLESS | @Proxymelimon #1 [medium]",
+        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+        "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]",
-        "🇵🇱 PL | VLESS | @Proxymelimon #1 [medium]"
+        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+        "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
       "server": "82.40.62.92",
       "server_port": 443,
       "uuid": "521b29e7-8ce0-0012-a210-79069f701464",
@@ -93,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @Proxymelimon #1 [medium]",
+      "tag": "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
       "server": "82.40.62.92",
       "server_port": 443,
       "uuid": "7451a133-ca03-0012-b783-36449767dc13",
@@ -112,6 +116,39 @@
           "public_key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo",
           "short_id": "0f4dacffd272e65f"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]",
+      "server": "pl6.moritech.net",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl6.moritech.net",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
+      "server": "217.30.10.44",
+      "server_port": 9076,
+      "method": "aes-256-cfb",
+      "password": "S2zDyyPcmZN2h8EC",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

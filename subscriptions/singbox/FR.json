@@ -51,13 +51,13 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | VLESS | @flyv2ray #1 [medium]",
         "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [medium]",
+        "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
         "direct"
       ],
@@ -68,13 +68,13 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | VLESS | @flyv2ray #1 [medium]",
         "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [medium]",
+        "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -100,7 +100,37 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @flyv2ray #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [medium]",
+      "server": "54.37.136.194",
+      "server_port": 2053,
+      "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
+          "short_id": "50ba05992b05c1c3"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [medium]",
+      "server": "54.36.174.140",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mrs2e9a",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
       "server": "152.228.139.33",
       "server_port": 51671,
       "uuid": "75cc7568-abb0-46a8-88be-8137d3c647d4",
@@ -118,24 +148,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc_common3"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [medium]",
-      "server": "54.37.136.194",
-      "server_port": 2053,
-      "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
-          "short_id": "50ba05992b05c1c3"
-        }
       }
     },
     {
@@ -162,7 +174,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "35.181.77.1",
+      "server": "13.39.170.37",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -170,16 +182,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "13.36.152.170",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
       "server": "199.232.169.135",
       "server_port": 80,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -195,7 +198,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",

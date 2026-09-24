@@ -50,11 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
-        "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [medium]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+        "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
@@ -64,11 +63,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
-        "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [medium]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+        "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -78,7 +76,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -86,32 +84,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
-      "server": "31.56.184.132",
-      "server_port": 8443,
-      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A",
-          "short_id": "b4e3b0b55b8dc75b"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "shiforgrpc"
       }
     },
     {
@@ -139,7 +111,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "193.29.139.204",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -151,7 +123,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
       "server": "212.46.33.90",
       "server_port": 443,
       "uuid": "dac0bd30-008f-42c9-b377-bfc0dcfa6f0b",

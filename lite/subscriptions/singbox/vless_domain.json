@@ -70,7 +70,7 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -123,7 +123,7 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @jiedianf #1 [fast]",
@@ -241,7 +241,7 @@
       "tag": "🇽🇽 XX | VLESS | @selinc #1 [fast]",
       "server": "go.lumen.com",
       "server_port": 2095,
-      "uuid": "e62aa442-9f2c-4b5b-8b95-bdefdddce556",
+      "uuid": "cbeb096e-3e16-4f3a-b6cd-078ff124db30",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -260,19 +260,19 @@
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @selinc #2 [fast]",
       "server": "go.lumen.com",
-      "server_port": 2095,
-      "uuid": "cbeb096e-3e16-4f3a-b6cd-078ff124db30",
+      "server_port": 2052,
+      "uuid": "436251af-af1b-4f91-9a86-cb9faf2e9d91",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "eco-de.v2shop.xyz"
+        "server_name": "fin.v2shop.xyz"
       },
       "transport": {
         "type": "ws",
-        "path": "download",
+        "path": "/",
         "headers": {
-          "Host": "eco-de.v2shop.xyz"
+          "Host": "fin.v2shop.xyz"
         }
       }
     },
@@ -496,24 +496,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "tgfree.rush-server.com",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "k2.cloud--vpn.site",
       "server_port": 443,
-      "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "622cd467-ae00-4afe-b7ee-15dca6b9649a",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "anyfile2file.com",
+        "server_name": "ssl.fastly.com",
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
-          "short_id": "64c1fe36c7846400"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "c12.com"
         }
       }
     },
