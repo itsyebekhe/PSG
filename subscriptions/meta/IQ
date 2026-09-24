@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇮🇶 IQ | VLESS | @free1_vpn #1 [slow]", "server": "193.56.135.233", "port": 9543, "type": "vless", "skip-cert-verify": true, "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "storage.yandexcloud.net", "reality-opts": {"public-key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc", "short-id": "123abcde"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇮🇶 IQ | VLESS | @free1_vpn #1 [slow]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇮🇶 IQ | VLESS | @free1_vpn #1 [slow]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

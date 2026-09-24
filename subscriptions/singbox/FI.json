@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]"
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
       "server": "132.243.223.227",
       "server_port": 2101,
       "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
@@ -85,6 +87,29 @@
       "transport": {
         "type": "grpc",
         "service_name": "fi-grpc-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [medium]",
+      "server": "196.196.206.37",
+      "server_port": 2053,
+      "uuid": "f495298f-2bdb-4fd8-9ac9-5dd33d1b482a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fintanil228.vvzzkontaktezzvv.garden",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bAs6R7JCVzZdVK-di7T_ukEPfgp0PJ2PClASD_gSw1Q",
+          "short_id": "c0d6944a3e5dd0a7"
+        }
       }
     },
     {

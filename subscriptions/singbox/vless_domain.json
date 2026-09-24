@@ -62,7 +62,7 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
-        "🇲🇩 MD | VLESS | @flyv2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @flyv2ray #1 [medium]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
         "🇽🇽 XX | VLESS | @selinc #3 [fast]",
@@ -86,7 +86,9 @@
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
@@ -99,7 +101,6 @@
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -159,7 +160,7 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
-        "🇲🇩 MD | VLESS | @flyv2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @flyv2ray #1 [medium]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #2 [fast]",
         "🇽🇽 XX | VLESS | @selinc #3 [fast]",
@@ -183,7 +184,9 @@
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
@@ -196,7 +199,6 @@
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -442,7 +444,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @flyv2ray #1 [fast]",
+      "tag": "🇲🇩 MD | VLESS | @flyv2ray #1 [medium]",
       "server": "moldova.cdn-europe.org",
       "server_port": 4443,
       "uuid": "d7c94b82-657a-4bb7-9b24-2ae566669835",
@@ -876,28 +878,65 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "k2.cloud--vpn.site",
-      "server_port": 443,
-      "uuid": "622cd467-ae00-4afe-b7ee-15dca6b9649a",
-      "network": "ws",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "german.onrovela.com",
+      "server_port": 30798,
+      "uuid": "ca0250c5-3517-4a29-90fb-a289ea6183dd",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "theguardian.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "27fHx5Y77O-4i6rRkjzONE8d6DRiZwLVAhaXO93W40I",
+          "short_id": "3de013795d4e4d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
+      "server": "tomaz1337shellbuy.vvzzkontaktezzvv.garden",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tomaz1337shellbuy.vvzzkontaktezzvv.garden",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk",
+          "short_id": "2e124af254a65e7c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
+      "server": "surstreming.vvzzkontaktezzvv.garden",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "surstreming.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "c12.com"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+          "short_id": "fb442438e2223836"
         }
       }
     },
@@ -1059,27 +1098,6 @@
       "tls": {
         "enabled": true,
         "server_name": "a.samrayan.ir"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [slow]",
-      "server": "pl6.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
       }
     },
     {

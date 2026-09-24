@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "196.196.206.37", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "f495298f-2bdb-4fd8-9ac9-5dd33d1b482a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "fintanil228.vvzzkontaktezzvv.garden", "reality-opts": {"public-key": "bAs6R7JCVzZdVK-di7T_ukEPfgp0PJ2PClASD_gSw1Q", "short-id": "c0d6944a3e5dd0a7"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [medium]'
+      - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
