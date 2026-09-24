@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]", "server": "82.40.62.92", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "521b29e7-8ce0-0012-a210-79069f701464", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "auto.api-yandex.net", "reality-opts": {"public-key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo", "short-id": "0f4dacffd272e65f"}}
-  - {"name": "🇵🇱 PL | VLESS | @Proxymelimon #1 [medium]", "server": "82.40.62.92", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7451a133-ca03-0012-b783-36449767dc13", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "auto.api-yandex.net", "reality-opts": {"public-key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo", "short-id": "0f4dacffd272e65f"}}
+  - {"name": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]", "server": "82.40.62.92", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "521b29e7-8ce0-0012-a210-79069f701464", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "auto.api-yandex.net", "reality-opts": {"public-key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo", "short-id": "0f4dacffd272e65f"}}
+  - {"name": "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]", "server": "82.40.62.92", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7451a133-ca03-0012-b783-36449767dc13", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "auto.api-yandex.net", "reality-opts": {"public-key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo", "short-id": "0f4dacffd272e65f"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇵🇱 PL | VLESS | @orange_vpns #1 [medium]'
-      - '🇵🇱 PL | VLESS | @Proxymelimon #1 [medium]'
+      - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
+      - '🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇵🇱 PL | VLESS | @orange_vpns #1 [medium]'
-      - '🇵🇱 PL | VLESS | @Proxymelimon #1 [medium]'
+      - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
+      - '🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -50,14 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @father_vpn #2 [medium]",
-        "🇩🇪 DE | VLESS | @flyv2ray #1 [medium]",
+        "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+        "🇩🇪 DE | HY2 | @free1_vpn #1 [medium]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-        "🇩🇪 DE | VLESS | @netmellianti #2 [medium]",
+        "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
@@ -78,14 +77,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @father_vpn #2 [medium]",
-        "🇩🇪 DE | VLESS | @flyv2ray #1 [medium]",
+        "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+        "🇩🇪 DE | HY2 | @free1_vpn #1 [medium]",
         "🇩🇪 DE | VLESS | @netmellianti #1 [fast]",
-        "🇩🇪 DE | VLESS | @netmellianti #2 [medium]",
+        "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @beshkan #1 [fast]",
         "🇩🇪 DE | VLESS | @ai_duet #1 [fast]",
@@ -103,23 +101,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-      "server": "31.185.108.84",
-      "server_port": 443,
-      "uuid": "JoinShin-_-:Daredevil_404",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "daredevil2.manufacturingcity.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
     },
     {
       "type": "vless",
@@ -146,28 +127,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]",
-      "server": "shop.jarorobo.ir",
-      "server_port": 443,
-      "uuid": "8e7feb36-3ef5-4e70-a306-4362edd37854",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsungebiz.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uSoNVrVIdQ5Y0YOpDCRkaYK5VAzYG6tCPtTc4cim7Tw",
-          "short_id": "f4b9e88ba8fe8d"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
       "server": "152.233.35.228",
       "server_port": 8443,
@@ -185,7 +144,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @father_vpn #2 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
       "server": "167.233.59.162",
       "server_port": 443,
       "uuid": "e2773031-7418-424e-ae49-99b4b474aeba",
@@ -208,7 +167,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @flyv2ray #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
       "server": "31.56.189.68",
       "server_port": 7443,
       "uuid": "ffc3fba4-1701-43c1-8c51-31d592cf769e",
@@ -226,6 +185,21 @@
           "public_key": "AVxiaQZJQcydbWDweCO7BaRSf9StppuxicgPDgou3GI",
           "short_id": "71e87186710e710e"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 DE | HY2 | @free1_vpn #1 [medium]",
+      "server": "2.27.59.206",
+      "server_port": 443,
+      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "obfs": {
+        "type": "salamander",
+        "password": "salamander"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.sferavpn.pro"
       }
     },
     {
@@ -252,7 +226,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @netmellianti #2 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @netmellianti #2 [fast]",
       "server": "159.69.103.251",
       "server_port": 2053,
       "uuid": "6cf6bb53-9785-49d5-9d39-53b4de45ff84",
@@ -332,20 +306,11 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "german.onrovela.com",
-      "server_port": 30798,
-      "uuid": "ca0250c5-3517-4a29-90fb-a289ea6183dd",
+      "server": "91.107.147.213",
+      "server_port": 59910,
+      "uuid": "d33dbb2a-104e-4978-ad51-77d91348b87c",
       "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "theguardian.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "27fHx5Y77O-4i6rRkjzONE8d6DRiZwLVAhaXO93W40I",
-          "short_id": "3de013795d4e4d"
-        }
-      }
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
