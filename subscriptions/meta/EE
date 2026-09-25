@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]", "server": "94.183.170.147", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "66ac188b-bd8d-4218-b9ba-0bad0e152cd0", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.cloudflare.com", "grpc-opts": {"grpc-service-name": "9d30d49278"}, "reality-opts": {"public-key": "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg", "short-id": "72ccd4a7563c2953"}}
+  - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]", "server": "94.183.170.147", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "66ac188b-bd8d-4218-b9ba-0bad0e152cd0", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.cloudflare.com", "grpc-opts": {"grpc-service-name": "9d30d49278"}, "reality-opts": {"public-key": "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg", "short-id": "72ccd4a7563c2953"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]'
+      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]'
+      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

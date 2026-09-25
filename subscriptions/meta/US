@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇺🇸 US | VLESS | @outline_ir #1 [fast]", "server": "k2.cloud--vpn.site", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1fac5e18-2ca8-4626-c299-1f3f21c6b55e", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "ssl.fastly.com", "ws-opts": {"path": "", "headers": {"Host": "c12.com"}}}
-  - {"name": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]", "server": "144.31.242.69", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "188079af-1b15-4256-90f7-d1c4646d2062", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "dk1.hat.onl", "reality-opts": {"public-key": "V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc", "short-id": "76132b3b39704c44"}}
   - {"name": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]", "server": "199.232.78.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "XpnTeam-7", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ssl.fastly.com", "ws-opts": {"path": "", "headers": {"Host": "Appxdn.global.ssl.fastly.net"}}}
   - {"name": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]", "server": "199.232.78.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "XpnTeam-9", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ssl.fastly.com", "ws-opts": {"path": "", "headers": {"Host": "Appxdn.global.ssl.fastly.net"}}}
   - {"name": "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]", "server": "199.232.78.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "XpnTeam-11", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ssl.fastly.com", "ws-opts": {"path": "", "headers": {"Host": "Appxdn.global.ssl.fastly.net"}}}
@@ -65,7 +64,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇺🇸 US | VLESS | @outline_ir #1 [fast]'
-      - '🇺🇸 US | VLESS | @orange_vpns #1 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #1 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #2 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #3 [fast]'
@@ -126,7 +124,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇺🇸 US | VLESS | @outline_ir #1 [fast]'
-      - '🇺🇸 US | VLESS | @orange_vpns #1 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #1 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #2 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #3 [fast]'

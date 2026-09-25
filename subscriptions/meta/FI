@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
-  - {"name": "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]", "server": "31.76.80.230", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "31.76.80.230", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
-      - '🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]'
+      - '🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
-      - '🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]'
+      - '🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
