@@ -3,23 +3,26 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "uusd66.th3store.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "df2086c8-c706-4fe2-af07-cc5eff272a8d", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "jjsajajsjjajsjjasjajsjajsjsaj.com", "ws-opts": {"path": "", "headers": {"Host": "uusd66.th3store.ir"}}}
+  - {"name": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]", "server": "164.37.100.194", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "14ang88.snusoed.baby", "reality-opts": {"public-key": "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk", "short-id": "2e124af254a65e7c"}}
   - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "18.135.254.77", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "18.169.126.60", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
+      - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
+      - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

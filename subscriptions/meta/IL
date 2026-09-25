@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇮🇱 IL | VLESS | @red2ray #1 [fast]", "server": "45.140.204.34", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "a56a3bda-e89a-4182-a671-a1858bb0f47c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "safari", "servername": "web.max.ru", "reality-opts": {"public-key": "N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA", "short-id": "7c8e3d4a9b1f26d3"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇮🇱 IL | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇮🇱 IL | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
