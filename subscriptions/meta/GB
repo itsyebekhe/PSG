@@ -4,25 +4,25 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]", "server": "164.37.100.194", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "14ang88.snusoed.baby", "reality-opts": {"public-key": "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk", "short-id": "2e124af254a65e7c"}}
+  - {"name": "🇬🇧 GB | VLESS | @beshkan #1 [fast]", "server": "35.234.143.34", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4", "short-id": "1b580f160d965b01"}}
   - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "18.135.254.77", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "18.169.126.60", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "35.176.47.30", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇬🇧 GB | VLESS | @beshkan #1 [fast]'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇬🇧 GB | VLESS | @beshkan #1 [fast]'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

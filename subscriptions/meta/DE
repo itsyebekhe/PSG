@@ -3,12 +3,10 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]", "server": "194.41.112.152", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "9b4792ad-187a-4775-bf4f-9b17b0a774ce", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "mozilla.org", "reality-opts": {"public-key": "TNsQJHoX2M2u07a6oEPb3tY9U08Aph4Qvdk76dAZdio", "short-id": "82ed5803a8047a3e"}}
   - {"name": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]", "server": "185.255.179.54", "port": 56789, "type": "vless", "skip-cert-verify": true, "uuid": "a1c20e5e-3430-4f7e-b2e8-bdb1f436f796", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "g.card-choice.ru", "reality-opts": {"public-key": "VQa_TglmxFiZQ6mXsuBBu49mwUQD57A95_8D87B5Lk4", "short-id": "45b5f55af64c5d5a"}}
   - {"name": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]", "server": "p1real1.greewebservices.ir", "port": 1230, "type": "vless", "skip-cert-verify": true, "uuid": "faff1125-5ff6-4263-b4f4-d0d44b8423a8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
   - {"name": "🇩🇪 DE | VLESS | @father_vpn #1 [fast]", "server": "152.233.35.228", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "394f6981-a782-4779-9a85-e6cf22935d93", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "de1.fromblancwithlove.com"}
   - {"name": "🇩🇪 DE | VLESS | @father_vpn #2 [fast]", "server": "167.233.59.162", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e2773031-7418-424e-ae49-99b4b474aeba", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "drive.google.com", "reality-opts": {"public-key": "VwWuZIAZf4msfvsDZQjQHY6hZPK5r0O-s7yStyjOqhk", "short-id": "fc87828b94144d"}}
-  - {"name": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]", "server": "188.137.235.28", "port": 56413, "type": "vless", "skip-cert-verify": true, "uuid": "bff43cfe-8222-4b33-a13d-8e759caefa8a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "0cc0f6a1.vless-reality-sni.staticedge-delivery.net", "reality-opts": {"public-key": "dBK1Uu9s-8Ke6NcE3vQnv_RMMczuMGbGIVFbIA_oIig", "short-id": "0a809cfd4605f7b9"}}
   - {"name": "🇩🇪 DE | VLESS | @netmellianti #1 [fast]", "server": "87.120.165.52", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "45016458-a8c5-4e3f-814a-437145e4dd4f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "play-apps-features.googleusercontent.com", "reality-opts": {"public-key": "k3RpAUPrxLoiPxp2cG4oqReK1WEHGBbw8UeIbXpwfkQ", "short-id": "29801776d0854b"}}
   - {"name": "🇩🇪 DE | VLESS | @netmellianti #2 [fast]", "server": "159.69.103.251", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "6cf6bb53-9785-49d5-9d39-53b4de45ff84", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "91.98.44.116", "reality-opts": {"public-key": "W2V2xk0G3_neYDnTLNhaYxovp_ThMXDw68uweM12W2Y", "short-id": "5ecb8c5a753a36fc"}}
   - {"name": "🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]", "server": "91.107.244.55", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "92929b0d-a473-4ea2-bba5-f651ea263872", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
@@ -29,12 +27,10 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
       - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
       - '🇩🇪 DE | VLESS | @father_vpn #1 [fast]'
       - '🇩🇪 DE | VLESS | @father_vpn #2 [fast]'
-      - '🇩🇪 DE | VLESS | @free1_vpn #1 [fast]'
       - '🇩🇪 DE | VLESS | @netmellianti #1 [fast]'
       - '🇩🇪 DE | VLESS | @netmellianti #2 [fast]'
       - '🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]'
@@ -55,12 +51,10 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
       - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
       - '🇩🇪 DE | VLESS | @father_vpn #1 [fast]'
       - '🇩🇪 DE | VLESS | @father_vpn #2 [fast]'
-      - '🇩🇪 DE | VLESS | @free1_vpn #1 [fast]'
       - '🇩🇪 DE | VLESS | @netmellianti #1 [fast]'
       - '🇩🇪 DE | VLESS | @netmellianti #2 [fast]'
       - '🇩🇪 DE | VLESS | @freeconfigsplus #1 [fast]'

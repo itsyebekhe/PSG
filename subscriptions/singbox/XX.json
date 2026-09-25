@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -71,8 +72,6 @@
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
-        "🇽🇽 XX | VLESS | @selinc #2 [fast]",
-        "🇽🇽 XX | VLESS | @selinc #3 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #3 [fast]",
@@ -82,6 +81,7 @@
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
+        "🇽🇽 XX | VLESS | @beshkan #1 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
@@ -110,6 +110,8 @@
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
         "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
@@ -201,6 +203,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -222,8 +225,6 @@
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @selinc #1 [fast]",
-        "🇽🇽 XX | VLESS | @selinc #2 [fast]",
-        "🇽🇽 XX | VLESS | @selinc #3 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #3 [fast]",
@@ -233,6 +234,7 @@
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @Fr33C0nfig #1 [fast]",
+        "🇽🇽 XX | VLESS | @beshkan #1 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
@@ -261,6 +263,8 @@
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
         "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
@@ -349,6 +353,27 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
+      "server": "172.67.216.37",
+      "server_port": 8443,
+      "uuid": "b7483fbf-94f6-4d6c-add6-ec3df4fb8015",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "swz.yandex-api.store",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assets"
+      }
     },
     {
       "type": "vless",
@@ -758,46 +783,6 @@
       "tag": "🇽🇽 XX | VLESS | @selinc #1 [fast]",
       "server": "go.lumen.com",
       "server_port": 2095,
-      "uuid": "cbeb096e-3e16-4f3a-b6cd-078ff124db30",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "eco-de.v2shop.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "download",
-        "headers": {
-          "Host": "eco-de.v2shop.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @selinc #2 [fast]",
-      "server": "go.lumen.com",
-      "server_port": 2052,
-      "uuid": "436251af-af1b-4f91-9a86-cb9faf2e9d91",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fin.v2shop.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "fin.v2shop.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @selinc #3 [fast]",
-      "server": "go.lumen.com",
-      "server_port": 2095,
       "uuid": "282f68bd-d803-4136-9ff1-b8604587c42c",
       "network": "ws",
       "packet_encoding": "xudp",
@@ -944,6 +929,30 @@
         "path": "/?u=3e3fff3b5b",
         "headers": {
           "Host": "nova-mango-vault-2e63.wolf-fbi-red.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @beshkan #1 [fast]",
+      "server": "104.21.87.109",
+      "server_port": 443,
+      "uuid": "ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "7-m16.PhUkEt2035.kdNS.fr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/JRr6VGcSLFc034DC6sDbwyWJLbB",
+        "headers": {
+          "Host": "7-m16.PhUkEt2035.kdNS.fr"
         }
       }
     },
@@ -1512,6 +1521,57 @@
         "path": "/111111.online",
         "headers": {
           "Host": "workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+      "server": "ez-51499a.aradtaherzade307.workers.dev",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-89ba17eccebc",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-51499a.aradtaherzade307.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/89ba17eccebc",
+        "headers": {
+          "Host": "ez-51499a.aradtaherzade307.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+      "server": "172.64.150.217",
+      "server_port": 443,
+      "uuid": "a8c56cf4-6a1e-4f0f-a36a-20ed76d54056",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mobileiphone.org",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/k4aIycc4OyRXUl62LB",
+        "headers": {
+          "Host": "api.mobileiphone.org"
         }
       }
     },

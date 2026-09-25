@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇧🇬 BG | VLESS | @outline_ir #1 [fast]", "server": "87.120.216.144", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "gerwai1488.vvzzkontaktezzvv.garden", "reality-opts": {"public-key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0", "short-id": "0c13e8822e7f58aa"}}
   - {"name": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]", "server": "131.123.37.199", "port": 8081, "type": "vless", "skip-cert-verify": true, "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "131.123.37.199"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇧🇬 BG | VLESS | @outline_ir #1 [fast]'
       - '🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇧🇬 BG | VLESS | @outline_ir #1 [fast]'
       - '🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

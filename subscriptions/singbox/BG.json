@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
         "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,36 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
         "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
+      "server": "87.120.216.144",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "gerwai1488.vvzzkontaktezzvv.garden",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0",
+          "short_id": "0c13e8822e7f58aa"
+        }
+      }
     },
     {
       "type": "vless",
