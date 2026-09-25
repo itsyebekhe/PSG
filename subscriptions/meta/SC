@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]", "server": "45.95.96.236", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "gesmankos.sadiepinki.com", "reality-opts": {"public-key": "rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs", "short-id": "4fa44664f6a566d3"}}
   - {"name": "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]", "server": "45.130.125.114", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "srv10.perfectbulk.info", "ws-opts": {"path": "", "headers": {"Host": "srv10.perfectbulk.info"}}}
   - {"name": "🇸🇨 SC | VLESS | @ai_duet #1 [fast]", "server": "45.130.125.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "de.lezzatzone.ir"}
   - {"name": "🇸🇨 SC | VLESS | @arv2ray #1 [fast]", "server": "156.243.83.167", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-Arfilter", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "cdn-alman1.arfilter2.blog", "ws-opts": {"path": "", "headers": {"Host": "cdn-alman1.arfilter2.blog"}}}
@@ -12,7 +11,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇸🇨 SC | VLESS | @orange_vpns #1 [fast]'
       - '🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]'
       - '🇸🇨 SC | VLESS | @ai_duet #1 [fast]'
       - '🇸🇨 SC | VLESS | @arv2ray #1 [fast]'
@@ -21,7 +19,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇸🇨 SC | VLESS | @orange_vpns #1 [fast]'
       - '🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]'
       - '🇸🇨 SC | VLESS | @ai_duet #1 [fast]'
       - '🇸🇨 SC | VLESS | @arv2ray #1 [fast]'

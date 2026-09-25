@@ -5,18 +5,21 @@ log-level: info
 proxies:
   - {"name": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]", "server": "82.40.62.92", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "521b29e7-8ce0-0012-a210-79069f701464", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "auto.api-yandex.net", "reality-opts": {"public-key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo", "short-id": "0f4dacffd272e65f"}}
   - {"name": "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]", "server": "82.40.62.92", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7451a133-ca03-0012-b783-36449767dc13", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "auto.api-yandex.net", "reality-opts": {"public-key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo", "short-id": "0f4dacffd272e65f"}}
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "83.168.95.145", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f28e0ce1-ed75-4e90-b069-5215a80dfb4a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "google.com", "reality-opts": {"public-key": "AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg", "short-id": "d345ad4657adeef9"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
       - '🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
       - '🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

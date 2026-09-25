@@ -7,6 +7,8 @@ proxies:
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]", "server": "167.235.205.182", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇩🇪 DE | VMESS | @serverv2ray00 #1 [fast]", "server": "104.21.4.6", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkws", "headers": {"Host": "glweidf.cfd"}}}
+  - {"name": "🇩🇪 DE | VMESS | @manstervpn #1 [fast]", "server": "172.67.71.160", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkws", "headers": {"Host": "obdii.cfd"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -15,6 +17,8 @@ proxy-groups:
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
       - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
+      - '🇩🇪 DE | VMESS | @serverv2ray00 #1 [fast]'
+      - '🇩🇪 DE | VMESS | @manstervpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -23,6 +27,8 @@ proxy-groups:
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
       - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
+      - '🇩🇪 DE | VMESS | @serverv2ray00 #1 [fast]'
+      - '🇩🇪 DE | VMESS | @manstervpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
