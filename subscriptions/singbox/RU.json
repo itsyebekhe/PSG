@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [slow]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+        "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
@@ -60,7 +61,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @outline_ir #1 [slow]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+        "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -70,7 +72,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [slow]",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+      "server": "91.210.169.181",
+      "server_port": 443,
+      "uuid": "ff0b6ba8-bed0-4c4d-bbc9-23af47582615",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wstg.datasynctrue.online"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/connect",
+        "headers": {
+          "Host": "wstg.datasynctrue.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
       "server": "185.141.227.180",
       "server_port": 2053,
       "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743",

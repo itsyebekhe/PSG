@@ -50,9 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @red2ray #1 [fast]",
         "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [fast]",
+        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
         "🇮🇹 IT | SS | @netfreedom0 #2 [fast]",
         "direct"
       ],
@@ -62,31 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @red2ray #1 [fast]",
         "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [fast]",
+        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
         "🇮🇹 IT | SS | @netfreedom0 #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @red2ray #1 [fast]",
-      "server": "151.101.240.148",
-      "server_port": 80,
-      "uuid": "cd1956d7-f803-4e5a-b8a4-f1540bd103d1",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "jabaat.global.ssl.fastly.net"
-        }
-      }
     },
     {
       "type": "vless",
@@ -99,7 +81,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 IT | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
       "server": "91.201.65.122",
       "server_port": 9059,
       "method": "aes-256-cfb",

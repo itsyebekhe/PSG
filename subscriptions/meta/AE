@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇦🇪 AE | VLESS | @beshkan #1 [medium]", "server": "146.70.102.82", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "31fd2fde-ca69-450e-8c03-eaad819b06b9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.datadoghq.com", "reality-opts": {"public-key": "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k", "short-id": "002fb4ec7b3088cc"}}
-  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [fast]", "server": "188.72.103.4", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "edge1.office2v.ru"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇪 AE | VLESS | @beshkan #1 [medium]'
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇪 AE | VLESS | @beshkan #1 [medium]'
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VMESS | @free1_vpn #1 [medium]",
+        "🇹🇷 TR | VMESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VMESS | @free1_vpn #1 [medium]"
+        "🇹🇷 TR | VMESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇷 TR | VMESS | @free1_vpn #1 [medium]",
+      "tag": "🇹🇷 TR | VMESS | @free1_vpn #1 [fast]",
       "server": "103.215.218.158",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -78,6 +80,19 @@
       "authenticated_length": true,
       "network": "tcp",
       "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "185.87.24.169",
+      "server_port": 2085,
+      "uuid": "552d68c0-dccf-4623-9eca-f4203e2203d1",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
     },
     {
       "type": "direct",

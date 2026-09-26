@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [medium]", "server": "144.31.5.64", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pl6.moritech.net"}
+  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "144.31.5.64", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pl6.moritech.net"}
+  - {"name": "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]", "server": "82.40.62.92", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7451a133-ca03-0012-b783-36449767dc13", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "auto.api-yandex.net", "reality-opts": {"public-key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo", "short-id": "0f4dacffd272e65f"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [medium]'
+      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
+      - '🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [medium]'
+      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
+      - '🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

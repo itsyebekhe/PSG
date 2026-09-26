@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [medium]",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+        "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @outline_ir #1 [medium]"
+        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+        "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
       "server": "144.31.5.64",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -84,6 +86,29 @@
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
+      "server": "82.40.62.92",
+      "server_port": 443,
+      "uuid": "7451a133-ca03-0012-b783-36449767dc13",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "auto.api-yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo",
+          "short_id": "0f4dacffd272e65f"
         }
       }
     },
