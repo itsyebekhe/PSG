@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇦🇪 AE | VLESS | @beshkan #1 [medium]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @beshkan #1 [medium]"
+        "🇦🇪 AE | VLESS | @beshkan #1 [medium]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -87,6 +89,19 @@
           "public_key": "GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k",
           "short_id": "002fb4ec7b3088cc"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "104.143.223.221",
+      "server_port": 2085,
+      "uuid": "552d68c0-dccf-4623-9eca-f4203e2203d1",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {

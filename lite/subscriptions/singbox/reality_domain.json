@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUEw=
+//profile-title: base64:UFNHIHwgUkVBTElUWV9ET01BSU4=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-        "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-        "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,45 +74,62 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-      "server": "144.31.5.64",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @Proxymelimon #1 [fast]",
-      "server": "82.40.62.92",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
       "server_port": 443,
-      "uuid": "7451a133-ca03-0012-b783-36449767dc13",
-      "flow": "xtls-rprx-vision",
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+      "server": "p1real1.greewebservices.ir",
+      "server_port": 1230,
+      "uuid": "faff1125-5ff6-4263-b4f4-d0d44b8423a8",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "auto.api-yandex.net",
+        "server_name": "play.googleapis.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo",
-          "short_id": "0f4dacffd272e65f"
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "9b60d3"
         }
       }
     },

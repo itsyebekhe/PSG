@@ -59,13 +59,13 @@
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
-        "🇺🇸 US | VLESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
@@ -124,13 +124,13 @@
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
-        "🇺🇸 US | VLESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
@@ -412,12 +412,51 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
+      "server": "69.46.46.20",
+      "server_port": 443,
+      "uuid": "e5fc79a3-e331-f47d-ac58-ee616dceb901",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rvg-production-438b.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws/e5fc79a3-e331-f47d-ac58-ee616dceb901",
+        "headers": {
+          "Host": "rvg-production-438b.up.railway.app"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
       "server": "spd-mynames.global.ssl.fastly.net",
       "server_port": 80,
       "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
+      "server": "156.146.38.170",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",
@@ -444,18 +483,6 @@
         "headers": {
           "Host": "c12.com"
         }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
-      "server": "156.146.38.170",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {
@@ -511,28 +538,6 @@
           "enabled": true,
           "public_key": "NTXb7QGg9EyPkpG-7lmBNNaqf4473p_l8ITmTH-xmHg",
           "short_id": "0db5c018ed7bb596"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @beshkan #1 [fast]",
-      "server": "136.117.218.86",
-      "server_port": 443,
-      "uuid": "dffab367-7769-4c6c-86f2-66fc6bd03003",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM",
-          "short_id": "f1955f72763eb2fb"
         }
       }
     },

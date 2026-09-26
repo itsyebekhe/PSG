@@ -6,6 +6,7 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]", "server": "p1real1.greewebservices.ir", "port": 1230, "type": "vless", "skip-cert-verify": true, "uuid": "faff1125-5ff6-4263-b4f4-d0d44b8423a8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -13,6 +14,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
+      - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -20,6 +22,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
+      - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
