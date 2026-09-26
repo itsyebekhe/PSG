@@ -8,8 +8,10 @@ proxies:
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇳🇱 NL | VLESS | @outline_ir #2 [fast]", "server": "nl-xh02.tcp-reset-club.net", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "721bacfe-ff09-4e63-a735-686015bc1351", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "s3.netavex.com", "reality-opts": {"public-key": "Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg", "short-id": "e0"}}
   - {"name": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]", "server": "p1real1.greewebservices.ir", "port": 1230, "type": "vless", "skip-cert-verify": true, "uuid": "faff1125-5ff6-4263-b4f4-d0d44b8423a8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
+  - {"name": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]", "server": "ccvtv.tgseenrobo.ir", "port": 1002, "type": "vless", "skip-cert-verify": true, "uuid": "aeef15bb-8577-4c8b-8531-4678e1e226c0", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "de.noda1.fun", "reality-opts": {"public-key": "SyZojnDAsMjqrqKF0uYFPIckvjRCPHfntR1WPERo_U8", "short-id": "9578b94cf5609759"}}
   - {"name": "🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]", "server": "shop.jarorobo.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8e7feb36-3ef5-4e70-a306-4362edd37854", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.samsungebiz.com", "reality-opts": {"public-key": "uSoNVrVIdQ5Y0YOpDCRkaYK5VAzYG6tCPtTc4cim7Tw", "short-id": "f4b9e88ba8fe8d"}}
-  - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
+  - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
+  - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]", "server": "de-2.starsping.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "www.icloud.com", "reality-opts": {"public-key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk", "short-id": "a88550765b9956ee"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -19,8 +21,10 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇳🇱 NL | VLESS | @outline_ir #2 [fast]'
       - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
+      - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
       - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
-      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]'
+      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
+      - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -30,8 +34,10 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇳🇱 NL | VLESS | @outline_ir #2 [fast]'
       - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
+      - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
       - '🇩🇪 DE | VLESS | @prrofile_purple #1 [fast]'
-      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]'
+      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
+      - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

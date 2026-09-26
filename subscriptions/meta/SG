@@ -3,19 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇸🇬 SG | VLESS | @netmellianti #1 [fast]", "server": "5.223.74.174", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "29b81e1a-1989-4778-b0cb-a7223730f59d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "5.223.74.174", "reality-opts": {"public-key": "pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg", "short-id": "36151c48e28cfb65"}}
+  - {"name": "🇸🇬 SG | VLESS | @netmellianti #1 [medium]", "server": "5.223.74.174", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "29b81e1a-1989-4778-b0cb-a7223730f59d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "5.223.74.174", "reality-opts": {"public-key": "pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg", "short-id": "36151c48e28cfb65"}}
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇸🇬 SG | VLESS | @netmellianti #1 [fast]'
+      - '🇸🇬 SG | VLESS | @netmellianti #1 [medium]'
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇸🇬 SG | VLESS | @netmellianti #1 [fast]'
+      - '🇸🇬 SG | VLESS | @netmellianti #1 [medium]'
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

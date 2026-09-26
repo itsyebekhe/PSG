@@ -52,6 +52,7 @@
         "auto",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
         "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-        "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]"
+        "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -99,6 +101,29 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "65.109.199.174",
+      "server_port": 443,
+      "uuid": "3695cd51-4d9d-4226-ba73-84da238fb05a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Miro.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo",
+          "short_id": "7a0300af51a1c4cf"
+        }
       }
     },
     {

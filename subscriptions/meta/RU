@@ -3,23 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @outline_ir #1 [medium]", "server": "91.210.169.181", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ff0b6ba8-bed0-4c4d-bbc9-23af47582615", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "wstg.datasynctrue.online"}}}
-  - {"name": "🇷🇺 RU | VLESS | @outline_ir #2 [fast]", "server": "185.141.227.180", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "dismissaltree.net"}
-  - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
+  - {"name": "🇷🇺 RU | VLESS | @outline_ir #1 [medium]", "server": "185.141.227.180", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "dismissaltree.net"}
+  - {"name": "🇷🇺 RU | VLESS | @outline_ir #2 [fast]", "server": "188.225.58.238", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7cde4592-4758-415f-8b97-c188faa4d1c9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "app5.betust.net", "reality-opts": {"public-key": "laDuxd6kFSPv2nWTy9LUjMGVRZM949R82alkZpMAqlk", "short-id": "e84029c5"}}
+  - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @outline_ir #1 [medium]'
       - '🇷🇺 RU | VLESS | @outline_ir #2 [fast]'
-      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]'
+      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @outline_ir #1 [medium]'
       - '🇷🇺 RU | VLESS | @outline_ir #2 [fast]'
-      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]'
+      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
