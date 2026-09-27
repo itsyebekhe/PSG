@@ -57,8 +57,6 @@
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #3 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
@@ -75,8 +73,6 @@
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #3 [fast]",
         "🇬🇧 GB | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -146,7 +142,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-      "server": "18.169.206.105",
+      "server": "18.133.172.254",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -155,7 +151,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-      "server": "52.56.145.227",
+      "server": "18.171.3.214",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -164,29 +160,25 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
-      "server": "18.169.206.105",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "server": "31.76.39.240",
+      "server_port": 443,
+      "uuid": "127f705c-f0bc-49e2-be27-d9fca7fd5a78",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #2 [fast]",
-      "server": "18.169.206.105",
-      "server_port": 22223,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @red2ray #3 [fast]",
-      "server": "18.169.206.105",
-      "server_port": 22224,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "brito.serveroff.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ean56I1ZAGD67m6VW-qXZ77bXsE5ClwvYLuQNyXRyH8",
+          "short_id": "832d9228ddd3"
+        }
+      }
     },
     {
       "type": "shadowsocks",

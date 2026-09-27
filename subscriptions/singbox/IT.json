@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]",
         "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
-        "🇮🇹 IT | SS | @netfreedom0 #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,14 +61,30 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]",
         "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
-        "🇮🇹 IT | SS | @netfreedom0 #2 [medium]"
+        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]",
+      "server": "151.101.240.148",
+      "server_port": 80,
+      "uuid": "4ca49915-aee9-41c4-bfa5-1555c7447faa",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "jabaat.global.ssl.fastly.net"
+        }
+      }
     },
     {
       "type": "vless",
@@ -86,18 +102,6 @@
       "server_port": 9059,
       "method": "aes-256-cfb",
       "password": "9XwYyZsK8SNzQDtY",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 IT | SS | @netfreedom0 #2 [medium]",
-      "server": "91.201.65.122",
-      "server_port": 9092,
-      "method": "aes-256-cfb",
-      "password": "TyNkGmp9hs6eGpDK",
       "network": "tcp",
       "tls": {
         "enabled": true

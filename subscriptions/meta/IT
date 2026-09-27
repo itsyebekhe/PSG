@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]", "server": "151.101.240.148", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "4ca49915-aee9-41c4-bfa5-1555c7447faa", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "jabaat.global.ssl.fastly.net"}}}
   - {"name": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]", "server": "204.216.216.23", "port": 10086, "type": "vless", "skip-cert-verify": true, "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]'
       - '🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]'
       - '🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

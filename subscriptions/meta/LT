@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇱🇹 LT | VLESS | @red2ray #1 [fast]", "server": "app26.betust.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "94877739-3af6-4fbb-85b6-ca6fe86c7696", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "app26.betust.net", "reality-opts": {"public-key": "5pR15ATlWW3tVzfnMN3xoiN56LjIUbhnOMp37ZvTFUc", "short-id": "d44d6d46"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇱🇹 LT | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇱🇹 LT | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
