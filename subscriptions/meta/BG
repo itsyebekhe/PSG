@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇧🇬 BG | VLESS | @outline_ir #1 [fast]", "server": "87.120.216.144", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "gerwai1488.vvzzkontaktezzvv.garden", "reality-opts": {"public-key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0", "short-id": "0c13e8822e7f58aa"}}
+  - {"name": "🇧🇬 BG | VLESS | @red2ray #1 [fast]", "server": "87.120.216.144", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "gerwai1488.vvzzkontaktezzvv.garden", "reality-opts": {"public-key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0", "short-id": "0c13e8822e7f58aa"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇧🇬 BG | VLESS | @outline_ir #1 [fast]'
+      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇧🇬 BG | VLESS | @outline_ir #1 [fast]'
+      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

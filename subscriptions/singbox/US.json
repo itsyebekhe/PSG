@@ -60,7 +60,6 @@
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
@@ -72,6 +71,7 @@
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VMESS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
@@ -80,6 +80,7 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @evay_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
@@ -124,7 +125,6 @@
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
@@ -136,6 +136,7 @@
         "🇺🇸 US | VLESS | @netmellianti #2 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VMESS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
@@ -144,6 +145,7 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @evay_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
@@ -433,33 +435,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
-      "server": "69.46.46.20",
-      "server_port": 443,
-      "uuid": "e5fc79a3-e331-f47d-ac58-ee616dceb901",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "rvg-production-438b.up.railway.app",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/e5fc79a3-e331-f47d-ac58-ee616dceb901",
-        "headers": {
-          "Host": "rvg-production-438b.up.railway.app"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
       "server": "spd-mynames.global.ssl.fastly.net",
       "server_port": 80,
@@ -677,6 +652,18 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+      "server": "37.19.198.244",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
       "server": "151.101.64.155",
@@ -703,27 +690,27 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "faultpass-panel-production-eee5.up.railway.app",
+      "server": "victoryprovpn-production-f93a.up.railway.app",
       "server_port": 443,
-      "uuid": "c55d483a-1f00-e65c-c205-db976494a6d4",
+      "uuid": "9198f982-ef72-5da8-c1fb-6ae60c6abf53",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "faultpass-panel-production-eee5.up.railway.app",
+        "server_name": "victoryprovpn-production-f93a.up.railway.app",
         "alpn": [
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/c55d483a-1f00-e65c-c205-db976494a6d4",
+        "path": "/ws/9198f982-ef72-5da8-c1fb-6ae60c6abf53",
         "headers": {
-          "Host": "faultpass-panel-production-eee5.up.railway.app"
+          "Host": "victoryprovpn-production-f93a.up.railway.app"
         }
       }
     },
@@ -840,6 +827,26 @@
         "path": "/?ed=2048?",
         "headers": {
           "Host": "c12.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
+      "server": "k2.cloud--vpn.site",
+      "server_port": 443,
+      "uuid": "622cd467-ae00-4afe-b7ee-15dca6b9649a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "c12.com",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "fi…</div>"
         }
       }
     },

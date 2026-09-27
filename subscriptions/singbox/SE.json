@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇪 SE | SS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #2 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
@@ -77,6 +78,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇪 SE | SS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #2 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
@@ -101,6 +103,18 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 SE | SS | @outlinereleasedkey #1 [fast]",
+      "server": "172.238.244.13",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",
