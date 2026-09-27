@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
         "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
@@ -61,8 +63,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
         "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -72,7 +76,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+      "server": "91.210.169.181",
+      "server_port": 443,
+      "uuid": "ff0b6ba8-bed0-4c4d-bbc9-23af47582615",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "wstg.datasynctrue.online"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/connect",
+        "headers": {
+          "Host": "wstg.datasynctrue.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
       "server": "185.141.227.180",
       "server_port": 2053,
       "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743",
@@ -89,24 +113,50 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
-      "server": "188.225.58.238",
+      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
+      "server": "62.152.58.182",
       "server_port": 443,
-      "uuid": "7cde4592-4758-415f-8b97-c188faa4d1c9",
+      "uuid": "9e4f675b-d6bf-42d1-be55-389f622783af",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "360.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k",
+          "short_id": "27e53bbcab7593d7"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "130.49.190.43",
+      "server_port": 2083,
+      "uuid": "25284368-40d5-4abe-9f56-54a07e88a7af",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "app5.betust.net",
+        "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "laDuxd6kFSPv2nWTy9LUjMGVRZM949R82alkZpMAqlk",
-          "short_id": "e84029c5"
+          "public_key": "wJgBZNx487TIQivnqGuyDyyN6iKcFTy64khGSOFbeyo",
+          "short_id": "4d123bebfae16562"
         }
       }
     },
