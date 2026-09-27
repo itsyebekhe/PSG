@@ -53,18 +53,20 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇦🇱 AL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇮🇶 IQ | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
         "🇩🇪 DE | VLESS | @beshkan #1 [fast]",
+        "🇫🇷 FR | VLESS | @beshkan #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -76,18 +78,20 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
         "🇸🇨 SC | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇦🇱 AL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇮🇶 IQ | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
         "🇩🇪 DE | VLESS | @beshkan #1 [fast]",
+        "🇫🇷 FR | VLESS | @beshkan #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]"
+        "🇱🇹 LT | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -131,29 +135,6 @@
       "transport": {
         "type": "ws",
         "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
-      "server": "87.120.216.144",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "gerwai1488.vvzzkontaktezzvv.garden",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0",
-          "short_id": "0c13e8822e7f58aa"
-        }
       }
     },
     {
@@ -253,6 +234,32 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+      "server": "62.152.58.182",
+      "server_port": 443,
+      "uuid": "9e4f675b-d6bf-42d1-be55-389f622783af",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "360.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k",
+          "short_id": "27e53bbcab7593d7"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @beshkan #1 [fast]",
       "server": "169.40.42.15",
       "server_port": 443,
@@ -276,6 +283,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @beshkan #1 [fast]",
+      "server": "137.74.16.237",
+      "server_port": 443,
+      "uuid": "aaec4e42-a095-44b6-a239-f16d234a0798",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I",
+          "short_id": "b390e0a721d242b0"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
       "server": "3.9.135.156",
       "server_port": 51847,
@@ -294,6 +324,29 @@
           "enabled": true,
           "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
           "short_id": "0eec442e7b34d2f2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "31.76.39.240",
+      "server_port": 443,
+      "uuid": "127f705c-f0bc-49e2-be27-d9fca7fd5a78",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "brito.serveroff.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ean56I1ZAGD67m6VW-qXZ77bXsE5ClwvYLuQNyXRyH8",
+          "short_id": "832d9228ddd3"
         }
       }
     },
@@ -343,7 +396,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
       "server": "49.13.27.100",
       "server_port": 443,
       "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af",
@@ -394,24 +447,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "nl2.dzvn.space",
-      "server_port": 37951,
-      "uuid": "25284368-40d5-4abe-9f56-54a07e88a7af",
+      "tag": "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
+      "server": "app26.betust.net",
+      "server_port": 443,
+      "uuid": "94877739-3af6-4fbb-85b6-ca6fe86c7696",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "nl2.dzvn.space",
+        "server_name": "app26.betust.net",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "O6ZOpoz4sxon8iHxCd5EEvx2K9NUThd4SvOCBEvADEI",
-          "short_id": "a9e21fd097d019c6"
+          "public_key": "5pR15ATlWW3tVzfnMN3xoiN56LjIUbhnOMp37ZvTFUc",
+          "short_id": "d44d6d46"
         }
       }
     },

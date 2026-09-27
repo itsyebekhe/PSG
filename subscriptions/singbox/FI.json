@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,25 +60,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]"
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "31.76.80.230",
-      "server_port": 8443,
-      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vless",
@@ -99,6 +87,18 @@
       "transport": {
         "type": "grpc",
         "service_name": "fi-grpc-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [medium]",
+      "server": "31.76.80.230",
+      "server_port": 8443,
+      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true
       }
     },
     {
