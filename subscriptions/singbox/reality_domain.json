@@ -58,7 +58,9 @@
         "🇮🇷 IR | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇸🇨 SC | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -75,7 +77,9 @@
         "🇮🇷 IR | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇸🇨 SC | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
+        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -237,6 +241,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
+      "server": "sw.bmbrvpn.cc",
+      "server_port": 443,
+      "uuid": "aded9f36-430b-46de-9e66-fdf2d88464c7",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sw.bmbrvpn.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Vrd6nDZblB3XlNd9q5yF2pXIPZ5gukxd1jn6aYrpmFY",
+          "short_id": "335ef6e104e3"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
@@ -255,6 +282,28 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
+      "server": "de-2.starsping.com",
+      "server_port": 443,
+      "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk",
+          "short_id": "a88550765b9956ee"
         }
       }
     },

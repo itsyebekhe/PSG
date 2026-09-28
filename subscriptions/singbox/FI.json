@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
@@ -61,6 +62,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
         "🇫🇮 FI | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -87,6 +89,29 @@
       "transport": {
         "type": "grpc",
         "service_name": "fi-grpc-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @netmellianti #1 [fast]",
+      "server": "95.217.24.236",
+      "server_port": 2087,
+      "uuid": "10d85f65-f8d6-4504-b1e2-94649db1577a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "62.238.41.21",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk",
+          "short_id": "a32cfb5deca913ad"
+        }
       }
     },
     {
