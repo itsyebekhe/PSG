@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | SS | @netfreedom0 #1 [medium]",
+        "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | SS | @netfreedom0 #1 [medium]"
+        "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,8 +69,31 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
+      "server": "193.34.213.10",
+      "server_port": 443,
+      "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "plfsdd.dendiboss.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NtaFdDQFRPxPPIcRc-qyYDbL9mI_miwnaHcdLWvpgmo",
+          "short_id": "9c2378562188c3cb"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [medium]",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
       "server": "217.30.10.44",
       "server_port": 9076,
       "method": "aes-256-cfb",

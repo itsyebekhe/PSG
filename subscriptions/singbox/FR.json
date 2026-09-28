@@ -50,14 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇷 FR | SS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @beshkan #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -66,19 +68,52 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇷 FR | SS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @beshkan #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-        "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
-        "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
+        "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outline_ir #1 [fast]",
+      "server": "141.227.134.63",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+      "server": "185.171.202.106",
+      "server_port": 443,
+      "uuid": "f495298f-2bdb-4fd8-9ac9-5dd33d1b482a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fra2.loozerp.wiki",
+        "reality": {
+          "enabled": true,
+          "public_key": "W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE",
+          "short_id": "ff776ff77be48b88"
+        }
+      }
     },
     {
       "type": "vless",
@@ -98,7 +133,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "152.228.139.33",
       "server_port": 35108,
       "uuid": "81dc0b61-f9fe-4ad6-8b4e-b8c067b73712",
@@ -169,7 +204,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "52.47.137.22",
+      "server": "15.236.12.230",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -177,7 +212,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
       "server": "199.232.169.135",
       "server_port": 80,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -193,7 +228,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
       "server": "199.232.169.135",
       "server_port": 443,
       "uuid": "f408696c-cdbe-49a1-90e9-ab602003315c",
@@ -217,7 +252,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

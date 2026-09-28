@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -71,7 +70,6 @@
         "🇽🇽 XX | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #3 [fast]",
@@ -109,7 +107,7 @@
         "🇽🇽 XX | VLESS | @iran_access #5 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
@@ -203,7 +201,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -224,7 +221,6 @@
         "🇽🇽 XX | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @flyv2ray #1 [fast]",
-        "🇽🇽 XX | VLESS | @selinc #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #3 [fast]",
@@ -262,7 +258,7 @@
         "🇽🇽 XX | VLESS | @iran_access #5 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
@@ -353,27 +349,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
-      "server": "172.67.216.37",
-      "server_port": 8443,
-      "uuid": "b7483fbf-94f6-4d6c-add6-ec3df4fb8015",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "swz.yandex-api.store",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assets"
-      }
     },
     {
       "type": "vless",
@@ -776,26 +751,6 @@
       "tls": {
         "enabled": true,
         "server_name": "chopin.paxr.ir"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @selinc #1 [fast]",
-      "server": "go.lumen.com",
-      "server_port": 2095,
-      "uuid": "282f68bd-d803-4136-9ff1-b8604587c42c",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "eco-de.v2shop.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "download",
-        "headers": {
-          "Host": "eco-de.v2shop.xyz"
-        }
       }
     },
     {
@@ -1516,20 +1471,23 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
-      "server": "b2n.ir",
+      "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "172.67.135.195",
       "server_port": 443,
-      "uuid": "7907dd24-e3f8-4151-a1b2-2608ac4b322e",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
+      "uuid": "b3a21def-5fcc-47a8-a6a0-a34e29d5288a",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
-        "enabled": true,
-        "server_name": "milan.gorbeh3.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wss51068"
       }
     },
     {

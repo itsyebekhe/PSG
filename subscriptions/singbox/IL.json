@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSFkyX0RPTUFJTg==
+//profile-title: base64:UFNHIHwgSUw=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,10 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇺🇸 US | HY2 | @outlinereleasedkey #1 [medium]",
+        "🇮🇱 IL | VLESS | @beshkan #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇺🇸 US | HY2 | @outlinereleasedkey #1 [medium]"
+        "🇮🇱 IL | VLESS | @beshkan #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,53 +68,23 @@
     },
     {
       "type": "vless",
-      "tag": "همکاری_ملی",
-      "server": "127.0.0.1",
+      "tag": "🇮🇱 IL | VLESS | @beshkan #1 [fast]",
+      "server": "72.4.65.116",
       "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "network": "grpc",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "جاویدشاه",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "KingRezaPahlavi",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 US | HY2 | @outlinereleasedkey #1 [medium]",
-      "server": "go.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
+        "server_name": "assets-de2.pleiades.codes",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
       }
     },
     {
