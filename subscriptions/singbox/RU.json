@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-        "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+        "🇷🇺 RU | VLESS | @outline_ir #2 [slow]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
@@ -62,9 +62,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-        "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
+        "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
+        "🇷🇺 RU | VLESS | @outline_ir #2 [slow]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -74,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [medium]",
       "server": "91.210.169.181",
       "server_port": 443,
       "uuid": "ff0b6ba8-bed0-4c4d-bbc9-23af47582615",
@@ -94,7 +94,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #2 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @outline_ir #2 [slow]",
       "server": "185.141.227.180",
       "server_port": 2053,
       "uuid": "2c634977-584e-4e1f-b501-1b70c77a6743",
@@ -111,28 +111,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-      "server": "62.152.58.182",
-      "server_port": 443,
-      "uuid": "9e4f675b-d6bf-42d1-be55-389f622783af",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+      "server": "176.123.165.180",
+      "server_port": 9881,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
       "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "360.yandex.ru",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k",
-          "short_id": "27e53bbcab7593d7"
+          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "short_id": "aabbccdd"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "grpc"
+        "service_name": "grpc-tunnel"
       }
     },
     {
