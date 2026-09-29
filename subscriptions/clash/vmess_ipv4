@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇧🇿 BZ | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "203.30.188.190", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "17b2a313-37a0-4945-a8e4-e63375506b4a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/A2DJOPFT", "headers": {"Host": "203.30.188.190"}}}
   - {"name": "🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "137.184.164.233", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "5cee90e3-b915-4f1e-bb8d-efadad0c6feb", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/vmess", "headers": {"Host": "137.184.164.233"}}}
   - {"name": "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "172.67.135.195", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b3a21def-5fcc-47a8-a6a0-a34e29d5288a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/wss51068", "headers": {"Host": "172.67.135.195"}}}
   - {"name": "🇽🇽 XX | VMESS | @hope_net #1 [fast]", "server": "104.16.61.8", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "104.16.61.8"}}}
@@ -16,7 +15,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇧🇿 BZ | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
@@ -29,7 +27,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇧🇿 BZ | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
