@@ -50,12 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -65,41 +64,17 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-      "server": "212.46.33.90",
-      "server_port": 443,
-      "uuid": "71091100-c6ed-41fa-84ac-acf7ff9eeb7f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "slowkd.sadiepinki.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo",
-          "short_id": "9c2378562188c3cb"
-        }
-      }
     },
     {
       "type": "vless",
@@ -137,6 +112,30 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
+      "server": "139.64.166.25",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "pahobac.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "pahobac.org"
+        }
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
       "server": "89.105.197.202",
@@ -161,33 +160,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "134.98.136.235",
-      "server_port": 62145,
-      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
-      "server": "45.87.251.229",
+      "tag": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "212.46.33.5",
       "server_port": 443,
-      "uuid": "2b3a7680-27bc-4530-b123-c930ea504385",
+      "uuid": "71091100-c6ed-41fa-84ac-acf7ff9eeb7f",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "nl-8.khibinyrent.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
+        "server_name": "slowkd.sadiepinki.com",
         "reality": {
           "enabled": true,
-          "public_key": "31Xx3qWuWLvWfh-v2z7MZg1zVykVBkpDRoTFAnvBO1Q",
-          "short_id": "a1b2c3d4"
+          "public_key": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo",
+          "short_id": "9c2378562188c3cb"
         }
       }
     },

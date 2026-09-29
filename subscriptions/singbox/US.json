@@ -60,15 +60,12 @@
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇺🇸 US | SS | @outlinereleasedkey #2 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
-        "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
@@ -129,15 +126,12 @@
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
-        "🇺🇸 US | SS | @outlinereleasedkey #2 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
-        "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
@@ -189,11 +183,22 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-      "server": "speedtest.net",
-      "server_port": 80,
-      "uuid": "8ed7cd7d-aa57-4024-8805-561ae8921284",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "e2a4dbed-1353-44ac-b4ff-51dcfdc58dcf",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "pannn1.global.ssl.fastly.net"
+        }
+      }
     },
     {
       "type": "vless",
@@ -429,33 +434,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
-      "server": "69.46.46.20",
-      "server_port": 443,
-      "uuid": "e5fc79a3-e331-f47d-ac58-ee616dceb901",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "rvg-production-438b.up.railway.app",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/e5fc79a3-e331-f47d-ac58-ee616dceb901",
-        "headers": {
-          "Host": "rvg-production-438b.up.railway.app"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
       "server": "spd-mynames.global.ssl.fastly.net",
       "server_port": 80,
@@ -488,18 +466,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @outlinereleasedkey #2 [fast]",
-      "server": "173.244.56.9",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vmess",
       "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
       "server": "xcf037.facai2024.com",
@@ -528,33 +494,6 @@
       "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
       "server": "199.232.78.170",
       "server_port": 443,
-      "uuid": "XpnTeam-15",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
-      "server": "199.232.78.170",
-      "server_port": 443,
       "uuid": "XpnTeam-17",
       "network": "ws",
       "packet_encoding": "xudp",
@@ -579,7 +518,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
+      "tag": "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
       "server": "199.232.78.170",
       "server_port": 443,
       "uuid": "XpnTeam-19",
@@ -875,27 +814,27 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "faultpass-panel-production-531a.up.railway.app",
+      "server": "victoryprovpn-production-8cc1.up.railway.app",
       "server_port": 443,
-      "uuid": "c6e5db96-b79e-4347-648e-cc0ea14f498c",
+      "uuid": "92923d63-b32a-e4d8-2d8a-8418fe649071",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "faultpass-panel-production-531a.up.railway.app",
+        "server_name": "victoryprovpn-production-8cc1.up.railway.app",
         "alpn": [
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/c6e5db96-b79e-4347-648e-cc0ea14f498c",
+        "path": "/ws/92923d63-b32a-e4d8-2d8a-8418fe649071",
         "headers": {
-          "Host": "faultpass-panel-production-531a.up.railway.app"
+          "Host": "victoryprovpn-production-8cc1.up.railway.app"
         }
       }
     },

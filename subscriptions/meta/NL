@@ -3,31 +3,28 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]", "server": "212.46.33.90", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "71091100-c6ed-41fa-84ac-acf7ff9eeb7f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "slowkd.sadiepinki.com", "reality-opts": {"public-key": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo", "short-id": "9c2378562188c3cb"}}
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "129.101.120.5", "port": 37951, "type": "vless", "skip-cert-verify": true, "uuid": "25284368-40d5-4abe-9f56-54a07e88a7af", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl2.dzvn.space", "reality-opts": {"public-key": "O6ZOpoz4sxon8iHxCd5EEvx2K9NUThd4SvOCBEvADEI", "short-id": "a9e21fd097d019c6"}}
+  - {"name": "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]", "server": "139.64.166.25", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "pahobac.org"}}}
   - {"name": "🇳🇱 NL | VLESS | @beshkan #1 [fast]", "server": "89.105.197.202", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "22a375e0-f7c6-4d8f-a154-81189914bbf4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "findmypackets.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "134.98.136.235", "port": 62145, "type": "vless", "skip-cert-verify": true, "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #2 [fast]", "server": "45.87.251.229", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2b3a7680-27bc-4530-b123-c930ea504385", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "nl-8.khibinyrent.ru", "reality-opts": {"public-key": "31Xx3qWuWLvWfh-v2z7MZg1zVykVBkpDRoTFAnvBO1Q", "short-id": "a1b2c3d4"}}
+  - {"name": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "212.46.33.5", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "71091100-c6ed-41fa-84ac-acf7ff9eeb7f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "slowkd.sadiepinki.com", "reality-opts": {"public-key": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo", "short-id": "9c2378562188c3cb"}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
+      - '🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
+      - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
+      - '🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
+      - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
