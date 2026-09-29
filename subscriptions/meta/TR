@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [medium]", "server": "xn--rihal-zra.paslanmaz.ir", "port": 9696, "type": "vless", "skip-cert-verify": true, "uuid": "323d28ee-0d31-4278-8fe1-b8b157bc342e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
