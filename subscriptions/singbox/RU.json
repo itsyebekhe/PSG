@@ -51,7 +51,7 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
@@ -62,7 +62,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -73,29 +73,32 @@
     {
       "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-      "server": "188.225.58.238",
-      "server_port": 443,
-      "uuid": "7cde4592-4758-415f-8b97-c188faa4d1c9",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "server": "176.108.244.178",
+      "server_port": 9881,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "app5.betust.net",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "laDuxd6kFSPv2nWTy9LUjMGVRZM949R82alkZpMAqlk",
-          "short_id": "e84029c5"
+          "public_key": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
+          "short_id": "aa"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
       "server": "176.108.247.104",
       "server_port": 9881,
       "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
