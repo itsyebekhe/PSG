@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "19990ed1bb252449.ironly4l.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "storage-p2.googleapis.com", "reality-opts": {"public-key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew", "short-id": "37d86205006fe1fb"}}
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #2 [medium]", "server": "93.114.98.247", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "storage-p2.googleapis.com", "reality-opts": {"public-key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew", "short-id": "37d86205006fe1fb"}}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [medium]", "server": "93.114.98.247", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "storage-p2.googleapis.com", "reality-opts": {"public-key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew", "short-id": "37d86205006fe1fb"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #2 [medium]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #2 [medium]'
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

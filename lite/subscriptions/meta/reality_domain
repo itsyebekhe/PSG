@@ -8,7 +8,6 @@ proxies:
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]", "server": "psde.ramcalshoping.ir", "port": 11706, "type": "vless", "skip-cert-verify": true, "uuid": "ef54f383-0fce-4bc2-ab9c-a687bdd106d0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "incomeapp.tech", "reality-opts": {"public-key": "gW8kYcclDhARUyny0Blxk2DB9Ygi3iNcKQtxkxjrcmU", "short-id": "78"}}
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "19990ed1bb252449.ironly4l.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "storage-p2.googleapis.com", "reality-opts": {"public-key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew", "short-id": "37d86205006fe1fb"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -18,7 +17,6 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇮🇷 IR | VLESS | @orange_vpns #1 [medium]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -28,7 +26,6 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇮🇷 IR | VLESS | @orange_vpns #1 [medium]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

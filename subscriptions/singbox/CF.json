@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #1 [fast]",
@@ -141,6 +140,7 @@
         "🇽🇽 XX | VLESS | @kesslervpn #3 [fast]",
         "🇽🇽 XX | VLESS | @kesslervpn #4 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
+        "🇽🇽 XX | VLESS | @netfreedom0 #1 [fast]",
         "🇽🇽 XX | VLESS | @eliteproxyv2 #1 [fast]",
         "🇽🇽 XX | VLESS | @garnet_free #1 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -199,7 +199,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @kafing_2 #1 [fast]",
@@ -290,6 +289,7 @@
         "🇽🇽 XX | VLESS | @kesslervpn #3 [fast]",
         "🇽🇽 XX | VLESS | @kesslervpn #4 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
+        "🇽🇽 XX | VLESS | @netfreedom0 #1 [fast]",
         "🇽🇽 XX | VLESS | @eliteproxyv2 #1 [fast]",
         "🇽🇽 XX | VLESS | @garnet_free #1 [fast]",
         "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
@@ -345,23 +345,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
-      "server": "b2n.ir",
-      "server_port": 443,
-      "uuid": "7907dd24-e3f8-4151-a1b2-2608ac4b322e",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "milan.gorbeh3.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
     },
     {
       "type": "vless",
@@ -2088,6 +2071,25 @@
         "headers": {
           "Host": "aparat.com.bing.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.netrag.com.px.com.s95017.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.h99.ddns-ip.net."
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @netfreedom0 #1 [fast]",
+      "server": "test.ghwhdr51.workers.dev",
+      "server_port": 443,
+      "uuid": "b8875d59-7568-4041-829a-cc6c82b70022",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {

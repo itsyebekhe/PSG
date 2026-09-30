@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇮🇱 IL | VLESS | @beshkan #1 [fast]", "server": "72.4.65.116", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "assets-de2.pleiades.codes", "grpc-opts": {"grpc-service-name": "cdn.v1.AssetService"}}
+  - {"name": "🇮🇱 IL | VLESS | @beshkan #1 [medium]", "server": "72.4.65.116", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "assets-de2.pleiades.codes", "grpc-opts": {"grpc-service-name": "cdn.v1.AssetService"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇮🇱 IL | VLESS | @beshkan #1 [fast]'
+      - '🇮🇱 IL | VLESS | @beshkan #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇮🇱 IL | VLESS | @beshkan #1 [fast]'
+      - '🇮🇱 IL | VLESS | @beshkan #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

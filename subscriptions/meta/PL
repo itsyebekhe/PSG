@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]", "server": "193.34.213.10", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "plfsdd.dendiboss.org", "reality-opts": {"public-key": "NtaFdDQFRPxPPIcRc-qyYDbL9mI_miwnaHcdLWvpgmo", "short-id": "9c2378562188c3cb"}}
+  - {"name": "🇵🇱 PL | VLESS | @bored_vpn #1 [medium]", "server": "193.34.213.10", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "plfsdd.dendiboss.org", "reality-opts": {"public-key": "NtaFdDQFRPxPPIcRc-qyYDbL9mI_miwnaHcdLWvpgmo", "short-id": "9c2378562188c3cb"}}
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [medium]", "server": "149.86.227.16", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "733b2a78-9306-4bbc-a3a0-b8bfb55f430a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "pmv.raketa-balance.com", "reality-opts": {"public-key": "JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY", "short-id": "6c6082a2223c1d03"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
+      - '🇵🇱 PL | VLESS | @bored_vpn #1 [medium]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
+      - '🇵🇱 PL | VLESS | @bored_vpn #1 [medium]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

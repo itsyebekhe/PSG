@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,13 +60,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]"
+        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
+      "server": "31.172.67.43",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "asdKkaskJKfnsa",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",
@@ -89,18 +101,6 @@
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
         }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
-      "server": "31.172.67.43",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "asdKkaskJKfnsa",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {
