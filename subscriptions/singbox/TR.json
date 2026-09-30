@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,11 +71,46 @@
     {
       "type": "vless",
       "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-      "server": "pnelnetx44.co99.win",
+      "server": "19990ed1bb252449.ironly4l.ir",
       "server_port": 443,
-      "uuid": "65a3d8dd-dcff-4425-9628-f876d61f3c64",
+      "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage-p2.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew",
+          "short_id": "37d86205006fe1fb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #2 [medium]",
+      "server": "93.114.98.247",
+      "server_port": 443,
+      "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage-p2.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew",
+          "short_id": "37d86205006fe1fb"
+        }
+      }
     },
     {
       "type": "direct",

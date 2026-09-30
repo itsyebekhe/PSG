@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,86 +60,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
-      "server": "176.108.244.178",
-      "server_port": 9881,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
-          "short_id": "aa"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-      "server": "176.108.247.104",
-      "server_port": 9881,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "short_id": "aabb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "ru-test.omuservice.tech",
-      "server_port": 8443,
-      "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ozone.nl",
-        "reality": {
-          "enabled": true,
-          "public_key": "yyH7Fyfh1ULPH4L5mFVtqPf_rB1IY6jwDgOuIRY7-wA",
-          "short_id": "9409a3561ba49f30"
-        }
-      }
     },
     {
       "type": "vless",
@@ -164,6 +89,18 @@
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
+      "server": "31.172.67.43",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "asdKkaskJKfnsa",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
