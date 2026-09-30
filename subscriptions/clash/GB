@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VMESS | @outlinereleasedkey #1 [medium]", "server": "139.64.166.25", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "pahobac.org"}}}
+  - {"name": "🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]", "server": "139.64.166.25", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "pahobac.org"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VMESS | @outlinereleasedkey #1 [medium]'
+      - '🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VMESS | @outlinereleasedkey #1 [medium]'
+      - '🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

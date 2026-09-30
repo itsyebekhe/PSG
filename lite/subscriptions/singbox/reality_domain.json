@@ -54,7 +54,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,7 +69,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -137,6 +141,25 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "nlll.gaz-service.shop",
+      "server_port": 8443,
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nlll.gaz-service.shop",
+        "reality": {
+          "enabled": true,
+          "public_key": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
+          "short_id": "b415b8d7a6106ace"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
@@ -155,6 +178,28 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
+      "server": "de-2.starsping.com",
+      "server_port": 443,
+      "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk",
+          "short_id": "a88550765b9956ee"
         }
       }
     },

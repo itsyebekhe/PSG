@@ -68,9 +68,11 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -88,7 +90,7 @@
         "🇽🇽 XX | VLESS | @freev2flyng #2 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]",
@@ -118,9 +120,11 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -138,7 +142,7 @@
         "🇽🇽 XX | VLESS | @freev2flyng #2 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]"
@@ -433,6 +437,25 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "nlll.gaz-service.shop",
+      "server_port": 8443,
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nlll.gaz-service.shop",
+        "reality": {
+          "enabled": true,
+          "public_key": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
+          "short_id": "b415b8d7a6106ace"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
       "server": "ger.huge-b.com",
       "server_port": 8880,
@@ -469,6 +492,28 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
+      "server": "de-2.starsping.com",
+      "server_port": 443,
+      "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk",
+          "short_id": "a88550765b9956ee"
         }
       }
     },
@@ -798,7 +843,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
+      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
       "server": "allsms.rozfa.com",
       "server_port": 443,
       "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",

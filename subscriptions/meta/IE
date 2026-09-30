@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇮🇪 IE | VLESS | @red2ray #1 [fast]", "server": "193.24.234.125", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "web.code-sandbox.blog", "reality-opts": {"public-key": "Y0OENG_faNE37KNgR5p6fnuIXmoES6sVuCFnWsbUzUw", "short-id": "d1d479faa1c1d92f"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇮🇪 IE | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇮🇪 IE | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
