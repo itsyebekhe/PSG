@@ -70,13 +70,11 @@
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇫🇷 FR | VLESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇲🇩 MD | VLESS | @nofiltering2 #1 [slow]",
-        "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [medium]",
+        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -105,13 +103,11 @@
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇫🇷 FR | VLESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇲🇩 MD | VLESS | @nofiltering2 #1 [slow]",
-        "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [medium]",
+        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]"
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -546,7 +542,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @nofiltering2 #1 [slow]",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [medium]",
+      "server": "103.27.157.120",
+      "server_port": 443,
+      "uuid": "025a80fb-233b-4714-b02d-f4384c653d58",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k0883nIGfstbzb8hES-dQ1yPcBwbUbnsyg4w-UA5gkA",
+          "short_id": "68aaa5222092bbea"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
       "server": "89.35.14.33",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
@@ -568,75 +587,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "hub.v1.ApiService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
-      "server": "94.183.154.216",
-      "server_port": 1001,
-      "uuid": "576b2dd6-f31a-4cc9-acea-54882247d507",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.filimo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KX755gv-2X6CXLfWm33OmTc3zHKHcNQK7nPZ06nki1U",
-          "short_id": "429e38fcd14a06a8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-      "server": "37.27.193.206",
-      "server_port": 443,
-      "uuid": "576b2dd6-f31a-4cc9-acea-54882247d507",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "nr6.nl",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw",
-          "short_id": "b684d13617792bb2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
-      "server": "103.27.157.120",
-      "server_port": 443,
-      "uuid": "025a80fb-233b-4714-b02d-f4384c653d58",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "download.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k0883nIGfstbzb8hES-dQ1yPcBwbUbnsyg4w-UA5gkA",
-          "short_id": "68aaa5222092bbea"
-        }
       }
     },
     {
@@ -685,7 +635,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
       "server": "49.13.27.100",
       "server_port": 443,
       "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af",

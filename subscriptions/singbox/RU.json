@@ -52,8 +52,8 @@
         "auto",
         "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -64,8 +64,8 @@
       "outbounds": [
         "🇷🇺 RU | VLESS | @outline_ir #1 [fast]",
         "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -126,6 +126,25 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "ru-test.omuservice.tech",
+      "server_port": 8443,
+      "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozone.nl",
+        "reality": {
+          "enabled": true,
+          "public_key": "yyH7Fyfh1ULPH4L5mFVtqPf_rB1IY6jwDgOuIRY7-wA",
+          "short_id": "9409a3561ba49f30"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
@@ -144,25 +163,6 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "ru-test.omuservice.tech",
-      "server_port": 8443,
-      "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ozone.nl",
-        "reality": {
-          "enabled": true,
-          "public_key": "yyH7Fyfh1ULPH4L5mFVtqPf_rB1IY6jwDgOuIRY7-wA",
-          "short_id": "9409a3561ba49f30"
         }
       }
     },
