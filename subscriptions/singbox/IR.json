@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR | VLESS | @orange_vpns #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -61,8 +60,8 @@
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
-        "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
+        "🇮🇷 IR | VMESS | @khoneproxy #1 [slow]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]",
@@ -74,7 +73,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR | VLESS | @orange_vpns #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -85,8 +83,8 @@
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
-        "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
-        "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
+        "🇮🇷 IR | VMESS | @khoneproxy #1 [slow]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]"
@@ -95,28 +93,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [fast]",
-      "server": "psde.ramcalshoping.ir",
-      "server_port": 11706,
-      "uuid": "ef54f383-0fce-4bc2-ab9c-a687bdd106d0",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "incomeapp.tech",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gW8kYcclDhARUyny0Blxk2DB9Ygi3iNcKQtxkxjrcmU",
-          "short_id": "78"
-        }
-      }
     },
     {
       "type": "vless",
@@ -273,7 +249,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
+      "tag": "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
       "server": "a.samrayan.ir",
       "server_port": 443,
       "uuid": "23d6295f-0337-438f-be52-388bbe321ae4",
@@ -287,7 +263,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1 [slow]",
       "server": "78.47.131.39",
       "server_port": 8443,
       "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",

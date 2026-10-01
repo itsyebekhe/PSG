@@ -51,6 +51,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @beshkan #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]"
+        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
+        "🇫🇮 FI | VLESS | @beshkan #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -85,6 +89,51 @@
       "transport": {
         "type": "grpc",
         "service_name": "fi-grpc-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @beshkan #1 [fast]",
+      "server": "212.147.245.198",
+      "server_port": 443,
+      "uuid": "042d2d08-2973-5d10-97ad-3b75f16bbe54",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "online.1c.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI",
+          "short_id": "330a464a00000000"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "buyfl.zentrovip.online",
+      "server_port": 15219,
+      "uuid": "b783fd58-34c5-46b8-8deb-1dca14025511",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZUboXq95Y7w8gC7Paa8Ra0M02DHIp5X3Xf_U3mK0gVw",
+          "short_id": "3b15bd7377cf3c21"
+        }
       }
     },
     {

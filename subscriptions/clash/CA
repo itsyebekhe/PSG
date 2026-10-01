@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "23.227.38.39", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "56a2188b-2ab7-402c-b9b8-34847fdf0958", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/5QNROSRV", "headers": {"Host": "23.227.38.39"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

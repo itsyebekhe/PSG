@@ -4,16 +4,22 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]", "server": "132.243.223.227", "port": 2101, "type": "vless", "skip-cert-verify": true, "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "132-243-223-227.sslip.io", "grpc-opts": {"grpc-service-name": "fi-grpc-test"}}
+  - {"name": "🇫🇮 FI | VLESS | @beshkan #1 [fast]", "server": "212.147.245.198", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "042d2d08-2973-5d10-97ad-3b75f16bbe54", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "online.1c.ru", "reality-opts": {"public-key": "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI", "short-id": "330a464a00000000"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "buyfl.zentrovip.online", "port": 15219, "type": "vless", "skip-cert-verify": true, "uuid": "b783fd58-34c5-46b8-8deb-1dca14025511", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "play.google.com", "reality-opts": {"public-key": "ZUboXq95Y7w8gC7Paa8Ra0M02DHIp5X3Xf_U3mK0gVw", "short-id": "3b15bd7377cf3c21"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @beshkan #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @beshkan #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

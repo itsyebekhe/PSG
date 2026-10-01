@@ -51,9 +51,7 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
         "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,9 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]"
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -96,43 +92,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-      "server": "pl-80754f07cc.sishka.network",
-      "server_port": 443,
-      "uuid": "bebc775c-0de1-451c-80cb-64ee06fd5447",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl-80754f07cc.sishka.network",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uYiZWRgbowvS9uOhVZTe0FBS1pLzA3QMyQ_NfDh4_h8",
-          "short_id": "3ad720a1ef5e02a2"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
-      "server": "217.30.10.44",
-      "server_port": 9076,
-      "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
       "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",

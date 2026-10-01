@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQlI=
+//profile-title: base64:UFNHIHwgVFI=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]"
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,26 +67,24 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vmess",
-      "tag": "🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]",
-      "server": "aksai.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "83.217.9.140",
+      "server_port": 43000,
+      "uuid": "85163fd9-6f73-4eea-b1df-3b327dacbabf",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "aksai.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "aksai.org"
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ptE_QnAka3pXNEf8BYKpA9CHdgj4U4xXTixjYWOji0U",
+          "short_id": "68d2eb23"
         }
       }
     },

@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSUw=
+//profile-title: base64:UFNHIHwgSUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 IL | VLESS | @beshkan #1 [fast]",
+        "🇮🇪 IE | SS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 IL | VLESS | @beshkan #1 [fast]"
+        "🇮🇪 IE | SS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,24 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 IL | VLESS | @beshkan #1 [fast]",
-      "server": "72.4.65.116",
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE | SS | @outline_ir #1 [fast]",
+      "server": "20.166.59.119",
       "server_port": 443,
-      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
-      "network": "grpc",
-      "packet_encoding": "xudp",
+      "method": "chacha20-ietf-poly1305",
+      "password": "gJe7umStIck5Mieg",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "assets-de2.pleiades.codes",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
+        "enabled": true
       }
     },
     {
