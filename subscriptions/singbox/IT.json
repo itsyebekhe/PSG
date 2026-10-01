@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VMESS | @free1_vpn #1 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VMESS | @free1_vpn #1 [fast]"
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,17 +67,13 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇹 IT | VMESS | @free1_vpn #1 [fast]",
-      "server": "89.41.172.85",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923",
       "network": "tcp",
-      "packet_encoding": ""
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
