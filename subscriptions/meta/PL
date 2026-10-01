@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]", "server": "193.34.213.10", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "plfsdd.dendiboss.org", "reality-opts": {"public-key": "NtaFdDQFRPxPPIcRc-qyYDbL9mI_miwnaHcdLWvpgmo", "short-id": "9c2378562188c3cb"}}
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [fast]", "server": "pl-80754f07cc.sishka.network", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "bebc775c-0de1-451c-80cb-64ee06fd5447", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "pl-80754f07cc.sishka.network", "reality-opts": {"public-key": "uYiZWRgbowvS9uOhVZTe0FBS1pLzA3QMyQ_NfDh4_h8", "short-id": "3ad720a1ef5e02a2"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
+      - '🇵🇱 PL | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

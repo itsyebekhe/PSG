@@ -3,25 +3,31 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]", "server": "139.64.166.25", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "pahobac.org"}}}
   - {"name": "🇳🇱 NL | VLESS | @beshkan #1 [fast]", "server": "89.105.197.202", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "22a375e0-f7c6-4d8f-a154-81189914bbf4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "findmypackets.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
   - {"name": "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "212.46.33.5", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "71091100-c6ed-41fa-84ac-acf7ff9eeb7f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "slowkd.sadiepinki.com", "reality-opts": {"public-key": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo", "short-id": "9c2378562188c3cb"}}
-  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [medium]", "server": "87.58.201.67", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6e38d9f6-0c9d-437b-8135-20f93f94c572", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "ne3.paledweld.com", "reality-opts": {"public-key": "G3Ljfvmg8X2VYuxSgGCBdn3Rca207x86GNRBLLmxuUQ", "short-id": "0aaf3be85ef94749"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [slow]", "server": "87.58.201.67", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6e38d9f6-0c9d-437b-8135-20f93f94c572", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "ne3.paledweld.com", "reality-opts": {"public-key": "G3Ljfvmg8X2VYuxSgGCBdn3Rca207x86GNRBLLmxuUQ", "short-id": "0aaf3be85ef94749"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #2 [fast]", "server": "212.46.33.5", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d4cae7df-50a1-428c-bd62-881c8f3bbd90", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "slowkd.sadiepinki.com", "reality-opts": {"public-key": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo", "short-id": "9c2378562188c3cb"}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [medium]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [slow]'
+      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇳🇱 NL | VLESS | @beshkan #1 [fast]'
       - '🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @red2ray #1 [medium]'
+      - '🇳🇱 NL | VLESS | @red2ray #1 [slow]'
+      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

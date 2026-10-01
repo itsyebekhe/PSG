@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #2 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
@@ -77,6 +78,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #2 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
@@ -101,6 +103,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
+      "server": "se-d5254979.sishka.network",
+      "server_port": 443,
+      "uuid": "bebc775c-0de1-451c-80cb-64ee06fd5447",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "se-d5254979.sishka.network",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uYiZWRgbowvS9uOhVZTe0FBS1pLzA3QMyQ_NfDh4_h8",
+          "short_id": "d40efd6b362b7ec6"
+        }
+      }
     },
     {
       "type": "vless",

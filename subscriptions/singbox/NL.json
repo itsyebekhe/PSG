@@ -51,9 +51,11 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [slow]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -64,9 +66,11 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [slow]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -84,6 +88,30 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇳🇱 NL | VMESS | @outlinereleasedkey #1 [fast]",
+      "server": "139.64.166.25",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "pahobac.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "pahobac.org"
+        }
       }
     },
     {
@@ -130,7 +158,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [slow]",
       "server": "87.58.201.67",
       "server_port": 443,
       "uuid": "6e38d9f6-0c9d-437b-8135-20f93f94c572",
@@ -148,6 +176,29 @@
           "enabled": true,
           "public_key": "G3Ljfvmg8X2VYuxSgGCBdn3Rca207x86GNRBLLmxuUQ",
           "short_id": "0aaf3be85ef94749"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+      "server": "212.46.33.5",
+      "server_port": 443,
+      "uuid": "d4cae7df-50a1-428c-bd62-881c8f3bbd90",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "slowkd.sadiepinki.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "z37XIezsPyfMgmdXyFd9qT4C4maDAs1OcRt-wfyrXVo",
+          "short_id": "9c2378562188c3cb"
         }
       }
     },

@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇦🇺 AU | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,37 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇦🇺 AU | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇺 AU | VMESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "141.101.114.120",
+      "server_port": 443,
+      "uuid": "33aa57df-1c93-4318-9fce-e850437ee781",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "lg1.cfcdn3.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/dongtaiwang.com",
+        "headers": {
+          "Host": "lg1.cfcdn3.xyz"
+        }
+      }
     },
     {
       "type": "vmess",
