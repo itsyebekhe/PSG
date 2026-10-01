@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSUU=
+//profile-title: base64:UFNHIHwgTUQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE | SS | @orange_vpns #1 [fast]",
-        "🇮🇪 IE | VLESS | @red2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE | SS | @orange_vpns #1 [fast]",
-        "🇮🇪 IE | VLESS | @red2ray #1 [fast]"
+        "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,38 +67,29 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @orange_vpns #1 [fast]",
-      "server": "20.123.34.66",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "r5D6YOSrT6kC76ro",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇪 IE | VLESS | @red2ray #1 [fast]",
-      "server": "193.24.234.125",
+      "tag": "🇲🇩 MD | VLESS | @nofiltering2 #1 [fast]",
+      "server": "89.35.14.33",
       "server_port": 443,
-      "uuid": "06d44c57-8e1a-41f4-b9c4-65d35869e078",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "web.code-sandbox.blog",
+        "server_name": "md4.univesalsrv.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Y0OENG_faNE37KNgR5p6fnuIXmoES6sVuCFnWsbUzUw",
-          "short_id": "d1d479faa1c1d92f"
+          "public_key": "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg",
+          "short_id": "8e07337954f9823f"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hub.v1.ApiService"
       }
     },
     {

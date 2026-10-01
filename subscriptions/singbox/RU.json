@@ -50,11 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
         "🇷🇺 RU | VLESS | @bored_vpn #1 [fast]",
-        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -63,16 +64,63 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
         "🇷🇺 RU | VLESS | @bored_vpn #1 [fast]",
-        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [fast]",
         "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+      "server": "tgfree.rush-server.com",
+      "server_port": 443,
+      "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "anyfile2file.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
+          "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]",
+      "server": "195.133.73.65",
+      "server_port": 443,
+      "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "anyfile2file.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
+          "short_id": "64c1fe36c7846400"
+        }
+      }
     },
     {
       "type": "vless",
@@ -102,7 +150,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
+      "tag": "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "31.172.67.43",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -155,29 +203,6 @@
           "enabled": true,
           "public_key": "9rdvkUGJyNbRvsB0Pp06h1URq9AHDPRtH9-wmNB1-j4",
           "short_id": "e4aa362b5f9d07d7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-      "server": "tgfree.rush-server.com",
-      "server_port": 443,
-      "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "anyfile2file.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
-          "short_id": "64c1fe36c7846400"
         }
       }
     },

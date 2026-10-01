@@ -63,8 +63,9 @@
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
-        "🇺🇸 US | VMESS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
@@ -80,9 +81,6 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @evay_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
-        "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
-        "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
@@ -129,8 +127,9 @@
         "🇺🇸 US | VLESS | @prrofile_purple #2 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #3 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
+        "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
-        "🇺🇸 US | VMESS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
@@ -146,9 +145,6 @@
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @evay_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
-        "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
-        "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #2 [fast]",
@@ -487,6 +483,45 @@
       "packet_encoding": "xudp"
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
+      "server": "k2.cloud--vpn.site",
+      "server_port": 443,
+      "uuid": "622cd467-ae00-4afe-b7ee-15dca6b9649a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "c12.com",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "fi…</div>"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "e2a4dbed-1353-44ac-b4ff-51dcfdc58dcf",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com"
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "pannn1.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
       "server": "173.244.56.9",
@@ -496,30 +531,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @outlinereleasedkey #1 [fast]",
-      "server": "aksai.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "aksai.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "aksai.org"
-        }
       }
     },
     {
@@ -799,58 +810,6 @@
         "headers": {
           "Host": "c12.com"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
-      "server": "k2.cloud--vpn.site",
-      "server_port": 443,
-      "uuid": "622cd467-ae00-4afe-b7ee-15dca6b9649a",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "c12.com",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "fi…</div>"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "uuid": "e2a4dbed-1353-44ac-b4ff-51dcfdc58dcf",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com"
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "pannn1.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "uuid": "e2a4dbed-1353-44ac-b4ff-51dcfdc58dcf",
-      "network": "…</div>",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "pannn1.global.ssl.fastly.net"
       }
     },
     {
