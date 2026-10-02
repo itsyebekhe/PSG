@@ -50,16 +50,17 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | VLESS | @outlinereleasedkey #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @Proxymelimon #1 [fast]",
-        "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]",
+        "🇫🇷 FR | VMESS | @Proxymelimon #1 [slow]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -68,16 +69,17 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | VLESS | @outlinereleasedkey #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @Proxymelimon #1 [fast]",
-        "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]",
+        "🇫🇷 FR | VMESS | @Proxymelimon #1 [slow]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -85,8 +87,20 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+      "server": "54.36.174.134",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mrs2e9a",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #2 [fast]",
       "server": "152.228.139.33",
       "server_port": 35108,
       "uuid": "81dc0b61-f9fe-4ad6-8b4e-b8c067b73712",
@@ -152,7 +166,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]",
+      "tag": "🇫🇷 FR | VMESS | @Proxymelimon #1 [slow]",
       "server": "45.80.215.8",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -166,7 +180,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "15.224.30.230",
+      "server": "13.37.148.21",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -175,7 +189,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "13.37.148.21",
+      "server": "51.44.145.240",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -239,7 +253,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

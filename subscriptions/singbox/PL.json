@@ -50,11 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
         "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
         "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #3 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -63,27 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]",
         "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #3 [medium]"
+        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "217.60.33.215",
-      "server_port": 443,
-      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
-      "tls": {
-        "enabled": true,
-        "server_name": "streambox.wwwinternetvideo.click"
-      }
     },
     {
       "type": "vless",
@@ -112,18 +97,6 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
       "server": "217.30.10.44",
-      "server_port": 9076,
-      "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
-      "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",
       "password": "jt2ekBNc9HuVtm2a",
@@ -134,7 +107,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #3 [medium]",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
       "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",

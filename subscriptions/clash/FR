@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]", "server": "45.80.215.8", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇫🇷 FR | VMESS | @Proxymelimon #1 [slow]", "server": "45.80.215.8", "port": 22324, "type": "vmess", "skip-cert-verify": true, "uuid": "04621bae-ab36-11ec-b909-0242ac120002", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]'
+      - '🇫🇷 FR | VMESS | @Proxymelimon #1 [slow]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]'
+      - '🇫🇷 FR | VMESS | @Proxymelimon #1 [slow]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

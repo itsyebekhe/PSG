@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [medium]", "server": "94.183.154.216", "port": 1001, "type": "vless", "skip-cert-verify": true, "uuid": "3b6c404c-c544-4a9f-bd1f-48542839e5c1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.filimo.com", "reality-opts": {"public-key": "KX755gv-2X6CXLfWm33OmTc3zHKHcNQK7nPZ06nki1U", "short-id": "429e38fcd14a06a8"}}
-  - {"name": "🇦🇪 AE | VLESS | @red2ray #2 [medium]", "server": "94.183.154.216", "port": 1002, "type": "vless", "skip-cert-verify": true, "uuid": "3b6c404c-c544-4a9f-bd1f-48542839e5c1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.filimo.com", "reality-opts": {"public-key": "OInX6PLOlHUx9CkvaGJNxuXhrA0bym6PnGcW5qpI8hk", "short-id": "d2830ef9f5bdeb2b"}}
+  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [medium]", "server": "94.183.154.216", "port": 1002, "type": "vless", "skip-cert-verify": true, "uuid": "3b6c404c-c544-4a9f-bd1f-48542839e5c1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.filimo.com", "reality-opts": {"public-key": "OInX6PLOlHUx9CkvaGJNxuXhrA0bym6PnGcW5qpI8hk", "short-id": "d2830ef9f5bdeb2b"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
-      - '🇦🇪 AE | VLESS | @red2ray #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
-      - '🇦🇪 AE | VLESS | @red2ray #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
