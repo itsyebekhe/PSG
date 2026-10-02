@@ -52,7 +52,7 @@
         "auto",
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]",
-        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
@@ -60,8 +60,8 @@
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
         "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -72,7 +72,7 @@
       "outbounds": [
         "🇬🇧 GB | VLESS | @outline_ir #1 [fast]",
         "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]",
-        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
@@ -80,8 +80,8 @@
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-        "🇬🇧 GB | VLESS | @red2ray #1 [fast]"
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @father_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -134,15 +134,27 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-      "server": "82.38.31.176",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ",
-      "network": "tcp",
+      "type": "vmess",
+      "tag": "🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]",
+      "server": "aksai.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "aksai.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "aksai.org"
+        }
       }
     },
     {
@@ -250,15 +262,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-      "server": "18.168.67.178",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
       "server": "178.62.38.224",
       "server_port": 443,
@@ -279,6 +282,18 @@
         "headers": {
           "Host": "qcswhj2.edge-cache.danfeng4.xyz"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+      "server": "82.38.31.176",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

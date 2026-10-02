@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [medium]", "server": "94.183.154.216", "port": 1001, "type": "vless", "skip-cert-verify": true, "uuid": "3b6c404c-c544-4a9f-bd1f-48542839e5c1", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.filimo.com", "reality-opts": {"public-key": "KX755gv-2X6CXLfWm33OmTc3zHKHcNQK7nPZ06nki1U", "short-id": "429e38fcd14a06a8"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

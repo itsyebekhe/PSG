@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | SS | @free4allvpn #1 [fast]"
+        "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -76,6 +78,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
+      "server": "94.183.154.216",
+      "server_port": 1001,
+      "uuid": "3b6c404c-c544-4a9f-bd1f-48542839e5c1",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.filimo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KX755gv-2X6CXLfWm33OmTc3zHKHcNQK7nPZ06nki1U",
+          "short_id": "429e38fcd14a06a8"
+        }
       }
     },
     {

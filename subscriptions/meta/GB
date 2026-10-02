@@ -5,10 +5,10 @@ log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @outline_ir #1 [fast]", "server": "87.192.47.10", "port": 52006, "type": "vless", "skip-cert-verify": true, "uuid": "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "grok.setlisting.ru"}
   - {"name": "🇬🇧 GB | VLESS | @orange_vpns #1 [fast]", "server": "178.79.131.26", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "UvN2oqI7DGQUEB8VrOZ9c5eXs2EuEQAgAa5IyTuRcCU", "short-id": "3436aa2833db50fa"}}
+  - {"name": "🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]", "server": "aksai.org", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "aksai.org"}}}
   - {"name": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]", "server": "82.39.171.12", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg", "short-id": "c39cc7310a"}}
   - {"name": "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]", "server": "3.9.135.156", "port": 51847, "type": "vless", "skip-cert-verify": true, "uuid": "391a01e9-b664-407b-9158-610fab3f5920", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc", "short-id": "0eec442e7b34d2f2"}}
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "3.10.248.46", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "18.168.67.178", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "178.62.38.224", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "26524cce-d514-4014-a426-365fb266a14d", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "qcswhj2.edge-cache.danfeng4.xyz", "ws-opts": {"path": "", "headers": {"Host": "qcswhj2.edge-cache.danfeng4.xyz"}}}
 proxy-groups:
   - name: "PROXY"
@@ -16,10 +16,10 @@ proxy-groups:
     proxies:
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
       - '🇬🇧 GB | VLESS | @orange_vpns #1 [fast]'
+      - '🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -27,10 +27,10 @@ proxy-groups:
     proxies:
       - '🇬🇧 GB | VLESS | @outline_ir #1 [fast]'
       - '🇬🇧 GB | VLESS | @orange_vpns #1 [fast]'
+      - '🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
