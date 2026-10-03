@@ -50,18 +50,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR | VLESS | @config_proxy #1 [slow]",
+        "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @tanhanet #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @ai_duet #1 [slow]",
+        "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
-        "🇮🇷 IR | VMESS | @khoneproxy #1 [slow]",
+        "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]",
@@ -73,18 +75,20 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR | VLESS | @config_proxy #1 [slow]",
+        "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
+        "🇮🇷 IR | VLESS | @tanhanet #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @ai_duet #1 [slow]",
+        "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
-        "🇮🇷 IR | VMESS | @khoneproxy #1 [slow]",
+        "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @realvpnmaster #1 [fast]"
@@ -96,7 +100,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [slow]",
+      "tag": "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
+      "server": "www.gameturk.bestvnxv.org",
+      "server_port": 21710,
+      "uuid": "ce4b2104-f1fe-4216-ad67-8c21869b9118",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y1FXsWq-fLzk3Dle_2l_XSfpbBT-OtPBCkuQMMyN7hk",
+          "short_id": "a9c6792c83079ed3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
       "server": "185.143.233.235",
       "server_port": 80,
       "uuid": "22109ab6-bfdd-4062-ae1c-054c74353e39",
@@ -153,6 +179,22 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @tanhanet #1 [fast]",
+      "server": "connect.nyxserver.ir",
+      "server_port": 80,
+      "uuid": "cef2e5c6-23d6-415a-ac38-8d96e10b9053",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/arvan-tuel",
+        "headers": {
+          "Host": "connect.nyxserver.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
       "server": "s19.speedyconnect.pro",
       "server_port": 443,
@@ -173,7 +215,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @ai_duet #1 [slow]",
+      "tag": "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
       "server": "tamin.ir",
       "server_port": 80,
       "uuid": "aa5e25fc-c7d7-4e6e-b7f7-105a35c0175a",
@@ -263,7 +305,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1 [slow]",
+      "tag": "🇮🇷 IR | VMESS | @khoneproxy #1 [fast]",
       "server": "78.47.131.39",
       "server_port": 8443,
       "uuid": "4d598e48-234f-4c60-fdd3-fa90e084770d",
