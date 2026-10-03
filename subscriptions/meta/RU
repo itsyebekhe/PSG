@@ -3,26 +3,26 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]", "server": "45.152.113.206", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "859a537b-09cf-4bce-8da4-ecbb72950e3a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "1.ru.oncloudnineservicestreang.com", "reality-opts": {"public-key": "Thx57ocixT-wpeK_mdnJaluVW6eAwhlMgglxgjxEmhs", "short-id": "65557338e1cd5605"}}
-  - {"name": "🇷🇺 RU | VLESS | @free1_vpn #1 [medium]", "server": "195.133.73.65", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
+  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "45.152.113.206", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "859a537b-09cf-4bce-8da4-ecbb72950e3a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "1.ru.oncloudnineservicestreang.com", "reality-opts": {"public-key": "Thx57ocixT-wpeK_mdnJaluVW6eAwhlMgglxgjxEmhs", "short-id": "65557338e1cd5605"}}
+  - {"name": "🇷🇺 RU | VLESS | @free1_vpn #1 [fast]", "server": "195.133.73.65", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
   - {"name": "🇷🇺 RU | VLESS | @bored_vpn #1 [fast]", "server": "176.109.111.154", "port": 9881, "type": "vless", "skip-cert-verify": true, "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "dl.google.com", "grpc-opts": {"grpc-service-name": "grpc-tunnel"}, "reality-opts": {"public-key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0", "short-id": "aabbccdd"}}
-  - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
+  - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [medium]'
-      - '🇷🇺 RU | VLESS | @free1_vpn #1 [medium]'
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
+      - '🇷🇺 RU | VLESS | @free1_vpn #1 [fast]'
       - '🇷🇺 RU | VLESS | @bored_vpn #1 [fast]'
-      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
+      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [medium]'
-      - '🇷🇺 RU | VLESS | @free1_vpn #1 [medium]'
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
+      - '🇷🇺 RU | VLESS | @free1_vpn #1 [fast]'
       - '🇷🇺 RU | VLESS | @bored_vpn #1 [fast]'
-      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
+      - '🇷🇺 RU | VLESS | @nofiltering2 #1 [slow]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
