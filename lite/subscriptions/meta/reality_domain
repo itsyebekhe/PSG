@@ -6,9 +6,10 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]", "server": "arcturus.yokkastars.com", "port": 40443, "type": "vless", "skip-cert-verify": true, "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "deepl.com", "reality-opts": {"public-key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4", "short-id": "db46e2946fc466fd"}}
+  - {"name": "🇩🇪 DE | VLESS | @free1_vpn #2 [slow]", "server": "id-nl-01.mintrocket.org", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "id-nl-01.mintrocket.org", "reality-opts": {"public-key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q", "short-id": "fee1f986a72444db"}}
+  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "sub.skyshopnet.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d0e771ef-b9bb-4d50-8e7a-01a3174df0e3", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.sony.co.in", "reality-opts": {"public-key": "hpqn8r_F_YEnWuzRgNtRM5uHgUkrIzx99VEwzJH-PTI", "short-id": "cec1759a8e9f78"}}
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]", "server": "de-2.starsping.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "www.icloud.com", "reality-opts": {"public-key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk", "short-id": "a88550765b9956ee"}}
+  - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [slow]", "server": "de-2.starsping.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "www.icloud.com", "reality-opts": {"public-key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk", "short-id": "a88550765b9956ee"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -16,9 +17,10 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
+      - '🇩🇪 DE | VLESS | @free1_vpn #2 [slow]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
+      - '🇩🇪 DE | VLESS | @nofiltering2 #1 [slow]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -26,9 +28,10 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇩🇪 DE | VLESS | @orange_vpns #1 [fast]'
+      - '🇩🇪 DE | VLESS | @free1_vpn #2 [slow]'
+      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
+      - '🇩🇪 DE | VLESS | @nofiltering2 #1 [slow]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

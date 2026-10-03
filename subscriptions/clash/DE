@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇩🇪 DE | VMESS | @outlinereleasedkey #1 [fast]", "server": "aidrivercat.org", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "aidrivercat.org"}}}
   - {"name": "🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "45.80.111.169", "port": 8880, "type": "vmess", "skip-cert-verify": true, "uuid": "e3dba91f-b31c-473a-8f17-92e1dedda38f", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "45.80.111.169"}}}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]", "server": "142.132.163.200", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "142.132.163.200"}}}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
@@ -15,7 +14,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇩🇪 DE | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
@@ -27,7 +25,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇩🇪 DE | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
