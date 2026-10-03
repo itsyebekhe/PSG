@@ -55,14 +55,15 @@
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #2 [fast]",
+        "🇬🇧 GB | SS | @beshkan #2 [slow]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #2 [medium]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -76,14 +77,15 @@
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #2 [fast]",
+        "🇬🇧 GB | SS | @beshkan #2 [slow]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-        "🇬🇧 GB | SS | @father_vpn #1 [fast]"
+        "🇬🇧 GB | VLESS | @privatevpns #2 [medium]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+        "🇬🇧 GB | SS | @father_vpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -184,7 +186,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #2 [fast]",
+      "tag": "🇬🇧 GB | SS | @beshkan #2 [slow]",
       "server": "82.38.31.211",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -264,7 +266,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
+      "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [medium]",
       "server": "16.60.191.78",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
@@ -272,8 +274,30 @@
       "packet_encoding": "xudp"
     },
     {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "51.89.194.151",
+      "server_port": 2053,
+      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
+          "short_id": "d051f678212f9d54"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @father_vpn #1 [medium]",
       "server": "82.38.31.176",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",

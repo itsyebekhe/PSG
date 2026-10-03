@@ -50,11 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -63,38 +61,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "77.220.213.42",
-      "server_port": 33558,
-      "uuid": "d32933b8-6f92-470e-a36d-fc27ba1e2cd1",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "iran.panelsaz.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oDtto9n7VP7EOuxXlMBWrzKS3ohZLAHYb2iZhKr9bQE",
-          "short_id": "19ee"
-        }
-      }
     },
     {
       "type": "shadowsocks",
@@ -133,30 +107,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "ir.co.uk.ru.com.jnxu.ir",
-      "server_port": 8880,
-      "uuid": "e912c78c-7b74-46d8-a4ff-6188f23689a7",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "O5VmSvisGBWWth2N2eyeTR0b-lzDh_431HqaF5kypXY",
-          "short_id": "8adb1ea795676432"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",
