@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSEs=
+//profile-title: base64:UFNHIHwgS1o=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 HK | VLESS | @red2ray #1 [medium]",
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 HK | VLESS | @red2ray #1 [medium]"
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,19 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 HK | VLESS | @red2ray #1 [medium]",
-      "server": "216.38.170.8",
-      "server_port": 26506,
-      "uuid": "593c2ff4-f051-4859-8449-b0130e2991df",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/04235e8c-cea8-4f16-8934-b704a89b40cb.live238.m3u8",
-        "headers": {
-          "Host": "www.baidu.com"
-        }
+      "type": "shadowsocks",
+      "tag": "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
+      "server": "77.240.38.27",
+      "server_port": 8443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "fkXtvCEQ1ZU1rzF3fIK0fw==",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
