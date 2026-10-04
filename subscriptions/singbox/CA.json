@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇨🇦 CA | VMESS | @outlinereleasedkey #1 [fast]",
         "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
         "🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]",
@@ -67,6 +68,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇨🇦 CA | VMESS | @outlinereleasedkey #1 [fast]",
         "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
         "🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]",
@@ -81,6 +83,30 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 CA | VMESS | @outlinereleasedkey #1 [fast]",
+      "server": "66.163.118.73",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
+        }
+      }
     },
     {
       "type": "vless",

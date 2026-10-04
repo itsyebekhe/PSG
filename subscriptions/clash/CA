@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇨🇦 CA | VMESS | @outlinereleasedkey #1 [fast]", "server": "66.163.118.73", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/linkvws", "headers": {"Host": "mygptagent.org"}}}
   - {"name": "🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "23.227.38.39", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "56a2188b-2ab7-402c-b9b8-34847fdf0958", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/5QNROSRV", "headers": {"Host": "23.227.38.39"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇨🇦 CA | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇨🇦 CA | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

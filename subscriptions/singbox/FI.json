@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
         "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
@@ -60,34 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
         "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @ehsawn8 #1 [fast]",
-      "server": "132.243.223.227",
-      "server_port": 2101,
-      "uuid": "2edfd299-fd54-4056-9d79-3c99f19bdae1",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "132-243-223-227.sslip.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "fi-grpc-test"
-      }
     },
     {
       "type": "shadowsocks",

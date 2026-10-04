@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇭🇰 HK | VLESS | @red2ray #1 [fast]", "server": "216.38.170.8", "port": 26506, "type": "vless", "skip-cert-verify": true, "uuid": "593c2ff4-f051-4859-8449-b0130e2991df", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "www.baidu.com"}}}
+  - {"name": "🇭🇰 HK | VLESS | @red2ray #1 [medium]", "server": "216.38.170.8", "port": 26506, "type": "vless", "skip-cert-verify": true, "uuid": "593c2ff4-f051-4859-8449-b0130e2991df", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "www.baidu.com"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇭🇰 HK | VLESS | @red2ray #1 [fast]'
+      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇭🇰 HK | VLESS | @red2ray #1 [fast]'
+      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
