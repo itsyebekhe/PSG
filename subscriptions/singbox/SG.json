@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRkk=
+//profile-title: base64:UFNHIHwgU0c=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+        "🇸🇬 SG | VMESS | @mtproxy22_v2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
+        "🇸🇬 SG | VMESS | @mtproxy22_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,37 +67,22 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
-      "server": "77.83.247.207",
-      "server_port": 18285,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-      "server": "193.23.201.172",
-      "server_port": 443,
-      "uuid": "c47b421f-65f1-4190-b7ba-bd2045086fe4",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI",
-          "short_id": "7f2e9c4b1a8d6e53"
+      "type": "vmess",
+      "tag": "🇸🇬 SG | VMESS | @mtproxy22_v2ray #1 [medium]",
+      "server": "104.16.85.20",
+      "server_port": 80,
+      "uuid": "c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sg4-v2ray.sshkit.org"
         }
       }
     },
