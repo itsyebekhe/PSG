@@ -6,7 +6,6 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "23.227.38.39", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "56a2188b-2ab7-402c-b9b8-34847fdf0958", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/5QNROSRV", "headers": {"Host": "23.227.38.39"}}}
   - {"name": "🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "45.80.111.169", "port": 8880, "type": "vmess", "skip-cert-verify": true, "uuid": "e3dba91f-b31c-473a-8f17-92e1dedda38f", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "45.80.111.169"}}}
   - {"name": "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "188.114.97.111", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "9e6ceeff-2546-3690-ac00-6fcdf31dec94", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/chcara", "headers": {"Host": "188.114.97.111"}}}
   - {"name": "🇽🇽 XX | VMESS | @mtproxy22_v2ray #2 [fast]", "server": "104.17.77.77", "port": 8443, "type": "vmess", "skip-cert-verify": true, "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/lMnsZUN4/", "headers": {"Host": "104.17.77.77"}}}
@@ -15,7 +14,7 @@ proxies:
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]", "server": "167.235.205.182", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇽🇽 XX | VMESS | @proxy48 #1 [fast]", "server": "172.66.213.38", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "dfbbc8de-8a4f-407d-8069-6de38d83c4e1", "alterId": 0, "cipher": "chacha20-poly1305", "network": "grpc", "tls": true, "grpc-opts": {"grpc-service-name": "WgCmp8p80KDzo64uHE"}}
-  - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -23,7 +22,6 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #2 [fast]'
@@ -32,7 +30,7 @@ proxy-groups:
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
-      - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
+      - '🇩🇪 DE | VMESS | @magickey_shop #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -40,7 +38,6 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #2 [fast]'
@@ -49,7 +46,7 @@ proxy-groups:
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
-      - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
+      - '🇩🇪 DE | VMESS | @magickey_shop #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

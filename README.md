@@ -5,10 +5,10 @@
 ### Premium Proxy Subscription Generator
 
 ![Updated](https://img.shields.io/badge/Updated-2026-10-04-blue?style=flat-square)
-![Configs](https://img.shields.io/badge/Configs-309-green?style=flat-square)
+![Configs](https://img.shields.io/badge/Configs-308-green?style=flat-square)
 ![Lite](https://img.shields.io/badge/Lite-155-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/Channels-88-orange?style=flat-square)
-![Countries](https://img.shields.io/badge/Countries-31-purple?style=flat-square)
+![Countries](https://img.shields.io/badge/Countries-30-purple?style=flat-square)
 
 [**فارسی**](README.fa.md)
 
@@ -20,48 +20,48 @@
 
 | | |
 |:---|:---|
-| 🔢 **309** configs | 🪶 **155** lite |
-| 📡 **88** channels | 🌍 **31** countries |
-| ☁️ **239** Cloudflare | ⚡ **509** fast |
+| 🔢 **308** configs | 🪶 **155** lite |
+| 📡 **88** channels | 🌍 **30** countries |
+| ☁️ **242** Cloudflare | ⚡ **499** fast |
 
 <details>
 <summary><b>⚡ Protocol Distribution</b></summary>
 
-> 🔒 **VLESS** `███████████████` 387 (125.2%)
-> ⚡ **REALITY** `██░░░░░░░░░░░░░` 63 (20.4%)
-> 🔑 **SS** `█░░░░░░░░░░░░░░` 33 (10.7%)
+> 🔒 **VLESS** `███████████████` 386 (125.3%)
+> ⚡ **REALITY** `██░░░░░░░░░░░░░` 59 (19.2%)
+> 🔑 **SS** `█░░░░░░░░░░░░░░` 34 (11.0%)
 > 🛡️ **VMESS** `█░░░░░░░░░░░░░░` 30 (9.7%)
-> 🌊 **HY2** `░░░░░░░░░░░░░░░` 3 (1.0%)
+> 🌊 **HY2** `░░░░░░░░░░░░░░░` 4 (1.3%)
 
 </details>
 
 <details>
 <summary><b>🌍 Country Distribution</b></summary>
 
-> 🇽🇽 **XX** `████████████` 232
-> 🇺🇸 **US** `████░░░░░░░░` 86
-> 🇸🇪 **SE** `█░░░░░░░░░░░` 32
-> 🇩🇪 **DE** `█░░░░░░░░░░░` 31
+> 🇽🇽 **XX** `████████████` 235
+> 🇺🇸 **US** `████░░░░░░░░` 82
+> 🇸🇪 **SE** `█░░░░░░░░░░░` 31
+> 🇩🇪 **DE** `█░░░░░░░░░░░` 27
 > 🇬🇧 **GB** `█░░░░░░░░░░░` 27
-> 🇮🇷 **IR** `░░░░░░░░░░░░` 18
+> 🇮🇷 **IR** `░░░░░░░░░░░░` 19
 > 🇷🇺 **RU** `░░░░░░░░░░░░` 15
-> 🇨🇦 **CA** `░░░░░░░░░░░░` 13
-> 🇫🇷 **FR** `░░░░░░░░░░░░` 12
-> 🇳🇱 **NL** `░░░░░░░░░░░░` 9
-> 🇵🇱 **PL** `░░░░░░░░░░░░` 7
-> 🇫🇮 **FI** `░░░░░░░░░░░░` 5
+> 🇨🇦 **CA** `░░░░░░░░░░░░` 11
+> 🇫🇷 **FR** `░░░░░░░░░░░░` 11
+> 🇳🇱 **NL** `░░░░░░░░░░░░` 10
+> 🇵🇱 **PL** `░░░░░░░░░░░░` 9
 > 🇸🇨 **SC** `░░░░░░░░░░░░` 5
+> 🇫🇮 **FI** `░░░░░░░░░░░░` 4
 > 🇦🇪 **AE** `░░░░░░░░░░░░` 3
-> 🇱🇹 **LT** `░░░░░░░░░░░░` 3
+> 🇪🇪 **EE** `░░░░░░░░░░░░` 3
 
 </details>
 
 <details>
 <summary><b>🚀 Speed Distribution</b></summary>
 
-> ⚡ **Fast** — 509 configs (< 200ms)
-> 🟡 **Medium** — 5 configs (200-500ms)
-> 🐢 **Slow** — 2 configs (> 500ms)
+> ⚡ **Fast** — 499 configs (< 200ms)
+> 🟡 **Medium** — 9 configs (200-500ms)
+> 🐢 **Slow** — 5 configs (> 500ms)
 
 </details>
 
@@ -128,11 +128,11 @@
 
 ## 📡 Channels (88)
 
-1. **@prrofile_purple** — 71 configs — سرور - V2rayNG
+1. **@prrofile_purple** — 67 configs — سرور - V2rayNG
 2. **@kafing_2** — 35 configs — کافینگ رایگان
-3. **@outlinereleasedkey** — 25 configs — Free You keys
-4. **@mehrosaboran** — 15 configs — پروکسی و v2rayمهربانی
-5. **@lockey_vpn** — 15 configs — LOCKEY_VPN
+3. **@outlinereleasedkey** — 27 configs — Free You keys
+4. **@lockey_vpn** — 15 configs — LOCKEY_VPN
+5. **@mehrosaboran** — 14 configs — پروکسی و v2rayمهربانی
 6. **@nepo_v2ray** — 14 configs — Nepo_v2ray
 7. **@manstervpn** — 14 configs — KingVPN
 8. **@outline_ir** — 13 configs — سرور اوتلاین ا سرور V2ray
@@ -142,8 +142,8 @@
 12. **@customizev2ray** — 12 configs — CUSTOMIZE V2ray
 13. **@kurd_v2ray** — 12 configs — VPN فیلتر شکن
 14. **@red2ray** — 10 configs — Red2Ray V2rayNG کانفیگ رایگان
-15. **@novinology** — 9 configs — Novinology نوینولوژی
-16. **@netfreedom0** — 9 configs — NetFreedom
+15. **@netfreedom0** — 10 configs — NetFreedom
+16. **@novinology** — 9 configs — Novinology نوینولوژی
 17. **@minovpnch** — 9 configs — کانال MinoVpn
 18. **@mester_v2ray** — 8 configs — 𝐌𝐞𝐬𝐭𝐞𝐫.𝐯𝟐𝐫𝐚𝐲 نات پیکسل
 19. **@serverv2ray00** — 8 configs — ایران پروکسی وکانفیکiran proxy
@@ -157,7 +157,7 @@
 27. **@nofiltering2** — 6 configs — Nofiltering2 V2rayng رفع فیلتر
 28. **@hope_net** — 6 configs — Hope Net
 29. **@new_proxy_channel** — 6 configs — New Proxy
-30. **@free1_vpn** — 5 configs — Free_VPN v2ray NapsternetV cus
+30. **@jokerv2ray** — 5 configs — JOKER V2Ray کانفیگ اختصاصی
 
 ---
 

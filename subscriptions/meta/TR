@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]", "server": "tr.xelnivo.ir", "port": 5589, "type": "vless", "skip-cert-verify": true, "uuid": "bf155a74-0560-46ff-ba40-9c8d34917f0e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014", "short-id": "8f798d413a5dbf01"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

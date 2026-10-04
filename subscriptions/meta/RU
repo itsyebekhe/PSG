@@ -4,18 +4,24 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "45.152.113.206", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "859a537b-09cf-4bce-8da4-ecbb72950e3a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "1.ru.oncloudnineservicestreang.com", "reality-opts": {"public-key": "Thx57ocixT-wpeK_mdnJaluVW6eAwhlMgglxgjxEmhs", "short-id": "65557338e1cd5605"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "188.225.25.142", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7610be85-9855-4010-8929-ce16d4993969", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "prime.betust.net", "reality-opts": {"public-key": "SxbaWzlvE_HQqqsA4PNX2PFcSYXTVE2nZlgLc7cPOgk", "short-id": "8681edc9"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #2 [slow]", "server": "188.225.42.6", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7610be85-9855-4010-8929-ce16d4993969", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "app6.betust.net", "reality-opts": {"public-key": "sS3x_ZygtA9uZ5WaYm7pHjy0_lPNUUK7kOSLz0BNhCs", "short-id": "54ac91da"}}
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #2 [slow]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #2 [slow]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
