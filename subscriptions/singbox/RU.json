@@ -50,10 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | SS | @outlinereleasedkey #1 [fast]",
         "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #3 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,66 +63,16 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇷🇺 RU | SS | @outlinereleasedkey #1 [fast]",
         "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #3 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-      "server": "45.152.113.206",
-      "server_port": 443,
-      "uuid": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "1.ru.oncloudnineservicestreang.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Thx57ocixT-wpeK_mdnJaluVW6eAwhlMgglxgjxEmhs",
-          "short_id": "65557338e1cd5605"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @outlinereleasedkey #1 [fast]",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "185.148.107.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime55.workers.dev"
-        }
-      }
     },
     {
       "type": "vless",
@@ -143,6 +94,87 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 RU | SS | @outlinereleasedkey #1 [fast]",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "188.225.24.201",
+      "server_port": 443,
+      "uuid": "7610be85-9855-4010-8929-ce16d4993969",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "app11.betust.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XhzNlmMTdYr2pYTqiNNP6qWe7BkAgVHU-kZWXc9u9hY",
+          "short_id": "91c2269c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+      "server": "188.225.35.207",
+      "server_port": 443,
+      "uuid": "7610be85-9855-4010-8929-ce16d4993969",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "demo.betust.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-lLmJilTNFk_DYxnbvWJH_swC9a5JRheZrN1KPVMjCc",
+          "short_id": "219a891b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #3 [fast]",
+      "server": "188.225.25.195",
+      "server_port": 443,
+      "uuid": "7610be85-9855-4010-8929-ce16d4993969",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "app25.betust.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Fe_144ALuRRedGs06ljDnE1f_G2B2wE4i9_diqw5LnY",
+          "short_id": "a16bc894"
         }
       }
     },

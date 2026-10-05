@@ -4,22 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]", "server": "95.85.227.241", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "proxy3d.h1guro.ovh", "reality-opts": {"public-key": "dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo", "short-id": "25934afbedc65791"}}
-  - {"name": "🇵🇱 PL | VLESS | @mehrosaboran #1 [fast]", "server": "193.34.213.10", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "plfsdd.dendiboss.org", "reality-opts": {"public-key": "NtaFdDQFRPxPPIcRc-qyYDbL9mI_miwnaHcdLWvpgmo", "short-id": "9c2378562188c3cb"}}
-  - {"name": "🇵🇱 PL | VLESS | @bored_vpn #1 [fast]", "server": "193.34.213.10", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "plfsdd.dendiboss.org", "reality-opts": {"public-key": "NtaFdDQFRPxPPIcRc-qyYDbL9mI_miwnaHcdLWvpgmo", "short-id": "9c2378562188c3cb"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
-      - '🇵🇱 PL | VLESS | @mehrosaboran #1 [fast]'
-      - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇵🇱 PL | VLESS | @orange_vpns #1 [fast]'
-      - '🇵🇱 PL | VLESS | @mehrosaboran #1 [fast]'
-      - '🇵🇱 PL | VLESS | @bored_vpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

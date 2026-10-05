@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇨🇭 CH | VLESS | @orange_vpns #1 [fast]", "server": "areal5.greewebservices.ir", "port": 5455, "type": "vless", "skip-cert-verify": true, "uuid": "97b236b9-47ba-4c9a-ae0d-3ddfff5acadf", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "amp-api-edge.apps.apple.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "e3085d4fc679ba12"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇨🇭 CH | VLESS | @orange_vpns #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇨🇭 CH | VLESS | @orange_vpns #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
