@@ -4,9 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇽🇽 XX | VMESS | @hope_net #1 [fast]", "server": "104.16.61.8", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "104.16.61.8"}}}
-  - {"name": "🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "45.80.111.169", "port": 8880, "type": "vmess", "skip-cert-verify": true, "uuid": "e3dba91f-b31c-473a-8f17-92e1dedda38f", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "45.80.111.169"}}}
-  - {"name": "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "188.114.97.111", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "9e6ceeff-2546-3690-ac00-6fcdf31dec94", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/chcara", "headers": {"Host": "188.114.97.111"}}}
-  - {"name": "🇽🇽 XX | VMESS | @mtproxy22_v2ray #2 [fast]", "server": "104.17.77.77", "port": 8443, "type": "vmess", "skip-cert-verify": true, "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/lMnsZUN4/", "headers": {"Host": "104.17.77.77"}}}
+  - {"name": "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "104.17.77.77", "port": 8443, "type": "vmess", "skip-cert-verify": true, "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/lMnsZUN4/", "headers": {"Host": "104.17.77.77"}}}
   - {"name": "🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "23.227.38.24", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/AUIKN8AU", "headers": {"Host": "23.227.38.24"}}}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]", "server": "142.132.163.200", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "142.132.163.200"}}}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
@@ -18,9 +16,7 @@ proxy-groups:
     type: select
     proxies:
       - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
-      - '🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #2 [fast]'
       - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
@@ -32,9 +28,7 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
-      - '🇩🇪 DE | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]'
-      - '🇽🇽 XX | VMESS | @mtproxy22_v2ray #2 [fast]'
       - '🇨🇦 CA | VMESS | @mtproxy22_v2ray #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
