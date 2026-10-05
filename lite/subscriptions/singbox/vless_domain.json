@@ -60,10 +60,9 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #1 [slow]",
+        "🇩🇪 DE | VLESS | @free1_vpn #2 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @tanhanet #1 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
@@ -73,6 +72,7 @@
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
@@ -115,10 +115,9 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #1 [slow]",
+        "🇩🇪 DE | VLESS | @free1_vpn #2 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @tanhanet #1 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
@@ -128,6 +127,7 @@
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
@@ -309,7 +309,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [slow]",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #2 [medium]",
       "server": "id-nl-01.mintrocket.org",
       "server_port": 443,
       "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
@@ -347,22 +347,6 @@
       "uuid": "8a20ecfe-6a72-4e88-aa2c-65a9e43a8512",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @tanhanet #1 [fast]",
-      "server": "connect.nyxserver.ir",
-      "server_port": 80,
-      "uuid": "cef2e5c6-23d6-415a-ac38-8d96e10b9053",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/arvan-tuel",
-        "headers": {
-          "Host": "connect.nyxserver.ir"
-        }
-      }
     },
     {
       "type": "vless",
@@ -526,24 +510,29 @@
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
       "server": "hikvision-plus.com",
-      "server_port": 2053,
+      "server_port": 2052,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #2 [fast]",
+      "server": "hikvision-plus.com",
+      "server_port": 2052,
       "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
       "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "uwu.blueknightnet.qzz.io",
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
           "Host": "uwu.blueknightnet.qzz.io"
         }

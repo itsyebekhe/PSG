@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]", "server": "157.228.128.59", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "randomized", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws", "short-id": "06e00e7c"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VLESS | @orange_vpns #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VLESS | @orange_vpns #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
