@@ -50,9 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]",
-        "🇵🇱 PL | SS | @netfreedom0 #1 [medium]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [medium]",
+        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #3 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +63,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]",
-        "🇵🇱 PL | SS | @netfreedom0 #1 [medium]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [medium]"
+        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #3 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,7 +76,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
       "server": "95.85.227.241",
       "server_port": 443,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -94,8 +98,19 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "admin.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click"
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [medium]",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
       "server": "217.30.10.44",
       "server_port": 9076,
       "method": "aes-256-cfb",
@@ -107,11 +122,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [medium]",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
       "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",
       "password": "jt2ekBNc9HuVtm2a",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #3 [fast]",
+      "server": "217.30.10.44",
+      "server_port": 9099,
+      "method": "aes-256-cfb",
+      "password": "7heRqkPG3hg4UnRm",
       "network": "tcp",
       "tls": {
         "enabled": true

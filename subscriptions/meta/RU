@@ -4,25 +4,25 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [medium]", "server": "188.225.24.201", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7610be85-9855-4010-8929-ce16d4993969", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "app11.betust.net", "reality-opts": {"public-key": "XhzNlmMTdYr2pYTqiNNP6qWe7BkAgVHU-kZWXc9u9hY", "short-id": "91c2269c"}}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #2 [medium]", "server": "188.225.35.207", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7610be85-9855-4010-8929-ce16d4993969", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "demo.betust.net", "reality-opts": {"public-key": "-lLmJilTNFk_DYxnbvWJH_swC9a5JRheZrN1KPVMjCc", "short-id": "219a891b"}}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #3 [medium]", "server": "188.225.25.195", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7610be85-9855-4010-8929-ce16d4993969", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "app25.betust.net", "reality-opts": {"public-key": "Fe_144ALuRRedGs06ljDnE1f_G2B2wE4i9_diqw5LnY", "short-id": "a16bc894"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "188.225.24.201", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7610be85-9855-4010-8929-ce16d4993969", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "app11.betust.net", "reality-opts": {"public-key": "XhzNlmMTdYr2pYTqiNNP6qWe7BkAgVHU-kZWXc9u9hY", "short-id": "91c2269c"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #2 [fast]", "server": "188.225.35.207", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7610be85-9855-4010-8929-ce16d4993969", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "demo.betust.net", "reality-opts": {"public-key": "-lLmJilTNFk_DYxnbvWJH_swC9a5JRheZrN1KPVMjCc", "short-id": "219a891b"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #3 [fast]", "server": "188.225.25.195", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7610be85-9855-4010-8929-ce16d4993969", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "app25.betust.net", "reality-opts": {"public-key": "Fe_144ALuRRedGs06ljDnE1f_G2B2wE4i9_diqw5LnY", "short-id": "a16bc894"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #2 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #3 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #2 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #3 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #2 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #3 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #2 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #3 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

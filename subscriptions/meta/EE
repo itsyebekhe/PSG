@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]", "server": "94.183.170.135", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "estproxy4.lockdwn.com"}
+  - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]", "server": "94.183.170.135", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "estproxy4.lockdwn.com"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]'
+      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]'
+      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
