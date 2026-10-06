@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇱🇹 LT | VLESS | @mehrosaboran #1 [fast]", "server": "88.119.165.131", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "790910c3-9a97-4375-998a-fcc36b0a2902", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "repo1.maven.org", "reality-opts": {"public-key": "_AIb5QbjYK6iJBx6UpDqVBoFyUA_nkiHrj7gZrASDwc", "short-id": "bbfe4bd7d5dd0627"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇱🇹 LT | VLESS | @mehrosaboran #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇱🇹 LT | VLESS | @mehrosaboran #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

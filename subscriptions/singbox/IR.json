@@ -50,15 +50,15 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
-        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
@@ -75,15 +75,15 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
-        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @lax_vpn #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
@@ -100,6 +100,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
+      "server": "www.gameturk.bestvnxv.org",
+      "server_port": 21710,
+      "uuid": "ce4b2104-f1fe-4216-ad67-8c21869b9118",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y1FXsWq-fLzk3Dle_2l_XSfpbBT-OtPBCkuQMMyN7hk",
+          "short_id": "a9c6792c83079ed3"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
       "server": "185.143.233.235",
       "server_port": 80,
@@ -109,7 +131,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
       "server": "185.143.234.235",
       "server_port": 80,
       "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
@@ -166,7 +188,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+      "tag": "🇮🇷 IR | SS | @tanhanet #1 [fast]",
       "server": "109.122.251.86",
       "server_port": 20700,
       "method": "chacha20-ietf-poly1305",
@@ -210,28 +232,6 @@
         "path": "/",
         "headers": {
           "Host": "biA.ALlhub.LTD"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @outline_ir #1 [fast]",
-      "server": "www.gameturk.bestvnxv.org",
-      "server_port": 21710,
-      "uuid": "ce4b2104-f1fe-4216-ad67-8c21869b9118",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn-apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "y1FXsWq-fLzk3Dle_2l_XSfpbBT-OtPBCkuQMMyN7hk",
-          "short_id": "a9c6792c83079ed3"
         }
       }
     },
