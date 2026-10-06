@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "131.123.13.93", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "1mcfn.67resserv67.info", "reality-opts": {"public-key": "rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA", "short-id": "29455a3a790acbd0"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [medium]", "server": "131.123.13.93", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "1mcfn.67resserv67.info", "reality-opts": {"public-key": "rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA", "short-id": "29455a3a790acbd0"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
