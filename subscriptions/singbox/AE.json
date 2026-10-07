@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
         "🇦🇪 AE | VLESS | @beshkan #2 [fast]",
-        "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
+        "🇦🇪 AE | VLESS | @orange_vpns #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,38 +62,15 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
         "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
         "🇦🇪 AE | VLESS | @beshkan #2 [fast]",
-        "🇦🇪 AE | VLESS | @red2ray #1 [medium]"
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
+        "🇦🇪 AE | VLESS | @orange_vpns #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
-      "server": "157.228.128.59",
-      "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
-          "short_id": "06e00e7c"
-        }
-      }
     },
     {
       "type": "vless",
@@ -143,7 +120,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [medium]",
+      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
       "server": "157.228.128.59",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -155,7 +132,30 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
+          "short_id": "06e00e7c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @orange_vpns #2 [fast]",
+      "server": "157.228.128.59",
+      "server_port": 443,
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
         },
         "reality": {
           "enabled": true,

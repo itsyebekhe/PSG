@@ -50,11 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | SS | @prrofile_purple #1 [medium]",
-        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
+        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
@@ -67,11 +65,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | SS | @prrofile_purple #1 [medium]",
-        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
+        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
@@ -84,19 +80,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @prrofile_purple #1 [medium]",
-      "server": "82.38.31.201",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @father_vpn #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @father_vpn #1 [fast]",
       "server": "82.38.31.176",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -107,20 +91,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-      "server": "82.38.31.174",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "87.192.47.10",
       "server_port": 52006,
       "uuid": "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f",
@@ -137,26 +109,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]",
-      "server": "178.107.60.242",
-      "server_port": 443,
-      "uuid": "effd2c78-3ab8-4d3f-893f-49a703c27208",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+      "server": "82.38.31.35",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "filesconvert.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs",
-          "short_id": "10debbdf94767541"
-        }
+        "enabled": true
       }
     },
     {
@@ -197,7 +158,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-      "server": "3.10.183.70",
+      "server": "18.134.53.96",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -206,7 +167,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-      "server": "35.179.200.68",
+      "server": "18.132.95.180",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",

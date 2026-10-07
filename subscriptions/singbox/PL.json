@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #1 [medium]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [medium]",
-        "🇵🇱 PL | SS | @netfreedom0 #3 [medium]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #1 [medium]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [medium]",
-        "🇵🇱 PL | SS | @netfreedom0 #3 [medium]"
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -73,31 +69,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @orange_vpns #1 [fast]",
-      "server": "95.85.227.241",
-      "server_port": 443,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "proxy3d.h1guro.ovh",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo",
-          "short_id": "25934afbedc65791"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [medium]",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
       "server": "217.30.10.44",
       "server_port": 9076,
       "method": "aes-256-cfb",
@@ -109,19 +82,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [medium]",
-      "server": "217.30.10.44",
-      "server_port": 9052,
-      "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #3 [medium]",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
       "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",

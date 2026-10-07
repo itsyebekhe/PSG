@@ -52,11 +52,10 @@
         "auto",
         "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,11 +66,10 @@
       "outbounds": [
         "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -109,49 +107,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @prrofile_purple #1 [fast]",
-      "server": "150.40.117.221",
-      "server_port": 8443,
-      "uuid": "47388561-cf0c-4cfc-91f8-fdfd9fa3d756",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "B5F8h8tpeZ-1ydiT0uFgdc30jJyw8H89Y8e-p_VV6yw",
-          "short_id": "7b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-      "server": "185.112.59.210",
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
+      "server": "c3.nastuh.link",
       "server_port": 443,
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
-      "flow": "xtls-rprx-vision",
+      "method": "chacha20-ietf-poly1305",
+      "password": "y7KeRTzmH0vXT2kp",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "nl2.nztvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MTYXgxLIK9PzmQGAjuCmhI1FikCNlvU66NKgQ5g14Bc",
-          "short_id": "0b135481ea1283fc"
-        }
+        "enabled": true
       }
     },
     {
@@ -191,7 +155,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",
