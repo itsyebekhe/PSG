@@ -3,16 +3,22 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [fast]", "server": "155.103.71.159", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "snip.edgeoneai.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "snip.edgeoneai.cc.cd"}}}
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #2 [fast]", "server": "203.202.232.211", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "snip.edgeoneai.cc.cd", "ws-opts": {"path": "", "headers": {"Host": "snip.edgeoneai.cc.cd"}}}
   - {"name": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]", "server": "tr.xelnivo.ir", "port": 5589, "type": "vless", "skip-cert-verify": true, "uuid": "bf155a74-0560-46ff-ba40-9c8d34917f0e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "play.google.com", "reality-opts": {"public-key": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014", "short-id": "8f798d413a5dbf01"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - '🇹🇷 TR | VLESS | @red2ray #2 [fast]'
       - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [fast]'
+      - '🇹🇷 TR | VLESS | @red2ray #2 [fast]'
       - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

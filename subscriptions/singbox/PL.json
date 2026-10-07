@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
         "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #3 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]"
+        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #3 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,8 +73,31 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "hysteria2",
+      "tag": "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "admin.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click"
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
+      "server": "217.30.10.44",
+      "server_port": 9052,
+      "method": "aes-256-cfb",
+      "password": "jt2ekBNc9HuVtm2a",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
       "server": "217.30.10.44",
       "server_port": 9076,
       "method": "aes-256-cfb",
@@ -82,7 +109,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #3 [fast]",
       "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",

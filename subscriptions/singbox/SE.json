@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #2 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
@@ -78,7 +77,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #2 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
@@ -103,32 +101,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "62.60.159.81",
-      "server_port": 2053,
-      "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
-          "short_id": "d0ea1847066af5a6"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpce5bb9e71"
-      }
     },
     {
       "type": "vless",

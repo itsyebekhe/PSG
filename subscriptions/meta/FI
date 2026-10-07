@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "assets.halyvanedorogo.ru", "port": 11515, "type": "vless", "skip-cert-verify": true, "uuid": "cb8fbad5-4f14-55bc-a24a-3510f47f4b1b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.sony.com", "reality-opts": {"public-key": "A826RSu-yeVM_t6v7kwHKasHSdfI9KOzUw3WaIa9SWc", "short-id": "65149fc5ba"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
