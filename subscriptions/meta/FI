@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "w907rj.orbitacorp.dev", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "fi9.eu-cdn294.com", "grpc-opts": {"grpc-service-name": "1f251e273f"}, "reality-opts": {"public-key": "wkOdDtGijULUqkGSJv2aHGctI7Ss8GnOE1iS8QNwwjo", "short-id": "98e90c117acf8155"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

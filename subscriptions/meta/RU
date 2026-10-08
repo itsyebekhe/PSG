@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "84.38.187.134", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "53ffd172-de4c-002f-aa77-1a6830a36cf8", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "git.xpkg.ru", "reality-opts": {"public-key": "QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc", "short-id": "2c9431dc7a306018"}}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "185.207.1.121", "port": 10470, "type": "vless", "skip-cert-verify": true, "uuid": "98b3d53b-9f34-4cf1-ba87-3be5db6d4c5a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "flow": "xtls-rprx-vision", "servername": "www.max.ru", "reality-opts": {"public-key": "90jWc7mGJ9NeEI0HpwQ844SjP0W9_MP5bNX6cDOdFnM", "short-id": "53c6ae"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [medium]", "server": "185.147.26.207", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "ru-pro.sworkingvpn.com", "grpc-opts": {"grpc-service-name": "API"}, "reality-opts": {"public-key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI", "short-id": "15bcc0a77c3cacdf"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

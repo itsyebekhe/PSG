@@ -7,6 +7,7 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]", "server": "de-2.starsping.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "www.icloud.com", "reality-opts": {"public-key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk", "short-id": "a88550765b9956ee"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "w907rj.orbitacorp.dev", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "fi9.eu-cdn294.com", "grpc-opts": {"grpc-service-name": "1f251e273f"}, "reality-opts": {"public-key": "wkOdDtGijULUqkGSJv2aHGctI7Ss8GnOE1iS8QNwwjo", "short-id": "98e90c117acf8155"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -15,6 +16,7 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -23,6 +25,7 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

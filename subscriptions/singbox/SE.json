@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #2 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
@@ -77,6 +78,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #2 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
@@ -101,6 +103,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "132.243.231.4",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-se1.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM",
+          "short_id": "5efa80b939612291"
+        }
+      }
     },
     {
       "type": "vless",

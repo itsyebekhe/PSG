@@ -1,0 +1,22 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇭🇰 HK | VLESS | @red2ray #1 [medium]", "server": "103.30.76.197", "port": 44988, "type": "vless", "skip-cert-verify": true, "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.tesla.com", "reality-opts": {"public-key": "f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A", "short-id": "bb82c8"}}
+  - {"name": "🇭🇰 HK | VLESS | @red2ray #2 [medium]", "server": "45.153.130.119", "port": 21263, "type": "vless", "skip-cert-verify": true, "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "us1p1.xn--ghq880n3na965a.com", "reality-opts": {"public-key": "YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4", "short-id": "3d31326f95"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
+      - '🇭🇰 HK | VLESS | @red2ray #2 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
+      - '🇭🇰 HK | VLESS | @red2ray #2 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
