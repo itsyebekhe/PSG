@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "g2de.velnix-services.ir", "port": 1080, "type": "vless", "skip-cert-verify": true, "uuid": "250865f0-4a0f-4e2e-8d14-4c39a25d0bef", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www6.gameservice-iramn3.com", "reality-opts": {"public-key": "qmCIBP5Y6Pu7oxY--0sOXglNvHV9byxo2cyVsfAqUiI", "short-id": "307eb35dbf3a5385"}}
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

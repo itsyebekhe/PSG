@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,35 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+      "server": "g2de.velnix-services.ir",
+      "server_port": 1080,
+      "uuid": "250865f0-4a0f-4e2e-8d14-4c39a25d0bef",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www6.gameservice-iramn3.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qmCIBP5Y6Pu7oxY--0sOXglNvHV9byxo2cyVsfAqUiI",
+          "short_id": "307eb35dbf3a5385"
+        }
+      }
     },
     {
       "type": "vless",

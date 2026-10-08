@@ -51,8 +51,6 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #2 [fast]",
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-        "🇹🇷 TR | VLESS | @red2ray #2 [fast]",
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]"
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -90,51 +86,6 @@
         "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chrome",
         "headers": {
           "Host": "snip.edgeoneai.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #2 [fast]",
-      "server": "203.202.232.211",
-      "server_port": 443,
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd",
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chrome",
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
-      "server": "tr.xelnivo.ir",
-      "server_port": 5589,
-      "uuid": "bf155a74-0560-46ff-ba40-9c8d34917f0e",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014",
-          "short_id": "8f798d413a5dbf01"
         }
       }
     },
