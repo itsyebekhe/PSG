@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVFI=
+//profile-title: base64:UFNHIHwgS1o=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,26 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
-      "server": "155.103.71.159",
-      "server_port": 443,
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "network": "ws",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
+      "server": "77.240.38.27",
+      "server_port": 8443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "fkXtvCEQ1ZU1rzF3fIK0fw==",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd",
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chrome",
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
-        }
+        "enabled": true
       }
     },
     {

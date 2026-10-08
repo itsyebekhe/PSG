@@ -105,8 +105,8 @@
         "🇽🇽 XX | VLESS | @iran_access #4 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #5 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇽🇽 XX | SS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
@@ -250,8 +250,8 @@
         "🇽🇽 XX | VLESS | @iran_access #4 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #5 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇽🇽 XX | SS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
@@ -1394,18 +1394,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇽🇽 XX | SS | @mtproxy22_v2ray #1 [fast]",
-      "server": "passconf.xyz",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qGjmI8WQlF0tfhDbkLqGdN",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @grizzlyvpn #1 [fast]",
       "server": "104.16.7.70",
@@ -1423,6 +1411,33 @@
         "path": "/",
         "headers": {
           "Host": "sni.jpmj.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+      "server": "undef.network",
+      "server_port": 2053,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "uwu.blueknightnet.qzz.io",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
         }
       }
     },
