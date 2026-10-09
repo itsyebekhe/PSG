@@ -52,6 +52,7 @@
         "auto",
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @tanhanet #1 [fast]",
+        "🇸🇨 SC | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
@@ -63,6 +64,7 @@
       "outbounds": [
         "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "🇸🇨 SC | VLESS | @tanhanet #1 [fast]",
+        "🇸🇨 SC | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -108,6 +110,27 @@
         "alpn": [
           "h2",
           "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "45.130.125.162",
+      "server_port": 8443,
+      "uuid": "f106648e-0644-40bc-974c-6edc966fe18d",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cji.new-persian-song.ir",
+        "alpn": [
+          "h3",
+          "h2"
         ],
         "utls": {
           "enabled": true,
