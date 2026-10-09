@@ -3,26 +3,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]", "server": "157.228.128.59", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "randomized", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws", "short-id": "06e00e7c"}}
-  - {"name": "🇦🇪 AE | VLESS | @orange_vpns #2 [fast]", "server": "157.228.128.59", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "randomized", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws", "short-id": "06e00e7c"}}
-  - {"name": "🇦🇪 AE | VLESS | @beshkan #1 [fast]", "server": "157.228.160.166", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M", "short-id": "3cef317b"}}
-  - {"name": "🇦🇪 AE | VLESS | @beshkan #2 [fast]", "server": "157.228.155.185", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg", "short-id": "5ea112e8"}}
+  - {"name": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]", "server": "157.228.128.59", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "randomized", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws", "short-id": "06e00e7c"}}
+  - {"name": "🇦🇪 AE | VLESS | @beshkan #1 [medium]", "server": "157.228.160.166", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M", "short-id": "3cef317b"}}
+  - {"name": "🇦🇪 AE | VLESS | @beshkan #2 [medium]", "server": "157.228.155.185", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg", "short-id": "5ea112e8"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇪 AE | VLESS | @orange_vpns #1 [fast]'
-      - '🇦🇪 AE | VLESS | @orange_vpns #2 [fast]'
-      - '🇦🇪 AE | VLESS | @beshkan #1 [fast]'
-      - '🇦🇪 AE | VLESS | @beshkan #2 [fast]'
+      - '🇦🇪 AE | VLESS | @orange_vpns #1 [medium]'
+      - '🇦🇪 AE | VLESS | @beshkan #1 [medium]'
+      - '🇦🇪 AE | VLESS | @beshkan #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇪 AE | VLESS | @orange_vpns #1 [fast]'
-      - '🇦🇪 AE | VLESS | @orange_vpns #2 [fast]'
-      - '🇦🇪 AE | VLESS | @beshkan #1 [fast]'
-      - '🇦🇪 AE | VLESS | @beshkan #2 [fast]'
+      - '🇦🇪 AE | VLESS | @orange_vpns #1 [medium]'
+      - '🇦🇪 AE | VLESS | @beshkan #1 [medium]'
+      - '🇦🇪 AE | VLESS | @beshkan #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

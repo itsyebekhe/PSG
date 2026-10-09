@@ -54,8 +54,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇨🇭 CH | VLESS | @orange_vpns #1 [medium]",
-        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -68,8 +68,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇨🇭 CH | VLESS | @orange_vpns #1 [medium]",
-        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -139,7 +139,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
+      "server": "docs.n9ne.com.tr",
+      "server_port": 8444,
+      "uuid": "e81e1114-99b5-4fea-aafc-84426e845a14",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "n9ne.com.tr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DhMAmplGrCBD7hwyDu7u2unWxsxMpZVKk_d7e3OZCWE",
+          "short_id": "15f380e8388ee5a0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @nofiltering2 #1 [medium]",
       "server": "de-2.starsping.com",
       "server_port": 443,
       "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9",
@@ -157,32 +179,6 @@
           "public_key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk",
           "short_id": "a88550765b9956ee"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
-      "server": "w907rj.orbitacorp.dev",
-      "server_port": 443,
-      "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi9.eu-cdn294.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wkOdDtGijULUqkGSJv2aHGctI7Ss8GnOE1iS8QNwwjo",
-          "short_id": "98e90c117acf8155"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "1f251e273f"
       }
     },
     {

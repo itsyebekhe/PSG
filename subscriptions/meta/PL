@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇵🇱 PL | VLESS | @red2ray #1 [medium]", "server": "95.85.253.241", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "95.85.253.241"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇵🇱 PL | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -50,6 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
@@ -122,8 +124,6 @@
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
-        "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
@@ -196,6 +196,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
+        "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @outline_ir #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
@@ -268,8 +270,6 @@
         "🇽🇽 XX | VLESS | @proxie #6 [fast]",
         "🇽🇽 XX | VLESS | @gervpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
-        "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @customizev2ray #1 [fast]",
@@ -339,6 +339,48 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
+      "server": "104.17.108.1",
+      "server_port": 443,
+      "uuid": "31d3bb30-fbb1-4e25-ac62-6dbca39fe439",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "aa.farxmode.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
+      "server": "104.17.108.1",
+      "server_port": 443,
+      "uuid": "5910d5d4-d670-4cf2-b875-72bfef693c56",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "aa.farxmode.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      }
     },
     {
       "type": "vless",
@@ -1725,48 +1767,6 @@
         "path": "/ld?ed=2048",
         "headers": {
           "Host": "ad1.xiqpanelz.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @evay_vpn #1 [fast]",
-      "server": "104.17.108.1",
-      "server_port": 443,
-      "uuid": "31d3bb30-fbb1-4e25-ac62-6dbca39fe439",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "aa.farxmode.ir",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @evay_vpn #2 [fast]",
-      "server": "104.17.108.1",
-      "server_port": 443,
-      "uuid": "5910d5d4-d670-4cf2-b875-72bfef693c56",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "aa.farxmode.ir",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
         }
       }
     },

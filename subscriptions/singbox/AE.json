@@ -50,10 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
-        "🇦🇪 AE | VLESS | @orange_vpns #2 [fast]",
-        "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
-        "🇦🇪 AE | VLESS | @beshkan #2 [fast]",
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
+        "🇦🇪 AE | VLESS | @beshkan #1 [medium]",
+        "🇦🇪 AE | VLESS | @beshkan #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
-        "🇦🇪 AE | VLESS | @orange_vpns #2 [fast]",
-        "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
-        "🇦🇪 AE | VLESS | @beshkan #2 [fast]"
+        "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
+        "🇦🇪 AE | VLESS | @beshkan #1 [medium]",
+        "🇦🇪 AE | VLESS | @beshkan #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇦🇪 AE | VLESS | @orange_vpns #1 [medium]",
       "server": "157.228.128.59",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -97,30 +95,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @orange_vpns #2 [fast]",
-      "server": "157.228.128.59",
-      "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
-          "short_id": "06e00e7c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
+      "tag": "🇦🇪 AE | VLESS | @beshkan #1 [medium]",
       "server": "157.228.160.166",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -143,7 +118,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @beshkan #2 [fast]",
+      "tag": "🇦🇪 AE | VLESS | @beshkan #2 [medium]",
       "server": "157.228.155.185",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
