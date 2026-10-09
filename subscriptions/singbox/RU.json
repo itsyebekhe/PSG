@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]"
+        "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,28 +68,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-      "server": "185.147.26.207",
+      "tag": "🇷🇺 RU | VLESS | @megavpn_link #1 [fast]",
+      "server": "158.160.250.45",
       "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "network": "grpc",
+      "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ru-pro.sworkingvpn.com",
+        "server_name": "ads.x5.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
+          "public_key": "mDtiIWLFPJoPVrDLOCvKn6lvlS8r0TdRO9MxmmdIDmo",
+          "short_id": "917fd5a45e8840"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "API"
       }
     },
     {

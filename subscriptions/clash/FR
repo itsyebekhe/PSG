@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇷 FR | VMESS | @mtproxy22_v2ray #1 [medium]", "server": "145.239.55.210", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "479526cd-5011-43cf-a788-504da95e07c2", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇷 FR | VMESS | @mtproxy22_v2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇷 FR | VMESS | @mtproxy22_v2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

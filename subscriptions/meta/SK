@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇸🇰 SK | VLESS | @red2ray #1 [fast]", "server": "80.243.228.73", "port": 2085, "type": "vless", "skip-cert-verify": true, "uuid": "41fe1f2f-f981-44a5-939f-9b59d15ca955", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "vless"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇸🇰 SK | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇸🇰 SK | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
