@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇪🇪 EE | VLESS | @outline_ir #1 [fast]", "server": "93.89.220.37", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "ibm.com", "reality-opts": {"public-key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g", "short-id": "e88cb983f3c97528"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇪🇪 EE | VLESS | @outline_ir #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇪🇪 EE | VLESS | @outline_ir #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

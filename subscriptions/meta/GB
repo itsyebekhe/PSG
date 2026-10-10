@@ -4,22 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]", "server": "87.192.47.10", "port": 52006, "type": "vless", "skip-cert-verify": true, "uuid": "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "grok.setlisting.ru"}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "13.41.28.55", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "18.133.149.153", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "51.200.42.237", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

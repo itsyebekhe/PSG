@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
       "server": "84.38.187.134",
       "server_port": 443,
       "uuid": "53ffd172-de4c-002f-aa77-1a6830a36cf8",
@@ -92,7 +94,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [medium]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
       "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
@@ -110,6 +112,31 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "drive.korroh.com",
+      "server_port": 443,
+      "uuid": "ec6f8131-7a5d-4117-9627-6fb2b39ae0da",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "drive.korroh.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/remote.php/dav/89f7661a0011ce46",
+        "headers": {
+          "Host": "drive.korroh.com"
         }
       }
     },

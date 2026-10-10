@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇱🇻 LV | VLESS | @free4allvpn #1 [medium]", "server": "195.135.252.28", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "099dbf2d-a8e0-406e-a85f-eba0ac9a68aa", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "hGGVm0PiHJwNL34pBG6NLtbFGYVdcWhDu5zHYDoct08", "short-id": "4360e536"}}
+  - {"name": "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]", "server": "195.135.252.28", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "099dbf2d-a8e0-406e-a85f-eba0ac9a68aa", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "hGGVm0PiHJwNL34pBG6NLtbFGYVdcWhDu5zHYDoct08", "short-id": "4360e536"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇱🇻 LV | VLESS | @free4allvpn #1 [medium]'
+      - '🇱🇻 LV | VLESS | @free4allvpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇱🇻 LV | VLESS | @free4allvpn #1 [medium]'
+      - '🇱🇻 LV | VLESS | @free4allvpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

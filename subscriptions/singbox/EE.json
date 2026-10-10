@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgU0s=
+//profile-title: base64:UFNHIHwgRUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇰 SK | VLESS | @red2ray #1 [fast]",
+        "🇪🇪 EE | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇰 SK | VLESS | @red2ray #1 [fast]"
+        "🇪🇪 EE | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,15 +68,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇰 SK | VLESS | @red2ray #1 [fast]",
-      "server": "80.243.228.73",
-      "server_port": 2085,
-      "uuid": "41fe1f2f-f981-44a5-939f-9b59d15ca955",
-      "network": "grpc",
+      "tag": "🇪🇪 EE | VLESS | @outline_ir #1 [fast]",
+      "server": "93.89.220.37",
+      "server_port": 443,
+      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+      "tls": {
+        "enabled": true,
+        "server_name": "ibm.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
+          "short_id": "e88cb983f3c97528"
+        }
       }
     },
     {

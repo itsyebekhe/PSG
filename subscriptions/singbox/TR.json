@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @outline_ir #1 [slow]",
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @outline_ir #1 [slow]",
-        "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]"
+        "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
+        "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,20 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @outline_ir #1 [slow]",
-      "server": "176.96.131.251",
-      "server_port": 1280,
-      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
       "server": "docs.n9ne.com.tr",
       "server_port": 8444,
       "uuid": "e81e1114-99b5-4fea-aafc-84426e845a14",
@@ -100,6 +87,30 @@
           "enabled": true,
           "public_key": "DhMAmplGrCBD7hwyDu7u2unWxsxMpZVKk_d7e3OZCWE",
           "short_id": "15f380e8388ee5a0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]",
+      "server": "31.40.204.131",
+      "server_port": 443,
+      "uuid": "86b6c7ba-d613-4567-962a-acfdad5c22db",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev"
         }
       }
     },

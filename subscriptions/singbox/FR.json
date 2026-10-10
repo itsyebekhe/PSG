@@ -53,10 +53,12 @@
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VMESS | @mtproxy22_v2ray #1 [medium]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,10 +70,12 @@
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VMESS | @mtproxy22_v2ray #1 [medium]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -122,11 +126,43 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "15.224.129.188",
+      "server": "15.224.158.160",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
+      "server": "15.236.98.115",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "45.67.139.221",
+      "server_port": 443,
+      "uuid": "e182765b-d8c7-4054-8fc1-f8d3df11de10",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr.haar.lol",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cW3RMz0RQpy85wGaG0wjb8yQ3b16CtZR_fd1ktwBKFs",
+          "short_id": "7e833df86314b137"
+        }
+      }
     },
     {
       "type": "vless",
@@ -186,7 +222,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

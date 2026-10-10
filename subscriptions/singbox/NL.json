@@ -51,11 +51,12 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | SS | @beshkan #1 [medium]",
+        "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -66,11 +67,12 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | SS | @beshkan #1 [medium]",
+        "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
+        "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -92,6 +94,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+      "server": "free-amsterdam-node-1.cloudwidecdn.com",
+      "server_port": 443,
+      "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
+          "short_id": "1d86d17709852910"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
       "server": "31.77.114.114",
       "server_port": 443,
@@ -107,18 +132,6 @@
           "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "short_id": "db04ce8bdb8900f1"
         }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-      "server": "193.29.139.151",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {
@@ -142,7 +155,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @beshkan #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @beshkan #1 [fast]",
       "server": "193.29.139.234",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -173,6 +186,18 @@
           "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "short_id": "01"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+      "server": "193.29.139.151",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
