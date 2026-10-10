@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgS1o=
+//profile-title: base64:UFNHIHwgQUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ | SS | @configv2rayforfree #1 [slow]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ | SS | @configv2rayforfree #1 [slow]"
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,21 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇿 KZ | SS | @configv2rayforfree #1 [slow]",
-      "server": "77.240.38.27",
-      "server_port": 8443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "fkXtvCEQ1ZU1rzF3fIK0fw==",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "cdnex.nztvpn.com",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "cdnex.nztvpn.com",
+        "insecure": true,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
       }
     },
     {
