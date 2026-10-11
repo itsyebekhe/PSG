@@ -54,10 +54,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇮🇷 IR | SS | @tanhanet #1 [medium]",
-        "🇳🇱 NL | SS | @beshkan #1 [fast]",
+        "🇳🇱 NL | SS | @beshkan #1 [slow]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
@@ -66,10 +65,11 @@
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇷🇴 RO | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #2 [fast]",
-        "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]",
+        "🇧🇬 BG | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -82,10 +82,9 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇮🇷 IR | SS | @tanhanet #1 [medium]",
-        "🇳🇱 NL | SS | @beshkan #1 [fast]",
+        "🇳🇱 NL | SS | @beshkan #1 [slow]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
@@ -94,10 +93,11 @@
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇷🇴 RO | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #2 [fast]",
-        "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]"
+        "🇧🇬 BG | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -157,18 +157,6 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
-      "server": "185.103.110.68",
-      "server_port": 18283,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
       "server": "82.38.31.159",
       "server_port": 443,
@@ -193,7 +181,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @beshkan #1 [fast]",
+      "tag": "🇳🇱 NL | SS | @beshkan #1 [slow]",
       "server": "193.29.139.234",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -301,6 +289,18 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
+      "server": "77.240.38.27",
+      "server_port": 8443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "fkXtvCEQ1ZU1rzF3fIK0fw==",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
       "server": "193.29.139.151",
       "server_port": 8080,
@@ -337,11 +337,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]",
-      "server": "102.37.156.224",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6",
+      "tag": "🇧🇬 BG | SS | @netfreedom0 #1 [fast]",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP",
       "network": "tcp",
       "tls": {
         "enabled": true

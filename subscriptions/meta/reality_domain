@@ -12,6 +12,7 @@ proxies:
   - {"name": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
   - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]", "server": "de-2.starsping.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "www.icloud.com", "reality-opts": {"public-key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk", "short-id": "a88550765b9956ee"}}
   - {"name": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]", "server": "c20s5.portablesubmarines.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "85fe968d-fbb5-40dc-8422-30635eccb149", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "portal.citygrainla.com", "reality-opts": {"public-key": "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE", "short-id": "051f20c2344a2dfd"}}
+  - {"name": "🇲🇩 MD | VLESS | @red2ray #1 [fast]", "server": "md3.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "md3.univesalsrv.com", "grpc-opts": {"grpc-service-name": "stats.v2.PushService"}, "reality-opts": {"public-key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ", "short-id": "9a72d40f1ff882b3"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -25,6 +26,7 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
       - '🇳🇱 NL | VLESS | @free1_vpn #1 [fast]'
+      - '🇲🇩 MD | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -38,6 +40,7 @@ proxy-groups:
       - '🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
       - '🇳🇱 NL | VLESS | @free1_vpn #1 [fast]'
+      - '🇲🇩 MD | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

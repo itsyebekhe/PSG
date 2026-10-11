@@ -59,6 +59,7 @@
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -75,7 +76,8 @@
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]"
+        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -251,6 +253,32 @@
           "public_key": "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE",
           "short_id": "051f20c2344a2dfd"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @red2ray #1 [fast]",
+      "server": "md3.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "md3.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
+          "short_id": "9a72d40f1ff882b3"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "stats.v2.PushService"
       }
     },
     {
