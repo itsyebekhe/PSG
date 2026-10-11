@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]", "server": "docs.n9ne.com.tr", "port": 8444, "type": "vless", "skip-cert-verify": true, "uuid": "e81e1114-99b5-4fea-aafc-84426e845a14", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "n9ne.com.tr", "reality-opts": {"public-key": "DhMAmplGrCBD7hwyDu7u2unWxsxMpZVKk_d7e3OZCWE", "short-id": "15f380e8388ee5a0"}}
-  - {"name": "🇹🇷 TR | VLESS | @free1_vpn #1 [medium]", "server": "31.40.204.131", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "86b6c7ba-d613-4567-962a-acfdad5c22db", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev"}}}
+  - {"name": "🇹🇷 TR | VLESS | @free1_vpn #1 [fast]", "server": "31.40.204.131", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "86b6c7ba-d613-4567-962a-acfdad5c22db", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev", "ws-opts": {"path": "", "headers": {"Host": "0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
-      - '🇹🇷 TR | VLESS | @free1_vpn #1 [medium]'
+      - '🇹🇷 TR | VLESS | @free1_vpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇹🇷 TR | VLESS | @orange_vpns #1 [fast]'
-      - '🇹🇷 TR | VLESS | @free1_vpn #1 [medium]'
+      - '🇹🇷 TR | VLESS | @free1_vpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
