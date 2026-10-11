@@ -53,6 +53,7 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
@@ -67,7 +68,7 @@
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -105,6 +106,7 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
@@ -119,7 +121,7 @@
         "🇮🇷 IR | VLESS | @ai_duet #1 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -193,6 +195,25 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "de2.srv.vbuste.ru",
+      "server_port": 443,
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de2.srv.vbuste.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "short_id": "4be4110078ebed4a"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
       "server": "spd-mynames.global.ssl.fastly.net",
       "server_port": 80,
@@ -226,11 +247,24 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-      "server": "dl6.sepid-dl.ir",
-      "server_port": 80,
-      "uuid": "b40ddc5e-9d01-43e1-975c-30200fda12c4",
-      "network": "httpupgrade",
-      "packet_encoding": "xudp"
+      "server": "de-2.starsping.com",
+      "server_port": 443,
+      "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk",
+          "short_id": "a88550765b9956ee"
+        }
+      }
     },
     {
       "type": "vless",
@@ -396,27 +430,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "drive.korroh.com",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+      "server": "cdnex.nztvpn.com",
       "server_port": 443,
-      "uuid": "ec6f8131-7a5d-4117-9627-6fb2b39ae0da",
-      "network": "ws",
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "drive.korroh.com",
+        "server_name": "cdnex.nztvpn.com",
         "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/remote.php/dav/89f7661a0011ce46",
-        "headers": {
-          "Host": "drive.korroh.com"
-        }
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
       }
     },
     {

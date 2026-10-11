@@ -51,8 +51,10 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #3 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #4 [fast]",
         "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +64,10 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #3 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #4 [fast]",
+        "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -94,6 +98,72 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+      "server": "93.189.63.146",
+      "server_port": 443,
+      "uuid": "53ffd172-de4c-002f-aa77-1a6830a36cf8",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "mm.melbicom.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YHPoUNxsml4z6pYt-7djOb1lqnBjxCk4-2mk84pveyc",
+          "short_id": "3b5b38669a1a51c0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #3 [fast]",
+      "server": "84.38.187.134",
+      "server_port": 443,
+      "uuid": "53ffd172-de4c-0037-aa77-1a6830a36cf8",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "git.xpkg.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc",
+          "short_id": "2c9431dc7a306018"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #4 [fast]",
+      "server": "95.143.188.10",
+      "server_port": 443,
+      "uuid": "53ffd172-de4c-0037-aa77-1a6830a36cf8",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "git.medrocket.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YHPoUNxsml4z6pYt-7djOb1lqnBjxCk4-2mk84pveyc",
+          "short_id": "3b5b38669a1a51c0"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 RU | VLESS | @nofiltering2 #1 [fast]",
       "server": "tgfree.rush-server.com",
       "server_port": 443,
@@ -112,31 +182,6 @@
           "enabled": true,
           "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
           "short_id": "64c1fe36c7846400"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "drive.korroh.com",
-      "server_port": 443,
-      "uuid": "ec6f8131-7a5d-4117-9627-6fb2b39ae0da",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "drive.korroh.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/remote.php/dav/89f7661a0011ce46",
-        "headers": {
-          "Host": "drive.korroh.com"
         }
       }
     },
