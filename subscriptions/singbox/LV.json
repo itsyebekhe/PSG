@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇱🇻 LV | VLESS | @bored_vpn #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,35 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇱🇻 LV | VLESS | @bored_vpn #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 LV | VLESS | @bored_vpn #1 [fast]",
+      "server": "31.57.157.54",
+      "server_port": 8080,
+      "uuid": "f62df9d7-8491-4214-9ef1-40af4a5914ec",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "timeline.www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AwVCzwCo-vP_z9Rowdp61yxAN7EViIGFpaL_dK9dhSU",
+          "short_id": "39986650"
+        }
+      }
     },
     {
       "type": "vless",

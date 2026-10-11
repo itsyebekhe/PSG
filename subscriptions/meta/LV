@@ -3,16 +3,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇱🇻 LV | VLESS | @bored_vpn #1 [fast]", "server": "31.57.157.54", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "f62df9d7-8491-4214-9ef1-40af4a5914ec", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "timeline.www.cloudflare.com", "reality-opts": {"public-key": "AwVCzwCo-vP_z9Rowdp61yxAN7EViIGFpaL_dK9dhSU", "short-id": "39986650"}}
   - {"name": "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]", "server": "195.135.252.28", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "099dbf2d-a8e0-406e-a85f-eba0ac9a68aa", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "hGGVm0PiHJwNL34pBG6NLtbFGYVdcWhDu5zHYDoct08", "short-id": "4360e536"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇱🇻 LV | VLESS | @bored_vpn #1 [fast]'
       - '🇱🇻 LV | VLESS | @free4allvpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇱🇻 LV | VLESS | @bored_vpn #1 [fast]'
       - '🇱🇻 LV | VLESS | @free4allvpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

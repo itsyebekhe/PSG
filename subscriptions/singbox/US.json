@@ -51,8 +51,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @outline_ir #2 [medium]",
-        "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
@@ -64,13 +63,11 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-        "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
@@ -107,8 +104,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @outline_ir #2 [medium]",
-        "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
@@ -120,13 +116,11 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-        "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
@@ -180,7 +174,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #2 [medium]",
+      "tag": "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
       "server": "200.165.231.209",
       "server_port": 443,
       "uuid": "ff0b6ba8-bed0-4c4d-bbc9-23af47582615",
@@ -195,29 +189,6 @@
         "path": "/api/connect",
         "headers": {
           "Host": "wstg.datasynctrue.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
-      "server": "185.102.115.7",
-      "server_port": 443,
-      "uuid": "e937b92c-701f-420e-a621-3eb3b75de467",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "baget.puffixhosting.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oiM4ujM8pxMF3X8kQhD8ioV8lcTAj7c31rIP9e6bOgA",
-          "short_id": "94d16ee71404c7a3"
         }
       }
     },
@@ -326,20 +297,27 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "151.101.56.7",
+      "server": "69.46.46.20",
       "server_port": 443,
-      "uuid": "da6ece67-aff5-4f94-94f3-08e87ca8cd51",
+      "uuid": "13177436-dd6b-344d-711c-c7d456e69b92",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com"
+        "server_name": "ekhraj-production.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/ws/13177436-dd6b-344d-711c-c7d456e69b92",
         "headers": {
-          "Host": "7wwwspeedtestnet.global.ssl.fastly.net"
+          "Host": "ekhraj-production.up.railway.app"
         }
       }
     },
@@ -437,33 +415,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "uuid": "XpnTeam-79",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
       "server": "23.235.33.98",
       "server_port": 80,
@@ -507,26 +458,6 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "uuid": "5b44c4dc-3b6b-4e61-96fa-6e89b349e6c4",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "safa.fastly.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "pannn1.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
       "server": "206.245.146.248",
       "server_port": 2085,
       "uuid": "ec553e40-bd11-44fc-91ba-284fe7264706",
