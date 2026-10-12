@@ -6,10 +6,9 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]", "server": "de2.srv.vbuste.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "de2.srv.vbuste.ru", "reality-opts": {"public-key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08", "short-id": "4be4110078ebed4a"}}
+  - {"name": "🇩🇪 DE | VLESS | @outline_ir #1 [slow]", "server": "de2.srv.vbuste.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "de2.srv.vbuste.ru", "reality-opts": {"public-key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08", "short-id": "4be4110078ebed4a"}}
   - {"name": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]", "server": "free-amsterdam-node-1.cloudwidecdn.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU", "short-id": "1d86d17709852910"}}
   - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]", "server": "de-2.starsping.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "www.icloud.com", "reality-opts": {"public-key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk", "short-id": "a88550765b9956ee"}}
-  - {"name": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]", "server": "c20s5.portablesubmarines.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "85fe968d-fbb5-40dc-8422-30635eccb149", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "portal.citygrainla.com", "reality-opts": {"public-key": "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE", "short-id": "051f20c2344a2dfd"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -17,10 +16,9 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
+      - '🇩🇪 DE | VLESS | @outline_ir #1 [slow]'
       - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @free1_vpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -28,10 +26,9 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇩🇪 DE | VLESS | @outline_ir #1 [fast]'
+      - '🇩🇪 DE | VLESS | @outline_ir #1 [slow]'
       - '🇳🇱 NL | VLESS | @outline_ir #1 [fast]'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @free1_vpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

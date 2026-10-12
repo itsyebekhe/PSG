@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]", "server": "77.72.85.247", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "6c713691-3ca2-4446-ad25-113d1bed6b03", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "unsafe", "servername": "fdghyt.com", "ws-opts": {"path": "/", "headers": {"Host": "fdghyt.com"}}}
+  - {"name": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]", "server": "77.72.85.247", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "6c713691-3ca2-4446-ad25-113d1bed6b03", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "unsafe", "servername": "fdghyt.com", "ws-opts": {"path": "/", "headers": {"Host": "fdghyt.com"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇪🇪 EE | VLESS | @outlinereleasedkey #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
