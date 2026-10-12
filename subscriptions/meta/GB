@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "5.199.0.226", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b0a100ee-c397-43f2-bdae-2adfb7a0d4e5", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "rnxq-1lpi3m.linmeisoft.com", "ws-opts": {"path": "", "headers": {"Host": "rnxq-1lpi3m.linmeisoft.com"}}}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "18.135.65.80", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "18.133.41.17", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

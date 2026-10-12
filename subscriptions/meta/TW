@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇼 TW | VLESS | @netfreedom0 #1 [fast]", "server": "3696b38bsg.murphyweb.sbs", "port": 32134, "type": "vless", "skip-cert-verify": true, "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "buylite.music.apple.com", "reality-opts": {"public-key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4", "short-id": "6c6c7c97"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇼 TW | VLESS | @netfreedom0 #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇼 TW | VLESS | @netfreedom0 #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

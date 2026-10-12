@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTUQ=
+//profile-title: base64:UFNHIHwgT1BFTkFJ
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD | VLESS | @red2ray #1 [medium]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇽🇽 XX | VLESS | @kafing_2 #6 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD | VLESS | @red2ray #1 [medium]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇽🇽 XX | VLESS | @kafing_2 #6 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,28 +74,68 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @red2ray #1 [medium]",
-      "server": "89.35.14.34",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
       "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @kafing_2 #6 [fast]",
+      "server": "chatgpt.com",
+      "server_port": 2096,
+      "uuid": "686c62d9-17a7-43c9-a40a-f6747df60a9f",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "md5.univesalsrv.com",
+        "server_name": "ca.adobe-connect.top",
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg",
-          "short_id": "aa9884f2982b7d3c"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "app.v1.PushService"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ca.adobe-connect.top"
+        }
       }
     },
     {

@@ -51,13 +51,14 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,13 +68,14 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | SS | @mtproxy22_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -101,6 +103,18 @@
           "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
           "short_id": "1d86d17709852910"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+      "server": "193.29.139.197",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
@@ -176,19 +190,27 @@
     {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "dey.lnmarketplace.net",
-      "server_port": 443,
-      "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-      "network": "xhttp",
+      "server": "185.200.199.199",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "dey.lnmarketplace.net",
-        "insecure": true,
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
       }
     },
     {
@@ -205,7 +227,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

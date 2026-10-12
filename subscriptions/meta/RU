@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "84.38.187.134", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "53ffd172-de4c-002f-aa77-1a6830a36cf8", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "git.xpkg.ru", "reality-opts": {"public-key": "QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc", "short-id": "2c9431dc7a306018"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [medium]", "server": "185.22.153.40", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "c96f941e-dd8a-006e-89d5-740b79202ed0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "x5club.ru", "reality-opts": {"public-key": "7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU", "short-id": "187eea0acfb7f778"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

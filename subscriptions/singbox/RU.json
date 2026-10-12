@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]"
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -85,6 +87,28 @@
           "enabled": true,
           "public_key": "QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc",
           "short_id": "2c9431dc7a306018"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+      "server": "185.22.153.40",
+      "server_port": 8443,
+      "uuid": "c96f941e-dd8a-006e-89d5-740b79202ed0",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "x5club.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU",
+          "short_id": "187eea0acfb7f778"
         }
       }
     },
