@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]", "server": "84.38.187.134", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "53ffd172-de4c-002f-aa77-1a6830a36cf8", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "git.xpkg.ru", "reality-opts": {"public-key": "QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc", "short-id": "2c9431dc7a306018"}}
+  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "84.38.187.134", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "53ffd172-de4c-002f-aa77-1a6830a36cf8", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "git.xpkg.ru", "reality-opts": {"public-key": "QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc", "short-id": "2c9431dc7a306018"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

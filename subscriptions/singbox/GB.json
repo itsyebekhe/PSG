@@ -50,17 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
-        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
-        "🇬🇧 GB | SS | @beshkan #1 [medium]",
-        "🇬🇧 GB | SS | @beshkan #2 [medium]",
-        "🇬🇧 GB | SS | @beshkan #3 [medium]",
-        "🇬🇧 GB | SS | @beshkan #4 [medium]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
-        "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [medium]",
-        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
+        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #2 [fast]",
+        "🇬🇧 GB | SS | @beshkan #3 [fast]",
+        "🇬🇧 GB | SS | @beshkan #4 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -69,17 +66,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
-        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
-        "🇬🇧 GB | SS | @beshkan #1 [medium]",
-        "🇬🇧 GB | SS | @beshkan #2 [medium]",
-        "🇬🇧 GB | SS | @beshkan #3 [medium]",
-        "🇬🇧 GB | SS | @beshkan #4 [medium]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
-        "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [medium]",
-        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]"
+        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #2 [fast]",
+        "🇬🇧 GB | SS | @beshkan #3 [fast]",
+        "🇬🇧 GB | SS | @beshkan #4 [fast]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -88,7 +82,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @father_vpn #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @father_vpn #1 [fast]",
       "server": "82.38.31.176",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -99,26 +93,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [medium]",
-      "server": "87.192.47.10",
-      "server_port": 52006,
-      "uuid": "bc659d88-a1e0-4c65-a49a-7b51b26a7a7f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "grok.setlisting.ru",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
       "server": "82.38.31.159",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -130,7 +106,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @beshkan #1 [fast]",
       "server": "82.38.31.149",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -142,7 +118,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #2 [medium]",
+      "tag": "🇬🇧 GB | SS | @beshkan #2 [fast]",
       "server": "82.38.31.155",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -154,7 +130,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #3 [medium]",
+      "tag": "🇬🇧 GB | SS | @beshkan #3 [fast]",
       "server": "82.38.31.181",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -166,7 +142,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #4 [medium]",
+      "tag": "🇬🇧 GB | SS | @beshkan #4 [fast]",
       "server": "82.38.31.184",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -178,7 +154,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -189,34 +165,28 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [medium]",
-      "server": "82.38.31.10",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [fast]",
+      "server": "5.199.0.226",
+      "server_port": 443,
+      "uuid": "b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
+      "network": "ws",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "rnxq-1lpi3m.linmeisoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/b0a100ee-c397-43f2-bdae-2adfb7a0d4e5?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "headers": {
+          "Host": "rnxq-1lpi3m.linmeisoft.com"
+        }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-      "server": "18.132.151.243",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-      "server": "18.134.93.203",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
