@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]", "server": "65.108.3.59", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "web.eitaa.com", "reality-opts": {"public-key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no", "short-id": "90ec9bba2019"}}
   - {"name": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]", "server": "ijug.jffq.electrocitymarket.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d2519b5e-495e-462e-9703-bbf68011d2f3", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "ijug.jffq.electrocitymarket.ru"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
       - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @outline_ir #1 [fast]'
       - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VMESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
@@ -66,8 +67,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+        "🇫🇷 FR | VMESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @mimitdl #1 [fast]",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #2 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
@@ -79,6 +81,40 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
+      "server": "51.255.166.202",
+      "server_port": 443,
+      "uuid": "593bf46b-8316-5050-9357-d8a41e4db78b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "e3k67dwms3-51255166202-direct.tavafog.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇷 FR | VMESS | @orange_vpns #1 [fast]",
+      "server": "145.239.55.210",
+      "server_port": 80,
+      "uuid": "067fcd63-b215-4abd-8529-ae929a9971a9",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."
+        }
+      }
     },
     {
       "type": "vless",
@@ -94,20 +130,6 @@
         "headers": {
           "Host": "play.google.com"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #2 [fast]",
-      "server": "51.255.166.202",
-      "server_port": 443,
-      "uuid": "593bf46b-8316-5050-9357-d8a41e4db78b",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "e3k67dwms3-51255166202-direct.tavafog.com"
       }
     },
     {
@@ -134,7 +156,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "15.224.31.247",
+      "server": "51.45.44.241",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -143,7 +165,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "51.45.45.106",
+      "server": "15.188.40.131",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",

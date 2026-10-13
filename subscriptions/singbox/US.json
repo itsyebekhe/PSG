@@ -50,11 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 US | VLESS | @outline_ir #1 [slow]",
-        "🇺🇸 US | VLESS | @outline_ir #2 [medium]",
-        "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-        "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VMESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
@@ -63,6 +60,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
@@ -105,11 +103,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 US | VLESS | @outline_ir #1 [slow]",
-        "🇺🇸 US | VLESS | @outline_ir #2 [medium]",
-        "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-        "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VMESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
@@ -118,6 +113,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
@@ -160,62 +156,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #1 [slow]",
-      "server": "198.251.78.29",
-      "server_port": 2053,
-      "uuid": "c423cc1b-f88e-421c-9a16-c480d84da20f",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw",
-          "short_id": "b5d625695ec82c7e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #2 [medium]",
-      "server": "200.165.231.209",
+      "tag": "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+      "server": "199.232.78.159",
       "server_port": 443,
-      "uuid": "ff0b6ba8-bed0-4c4d-bbc9-23af47582615",
+      "uuid": "5abd299c-59e8-46e1-98ec-fec6ea20bec3",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "wstg.datasynctrue.online"
+        "server_name": "google.com"
       },
       "transport": {
         "type": "ws",
-        "path": "/api/connect",
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
         "headers": {
-          "Host": "wstg.datasynctrue.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
-      "server": "185.102.115.7",
-      "server_port": 443,
-      "uuid": "e937b92c-701f-420e-a621-3eb3b75de467",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "baget.puffixhosting.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oiM4ujM8pxMF3X8kQhD8ioV8lcTAj7c31rIP9e6bOgA",
-          "short_id": "94d16ee71404c7a3"
+          "Host": "pan2e.global.ssl.fastly.net"
         }
       }
     },
@@ -235,29 +190,6 @@
           "enabled": true,
           "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
           "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
-      "server": "31.76.68.245",
-      "server_port": 443,
-      "uuid": "f9cb2991-ad4a-4a54-aeb3-55d56ac02a8e",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fra01.deflink.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "INbgA5nXpjZ2P1f6lY7sMBlDM3ZMV8RX3cw-RRGM0mM",
-          "short_id": "f22e97cfd4d9"
         }
       }
     },
@@ -407,6 +339,33 @@
       "tls": {
         "enabled": true,
         "server_name": "pannn1.global.ssl.fastly.net"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+      "server": "31.77.126.2",
+      "server_port": 443,
+      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "lucasjow.us.ci",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cart/docs/www/proxyip=108.160.132.132",
+        "headers": {
+          "Host": "lucasjow.us.ci"
+        }
       }
     },
     {

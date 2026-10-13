@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
         "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
-        "🇦🇪 AE | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
-        "🇦🇪 AE | VLESS | @red2ray #2 [fast]"
+        "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
+        "🇦🇪 AE | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,23 +70,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
-      "server": "tun2.appii.ir",
-      "server_port": 8700,
-      "uuid": "54065f18-8686-4fe6-8c2f-17f520a09695",
-      "network": "ws",
+      "tag": "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
+      "server": "31.59.210.37",
+      "server_port": 443,
+      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "network": "grpc",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "arvancloud.ir"
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
+          "short_id": "6dbf4931096f9890"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "astracat"
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @red2ray #2 [fast]",
+      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
       "server": "31.57.190.49",
       "server_port": 443,
       "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",

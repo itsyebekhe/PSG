@@ -53,11 +53,11 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -69,11 +69,11 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [fast]"
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -117,6 +117,29 @@
       "transport": {
         "type": "ws",
         "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
+      "server": "de-5.ardesnode.ru",
+      "server_port": 443,
+      "uuid": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "de-5.ardesnode.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs",
+          "short_id": "9ea74b83f4993ca9"
+        }
       }
     },
     {
@@ -189,29 +212,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
-      "server": "tun3.appii.ir",
-      "server_port": 8023,
-      "uuid": "54065f18-8686-4fe6-8c2f-17f520a09695",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3VKs9HG9EgsB69ppfvFEJcXiO5MDOvvQOByDD2HceXQ",
-          "short_id": "b7e45d3a65bfc319"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
       "server": "cape.flowzari.info",
       "server_port": 443,
       "uuid": "6c21cf57-a9a9-4075-ad9f-631152bd911e",

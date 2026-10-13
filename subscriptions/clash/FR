@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇷 FR | VMESS | @orange_vpns #1 [fast]", "server": "145.239.55.210", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "067fcd63-b215-4abd-8529-ae929a9971a9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇷 FR | VMESS | @orange_vpns #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇷 FR | VMESS | @orange_vpns #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
