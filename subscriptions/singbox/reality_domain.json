@@ -53,12 +53,11 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -70,12 +69,11 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]"
+        "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -119,48 +117,6 @@
       "transport": {
         "type": "ws",
         "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-      "server": "de2.srv.vbuste.ru",
-      "server_port": 443,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "de2.srv.vbuste.ru",
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outline_ir #1 [fast]",
-      "server": "free-amsterdam-node-1.cloudwidecdn.com",
-      "server_port": 443,
-      "uuid": "44ae52b9-76fc-444d-8e43-186b4384b80a",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU",
-          "short_id": "1d86d17709852910"
-        }
       }
     },
     {
@@ -233,24 +189,46 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-      "server": "c20s5.portablesubmarines.com",
-      "server_port": 443,
-      "uuid": "85fe968d-fbb5-40dc-8422-30635eccb149",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
+      "server": "tun3.appii.ir",
+      "server_port": 8023,
+      "uuid": "54065f18-8686-4fe6-8c2f-17f520a09695",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "portal.citygrainla.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE",
-          "short_id": "051f20c2344a2dfd"
+          "public_key": "3VKs9HG9EgsB69ppfvFEJcXiO5MDOvvQOByDD2HceXQ",
+          "short_id": "b7e45d3a65bfc319"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+      "server": "cape.flowzari.info",
+      "server_port": 443,
+      "uuid": "6c21cf57-a9a9-4075-ad9f-631152bd911e",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cape.flowzari.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc",
+          "short_id": "693e339ad3613446"
         }
       }
     },

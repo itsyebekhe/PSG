@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
         "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,13 +62,53 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
+        "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
         "🇫🇮 FI | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]"
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @outline_ir #1 [fast]",
+      "server": "65.108.3.59",
+      "server_port": 443,
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.eitaa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 FI | HY2 | @prrofile_purple #1 [fast]",
+      "server": "31.76.80.69",
+      "server_port": 443,
+      "password": "6aab8efdf13945829ae3699c342be406",
+      "obfs": {
+        "type": "salamander",
+        "password": "salamander"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "fiproxy1.lockdwn.com"
+      }
     },
     {
       "type": "shadowsocks",
@@ -82,7 +124,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "ijug.jffq.electrocitymarket.ru",
       "server_port": 443,
       "uuid": "d2519b5e-495e-462e-9703-bbf68011d2f3",

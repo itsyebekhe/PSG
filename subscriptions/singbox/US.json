@@ -50,9 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #1 [slow]",
         "🇺🇸 US | VLESS | @outline_ir #2 [medium]",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [medium]",
+        "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VMESS | @mehrosaboran #1 [fast]",
@@ -104,9 +105,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #1 [slow]",
         "🇺🇸 US | VLESS | @outline_ir #2 [medium]",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [medium]",
+        "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VMESS | @mehrosaboran #1 [fast]",
@@ -158,7 +160,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+      "tag": "🇺🇸 US | VLESS | @outline_ir #1 [slow]",
       "server": "198.251.78.29",
       "server_port": 2053,
       "uuid": "c423cc1b-f88e-421c-9a16-c480d84da20f",
@@ -196,7 +198,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [medium]",
+      "tag": "🇺🇸 US | VLESS | @outline_ir #3 [fast]",
+      "server": "185.102.115.7",
+      "server_port": 443,
+      "uuid": "e937b92c-701f-420e-a621-3eb3b75de467",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "baget.puffixhosting.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oiM4ujM8pxMF3X8kQhD8ioV8lcTAj7c31rIP9e6bOgA",
+          "short_id": "94d16ee71404c7a3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
       "server": "150.241.101.80",
       "server_port": 8443,
       "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
@@ -299,27 +324,20 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "69.46.46.20",
+      "server": "151.101.56.7",
       "server_port": 443,
-      "uuid": "13177436-dd6b-344d-711c-c7d456e69b92",
+      "uuid": "da6ece67-aff5-4f94-94f3-08e87ca8cd51",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ekhraj-production.up.railway.app",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
+        "server_name": "ssl.fastly.com"
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/13177436-dd6b-344d-711c-c7d456e69b92",
+        "path": "/",
         "headers": {
-          "Host": "ekhraj-production.up.railway.app"
+          "Host": "7wwwspeedtestnet.global.ssl.fastly.net"
         }
       }
     },
