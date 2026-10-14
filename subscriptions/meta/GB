@@ -4,22 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "52.56.110.129", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "edge10.cyrionflare.com", "port": 2052, "type": "vless", "skip-cert-verify": true, "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @red2ray #2 [fast]", "server": "178.107.58.80", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "d0b32482-67aa-426d-8735-ab6c7ceb65bd", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cdn.intercom-home.online"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
-      - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
