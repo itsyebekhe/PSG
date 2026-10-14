@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQUU=
+//profile-title: base64:UFNHIHwgU0E=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
-        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+        "🇸🇦 SA | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
-        "🇦🇪 AE | VLESS | @red2ray #1 [fast]"
+        "🇸🇦 SA | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,51 +68,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @beshkan #1 [fast]",
-      "server": "31.59.210.37",
+      "tag": "🇸🇦 SA | VLESS | @red2ray #1 [fast]",
+      "server": "213.165.56.102",
       "server_port": 443,
-      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
-      "network": "grpc",
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
+        "server_name": "freede.aiage.work",
         "reality": {
           "enabled": true,
-          "public_key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
-          "short_id": "6dbf4931096f9890"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "astracat"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
-      "server": "31.57.190.49",
-      "server_port": 443,
-      "uuid": "e6df2095-a73c-4043-8693-8d5a03686870",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "lucasjow.us.ci",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cart/docs/www/proxyip=108.160.132.132fp=unsafe",
-        "headers": {
-          "Host": "lucasjow.us.ci"
+          "public_key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g",
+          "short_id": "57e7977c9011061c"
         }
       }
     },

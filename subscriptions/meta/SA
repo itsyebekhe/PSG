@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇸🇦 SA | VLESS | @red2ray #1 [fast]", "server": "213.165.56.102", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "freede.aiage.work", "reality-opts": {"public-key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g", "short-id": "57e7977c9011061c"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇸🇦 SA | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇸🇦 SA | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

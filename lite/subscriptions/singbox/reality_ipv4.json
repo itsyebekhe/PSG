@@ -53,9 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -72,9 +72,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
@@ -127,26 +127,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-      "server": "150.241.101.80",
-      "server_port": 8443,
-      "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
+      "server": "103.109.234.173",
+      "server_port": 443,
+      "uuid": "87939c49-07d0-4bfb-8612-5a0380eddebe",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yandex.net",
+        "server_name": "d1.ventode1.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
+          "public_key": "ANvaXFaTKGByBCjSfwpF4RwhkFG_M5fnXWVK380peTY",
+          "short_id": "bba7dc4386d19378"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
       "server": "84.38.187.134",
       "server_port": 443,
       "uuid": "53ffd172-de4c-002f-aa77-1a6830a36cf8",
@@ -168,7 +175,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]",
       "server": "84.38.187.134",
       "server_port": 443,
       "uuid": "53ffd172-de4c-0037-aa77-1a6830a36cf8",

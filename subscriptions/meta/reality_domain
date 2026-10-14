@@ -11,7 +11,7 @@ proxies:
   - {"name": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]", "server": "de5.wizard.select", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "cebcaf04-c567-11f1-9902-a337233c6cda", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "de5.wizard.select", "reality-opts": {"public-key": "KIawAxTmmnz2tLnTg26djq1f20QSgBzy9y2mp9HCiFA", "short-id": "c4a866"}}
   - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]", "server": "de-2.starsping.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "www.icloud.com", "reality-opts": {"public-key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk", "short-id": "a88550765b9956ee"}}
   - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "cape.flowzari.info", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6c21cf57-a9a9-4075-ad9f-631152bd911e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "cape.flowzari.info", "reality-opts": {"public-key": "5DdSLIpnYjqYTI4-yC-ulr8PGMA8YML_EWdKvOjdinc", "short-id": "693e339ad3613446"}}
-  - {"name": "🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]", "server": "3696b38bsg.murphyweb.sbs", "port": 32134, "type": "vless", "skip-cert-verify": true, "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "buylite.music.apple.com", "reality-opts": {"public-key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4", "short-id": "6c6c7c97"}}
+  - {"name": "🇹🇼 TW | VLESS | @netfreedom0 #1 [fast]", "server": "3696b38bsg.murphyweb.sbs", "port": 32134, "type": "vless", "skip-cert-verify": true, "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "buylite.music.apple.com", "reality-opts": {"public-key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4", "short-id": "6c6c7c97"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -24,7 +24,7 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
       - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
-      - '🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]'
+      - '🇹🇼 TW | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -37,7 +37,7 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @orange_vpns #2 [fast]'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
       - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
-      - '🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]'
+      - '🇹🇼 TW | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
