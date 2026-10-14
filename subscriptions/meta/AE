@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇪 AE | VLESS | @beshkan #1 [fast]", "server": "31.59.210.37", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.yandex.ru", "grpc-opts": {"grpc-service-name": "astracat"}, "reality-opts": {"public-key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4", "short-id": "6dbf4931096f9890"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇪 AE | VLESS | @beshkan #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇪 AE | VLESS | @beshkan #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
