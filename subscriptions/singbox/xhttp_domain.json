@@ -55,7 +55,7 @@
         "KingRezaPahlavi",
         "🇽🇽 XX | VLESS | @kafing_2 #5 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
@@ -70,7 +70,7 @@
         "KingRezaPahlavi",
         "🇽🇽 XX | VLESS | @kafing_2 #5 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -158,12 +158,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
-      "server": "cplus.nimhubnet.ir",
-      "server_port": 1018,
-      "uuid": "e399faac-f600-4df6-9426-6aadf5170c57",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "nl.cachevault.net",
+      "server_port": 443,
+      "uuid": "2b9fc113-db27-4635-86d8-fa4556a5b7ba",
       "network": "xhttp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.cachevault.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XTX6Yvtj5B4HENQbNCS0MH3jDqq5vj5gWlg2nilTviE",
+          "short_id": "8ba02790a1480848"
+        }
+      }
     },
     {
       "type": "vless",
