@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇱🇹 LT | SS | @outlinereleasedkey #1 [fast]",
+        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT | SS | @outlinereleasedkey #1 [fast]"
+        "🇱🇹 LT | SS | @outlinereleasedkey #1 [fast]",
+        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -73,6 +75,18 @@
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
+      "server": "195.238.126.84",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC",
       "network": "tcp",
       "tls": {
         "enabled": true
