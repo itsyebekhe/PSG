@@ -66,8 +66,9 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
+        "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
+        "🇽🇽 XX | VLESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
@@ -75,7 +76,7 @@
         "🇮🇷 IR | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
-        "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
+        "🇽🇽 XX | VLESS | @garnet_free #2 [fast]",
         "🇽🇽 XX | VLESS | @dailyv2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @iranproxypro #1 [fast]",
         "🇽🇽 XX | VLESS | @iranproxypro #2 [fast]",
@@ -117,8 +118,9 @@
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
+        "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
+        "🇽🇽 XX | VLESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @luckyvpn #1 [fast]",
@@ -126,7 +128,7 @@
         "🇮🇷 IR | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
-        "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
+        "🇽🇽 XX | VLESS | @garnet_free #2 [fast]",
         "🇽🇽 XX | VLESS | @dailyv2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @iranproxypro #1 [fast]",
         "🇽🇽 XX | VLESS | @iranproxypro #2 [fast]",
@@ -402,29 +404,38 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "nl.cachevault.net",
-      "server_port": 443,
-      "uuid": "2b9fc113-db27-4635-86d8-fa4556a5b7ba",
-      "network": "xhttp",
+      "tag": "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
+      "server": "ngnix.velnix-services.ir",
+      "server_port": 1081,
+      "uuid": "19c78abc-0f6f-4fa6-8614-0fbf0021273d",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "nl.cachevault.net",
+        "server_name": "www32.velnix-services.ir",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XTX6Yvtj5B4HENQbNCS0MH3jDqq5vj5gWlg2nilTviE",
-          "short_id": "8ba02790a1480848"
+          "public_key": "oBcBNqEqA-Iqc6VT25ZLWF0MhkZ1CSny7yWn_u1r-1Q",
+          "short_id": "fbc2f106a8cab706"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+      "tag": "🇽🇽 XX | VLESS | @Proxymelimon #1 [fast]",
+      "server": "tamiiiiz.aryan-sport.ir",
+      "server_port": 2095,
+      "uuid": "bfd5fea1-e0b5-48e2-b1e3-aabdd2eee95a",
+      "network": "httpupgrade",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
       "server": "nl5.hap-plus.ru",
       "server_port": 8443,
       "uuid": "05d7a479-a099-40cf-aecf-41aa934767b0",
@@ -433,9 +444,12 @@
       "tls": {
         "enabled": true,
         "server_name": "nl5.hap-plus.ru",
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -563,30 +577,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @garnet_free #1 [fast]",
-      "server": "discord.gg",
-      "server_port": 443,
+      "tag": "🇽🇽 XX | VLESS | @garnet_free #2 [fast]",
+      "server": "all-vpncustomize.aparat.lol",
+      "server_port": 2096,
       "uuid": "a75cb418-c1d6-476a-9464-ad1bd5181e3c",
-      "network": "ws",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "de.vpncustomize.Website",
+        "server_name": "ConfigForV2rayng.Snapp.monster",
         "alpn": [
           "h2",
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        ]
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "e.vpncustomize.Website"
-        }
+        "type": "grpc",
+        "service_name": "@VPNCUSTOMIZE"
       }
     },
     {

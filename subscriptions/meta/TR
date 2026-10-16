@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]", "server": "ngnix.velnix-services.ir", "port": 1081, "type": "vless", "skip-cert-verify": true, "uuid": "19c78abc-0f6f-4fa6-8614-0fbf0021273d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www32.velnix-services.ir", "reality-opts": {"public-key": "oBcBNqEqA-Iqc6VT25ZLWF0MhkZ1CSny7yWn_u1r-1Q", "short-id": "fbc2f106a8cab706"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
