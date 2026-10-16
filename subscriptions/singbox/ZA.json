@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇿🇦 ZA | SS | @free1_vpn #1 [medium]",
         "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]",
         "direct"
       ],
@@ -59,12 +60,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇿🇦 ZA | SS | @free1_vpn #1 [medium]",
         "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 ZA | SS | @free1_vpn #1 [medium]",
+      "server": "20.164.209.198",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IdBspBchqpInOZFK",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "shadowsocks",

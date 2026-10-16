@@ -51,7 +51,7 @@
       "outbounds": [
         "auto",
         "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
-        "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
+        "🇯🇵 JP | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
-        "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]"
+        "🇯🇵 JP | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -93,17 +93,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
-      "server": "ubia2-join.outline-vpn.cloud",
-      "server_port": 80,
-      "uuid": "48bd4d22-e42f-4749-af6a-85ecf716c823",
-      "network": "ws",
+      "tag": "🇯🇵 JP | VLESS | @orange_vpns #1 [fast]",
+      "server": "jp4.oh-node.com",
+      "server_port": 443,
+      "uuid": "7cfd34ae-edad-4cc5-9d6f-066f7add7829",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "fkhamnei.kosnanatfilterchi.eu.org"
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bandainamcoent.co.jp",
+        "reality": {
+          "enabled": true,
+          "public_key": "qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA",
+          "short_id": "f75fbd5b"
         }
       }
     },
