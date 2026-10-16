@@ -3,26 +3,26 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @free1_vpn #1 [medium]", "server": "159.65.51.189", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d342d11e-d224-4463-b982-532309285094", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ccc.010304.xyz", "ws-opts": {"path": "", "headers": {"Host": "ccc.010304.xyz"}}}
+  - {"name": "🇬🇧 GB | VLESS | @free1_vpn #1 [fast]", "server": "159.65.51.189", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d342d11e-d224-4463-b982-532309285094", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ccc.010304.xyz", "ws-opts": {"path": "", "headers": {"Host": "ccc.010304.xyz"}}}
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "18.132.54.50", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "51.200.54.224", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "uk2.oh-node.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7cfd34ae-edad-4cc5-9d6f-066f7add7829", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.bp.com", "reality-opts": {"public-key": "QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk", "short-id": "20"}}
-  - {"name": "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]", "server": "milo.rubinaz.xyz", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇬🇧 GB | VLESS | @free1_vpn #1 [medium]'
+      - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
-      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇬🇧 GB | VLESS | @free1_vpn #1 [medium]'
+      - '🇬🇧 GB | VLESS | @free1_vpn #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
-      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
