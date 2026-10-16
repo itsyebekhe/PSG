@@ -51,12 +51,11 @@
       "outbounds": [
         "auto",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @mimitdl #1 [medium]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
-        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @Proxymelimon #1 [fast]",
         "🇮🇷 IR | VMESS | @Proxymelimon #1 [fast]",
@@ -78,12 +77,11 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @mimitdl #1 [medium]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
-        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @Proxymelimon #1 [fast]",
         "🇮🇷 IR | VMESS | @Proxymelimon #1 [fast]",
@@ -113,7 +111,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
       "server": "185.143.234.235",
       "server_port": 80,
       "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
@@ -124,28 +122,6 @@
         "path": "/",
         "headers": {
           "Host": "vixon.portab.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @mimitdl #1 [medium]",
-      "server": "62.60.222.174",
-      "server_port": 443,
-      "uuid": "MiMiTdL",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TOkCRZCKG9Dyz667DlXzpj6855eUyWUC6TH-M5AIeV0",
-          "short_id": "362a3a4331"
         }
       }
     },
@@ -192,7 +168,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+      "tag": "🇮🇷 IR | SS | @tanhanet #1 [fast]",
       "server": "109.122.251.86",
       "server_port": 20700,
       "method": "chacha20-ietf-poly1305",

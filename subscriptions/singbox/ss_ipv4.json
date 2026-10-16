@@ -53,13 +53,12 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇮🇪 IE | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇿🇦 ZA | SS | @free1_vpn #1 [medium]",
-        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
@@ -67,6 +66,7 @@
         "🇬🇧 GB | SS | @beshkan #5 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
+        "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -78,20 +78,20 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇮🇪 IE | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇿🇦 ZA | SS | @free1_vpn #1 [medium]",
-        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @beshkan #3 [fast]",
         "🇬🇧 GB | SS | @beshkan #4 [fast]",
         "🇬🇧 GB | SS | @beshkan #5 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
+        "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
+        "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -135,18 +135,6 @@
       "transport": {
         "type": "ws",
         "path": "/"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @outline_ir #1 [fast]",
-      "server": "20.123.1.55",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "YF329KNGVTUZ1qrH",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {
@@ -211,7 +199,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+      "tag": "🇮🇷 IR | SS | @tanhanet #1 [fast]",
       "server": "109.122.251.86",
       "server_port": 20700,
       "method": "chacha20-ietf-poly1305",
@@ -300,6 +288,18 @@
       "server_port": 9039,
       "method": "aes-256-cfb",
       "password": "qYEN5HX4JKeVCdEC",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6",
       "network": "tcp",
       "tls": {
         "enabled": true

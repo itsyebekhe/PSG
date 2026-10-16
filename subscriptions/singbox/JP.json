@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSUU=
+//profile-title: base64:UFNHIHwgSlA=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE | SS | @outline_ir #1 [fast]",
+        "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE | SS | @outline_ir #1 [fast]"
+        "🇯🇵 JP | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,15 +67,26 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @outline_ir #1 [fast]",
-      "server": "20.123.1.55",
+      "type": "vless",
+      "tag": "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
+      "server": "142.91.108.25",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "YF329KNGVTUZ1qrH",
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "jp3.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM",
+          "short_id": "ea36c03d86f91287"
+        }
       }
     },
     {
