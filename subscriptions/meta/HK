@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇭🇰 HK | VLESS | @red2ray #1 [fast]", "server": "hk03.ccdn3.work", "port": 795, "type": "vless", "skip-cert-verify": true, "uuid": "fc12fb20-4380-11ec-8c97-d707e267af0b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "i1.hdslb.com", "reality-opts": {"public-key": "y_DoQCjABoe8YBWpEbBTTQJp8d62WJc_-vNUzKgwtS8", "short-id": "fec557fa67449ccc"}}
+  - {"name": "🇭🇰 HK | VLESS | @netfreedom0 #1 [medium]", "server": "3696b38bsg.murphyweb.sbs", "port": 32134, "type": "vless", "skip-cert-verify": true, "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "buylite.music.apple.com", "reality-opts": {"public-key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4", "short-id": "6c6c7c97"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇭🇰 HK | VLESS | @red2ray #1 [fast]'
+      - '🇭🇰 HK | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇭🇰 HK | VLESS | @red2ray #1 [fast]'
+      - '🇭🇰 HK | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

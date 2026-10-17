@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇱🇹 LT | VLESS | @red2ray #1 [fast]", "server": "147.45.217.140", "port": 21731, "type": "vless", "skip-cert-verify": true, "uuid": "408c51e8-9246-483d-ba73-34ab4e202eb9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "metrika.yandex.ru", "reality-opts": {"public-key": "QeLV1NQeTG3e1DRFSNnK_f9Ca5Gf9smexICxtr27WUA", "short-id": "0446eb17"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇱🇹 LT | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇱🇹 LT | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

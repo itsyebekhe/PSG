@@ -59,6 +59,7 @@
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
         "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
@@ -69,7 +70,7 @@
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
         "🇩🇪 DE | VMESS | @serverv2ray00 #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -87,6 +88,7 @@
         "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
         "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
@@ -97,7 +99,7 @@
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
         "🇩🇪 DE | VMESS | @serverv2ray00 #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]"
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -289,6 +291,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
+      "server": "hoert1rert.localip.ir",
+      "server_port": 2087,
+      "uuid": "a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "hoert1rert.localip.ir",
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hokm",
+        "headers": {
+          "Host": "hoert1rert.localip.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
       "server": "37.114.50.157",
       "server_port": 4002,
@@ -467,7 +492,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
       "server": "49.13.27.100",
       "server_port": 443,
       "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af",
