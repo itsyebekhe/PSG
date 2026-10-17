@@ -62,6 +62,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @beshkan #1 [fast]",
@@ -73,7 +74,6 @@
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #3 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
@@ -123,6 +123,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @beshkan #1 [fast]",
@@ -134,7 +135,6 @@
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #3 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
@@ -293,20 +293,27 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "151.101.56.7",
+      "server": "69.46.46.104",
       "server_port": 443,
-      "uuid": "da6ece67-aff5-4f94-94f3-08e87ca8cd51",
+      "uuid": "e3fcc645-cec2-9b16-3946-06174d59b7fa",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com"
+        "server_name": "polar-falcon-aaa4-production.up.railway.app",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/ws/e3fcc645-cec2-9b16-3946-06174d59b7fa",
         "headers": {
-          "Host": "7wwwspeedtestnet.global.ssl.fastly.net"
+          "Host": "polar-falcon-aaa4-production.up.railway.app"
         }
       }
     },
@@ -377,6 +384,27 @@
     {
       "type": "vmess",
       "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+      "server": "xc115-1.meiziba5566.com",
+      "server_port": 443,
+      "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "xc115-1.meiziba5566.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/f40a8d65"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
       "server": "xcf037.facai2024.com",
       "server_port": 443,
       "uuid": "d9863037-0463-4615-e972-36ba9662d1e9",
@@ -544,27 +572,6 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "146.75.59.186",
-      "server_port": 443,
-      "uuid": "d1cafeeb-2861-4d1e-a462-38f16442f5b2",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "copy_az_channel_NUFiLTER_2.global.ssl.fastly.net."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
       "server": "wwww.qarvian.ir",
       "server_port": 443,
       "uuid": "d1cafeeb-2861-4d1e-a462-38f16442f5b2",
@@ -585,7 +592,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #3 [fast]",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
       "server": "multipanel-production-b080.up.railway.app",
       "server_port": 443,
       "uuid": "247084ed-5f38-692c-915c-95b6f295bfdb",

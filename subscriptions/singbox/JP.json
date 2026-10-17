@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
+        "🇯🇵 JP | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 JP | VLESS | @outline_ir #1 [fast]"
+        "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
+        "🇯🇵 JP | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -86,6 +88,25 @@
           "enabled": true,
           "public_key": "9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM",
           "short_id": "ea36c03d86f91287"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 JP | VLESS | @orange_vpns #1 [fast]",
+      "server": "jp4.oh-node.com",
+      "server_port": 443,
+      "uuid": "7cfd34ae-edad-4cc5-9d6f-066f7add7829",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bandainamcoent.co.jp",
+        "reality": {
+          "enabled": true,
+          "public_key": "qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA",
+          "short_id": "f75fbd5b"
         }
       }
     },
