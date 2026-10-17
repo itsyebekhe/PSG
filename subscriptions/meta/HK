@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇭🇰 HK | VLESS | @red2ray #1 [medium]", "server": "hk03.ccdn3.work", "port": 795, "type": "vless", "skip-cert-verify": true, "uuid": "fc12fb20-4380-11ec-8c97-d707e267af0b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "i1.hdslb.com", "reality-opts": {"public-key": "y_DoQCjABoe8YBWpEbBTTQJp8d62WJc_-vNUzKgwtS8", "short-id": "fec557fa67449ccc"}}
+  - {"name": "🇭🇰 HK | VLESS | @red2ray #1 [fast]", "server": "hk03.ccdn3.work", "port": 795, "type": "vless", "skip-cert-verify": true, "uuid": "fc12fb20-4380-11ec-8c97-d707e267af0b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "i1.hdslb.com", "reality-opts": {"public-key": "y_DoQCjABoe8YBWpEbBTTQJp8d62WJc_-vNUzKgwtS8", "short-id": "fec557fa67449ccc"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
+      - '🇭🇰 HK | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇭🇰 HK | VLESS | @red2ray #1 [medium]'
+      - '🇭🇰 HK | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
