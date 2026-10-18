@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇩🇰 DK | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "1bccfbc69597.salzivo.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "410bc842-c3df-4fc5-9e11-0feab5c97d64", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "google.com"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇩🇰 DK | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇩🇰 DK | VLESS | @mtproxy22_v2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
