@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇷 TR | VLESS | @red2ray #1 [medium]", "server": "83.217.9.254", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0011d187-d066-48f6-957c-a6983dd63a77", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "servername": "tr.netvora.space", "reality-opts": {"public-key": "c-LdrrjWXggAWcOkfbwawezHTcw7Bx0kzs973IDFBmM", "short-id": "93980c41b30b2d60"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇷 TR | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
