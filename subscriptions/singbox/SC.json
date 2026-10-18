@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇸🇨 SC | VLESS | @tanhanet #1 [fast]",
-        "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC | VLESS | @tanhanet #1 [fast]",
-        "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]"
+        "🇸🇨 SC | VLESS | @tanhanet #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -86,30 +84,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC | VLESS | @ehsawn8 #1 [fast]",
-      "server": "45.130.125.114",
-      "server_port": 8443,
-      "uuid": "f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv10.perfectbulk.info",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "srv10.perfectbulk.info"
         }
       }
     },

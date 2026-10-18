@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUlM=
+//profile-title: base64:UFNHIHwgSEs=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇸 RS | VLESS | @prrofile_purple #2 [fast]",
+        "🇭🇰 HK | VLESS | @Proxymelimon #1 [medium]",
+        "🇭🇰 HK | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇸 RS | VLESS | @prrofile_purple #2 [fast]"
+        "🇭🇰 HK | VLESS | @Proxymelimon #1 [medium]",
+        "🇭🇰 HK | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,54 +70,38 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @prrofile_purple #1 [fast]",
-      "server": "150.40.126.22",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
+      "tag": "🇭🇰 HK | VLESS | @Proxymelimon #1 [medium]",
+      "server": "213.176.92.168",
+      "server_port": 14430,
+      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "rs4.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
-          "short_id": "861ac7d66953e55f"
-        }
-      },
       "transport": {
-        "type": "grpc",
-        "service_name": "media.v1.StreamService"
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "213.176.92.168"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @prrofile_purple #2 [fast]",
-      "server": "150.40.126.21",
+      "tag": "🇭🇰 HK | VLESS | @red2ray #1 [fast]",
+      "server": "209.33.161.104",
       "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "rs3.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gHDoSWGWMVZKWNKONWHw-Cpl0-bdI6GaKusgJIQ-vWQ",
-          "short_id": "35d05b666e2c6cdf"
-        }
+        "server_name": "snip.edgeoneai.cc.cd"
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "edge.v2.FeedService"
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "snip.edgeoneai.cc.cd"
+        }
       }
     },
     {

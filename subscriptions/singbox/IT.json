@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+        "🇮🇹 IT | VLESS | @red2ray #1 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [slow]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]"
+        "🇮🇹 IT | VLESS | @red2ray #1 [fast]",
+        "🇮🇹 IT | VLESS | @NamiraConfigs #1 [slow]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [fast]",
+      "tag": "🇮🇹 IT | VLESS | @red2ray #1 [fast]",
+      "server": "43.249.72.254",
+      "server_port": 443,
+      "uuid": "ba33c872-d552-4c44-b0f2-b9bd8669d70c",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "default.ssl.fastly.net",
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "henzooo.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 IT | VLESS | @NamiraConfigs #1 [slow]",
       "server": "204.216.216.23",
       "server_port": 10086,
       "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923",
