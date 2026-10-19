@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 HK | VLESS | @Proxymelimon #1 [medium]",
         "🇭🇰 HK | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
@@ -60,29 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 HK | VLESS | @Proxymelimon #1 [medium]",
         "🇭🇰 HK | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 HK | VLESS | @Proxymelimon #1 [medium]",
-      "server": "213.176.92.168",
-      "server_port": 14430,
-      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "213.176.92.168"
-        }
-      }
     },
     {
       "type": "vless",

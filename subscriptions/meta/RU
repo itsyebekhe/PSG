@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [medium]", "server": "du-rov.secureservice.top", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "flow": "xtls-rprx-vision", "servername": "du-rov.secureservice.top", "reality-opts": {"public-key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI", "short-id": "3cbc3d737fb9c4af"}}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [medium]", "server": "144.48.11.97", "port": 43000, "type": "vless", "skip-cert-verify": true, "uuid": "4799abf0-d0d9-4a46-9c31-b1f76ae00e1e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "144.48.11.97", "reality-opts": {"public-key": "lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0", "short-id": "725e6ea0"}}
+  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "du-rov.secureservice.top", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "flow": "xtls-rprx-vision", "servername": "du-rov.secureservice.top", "reality-opts": {"public-key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI", "short-id": "3cbc3d737fb9c4af"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
+      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
