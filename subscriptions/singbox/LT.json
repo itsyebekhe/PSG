@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,32 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
+      "server": "84.32.109.20",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "litv.nztvpn.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
     },
     {
       "type": "shadowsocks",
