@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,36 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
         "🇵🇱 PL | HY2 | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @prrofile_purple #1 [fast]",
+      "server": "82.40.62.229",
+      "server_port": 443,
+      "uuid": "5bfc6650-8b56-0012-b0e9-b98fc6367c0d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "auto.api-yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NBjOloEUgyAHoLqvcGo_t3jTY8Jya77j5dsNB1VJ8Bo",
+          "short_id": "0f4dacffd272e65f"
+        }
+      }
     },
     {
       "type": "hysteria2",

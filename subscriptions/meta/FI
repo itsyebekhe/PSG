@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]", "server": "152.233.71.81", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "741809be-e44e-000b-b411-bf66f0ae3860", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "flow": "xtls-rprx-vision", "servername": "brointelengence.com", "reality-opts": {"public-key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY", "short-id": "1c3e8241a8743df9"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

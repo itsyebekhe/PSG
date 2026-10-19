@@ -54,7 +54,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇯🇵 JP | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,7 +70,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇯🇵 JP | VLESS | @orange_vpns #1 [fast]",
-        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]"
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -134,6 +140,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+      "server": "du-rov.secureservice.top",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
       "server": "de-2.starsping.com",
       "server_port": 443,
@@ -151,6 +180,51 @@
           "enabled": true,
           "public_key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk",
           "short_id": "a88550765b9956ee"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "2d72.donyumvps.tr",
+      "server_port": 33114,
+      "uuid": "6adfde3e-4c12-47ee-9f4a-319411b7bdd6",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www3.donyumvps.tr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "60sY2ikAsShBKbYL9Y083dvfslJKhdNPvb6tzqIsrjk",
+          "short_id": "671cadfd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "nl5.freekeysh110.online",
+      "server_port": 443,
+      "uuid": "6b8676ac-9461-4083-851a-70c74cb4b8ea",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl5.freekeysh110.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA",
+          "short_id": "04b9f0b2470fae16"
         }
       }
     },
