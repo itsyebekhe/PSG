@@ -4,6 +4,7 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]", "server": "172.67.137.209", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/London31", "headers": {"Host": "ukl.lovehk.xyz"}}}
+  - {"name": "🇽🇽 XX | VMESS | @outlinereleasedkey #2 [fast]", "server": "eu3.998998.best", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/aiaiai", "headers": {"Host": "server40.9966338.xyz"}}}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #1 [fast]", "server": "xc115-1.meiziba5566.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/f40a8d65", "headers": {"Host": "xc115-1.meiziba5566.com"}}}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #2 [fast]", "server": "xcf037.facai2024.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d9863037-0463-4615-e972-36ba9662d1e9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/d9863037", "headers": {"Host": "xcf037.facai2024.com"}}}
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
@@ -26,12 +27,13 @@ proxies:
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]", "server": "167.235.205.182", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇽🇽 XX | VMESS | @proxy48 #1 [fast]", "server": "172.66.213.38", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "dfbbc8de-8a4f-407d-8069-6de38d83c4e1", "alterId": 0, "cipher": "chacha20-poly1305", "network": "grpc", "tls": true, "grpc-opts": {"grpc-service-name": "WgCmp8p80KDzo64uHE"}}
-  - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [medium]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
+  - {"name": "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]", "server": "168.119.174.229", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]'
+      - '🇽🇽 XX | VMESS | @outlinereleasedkey #2 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #2 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
@@ -54,12 +56,13 @@ proxy-groups:
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
-      - '🇩🇪 DE | VMESS | @magickey_shop #1 [medium]'
+      - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]'
+      - '🇽🇽 XX | VMESS | @outlinereleasedkey #2 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #2 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
@@ -82,7 +85,7 @@ proxy-groups:
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
       - '🇽🇽 XX | VMESS | @proxy48 #1 [fast]'
-      - '🇩🇪 DE | VMESS | @magickey_shop #1 [medium]'
+      - '🇩🇪 DE | VMESS | @magickey_shop #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
