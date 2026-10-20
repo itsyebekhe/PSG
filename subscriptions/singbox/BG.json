@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
-        "🇧🇬 BG | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
-        "🇧🇬 BG | SS | @netfreedom0 #1 [fast]"
+        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -92,18 +90,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "gw.v2.RelayService"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 BG | SS | @netfreedom0 #1 [fast]",
-      "server": "213.183.63.60",
-      "server_port": 9061,
-      "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {

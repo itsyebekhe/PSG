@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | SS | @outlinereleasedkey #1 [fast]",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "direct"
       ],
@@ -60,25 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | SS | @outlinereleasedkey #1 [fast]",
         "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @outlinereleasedkey #1 [fast]",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vless",

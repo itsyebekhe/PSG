@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
-  - {"name": "🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]", "server": "3696b38bsg.murphyweb.sbs", "port": 32134, "type": "vless", "skip-cert-verify": true, "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "buylite.music.apple.com", "reality-opts": {"public-key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4", "short-id": "6c6c7c97"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

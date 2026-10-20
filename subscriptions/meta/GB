@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "51.24.54.202", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "18.169.146.8", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]", "server": "milo.rubinaz.xyz", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
+      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
