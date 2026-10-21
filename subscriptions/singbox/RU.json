@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
+        "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,47 +67,14 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-      "server": "du-rov.secureservice.top",
-      "server_port": 8443,
-      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
+      "type": "hysteria2",
+      "tag": "🇷🇺 RU | HY2 | @outlinereleasedkey #1 [fast]",
+      "server": "95.140.147.245",
+      "server_port": 443,
+      "password": "9yOIR2_QAChKs26rYaiX_aoNnOALd0aU",
       "tls": {
         "enabled": true,
-        "server_name": "du-rov.secureservice.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
-          "short_id": "3cbc3d737fb9c4af"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
-      "server": "randomquaint.net",
-      "server_port": 2053,
-      "uuid": "95a608b6-bff1-4e10-bb61-0a39f221bb7d",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "randomquaint.net",
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "nl1server.rabstvo.shop"
       }
     },
     {

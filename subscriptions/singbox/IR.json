@@ -50,17 +50,15 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR | VLESS | @config_proxy #1 [slow]",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @free1_vpn #1 [slow]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
-        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
+        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
         "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
-        "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
+        "🇮🇷 IR | VMESS | @NamiraConfigs #1 [medium]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
         "🇮🇷 IR | VLESS | @prooxyk #1 [fast]",
@@ -76,17 +74,15 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR | VLESS | @config_proxy #1 [slow]",
+        "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
         "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
-        "🇮🇷 IR | VLESS | @free1_vpn #1 [slow]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
-        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
+        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
         "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
-        "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
+        "🇮🇷 IR | VMESS | @NamiraConfigs #1 [medium]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [fast]",
         "🇮🇷 IR | VLESS | @prooxyk #1 [fast]",
@@ -102,7 +98,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [slow]",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
       "server": "185.143.233.235",
       "server_port": 80,
       "uuid": "22109ab6-bfdd-4062-ae1c-054c74353e39",
@@ -127,28 +123,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @free1_vpn #1 [slow]",
-      "server": "tun2.w-ert.org",
-      "server_port": 42924,
-      "uuid": "3e16033f-71d8-417b-abea-7756253f3c3d",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.aparat.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU",
-          "short_id": "ca4134a0ed2592b6"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
       "server": "abr.superip.ir",
       "server_port": 2052,
@@ -165,7 +139,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @tanhanet #1 [fast]",
+      "tag": "🇮🇷 IR | SS | @tanhanet #1 [medium]",
       "server": "109.122.251.86",
       "server_port": 20700,
       "method": "chacha20-ietf-poly1305",
@@ -225,28 +199,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
-      "server": "tun2.w-ert.org",
-      "server_port": 42924,
-      "uuid": "524b6fd3-2aef-4e11-995f-4d6243a5ae9a",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.aparat.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU",
-          "short_id": "ca4134a0ed2592b6"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
       "server": "185.143.234.238",
       "server_port": 80,
@@ -272,7 +224,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
+      "tag": "🇮🇷 IR | VMESS | @NamiraConfigs #1 [medium]",
       "server": "s1.connect.labex.pro",
       "server_port": 1007,
       "uuid": "d4c556a2-3d61-4b1d-9550-d6d010ff1d3f",

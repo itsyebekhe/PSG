@@ -3,6 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇺🇸 US | VMESS | @beshkan #1 [fast]", "server": "67.220.95.3", "port": 18000, "type": "vmess", "skip-cert-verify": true, "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #1 [fast]", "server": "xc115-1.meiziba5566.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/f40a8d65", "headers": {"Host": "xc115-1.meiziba5566.com"}}}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #2 [fast]", "server": "xcf037.facai2024.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d9863037-0463-4615-e972-36ba9662d1e9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/d9863037", "headers": {"Host": "xcf037.facai2024.com"}}}
   - {"name": "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]", "server": "57.129.132.223", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/vmess/", "headers": {"Host": "google.com"}}}
@@ -17,6 +18,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇺🇸 US | VMESS | @beshkan #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #2 [fast]'
       - '🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]'
@@ -31,6 +33,7 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇺🇸 US | VMESS | @beshkan #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #2 [fast]'
       - '🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]'
