@@ -7,8 +7,8 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]", "server": "de-2.starsping.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1577b744-8004-4eef-862c-8cae0cd27ab9", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "www.icloud.com", "reality-opts": {"public-key": "ZBv1jOEHziWtQQoThg63_1gm4zIPyk_cfVmNJ1SOZSk", "short-id": "a88550765b9956ee"}}
-  - {"name": "🇮🇷 IR | VLESS | @nofilter_v2rayng #1 [medium]", "server": "arsnew.netbazshop.ir", "port": 17141, "type": "vless", "skip-cert-verify": true, "uuid": "feef6320-c5b5-44f6-a44b-5acbc4524457", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]", "server": "host.taghvimtime.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "90c08c98-7ec8-4fab-da36-cf140d18c708", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "host.taghvimtime.ir"}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "randomquaint.net", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "95a608b6-bff1-4e10-bb61-0a39f221bb7d", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "randomquaint.net"}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -17,8 +17,8 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
-      - '🇮🇷 IR | VLESS | @nofilter_v2rayng #1 [medium]'
       - '🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -27,8 +27,8 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]'
-      - '🇮🇷 IR | VLESS | @nofilter_v2rayng #1 [medium]'
       - '🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

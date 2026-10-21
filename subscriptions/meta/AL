@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇦🇱 AL | VLESS | @red2ray #1 [fast]", "server": "151.123.187.198", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b24ad12f-f6ce-4f0b-a264-d58a76104026", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "al2.magazinnarubeva.ru", "reality-opts": {"public-key": "trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI", "short-id": "8718c58d3d51db59"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇦🇱 AL | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇦🇱 AL | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

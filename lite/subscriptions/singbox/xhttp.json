@@ -54,8 +54,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇮🇷 IR | VLESS | @nofilter_v2rayng #1 [medium]",
         "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @tanhanet #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
@@ -74,8 +74,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇮🇷 IR | VLESS | @nofilter_v2rayng #1 [medium]",
         "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "🇸🇨 SC | VLESS | @tanhanet #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
@@ -151,15 +151,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @nofilter_v2rayng #1 [medium]",
-      "server": "arsnew.netbazshop.ir",
-      "server_port": 17141,
-      "uuid": "feef6320-c5b5-44f6-a44b-5acbc4524457",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
       "server": "host.taghvimtime.ir",
       "server_port": 8443,
@@ -175,6 +166,27 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+      "server": "randomquaint.net",
+      "server_port": 2053,
+      "uuid": "95a608b6-bff1-4e10-bb61-0a39f221bb7d",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "randomquaint.net",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
