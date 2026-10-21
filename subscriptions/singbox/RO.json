@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUlM=
+//profile-title: base64:UFNHIHwgUk8=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 RS | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇸 RS | VLESS | @prrofile_purple #2 [fast]",
+        "🇷🇴 RO | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 RS | VLESS | @prrofile_purple #1 [fast]",
-        "🇷🇸 RS | VLESS | @prrofile_purple #2 [fast]"
+        "🇷🇴 RO | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,54 +68,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @prrofile_purple #1 [fast]",
-      "server": "150.40.126.22",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
+      "tag": "🇷🇴 RO | VLESS | @netfreedom0 #1 [fast]",
+      "server": "103.126.51.58",
+      "server_port": 995,
+      "uuid": "1fc575d3-81bb-44d5-9efa-4131c7cc677a",
+      "network": "httpupgrade",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "rs4.univesalsrv.com",
+        "server_name": "ocober-romania-new.yyuyy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs",
-          "short_id": "861ac7d66953e55f"
+          "fingerprint": "random"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "media.v1.StreamService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇸 RS | VLESS | @prrofile_purple #2 [fast]",
-      "server": "150.40.126.21",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "rs3.univesalsrv.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gHDoSWGWMVZKWNKONWHw-Cpl0-bdI6GaKusgJIQ-vWQ",
-          "short_id": "35d05b666e2c6cdf"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "edge.v2.FeedService"
       }
     },
     {

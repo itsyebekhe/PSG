@@ -57,9 +57,10 @@
         "🇺🇸 US | SS | @proxy_confiingir #1 [fast]",
         "🇮🇪 IE | SS | @outline_ir #1 [slow]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇨🇦 CA | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇮🇹 IT | SS | @free1_vpn #1 [fast]",
         "🇮🇷 IR | SS | @tanhanet #1 [medium]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
@@ -69,6 +70,7 @@
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]",
+        "🇪🇸 ES | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -84,9 +86,10 @@
         "🇺🇸 US | SS | @proxy_confiingir #1 [fast]",
         "🇮🇪 IE | SS | @outline_ir #1 [slow]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇨🇦 CA | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇮🇹 IT | SS | @free1_vpn #1 [fast]",
         "🇮🇷 IR | SS | @tanhanet #1 [medium]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
@@ -95,7 +98,8 @@
         "🇬🇧 GB | SS | @beshkan #4 [fast]",
         "🇬🇧 GB | SS | @mtproxy22_v2ray #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]"
+        "🇿🇦 ZA | SS | @netfreedom0 #1 [medium]",
+        "🇪🇸 ES | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -191,35 +195,47 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 CA | SS | @outlinereleasedkey #1 [fast]",
-      "server": "149.22.95.183",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-      "server": "54.36.174.134",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
       "server": "37.148.203.124",
       "server_port": 12238,
       "method": "aes-128-gcm",
       "password": "6163d9d532e40f417dd8ebb5f9716495",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+      "server": "82.38.31.162",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+      "server": "31.76.11.83",
+      "server_port": 15731,
+      "method": "chacha20-ietf-poly1305",
+      "password": "xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
+      "server": "156.146.38.168",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
       "network": "tcp",
       "tls": {
         "enabled": true
@@ -328,6 +344,18 @@
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "aduB9HGxQHjA2SBMRjkHX6",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 ES | SS | @netfreedom0 #1 [fast]",
+      "server": "5.188.181.201",
+      "server_port": 9014,
+      "method": "aes-256-cfb",
+      "password": "KnJGad3FqTvjqbaX",
       "network": "tcp",
       "tls": {
         "enabled": true
