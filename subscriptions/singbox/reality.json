@@ -68,16 +68,16 @@
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
         "🇦🇲 AM | VLESS | @Proxymelimon #1 [fast]",
-        "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
-        "🇷🇴 RO | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -104,16 +104,16 @@
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
         "🇦🇲 AM | VLESS | @Proxymelimon #1 [fast]",
-        "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
-        "🇷🇴 RO | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]"
+        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -514,48 +514,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
-      "server": "185.121.179.122",
-      "server_port": 443,
-      "uuid": "63c5f8b3-3d3d-46a9-ae1f-58635cdaf891",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "45.91.248.127",
+      "server_port": 8443,
+      "uuid": "81a227e3-cb97-40fe-b7b6-45a60ed065cf",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "de.stream-node6.com",
+        "server_name": "node.nodebrcsp.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg",
-          "short_id": "98753667b2406829"
+          "public_key": "75SvxhvlOLct7K2eSg4-a1o6Z6N3JMTqp3wIQmLSqTA",
+          "short_id": "8c609726e0233f08"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @red2ray #1 [fast]",
-      "server": "205.237.110.254",
-      "server_port": 443,
-      "uuid": "e75ad2eb-6c1f-45ce-8023-f5f10875df66",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "zsit.eu-cdn294.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4",
-          "short_id": "cd2d53510b4df2a8"
-        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-api-v2"
       }
     },
     {
@@ -679,29 +659,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
-      "server": "du-rov.secureservice.top",
-      "server_port": 8443,
-      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "du-rov.secureservice.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
-          "short_id": "3cbc3d737fb9c4af"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
       "server": "de-2.starsping.com",
       "server_port": 443,
@@ -741,6 +698,52 @@
           "enabled": true,
           "public_key": "60sY2ikAsShBKbYL9Y083dvfslJKhdNPvb6tzqIsrjk",
           "short_id": "671cadfd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]",
+      "server": "du-rov.secureservice.top",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]",
+      "server": "sw.golangwikito.cfd",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sw.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
         }
       }
     },

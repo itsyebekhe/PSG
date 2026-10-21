@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇭🇰 HK | VLESS | @Proxymelimon #1 [fast]", "server": "213.176.92.168", "port": 14430, "type": "vless", "skip-cert-verify": true, "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "firefox", "servername": "213.176.92.168", "ws-opts": {"path": "", "headers": {"Host": "213.176.92.168"}}}
+  - {"name": "🇭🇰 HK | VLESS | @netfreedom0 #1 [medium]", "server": "3696b38bsg.murphyweb.sbs", "port": 32134, "type": "vless", "skip-cert-verify": true, "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "buylite.music.apple.com", "reality-opts": {"public-key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4", "short-id": "6c6c7c97"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇭🇰 HK | VLESS | @Proxymelimon #1 [fast]'
+      - '🇭🇰 HK | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇭🇰 HK | VLESS | @Proxymelimon #1 [fast]'
+      - '🇭🇰 HK | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
