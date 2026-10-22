@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇲 AM | VLESS | @Proxymelimon #1 [fast]", "server": "185.202.113.108", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b2bf3e70-e99f-47ed-9802-5c8d264ecc0c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.microsoft.com", "reality-opts": {"public-key": "SfZ0hMKMM1KUDFQnnrDLRGru6d4tlWdOBjCtC9R9V3s", "short-id": "b6"}}
+  - {"name": "🇦🇲 AM | VLESS | @Proxymelimon #1 [medium]", "server": "185.202.113.108", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b2bf3e70-e99f-47ed-9802-5c8d264ecc0c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.microsoft.com", "reality-opts": {"public-key": "SfZ0hMKMM1KUDFQnnrDLRGru6d4tlWdOBjCtC9R9V3s", "short-id": "b6"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇲 AM | VLESS | @Proxymelimon #1 [fast]'
+      - '🇦🇲 AM | VLESS | @Proxymelimon #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇲 AM | VLESS | @Proxymelimon #1 [fast]'
+      - '🇦🇲 AM | VLESS | @Proxymelimon #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
