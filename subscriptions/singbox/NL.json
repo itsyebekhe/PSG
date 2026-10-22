@@ -52,8 +52,10 @@
         "auto",
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
@@ -66,8 +68,10 @@
       "outbounds": [
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
@@ -101,6 +105,30 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
+      "server": "193.29.139.179",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @beshkan #1 [fast]",
+      "server": "193.29.139.234",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4a2rfixophdjffa8KVA4Aa",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
       "server": "51.158.206.80",
@@ -125,25 +153,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
-      "server": "146.185.141.92",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "176.98.189.253",
       "server_port": 443,
-      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
-      "network": "ws",
+      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "snip.edgeoneai.cc.cd",
+        "server_name": "www.surf.nl",
         "utls": {
           "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
-        "headers": {
-          "Host": "snip.edgeoneai.cc.cd"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XPXSq5nNCKDPwA_yk6AcOPRWC33E6APbjz_BaVJclzA",
+          "short_id": "61"
         }
       }
     },

@@ -53,10 +53,10 @@
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #2 [fast]",
-        "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
@@ -76,10 +76,10 @@
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #2 [fast]",
-        "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
@@ -149,18 +149,6 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
-      "server": "31.76.11.83",
-      "server_port": 15731,
-      "method": "chacha20-ietf-poly1305",
-      "password": "xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
       "server": "account.datagrid.cl",
@@ -215,6 +203,29 @@
       "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "tickets.betust.net",
+      "server_port": 443,
+      "uuid": "3b1fa839-2cb9-4511-9711-08800450aea3",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tickets.betust.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TRaUsnzFf-AhWUuW4RQUQOBYTdM-qJdLDTTkzQNkcRw",
+          "short_id": "f70764f8"
+        }
+      }
     },
     {
       "type": "vless",
