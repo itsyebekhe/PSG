@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
@@ -68,8 +69,10 @@
         "🇺🇸 US | VMESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #3 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
@@ -116,6 +119,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
+        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
@@ -133,8 +137,10 @@
         "🇺🇸 US | VMESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #3 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
@@ -193,6 +199,26 @@
       "transport": {
         "type": "ws",
         "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "headers": {
+          "Host": "pan2e.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "e0ef0fb4-f18a-4284-bcf3-f5b3e738c594",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048",
         "headers": {
           "Host": "pan2e.global.ssl.fastly.net"
         }
@@ -525,6 +551,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "f2a1f964-7cfb-435f-abb2-2969bd595c75",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "swedish.global.ssl.fastly.net."
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "95.215.201.18",
@@ -543,6 +589,18 @@
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #3 [fast]",
+      "server": "64.42.181.102",
+      "server_port": 12996,
+      "method": "aes-128-gcm",
+      "password": "a7be96a98392ef40dab7693317a81cc0",
       "network": "tcp",
       "tls": {
         "enabled": true

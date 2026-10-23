@@ -53,7 +53,8 @@
         "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
-        "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [slow]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "direct"
@@ -67,7 +68,8 @@
         "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
-        "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+        "🇬🇧 GB | VLESS | @red2ray #1 [slow]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]"
       ],
@@ -114,23 +116,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
-      "server": "23.81.36.148",
-      "server_port": 1222,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+      "server": "18.135.2.178",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @red2ray #1 [slow]",
+      "server": "gb.srv.dvzh.net",
+      "server_port": 443,
+      "uuid": "9ab3a362-1518-496d-b08d-eced45cec936",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "gb.srv.dvzh.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
-          "short_id": "a25d0f"
+          "public_key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
+          "short_id": "d30f9d846a7c8cba"
         }
       }
     },
