@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇲🇾 MY | VLESS | @red2ray #1 [medium]", "server": "111.90.143.184", "port": 61111, "type": "vless", "skip-cert-verify": true, "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "github.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU", "short-id": "1378f725da558887"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇲🇾 MY | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇲🇾 MY | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

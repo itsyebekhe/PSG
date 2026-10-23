@@ -51,7 +51,8 @@
       "outbounds": [
         "auto",
         "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
-        "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
+        "🇯🇵 JP | VLESS | @Proxymelimon #1 [fast]",
+        "🇯🇵 JP | VLESS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
-        "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]"
+        "🇯🇵 JP | VLESS | @Proxymelimon #1 [fast]",
+        "🇯🇵 JP | VLESS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -93,17 +95,39 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
-      "server": "ubia2-join.outline-vpn.cloud",
-      "server_port": 80,
-      "uuid": "48bd4d22-e42f-4749-af6a-85ecf716c823",
-      "network": "ws",
+      "tag": "🇯🇵 JP | VLESS | @Proxymelimon #1 [fast]",
+      "server": "funagfrdfs.alixxplay.com",
+      "server_port": 30892,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "fkhamnei.kosnanatfilterchi.eu.org"
+      "tls": {
+        "enabled": true,
+        "server_name": "us1p1.xn--ghq880n3na965a.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4",
+          "short_id": "3d31326f95"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 JP | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "funagfrdfs.alixxplay.com",
+      "server_port": 35544,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "iosapps.itunes.apple.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc",
+          "short_id": "25c79e5856c7"
         }
       }
     },

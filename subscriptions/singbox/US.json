@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
@@ -63,10 +62,13 @@
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
+        "🇺🇸 US | VMESS | @beshkan #1 [fast]",
+        "🇺🇸 US | VMESS | @beshkan #2 [fast]",
         "🇺🇸 US | VLESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @beshkan #2 [fast]",
-        "🇺🇸 US | VMESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
@@ -77,8 +79,6 @@
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -119,7 +119,6 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 US | VLESS | @outline_ir #1 [fast]",
-        "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
         "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
@@ -131,10 +130,13 @@
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
+        "🇺🇸 US | VMESS | @beshkan #1 [fast]",
+        "🇺🇸 US | VMESS | @beshkan #2 [fast]",
         "🇺🇸 US | VLESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @beshkan #2 [fast]",
-        "🇺🇸 US | VMESS | @beshkan #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
@@ -145,8 +147,6 @@
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
-        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -199,26 +199,6 @@
       "transport": {
         "type": "ws",
         "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "headers": {
-          "Host": "pan2e.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @outline_ir #2 [fast]",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "uuid": "e0ef0fb4-f18a-4284-bcf3-f5b3e738c594",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048",
         "headers": {
           "Host": "pan2e.global.ssl.fastly.net"
         }
@@ -439,6 +419,51 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+      "server": "xc115-1.meiziba5566.com",
+      "server_port": 443,
+      "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "xc115-1.meiziba5566.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/f40a8d65"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
+      "server": "xcf037.facai2024.com",
+      "server_port": 443,
+      "uuid": "d9863037-0463-4615-e972-36ba9662d1e9",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "xcf037.facai2024.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/d9863037",
+        "headers": {
+          "Host": "xcf037.facai2024.com"
+        }
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
       "server": "23.235.33.98",
@@ -448,9 +473,35 @@
       "packet_encoding": "xudp"
     },
     {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @beshkan #1 [fast]",
+      "server": "67.220.95.3",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @beshkan #2 [fast]",
+      "server": "169.197.142.22",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @beshkan #1 [fast]",
-      "server": "15.204.97.195",
+      "server": "15.204.97.219",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -473,7 +524,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @beshkan #2 [fast]",
-      "server": "15.204.97.219",
+      "server": "15.204.97.195",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -492,19 +543,6 @@
           "short_id": "01"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @beshkan #1 [fast]",
-      "server": "67.220.95.3",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
     },
     {
       "type": "vless",
@@ -680,51 +718,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "jkrv2ry"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-      "server": "xc115-1.meiziba5566.com",
-      "server_port": 443,
-      "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "xc115-1.meiziba5566.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/f40a8d65"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
-      "server": "xcf037.facai2024.com",
-      "server_port": 443,
-      "uuid": "d9863037-0463-4615-e972-36ba9662d1e9",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "xcf037.facai2024.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/d9863037",
-        "headers": {
-          "Host": "xcf037.facai2024.com"
-        }
       }
     },
     {
