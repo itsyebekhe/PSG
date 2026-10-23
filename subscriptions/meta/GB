@@ -9,7 +9,6 @@ proxies:
   - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "gb.srv.dvzh.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9ab3a362-1518-496d-b08d-eced45cec936", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "gb.srv.dvzh.net", "reality-opts": {"public-key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0", "short-id": "d30f9d846a7c8cba"}}
   - {"name": "🇬🇧 GB | VLESS | @red2ray #2 [fast]", "server": "18.168.90.187", "port": 22223, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @red2ray #3 [fast]", "server": "18.168.90.187", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]", "server": "milo.rubinaz.xyz", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -20,7 +19,6 @@ proxy-groups:
       - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #3 [fast]'
-      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -31,7 +29,6 @@ proxy-groups:
       - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #2 [fast]'
       - '🇬🇧 GB | VLESS | @red2ray #3 [fast]'
-      - '🇬🇧 GB | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

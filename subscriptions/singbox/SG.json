@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSUU=
+//profile-title: base64:UFNHIHwgU0c=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE | SS | @outline_ir #1 [slow]",
-        "🇮🇪 IE | SS | @free1_vpn #1 [fast]",
+        "🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE | SS | @outline_ir #1 [slow]",
-        "🇮🇪 IE | SS | @free1_vpn #1 [fast]"
+        "🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,27 +67,22 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @outline_ir #1 [slow]",
-      "server": "20.123.1.55",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "YF329KNGVTUZ1qrH",
+      "type": "vless",
+      "tag": "🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]",
+      "server": "funagfrdfs.alixxplay.com",
+      "server_port": 30892,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @free1_vpn #1 [fast]",
-      "server": "20.166.51.228",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LVMlhvK82To1FGsy",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "us1p1.xn--ghq880n3na965a.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4",
+          "short_id": "3d31326f95"
+        }
       }
     },
     {
