@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG | VLESS | @outline_ir #1 [medium]",
-        "🇧🇬 BG | SS | @netfreedom0 #1 [medium]",
+        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @outline_ir #1 [medium]",
-        "🇧🇬 BG | SS | @netfreedom0 #1 [medium]"
+        "🇧🇬 BG | VLESS | @outline_ir #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @outline_ir #1 [medium]",
+      "tag": "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
       "server": "45.9.156.42",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
@@ -92,18 +90,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "gw.v2.RelayService"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 BG | SS | @netfreedom0 #1 [medium]",
-      "server": "213.183.63.60",
-      "server_port": 9061,
-      "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {

@@ -53,7 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [slow]",
         "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -65,7 +67,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]"
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [slow]",
+        "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -113,6 +117,24 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [slow]",
+      "server": "max.fin2.henlo.ir",
+      "server_port": 443,
+      "uuid": "21beb4b3-6280-4368-9f1c-273754bdbd17",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "-M3CSmkpfN2vfdEOm_x446cV1tRxoO8RTscI5sPdQGY",
+          "short_id": "6a3c20088e420cc2"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]",
       "server": "account.datagrid.cl",
       "server_port": 8443,
@@ -131,6 +153,29 @@
           "enabled": true,
           "public_key": "8m9MBxGrlPxtC4cYpEkEQsUHt5sHf9EBzb2DkOn2niw",
           "short_id": "ed50ca"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]",
+      "server": "sw.golangwikito.cfd",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "sw.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
         }
       }
     },

@@ -4,31 +4,28 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "31.77.131.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl5.himoy.space", "reality-opts": {"public-key": "1cnb_l4zv5exEEuv_cYoglyW_Tk4yGl9mjzHoHzvUXA", "short-id": "15f39a6a8150126e"}}
-  - {"name": "🇳🇱 NL | VLESS | @free1_vpn #1 [medium]", "server": "185.4.115.36", "port": 2094, "type": "vless", "skip-cert-verify": true, "uuid": "d4833ea6-5064-4f4a-8384-507e0d67a086", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs", "short-id": "55986a94e2228791"}}
   - {"name": "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]", "server": "51.158.206.80", "port": 23576, "type": "vless", "skip-cert-verify": true, "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "fuck.rkn", "reality-opts": {"public-key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s", "short-id": "01"}}
   - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "89.34.230.66", "port": 60023, "type": "vless", "skip-cert-verify": true, "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "starlink.com", "grpc-opts": {"grpc-service-name": ""}, "reality-opts": {"public-key": "PFL3AoMNTu9-VrM2WIrvQl2l-ibVgR5vIE1Vh-txKVg", "short-id": "6070d424a64f75"}}
   - {"name": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]", "server": "sw.golangwikito.cfd", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "sw.golangwikito.cfd", "reality-opts": {"public-key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg", "short-id": "a1037b25dcef6aa7"}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
-      - '🇳🇱 NL | VLESS | @free1_vpn #1 [medium]'
       - '🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
-      - '🇳🇱 NL | VLESS | @free1_vpn #1 [medium]'
       - '🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

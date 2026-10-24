@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,36 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
         "🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netmellianti #1 [fast]",
+      "server": "213.156.152.124",
+      "server_port": 443,
+      "uuid": "7c393e48-7104-4d4c-98b4-c1640d80d509",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Miro.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MQwKv7mfS-Rd1h3cDtteSq5r8buY-EskhxLb2OA-LCE",
+          "short_id": "3149ce78f70b78fe"
+        }
+      }
     },
     {
       "type": "vmess",
