@@ -7,7 +7,7 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇩🇪 DE | VLESS | @bored_vpn #1 [fast]", "server": "account.datagrid.cl", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "TeLEgRAM-ID-conf0088", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "nbg1-speed.hetzner.com", "reality-opts": {"public-key": "8m9MBxGrlPxtC4cYpEkEQsUHt5sHf9EBzb2DkOn2niw", "short-id": "ed50ca"}}
-  - {"name": "🇩🇪 DE | VLESS | @red2ray #1 [fast]", "server": "tickets.betust.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3b1fa839-2cb9-4511-9711-08800450aea3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "tickets.betust.net", "reality-opts": {"public-key": "TRaUsnzFf-AhWUuW4RQUQOBYTdM-qJdLDTTkzQNkcRw", "short-id": "f70764f8"}}
+  - {"name": "🇬🇧 GB | VLESS | @red2ray #1 [fast]", "server": "gb.srv.dvzh.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "9ab3a362-1518-496d-b08d-eced45cec936", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "gb.srv.dvzh.net", "reality-opts": {"public-key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0", "short-id": "d30f9d846a7c8cba"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -16,7 +16,7 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @bored_vpn #1 [fast]'
-      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -25,7 +25,7 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇩🇪 DE | VLESS | @bored_vpn #1 [fast]'
-      - '🇩🇪 DE | VLESS | @red2ray #1 [fast]'
+      - '🇬🇧 GB | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

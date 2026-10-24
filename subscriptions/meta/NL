@@ -6,7 +6,7 @@ proxies:
   - {"name": "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]", "server": "51.158.206.80", "port": 23576, "type": "vless", "skip-cert-verify": true, "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "fuck.rkn", "reality-opts": {"public-key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s", "short-id": "01"}}
   - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "176.98.189.253", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "safari", "flow": "xtls-rprx-vision", "servername": "www.surf.nl", "reality-opts": {"public-key": "XPXSq5nNCKDPwA_yk6AcOPRWC33E6APbjz_BaVJclzA", "short-id": "61"}}
   - {"name": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]", "server": "sw.golangwikito.cfd", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "sw.golangwikito.cfd", "reality-opts": {"public-key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg", "short-id": "a1037b25dcef6aa7"}}
-  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
+  - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - '🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +22,7 @@ proxy-groups:
       - '🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
-      - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
+      - '🇳🇱 NL | VLESS | @qeshmserver #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
