@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgU0c=
+//profile-title: base64:UFNHIHwgVFI=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,9 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]",
-        "🇸🇬 SG | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇸🇬 SG | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]",
-        "🇸🇬 SG | VLESS | @mtproxy22_v2ray #1 [fast]",
-        "🇸🇬 SG | SS | @mtproxy22_v2ray #1 [medium]"
+        "🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -71,54 +67,17 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]",
-      "server": "funagfrdfs.alixxplay.com",
-      "server_port": 30892,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
+      "type": "vmess",
+      "tag": "🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]",
+      "server": "free.ertebatgoostar.ir",
+      "server_port": 443,
+      "uuid": "c9eab439-53bf-46e4-ba58-fc368ae1ee8c",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
       "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "us1p1.xn--ghq880n3na965a.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4",
-          "short_id": "3d31326f95"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "funagfrdfs.alixxplay.com",
-      "server_port": 35544,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "iosapps.itunes.apple.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc",
-          "short_id": "25c79e5856c7"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 SG | SS | @mtproxy22_v2ray #1 [medium]",
-      "server": "139.180.220.175",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "qpSevKaUXYQKvSjp",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
+      "packet_encoding": ""
     },
     {
       "type": "direct",

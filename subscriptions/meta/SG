@@ -4,22 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
-  - {"name": "🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]", "server": "funagfrdfs.alixxplay.com", "port": 30892, "type": "vless", "skip-cert-verify": true, "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "us1p1.xn--ghq880n3na965a.com", "reality-opts": {"public-key": "YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4", "short-id": "3d31326f95"}}
-  - {"name": "🇸🇬 SG | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "funagfrdfs.alixxplay.com", "port": 35544, "type": "vless", "skip-cert-verify": true, "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "iosapps.itunes.apple.com", "reality-opts": {"public-key": "HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc", "short-id": "25c79e5856c7"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]'
-      - '🇸🇬 SG | VLESS | @mtproxy22_v2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @Proxymelimon #1 [fast]'
-      - '🇸🇬 SG | VLESS | @mtproxy22_v2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
