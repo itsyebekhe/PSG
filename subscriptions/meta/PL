@@ -3,18 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]", "server": "connect.hondamotor.site", "port": 10002, "type": "vless", "skip-cert-verify": true, "uuid": "c6362720-0931-4b91-b187-d8ecf3149734", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇵🇱 PL | VLESS | @netfreedom0 #1 [fast]", "server": "milo.rubinaz.xyz", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇵🇱 PL | VLESS | @netfreedom0 #2 [fast]", "server": "2.59.253.251", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nvidia.com", "reality-opts": {"public-key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI", "short-id": "db04ce8bdb8900f1"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇵🇱 PL | VLESS | @netfreedom0 #1 [fast]'
       - '🇵🇱 PL | VLESS | @netfreedom0 #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇵🇱 PL | VLESS | @netfreedom0 #1 [fast]'
       - '🇵🇱 PL | VLESS | @netfreedom0 #2 [fast]'
 rules:

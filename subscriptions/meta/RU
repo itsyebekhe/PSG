@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "82.202.157.123", "port": 5002, "type": "vless", "skip-cert-verify": true, "uuid": "34851fc1-c4bb-4b17-a815-bc17c09e11a0", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "br1.centermass.net", "ws-opts": {"path": "", "headers": {"Host": "82.202.157.123"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

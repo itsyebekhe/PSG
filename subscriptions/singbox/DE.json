@@ -50,11 +50,11 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | SS | @orange_vpns #1 [slow]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
@@ -75,11 +75,11 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | SS | @orange_vpns #1 [slow]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
@@ -100,7 +100,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
+      "tag": "🇩🇪 DE | SS | @orange_vpns #1 [slow]",
       "server": "185.176.204.18",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -143,15 +143,6 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "connect.hondamotor.site",
-      "server_port": 10002,
-      "uuid": "c6362720-0931-4b91-b187-d8ecf3149734",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
       "server": "146.70.20.147",
@@ -161,6 +152,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+      "server": "fly.lumexa.ir",
+      "server_port": 443,
+      "uuid": "756c8a9d-ff97-41f3-90b8-50f29acaba1f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dynu.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI",
+          "short_id": "9cc0"
+        }
       }
     },
     {
