@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]",
         "🇸🇨 SC | VLESS | @tanhanet #1 [fast]",
         "direct"
       ],
@@ -60,39 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]",
         "🇸🇨 SC | VLESS | @tanhanet #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "45.145.12.148",
-      "server_port": 443,
-      "uuid": "b869a8d0-0733-4346-8d1c-c1230a78651c",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM",
-          "short_id": "35debf0dc757d053"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
     },
     {
       "type": "vless",

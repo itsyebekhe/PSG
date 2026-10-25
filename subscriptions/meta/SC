@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]", "server": "45.145.12.148", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "b869a8d0-0733-4346-8d1c-c1230a78651c", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "max.ru", "grpc-opts": {"grpc-service-name": "grpc"}, "reality-opts": {"public-key": "OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM", "short-id": "35debf0dc757d053"}}
   - {"name": "🇸🇨 SC | VLESS | @tanhanet #1 [fast]", "server": "45.130.125.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "de.lezzatzone.ir"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇸🇨 SC | VLESS | @tanhanet #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇸🇨 SC | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇸🇨 SC | VLESS | @tanhanet #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
