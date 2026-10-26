@@ -51,13 +51,14 @@
       "outbounds": [
         "auto",
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nofiltering2 #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @free1_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-        "🇮🇷 IR | VLESS | @mpproxy #1 [slow]",
-        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
+        "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
+        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | VMESS | @Proxymelimon #1 [medium]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
@@ -76,13 +77,14 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇷 IR | VLESS | @config_proxy #1 [fast]",
-        "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
+        "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
         "🇮🇷 IR | VLESS | @nofiltering2 #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @free1_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
-        "🇮🇷 IR | VLESS | @mpproxy #1 [slow]",
-        "🇮🇷 IR | SS | @tanhanet #1 [fast]",
+        "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
+        "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | VMESS | @Proxymelimon #1 [medium]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #1 [fast]",
@@ -109,7 +111,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [slow]",
+      "tag": "🇮🇷 IR | VLESS | @config_proxy #2 [fast]",
       "server": "185.143.234.235",
       "server_port": 80,
       "uuid": "b8799fac-622a-4142-aab2-2aa862ad35f2",
@@ -194,7 +196,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @mpproxy #1 [slow]",
+      "tag": "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
       "server": "abr.superip.ir",
       "server_port": 2052,
       "uuid": "061da3a1-0b8a-4abe-a739-8b33ae5519c4",
@@ -210,7 +212,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇷 IR | SS | @tanhanet #1 [fast]",
+      "tag": "🇮🇷 IR | SS | @tanhanet #1 [medium]",
       "server": "109.122.251.86",
       "server_port": 20700,
       "method": "chacha20-ietf-poly1305",
@@ -219,6 +221,19 @@
       "tls": {
         "enabled": true
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇷 IR | VMESS | @Proxymelimon #1 [medium]",
+      "server": "dashboard.ojestore.top",
+      "server_port": 5381,
+      "uuid": "e387c0f5-4192-490d-ac86-7e17163e694c",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
     },
     {
       "type": "vless",

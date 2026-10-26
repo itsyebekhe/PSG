@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE | SS | @outline_ir #1 [slow]",
-        "🇮🇪 IE | SS | @red2ray #1 [fast]",
+        "🇮🇪 IE | SS | @outline_ir #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE | SS | @outline_ir #1 [slow]",
-        "🇮🇪 IE | SS | @red2ray #1 [fast]"
+        "🇮🇪 IE | SS | @outline_ir #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,23 +68,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @outline_ir #1 [slow]",
+      "tag": "🇮🇪 IE | SS | @outline_ir #1 [medium]",
       "server": "20.123.1.55",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "YF329KNGVTUZ1qrH",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @red2ray #1 [fast]",
-      "server": "20.123.12.228",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "lmG45rfbkt8DAPfP",
       "network": "tcp",
       "tls": {
         "enabled": true

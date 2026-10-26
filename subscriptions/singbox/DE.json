@@ -53,15 +53,15 @@
         "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #1 [medium]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
         "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
@@ -79,15 +79,15 @@
         "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
         "🇩🇪 DE | VLESS | @nofiltering2 #1 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
-        "🇩🇪 DE | VLESS | @free1_vpn #1 [medium]",
+        "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
         "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
@@ -142,15 +142,6 @@
       "server_port": 80,
       "uuid": "b40ddc5e-9d01-43e1-975c-30200fda12c4",
       "network": "httpupgrade",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "connect.hondamotor.site",
-      "server_port": 10002,
-      "uuid": "c6362720-0931-4b91-b187-d8ecf3149734",
-      "network": "tcp",
       "packet_encoding": "xudp"
     },
     {
@@ -230,7 +221,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
       "server": "max.fin2.henlo.ir",
       "server_port": 443,
       "uuid": "21beb4b3-6280-4368-9f1c-273754bdbd17",
@@ -300,6 +291,28 @@
           "public_key": "B5DMtKe8wjH_WeM8M8IEuKwPqJ6-Ku98JH_LifwehEY",
           "short_id": "6fe2994a0e208408"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "193.111.248.80",
+      "server_port": 2053,
+      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl3.mycloud1.org",
+        "reality": {
+          "enabled": true,
+          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
+          "short_id": "afee962d"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api"
       }
     },
     {
