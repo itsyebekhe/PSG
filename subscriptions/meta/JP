@@ -1,0 +1,25 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇯🇵 JP | VLESS | @free1_vpn #1 [fast]", "server": "funagfrdfs.alixxplay.com", "port": 54528, "type": "vless", "skip-cert-verify": true, "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo", "short-id": "54cca3c1c1c7"}}
+  - {"name": "🇯🇵 JP | VLESS | @Proxymelimon #1 [fast]", "server": "funagfrdfs.alixxplay.com", "port": 30892, "type": "vless", "skip-cert-verify": true, "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "us1p1.xn--ghq880n3na965a.com", "reality-opts": {"public-key": "YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4", "short-id": "3d31326f95"}}
+  - {"name": "🇯🇵 JP | VLESS | @red2ray #1 [fast]", "server": "funagfrdfs.alixxplay.com", "port": 54528, "type": "vless", "skip-cert-verify": true, "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo", "short-id": "54cca3c1c1c7"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇯🇵 JP | VLESS | @free1_vpn #1 [fast]'
+      - '🇯🇵 JP | VLESS | @Proxymelimon #1 [fast]'
+      - '🇯🇵 JP | VLESS | @red2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇯🇵 JP | VLESS | @free1_vpn #1 [fast]'
+      - '🇯🇵 JP | VLESS | @Proxymelimon #1 [fast]'
+      - '🇯🇵 JP | VLESS | @red2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
