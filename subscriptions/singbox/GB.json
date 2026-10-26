@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+        "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
@@ -69,9 +69,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+        "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
@@ -85,29 +85,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
-      "server": "57.129.138.142",
-      "server_port": 8080,
-      "uuid": "6228ee5b-fe07-4ee5-8300-386cd004eb84",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "itUb_lVoLPqG2cGs6vxsOaOImohnpXucmiaDm6_6iyU",
-          "short_id": "fe57"
-        }
-      }
     },
     {
       "type": "shadowsocks",
@@ -131,6 +108,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
+      "server": "57.129.138.142",
+      "server_port": 8080,
+      "uuid": "6228ee5b-fe07-4ee5-8300-386cd004eb84",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "itUb_lVoLPqG2cGs6vxsOaOImohnpXucmiaDm6_6iyU",
+          "short_id": "fe57"
+        }
       }
     },
     {
