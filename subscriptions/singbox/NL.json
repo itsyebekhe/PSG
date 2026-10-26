@@ -51,10 +51,12 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -64,10 +66,12 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]"
+        "🇳🇱 NL | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -94,6 +98,28 @@
           "enabled": true,
           "public_key": "1cnb_l4zv5exEEuv_cYoglyW_Tk4yGl9mjzHoHzvUXA",
           "short_id": "15f39a6a8150126e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+      "server": "77.90.61.135",
+      "server_port": 443,
+      "uuid": "8815925b-c7b8-4f94-9c24-9dc864f63a29",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg",
+          "short_id": "ce1dc482"
         }
       }
     },
@@ -161,6 +187,26 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+      "server": "nl6.pad-sservice.lat",
+      "server_port": 8443,
+      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl6.pad-sservice.lat"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NL6W",
+        "headers": {
+          "Host": "nl6.pad-service.com"
+        }
       }
     },
     {

@@ -63,6 +63,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #4 [fast]",
+        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
@@ -73,6 +74,7 @@
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
@@ -134,6 +136,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #4 [fast]",
+        "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
@@ -144,6 +147,7 @@
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
@@ -428,6 +432,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?Telegram---DailyConfigs---DailyConfigs---DailyConfigs---DailyConfigs",
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net."
+        }
+      }
+    },
+    {
       "type": "vmess",
       "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
       "server": "xc115-1.meiziba5566.com",
@@ -607,12 +631,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
+      "server": "167.82.64.64",
+      "server_port": 443,
+      "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net."
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
-      "server": "95.215.201.18",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "server": "dns3.m3hrzd.ir",
+      "server_port": 8044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "KE_i6CLns77k_cQUX8WQia-L3DCSWVfU",
       "network": "tcp",
       "tls": {
         "enabled": true
@@ -621,10 +664,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
-      "server": "dns3.m3hrzd.ir",
-      "server_port": 8044,
-      "method": "chacha20-ietf-poly1305",
-      "password": "KE_i6CLns77k_cQUX8WQia-L3DCSWVfU",
+      "server": "95.215.201.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
       "network": "tcp",
       "tls": {
         "enabled": true

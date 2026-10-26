@@ -4,22 +4,28 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]", "server": "31.77.131.246", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5131b5e9-2c3c-44a0-8f18-0641f3f21cac", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "nl5.himoy.space", "reality-opts": {"public-key": "1cnb_l4zv5exEEuv_cYoglyW_Tk4yGl9mjzHoHzvUXA", "short-id": "15f39a6a8150126e"}}
+  - {"name": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]", "server": "77.90.61.135", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "8815925b-c7b8-4f94-9c24-9dc864f63a29", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "random", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg", "short-id": "ce1dc482"}}
   - {"name": "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]", "server": "51.158.206.80", "port": 23576, "type": "vless", "skip-cert-verify": true, "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "fuck.rkn", "reality-opts": {"public-key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s", "short-id": "01"}}
   - {"name": "🇳🇱 NL | VLESS | @red2ray #1 [fast]", "server": "213.152.165.201", "port": 2094, "type": "vless", "skip-cert-verify": true, "uuid": "2ddcb519-ac96-48fe-8f91-4af4254c7d90", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs", "short-id": "55986a94e2228791"}}
+  - {"name": "🇳🇱 NL | VLESS | @red2ray #2 [fast]", "server": "nl6.pad-sservice.lat", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "nl6.pad-sservice.lat", "ws-opts": {"path": "", "headers": {"Host": "nl6.pad-service.com"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
+      - '🇳🇱 NL | VLESS | @orange_vpns #2 [fast]'
       - '🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇳🇱 NL | VLESS | @orange_vpns #1 [fast]'
+      - '🇳🇱 NL | VLESS | @orange_vpns #2 [fast]'
       - '🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]'
       - '🇳🇱 NL | VLESS | @red2ray #1 [fast]'
+      - '🇳🇱 NL | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
