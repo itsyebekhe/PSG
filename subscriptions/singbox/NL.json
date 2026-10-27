@@ -52,10 +52,10 @@
         "auto",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -67,10 +67,10 @@
       "outbounds": [
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #2 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -111,6 +111,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @beshkan #1 [fast]",
+      "server": "2.27.118.10",
+      "server_port": 443,
+      "uuid": "d9fe2431-8351-41eb-b956-75d96dec5d4a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ph-nl-s3784.cybercat.network",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc",
+          "short_id": "ecf1d9f7caa6ba67"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
       "server": "51.158.206.80",
       "server_port": 23576,
@@ -133,47 +155,43 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @red2ray #1 [fast]",
-      "server": "193.29.139.212",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QCXDxuDlTTMD7jtgHUjIoj",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "nl6.pad-sservice.lat",
-      "server_port": 8443,
-      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
+      "server": "188.164.248.246",
+      "server_port": 443,
+      "uuid": "45ceaca9-30f4-4035-85b7-8f83493911d8",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "nl6.pad-sservice.lat"
+        "server_name": "tamoai.ccwu.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/NL6W",
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
         "headers": {
-          "Host": "nl6.pad-service.com"
+          "Host": "tamoai.ccwu.cc"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @red2ray #2 [fast]",
-      "server": "193.29.139.197",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+      "server": "206.71.158.125",
+      "server_port": 443,
+      "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "dey.lnmarketplace.net",
+        "alpn": [
+          "h2"
+        ]
       }
     },
     {

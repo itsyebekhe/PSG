@@ -3,18 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇹🇷 TR | VLESS | @beshkan #1 [fast]", "server": "78.135.73.168", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4b1be712-774c-4b65-8491-a3339e124a70", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "tr2.tv-quoralyx.top", "reality-opts": {"public-key": "w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw", "short-id": "f4b2a12c"}}
   - {"name": "🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]", "server": "free.ertebatgoostar.ir", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "c9eab439-53bf-46e4-ba58-fc368ae1ee8c", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]", "server": "212.87.198.97", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0dab10de-af72-483b-b5d8-7f30cab4d35c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "ist.ascella.network", "reality-opts": {"public-key": "y8zu3te3MMaqdsQs8XlACT_IRcIBoenmGYnMaS-ZbX4", "short-id": "fc7aa00fc02c"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇹🇷 TR | VLESS | @beshkan #1 [fast]'
       - '🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]'
       - '🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇹🇷 TR | VLESS | @beshkan #1 [fast]'
       - '🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]'
       - '🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]'
 rules:

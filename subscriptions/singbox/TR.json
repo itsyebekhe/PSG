@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇹🇷 TR | VLESS | @beshkan #1 [fast]",
         "🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]",
         "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]",
         "direct"
@@ -60,6 +61,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇹🇷 TR | VLESS | @beshkan #1 [fast]",
         "🇹🇷 TR | VMESS | @Proxymelimon #1 [fast]",
         "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]"
       ],
@@ -67,6 +69,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @beshkan #1 [fast]",
+      "server": "78.135.73.168",
+      "server_port": 443,
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr2.tv-quoralyx.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw",
+          "short_id": "f4b2a12c"
+        }
+      }
     },
     {
       "type": "vmess",

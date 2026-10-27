@@ -50,11 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
         "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
@@ -67,11 +69,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
         "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
@@ -84,8 +88,8 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-      "server": "82.38.31.171",
+      "tag": "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
+      "server": "82.38.31.3",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "oZIoA69Q8yhcQV8ka3Pa3A",
@@ -96,11 +100,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
       "server": "146.70.46.214",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+      "server": "82.38.31.2",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
       "tls": {
         "enabled": true
@@ -145,6 +161,18 @@
       "type": "shadowsocks",
       "tag": "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
       "server": "82.38.31.202",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @beshkan #1 [fast]",
+      "server": "82.38.31.210",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ",
