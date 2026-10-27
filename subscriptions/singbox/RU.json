@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgUEw=
+//profile-title: base64:UFNHIHwgUlU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-        "🇵🇱 PL | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-        "🇵🇱 PL | VLESS | @red2ray #2 [fast]"
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,37 +70,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
-      "server": "31.59.143.242",
-      "server_port": 34451,
-      "uuid": "f259a2e5-fd8d-4db9-a3ac-6b26322cffa9",
-      "network": "xhttp",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+      "server": "217.16.31.218",
+      "server_port": 443,
+      "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "pl-cfe6b10b7f.shamanapp.online",
-        "insecure": true,
+        "server_name": "max.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "short_id": "e7"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @red2ray #2 [fast]",
-      "server": "pl-cfe6b10b7f.shamanapp.online",
-      "server_port": 34451,
-      "uuid": "f259a2e5-fd8d-4db9-a3ac-6b26322cffa9",
-      "network": "xhttp",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]",
+      "server": "217.16.31.218",
+      "server_port": 443,
+      "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "pl-cfe6b10b7f.shamanapp.online",
-        "insecure": true,
+        "server_name": "max.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "short_id": "e7"
         }
       }
     },

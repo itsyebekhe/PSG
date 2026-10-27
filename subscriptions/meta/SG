@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]", "server": "www.lianchuang123.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2c473bc0-484c-49d5-8cf3-c89d26b724fe", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "sni.mmadcoffee.info", "ws-opts": {"path": "/", "headers": {"Host": "smtp.mmadcoffee.info"}}}
-  - {"name": "🇸🇬 SG | VLESS | @netfreedom0 #1 [slow]", "server": "45.132.75.213", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "f46182d1-e13b-47d3-97e2-fa5426a93e7c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY", "short-id": "cd7e85995ae2afc9"}}
+  - {"name": "🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]", "server": "45.132.75.213", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "f46182d1-e13b-47d3-97e2-fa5426a93e7c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY", "short-id": "cd7e85995ae2afc9"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @netfreedom0 #1 [slow]'
+      - '🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇬 SG | VLESS | @freeconfigsplus #1 [fast]'
-      - '🇸🇬 SG | VLESS | @netfreedom0 #1 [slow]'
+      - '🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

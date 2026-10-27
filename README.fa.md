@@ -5,10 +5,10 @@
 ### سازنده اشتراک پروکسی
 
 ![Updated](https://img.shields.io/badge/بروزرسانی-2026-10-27-blue?style=flat-square)
-![Configs](https://img.shields.io/badge/کانفیگ-308-green?style=flat-square)
+![Configs](https://img.shields.io/badge/کانفیگ-306-green?style=flat-square)
 ![Lite](https://img.shields.io/badge/سبک-149-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/کانال-84-orange?style=flat-square)
-![Countries](https://img.shields.io/badge/کشور-29-purple?style=flat-square)
+![Countries](https://img.shields.io/badge/کشور-28-purple?style=flat-square)
 
 [**English**](README.md)
 
@@ -20,37 +20,38 @@
 
 | | |
 |:---|:---|
-| 🔢 **308** کانفیگ | 🪶 **149** سبک |
-| 📡 **84** کانال | 🌍 **29** کشور |
-| ☁️ **240** کلودفلر | ⚡ **510** سریع |
+| 🔢 **306** کانفیگ | 🪶 **149** سبک |
+| 📡 **84** کانال | 🌍 **28** کشور |
+| ☁️ **239** کلودفلر | ⚡ **451** سریع |
 
 <details>
 <summary><b>⚡ توزیع پروتکل‌ها</b></summary>
 
-> 🔒 **VLESS** `███████████████` 398 (129.2%)
-> ⚡ **REALITY** `█░░░░░░░░░░░░░░` 44 (14.3%)
-> 🔑 **SS** `█░░░░░░░░░░░░░░` 42 (13.6%)
-> 🛡️ **VMESS** `█░░░░░░░░░░░░░░` 34 (11.0%)
+> 🔒 **VLESS** `███████████████` 397 (129.7%)
+> ⚡ **REALITY** `█░░░░░░░░░░░░░░` 45 (14.7%)
+> 🔑 **SS** `█░░░░░░░░░░░░░░` 41 (13.4%)
+> 🛡️ **VMESS** `█░░░░░░░░░░░░░░` 32 (10.5%)
+> 🌊 **HY2** `░░░░░░░░░░░░░░░` 1 (0.3%)
 
 </details>
 
 <details>
 <summary><b>🌍 توزیع کشورها</b></summary>
 
-> 🇽🇽 **XX** `████████████` 233
+> 🇽🇽 **XX** `████████████` 232
 > 🇺🇸 **US** `█████░░░░░░░` 114
-> 🇸🇪 **SE** `█░░░░░░░░░░░` 28
-> 🇮🇷 **IR** `█░░░░░░░░░░░` 23
-> 🇩🇪 **DE** `█░░░░░░░░░░░` 21
-> 🇬🇧 **GB** `█░░░░░░░░░░░` 20
+> 🇸🇪 **SE** `█░░░░░░░░░░░` 29
+> 🇮🇷 **IR** `█░░░░░░░░░░░` 25
+> 🇩🇪 **DE** `█░░░░░░░░░░░` 20
+> 🇬🇧 **GB** `░░░░░░░░░░░░` 18
 > 🇳🇱 **NL** `░░░░░░░░░░░░` 12
-> 🇫🇷 **FR** `░░░░░░░░░░░░` 10
+> 🇫🇷 **FR** `░░░░░░░░░░░░` 11
 > 🇨🇦 **CA** `░░░░░░░░░░░░` 10
-> 🇷🇺 **RU** `░░░░░░░░░░░░` 9
-> 🇮🇹 **IT** `░░░░░░░░░░░░` 5
-> 🇵🇱 **PL** `░░░░░░░░░░░░` 4
-> 🇸🇬 **SG** `░░░░░░░░░░░░` 4
+> 🇷🇺 **RU** `░░░░░░░░░░░░` 8
+> 🇮🇹 **IT** `░░░░░░░░░░░░` 7
 > 🇧🇬 **BG** `░░░░░░░░░░░░` 3
+> 🇦🇪 **AE** `░░░░░░░░░░░░` 3
+> 🇸🇬 **SG** `░░░░░░░░░░░░` 3
 > 🇸🇨 **SC** `░░░░░░░░░░░░` 3
 
 </details>
@@ -58,9 +59,9 @@
 <details>
 <summary><b>🚀 توزیع سرعت</b></summary>
 
-> ⚡ **سریع** — 510 کانفیگ (کمتر از ۲۰۰ms)
-> 🟡 **متوسط** — 6 کانفیگ (۲۰۰-۵۰۰ms)
-> 🐢 **کند** — 2 کانفیگ (بیش از ۵۰۰ms)
+> ⚡ **سریع** — 451 کانفیگ (کمتر از ۲۰۰ms)
+> 🟡 **متوسط** — 62 کانفیگ (۲۰۰-۵۰۰ms)
+> 🐢 **کند** — 3 کانفیگ (بیش از ۵۰۰ms)
 
 </details>
 
@@ -127,7 +128,7 @@
 
 ## 📡 کانال‌ها (84)
 
-1. **@prrofile_purple** — 77 configs — سرور - V2rayNG
+1. **@prrofile_purple** — 76 configs — سرور - V2rayNG
 2. **@kafing_2** — 34 configs — کافینگ رایگان
 3. **@outlinereleasedkey** — 30 configs — Free You keys
 4. **@lockey_vpn** — 15 configs — LOCKEY_VPN
@@ -138,17 +139,17 @@
 9. **@proxie** — 12 configs — V2ray Proxies
 10. **@customizev2ray** — 12 configs — CUSTOMIZE V2ray
 11. **@kurd_v2ray** — 12 configs — VPN فیلتر شکن
-12. **@netfreedom0** — 10 configs — NetFreedom
-13. **@nofiltering2** — 9 configs — Nofiltering2 V2rayng رفع فیلتر
-14. **@novinology** — 9 configs — Novinology نوینولوژی
-15. **@hope_net** — 9 configs — Hope Net
-16. **@red2ray** — 9 configs — Red2Ray V2rayNG کانفیگ رایگان
+12. **@red2ray** — 10 configs — Red2Ray V2rayNG کانفیگ رایگان
+13. **@netfreedom0** — 10 configs — NetFreedom
+14. **@nofiltering2** — 9 configs — Nofiltering2 V2rayng رفع فیلتر
+15. **@novinology** — 9 configs — Novinology نوینولوژی
+16. **@hope_net** — 9 configs — Hope Net
 17. **@minovpnch** — 9 configs — کانال MinoVpn
 18. **@mehrosaboran** — 8 configs — پروکسی و v2rayمهربانی
 19. **@mester_v2ray** — 8 configs — 𝐌𝐞𝐬𝐭𝐞𝐫.𝐯𝟐𝐫𝐚𝐲 نات پیکسل
 20. **@serverv2ray00** — 8 configs — ایران پروکسی وکانفیکiran proxy
 21. **@realvpnmaster** — 8 configs — Vpn master
-22. **@beshkan** — 7 configs — بشکن Beshkan
+22. **@Proxymelimon** — 7 configs — پروکسی و کانفیگ رایگان
 23. **@outline_ir** — 7 configs — سرور اوتلاین ا سرور V2ray
 24. **@iranvipnet** — 7 configs — VIP_V2rayNG
 25. **@free_vip3** — 7 configs — Free Service
