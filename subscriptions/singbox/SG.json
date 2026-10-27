@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]",
+        "🇸🇬 SG | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇸🇬 SG | VLESS | @netfreedom0 #1 [slow]",
         "🇸🇬 SG | SS | @netfreedom0 #1 [medium]",
         "direct"
       ],
@@ -60,7 +61,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]",
+        "🇸🇬 SG | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇸🇬 SG | VLESS | @netfreedom0 #1 [slow]",
         "🇸🇬 SG | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -69,8 +71,20 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 SG | SS | @mtproxy22_v2ray #1 [medium]",
+      "server": "139.180.220.175",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "qpSevKaUXYQKvSjp",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]",
+      "tag": "🇸🇬 SG | VLESS | @netfreedom0 #1 [slow]",
       "server": "45.132.75.213",
       "server_port": 2053,
       "uuid": "f46182d1-e13b-47d3-97e2-fa5426a93e7c",
