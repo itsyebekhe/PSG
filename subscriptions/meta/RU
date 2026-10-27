@@ -3,20 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]", "server": "217.16.31.218", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw", "short-id": "e7"}}
-  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]", "server": "217.16.31.218", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw", "short-id": "e7"}}
+  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "217.16.31.218", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw", "short-id": "e7"}}
+  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]", "server": "217.16.31.218", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw", "short-id": "e7"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]'
-      - '🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]'
-      - '🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
