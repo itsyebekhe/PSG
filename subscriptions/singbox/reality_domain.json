@@ -54,8 +54,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
-        "🇮🇷 IR | VLESS | @nofiltering2 #1 [fast]",
+        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+        "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -68,8 +70,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]",
-        "🇮🇷 IR | VLESS | @nofiltering2 #1 [fast]",
-        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]"
+        "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+        "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
+        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -140,7 +144,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @nofiltering2 #1 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+      "server": "dlx-2.viralforge.ru",
+      "server_port": 443,
+      "uuid": "047466dd-05aa-4331-abf7-322c5aaecf97",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlx-2.viralforge.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s",
+          "short_id": "a1b2c3d4b5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
       "server": "p2tun0.greewebservices.ir",
       "server_port": 28820,
       "uuid": "2582857a-632b-4c4e-9b67-96213cbaf58c",
@@ -180,6 +207,28 @@
           "enabled": true,
           "public_key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI",
           "short_id": "9cc0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
+      "server": "mojigr.fusetea.ir",
+      "server_port": 1102,
+      "uuid": "1a62ce14-2bac-4a56-98a8-851841b41df6",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.aparat.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r753xovnUQvFw0toamiB3UsmgR33o8SXswOK_HrKrmU",
+          "short_id": "886cff912766c2d1"
         }
       }
     },

@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇨 SC | VLESS | @tanhanet #1 [fast]", "server": "45.130.125.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "de.lezzatzone.ir"}
+  - {"name": "🇸🇨 SC | VLESS | @red2ray #1 [fast]", "server": "156.252.229.11", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.googleapis.com", "reality-opts": {"public-key": "7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A", "short-id": "974f7f8f"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇨 SC | VLESS | @tanhanet #1 [fast]'
+      - '🇸🇨 SC | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇨 SC | VLESS | @tanhanet #1 [fast]'
+      - '🇸🇨 SC | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
