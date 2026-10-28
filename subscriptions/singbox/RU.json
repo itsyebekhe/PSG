@@ -50,9 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
-        "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+        "🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
-        "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]"
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+        "🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
       "server": "217.16.31.218",
       "server_port": 443,
       "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2",
@@ -95,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
       "server": "217.16.31.218",
       "server_port": 443,
       "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2",
@@ -118,7 +120,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]",
+      "server": "tgfree.rush-server.com",
+      "server_port": 443,
+      "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "anyfile2file.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
+          "short_id": "64c1fe36c7846400"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
       "server": "194.87.143.165",
       "server_port": 8443,
       "uuid": "f9613819-d2fe-4b3a-a2e6-40c184c6854c",

@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇮🇳 IN | VLESS | @hope_net #1 [medium]", "server": "172.105.252.35", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "99de7aac-d2a5-48fd-92cb-d1e6c3c719a4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "in-full.privateip.net"}
+  - {"name": "🇮🇳 IN | VLESS | @red2ray #1 [medium]", "server": "122.176.216.52", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "app-6ada5023.deploy.meerasolution.com", "ws-opts": {"path": "", "headers": {"Host": "app-6ada5023.deploy.meerasolution.com"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇮🇳 IN | VLESS | @hope_net #1 [medium]'
+      - '🇮🇳 IN | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇮🇳 IN | VLESS | @hope_net #1 [medium]'
+      - '🇮🇳 IN | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
