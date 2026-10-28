@@ -17,7 +17,7 @@ proxies:
   - {"name": "🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]", "server": "45.132.75.213", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "f46182d1-e13b-47d3-97e2-fa5426a93e7c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY", "short-id": "cd7e85995ae2afc9"}}
   - {"name": "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]", "server": "147.182.183.207", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e7be1334-6a1d-47c0-8c9a-c7a5b8575499", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "z--KbBlQtkBgTcrtdBJeGeCymIrLdaUDwkb44pAp6nY", "short-id": "4c"}}
   - {"name": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]", "server": "95.179.138.190", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "telegram-id-qeshmserver", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "zula.ir", "reality-opts": {"public-key": "ipM5-HQ6sNBZhPGNLNpq8voqMvgxBeL9LDZY4sQ5Yyk", "short-id": "d2bab77a"}}
-  - {"name": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]", "server": "49.13.27.100", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "*.gsmarena.com", "grpc-opts": {"grpc-service-name": "@ipV2Ray"}, "reality-opts": {"public-key": "AQ_czQOq5paFHTJMjxD-uLklfIDCammNofaA8QggRjg", "short-id": "1fefa3a0"}}
+  - {"name": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]", "server": "49.13.27.100", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "*.gsmarena.com", "grpc-opts": {"grpc-service-name": "@ipV2Ray"}, "reality-opts": {"public-key": "AQ_czQOq5paFHTJMjxD-uLklfIDCammNofaA8QggRjg", "short-id": "1fefa3a0"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -36,7 +36,7 @@ proxy-groups:
       - '🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]'
       - '🇺🇸 US | VLESS | @proxygrizzly #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
-      - '🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]'
+      - '🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -55,7 +55,7 @@ proxy-groups:
       - '🇸🇬 SG | VLESS | @netfreedom0 #1 [medium]'
       - '🇺🇸 US | VLESS | @proxygrizzly #1 [fast]'
       - '🇳🇱 NL | VLESS | @qeshmserver #1 [fast]'
-      - '🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]'
+      - '🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
