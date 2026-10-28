@@ -5,6 +5,7 @@ log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]", "server": "217.16.31.218", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw", "short-id": "e7"}}
   - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]", "server": "217.16.31.218", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "af9c2bcf-fe68-4379-9c78-6e5f1b4af0e2", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw", "short-id": "e7"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [medium]", "server": "194.87.143.165", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "f9613819-d2fe-4b3a-a2e6-40c184c6854c", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "random", "ws-opts": {"path": "", "headers": {"Host": "194.87.143.165"}}}
   - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]", "server": "nl2.h1cloud.net", "port": 25452, "type": "vless", "skip-cert-verify": true, "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.ns.nl", "reality-opts": {"public-key": "zJI16_ywLd4clshY0IQQPxQ_YBbIq2b0XTO_dnTJOy4", "short-id": "fe51f413b9646e97"}}
 proxy-groups:
   - name: "PROXY"
@@ -12,6 +13,7 @@ proxy-groups:
     proxies:
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]'
       - '🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
       - '🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
@@ -19,6 +21,7 @@ proxy-groups:
     proxies:
       - '🇷🇺 RU | VLESS | @prrofile_purple #1 [medium]'
       - '🇷🇺 RU | VLESS | @prrofile_purple #2 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
       - '🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT

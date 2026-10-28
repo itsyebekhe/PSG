@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQUU=
+//profile-title: base64:UFNHIHwgTFQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
+        "🇱🇹 LT | VLESS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 AE | VLESS | @red2ray #1 [fast]"
+        "🇱🇹 LT | VLESS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,28 +68,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 AE | VLESS | @red2ray #1 [fast]",
-      "server": "140.225.199.136",
-      "server_port": 8443,
-      "uuid": "6c713691-3ca2-002b-ad25-113d1bed6b03",
-      "network": "grpc",
+      "tag": "🇱🇹 LT | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "88.216.69.253",
+      "server_port": 443,
+      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "strm.yandex.net",
+        "server_name": "server8.9966338.xyz",
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "86EUYgrS7mazQ-GsiMnStyHSx9AlG8B_-KgXluNdWXI",
-          "short_id": "d3ab13e9c496c399"
+          "fingerprint": "unsafe"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "google.storage.v2.Storage"
+        "type": "ws",
+        "path": "/fdtiouasopeiyre0r95y8",
+        "headers": {
+          "Host": "server8.9966338.xyz"
+        }
       }
     },
     {

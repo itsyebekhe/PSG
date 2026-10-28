@@ -61,10 +61,11 @@
         "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @flyv2ray #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #3 [fast]",
@@ -79,7 +80,9 @@
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #3 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
@@ -148,10 +151,11 @@
         "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @flyv2ray #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #3 [fast]",
@@ -166,7 +170,9 @@
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇺🇸 US | VLESS | @hope_net #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #3 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
@@ -409,10 +415,53 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "kala.fortresshost.ir",
+      "server_port": 443,
+      "uuid": "c60cd62f-8dc5-415f-826b-abb7856027d1",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "kala.fortresshost.ir",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
       "server": "fly.lumexa.ir",
       "server_port": 443,
       "uuid": "756c8a9d-ff97-41f3-90b8-50f29acaba1f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dynu.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI",
+          "short_id": "9cc0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @flyv2ray #2 [fast]",
+      "server": "fly.lumexa.ir",
+      "server_port": 443,
+      "uuid": "7a96136a-20ad-4aec-86bd-f6622fbb8ce6",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
@@ -452,28 +501,6 @@
         "path": "/",
         "headers": {
           "Host": "tr-cd.sublink-vip2.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
-      "server": "mojigr.fusetea.ir",
-      "server_port": 1102,
-      "uuid": "1a62ce14-2bac-4a56-98a8-851841b41df6",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.aparat.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "r753xovnUQvFw0toamiB3UsmgR33o8SXswOK_HrKrmU",
-          "short_id": "886cff912766c2d1"
         }
       }
     },
@@ -694,7 +721,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #3 [fast]",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
       "server": "wwww.qarvian.ir",
       "server_port": 443,
       "uuid": "30d27765-07a2-49a4-9afa-ab6252e60448",
@@ -710,6 +737,56 @@
         "path": "/",
         "headers": {
           "Host": "albaniaoijji.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+      "server": "ar.vipsharifi.ir",
+      "server_port": 2084,
+      "uuid": "95d31eef-d6bc-4f0e-90c5-f74851704cdd",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ar.vipsharifi.ir",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "Ed/",
+        "headers": {
+          "Host": "ar.vipsharifi.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+      "server": "static.229.163.46.78.clients.your-server.de",
+      "server_port": 8443,
+      "uuid": "d95f7357-ea19-4005-b604-00fec089fdbf",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "static.229.163.46.78.clients.your-server.de",
+        "insecure": true,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },

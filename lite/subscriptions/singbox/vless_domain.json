@@ -60,13 +60,14 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -109,13 +110,14 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
-        "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -296,28 +298,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
-      "server": "mojigr.fusetea.ir",
-      "server_port": 1102,
-      "uuid": "1a62ce14-2bac-4a56-98a8-851841b41df6",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.aparat.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "r753xovnUQvFw0toamiB3UsmgR33o8SXswOK_HrKrmU",
-          "short_id": "886cff912766c2d1"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
       "server": "www.speedtest.net",
       "server_port": 8880,
@@ -405,6 +385,54 @@
       "transport": {
         "type": "ws",
         "path": "/yhowcws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "wwww.qarvian.ir",
+      "server_port": 443,
+      "uuid": "30d27765-07a2-49a4-9afa-ab6252e60448",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "firefox.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "albaniaoijji.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+      "server": "ar.vipsharifi.ir",
+      "server_port": 2084,
+      "uuid": "95d31eef-d6bc-4f0e-90c5-f74851704cdd",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ar.vipsharifi.ir",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "Ed/",
+        "headers": {
+          "Host": "ar.vipsharifi.ir"
+        }
       }
     },
     {

@@ -51,16 +51,14 @@
       "outbounds": [
         "auto",
         "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
-        "🇬🇧 GB | VLESS | @flyv2ray #1 [medium]",
+        "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #3 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -70,16 +68,14 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
         "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
-        "🇬🇧 GB | VLESS | @flyv2ray #1 [medium]",
+        "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @free1_vpn #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-        "🇬🇧 GB | VLESS | @privatevpns #3 [fast]"
+        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -100,19 +96,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-      "server": "82.38.31.2",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [medium]",
       "server": "146.70.46.199",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -123,8 +107,20 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
+      "server": "82.38.31.149",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @flyv2ray #1 [medium]",
+      "tag": "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]",
       "server": "57.129.138.142",
       "server_port": 8080,
       "uuid": "6228ee5b-fe07-4ee5-8300-386cd004eb84",
@@ -196,25 +192,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-      "server": "51.24.205.217",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
-      "server": "13.43.65.99",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-      "network": "tcp",
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @privatevpns #3 [fast]",
-      "server": "18.170.150.142",
+      "server": "3.8.63.248",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
