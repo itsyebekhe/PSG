@@ -63,12 +63,12 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+        "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
@@ -90,8 +90,8 @@
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
+        "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -113,12 +113,12 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
+        "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
@@ -140,8 +140,8 @@
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
         "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
-        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
-        "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]"
+        "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -325,6 +325,23 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
+      "server": "blue.rodya.ir",
+      "server_port": 443,
+      "uuid": "e0fa5345-c640-4458-8049-42ed926d3b2c",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "blue.rodya.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
       "server": "codepen.io",
       "server_port": 443,
@@ -399,28 +416,6 @@
     {
       "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
-      "server": "fst.mobistora.ir",
-      "server_port": 443,
-      "uuid": "4cebda86-2af3-4757-a83f-b31136856884",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "link.aparat.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HLpLMCvrPiRj4klewfrHBu0Yqz8EX6Hzk2v-vy44wQQ",
-          "short_id": "1e0815e664af2cd4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
       "server": "tr-pro.mobistora.ir",
       "server_port": 1091,
       "uuid": "4cebda86-2af3-4757-a83f-b31136856884",
@@ -837,6 +832,22 @@
     },
     {
       "type": "vless",
+      "tag": "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
+      "server": "ubia2-join.outline-vpn.cloud",
+      "server_port": 80,
+      "uuid": "48bd4d22-e42f-4749-af6a-85ecf716c823",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "fkhamnei.kosnanatfilterchi.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
       "server": "www.zula.ir",
       "server_port": 443,
@@ -852,22 +863,6 @@
         "path": "/vless",
         "headers": {
           "Host": "tr1-vless.sshmax.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @lemonshopvpn #1 [fast]",
-      "server": "www.speedtest.net",
-      "server_port": 80,
-      "uuid": "f4e22eff-20b2-4af7-aee9-4a67b82b47f3",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On+,+@Config_On",
-        "headers": {
-          "Host": "ok-config-10.4zkaban.xyz"
         }
       }
     },

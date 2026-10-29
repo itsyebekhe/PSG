@@ -56,6 +56,7 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VMESS | @Proxymelimon #1 [medium]",
         "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
@@ -84,6 +85,7 @@
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | SS | @tanhanet #1 [medium]",
+        "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
         "🇮🇷 IR | VMESS | @Proxymelimon #1 [medium]",
         "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
@@ -190,6 +192,23 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
+      "server": "blue.rodya.ir",
+      "server_port": 443,
+      "uuid": "e0fa5345-c640-4458-8049-42ed926d3b2c",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "blue.rodya.ir",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @miov2ray #1 [fast]",
       "server": "parspack.com",
       "server_port": 443,
@@ -232,28 +251,6 @@
     {
       "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
-      "server": "fst.mobistora.ir",
-      "server_port": 443,
-      "uuid": "4cebda86-2af3-4757-a83f-b31136856884",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "link.aparat.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HLpLMCvrPiRj4klewfrHBu0Yqz8EX6Hzk2v-vy44wQQ",
-          "short_id": "1e0815e664af2cd4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
       "server": "tr-pro.mobistora.ir",
       "server_port": 1091,
       "uuid": "4cebda86-2af3-4757-a83f-b31136856884",
@@ -276,7 +273,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #3 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #2 [fast]",
       "server": "de-pro.mobistora.ir",
       "server_port": 443,
       "uuid": "4cebda86-2af3-4757-a83f-b31136856884",
@@ -293,6 +290,29 @@
           "enabled": true,
           "public_key": "F3q_CP4Tw7d-v7-nrSk5kxPZSBeFLCM90GAxsB4nNmQ",
           "short_id": "ebb7edbe3d80ca6a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #3 [fast]",
+      "server": "212.23.214.92",
+      "server_port": 443,
+      "uuid": "4cebda86-2af3-4757-a83f-b31136856884",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "link.aparat.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZqfaC-mBxABW1783oo4W3t_gBK0hsBHPskLWZB42eTE",
+          "short_id": "cd2127913b181d62"
         }
       }
     },

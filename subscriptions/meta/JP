@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]", "server": "ubia2-join.outline-vpn.cloud", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "48bd4d22-e42f-4749-af6a-85ecf716c823", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "fkhamnei.kosnanatfilterchi.eu.org"}}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
