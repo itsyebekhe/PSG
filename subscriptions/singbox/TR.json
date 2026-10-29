@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
+        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | VLESS | @beshkan #1 [fast]",
+        "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
-        "🇹🇷 TR | VLESS | @beshkan #1 [fast]"
+        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @beshkan #1 [fast]",
+        "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +72,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [medium]",
+      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
       "server": "vip.brelux.ir",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
@@ -100,6 +102,29 @@
           "enabled": true,
           "public_key": "w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw",
           "short_id": "f4b2a12c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]",
+      "server": "212.87.198.97",
+      "server_port": 443,
+      "uuid": "0dab10de-af72-483b-b5d8-7f30cab4d35c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ist.ascella.network",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y8zu3te3MMaqdsQs8XlACT_IRcIBoenmGYnMaS-ZbX4",
+          "short_id": "fc7aa00fc02c"
         }
       }
     },

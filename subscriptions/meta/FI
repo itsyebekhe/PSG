@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "assets.halyvanedorogo.ru", "port": 11515, "type": "vless", "skip-cert-verify": true, "uuid": "cb8fbad5-4f14-55bc-a24a-3510f47f4b1b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.sony.com", "reality-opts": {"public-key": "A826RSu-yeVM_t6v7kwHKasHSdfI9KOzUw3WaIa9SWc", "short-id": "65149fc5ba"}}
+  - {"name": "🇫🇮 FI | VLESS | @red2ray #1 [fast]", "server": "45.144.234.157", "port": 14430, "type": "vless", "skip-cert-verify": true, "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "45.144.234.157"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
+      - '🇫🇮 FI | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

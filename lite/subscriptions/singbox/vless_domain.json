@@ -60,13 +60,13 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -87,7 +87,7 @@
         "🇽🇽 XX | VLESS | @freev2flyng #2 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
         "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]",
@@ -109,13 +109,13 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
         "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #1 [fast]",
         "🇽🇽 XX | VLESS | @f_nirevil #2 [fast]",
         "🇽🇽 XX | VLESS | @free4allvpn #1 [fast]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
@@ -136,7 +136,7 @@
         "🇽🇽 XX | VLESS | @freev2flyng #2 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @kopltall_vpn #2 [fast]",
-        "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+        "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
         "🇺🇸 US | VLESS | @serverv2ray00 #1 [fast]",
         "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @lemonshopvpn #1 [fast]"
@@ -296,6 +296,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @free1_vpn #1 [medium]",
+      "server": "mojigr.fusetea.ir",
+      "server_port": 1102,
+      "uuid": "1a62ce14-2bac-4a56-98a8-851841b41df6",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.aparat.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r753xovnUQvFw0toamiB3UsmgR33o8SXswOK_HrKrmU",
+          "short_id": "886cff912766c2d1"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇽🇽 XX | VLESS | @lockey_vpn #1 [fast]",
       "server": "www.speedtest.net",
       "server_port": 8880,
@@ -383,29 +405,6 @@
       "transport": {
         "type": "ws",
         "path": "/yhowcws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "static.229.163.46.78.clients.your-server.de",
-      "server_port": 8443,
-      "uuid": "d95f7357-ea19-4005-b604-00fec089fdbf",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.229.163.46.78.clients.your-server.de",
-        "insecure": true,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
       }
     },
     {
@@ -761,7 +760,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [fast]",
+      "tag": "🇮🇷 IR | VLESS | @nn_vpn #1 [medium]",
       "server": "allsms.rozfa.com",
       "server_port": 443,
       "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
