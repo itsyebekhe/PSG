@@ -51,8 +51,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @beshkan #1 [fast]",
-        "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]",
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,8 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @beshkan #1 [fast]",
-        "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]"
+        "🇹🇷 TR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -84,49 +82,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @beshkan #1 [fast]",
-      "server": "78.135.73.168",
-      "server_port": 443,
-      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇷 TR | VLESS | @red2ray #1 [fast]",
+      "server": "tr.mobistora.ir",
+      "server_port": 8080,
+      "uuid": "4cebda86-2af3-4757-a83f-b31136856884",
       "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "tr2.tv-quoralyx.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw",
-          "short_id": "f4b2a12c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]",
-      "server": "212.87.198.97",
-      "server_port": 443,
-      "uuid": "0dab10de-af72-483b-b5d8-7f30cab4d35c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ist.ascella.network",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "y8zu3te3MMaqdsQs8XlACT_IRcIBoenmGYnMaS-ZbX4",
-          "short_id": "fc7aa00fc02c"
-        }
-      }
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",
