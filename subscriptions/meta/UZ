@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇺🇿 UZ | VLESS | @red2ray #1 [medium]", "server": "185.76.14.21", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3cd95e58-9f0a-47e1-9937-64a58e949aa5", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "stats.vk-portal.net", "reality-opts": {"public-key": "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do", "short-id": "3c6fc84d"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇺🇿 UZ | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇺🇿 UZ | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

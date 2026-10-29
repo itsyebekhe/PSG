@@ -8,7 +8,7 @@ proxies:
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇫🇮 FI | VLESS | @orange_vpns #1 [fast]", "server": "assets.halyvanedorogo.ru", "port": 11515, "type": "vless", "skip-cert-verify": true, "uuid": "cb8fbad5-4f14-55bc-a24a-3510f47f4b1b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.sony.com", "reality-opts": {"public-key": "A826RSu-yeVM_t6v7kwHKasHSdfI9KOzUw3WaIa9SWc", "short-id": "65149fc5ba"}}
   - {"name": "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]", "server": "fly.lumexa.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "756c8a9d-ff97-41f3-90b8-50f29acaba1f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "dynu.com", "reality-opts": {"public-key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI", "short-id": "9cc0"}}
-  - {"name": "🇮🇷 IR | VLESS | @red2ray #1 [fast]", "server": "tr-pro.mobistora.ir", "port": 1091, "type": "vless", "skip-cert-verify": true, "uuid": "4cebda86-2af3-4757-a83f-b31136856884", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "amzn.com", "reality-opts": {"public-key": "xoaAnIMfk3f33p-0G8vVc1_JDiJkxE4ucJTGrWZMDHU", "short-id": "3556bb1b5635ee32"}}
+  - {"name": "🇺🇸 US | VLESS | @red2ray #1 [fast]", "server": "s12.bsh-net.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a0fa7e19-70ec-41e0-b0cc-bcc984d4201a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "s12.bsh-net.ru", "reality-opts": {"public-key": "QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk", "short-id": "51079f144d661484"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -18,7 +18,7 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @flyv2ray #1 [fast]'
-      - '🇮🇷 IR | VLESS | @red2ray #1 [fast]'
+      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -28,7 +28,7 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇫🇮 FI | VLESS | @orange_vpns #1 [fast]'
       - '🇩🇪 DE | VLESS | @flyv2ray #1 [fast]'
-      - '🇮🇷 IR | VLESS | @red2ray #1 [fast]'
+      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

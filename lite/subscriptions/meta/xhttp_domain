@@ -6,7 +6,6 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]", "server": "spd-mynames.global.ssl.fastly.net", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]", "server": "blue.rodya.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e0fa5345-c640-4458-8049-42ed926d3b2c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "blue.rodya.ir"}
 proxy-groups:
   - name: "PROXY"
@@ -15,7 +14,6 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇺🇸 US | VLESS | @kafing_2 #1 [fast]'
       - '🇮🇷 IR | VLESS | @luckyvpn #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -24,7 +22,6 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇺🇸 US | VLESS | @kafing_2 #1 [fast]'
       - '🇮🇷 IR | VLESS | @luckyvpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
