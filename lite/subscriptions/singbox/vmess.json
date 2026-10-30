@@ -55,7 +55,7 @@
         "KingRezaPahlavi",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
-        "🇮🇷 IR | VMESS | @Proxymelimon #1 [medium]",
+        "🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [medium]",
         "🇺🇸 US | VMESS | @mi_pn_official #1 [fast]",
@@ -65,6 +65,7 @@
         "🇺🇸 US | VMESS | @manstervpn #1 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
         "🇺🇸 US | VMESS | @ir_netproxy #1 [fast]",
+        "🇰🇷 KR | VMESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]",
@@ -81,7 +82,7 @@
         "KingRezaPahlavi",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
-        "🇮🇷 IR | VMESS | @Proxymelimon #1 [medium]",
+        "🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]",
         "🇮🇷 IR | VMESS | @NamiraConfigs #1 [medium]",
         "🇺🇸 US | VMESS | @mi_pn_official #1 [fast]",
@@ -91,6 +92,7 @@
         "🇺🇸 US | VMESS | @manstervpn #1 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
         "🇺🇸 US | VMESS | @ir_netproxy #1 [fast]",
+        "🇰🇷 KR | VMESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @magickey_shop #1 [fast]"
@@ -186,16 +188,27 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇷 IR | VMESS | @Proxymelimon #1 [medium]",
-      "server": "dashboard.ojestore.top",
-      "server_port": 5381,
-      "uuid": "e387c0f5-4192-490d-ac86-7e17163e694c",
+      "tag": "🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "euu1yalfmcqvljex.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "d237ab38-1974-4b36-94a3-0665ce8587b9",
       "security": "auto",
       "alter_id": 0,
       "global_padding": false,
       "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "euu1yalfmcqvljex.v.3dns.vip"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "euu1yalfmcqvljex.v.3dns.vip"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -386,6 +399,19 @@
           "Host": "ophelia.mom"
         }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 KR | VMESS | @red2ray #1 [fast]",
+      "server": "217.142.138.61",
+      "server_port": 80,
+      "uuid": "ac1b933d-afff-4487-93ef-f57130a55dff",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": ""
     },
     {
       "type": "vmess",

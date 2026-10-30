@@ -13,8 +13,7 @@ proxies:
   - {"name": "🇩🇪 DE | VLESS | @flyv2ray #2 [fast]", "server": "fly.lumexa.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7a96136a-20ad-4aec-86bd-f6622fbb8ce6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "dynu.com", "reality-opts": {"public-key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI", "short-id": "9cc0"}}
   - {"name": "🇩🇪 DE | VLESS | @flyv2ray #3 [fast]", "server": "fly.lumexa.ir", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "47e7e14d-2519-4146-aa2f-6eaa52c0a908", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "dynu.com", "reality-opts": {"public-key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI", "short-id": "9cc0"}}
   - {"name": "🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]", "server": "tgfree.rush-server.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "flow": "xtls-rprx-vision", "servername": "anyfile2file.com", "reality-opts": {"public-key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", "short-id": "64c1fe36c7846400"}}
-  - {"name": "🇺🇸 US | VLESS | @red2ray #1 [fast]", "server": "s12.bsh-net.ru", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a0fa7e19-70ec-41e0-b0cc-bcc984d4201a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "s12.bsh-net.ru", "reality-opts": {"public-key": "QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk", "short-id": "51079f144d661484"}}
-  - {"name": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]", "server": "nl2.h1cloud.net", "port": 25452, "type": "vless", "skip-cert-verify": true, "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.ns.nl", "reality-opts": {"public-key": "zJI16_ywLd4clshY0IQQPxQ_YBbIq2b0XTO_dnTJOy4", "short-id": "fe51f413b9646e97"}}
+  - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]", "server": "nl2.h1cloud.net", "port": 25452, "type": "vless", "skip-cert-verify": true, "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.ns.nl", "reality-opts": {"public-key": "zJI16_ywLd4clshY0IQQPxQ_YBbIq2b0XTO_dnTJOy4", "short-id": "fe51f413b9646e97"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -29,8 +28,7 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @flyv2ray #2 [fast]'
       - '🇩🇪 DE | VLESS | @flyv2ray #3 [fast]'
       - '🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]'
-      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
+      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -45,8 +43,7 @@ proxy-groups:
       - '🇩🇪 DE | VLESS | @flyv2ray #2 [fast]'
       - '🇩🇪 DE | VLESS | @flyv2ray #3 [fast]'
       - '🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]'
-      - '🇺🇸 US | VLESS | @red2ray #1 [fast]'
-      - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
+      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
