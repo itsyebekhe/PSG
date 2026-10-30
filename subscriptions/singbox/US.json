@@ -75,8 +75,10 @@
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
@@ -142,8 +144,10 @@
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
@@ -245,26 +249,6 @@
     {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "uuid": "XpnTeam-39",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
       "server": "146.75.59.186",
       "server_port": 443,
       "uuid": "7dee06cc-4bc8-43ca-a6c2-59f81107f2e3",
@@ -283,7 +267,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
       "server": "199.232.78.170",
       "server_port": 443,
       "uuid": "XpnTeam-43",
@@ -303,7 +287,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mehrosaboran #4 [fast]",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
       "server": "199.232.78.159",
       "server_port": 443,
       "uuid": "cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad",
@@ -322,7 +306,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mehrosaboran #5 [fast]",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #4 [fast]",
       "server": "199.232.78.160",
       "server_port": 443,
       "uuid": "f9a9aa1f-75fb-4490-9155-85567af7a0ff",
@@ -341,10 +325,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mehrosaboran #6 [fast]",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #5 [fast]",
       "server": "199.232.78.170",
       "server_port": 443,
       "uuid": "XpnTeam-53",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Appxdn.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mehrosaboran #6 [fast]",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "uuid": "XpnTeam-55",
       "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
@@ -645,6 +649,18 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
+      "server": "216.105.168.18",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "hCCWOcIsK5wrFz4OX70rWf",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
       "server": "151.101.64.155",
@@ -666,6 +682,28 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+      "server": "199.127.153.13",
+      "server_port": 43000,
+      "uuid": "cb06778c-91e6-480a-a791-a49dcfa940d5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8",
+          "short_id": "1a72a06c"
+        }
       }
     },
     {

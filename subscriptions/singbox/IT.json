@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgS1I=
+//profile-title: base64:UFNHIHwgSVQ=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 KR | VMESS | @red2ray #1 [fast]",
+        "🇮🇹 IT | SS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 KR | VMESS | @red2ray #1 [fast]"
+        "🇮🇹 IT | SS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,17 +67,16 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 KR | VMESS | @red2ray #1 [fast]",
-      "server": "217.142.138.61",
-      "server_port": 80,
-      "uuid": "ac1b933d-afff-4487-93ef-f57130a55dff",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
+      "type": "shadowsocks",
+      "tag": "🇮🇹 IT | SS | @outlinereleasedkey #1 [fast]",
+      "server": "202.50.253.90",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
       "network": "tcp",
-      "packet_encoding": ""
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "direct",
