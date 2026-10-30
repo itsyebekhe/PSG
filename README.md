@@ -4,8 +4,8 @@
 
 ### Premium Proxy Subscription Generator
 
-![Updated](https://img.shields.io/badge/Updated-2026-10-29-blue?style=flat-square)
-![Configs](https://img.shields.io/badge/Configs-322-green?style=flat-square)
+![Updated](https://img.shields.io/badge/Updated-2026-10-30-blue?style=flat-square)
+![Configs](https://img.shields.io/badge/Configs-323-green?style=flat-square)
 ![Lite](https://img.shields.io/badge/Lite-153-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/Channels-85-orange?style=flat-square)
 ![Countries](https://img.shields.io/badge/Countries-28-purple?style=flat-square)
@@ -20,18 +20,18 @@
 
 | | |
 |:---|:---|
-| 🔢 **322** configs | 🪶 **153** lite |
+| 🔢 **323** configs | 🪶 **153** lite |
 | 📡 **85** channels | 🌍 **28** countries |
-| ☁️ **235** Cloudflare | ⚡ **524** fast |
+| ☁️ **235** Cloudflare | ⚡ **520** fast |
 
 <details>
 <summary><b>⚡ Protocol Distribution</b></summary>
 
-> 🔒 **VLESS** `███████████████` 404 (125.5%)
-> ⚡ **REALITY** `██░░░░░░░░░░░░░` 56 (17.4%)
+> 🔒 **VLESS** `███████████████` 405 (125.4%)
+> ⚡ **REALITY** `██░░░░░░░░░░░░░` 56 (17.3%)
 > 🔑 **SS** `█░░░░░░░░░░░░░░` 48 (14.9%)
 > 🛡️ **VMESS** `█░░░░░░░░░░░░░░` 33 (10.2%)
-> 🌊 **HY2** `░░░░░░░░░░░░░░░` 1 (0.3%)
+> 🌊 **HY2** `░░░░░░░░░░░░░░░` 3 (0.9%)
 
 </details>
 
@@ -39,28 +39,28 @@
 <summary><b>🌍 Country Distribution</b></summary>
 
 > 🇽🇽 **XX** `████████████` 228
-> 🇺🇸 **US** `██████░░░░░░` 118
-> 🇩🇪 **DE** `█░░░░░░░░░░░` 28
+> 🇺🇸 **US** `██████░░░░░░` 119
+> 🇩🇪 **DE** `█░░░░░░░░░░░` 29
 > 🇸🇪 **SE** `█░░░░░░░░░░░` 28
 > 🇮🇷 **IR** `█░░░░░░░░░░░` 25
 > 🇬🇧 **GB** `█░░░░░░░░░░░` 22
-> 🇫🇷 **FR** `█░░░░░░░░░░░` 19
+> 🇫🇷 **FR** `░░░░░░░░░░░░` 18
 > 🇳🇱 **NL** `░░░░░░░░░░░░` 14
 > 🇨🇦 **CA** `░░░░░░░░░░░░` 10
 > 🇷🇺 **RU** `░░░░░░░░░░░░` 9
 > 🇫🇮 **FI** `░░░░░░░░░░░░` 7
+> 🇦🇪 **AE** `░░░░░░░░░░░░` 5
 > 🇮🇹 **IT** `░░░░░░░░░░░░` 5
 > 🇧🇬 **BG** `░░░░░░░░░░░░` 4
 > 🇸🇨 **SC** `░░░░░░░░░░░░` 3
-> 🇦🇪 **AE** `░░░░░░░░░░░░` 3
 
 </details>
 
 <details>
 <summary><b>🚀 Speed Distribution</b></summary>
 
-> ⚡ **Fast** — 524 configs (< 200ms)
-> 🟡 **Medium** — 18 configs (200-500ms)
+> ⚡ **Fast** — 520 configs (< 200ms)
+> 🟡 **Medium** — 25 configs (200-500ms)
 > 🐢 **Slow** — 0 configs (> 500ms)
 
 </details>
@@ -129,8 +129,8 @@
 ## 📡 Channels (85)
 
 1. **@prrofile_purple** — 84 configs — سرور - V2rayNG
-2. **@kafing_2** — 31 configs — کافینگ رایگان
-3. **@outlinereleasedkey** — 31 configs — Free You keys
+2. **@outlinereleasedkey** — 33 configs — Free You keys
+3. **@kafing_2** — 31 configs — کافینگ رایگان
 4. **@lockey_vpn** — 15 configs — LOCKEY_VPN
 5. **@nepo_v2ray** — 14 configs — Nepo_v2ray
 6. **@manstervpn** — 14 configs — KingVPN

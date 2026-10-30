@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgVVo=
+//profile-title: base64:UFNHIHwgSlA=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ | VLESS | @red2ray #1 [medium]",
+        "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ | VLESS | @red2ray #1 [medium]"
+        "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,20 +68,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇿 UZ | VLESS | @red2ray #1 [medium]",
-      "server": "185.76.14.21",
-      "server_port": 443,
-      "uuid": "3cd95e58-9f0a-47e1-9937-64a58e949aa5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇯🇵 JP | VLESS | @lemonshopvpn #1 [fast]",
+      "server": "ubia2-join.outline-vpn.cloud",
+      "server_port": 80,
+      "uuid": "48bd4d22-e42f-4749-af6a-85ecf716c823",
+      "network": "ws",
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "stats.vk-portal.net",
-        "reality": {
-          "enabled": true,
-          "public_key": "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do",
-          "short_id": "3c6fc84d"
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "fkhamnei.kosnanatfilterchi.eu.org"
         }
       }
     },

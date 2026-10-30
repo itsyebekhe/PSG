@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]", "server": "212.87.198.97", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0dab10de-af72-483b-b5d8-7f30cab4d35c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "ist.ascella.network", "reality-opts": {"public-key": "y8zu3te3MMaqdsQs8XlACT_IRcIBoenmGYnMaS-ZbX4", "short-id": "fc7aa00fc02c"}}
+  - {"name": "🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]", "server": "212.87.198.97", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0dab10de-af72-483b-b5d8-7f30cab4d35c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "ist.ascella.network", "reality-opts": {"public-key": "y8zu3te3MMaqdsQs8XlACT_IRcIBoenmGYnMaS-ZbX4", "short-id": "fc7aa00fc02c"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [medium]'
+      - '🇹🇷 TR | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

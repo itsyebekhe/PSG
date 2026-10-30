@@ -92,7 +92,7 @@
         "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇿 UZ | VLESS | @red2ray #1 [medium]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
@@ -186,7 +186,7 @@
         "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇿 UZ | VLESS | @red2ray #1 [medium]",
+        "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @proxie #1 [fast]",
@@ -986,20 +986,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇿 UZ | VLESS | @red2ray #1 [medium]",
-      "server": "185.76.14.21",
-      "server_port": 443,
-      "uuid": "3cd95e58-9f0a-47e1-9937-64a58e949aa5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇽🇽 XX | VLESS | @red2ray #1 [fast]",
+      "server": "104.18.47.140",
+      "server_port": 2096,
+      "uuid": "341832cc-ba98-425b-8225-b3db621a0da3",
+      "network": "ws",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "stats.vk-portal.net",
-        "reality": {
-          "enabled": true,
-          "public_key": "6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do",
-          "short_id": "3c6fc84d"
+        "server_name": "rainfall0705.cc.cd",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rainfall0705.cc.cd"
         }
       }
     },
