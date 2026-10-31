@@ -52,10 +52,9 @@
         "auto",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+        "🇩🇪 DE | VMESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
-        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @flyv2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @flyv2ray #3 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
@@ -82,10 +81,9 @@
       "outbounds": [
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @orange_vpns #2 [fast]",
+        "🇩🇪 DE | VMESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
-        "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
-        "🇩🇪 DE | VLESS | @flyv2ray #2 [fast]",
-        "🇩🇪 DE | VLESS | @flyv2ray #3 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
@@ -154,6 +152,19 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇩🇪 DE | VMESS | @orange_vpns #1 [fast]",
+      "server": "91.107.169.224",
+      "server_port": 80,
+      "uuid": "d4b69108-f756-48af-a331-e8356bc95eb4",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "httpupgrade",
+      "packet_encoding": ""
+    },
+    {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
       "server": "13.140.92.21",
@@ -178,72 +189,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @flyv2ray #1 [fast]",
-      "server": "fly.lumexa.ir",
-      "server_port": 443,
-      "uuid": "756c8a9d-ff97-41f3-90b8-50f29acaba1f",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "connect.wecantos.site",
+      "server_port": 10000,
+      "uuid": "a05ecf37-c661-4247-ab09-4432cf0f3cc1",
       "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dynu.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI",
-          "short_id": "9cc0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @flyv2ray #2 [fast]",
-      "server": "fly.lumexa.ir",
-      "server_port": 443,
-      "uuid": "7a96136a-20ad-4aec-86bd-f6622fbb8ce6",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dynu.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI",
-          "short_id": "9cc0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @flyv2ray #3 [fast]",
-      "server": "fly.lumexa.ir",
-      "server_port": 443,
-      "uuid": "47e7e14d-2519-4146-aa2f-6eaa52c0a908",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "dynu.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI",
-          "short_id": "9cc0"
-        }
-      }
+      "packet_encoding": "xudp"
     },
     {
       "type": "vless",
@@ -320,25 +271,6 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "96.62.224.155",
-      "server_port": 443,
-      "uuid": "a0fa7e19-70ec-41e0-b0cc-bcc984d4201a",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ded.bsh-net.ru",
-        "reality": {
-          "enabled": true,
-          "public_key": "eGTeI8aqjoea2v_vEHimFxEuC1IA42r2tg7IcP5oq1U",
-          "short_id": "8e72c89e1adf4dc4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
       "server": "88.216.70.43",
       "server_port": 1412,
       "uuid": "94c5a8a7-4296-400d-b413-639157be5224",
@@ -361,7 +293,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
       "server": "hw7.divarkhaghazi.com",
       "server_port": 465,
       "uuid": "d0d3d49c-56e8-40e1-9e83-793d03f83d93",
@@ -383,6 +315,25 @@
         "path": "/",
         "headers": {
           "Host": "hw7.divarkhaghazi.com."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @red2ray #3 [fast]",
+      "server": "96.62.224.155",
+      "server_port": 443,
+      "uuid": "a0fa7e19-70ec-41e0-b0cc-bcc984d4201a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ded.bsh-net.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "eGTeI8aqjoea2v_vEHimFxEuC1IA42r2tg7IcP5oq1U",
+          "short_id": "8e72c89e1adf4dc4"
         }
       }
     },

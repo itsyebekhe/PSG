@@ -51,9 +51,7 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
-        "🇫🇷 FR | SS | @orange_vpns #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
@@ -70,9 +68,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @outline_ir #1 [fast]",
-        "🇫🇷 FR | SS | @orange_vpns #1 [fast]",
-        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
@@ -101,37 +97,27 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @orange_vpns #1 [fast]",
-      "server": "51.83.192.80",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-      "server": "pl140.vpnbook.com",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "6heexyz",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "connect.wecantos.site",
-      "server_port": 10000,
-      "uuid": "a05ecf37-c661-4247-ab09-4432cf0f3cc1",
+      "tag": "🇫🇷 FR | VLESS | @orange_vpns #1 [fast]",
+      "server": "137.74.16.237",
+      "server_port": 443,
+      "uuid": "aaec4e42-a095-44b6-a239-f16d234a0798",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I",
+          "short_id": "b390e0a721d242b0"
+        }
+      }
     },
     {
       "type": "vless",
@@ -155,7 +141,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "35.181.13.152",
+      "server": "13.38.157.208",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -164,7 +150,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "13.38.157.208",
+      "server": "15.237.13.67",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
