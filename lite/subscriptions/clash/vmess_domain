@@ -3,6 +3,8 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]", "server": "www.gptcloudai.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/truth", "headers": {"Host": "www.gptcloudai.com"}}}
+  - {"name": "🇽🇽 XX | VMESS | @outlinereleasedkey #2 [fast]", "server": "www.windowssearchtools.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/truth", "headers": {"Host": "www.windowssearchtools.com"}}}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #1 [fast]", "server": "xc115-1.meiziba5566.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/f40a8d65", "headers": {"Host": "xc115-1.meiziba5566.com"}}}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #2 [fast]", "server": "xcf037.facai2024.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d9863037-0463-4615-e972-36ba9662d1e9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/d9863037", "headers": {"Host": "xcf037.facai2024.com"}}}
   - {"name": "🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]", "server": "euu1yalfmcqvljex.v.3dns.vip", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d237ab38-1974-4b36-94a3-0665ce8587b9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/ws-vmess", "headers": {"Host": "euu1yalfmcqvljex.v.3dns.vip"}}}
@@ -19,6 +21,8 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]'
+      - '🇽🇽 XX | VMESS | @outlinereleasedkey #2 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #2 [fast]'
       - '🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]'
@@ -35,6 +39,8 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇽🇽 XX | VMESS | @outlinereleasedkey #1 [fast]'
+      - '🇽🇽 XX | VMESS | @outlinereleasedkey #2 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #2 [fast]'
       - '🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]'
