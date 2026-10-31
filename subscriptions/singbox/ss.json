@@ -57,7 +57,7 @@
         "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
         "🇺🇸 US | SS | @proxy_confiingir #1 [fast]",
-        "🇮🇪 IE | SS | @outline_ir #1 [medium]",
+        "🇮🇪 IE | SS | @outline_ir #1 [slow]",
         "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
@@ -76,6 +76,7 @@
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
         "🇸🇬 SG | SS | @netfreedom0 #1 [medium]",
+        "🇧🇬 BG | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -91,7 +92,7 @@
         "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
         "🇺🇸 US | SS | @proxy_confiingir #1 [fast]",
-        "🇮🇪 IE | SS | @outline_ir #1 [medium]",
+        "🇮🇪 IE | SS | @outline_ir #1 [slow]",
         "🇬🇧 GB | SS | @orange_vpns #1 [fast]",
         "🇫🇷 FR | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
@@ -109,7 +110,8 @@
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
-        "🇸🇬 SG | SS | @netfreedom0 #1 [medium]"
+        "🇸🇬 SG | SS | @netfreedom0 #1 [medium]",
+        "🇧🇬 BG | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -205,7 +207,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇪 IE | SS | @outline_ir #1 [medium]",
+      "tag": "🇮🇪 IE | SS | @outline_ir #1 [slow]",
       "server": "20.123.1.55",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -426,6 +428,18 @@
       "server_port": 8388,
       "method": "chacha20-ietf",
       "password": "asd123456",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 BG | SS | @netfreedom0 #1 [fast]",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY",
       "network": "tcp",
       "tls": {
         "enabled": true

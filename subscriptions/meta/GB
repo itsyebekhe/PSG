@@ -6,6 +6,7 @@ proxies:
   - {"name": "🇬🇧 GB | VLESS | @flyv2ray #1 [fast]", "server": "57.129.138.142", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "6228ee5b-fe07-4ee5-8300-386cd004eb84", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "icloud.com", "reality-opts": {"public-key": "itUb_lVoLPqG2cGs6vxsOaOImohnpXucmiaDm6_6iyU", "short-id": "fe57"}}
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "13.43.164.49", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "52.56.69.117", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇬🇧 GB | VLESS | @privatevpns #3 [fast]", "server": "3.9.208.89", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -13,6 +14,7 @@ proxy-groups:
       - '🇬🇧 GB | VLESS | @flyv2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #3 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -20,6 +22,7 @@ proxy-groups:
       - '🇬🇧 GB | VLESS | @flyv2ray #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
       - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
+      - '🇬🇧 GB | VLESS | @privatevpns #3 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
