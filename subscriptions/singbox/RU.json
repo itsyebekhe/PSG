@@ -50,7 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #3 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #4 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]"
+        "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #3 [fast]",
+        "🇷🇺 RU | VLESS | @prrofile_purple #4 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,24 +74,91 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @Proxymelimon #1 [fast]",
-      "server": "tgfree.rush-server.com",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]",
+      "server": "84.38.187.169",
       "server_port": 443,
-      "uuid": "ebd1c0d6-7ff4-4b9f-8692-237517a27a64",
+      "uuid": "82282910-54a0-0032-b2df-86bfbce8ed36",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "mc.yandex.tr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rJMYW6mHgjs61mHxfm8Gmm_Re23sV_xe5b0IrTpLsiQ",
+          "short_id": "94c9dbbf07366d96"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #2 [fast]",
+      "server": "84.38.187.169",
+      "server_port": 443,
+      "uuid": "82282910-54a0-0032-b2df-86bfbce8ed36",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "mc.yandex.tr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rJMYW6mHgjs61mHxfm8Gmm_Re23sV_xe5b0IrTpLsiQ",
+          "short_id": "94c9dbbf07366d96"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #3 [fast]",
+      "server": "200.165.235.78",
+      "server_port": 443,
+      "uuid": "238e492b-bc20-4380-92b6-135d39112ca4",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "anyfile2file.com",
+        "server_name": "api8.eaglors.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0",
-          "short_id": "64c1fe36c7846400"
+          "public_key": "Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o",
+          "short_id": "52ccb3687fe0b7ec"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 RU | VLESS | @prrofile_purple #4 [fast]",
+      "server": "200.165.235.78",
+      "server_port": 443,
+      "uuid": "238e492b-bc20-4380-92b6-135d39112ca4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "api8.eaglors.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o",
+          "short_id": "52ccb3687fe0b7ec"
         }
       }
     },

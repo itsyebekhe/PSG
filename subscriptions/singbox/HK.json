@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]",
+        "🇭🇰 HK | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]"
+        "🇭🇰 HK | VMESS | @mtproxy22_v2ray #1 [fast]",
+        "🇭🇰 HK | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -87,6 +89,29 @@
         "path": "/ws-vmess",
         "headers": {
           "Host": "euu1yalfmcqvljex.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 HK | VLESS | @red2ray #1 [medium]",
+      "server": "165.154.63.139",
+      "server_port": 443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ",
+          "short_id": "ca4aedd4"
         }
       }
     },

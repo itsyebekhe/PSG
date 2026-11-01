@@ -52,10 +52,13 @@
         "auto",
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
         "🇳🇱 NL | SS | @beshkan #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | SS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
@@ -68,10 +71,13 @@
       "outbounds": [
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
+        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
         "🇳🇱 NL | SS | @beshkan #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | SS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
@@ -102,6 +108,32 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
+      "server": "31.57.250.65",
+      "server_port": 443,
+      "uuid": "id_telegram_MimiTdL",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA",
+          "short_id": "5b409d9a2b5b8dbf"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -172,6 +204,40 @@
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "195.63.146.10",
+      "server_port": 2096,
+      "uuid": "6da2c981-8c77-4340-bda3-93399b7aea26",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2riaCWjnC6m96hid0WcL9BG4vwzh8NoW_ps8CrVo1mo",
+          "short_id": "3649e084544949f1"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @red2ray #1 [fast]",
+      "server": "193.29.139.197",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
       "network": "tcp",
       "tls": {
         "enabled": true

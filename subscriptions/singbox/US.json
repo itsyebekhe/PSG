@@ -57,7 +57,7 @@
         "🇺🇸 US | VLESS | @mehrosaboran #4 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #5 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #6 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #1 [medium]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
@@ -73,11 +73,11 @@
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #4 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VMESS | @red2ray #1 [fast]",
+        "🇺🇸 US | SS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
@@ -125,7 +125,7 @@
         "🇺🇸 US | VLESS | @mehrosaboran #4 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #5 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #6 [fast]",
-        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
+        "🇺🇸 US | VLESS | @prrofile_purple #1 [medium]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
@@ -141,11 +141,11 @@
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #4 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VMESS | @red2ray #1 [fast]",
+        "🇺🇸 US | SS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VMESS | @NamiraConfigs #1 [fast]",
@@ -322,7 +322,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
+      "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [medium]",
       "server": "2.26.93.130",
       "server_port": 443,
       "uuid": "d6b59299-2f48-4e9b-9130-b9e9cb5d0a51",
@@ -605,6 +605,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @Proxymelimon #4 [fast]",
+      "server": "172.66.0.162",
+      "server_port": 443,
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "216.105.168.18",
@@ -614,29 +638,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "185.168.208.190",
-      "server_port": 47443,
-      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "us-1.waspguard.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hz7rzdHvTAVwfy48pa6313yBF-sV7V0svvPVnl95bgY",
-          "short_id": "ae97246a8f799854"
-        }
       }
     },
     {
@@ -664,23 +665,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @red2ray #1 [fast]",
-      "server": "172.111.146.64",
-      "server_port": 80,
-      "uuid": "05b8c783-7f59-47f9-9923-06a465679f6a",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "zoom.us"
-        }
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @red2ray #1 [fast]",
+      "server": "185.215.132.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
