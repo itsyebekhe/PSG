@@ -54,7 +54,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
+        "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,7 +68,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
-        "🇩🇪 DE | VLESS | @red2ray #1 [fast]"
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
+        "🇷🇸 RS | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -137,24 +139,54 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
-      "server": "bigshagy.zqpm.ir",
-      "server_port": 5780,
-      "uuid": "996f6fed-a94e-4e9d-b876-82bc4ad02847",
-      "network": "tcp",
+      "tag": "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
+      "server": "md3.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "md3.univesalsrv.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PF8LdirtBEOQ_w9-1-i3mhgeFYbIQ1iOu1FPCfxUHQo",
-          "short_id": "2efbb0033df59520"
+          "public_key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ",
+          "short_id": "9a72d40f1ff882b3"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "stats.v2.PushService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇸 RS | VLESS | @red2ray #1 [fast]",
+      "server": "rs3.univesalsrv.com",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs3.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gHDoSWGWMVZKWNKONWHw-Cpl0-bdI6GaKusgJIQ-vWQ",
+          "short_id": "35d05b666e2c6cdf"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "edge.v2.FeedService"
       }
     },
     {
