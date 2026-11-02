@@ -67,6 +67,7 @@
         "🇽🇽 XX | VLESS | @lockey_vpn #4 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #5 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #6 [fast]",
+        "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @luckyvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -90,7 +91,6 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
         "🇮🇷 IR | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
@@ -156,6 +156,7 @@
         "🇽🇽 XX | VLESS | @lockey_vpn #4 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #5 [fast]",
         "🇽🇽 XX | VLESS | @lockey_vpn #6 [fast]",
+        "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @luckyvpn #1 [fast]",
         "🇮🇷 IR | VLESS | @luckyvpn #2 [fast]",
         "🇽🇽 XX | VLESS | @kilid_stor #1 [fast]",
@@ -179,7 +180,6 @@
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | VLESS | @NamiraConfigs #2 [medium]",
         "🇮🇷 IR | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
@@ -439,6 +439,22 @@
       "uuid": "7be30ab7-2077-4115-f6cb-125226afd3c9",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
+      "server": "abr.superip.ir",
+      "server_port": 2052,
+      "uuid": "061da3a1-0b8a-4abe-a739-8b33ae5519c4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/API/superip",
+        "headers": {
+          "Host": "library.phill-up.ir"
+        }
+      }
     },
     {
       "type": "vless",
@@ -843,22 +859,6 @@
         "path": "vless-ws/?ed=2048",
         "headers": {
           "Host": "sub.shadowsokstes.WoRkErs.DeV"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
-      "server": "abr.superip.ir",
-      "server_port": 2052,
-      "uuid": "061da3a1-0b8a-4abe-a739-8b33ae5519c4",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/API/superip",
-        "headers": {
-          "Host": "library.phill-up.ir"
         }
       }
     },
