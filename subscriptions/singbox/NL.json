@@ -51,17 +51,16 @@
       "outbounds": [
         "auto",
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #2 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #4 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -72,17 +71,16 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 NL | SS | @outline_ir #1 [fast]",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇳🇱 NL | VLESS | @outlinereleasedkey #2 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #4 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | SS | @beshkan #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | SS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -100,6 +98,32 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+      "server": "book.jarbook.net",
+      "server_port": 443,
+      "uuid": "95d0e214-eab0-4701-93ed-fea4f1b56062",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "reg.jarbook.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nUUSNvkc5Xy6LRCP4yeFvbI8wFMx7gdgruPMNBq7jzo",
+          "short_id": "dceb4214"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "BookCatalog"
       }
     },
     {
@@ -142,68 +166,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "51.158.206.97",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #2 [fast]",
-      "server": "51.158.206.103",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-      "server": "51.158.206.96",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
       "server": "51.158.206.26",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -222,7 +185,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
       "server": "51.158.206.12",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -245,7 +208,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #4 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
       "server": "51.158.206.19",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -260,6 +223,18 @@
           "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "short_id": "01"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
+      "server": "193.29.139.204",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {
@@ -298,15 +273,21 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 NL | SS | @red2ray #1 [fast]",
-      "server": "193.29.139.197",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "177.177.215.45",
+      "server_port": 444,
+      "uuid": "254f28cb-d0c1-41e9-a06b-f2155213ff04",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "ams2.shtil.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {

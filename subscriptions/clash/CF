@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇽🇽 XX | VMESS | @orange_vpns #1 [fast]", "server": "www.ubuntuupdates.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/truth", "headers": {"Host": "www.ubuntuupdates.com"}}}
   - {"name": "🇽🇽 XX | VMESS | @hope_net #1 [fast]", "server": "104.16.61.8", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/", "headers": {"Host": "104.16.61.8"}}}
   - {"name": "🇽🇽 XX | VMESS | @Proxymelimon #1 [fast]", "server": "www.windowsmsidownloads.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/truth", "headers": {"Host": "www.windowsmsidownloads.com"}}}
   - {"name": "🇽🇽 XX | VMESS | @iranvpnet #1 [fast]", "server": "mute-math-d64e.0e503992ad7026.WOrKERs.deV", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/aveiror.com:443/linkvws", "headers": {"Host": "mute-math-d64e.0e503992ad7026.woRKERS.DeV"}}}
@@ -13,7 +12,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇽🇽 XX | VMESS | @orange_vpns #1 [fast]'
       - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
       - '🇽🇽 XX | VMESS | @Proxymelimon #1 [fast]'
       - '🇽🇽 XX | VMESS | @iranvpnet #1 [fast]'
@@ -23,7 +21,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇽🇽 XX | VMESS | @orange_vpns #1 [fast]'
       - '🇽🇽 XX | VMESS | @hope_net #1 [fast]'
       - '🇽🇽 XX | VMESS | @Proxymelimon #1 [fast]'
       - '🇽🇽 XX | VMESS | @iranvpnet #1 [fast]'

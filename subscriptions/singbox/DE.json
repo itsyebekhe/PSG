@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 DE | VMESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
+        "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
@@ -71,8 +72,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 DE | VMESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
+        "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
@@ -89,19 +91,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 DE | VMESS | @orange_vpns #1 [fast]",
-      "server": "91.107.169.224",
-      "server_port": 80,
-      "uuid": "d4b69108-f756-48af-a331-e8356bc95eb4",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "httpupgrade",
-      "packet_encoding": ""
     },
     {
       "type": "vless",
@@ -123,6 +112,41 @@
           "enabled": true,
           "public_key": "rtYs5r9380Y2zvtXBFfaBbnypJQ7_1x_uYu0cLpOXk4",
           "short_id": "d8fee47b2d3d94"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+      "server": "57.129.113.16",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "NcAXc0UZI6yQJE1p8QmOv8",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "5.252.179.15",
+      "server_port": 443,
+      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+          "short_id": "296f27de82dad7ff"
         }
       }
     },

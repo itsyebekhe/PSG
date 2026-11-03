@@ -6,7 +6,7 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇮🇷 IR | VLESS | @red2ray #1 [medium]", "server": "tunell2027.crackerbinam.org", "port": 48312, "type": "vless", "skip-cert-verify": true, "uuid": "f47057d5-120d-4b42-b6d6-30469aef6813", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y", "short-id": "902c315efc"}}
+  - {"name": "🇮🇷 IR | VLESS | @red2ray #1 [fast]", "server": "tunell2027.crackerbinam.org", "port": 48312, "type": "vless", "skip-cert-verify": true, "uuid": "f47057d5-120d-4b42-b6d6-30469aef6813", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y", "short-id": "902c315efc"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇮🇷 IR | VLESS | @red2ray #1 [medium]'
+      - '🇮🇷 IR | VLESS | @red2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +22,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇮🇷 IR | VLESS | @red2ray #1 [medium]'
+      - '🇮🇷 IR | VLESS | @red2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
