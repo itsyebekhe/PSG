@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇪🇸 ES | VLESS | @Proxymelimon #1 [fast]", "server": "83.97.79.93", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "e0216964-ffa1-4d39-82c4-0e40879a470d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ger.nullo.pro", "reality-opts": {"public-key": "e8vusEkL9FTC7oxFCp8biOWMFH-e-1IN21V6YNynGDg", "short-id": "6350d1647a4880"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇪🇸 ES | VLESS | @Proxymelimon #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇪🇸 ES | VLESS | @Proxymelimon #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

@@ -6,6 +6,7 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "🇲🇩 MD | VLESS | @red2ray #2 [fast]", "server": "md3.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "md3.univesalsrv.com", "grpc-opts": {"grpc-service-name": "stats.v2.PushService"}, "reality-opts": {"public-key": "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ", "short-id": "9a72d40f1ff882b3"}}
   - {"name": "🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]", "server": "nl2.h1cloud.net", "port": 25452, "type": "vless", "skip-cert-verify": true, "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.ns.nl", "reality-opts": {"public-key": "zJI16_ywLd4clshY0IQQPxQ_YBbIq2b0XTO_dnTJOy4", "short-id": "fe51f413b9646e97"}}
 proxy-groups:
   - name: "PROXY"
@@ -14,6 +15,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
+      - '🇲🇩 MD | VLESS | @red2ray #2 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -22,6 +24,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
+      - '🇲🇩 MD | VLESS | @red2ray #2 [fast]'
       - '🇳🇱 NL | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

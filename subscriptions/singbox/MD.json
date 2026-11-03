@@ -52,6 +52,7 @@
         "auto",
         "🇲🇩 MD | VLESS | @red2ray #1 [medium]",
         "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #3 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇩 MD | VLESS | @red2ray #1 [medium]",
-        "🇲🇩 MD | VLESS | @red2ray #2 [fast]"
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #3 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -118,6 +120,32 @@
       "transport": {
         "type": "grpc",
         "service_name": "stats.v2.PushService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @red2ray #3 [medium]",
+      "server": "89.35.14.31",
+      "server_port": 443,
+      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "md2.univesalsrv.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o",
+          "short_id": "d36a38659ce106cb"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hub.v1.SyncService"
       }
     },
     {

@@ -51,7 +51,7 @@
       "outbounds": [
         "auto",
         "🇮🇹 IT | SS | @outlinereleasedkey #1 [fast]",
-        "🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]",
+        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -61,7 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇹 IT | SS | @outlinereleasedkey #1 [fast]",
-        "🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]"
+        "🇮🇹 IT | SS | @netfreedom0 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -81,26 +81,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇹 IT | VLESS | @Proxymelimon #1 [fast]",
-      "server": "57.131.21.102",
-      "server_port": 8080,
-      "uuid": "09c10f40-6992-4b33-8d4a-6d8feb01323e",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇮🇹 IT | SS | @netfreedom0 #1 [medium]",
+      "server": "202.50.253.72",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Lew0Y0hNzQyEeLxBpBxC2QnshUrtPvSdkLykPZcqLHs",
-          "short_id": "b10dd5"
-        }
+        "enabled": true
       }
     },
     {
