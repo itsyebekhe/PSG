@@ -6,7 +6,7 @@ proxies:
   - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
-  - {"name": "🇲🇩 MD | VLESS | @red2ray #2 [fast]", "server": "md2.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "md2.univesalsrv.com", "grpc-opts": {"grpc-service-name": "hub.v1.SyncService"}, "reality-opts": {"public-key": "JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o", "short-id": "d36a38659ce106cb"}}
+  - {"name": "🇲🇩 MD | VLESS | @red2ray #2 [medium]", "server": "md2.univesalsrv.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "md2.univesalsrv.com", "grpc-opts": {"grpc-service-name": "hub.v1.SyncService"}, "reality-opts": {"public-key": "JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o", "short-id": "d36a38659ce106cb"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇲🇩 MD | VLESS | @red2ray #2 [fast]'
+      - '🇲🇩 MD | VLESS | @red2ray #2 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +22,7 @@ proxy-groups:
       - 'همکاری_ملی'
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
-      - '🇲🇩 MD | VLESS | @red2ray #2 [fast]'
+      - '🇲🇩 MD | VLESS | @red2ray #2 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
