@@ -54,7 +54,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+        "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -67,7 +68,8 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇲🇩 MD | VLESS | @red2ray #2 [fast]"
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+        "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -141,28 +143,50 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
-      "server": "md2.univesalsrv.com",
-      "server_port": 443,
-      "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
-      "network": "grpc",
+      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+      "server": "tuntrk.zapasircloud.ir",
+      "server_port": 3025,
+      "uuid": "f65ae31a-024e-4758-84d2-967704090f18",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "md2.univesalsrv.com",
+        "server_name": "amp-api-edge.apps.apple.com",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o",
-          "short_id": "d36a38659ce106cb"
+          "public_key": "7J2Op56IQJS5Js3jzC5KyKlcNps0gbEa4TyFXKnprAk",
+          "short_id": "02f76cc5e126ac4e"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "hub.v1.SyncService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
+      "server": "p2tun0.greewebservices.ir",
+      "server_port": 28820,
+      "uuid": "2582857a-632b-4c4e-9b67-96213cbaf58c",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "e3085d4fc679ba12"
+        }
       }
     },
     {
