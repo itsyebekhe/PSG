@@ -75,8 +75,9 @@
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇲🇩 MD | VLESS | @red2ray #2 [medium]",
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
         "🇲🇩 MD | VLESS | @red2ray #4 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -110,8 +111,9 @@
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇲🇩 MD | VLESS | @red2ray #2 [medium]",
-        "🇲🇩 MD | VLESS | @red2ray #4 [fast]"
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #4 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -678,7 +680,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @red2ray #2 [medium]",
+      "tag": "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
       "server": "md2.univesalsrv.com",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
@@ -726,6 +728,28 @@
       "transport": {
         "type": "grpc",
         "service_name": "hub.v1.RelayService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
+      "server": "tunell2027.crackerbinam.org",
+      "server_port": 48312,
+      "uuid": "f47057d5-120d-4b42-b6d6-30469aef6813",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y",
+          "short_id": "902c315efc"
+        }
       }
     },
     {

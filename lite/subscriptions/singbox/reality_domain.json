@@ -53,7 +53,8 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇲🇩 MD | VLESS | @red2ray #2 [medium]",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -65,7 +66,8 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇲🇩 MD | VLESS | @red2ray #2 [medium]"
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -113,7 +115,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @red2ray #2 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+      "server": "book.jarbook.net",
+      "server_port": 443,
+      "uuid": "95d0e214-eab0-4701-93ed-fea4f1b56062",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "reg.jarbook.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nUUSNvkc5Xy6LRCP4yeFvbI8wFMx7gdgruPMNBq7jzo",
+          "short_id": "dceb4214"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "BookCatalog"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
       "server": "md2.univesalsrv.com",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",

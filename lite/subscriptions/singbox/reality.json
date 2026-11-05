@@ -54,7 +54,6 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
-        "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
         "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
@@ -65,7 +64,8 @@
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
-        "🇲🇩 MD | VLESS | @red2ray #2 [medium]",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -78,7 +78,6 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇧🇬 BG | VLESS | @outline_ir #1 [fast]",
-        "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
         "🇹🇷 TR | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
@@ -89,7 +88,8 @@
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
-        "🇲🇩 MD | VLESS | @red2ray #2 [medium]"
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+        "🇲🇩 MD | VLESS | @red2ray #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -159,29 +159,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "gw.v2.RelayService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 JP | VLESS | @outline_ir #1 [fast]",
-      "server": "142.91.108.25",
-      "server_port": 443,
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.nztvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM",
-          "short_id": "ea36c03d86f91287"
-        }
       }
     },
     {
@@ -424,7 +401,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 MD | VLESS | @red2ray #2 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+      "server": "book.jarbook.net",
+      "server_port": 443,
+      "uuid": "95d0e214-eab0-4701-93ed-fea4f1b56062",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "reg.jarbook.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nUUSNvkc5Xy6LRCP4yeFvbI8wFMx7gdgruPMNBq7jzo",
+          "short_id": "dceb4214"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "BookCatalog"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 MD | VLESS | @red2ray #2 [fast]",
       "server": "md2.univesalsrv.com",
       "server_port": 443,
       "uuid": "2f35965a-9a9b-45fd-ba32-987296dfb6be",
