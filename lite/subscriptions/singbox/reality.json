@@ -53,13 +53,13 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
-        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+        "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
@@ -74,13 +74,13 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
-        "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-        "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+        "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]",
+        "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]"
@@ -131,33 +131,56 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "book.jarbook.net",
-      "server_port": 443,
-      "uuid": "95d0e214-eab0-4701-93ed-fea4f1b56062",
-      "network": "grpc",
+      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+      "server": "tuntrk.zapasircloud.ir",
+      "server_port": 3025,
+      "uuid": "f65ae31a-024e-4758-84d2-967704090f18",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "reg.jarbook.net",
+        "server_name": "amp-api-edge.apps.apple.com",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7J2Op56IQJS5Js3jzC5KyKlcNps0gbEa4TyFXKnprAk",
+          "short_id": "02f76cc5e126ac4e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]",
+      "server": "ee.subv.ru",
+      "server_port": 443,
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dvizhok.su",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "nUUSNvkc5Xy6LRCP4yeFvbI8wFMx7gdgruPMNBq7jzo",
-          "short_id": "dceb4214"
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "BookCatalog"
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [medium]",
+      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
       "server": "tunell2027.crackerbinam.org",
       "server_port": 48312,
       "uuid": "f47057d5-120d-4b42-b6d6-30469aef6813",
@@ -179,44 +202,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @prrofile_purple #1 [fast]",
-      "server": "2.26.93.130",
+      "tag": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
+      "server": "31.57.250.65",
       "server_port": 443,
-      "uuid": "d6b59299-2f48-4e9b-9130-b9e9cb5d0a51",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "uuid": "id_telegram_MimiTdL",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "se1.hat.onl",
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0q-auqEPBR3lETnoHLdm7OVbM0DWZQq74z_JV7WznUk",
-          "short_id": "ff25c7e7c95baabf"
+          "public_key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA",
+          "short_id": "5b409d9a2b5b8dbf"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "62.210.91.2",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -267,28 +274,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
-      "server": "31.57.250.65",
-      "server_port": 443,
-      "uuid": "id_telegram_MimiTdL",
-      "network": "grpc",
+      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "15.204.97.198",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "fuck.rkn",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA",
-          "short_id": "5b409d9a2b5b8dbf"
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
