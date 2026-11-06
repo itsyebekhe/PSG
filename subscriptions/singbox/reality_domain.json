@@ -53,9 +53,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
+        "🇦🇪 AE | VLESS | @free1_vpn #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -67,9 +68,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]",
-        "🇮🇷 IR | VLESS | @red2ray #1 [fast]"
+        "🇦🇪 AE | VLESS | @free1_vpn #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -113,6 +115,32 @@
       "transport": {
         "type": "ws",
         "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
+      "server": "book.jarbook.net",
+      "server_port": 443,
+      "uuid": "95d0e214-eab0-4701-93ed-fea4f1b56062",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "reg.jarbook.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nUUSNvkc5Xy6LRCP4yeFvbI8wFMx7gdgruPMNBq7jzo",
+          "short_id": "dceb4214"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "BookCatalog"
       }
     },
     {
@@ -166,23 +194,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @red2ray #1 [fast]",
-      "server": "tunell2027.crackerbinam.org",
-      "server_port": 48312,
-      "uuid": "f47057d5-120d-4b42-b6d6-30469aef6813",
+      "tag": "🇦🇪 AE | VLESS | @free1_vpn #1 [fast]",
+      "server": "lava.r6j.ir",
+      "server_port": 8111,
+      "uuid": "7ff79f4e-e902-4308-91db-410c6db1310a",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "tgju.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y",
-          "short_id": "902c315efc"
+          "public_key": "NKnJ79aZqPZWW8_xmiZX1o3-4UVZgC-yJsbVnwucaT8",
+          "short_id": "c9c5a6b5c022de8d"
         }
       }
     },
