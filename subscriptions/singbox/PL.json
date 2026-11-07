@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | VLESS | @outline_ir #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
-        "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]"
+        "🇵🇱 PL | VLESS | @outline_ir #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,31 +68,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]",
+      "tag": "🇵🇱 PL | VLESS | @outline_ir #1 [medium]",
       "server": "poland.starlink6.us",
       "server_port": 46940,
       "uuid": "331855d9-b6fb-468c-bf93-a5712d1fdfa0",
       "network": "tcp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "2.26.255.215",
-      "server_port": 443,
-      "uuid": "69e41e64-a832-471a-b740-94577ca85520",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudflare.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
-          "short_id": "50"
-        }
-      }
     },
     {
       "type": "direct",

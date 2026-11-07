@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [medium]", "server": "130.49.177.193", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "727a9178-d7f0-4142-8205-b0d19959ded0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "de-2.ffpn.pro", "reality-opts": {"public-key": "DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc", "short-id": "681fc2dd643bc2f3"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

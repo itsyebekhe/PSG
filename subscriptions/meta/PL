@@ -3,20 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [fast]", "server": "poland.starlink6.us", "port": 46940, "type": "vless", "skip-cert-verify": true, "uuid": "331855d9-b6fb-468c-bf93-a5712d1fdfa0", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]", "server": "2.26.255.215", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "69e41e64-a832-471a-b740-94577ca85520", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "cloudflare.com", "reality-opts": {"public-key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI", "short-id": "50"}}
+  - {"name": "🇵🇱 PL | VLESS | @outline_ir #1 [medium]", "server": "poland.starlink6.us", "port": 46940, "type": "vless", "skip-cert-verify": true, "uuid": "331855d9-b6fb-468c-bf93-a5712d1fdfa0", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇵🇱 PL | VLESS | @outline_ir #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇵🇱 PL | VLESS | @outline_ir #1 [fast]'
-      - '🇵🇱 PL | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇵🇱 PL | VLESS | @outline_ir #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
