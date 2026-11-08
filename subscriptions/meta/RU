@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [medium]", "server": "130.49.177.193", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "727a9178-d7f0-4142-8205-b0d19959ded0", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "de-2.ffpn.pro", "reality-opts": {"public-key": "DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc", "short-id": "681fc2dd643bc2f3"}}
+  - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]", "server": "147.45.104.86", "port": 7443, "type": "vless", "skip-cert-verify": true, "uuid": "af185070-7170-46a8-b1e9-d61a035f4691", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "KbjX7IJnVtwq2USeRmLgXzACOtFCiA5lnsXhIFOX3ho", "short-id": "a7eb8a4e"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [medium]'
+      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @mtproxy22_v2ray #1 [medium]'
+      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

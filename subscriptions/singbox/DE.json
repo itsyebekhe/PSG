@@ -52,12 +52,13 @@
         "auto",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #2 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #2 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
+        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
@@ -78,12 +79,13 @@
       "outbounds": [
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
         "🇩🇪 DE | VLESS | @outline_ir #2 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #2 [fast]",
+        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #1 [fast]",
         "🇩🇪 DE | VLESS | @father_vpn #2 [fast]",
         "🇩🇪 DE | VLESS | @mpproxy #1 [fast]",
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
+        "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #2 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
@@ -134,7 +136,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "150.241.79.124",
       "server_port": 443,
       "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
@@ -144,6 +146,10 @@
       "tls": {
         "enabled": true,
         "server_name": "de1.waspnest.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
         "reality": {
           "enabled": true,
           "public_key": "dlhvkjq7Sj-TT__FLwUJzFLMDCk8bgi85Uz4qDU-5FM",
@@ -152,20 +158,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #2 [fast]",
-      "server": "91.107.191.188",
-      "server_port": 443,
-      "uuid": "3a015ed8-6fac-483b-dba9-f52ea3854a04",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 DE | SS | @outlinereleasedkey #1 [fast]",
+      "server": "193.108.118.247",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "kala.bestsellers1.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "enabled": true
       }
     },
     {
@@ -238,6 +239,15 @@
       "server": "3.126.31.60",
       "server_port": 443,
       "uuid": "fa12c1f5-24be-4119-8506-aad16f3bcd35",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "167.233.129.126",
+      "server_port": 2474,
+      "uuid": "287db857-de04-4212-bd69-5d14083e340e",
       "network": "tcp",
       "packet_encoding": "xudp"
     },

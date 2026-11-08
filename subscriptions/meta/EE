@@ -6,7 +6,7 @@ proxies:
   - {"name": "🇪🇪 EE | VLESS | @orange_vpns #1 [fast]", "server": "178.214.109.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "40a86b1b-239d-455e-b53f-4c270788ba6e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "promo-digital.wb.ru", "reality-opts": {"public-key": "3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc", "short-id": "1cfa55abe4d2dc7a"}}
   - {"name": "🇪🇪 EE | VLESS | @orange_vpns #2 [fast]", "server": "178.214.109.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "40a86b1b-239d-455e-b53f-4c270788ba6e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "promo-digital.wb.ru", "reality-opts": {"public-key": "3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc", "short-id": "1cfa55abe4d2dc7a"}}
   - {"name": "🇪🇪 EE | VLESS | @orange_vpns #3 [fast]", "server": "185.215.184.85", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "90157e25-cee1-4217-921e-91f300bc1a24", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "dvizhok.su", "reality-opts": {"public-key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs", "short-id": "428ef87fd47a3a32"}}
-  - {"name": "🇪🇪 EE | VLESS | @flyv2ray #1 [medium]", "server": "185.225.205.53", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3d526c7f-059c-4e2b-b09a-8569b268935b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8", "short-id": "2e82d7ac"}}
+  - {"name": "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]", "server": "185.225.205.53", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3d526c7f-059c-4e2b-b09a-8569b268935b", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "addons.mozilla.org", "reality-opts": {"public-key": "2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8", "short-id": "2e82d7ac"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -14,7 +14,7 @@ proxy-groups:
       - '🇪🇪 EE | VLESS | @orange_vpns #1 [fast]'
       - '🇪🇪 EE | VLESS | @orange_vpns #2 [fast]'
       - '🇪🇪 EE | VLESS | @orange_vpns #3 [fast]'
-      - '🇪🇪 EE | VLESS | @flyv2ray #1 [medium]'
+      - '🇪🇪 EE | VLESS | @flyv2ray #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -22,7 +22,7 @@ proxy-groups:
       - '🇪🇪 EE | VLESS | @orange_vpns #1 [fast]'
       - '🇪🇪 EE | VLESS | @orange_vpns #2 [fast]'
       - '🇪🇪 EE | VLESS | @orange_vpns #3 [fast]'
-      - '🇪🇪 EE | VLESS | @flyv2ray #1 [medium]'
+      - '🇪🇪 EE | VLESS | @flyv2ray #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

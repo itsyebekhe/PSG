@@ -52,7 +52,8 @@
         "auto",
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
-        "🇮🇷 IR | VLESS | @father_vpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @nofiltering2 #2 [medium]",
+        "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | SS | @tanhanet #1 [medium]",
@@ -78,7 +79,8 @@
       "outbounds": [
         "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
         "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
-        "🇮🇷 IR | VLESS | @father_vpn #1 [medium]",
+        "🇮🇷 IR | VLESS | @nofiltering2 #2 [medium]",
+        "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇮🇷 IR | VLESS | @netmellianti #1 [fast]",
         "🇮🇷 IR | VLESS | @mpproxy #1 [fast]",
         "🇮🇷 IR | SS | @tanhanet #1 [medium]",
@@ -129,18 +131,45 @@
     {
       "type": "vless",
       "tag": "🇮🇷 IR | VLESS | @nofiltering2 #1 [medium]",
-      "server": "3633c37daa4e6400.tunvi.w-ert.org",
-      "server_port": 40287,
-      "uuid": "23ab3d0a-7626-48d5-99b8-8446b0187734",
+      "server": "p2tun0.greewebservices.ir",
+      "server_port": 28820,
+      "uuid": "2582857a-632b-4c4e-9b67-96213cbaf58c",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "e3085d4fc679ba12"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @father_vpn #1 [medium]",
+      "tag": "🇮🇷 IR | VLESS | @nofiltering2 #2 [medium]",
+      "server": "p2tun0.greewebservices.ir",
+      "server_port": 28820,
+      "uuid": "2582857a-632b-4c4e-9b67-96213cbaf58c",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
       "server": "snapp.ir",
       "server_port": 2052,
       "uuid": "7b81a350-89c3-47da-a3a9-5f2b65313d03",
