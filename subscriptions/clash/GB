@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]", "server": "149.7.16.228", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇬🇧 GB | VMESS | @outlinereleasedkey #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
