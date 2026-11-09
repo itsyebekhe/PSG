@@ -50,7 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇹🇷 TR | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇹🇷 TR | VLESS | @selinc #1 [medium]",
+        "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
         "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]",
         "direct"
       ],
@@ -60,7 +62,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇹🇷 TR | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇹🇷 TR | VLESS | @selinc #1 [medium]",
+        "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
         "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -70,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @outlinereleasedkey #1 [medium]",
       "server": "62.133.63.45",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -92,6 +96,52 @@
       "transport": {
         "type": "grpc",
         "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @selinc #1 [medium]",
+      "server": "tr.0a0.uk",
+      "server_port": 443,
+      "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U-2PKc5vWQ8drgWUeoxL58r4v_GNpmuvxarkDRat9R0",
+          "short_id": "2eec85de34f4cc39"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
+      "server": "sfndw7.dlroozane.net",
+      "server_port": 443,
+      "uuid": "1bcdf167-928f-445d-852a-b0b73dc06d7c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LEPvdc6l0Ij1Y5FwYqZHnGUwu9GfGiAaluE0FA1loDA",
+          "short_id": "782dbb704cf2b781"
+        }
       }
     },
     {
