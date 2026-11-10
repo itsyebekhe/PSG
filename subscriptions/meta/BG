@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇧🇬 BG | VLESS | @hope_net #1 [fast]", "server": "p11real3.greewebservices.ir", "port": 1040, "type": "vless", "skip-cert-verify": true, "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

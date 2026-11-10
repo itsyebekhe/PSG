@@ -50,8 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO | SS | @mtproxy22_v2ray #1 [medium]",
-        "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]",
+        "🇷🇴 RO | VLESS | @orange_vpns #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO | SS | @mtproxy22_v2ray #1 [medium]",
-        "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]"
+        "🇷🇴 RO | VLESS | @orange_vpns #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,20 +67,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 RO | SS | @mtproxy22_v2ray #1 [medium]",
-      "server": "82.152.132.211",
-      "server_port": 8044,
-      "method": "chacha20-ietf-poly1305",
-      "password": "dCamglzrORaopqbpBlptzbt9QdiH4CSN",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇷🇴 RO | VLESS | @orange_vpns #1 [medium]",
       "server": "cdn-rum-keno-prsv.keno.su",
       "server_port": 443,
       "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
