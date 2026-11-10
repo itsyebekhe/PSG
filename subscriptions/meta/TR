@@ -3,21 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @selinc #1 [fast]", "server": "tr.0a0.uk", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "U-2PKc5vWQ8drgWUeoxL58r4v_GNpmuvxarkDRat9R0", "short-id": "2eec85de34f4cc39"}}
+  - {"name": "🇹🇷 TR | VLESS | @selinc #1 [slow]", "server": "tr.0a0.uk", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "U-2PKc5vWQ8drgWUeoxL58r4v_GNpmuvxarkDRat9R0", "short-id": "2eec85de34f4cc39"}}
   - {"name": "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]", "server": "sfndw7.dlroozane.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1bcdf167-928f-445d-852a-b0b73dc06d7c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "github.com", "reality-opts": {"public-key": "LEPvdc6l0Ij1Y5FwYqZHnGUwu9GfGiAaluE0FA1loDA", "short-id": "782dbb704cf2b781"}}
   - {"name": "🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]", "server": "188.132.237.20", "port": 2095, "type": "vless", "skip-cert-verify": true, "uuid": "3b9e513e-30d9-4ca8-8340-8f33fc6710de", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @selinc #1 [fast]'
+      - '🇹🇷 TR | VLESS | @selinc #1 [slow]'
       - '🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]'
       - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @selinc #1 [fast]'
+      - '🇹🇷 TR | VLESS | @selinc #1 [slow]'
       - '🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]'
       - '🇹🇷 TR | VLESS | @NamiraConfigs #1 [medium]'
 rules:

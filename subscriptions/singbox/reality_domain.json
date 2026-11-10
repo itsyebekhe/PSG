@@ -54,11 +54,12 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
+        "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @selinc #1 [slow]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇷🇴 RO | VLESS | @orange_vpns #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -71,11 +72,12 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
+        "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @selinc #1 [slow]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
-        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇷🇴 RO | VLESS | @orange_vpns #1 [medium]"
+        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -145,7 +147,48 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @selinc #1 [fast]",
+      "tag": "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
+      "server": "tg.riotvpn.eu",
+      "server_port": 443,
+      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "short_id": "2f49bccf11150ef2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @free1_vpn #1 [fast]",
+      "server": "subscribe.goonars.com",
+      "server_port": 443,
+      "uuid": "fb37d713-0ed3-4146-b085-a5c879a9aafa",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "subscribe.goonars.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZZihyRejv8lHTwTnNCGF0IB6U9kS-L34L3v0ch6k_30",
+          "short_id": "4f339f5f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @selinc #1 [slow]",
       "server": "tr.0a0.uk",
       "server_port": 443,
       "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4",
@@ -231,29 +274,6 @@
           "enabled": true,
           "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
           "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 RO | VLESS | @orange_vpns #1 [medium]",
-      "server": "cdn-rum-keno-prsv.keno.su",
-      "server_port": 443,
-      "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn-rum-keno-prsv.keno.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Cw04nkURk7InPCPZl-0PovP44rh5o74dMHBUFOsjFig",
-          "short_id": "a1b2c3d4e5f60718"
         }
       }
     },

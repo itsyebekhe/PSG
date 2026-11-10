@@ -50,14 +50,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @Proxymelimon #2 [fast]",
-        "🇳🇱 NL | VLESS | @Proxymelimon #3 [fast]",
-        "🇳🇱 NL | VMESS | @Proxymelimon #1 [slow]",
+        "🇳🇱 NL | VMESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
@@ -67,14 +67,14 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @Proxymelimon #2 [fast]",
-        "🇳🇱 NL | VLESS | @Proxymelimon #3 [fast]",
-        "🇳🇱 NL | VMESS | @Proxymelimon #1 [slow]",
+        "🇳🇱 NL | VMESS | @Proxymelimon #1 [fast]",
         "🇳🇱 NL | VLESS | @filtershekan_channel #1 [fast]",
-        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | SS | @red2ray #1 [fast]",
-        "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -84,30 +84,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
-      "server": "51.158.206.103",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "tag": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
+      "server": "31.57.250.65",
+      "server_port": 443,
+      "uuid": "id_telegram_MimiTdL",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "fuck.rkn",
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
+          "public_key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA",
+          "short_id": "5b409d9a2b5b8dbf"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @Proxymelimon #2 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
       "server": "51.158.206.29",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -130,7 +133,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @Proxymelimon #3 [fast]",
+      "tag": "🇳🇱 NL | VLESS | @Proxymelimon #2 [fast]",
       "server": "89.105.218.148",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -153,7 +156,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇳🇱 NL | VMESS | @Proxymelimon #1 [slow]",
+      "tag": "🇳🇱 NL | VMESS | @Proxymelimon #1 [fast]",
       "server": "176.65.151.175",
       "server_port": 11674,
       "uuid": "a98a98cb-ae86-43ae-b695-cf0dbcad3fc2",
@@ -188,28 +191,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "89.105.195.150",
-      "server_port": 443,
-      "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.mediacorphub.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "stats.v2.StreamService"
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇳🇱 NL | SS | @red2ray #1 [fast]",
       "server": "185.4.115.146",
@@ -223,28 +204,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
-      "server": "31.57.250.65",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "89.105.218.143",
       "server_port": 443,
-      "uuid": "id_telegram_MimiTdL",
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "golos.mail.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
+      "server": "edge.mediacorphub.org",
+      "server_port": 443,
+      "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
       "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "edge.mediacorphub.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "awJWCmY2Ba9kY_dZj7nSylvtzAP1I5unwa_xp6qrvGA",
-          "short_id": "5b409d9a2b5b8dbf"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "grpc"
+        "service_name": "hub.v1.ObjectService"
       }
     },
     {

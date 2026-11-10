@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgSFkyX0lQVjQ=
+//profile-title: base64:UFNHIHwgUEw=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
+        "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
+        "🇵🇱 PL | VLESS | @beshkan #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]"
+        "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
+        "🇵🇱 PL | VLESS | @beshkan #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,52 +70,46 @@
     },
     {
       "type": "vless",
-      "tag": "همکاری_ملی",
-      "server": "127.0.0.1",
+      "tag": "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
+      "server": "tg.riotvpn.eu",
       "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
+      "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a",
+      "network": "tcp",
       "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "جاویدشاه",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "KingRezaPahlavi",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 US | HY2 | @outlinereleasedkey #1 [fast]",
-      "server": "88.216.195.188",
-      "server_port": 443,
-      "password": "63e1b9462d708b56d5d5a0267cffecdc",
       "tls": {
         "enabled": true,
-        "server_name": "promo3.goonars.com"
+        "server_name": "ads.x5.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho",
+          "short_id": "2f49bccf11150ef2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @beshkan #1 [fast]",
+      "server": "201.58.189.105",
+      "server_port": 2083,
+      "uuid": "d7ddade6-b7a0-4cab-a910-d5d5c378d98a",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4",
+          "short_id": "8bd80253"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.storage.v2.Storage"
       }
     },
     {

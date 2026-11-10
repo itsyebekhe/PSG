@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇪🇸 ES | SS | @outlinereleasedkey #1 [fast]",
         "🇪🇸 ES | SS | @mtproxy22_v2ray #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇪🇸 ES | SS | @outlinereleasedkey #1 [fast]",
         "🇪🇸 ES | SS | @mtproxy22_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 ES | SS | @outlinereleasedkey #1 [fast]",
+      "server": "79.127.139.242",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "shadowsocks",
