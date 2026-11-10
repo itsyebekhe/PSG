@@ -51,7 +51,6 @@
       "outbounds": [
         "auto",
         "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]"
+        "🇷🇺 RU | SS | @mtproxy22_v2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -78,29 +76,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
-      "server": "147.45.104.86",
-      "server_port": 7443,
-      "uuid": "af185070-7170-46a8-b1e9-d61a035f4691",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KbjX7IJnVtwq2USeRmLgXzACOtFCiA5lnsXhIFOX3ho",
-          "short_id": "a7eb8a4e"
-        }
       }
     },
     {

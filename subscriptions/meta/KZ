@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇰🇿 KZ | VLESS | @red2ray #1 [medium]", "server": "95.57.50.87", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "kz1.japancase.site", "reality-opts": {"public-key": "eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE", "short-id": "4000cdda6278d236"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇰🇿 KZ | VLESS | @red2ray #1 [medium]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇰🇿 KZ | VLESS | @red2ray #1 [medium]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

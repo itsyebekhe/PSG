@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]"
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -87,6 +89,16 @@
           "short_id": "10351b07c712d2a2"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @red2ray #1 [fast]",
+      "server": "indigo28.fars-remen.ir",
+      "server_port": 47607,
+      "uuid": "dcfc90f0-044b-46b3-9ef2-56ba5d4b155d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

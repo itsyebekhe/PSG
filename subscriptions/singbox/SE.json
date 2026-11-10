@@ -50,8 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE | SS | @outlinereleasedkey #1 [medium]",
+        "🇸🇪 SE | VLESS | @free1_vpn #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -77,8 +78,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE | SS | @outlinereleasedkey #1 [medium]",
+        "🇸🇪 SE | VLESS | @free1_vpn #1 [fast]",
         "🇸🇪 SE | VLESS | @hope_net #1 [fast]",
+        "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -103,15 +105,26 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 SE | SS | @outlinereleasedkey #1 [medium]",
-      "server": "138.199.55.243",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @free1_vpn #1 [fast]",
+      "server": "185.189.45.195",
+      "server_port": 443,
+      "uuid": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "get.jarbook.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
+          "short_id": "c6f97313"
+        }
       }
     },
     {
@@ -127,6 +140,29 @@
         "path": "/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048",
         "headers": {
           "Host": "1.v.v.V-_-_-V2ray-_-_-V.v.v.mv.speedtest.net.www.Zula.ir.check-host.net.2.cakesfoodapp.COM."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @flyv2ray #1 [fast]",
+      "server": "185.189.45.195",
+      "server_port": 443,
+      "uuid": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "get.jarbook.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
+          "short_id": "c6f97313"
         }
       }
     },
