@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgRVM=
+//profile-title: base64:UFNHIHwgSFky
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 ES | SS | @outlinereleasedkey #1 [medium]",
-        "🇪🇸 ES | SS | @mtproxy22_v2ray #1 [fast]",
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 ES | SS | @outlinereleasedkey #1 [medium]",
-        "🇪🇸 ES | SS | @mtproxy22_v2ray #1 [fast]"
+        "همکاری_ملی",
+        "جاویدشاه",
+        "KingRezaPahlavi",
+        "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,27 +73,58 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 ES | SS | @outlinereleasedkey #1 [medium]",
-      "server": "79.127.139.242",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+      "type": "vless",
+      "tag": "همکاری_ملی",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 ES | SS | @mtproxy22_v2ray #1 [fast]",
-      "server": "193.148.19.214",
-      "server_port": 12798,
-      "method": "aes-128-gcm",
-      "password": "cd706a104284a70f9cffe6ac1df63c18",
-      "network": "tcp",
+      "type": "vless",
+      "tag": "جاویدشاه",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "KingRezaPahlavi",
+      "server": "127.0.0.1",
+      "server_port": 443,
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 US | HY2 | @netfreedom0 #1 [fast]",
+      "server": "67.216.207.144",
+      "server_port": 443,
+      "password": "740f1a75659256a8c0e2a5686d573496b2a2",
+      "obfs": {
+        "type": "salamander",
+        "password": "salamander"
+      },
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {

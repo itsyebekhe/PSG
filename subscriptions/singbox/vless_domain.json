@@ -60,6 +60,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+        "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | VLESS | @selinc #1 [fast]",
@@ -82,8 +83,8 @@
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
@@ -154,6 +155,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
+        "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | VLESS | @selinc #1 [fast]",
@@ -176,8 +178,8 @@
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
-        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #3 [fast]",
@@ -405,6 +407,29 @@
       "uuid": "DIGIV2RAY",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "ee.subv.ru",
+      "server_port": 443,
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "dvizhok.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
     },
     {
       "type": "vless",
@@ -800,6 +825,27 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "cdn.mediacorphub.org",
+      "server_port": 443,
+      "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.mediacorphub.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "stats.v2.StreamService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
       "server": "ca1.fox-lisa.ru",
       "server_port": 443,
@@ -819,27 +865,6 @@
           "public_key": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
           "short_id": "027af64166562b09"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "cdn.mediacorphub.org",
-      "server_port": 443,
-      "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.mediacorphub.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "stats.v2.StreamService"
       }
     },
     {

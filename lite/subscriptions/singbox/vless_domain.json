@@ -67,8 +67,8 @@
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -118,8 +118,8 @@
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #1 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #2 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
@@ -444,6 +444,27 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
+      "server": "cdn.mediacorphub.org",
+      "server_port": 443,
+      "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.mediacorphub.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "stats.v2.StreamService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
       "server": "ca1.fox-lisa.ru",
       "server_port": 443,
@@ -463,27 +484,6 @@
           "public_key": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
           "short_id": "027af64166562b09"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
-      "server": "cdn.mediacorphub.org",
-      "server_port": 443,
-      "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.mediacorphub.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "stats.v2.StreamService"
       }
     },
     {
