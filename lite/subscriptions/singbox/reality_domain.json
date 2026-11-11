@@ -54,8 +54,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [slow]",
+        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,8 +70,10 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [slow]",
-        "🇧🇬 BG | VLESS | @hope_net #1 [fast]"
+        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
+        "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -139,7 +143,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @selinc #1 [slow]",
+      "tag": "🇹🇷 TR | VLESS | @selinc #1 [fast]",
       "server": "tr.0a0.uk",
       "server_port": 443,
       "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4",
@@ -179,6 +183,52 @@
           "enabled": true,
           "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
           "short_id": "9b60d3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
+      "server": "prvtch.titun.su",
+      "server_port": 443,
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "perevodchiki.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
+      "server": "ca1.fox-lisa.ru",
+      "server_port": 443,
+      "uuid": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca1.fox-lisa.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
+          "short_id": "027af64166562b09"
         }
       }
     },

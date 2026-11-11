@@ -4,19 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇧🇬 BG | VLESS | @hope_net #1 [fast]", "server": "p11real3.greewebservices.ir", "port": 1040, "type": "vless", "skip-cert-verify": true, "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
-  - {"name": "🇧🇬 BG | VLESS | @red2ray #1 [fast]", "server": "131.123.43.103", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "bg2.gacvpn.site", "reality-opts": {"public-key": "SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg", "short-id": "1f8bab7ad81089f2"}}
+  - {"name": "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]", "server": "p11real2.greewebservices.ir", "port": 1030, "type": "vless", "skip-cert-verify": true, "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
-      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
+      - '🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
-      - '🇧🇬 BG | VLESS | @red2ray #1 [fast]'
+      - '🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

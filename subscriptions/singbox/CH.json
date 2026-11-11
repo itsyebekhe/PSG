@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH | SS | @outlinereleasedkey #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "direct"
       ],
@@ -60,25 +59,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH | SS | @outlinereleasedkey #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 CH | SS | @outlinereleasedkey #1 [fast]",
-      "server": "79.127.184.104",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vless",

@@ -50,7 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE | VLESS | @orange_vpns #1 [fast]",
+        "🇪🇪 EE | VLESS | @red2ray #1 [medium]",
+        "🇪🇪 EE | VLESS | @orange_vpns #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE | VLESS | @orange_vpns #1 [fast]"
+        "🇪🇪 EE | VLESS | @red2ray #1 [medium]",
+        "🇪🇪 EE | VLESS | @orange_vpns #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -68,7 +70,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @orange_vpns #1 [fast]",
+      "tag": "🇪🇪 EE | VLESS | @red2ray #1 [medium]",
+      "server": "45.83.182.80",
+      "server_port": 443,
+      "uuid": "99c5b713-dedf-4a10-8070-916ff3f49b0e",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fs.qicai99.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "fs.qicai99.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 EE | VLESS | @orange_vpns #1 [medium]",
       "server": "185.215.184.85",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
