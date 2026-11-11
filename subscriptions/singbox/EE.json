@@ -51,8 +51,6 @@
       "outbounds": [
         "auto",
         "🇪🇪 EE | VLESS | @orange_vpns #1 [fast]",
-        "🇪🇪 EE | VLESS | @orange_vpns #2 [fast]",
-        "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE | VLESS | @orange_vpns #1 [fast]",
-        "🇪🇪 EE | VLESS | @orange_vpns #2 [fast]",
-        "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]"
+        "🇪🇪 EE | VLESS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -73,29 +69,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 EE | VLESS | @orange_vpns #1 [fast]",
-      "server": "178.214.109.1",
-      "server_port": 443,
-      "uuid": "40a86b1b-239d-455e-b53f-4c270788ba6e",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "promo-digital.wb.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc",
-          "short_id": "1cfa55abe4d2dc7a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @orange_vpns #2 [fast]",
       "server": "185.215.184.85",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -113,29 +86,6 @@
           "enabled": true,
           "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
           "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 EE | VLESS | @flyv2ray #1 [fast]",
-      "server": "185.225.205.53",
-      "server_port": 443,
-      "uuid": "3d526c7f-059c-4e2b-b09a-8569b268935b",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8",
-          "short_id": "2e82d7ac"
         }
       }
     },

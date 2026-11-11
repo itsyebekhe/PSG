@@ -52,6 +52,7 @@
         "auto",
         "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
@@ -68,6 +69,7 @@
       "outbounds": [
         "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
+        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
@@ -104,6 +106,29 @@
       "uuid": "0aec6598-7fb5-44e6-bff7-a4d550117830",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
+      "server": "ca1.fox-lisa.ru",
+      "server_port": 443,
+      "uuid": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca1.fox-lisa.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
+          "short_id": "027af64166562b09"
+        }
+      }
     },
     {
       "type": "vless",

@@ -4,7 +4,7 @@
 
 ### Premium Proxy Subscription Generator
 
-![Updated](https://img.shields.io/badge/Updated-2026-11-10-blue?style=flat-square)
+![Updated](https://img.shields.io/badge/Updated-2026-11-11-blue?style=flat-square)
 ![Configs](https://img.shields.io/badge/Configs-310-green?style=flat-square)
 ![Lite](https://img.shields.io/badge/Lite-151-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/Channels-84-orange?style=flat-square)
@@ -27,11 +27,10 @@
 <details>
 <summary><b>⚡ Protocol Distribution</b></summary>
 
-> 🔒 **VLESS** `███████████████` 396 (127.7%)
-> ⚡ **REALITY** `██░░░░░░░░░░░░░` 63 (20.3%)
-> 🔑 **SS** `█░░░░░░░░░░░░░░` 39 (12.6%)
+> 🔒 **VLESS** `███████████████` 399 (128.7%)
+> ⚡ **REALITY** `██░░░░░░░░░░░░░` 61 (19.7%)
+> 🔑 **SS** `█░░░░░░░░░░░░░░` 38 (12.3%)
 > 🛡️ **VMESS** `█░░░░░░░░░░░░░░` 30 (9.7%)
-> 🌊 **HY2** `░░░░░░░░░░░░░░░` 1 (0.3%)
 
 </details>
 
@@ -39,20 +38,20 @@
 <summary><b>🌍 Country Distribution</b></summary>
 
 > 🇽🇽 **XX** `████████████` 213
-> 🇺🇸 **US** `██████░░░░░░` 124
+> 🇺🇸 **US** `██████░░░░░░` 121
 > 🇸🇪 **SE** `█░░░░░░░░░░░` 30
 > 🇩🇪 **DE** `█░░░░░░░░░░░` 21
 > 🇮🇷 **IR** `█░░░░░░░░░░░` 19
 > 🇳🇱 **NL** `█░░░░░░░░░░░` 19
-> 🇬🇧 **GB** `░░░░░░░░░░░░` 17
-> 🇫🇷 **FR** `░░░░░░░░░░░░` 15
+> 🇬🇧 **GB** `█░░░░░░░░░░░` 18
+> 🇫🇷 **FR** `░░░░░░░░░░░░` 17
 > 🇨🇦 **CA** `░░░░░░░░░░░░` 10
-> 🇪🇪 **EE** `░░░░░░░░░░░░` 7
 > 🇨🇭 **CH** `░░░░░░░░░░░░` 6
 > 🇦🇺 **AU** `░░░░░░░░░░░░` 6
 > 🇧🇬 **BG** `░░░░░░░░░░░░` 5
+> 🇷🇺 **RU** `░░░░░░░░░░░░` 5
+> 🇪🇪 **EE** `░░░░░░░░░░░░` 5
 > 🇦🇪 **AE** `░░░░░░░░░░░░` 4
-> 🇫🇮 **FI** `░░░░░░░░░░░░` 3
 
 </details>
 
@@ -61,7 +60,7 @@
 
 > ⚡ **Fast** — 519 configs (< 200ms)
 > 🟡 **Medium** — 8 configs (200-500ms)
-> 🐢 **Slow** — 2 configs (> 500ms)
+> 🐢 **Slow** — 1 configs (> 500ms)
 
 </details>
 
@@ -130,7 +129,7 @@
 
 1. **@prrofile_purple** — 91 configs — سرور - V2rayNG
 2. **@kafing_2** — 31 configs — کافینگ رایگان
-3. **@outlinereleasedkey** — 28 configs — Free You keys
+3. **@outlinereleasedkey** — 27 configs — Free You keys
 4. **@lockey_vpn** — 15 configs — LOCKEY_VPN
 5. **@nepo_v2ray** — 14 configs — Nepo_v2ray
 6. **@manstervpn** — 14 configs — KingVPN
@@ -156,8 +155,8 @@
 26. **@mtproxy22_v2ray** — 6 configs — پروکسی تلگرام انواع VPN
 27. **@father_vpn** — 6 configs — Father vpn Proxy V2rayNg
 28. **@new_proxy_channel** — 6 configs — New Proxy
-29. **@free1_vpn** — 5 configs — Free_VPN v2ray NapsternetV cus
-30. **@tanhanet** — 5 configs — تنهانت خرید کانفیگ V2rayNG خری
+29. **@tanhanet** — 5 configs — تنهانت خرید کانفیگ V2rayNG خری
+30. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
 
 ---
 
