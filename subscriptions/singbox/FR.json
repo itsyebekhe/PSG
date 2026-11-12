@@ -58,10 +58,10 @@
         "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -78,10 +78,10 @@
         "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
-        "🇫🇷 FR | VLESS | @proxy48 #1 [medium]"
+        "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -209,7 +209,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "52.47.155.185",
+      "server": "13.39.199.61",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -218,7 +218,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "35.181.233.250",
+      "server": "51.44.228.113",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -226,19 +226,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-      "server": "161.97.66.16",
+      "tag": "🇫🇷 FR | VLESS | @flyv2ray #1 [fast]",
+      "server": "138.124.251.98",
       "server_port": 443,
-      "uuid": "086bf957-9cd0-4e55-8280-bbef10435b41",
+      "uuid": "1d1eda2e-0bd7-4478-877b-1c5425c6c4dd",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
         "reality": {
           "enabled": true,
-          "public_key": "R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc",
-          "short_id": "086bf957"
+          "public_key": "yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38",
+          "short_id": "8f3c6e2a1b5d4f09"
         }
       }
     },
@@ -284,7 +289,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [medium]",
+      "tag": "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
       "server": "51.75.30.8",
       "server_port": 80,
       "uuid": "1949f066-bcb0-49be-88e9-74abd940f80e",

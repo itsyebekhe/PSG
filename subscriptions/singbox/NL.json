@@ -58,7 +58,8 @@
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #3 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+        "🇳🇱 NL | VLESS | @red2ray #4 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -75,7 +76,8 @@
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #2 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #3 [fast]",
-        "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]"
+        "🇳🇱 NL | VLESS | @red2ray #4 [fast]",
+        "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -104,7 +106,7 @@
     {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "51.158.206.97",
+      "server": "51.158.206.8",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -261,7 +263,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [medium]",
+      "tag": "🇳🇱 NL | VLESS | @red2ray #4 [fast]",
+      "server": "edge.mediacorphub.org",
+      "server_port": 443,
+      "uuid": "1653818d-532e-46be-b825-384107fb7c3a",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge.mediacorphub.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hub.v1.ObjectService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
       "server": "95.179.138.190",
       "server_port": 443,
       "uuid": "telegram-id-qeshmserver",

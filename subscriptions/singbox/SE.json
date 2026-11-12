@@ -50,9 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
-        "🇸🇪 SE | VMESS | @outlinereleasedkey #1 [medium]",
-        "🇸🇪 SE | VLESS | @free1_vpn #1 [medium]",
+        "🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -78,9 +76,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
-        "🇸🇪 SE | VMESS | @outlinereleasedkey #1 [medium]",
-        "🇸🇪 SE | VLESS | @free1_vpn #1 [medium]",
+        "🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -105,31 +101,8 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @orange_vpns #1 [medium]",
-      "server": "185.189.45.195",
-      "server_port": 443,
-      "uuid": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "get.jarbook.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
-          "short_id": "c6f97313"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇸🇪 SE | VMESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]",
       "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -142,29 +115,6 @@
       "tls": {
         "enabled": true,
         "server_name": "xmfhlpy.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @free1_vpn #1 [medium]",
-      "server": "185.189.45.195",
-      "server_port": 443,
-      "uuid": "dd5bed0b-ee77-481b-9f2c-250a632ddd9f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "get.jarbook.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs",
-          "short_id": "c6f97313"
-        }
       }
     },
     {

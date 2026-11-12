@@ -3,23 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [medium]", "server": "176.108.245.237", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "87c35d3a-36f1-fade-90b7-af60506efbb8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "tfusq-ru-40sb.fade.mom"}
-  - {"name": "🇷🇺 RU | VLESS | @red2ray #2 [slow]", "server": "188.120.242.196", "port": 2058, "type": "vless", "skip-cert-verify": true, "uuid": "4ad9f982-b56a-444a-9684-35ce51307a36", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s", "short-id": "937255313d6ce673"}}
-  - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]", "server": "147.45.104.86", "port": 7443, "type": "vless", "skip-cert-verify": true, "uuid": "af185070-7170-46a8-b1e9-d61a035f4691", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "max.ru", "reality-opts": {"public-key": "KbjX7IJnVtwq2USeRmLgXzACOtFCiA5lnsXhIFOX3ho", "short-id": "a7eb8a4e"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #1 [fast]", "server": "188.120.242.196", "port": 2058, "type": "vless", "skip-cert-verify": true, "uuid": "4ad9f982-b56a-444a-9684-35ce51307a36", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s", "short-id": "937255313d6ce673"}}
+  - {"name": "🇷🇺 RU | VLESS | @red2ray #2 [fast]", "server": "92.243.66.79", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "c5f59ef3-9540-49fa-bd1e-c6c2f79df49a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "ru-mow.probe.geomyip.com", "reality-opts": {"public-key": "siD4oj2gdtLLEphV6fUXb8ueIc2WHVn7msOUhNGPf2o", "short-id": "8d03c10b6a874a9c"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #2 [slow]'
-      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @red2ray #1 [medium]'
-      - '🇷🇺 RU | VLESS | @red2ray #2 [slow]'
-      - '🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]'
+      - '🇷🇺 RU | VLESS | @red2ray #1 [fast]'
+      - '🇷🇺 RU | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @free1_vpn #1 [medium]", "server": "169.40.34.41", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "622654a4-b666-000b-9260-fb717e05154f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "flow": "xtls-rprx-vision", "servername": "key-master-saver.com", "reality-opts": {"public-key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY", "short-id": "1c3e8241a8743df9"}}
+  - {"name": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]", "server": "95.216.27.15", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "b79d736d-0f10-4169-b626-362059d18204", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs", "short-id": "10351b07c712d2a2"}}
+  - {"name": "🇫🇮 FI | VLESS | @free1_vpn #1 [fast]", "server": "169.40.34.41", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "622654a4-b666-000b-9260-fb717e05154f", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "ios", "flow": "xtls-rprx-vision", "servername": "key-master-saver.com", "reality-opts": {"public-key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY", "short-id": "1c3e8241a8743df9"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇫🇮 FI | VLESS | @free1_vpn #1 [medium]'
+      - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇫🇮 FI | VLESS | @free1_vpn #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇫🇮 FI | VLESS | @free1_vpn #1 [medium]'
+      - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇫🇮 FI | VLESS | @free1_vpn #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
