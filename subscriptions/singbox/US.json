@@ -73,7 +73,8 @@
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VMESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | SS | @mtproxy22_v2ray #2 [medium]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
@@ -140,7 +141,8 @@
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VMESS | @mtproxy22_v2ray #1 [fast]",
-        "🇺🇸 US | SS | @mtproxy22_v2ray #2 [medium]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
@@ -581,7 +583,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #2 [medium]",
+      "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
       "server": "84.20.27.183",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -589,6 +591,29 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "195.206.235.202",
+      "server_port": 443,
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "4935e4t.de25.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
+          "short_id": "6976d670818644cc"
+        }
       }
     },
     {
