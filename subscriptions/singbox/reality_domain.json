@@ -60,8 +60,8 @@
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
+        "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -80,8 +80,8 @@
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇹🇷 TR | VLESS | @Proxymelimon #1 [fast]",
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
-        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇨🇦 CA | VLESS | @red2ray #1 [fast]"
+        "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
+        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -278,6 +278,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
+      "server": "s1.berluno.ir",
+      "server_port": 1155,
+      "uuid": "4e55449f-dcdd-41b4-a31e-dad1e3d420db",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgju.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI",
+          "short_id": "4e4aaad65cc07da8"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
       "server": "prvtch.titun.su",
       "server_port": 443,
@@ -296,29 +318,6 @@
           "enabled": true,
           "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
           "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 CA | VLESS | @red2ray #1 [fast]",
-      "server": "ca1.fox-lisa.ru",
-      "server_port": 443,
-      "uuid": "ccb8ff48-3934-4250-b4ec-bb76b95d154f",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ca1.fox-lisa.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NaCZ-sS4poEbFwKmD7ePAVyc5OhHxsD9nkAStjXkoWs",
-          "short_id": "027af64166562b09"
         }
       }
     },
