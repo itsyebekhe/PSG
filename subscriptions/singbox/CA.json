@@ -50,12 +50,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
+        "🇨🇦 CA | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
-        "🇨🇦 CA | SS | @netfreedom0 #1 [fast]",
+        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
         "🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]",
         "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]",
@@ -67,12 +68,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
+        "🇨🇦 CA | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
-        "🇨🇦 CA | SS | @netfreedom0 #1 [fast]",
+        "🇨🇦 CA | VLESS | @novinology #1 [fast]",
         "🇨🇦 CA | VLESS | @mastervpnshop1 #1 [fast]",
         "🇨🇦 CA | VLESS | @serverv2ray00 #1 [fast]",
         "🇨🇦 CA | VLESS | @goldenshiinevpn #1 [fast]"
@@ -84,28 +86,46 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 CA | VLESS | @novinology #1 [fast]",
-      "server": "104.31.16.65",
-      "server_port": 2095,
-      "uuid": "38ace213-5184-477b-ac3e-d800d0cf3cd9",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "de1.vlessx.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
       "server": "104.234.135.88",
       "server_port": 443,
       "uuid": "0aec6598-7fb5-44e6-bff7-a4d550117830",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 CA | SS | @mtproxy22_v2ray #1 [fast]",
+      "server": "15.235.57.6",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "kxhnt5jtykd328cg",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "66.70.179.198",
+      "server_port": 2053,
+      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
+          "short_id": "83f8317a948bb769"
+        }
+      }
     },
     {
       "type": "vless",
@@ -192,15 +212,19 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 CA | SS | @netfreedom0 #1 [fast]",
-      "server": "35.182.245.215",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+      "type": "vless",
+      "tag": "🇨🇦 CA | VLESS | @novinology #1 [fast]",
+      "server": "104.31.16.65",
+      "server_port": 2095,
+      "uuid": "38ace213-5184-477b-ac3e-d800d0cf3cd9",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "de1.vlessx.xyz"
+        }
       }
     },
     {

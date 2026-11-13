@@ -3,8 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]", "server": "62.93.166.184", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
-  - {"name": "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]", "server": "79.137.99.183", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]", "server": "142.132.163.200", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "142.132.163.200"}}}
   - {"name": "🇮🇷 IR | VMESS | @khoneproxy #1 [medium]", "server": "37.32.23.122", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d12bc882-43c7-415e-87c5-2a7fdc8371c0", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/websocket/", "headers": {"Host": "37.32.23.122"}}}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
@@ -14,8 +12,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇮🇷 IR | VMESS | @khoneproxy #1 [medium]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
@@ -25,8 +21,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇮🇷 IR | VMESS | @khoneproxy #1 [medium]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
