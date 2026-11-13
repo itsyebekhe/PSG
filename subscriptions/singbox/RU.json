@@ -50,10 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [medium]",
-        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @red2ray #2 [medium]",
-        "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
-        "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]"
+        "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
+        "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
+        "🇷🇺 RU | SS | @flyv2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #1 [fast]",
       "server": "188.120.242.196",
       "server_port": 2058,
       "uuid": "4ad9f982-b56a-444a-9684-35ce51307a36",
@@ -97,7 +95,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @red2ray #2 [medium]",
+      "tag": "🇷🇺 RU | VLESS | @red2ray #2 [fast]",
       "server": "92.243.66.79",
       "server_port": 443,
       "uuid": "c5f59ef3-9540-49fa-bd1e-c6c2f79df49a",
@@ -120,7 +118,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [medium]",
+      "tag": "🇷🇺 RU | SS | @flyv2ray #1 [fast]",
       "server": "185.22.153.117",
       "server_port": 18443,
       "method": "aes-256-gcm",
@@ -128,29 +126,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 RU | VLESS | @netfreedom0 #1 [medium]",
-      "server": "147.45.104.86",
-      "server_port": 7443,
-      "uuid": "af185070-7170-46a8-b1e9-d61a035f4691",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KbjX7IJnVtwq2USeRmLgXzACOtFCiA5lnsXhIFOX3ho",
-          "short_id": "a7eb8a4e"
-        }
       }
     },
     {

@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇵🇱 PL | VLESS | @free1_vpn #1 [fast]", "server": "tg.riotvpn.eu", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "ads.x5.ru", "reality-opts": {"public-key": "8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho", "short-id": "2f49bccf11150ef2"}}
   - {"name": "🇵🇱 PL | VLESS | @beshkan #1 [fast]", "server": "201.58.189.105", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "d7ddade6-b7a0-4cab-a910-d5d5c378d98a", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "dl.google.com", "grpc-opts": {"grpc-service-name": "google.storage.v2.Storage"}, "reality-opts": {"public-key": "B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4", "short-id": "8bd80253"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇵🇱 PL | VLESS | @free1_vpn #1 [fast]'
       - '🇵🇱 PL | VLESS | @beshkan #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇵🇱 PL | VLESS | @free1_vpn #1 [fast]'
       - '🇵🇱 PL | VLESS | @beshkan #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

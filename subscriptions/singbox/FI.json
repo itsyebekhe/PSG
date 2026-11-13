@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇫🇮 FI | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
-        "🇫🇮 FI | SS | @mtproxy22_v2ray #1 [fast]"
+        "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -70,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [medium]",
+      "tag": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -87,15 +87,26 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 FI | SS | @mtproxy22_v2ray #1 [fast]",
-      "server": "oztq9osla2ad.dop15.com",
-      "server_port": 26412,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=",
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "fin1.trialkade.ir",
+      "server_port": 12040,
+      "uuid": "b7b41f80-8477-4cc8-affb-2680c2478df8",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "testspeed-foreign.tci.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yuNMNhM9R953IK0nvJrsfV2qiW8v8RxXLaRUalaETwI",
+          "short_id": "1aac41ca1a05d782"
+        }
       }
     },
     {

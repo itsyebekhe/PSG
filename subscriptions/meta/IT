@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇮🇹 IT | VLESS | @beshkan #1 [fast]", "server": "172.213.24.16", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4", "short-id": "0123456789abcdef"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇮🇹 IT | VLESS | @beshkan #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇮🇹 IT | VLESS | @beshkan #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
