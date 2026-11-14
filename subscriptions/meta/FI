@@ -4,19 +4,16 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]", "server": "95.216.27.15", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "b79d736d-0f10-4169-b626-362059d18204", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs", "short-id": "10351b07c712d2a2"}}
-  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "fin1.trialkade.ir", "port": 12040, "type": "vless", "skip-cert-verify": true, "uuid": "b7b41f80-8477-4cc8-affb-2680c2478df8", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "edge", "flow": "xtls-rprx-vision", "servername": "testspeed-foreign.tci.ir", "reality-opts": {"public-key": "yuNMNhM9R953IK0nvJrsfV2qiW8v8RxXLaRUalaETwI", "short-id": "1aac41ca1a05d782"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @outlinereleasedkey #1 [fast]'
-      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
