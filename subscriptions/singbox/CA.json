@@ -51,8 +51,6 @@
       "outbounds": [
         "auto",
         "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
-        "🇨🇦 CA | SS | @mtproxy22_v2ray #1 [fast]",
-        "🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
@@ -69,8 +67,6 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇦 CA | VLESS | @ai_duet #1 [fast]",
-        "🇨🇦 CA | SS | @mtproxy22_v2ray #1 [fast]",
-        "🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]",
         "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]",
@@ -92,40 +88,6 @@
       "uuid": "0aec6598-7fb5-44e6-bff7-a4d550117830",
       "network": "xhttp",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 CA | SS | @mtproxy22_v2ray #1 [fast]",
-      "server": "15.235.57.6",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "kxhnt5jtykd328cg",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "66.70.179.198",
-      "server_port": 2053,
-      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
-          "short_id": "83f8317a948bb769"
-        }
-      }
     },
     {
       "type": "vless",

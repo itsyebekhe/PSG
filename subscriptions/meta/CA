@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇨🇦 CA | VLESS | @ai_duet #1 [fast]", "server": "104.234.135.88", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "0aec6598-7fb5-44e6-bff7-a4d550117830", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "66.70.179.198", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU", "short-id": "83f8317a948bb769"}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]", "server": "23.227.60.12", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.jokerv2ray.store", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.jokerv2ray.store"}}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]", "server": "23.227.60.12", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.sameasyou.sbs", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.sameasyou.sbs"}}}
   - {"name": "🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]", "server": "104.31.16.133", "port": 2096, "type": "vless", "skip-cert-verify": true, "uuid": "dd777f39-2996-4269-b88f-0b64436d0274", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "joinchannel.sameasyou.sbs", "ws-opts": {"path": "", "headers": {"Host": "capitalnet.sameasyou.sbs"}}}
@@ -17,7 +16,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇨🇦 CA | VLESS | @ai_duet #1 [fast]'
-      - '🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]'
@@ -30,7 +28,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇨🇦 CA | VLESS | @ai_duet #1 [fast]'
-      - '🇨🇦 CA | VLESS | @mtproxy22_v2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #1 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #2 [fast]'
       - '🇨🇦 CA | VLESS | @jokerv2ray #3 [fast]'
