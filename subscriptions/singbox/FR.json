@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #1 [slow]",
+        "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
@@ -64,8 +66,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | VLESS | @privatevpns #1 [slow]",
+        "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
@@ -75,6 +79,18 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+      "server": "167.17.64.22",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",
@@ -98,9 +114,26 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇫🇷 FR | VMESS | @Proxymelimon #1 [fast]",
+      "server": "79.137.99.183",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "tcp",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [slow]",
-      "server": "15.236.176.177",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+      "server": "15.188.135.93",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -109,7 +142,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "15.188.255.228",
+      "server": "15.224.242.227",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",

@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 IT | VLESS | @beshkan #1 [fast]",
         "🇮🇹 IT | SS | @flyv2ray #1 [fast]",
+        "🇮🇹 IT | VLESS | @beshkan #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,13 +60,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 IT | VLESS | @beshkan #1 [fast]",
-        "🇮🇹 IT | SS | @flyv2ray #1 [fast]"
+        "🇮🇹 IT | SS | @flyv2ray #1 [fast]",
+        "🇮🇹 IT | VLESS | @beshkan #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 IT | SS | @flyv2ray #1 [fast]",
+      "server": "57.131.4.13",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mx81glqbtlwuhcjo",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",
@@ -89,18 +101,6 @@
           "public_key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
           "short_id": "0123456789abcdef"
         }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 IT | SS | @flyv2ray #1 [fast]",
-      "server": "57.131.4.13",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "mx81glqbtlwuhcjo",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {
