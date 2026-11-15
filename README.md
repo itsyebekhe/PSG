@@ -4,8 +4,8 @@
 
 ### Premium Proxy Subscription Generator
 
-![Updated](https://img.shields.io/badge/Updated-2026-11-14-blue?style=flat-square)
-![Configs](https://img.shields.io/badge/Configs-300-green?style=flat-square)
+![Updated](https://img.shields.io/badge/Updated-2026-11-15-blue?style=flat-square)
+![Configs](https://img.shields.io/badge/Configs-305-green?style=flat-square)
 ![Lite](https://img.shields.io/badge/Lite-149-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/Channels-84-orange?style=flat-square)
 ![Countries](https://img.shields.io/badge/Countries-30-purple?style=flat-square)
@@ -20,17 +20,17 @@
 
 | | |
 |:---|:---|
-| 🔢 **300** configs | 🪶 **149** lite |
+| 🔢 **305** configs | 🪶 **149** lite |
 | 📡 **84** channels | 🌍 **30** countries |
-| ☁️ **221** Cloudflare | ⚡ **504** fast |
+| ☁️ **221** Cloudflare | ⚡ **463** fast |
 
 <details>
 <summary><b>⚡ Protocol Distribution</b></summary>
 
-> 🔒 **VLESS** `███████████████` 394 (131.3%)
-> ⚡ **REALITY** `██░░░░░░░░░░░░░` 53 (17.7%)
-> 🔑 **SS** `█░░░░░░░░░░░░░░` 44 (14.7%)
-> 🛡️ **VMESS** `░░░░░░░░░░░░░░░` 23 (7.7%)
+> 🔒 **VLESS** `███████████████` 396 (129.8%)
+> ⚡ **REALITY** `██░░░░░░░░░░░░░` 53 (17.4%)
+> 🔑 **SS** `█░░░░░░░░░░░░░░` 47 (15.4%)
+> 🛡️ **VMESS** `░░░░░░░░░░░░░░░` 23 (7.5%)
 
 </details>
 
@@ -38,29 +38,29 @@
 <summary><b>🌍 Country Distribution</b></summary>
 
 > 🇽🇽 **XX** `████████████` 214
-> 🇺🇸 **US** `██████░░░░░░` 121
+> 🇺🇸 **US** `██████░░░░░░` 123
 > 🇩🇪 **DE** `█░░░░░░░░░░░` 28
 > 🇸🇪 **SE** `█░░░░░░░░░░░` 27
-> 🇳🇱 **NL** `█░░░░░░░░░░░` 20
-> 🇬🇧 **GB** `░░░░░░░░░░░░` 17
+> 🇳🇱 **NL** `█░░░░░░░░░░░` 21
+> 🇬🇧 **GB** `█░░░░░░░░░░░` 20
 > 🇫🇷 **FR** `░░░░░░░░░░░░` 13
 > 🇮🇷 **IR** `░░░░░░░░░░░░` 12
 > 🇨🇦 **CA** `░░░░░░░░░░░░` 9
 > 🇧🇬 **BG** `░░░░░░░░░░░░` 7
 > 🇨🇭 **CH** `░░░░░░░░░░░░` 6
 > 🇦🇺 **AU** `░░░░░░░░░░░░` 6
-> 🇫🇮 **FI** `░░░░░░░░░░░░` 5
 > 🇦🇪 **AE** `░░░░░░░░░░░░` 5
 > 🇷🇺 **RU** `░░░░░░░░░░░░` 4
+> 🇫🇮 **FI** `░░░░░░░░░░░░` 4
 
 </details>
 
 <details>
 <summary><b>🚀 Speed Distribution</b></summary>
 
-> ⚡ **Fast** — 504 configs (< 200ms)
-> 🟡 **Medium** — 8 configs (200-500ms)
-> 🐢 **Slow** — 2 configs (> 500ms)
+> ⚡ **Fast** — 463 configs (< 200ms)
+> 🟡 **Medium** — 55 configs (200-500ms)
+> 🐢 **Slow** — 1 configs (> 500ms)
 
 </details>
 
@@ -128,7 +128,7 @@
 ## 📡 Channels (84)
 
 1. **@prrofile_purple** — 91 configs — سرور - V2rayNG
-2. **@kafing_2** — 33 configs — کافینگ رایگان
+2. **@kafing_2** — 34 configs — کافینگ رایگان
 3. **@outlinereleasedkey** — 26 configs — Free You keys
 4. **@lockey_vpn** — 15 configs — LOCKEY_VPN
 5. **@nepo_v2ray** — 14 configs — Nepo_v2ray
@@ -140,10 +140,10 @@
 11. **@kurd_v2ray** — 12 configs — VPN فیلتر شکن
 12. **@beshkan** — 10 configs — بشکن Beshkan
 13. **@outline_ir** — 10 configs — سرور اوتلاین ا سرور V2ray
-14. **@red2ray** — 9 configs — Red2Ray V2rayNG کانفیگ رایگان
-15. **@novinology** — 9 configs — Novinology نوینولوژی
-16. **@minovpnch** — 9 configs — کانال MinoVpn
-17. **@mester_v2ray** — 8 configs — 𝐌𝐞𝐬𝐭𝐞𝐫.𝐯𝟐𝐫𝐚𝐲 نات پیکسل
+14. **@novinology** — 9 configs — Novinology نوینولوژی
+15. **@minovpnch** — 9 configs — کانال MinoVpn
+16. **@mester_v2ray** — 8 configs — 𝐌𝐞𝐬𝐭𝐞𝐫.𝐯𝟐𝐫𝐚𝐲 نات پیکسل
+17. **@red2ray** — 8 configs — Red2Ray V2rayNG کانفیگ رایگان
 18. **@serverv2ray00** — 8 configs — ایران پروکسی وکانفیکiran proxy
 19. **@realvpnmaster** — 8 configs — Vpn master
 20. **@mehrosaboran** — 7 configs — پروکسی و v2rayمهربانی
@@ -153,10 +153,10 @@
 24. **@father_vpn** — 6 configs — Father vpn Proxy V2rayNg
 25. **@new_proxy_channel** — 6 configs — New Proxy
 26. **@flyv2ray** — 5 configs — FlyV2ray
-27. **@tanhanet** — 5 configs — تنهانت خرید کانفیگ V2rayNG خری
-28. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
-29. **@mtproxy22_v2ray** — 5 configs — پروکسی تلگرام انواع VPN
-30. **@jokerv2ray** — 5 configs — JOKER V2Ray کانفیگ اختصاصی
+27. **@free1_vpn** — 5 configs — Free_VPN v2ray NapsternetV cus
+28. **@tanhanet** — 5 configs — تنهانت خرید کانفیگ V2rayNG خری
+29. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
+30. **@mtproxy22_v2ray** — 5 configs — پروکسی تلگرام انواع VPN
 
 ---
 

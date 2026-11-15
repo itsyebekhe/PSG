@@ -55,11 +55,13 @@
         "🇬🇧 GB | SS | @nofiltering2 #2 [fast]",
         "🇬🇧 GB | SS | @nofiltering2 #3 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #1 [fast]",
+        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
+        "🇬🇧 GB | SS | @beshkan #1 [medium]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
-        "🇬🇧 GB | SS | @beshkan #3 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+        "🇬🇧 GB | SS | @beshkan #3 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -73,11 +75,13 @@
         "🇬🇧 GB | SS | @nofiltering2 #2 [fast]",
         "🇬🇧 GB | SS | @nofiltering2 #3 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @father_vpn #1 [fast]",
-        "🇬🇧 GB | SS | @beshkan #1 [fast]",
+        "🇬🇧 GB | SS | @father_vpn #1 [medium]",
+        "🇬🇧 GB | SS | @beshkan #1 [medium]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
-        "🇬🇧 GB | SS | @beshkan #3 [fast]",
-        "🇬🇧 GB | SS | @free4allvpn #1 [fast]"
+        "🇬🇧 GB | SS | @beshkan #3 [medium]",
+        "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
+        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -150,7 +154,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @father_vpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @father_vpn #1 [medium]",
       "server": "82.38.31.176",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -162,7 +166,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @beshkan #1 [medium]",
       "server": "82.38.31.213",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -186,7 +190,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @beshkan #3 [fast]",
+      "tag": "🇬🇧 GB | SS | @beshkan #3 [medium]",
       "server": "82.38.31.214",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -198,7 +202,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
+      "tag": "🇬🇧 GB | SS | @free4allvpn #1 [medium]",
       "server": "82.38.31.205",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -207,6 +211,24 @@
       "tls": {
         "enabled": true
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+      "server": "13.135.62.2",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
+      "server": "3.11.116.160",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
     },
     {
       "type": "direct",

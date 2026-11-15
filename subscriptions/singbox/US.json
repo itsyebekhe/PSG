@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
@@ -62,6 +63,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
+        "🇺🇸 US | SS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
@@ -118,6 +120,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]",
@@ -130,6 +133,7 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #3 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
+        "🇺🇸 US | SS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
@@ -183,6 +187,29 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
+      "server": "45.144.112.55",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
+      }
     },
     {
       "type": "vless",
@@ -393,6 +420,18 @@
         "headers": {
           "Host": "pcloud.z-tas.com"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @free1_vpn #1 [fast]",
+      "server": "193.151.160.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

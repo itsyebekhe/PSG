@@ -3,6 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]", "server": "45.144.112.55", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "yahoo.com", "reality-opts": {"public-key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg", "short-id": "c39cc7310a"}}
   - {"name": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]", "server": "167.82.64.7", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "XpnTeam-104", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "cdn.akamai.steamstatic.com"}
   - {"name": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]", "server": "199.232.78.159", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "64ce5faf-427b-4dd1-926c-6b7ced6b8c38", "network": "ws", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "cdn.akamai.steamstatic.com", "ws-opts": {"path": "", "headers": {"Host": "copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net."}}}
   - {"name": "🇺🇸 US | VLESS | @mehrosaboran #3 [fast]", "server": "167.82.64.7", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "XpnTeam-110", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "cdn.akamai.steamstatic.com"}
@@ -60,6 +61,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇺🇸 US | VLESS | @orange_vpns #1 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #1 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #2 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #3 [fast]'
@@ -117,6 +119,7 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇺🇸 US | VLESS | @orange_vpns #1 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #1 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #2 [fast]'
       - '🇺🇸 US | VLESS | @mehrosaboran #3 [fast]'
