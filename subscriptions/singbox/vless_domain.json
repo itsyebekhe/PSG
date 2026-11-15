@@ -60,7 +60,6 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
@@ -82,6 +81,7 @@
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
         "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
         "🇩🇪 DE | VLESS | @Proxymelimon #2 [fast]",
+        "🇩🇪 DE | VLESS | @Proxymelimon #3 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
@@ -156,7 +156,6 @@
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #1 [fast]",
         "🇽🇽 XX | VLESS | @kurdvpn1 #2 [fast]",
-        "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇪🇪 EE | VLESS | @outlinereleasedkey #1 [fast]",
         "🇮🇷 IR | VLESS | @father_vpn #1 [fast]",
         "🇽🇽 XX | VLESS | @father_vpn #2 [fast]",
@@ -178,6 +177,7 @@
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
         "🇩🇪 DE | VLESS | @Proxymelimon #1 [fast]",
         "🇩🇪 DE | VLESS | @Proxymelimon #2 [fast]",
+        "🇩🇪 DE | VLESS | @Proxymelimon #3 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #6 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
@@ -394,27 +394,6 @@
       "uuid": "DIGIV2RAY",
       "network": "httpupgrade",
       "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "tsjs9n5lm4r.apruxdomain.online",
-      "server_port": 443,
-      "uuid": "7592ca5c-b352-4562-8856-a9c936a3331b",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "u209akv3ob.hat.onl",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "v1.segment.9wLukD7VB0oToI10.ts"
-      }
     },
     {
       "type": "vless",
@@ -766,6 +745,22 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @Proxymelimon #3 [fast]",
+      "server": "cdn.cloudof1.ir",
+      "server_port": 443,
+      "uuid": "00f7637c-acab-465b-933a-727becde5c1b",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/vcffrt",
+        "headers": {
+          "Host": "cdn.cloudof1.ir"
         }
       }
     },
