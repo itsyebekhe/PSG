@@ -68,6 +68,7 @@
         "🇽🇽 XX | VMESS | @manstervpn #1 [fast]",
         "🇺🇸 US | VMESS | @manstervpn #1 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
+        "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
@@ -98,6 +99,7 @@
         "🇽🇽 XX | VMESS | @manstervpn #1 [fast]",
         "🇺🇸 US | VMESS | @manstervpn #1 [fast]",
         "🇧🇾 BY | VMESS | @ir_netproxy #1 [fast]",
+        "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
@@ -477,6 +479,30 @@
       "authenticated_length": true,
       "network": "tcp",
       "packet_encoding": ""
+    },
+    {
+      "type": "vmess",
+      "tag": "🇽🇽 XX | VMESS | @ir_netproxy #1 [fast]",
+      "server": "172.67.207.114",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "ophelia.mom"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "linkvws",
+        "headers": {
+          "Host": "ophelia.mom"
+        }
+      }
     },
     {
       "type": "vmess",
