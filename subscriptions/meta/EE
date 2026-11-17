@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇪🇪 EE | VLESS | @NamiraConfigs #1 [fast]", "server": "141.0.187.5", "port": 11443, "type": "vless", "skip-cert-verify": true, "uuid": "f24e8412-9d11-49db-9736-edab5d6fb707", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "141.0.187.4", "reality-opts": {"public-key": "GPz7dacpjZ5iHT5pbZfYap1vpyt85mNKV7BVW3R92hE", "short-id": "26ca0f0ba115925d"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇪🇪 EE | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇪🇪 EE | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
