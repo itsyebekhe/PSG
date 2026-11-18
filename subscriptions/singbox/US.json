@@ -67,6 +67,7 @@
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
+        "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
@@ -74,11 +75,10 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VMESS | @Proxymelimon #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [slow]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
-        "🇺🇸 US | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | SS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -135,6 +135,7 @@
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #2 [fast]",
+        "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
@@ -142,11 +143,10 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VMESS | @Proxymelimon #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [slow]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
-        "🇺🇸 US | SS | @mtproxy22_v2ray #1 [medium]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
+        "🇺🇸 US | SS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
@@ -471,6 +471,18 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @outlinereleasedkey #1 [fast]",
+      "server": "216.172.144.199",
+      "server_port": 40643,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xd4G9xn7AgT88msCYC9MZfavMUqd3dWFNAvswi6KfaD9YcexptMbPn4cSECEMzDgvAMomAWJHyweqJer99ssMVYGH6TK8k4c",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
       "server": "170.114.45.6",
@@ -598,54 +610,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [slow]",
-      "server": "167.17.69.171",
-      "server_port": 443,
-      "uuid": "00144519-7e0d-476b-8d28-435576af9262",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk",
-          "short_id": "0990d22f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #2 [fast]",
-      "server": "104.168.109.213",
-      "server_port": 443,
-      "uuid": "74b86103-0a6e-4a0e-8430-2aa84af805fc",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rU4-ii54LkmEWBaliTQHvi3jc0fDTlSmutVtzedMNRM",
-          "short_id": "6ba7b8"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [medium]",
+      "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "84.20.27.183",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -680,20 +646,37 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @red2ray #1 [fast]",
+      "server": "47.85.162.44",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "3.174.189.5",
+      "server": "48.103.205.57",
       "server_port": 443,
-      "uuid": "2e69b088-6ef3-417f-8247-125cf257fafd",
-      "network": "xhttp",
+      "uuid": "df97ce68-477f-4484-94c7-79eccab7319d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "d1ivx1xk58pr8u.cloudfront.net",
-        "insecure": true,
+        "server_name": "alb1.angelsleep9.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tXhsg663V1Ia_YWMtQMWQRaZouyONXknQ16OLMAdFXs",
+          "short_id": "28ffd89d510a739b"
         }
       }
     },

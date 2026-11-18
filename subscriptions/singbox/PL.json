@@ -51,6 +51,7 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]"
+        "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
+        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,23 +71,36 @@
     {
       "type": "vless",
       "tag": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "tun2.minoosell.ir",
-      "server_port": 1152,
-      "uuid": "e18f77f3-e518-4c8c-b230-c79e3708c7f4",
-      "network": "xhttp",
+      "server": "documentnest.website",
+      "server_port": 443,
+      "uuid": "17c068a5-97cb-40a2-bf60-215b749c0508",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "in.tradingview.com",
+        "server_name": "documentnest.website",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
-          "short_id": "ead6bdba606219a2"
+          "public_key": "c-H0VVzHFRX0ni_uoja11AJF3M5TPf8ZIIgz4hIqBQk",
+          "short_id": "2c9d9705d9392007"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
+      "server": "217.30.10.44",
+      "server_port": 9095,
+      "method": "aes-256-cfb",
+      "password": "N7j3pdTYkKmsy8CR",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

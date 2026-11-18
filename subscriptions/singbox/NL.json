@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
@@ -65,7 +64,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
@@ -77,29 +75,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "9.163.235.73",
-      "server_port": 2083,
-      "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
-          "short_id": "0123456789abcdef"
-        }
-      }
     },
     {
       "type": "shadowsocks",

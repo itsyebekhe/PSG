@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇺🇦 UA | VLESS | @NamiraConfigs #1 [fast]", "server": "digitalwaypoint.website", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "17c068a5-97cb-40a2-bf60-215b749c0508", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "qq", "flow": "xtls-rprx-vision", "servername": "digitalwaypoint.website", "reality-opts": {"public-key": "x_X15Vl6mHKSDHI0ku9FOyUA9a6djCnGNhfsW6BEXXA", "short-id": "f8916298f6f031dd"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇺🇦 UA | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇺🇦 UA | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
