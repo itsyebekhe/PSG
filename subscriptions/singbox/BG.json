@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
         "🇧🇬 BG | SS | @filtershekan_channel #1 [medium]",
-        "🇧🇬 BG | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,15 +62,39 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
-        "🇧🇬 BG | SS | @filtershekan_channel #1 [medium]",
-        "🇧🇬 BG | VLESS | @red2ray #1 [medium]"
+        "🇧🇬 BG | SS | @filtershekan_channel #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "88.80.150.15",
+      "server_port": 443,
+      "uuid": "1d46250c-f015-439d-a7fd-c4d9e2a4c63d",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "bg2.oncloudvpn.com",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
     },
     {
       "type": "vless",
@@ -128,28 +152,6 @@
       "network": "tcp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @red2ray #1 [medium]",
-      "server": "87.120.92.186",
-      "server_port": 2087,
-      "uuid": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "maps.blog-forme.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mbi4BZAuiq_L6pfhG2xxWmtosq0Z1Pzf18fvNSWKMxY",
-          "short_id": "3258252d44113e23"
-        }
       }
     },
     {

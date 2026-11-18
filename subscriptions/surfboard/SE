@@ -4,8 +4,9 @@ skip-proxy = 127.0.0.1, localhost, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 19
 dns-server = 8.8.8.8, 8.8.4.4
 [Proxy]
 🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast] = vmess, 62.93.166.184, 1270, username = 5c040f1d-45db-43bd-8d46-e4950e433735, ws = false, tls = true
+🇸🇪 SE | VMESS | @Proxymelimon #1 [fast] = vmess, 62.93.166.184, 1270, username = 5c040f1d-45db-43bd-8d46-e4950e433735, ws = false, tls = true
 [Proxy Group]
-PROXY = select, 🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]
+PROXY = select, 🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast], 🇸🇪 SE | VMESS | @Proxymelimon #1 [fast]
 [Rule]
 GEOSITE,category-ads-all,REJECT
 GEOIP,LAN,DIRECT

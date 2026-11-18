@@ -5,21 +5,18 @@ log-level: info
 proxies:
   - {"name": "🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]", "server": "guide.blog-forme.ru", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "549766c3-fa5f-471e-8031-ffc1f8d5064f", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "guide.blog-forme.ru", "reality-opts": {"public-key": "mbi4BZAuiq_L6pfhG2xxWmtosq0Z1Pzf18fvNSWKMxY", "short-id": "3258252d44113e23"}}
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
-  - {"name": "🇨🇿 CZ | VLESS | @red2ray #1 [medium]", "server": "103.118.211.38", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3dbd9377-43cc-46c3-b32c-2605908024eb", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "czechia.richforever.ru", "reality-opts": {"public-key": "PA1xWXjxZLn68I-6cjWVdqc0dYhWbu9W5c1GpjEOZgE", "short-id": "8a9442353eebbe0f"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
-      - '🇨🇿 CZ | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
-      - '🇨🇿 CZ | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
