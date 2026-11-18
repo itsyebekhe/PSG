@@ -50,10 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [medium]",
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
         "🇧🇬 BG | SS | @filtershekan_channel #1 [medium]",
+        "🇧🇬 BG | VLESS | @red2ray #1 [medium]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +62,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
-        "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+        "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [medium]",
         "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]",
-        "🇧🇬 BG | SS | @filtershekan_channel #1 [medium]"
+        "🇧🇬 BG | SS | @filtershekan_channel #1 [medium]",
+        "🇧🇬 BG | VLESS | @red2ray #1 [medium]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇧🇬 BG | VLESS | @outlinereleasedkey #1 [medium]",
       "server": "88.80.150.15",
       "server_port": 443,
       "uuid": "1d46250c-f015-439d-a7fd-c4d9e2a4c63d",
@@ -94,28 +94,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
-      "server": "p11real3.greewebservices.ir",
-      "server_port": 1040,
-      "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.googleapis.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
-          "short_id": "9b60d3"
-        }
       }
     },
     {
@@ -152,6 +130,28 @@
       "network": "tcp",
       "tls": {
         "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @red2ray #1 [medium]",
+      "server": "p1real5.greewebservices.ir",
+      "server_port": 1270,
+      "uuid": "3b05596f-739b-4c1f-a35f-8e13b4716aa2",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "9b60d3"
+        }
       }
     },
     {

@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]", "server": "tun2.minoosell.ir", "port": 1152, "type": "vless", "skip-cert-verify": true, "uuid": "e18f77f3-e518-4c8c-b230-c79e3708c7f4", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "in.tradingview.com", "reality-opts": {"public-key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE", "short-id": "ead6bdba606219a2"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇵🇱 PL | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
