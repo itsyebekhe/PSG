@@ -10,6 +10,8 @@ proxies:
   - {"name": "🇧🇬 BG | VLESS | @hope_net #1 [fast]", "server": "p11real3.greewebservices.ir", "port": 1040, "type": "vless", "skip-cert-verify": true, "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
   - {"name": "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]", "server": "prvtch.titun.su", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "90157e25-cee1-4217-921e-91f300bc1a24", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "perevodchiki.su", "reality-opts": {"public-key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs", "short-id": "428ef87fd47a3a32"}}
   - {"name": "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]", "server": "fr.abbaas.net", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "SoonTeam%20", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.crazimals.com", "reality-opts": {"public-key": "GgO_laVIFUL5JOZrIesfGewuZSXQMLhC-ASCW76ziSk", "short-id": "f4eaffbb"}}
+  - {"name": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]", "server": "1626282bs96377171.trivoxa.ir", "port": 54854, "type": "vless", "skip-cert-verify": true, "uuid": "f6abd59d-f4ed-49fb-8c4e-a6031c7c151c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "tradingview.com", "reality-opts": {"public-key": "86N3w2k5BA6n9BVKlLC_a0t7hiAQ8Fv1jViXl-d7sVA", "short-id": "31dfb3"}}
+  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "panel.jorvexo.ir", "port": 1152, "type": "vless", "skip-cert-verify": true, "uuid": "4dc7f947-869c-4ea9-aa18-6f76b143b1fd", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "in.tradingview.com", "reality-opts": {"public-key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE", "short-id": "ead6bdba606219a2"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -21,6 +23,8 @@ proxy-groups:
       - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
       - '🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]'
       - '🇫🇷 FR | VLESS | @free1_vpn #1 [fast]'
+      - '🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -32,6 +36,8 @@ proxy-groups:
       - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
       - '🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]'
       - '🇫🇷 FR | VLESS | @free1_vpn #1 [fast]'
+      - '🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

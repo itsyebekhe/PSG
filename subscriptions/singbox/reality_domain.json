@@ -57,8 +57,11 @@
         "🇹🇷 TR | VLESS | @selinc #1 [medium]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -74,8 +77,11 @@
         "🇹🇷 TR | VLESS | @selinc #1 [medium]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-        "🇫🇷 FR | VLESS | @free1_vpn #2 [fast]"
+        "🇫🇷 FR | VLESS | @free1_vpn #2 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -213,6 +219,24 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "fr.abbaas.net",
+      "server_port": 443,
+      "uuid": "6962c372-27da-56d6-9d1f-8041abb7538e",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "w-x.co",
+        "reality": {
+          "enabled": true,
+          "public_key": "wBh3jtk45kBonp2-uVqsx71F4ziNH7vZcU6DAC6t2xs",
+          "short_id": "1296174a86a6ac8c"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
       "server": "fr.abbaas.net",
       "server_port": 8443,
@@ -252,6 +276,50 @@
           "enabled": true,
           "public_key": "wBh3jtk45kBonp2-uVqsx71F4ziNH7vZcU6DAC6t2xs",
           "short_id": "57"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "1626282bs96377171.trivoxa.ir",
+      "server_port": 54854,
+      "uuid": "f6abd59d-f4ed-49fb-8c4e-a6031c7c151c",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "86N3w2k5BA6n9BVKlLC_a0t7hiAQ8Fv1jViXl-d7sVA",
+          "short_id": "31dfb3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "panel.jorvexo.ir",
+      "server_port": 1152,
+      "uuid": "4dc7f947-869c-4ea9-aa18-6f76b143b1fd",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "in.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
+          "short_id": "ead6bdba606219a2"
         }
       }
     },

@@ -5,10 +5,10 @@
 ### سازنده اشتراک پروکسی
 
 ![Updated](https://img.shields.io/badge/بروزرسانی-2026-11-19-blue?style=flat-square)
-![Configs](https://img.shields.io/badge/کانفیگ-293-green?style=flat-square)
-![Lite](https://img.shields.io/badge/سبک-145-cyan?style=flat-square)
+![Configs](https://img.shields.io/badge/کانفیگ-294-green?style=flat-square)
+![Lite](https://img.shields.io/badge/سبک-147-cyan?style=flat-square)
 ![Channels](https://img.shields.io/badge/کانال-82-orange?style=flat-square)
-![Countries](https://img.shields.io/badge/کشور-31-purple?style=flat-square)
+![Countries](https://img.shields.io/badge/کشور-29-purple?style=flat-square)
 
 [**English**](README.md)
 
@@ -20,16 +20,16 @@
 
 | | |
 |:---|:---|
-| 🔢 **293** کانفیگ | 🪶 **145** سبک |
-| 📡 **82** کانال | 🌍 **31** کشور |
-| ☁️ **217** کلودفلر | ⚡ **506** سریع |
+| 🔢 **294** کانفیگ | 🪶 **147** سبک |
+| 📡 **82** کانال | 🌍 **29** کشور |
+| ☁️ **218** کلودفلر | ⚡ **510** سریع |
 
 <details>
 <summary><b>⚡ توزیع پروتکل‌ها</b></summary>
 
-> 🔒 **VLESS** `███████████████` 391 (133.4%)
-> ⚡ **REALITY** `██░░░░░░░░░░░░░` 56 (19.1%)
-> 🔑 **SS** `█░░░░░░░░░░░░░░` 40 (13.7%)
+> 🔒 **VLESS** `███████████████` 389 (132.3%)
+> ⚡ **REALITY** `██░░░░░░░░░░░░░` 57 (19.4%)
+> 🔑 **SS** `█░░░░░░░░░░░░░░` 41 (13.9%)
 > 🛡️ **VMESS** `█░░░░░░░░░░░░░░` 30 (10.2%)
 
 </details>
@@ -37,30 +37,30 @@
 <details>
 <summary><b>🌍 توزیع کشورها</b></summary>
 
-> 🇽🇽 **XX** `████████████` 210
-> 🇺🇸 **US** `███████░░░░░` 131
-> 🇸🇪 **SE** `█░░░░░░░░░░░` 30
+> 🇽🇽 **XX** `████████████` 211
+> 🇺🇸 **US** `███████░░░░░` 128
+> 🇸🇪 **SE** `█░░░░░░░░░░░` 28
 > 🇩🇪 **DE** `█░░░░░░░░░░░` 25
-> 🇳🇱 **NL** `░░░░░░░░░░░░` 17
-> 🇬🇧 **GB** `░░░░░░░░░░░░` 17
-> 🇫🇷 **FR** `░░░░░░░░░░░░` 14
+> 🇳🇱 **NL** `█░░░░░░░░░░░` 18
+> 🇬🇧 **GB** `█░░░░░░░░░░░` 18
+> 🇫🇷 **FR** `░░░░░░░░░░░░` 15
 > 🇮🇷 **IR** `░░░░░░░░░░░░` 13
-> 🇨🇦 **CA** `░░░░░░░░░░░░` 10
+> 🇨🇦 **CA** `░░░░░░░░░░░░` 11
 > 🇦🇺 **AU** `░░░░░░░░░░░░` 6
 > 🇧🇬 **BG** `░░░░░░░░░░░░` 5
-> 🇨🇭 **CH** `░░░░░░░░░░░░` 5
-> 🇦🇪 **AE** `░░░░░░░░░░░░` 4
+> 🇦🇪 **AE** `░░░░░░░░░░░░` 5
+> 🇹🇷 **TR** `░░░░░░░░░░░░` 4
+> 🇨🇭 **CH** `░░░░░░░░░░░░` 4
 > 🇨🇿 **CZ** `░░░░░░░░░░░░` 3
-> 🇷🇴 **RO** `░░░░░░░░░░░░` 3
 
 </details>
 
 <details>
 <summary><b>🚀 توزیع سرعت</b></summary>
 
-> ⚡ **سریع** — 506 کانفیگ (کمتر از ۲۰۰ms)
-> 🟡 **متوسط** — 10 کانفیگ (۲۰۰-۵۰۰ms)
-> 🐢 **کند** — 1 کانفیگ (بیش از ۵۰۰ms)
+> ⚡ **سریع** — 510 کانفیگ (کمتر از ۲۰۰ms)
+> 🟡 **متوسط** — 5 کانفیگ (۲۰۰-۵۰۰ms)
+> 🐢 **کند** — 2 کانفیگ (بیش از ۵۰۰ms)
 
 </details>
 
@@ -144,19 +144,19 @@
 15. **@novinology** — 9 configs — Novinology نوینولوژی
 16. **@minovpnch** — 9 configs — کانال MinoVpn
 17. **@mester_v2ray** — 8 configs — 𝐌𝐞𝐬𝐭𝐞𝐫.𝐯𝟐𝐫𝐚𝐲 نات پیکسل
-18. **@Proxymelimon** — 8 configs — پروکسی و کانفیگ رایگان
-19. **@serverv2ray00** — 8 configs — ایران پروکسی وکانفیکiran proxy
-20. **@realvpnmaster** — 8 configs — Vpn master
-21. **@nofiltering2** — 7 configs — Nofiltering2 V2rayng رفع فیلتر
+18. **@serverv2ray00** — 8 configs — ایران پروکسی وکانفیکiran proxy
+19. **@realvpnmaster** — 8 configs — Vpn master
+20. **@nofiltering2** — 7 configs — Nofiltering2 V2rayng رفع فیلتر
+21. **@Proxymelimon** — 7 configs — پروکسی و کانفیگ رایگان
 22. **@iranvipnet** — 7 configs — VIP_V2rayNG
 23. **@free_vip3** — 7 configs — Free Service
-24. **@orange_vpns** — 6 configs — V2ray سرور و کانفیگ رایگان
-25. **@father_vpn** — 6 configs — Father vpn Proxy V2rayNg
-26. **@new_proxy_channel** — 6 configs — New Proxy
-27. **@tanhanet** — 5 configs — تنهانت خرید کانفیگ V2rayNG خری
-28. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
-29. **@jokerv2ray** — 5 configs — JOKER V2Ray کانفیگ اختصاصی
-30. **@proxy48** — 5 configs — فیلترشکنv2rayپروکسی proxy
+24. **@father_vpn** — 6 configs — Father vpn Proxy V2rayNg
+25. **@new_proxy_channel** — 6 configs — New Proxy
+26. **@tanhanet** — 5 configs — تنهانت خرید کانفیگ V2rayNG خری
+27. **@free4allvpn** — 5 configs — Shadowsocks Outline Vmess Vles
+28. **@jokerv2ray** — 5 configs — JOKER V2Ray کانفیگ اختصاصی
+29. **@proxy48** — 5 configs — فیلترشکنv2rayپروکسی proxy
+30. **@proxy_confiingir** — 5 configs — دسترسی به نت آزاد با Viktor pr
 
 ---
 

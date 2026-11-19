@@ -55,7 +55,8 @@
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -69,7 +70,8 @@
         "KingRezaPahlavi",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]"
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -148,23 +150,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "render.com",
-      "server_port": 2087,
-      "uuid": "316acccc-720d-499e-a92d-9caa7a26c495",
+      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "1626282bs96377171.trivoxa.ir",
+      "server_port": 54854,
+      "uuid": "f6abd59d-f4ed-49fb-8c4e-a6031c7c151c",
       "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "n5r.droonix.ir",
-        "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
-        ],
+        "server_name": "tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "86N3w2k5BA6n9BVKlLC_a0t7hiAQ8Fv1jViXl-d7sVA",
+          "short_id": "31dfb3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "panel.jorvexo.ir",
+      "server_port": 1152,
+      "uuid": "4dc7f947-869c-4ea9-aa18-6f76b143b1fd",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "in.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
+          "short_id": "ead6bdba606219a2"
         }
       }
     },

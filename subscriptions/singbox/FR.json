@@ -51,7 +51,8 @@
       "outbounds": [
         "auto",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | SS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #2 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
@@ -66,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
-        "🇫🇷 FR | SS | @red2ray #1 [fast]",
+        "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+        "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #2 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
@@ -100,15 +102,30 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 FR | SS | @red2ray #1 [fast]",
-      "server": "107.161.160.28",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321",
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
+      "server": "15.188.138.168",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
+      "server": "fr.abbaas.net",
+      "server_port": 443,
+      "uuid": "6962c372-27da-56d6-9d1f-8041abb7538e",
+      "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "w-x.co",
+        "reality": {
+          "enabled": true,
+          "public_key": "wBh3jtk45kBonp2-uVqsx71F4ziNH7vZcU6DAC6t2xs",
+          "short_id": "1296174a86a6ac8c"
+        }
       }
     },
     {

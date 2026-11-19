@@ -8,7 +8,8 @@ proxies:
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]", "server": "spd-mynames.global.ssl.fastly.net", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]", "server": "fr.abbaas.net", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "SoonTeam%20", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.crazimals.com", "reality-opts": {"public-key": "GgO_laVIFUL5JOZrIesfGewuZSXQMLhC-ASCW76ziSk", "short-id": "f4eaffbb"}}
-  - {"name": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]", "server": "render.com", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "316acccc-720d-499e-a92d-9caa7a26c495", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "n5r.droonix.ir"}
+  - {"name": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]", "server": "1626282bs96377171.trivoxa.ir", "port": 54854, "type": "vless", "skip-cert-verify": true, "uuid": "f6abd59d-f4ed-49fb-8c4e-a6031c7c151c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "tradingview.com", "reality-opts": {"public-key": "86N3w2k5BA6n9BVKlLC_a0t7hiAQ8Fv1jViXl-d7sVA", "short-id": "31dfb3"}}
+  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "panel.jorvexo.ir", "port": 1152, "type": "vless", "skip-cert-verify": true, "uuid": "4dc7f947-869c-4ea9-aa18-6f76b143b1fd", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "in.tradingview.com", "reality-opts": {"public-key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE", "short-id": "ead6bdba606219a2"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -18,7 +19,8 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇺🇸 US | VLESS | @kafing_2 #1 [fast]'
       - '🇫🇷 FR | VLESS | @free1_vpn #1 [fast]'
-      - '🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -28,7 +30,8 @@ proxy-groups:
       - 'KingRezaPahlavi'
       - '🇺🇸 US | VLESS | @kafing_2 #1 [fast]'
       - '🇫🇷 FR | VLESS | @free1_vpn #1 [fast]'
-      - '🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

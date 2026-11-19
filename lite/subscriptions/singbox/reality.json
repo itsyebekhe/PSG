@@ -53,11 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
+        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
-        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -66,6 +64,8 @@
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -77,11 +77,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
+        "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
-        "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -89,7 +87,9 @@
         "🇹🇷 TR | VLESS | @selinc #1 [medium]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]"
+        "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -137,29 +137,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @orange_vpns #1 [fast]",
-      "server": "45.144.112.55",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
       "server": "200.102.180.37",
       "server_port": 8443,
@@ -178,6 +155,29 @@
           "enabled": true,
           "public_key": "bGwVs-Re6vNB1tuKqZZ209x7l361FxZdtPHg0yZLa2Q",
           "short_id": "63c4425dacae86cb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "138.124.125.193",
+      "server_port": 10444,
+      "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
         }
       }
     },
@@ -205,51 +205,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
-      "server": "84.32.51.135",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "svc-io-mgr.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7d309e4c16b825f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [medium]",
-      "server": "48.103.205.57",
-      "server_port": 443,
-      "uuid": "df97ce68-477f-4484-94c7-79eccab7319d",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "alb1.angelsleep9.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tXhsg663V1Ia_YWMtQMWQRaZouyONXknQ16OLMAdFXs",
-          "short_id": "28ffd89d510a739b"
-        }
       }
     },
     {
@@ -435,6 +390,50 @@
           "enabled": true,
           "public_key": "GgO_laVIFUL5JOZrIesfGewuZSXQMLhC-ASCW76ziSk",
           "short_id": "f4eaffbb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "1626282bs96377171.trivoxa.ir",
+      "server_port": 54854,
+      "uuid": "f6abd59d-f4ed-49fb-8c4e-a6031c7c151c",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "86N3w2k5BA6n9BVKlLC_a0t7hiAQ8Fv1jViXl-d7sVA",
+          "short_id": "31dfb3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "panel.jorvexo.ir",
+      "server_port": 1152,
+      "uuid": "4dc7f947-869c-4ea9-aa18-6f76b143b1fd",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "in.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
+          "short_id": "ead6bdba606219a2"
         }
       }
     },
