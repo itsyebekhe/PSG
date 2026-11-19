@@ -56,7 +56,9 @@
         "🇺🇸 US | VLESS | @outline_ir #4 [fast]",
         "🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
@@ -72,7 +74,9 @@
         "🇺🇸 US | VLESS | @outline_ir #4 [fast]",
         "🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
+        "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
         "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
@@ -172,6 +176,24 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
+      "server": "tulip.amydoodles.com",
+      "server_port": 443,
+      "uuid": "823490d4-2a35-4917-8c4d-7bbbba54b0d3",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
       "server": "fr.abbaas.net",
       "server_port": 8443,
@@ -189,6 +211,28 @@
           "enabled": true,
           "public_key": "GgO_laVIFUL5JOZrIesfGewuZSXQMLhC-ASCW76ziSk",
           "short_id": "f4eaffbb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "render.com",
+      "server_port": 2087,
+      "uuid": "316acccc-720d-499e-a92d-9caa7a26c495",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "n5r.droonix.ir",
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },

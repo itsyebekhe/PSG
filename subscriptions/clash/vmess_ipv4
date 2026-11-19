@@ -4,7 +4,6 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]", "server": "62.93.166.184", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
-  - {"name": "🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]", "server": "103.88.232.55", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
   - {"name": "🇺🇸 US | VMESS | @Proxymelimon #1 [fast]", "server": "38.91.107.57", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
   - {"name": "🇸🇪 SE | VMESS | @Proxymelimon #1 [fast]", "server": "62.93.166.184", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]", "server": "142.132.163.200", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "142.132.163.200"}}}
@@ -16,7 +15,6 @@ proxy-groups:
     type: select
     proxies:
       - '🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇺🇸 US | VMESS | @Proxymelimon #1 [fast]'
       - '🇸🇪 SE | VMESS | @Proxymelimon #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
@@ -28,7 +26,6 @@ proxy-groups:
     type: url-test
     proxies:
       - '🇸🇪 SE | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]'
       - '🇺🇸 US | VMESS | @Proxymelimon #1 [fast]'
       - '🇸🇪 SE | VMESS | @Proxymelimon #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'

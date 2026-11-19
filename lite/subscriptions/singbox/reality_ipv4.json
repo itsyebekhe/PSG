@@ -57,6 +57,7 @@
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -76,6 +77,7 @@
         "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
         "🇳🇱 NL | VLESS | @mimitdl #1 [fast]",
         "🇱🇹 LT | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #1 [medium]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
@@ -221,8 +223,31 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #1 [medium]",
+      "server": "48.103.205.57",
+      "server_port": 443,
+      "uuid": "df97ce68-477f-4484-94c7-79eccab7319d",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "alb1.angelsleep9.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tXhsg663V1Ia_YWMtQMWQRaZouyONXknQ16OLMAdFXs",
+          "short_id": "28ffd89d510a739b"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-      "server": "51.158.206.25",
+      "server": "51.158.206.98",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -231,6 +256,10 @@
       "tls": {
         "enabled": true,
         "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "reality": {
           "enabled": true,
           "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",

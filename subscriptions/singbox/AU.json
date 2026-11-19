@@ -50,9 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 AU | VLESS | @custom_14 #1 [fast]",
         "🇦🇺 AU | VLESS | @proxy_confiingir #1 [fast]",
         "🇦🇺 AU | VLESS | @proxy_confiingir #2 [fast]",
+        "🇦🇺 AU | VLESS | @custom_14 #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "🇦🇺 AU | VLESS | @lemonshopvpn #1 [fast]",
         "🇦🇺 AU | VLESS | @lemonshopvpn #2 [fast]",
@@ -64,9 +64,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 AU | VLESS | @custom_14 #1 [fast]",
         "🇦🇺 AU | VLESS | @proxy_confiingir #1 [fast]",
         "🇦🇺 AU | VLESS | @proxy_confiingir #2 [fast]",
+        "🇦🇺 AU | VLESS | @custom_14 #1 [fast]",
         "🇦🇺 AU | VMESS | @serverv2ray00 #1 [fast]",
         "🇦🇺 AU | VLESS | @lemonshopvpn #1 [fast]",
         "🇦🇺 AU | VLESS | @lemonshopvpn #2 [fast]"
@@ -75,30 +75,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 AU | VLESS | @custom_14 #1 [fast]",
-      "server": "melo-mtn.outline-vpn.cloud",
-      "server_port": 443,
-      "uuid": "a3e76574-9458-4783-905b-970cf0ccdcd1",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "<a"
-      }
     },
     {
       "type": "vless",
@@ -138,6 +114,30 @@
         "headers": {
           "Host": "cf-wkrs-pages-vless-aoy.pages.dev"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 AU | VLESS | @custom_14 #1 [fast]",
+      "server": "melo-mtn.outline-vpn.cloud",
+      "server_port": 443,
+      "uuid": "a3e76574-9458-4783-905b-970cf0ccdcd1",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "<a"
       }
     },
     {
