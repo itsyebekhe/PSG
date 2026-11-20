@@ -54,14 +54,13 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [medium]",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #2 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -74,14 +73,13 @@
         "جاویدشاه",
         "KingRezaPahlavi",
         "🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [medium]",
+        "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
         "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-        "🇫🇷 FR | VLESS | @free1_vpn #2 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
+        "🇫🇷 FR | VLESS | @free1_vpn #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -151,7 +149,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @selinc #1 [medium]",
+      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [medium]",
+      "server": "ir.g-boot.ir",
+      "server_port": 443,
+      "uuid": "a6cfc07b-964a-4737-a089-69abefcdb509",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KaVqOudPdBy9TIEDxGMN_fcOGlKJmNg2e2grikDJ2lE",
+          "short_id": "9a597f16c2171bab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 TR | VLESS | @selinc #1 [fast]",
       "server": "tr.0a0.uk",
       "server_port": 443,
       "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4",
@@ -276,50 +297,6 @@
           "enabled": true,
           "public_key": "wBh3jtk45kBonp2-uVqsx71F4ziNH7vZcU6DAC6t2xs",
           "short_id": "57"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "1626282bs96377171.trivoxa.ir",
-      "server_port": 54854,
-      "uuid": "f6abd59d-f4ed-49fb-8c4e-a6031c7c151c",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "86N3w2k5BA6n9BVKlLC_a0t7hiAQ8Fv1jViXl-d7sVA",
-          "short_id": "31dfb3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "panel.jorvexo.ir",
-      "server_port": 1152,
-      "uuid": "4dc7f947-869c-4ea9-aa18-6f76b143b1fd",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
-          "short_id": "ead6bdba606219a2"
         }
       }
     },
