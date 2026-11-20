@@ -7,7 +7,7 @@ proxies:
   - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
   - {"name": "🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]", "server": "guide.blog-forme.ru", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "549766c3-fa5f-471e-8031-ffc1f8d5064f", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "guide.blog-forme.ru", "reality-opts": {"public-key": "mbi4BZAuiq_L6pfhG2xxWmtosq0Z1Pzf18fvNSWKMxY", "short-id": "3258252d44113e23"}}
-  - {"name": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]", "server": "spd-mynames.global.ssl.fastly.net", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]", "server": "shop.raadshop.bond", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "16f13ab8-8fab-45fd-97c5-dd022f40a688", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.radeon.com", "reality-opts": {"public-key": "vevOoJogPaHcQOwMYh9Xk5lsbhOFdZoW_MZONAhk0Go", "short-id": "418fbd68"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -16,7 +16,7 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]'
-      - '🇺🇸 US | VLESS | @kafing_2 #1 [fast]'
+      - '🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -25,7 +25,7 @@ proxy-groups:
       - 'جاویدشاه'
       - 'KingRezaPahlavi'
       - '🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]'
-      - '🇺🇸 US | VLESS | @kafing_2 #1 [fast]'
+      - '🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

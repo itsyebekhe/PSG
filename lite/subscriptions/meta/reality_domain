@@ -12,6 +12,7 @@ proxies:
   - {"name": "🇧🇬 BG | VLESS | @hope_net #1 [fast]", "server": "p11real3.greewebservices.ir", "port": 1040, "type": "vless", "skip-cert-verify": true, "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
   - {"name": "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]", "server": "prvtch.titun.su", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "90157e25-cee1-4217-921e-91f300bc1a24", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "perevodchiki.su", "reality-opts": {"public-key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs", "short-id": "428ef87fd47a3a32"}}
   - {"name": "🇫🇷 FR | VLESS | @red2ray #1 [fast]", "server": "fr.abbaas.net", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6962c372-27da-56d6-9d1f-8041abb7538e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "w-x.co", "reality-opts": {"public-key": "wBh3jtk45kBonp2-uVqsx71F4ziNH7vZcU6DAC6t2xs", "short-id": "1296174a86a6ac8c"}}
+  - {"name": "🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]", "server": "shop.raadshop.bond", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "16f13ab8-8fab-45fd-97c5-dd022f40a688", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www.radeon.com", "reality-opts": {"public-key": "vevOoJogPaHcQOwMYh9Xk5lsbhOFdZoW_MZONAhk0Go", "short-id": "418fbd68"}}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -25,6 +26,7 @@ proxy-groups:
       - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
       - '🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]'
       - '🇫🇷 FR | VLESS | @red2ray #1 [fast]'
+      - '🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -38,6 +40,7 @@ proxy-groups:
       - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
       - '🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]'
       - '🇫🇷 FR | VLESS | @red2ray #1 [fast]'
+      - '🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

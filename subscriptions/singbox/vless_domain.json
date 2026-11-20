@@ -86,8 +86,9 @@
         "🇽🇽 XX | VLESS | @artemis_vpn_free #4 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #5 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #6 [fast]",
-        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kafing_2 #3 [fast]",
         "🇽🇽 XX | VLESS | @novinology #5 [fast]",
+        "🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -175,8 +176,9 @@
         "🇽🇽 XX | VLESS | @artemis_vpn_free #4 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #5 [fast]",
         "🇽🇽 XX | VLESS | @artemis_vpn_free #6 [fast]",
-        "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
+        "🇽🇽 XX | VLESS | @kafing_2 #3 [fast]",
         "🇽🇽 XX | VLESS | @novinology #5 [fast]",
+        "🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]",
         "🇮🇷 IR | VLESS | @prooxyk #1 [fast]",
         "🇽🇽 XX | VLESS | @iranvipnet #1 [fast]",
         "🇺🇸 US | VLESS | @iranvipnet #1 [fast]",
@@ -810,12 +812,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @kafing_2 #1 [fast]",
-      "server": "spd-mynames.global.ssl.fastly.net",
-      "server_port": 80,
-      "uuid": "8e378a41-d5e1-427a-aaf8-30190d4be0a0",
-      "network": "xhttp",
-      "packet_encoding": "xudp"
+      "tag": "🇽🇽 XX | VLESS | @kafing_2 #3 [fast]",
+      "server": "chatgpt.com",
+      "server_port": 2096,
+      "uuid": "686c62d9-17a7-43c9-a40a-f6747df60a9f",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca.adobe-connect.top",
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ca.adobe-connect.top"
+        }
+      }
     },
     {
       "type": "vless",
@@ -830,6 +850,28 @@
         "path": "/?ed=2048",
         "headers": {
           "Host": "it1.vlessx.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "shop.raadshop.bond",
+      "server_port": 443,
+      "uuid": "16f13ab8-8fab-45fd-97c5-dd022f40a688",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.radeon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vevOoJogPaHcQOwMYh9Xk5lsbhOFdZoW_MZONAhk0Go",
+          "short_id": "418fbd68"
         }
       }
     },
