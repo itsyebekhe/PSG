@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VMESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
@@ -88,7 +87,6 @@
         "🇽🇽 XX | VLESS | @miov2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @miov2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -184,7 +182,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VMESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
@@ -222,7 +219,6 @@
         "🇽🇽 XX | VLESS | @miov2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @miov2ray #2 [fast]",
         "🇽🇽 XX | VLESS | @shadowsocksshop #1 [fast]",
-        "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #1 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #2 [fast]",
         "🇽🇽 XX | VLESS | @iran_access #3 [fast]",
@@ -315,33 +311,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
-      "server": "104.27.204.44",
-      "server_port": 443,
-      "uuid": "386d67dc-bf88-49fd-a570-301cbb013a33",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "9t94rOaC1ew8n93SdrQ.pAgeS.DEV",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/x1qQUZWxHs5IRVeRUjz7AteYS?ed=2560",
-        "headers": {
-          "Host": "9t94roac1ew8n93sdrq.pages.dev"
-        }
-      }
     },
     {
       "type": "vmess",
@@ -1060,30 +1029,6 @@
         "path": "vless-ws/?ed=2048",
         "headers": {
           "Host": "sub.shadowsokstes.WoRkErs.DeV"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇽🇽 XX | VMESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "US122207.ssgreen.org",
-      "server_port": 443,
-      "uuid": "74d216a3-fdb8-4774-a9c3-35f9e5a46819",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "US122207.ssgreen.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wes",
-        "headers": {
-          "Host": "US122207.ssgreen.org"
         }
       }
     },

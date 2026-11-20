@@ -3,18 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇧🇬 BG | VLESS | @orange_vpns #1 [fast]", "server": "87.120.92.186", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "549766c3-fa5f-471e-8031-ffc1f8d5064f", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "maps.blog-forme.ru", "reality-opts": {"public-key": "mbi4BZAuiq_L6pfhG2xxWmtosq0Z1Pzf18fvNSWKMxY", "short-id": "3258252d44113e23"}}
   - {"name": "🇧🇬 BG | VLESS | @hope_net #1 [fast]", "server": "p11real3.greewebservices.ir", "port": 1040, "type": "vless", "skip-cert-verify": true, "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "play.googleapis.com", "reality-opts": {"public-key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8", "short-id": "9b60d3"}}
   - {"name": "🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]", "server": "88.80.150.15", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "1d46250c-f015-439d-a7fd-c4d9e2a4c63d", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "bg2.oncloudvpn.com", "grpc-opts": {"grpc-service-name": "grpc"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇧🇬 BG | VLESS | @orange_vpns #1 [fast]'
       - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
       - '🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇧🇬 BG | VLESS | @orange_vpns #1 [fast]'
       - '🇧🇬 BG | VLESS | @hope_net #1 [fast]'
       - '🇧🇬 BG | VLESS | @Proxymelimon #1 [fast]'
 rules:

@@ -52,8 +52,8 @@
         "auto",
         "🇹🇷 TR | VLESS | @nofiltering2 #1 [fast]",
         "🇹🇷 TR | VLESS | @nofiltering2 #2 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -64,8 +64,8 @@
       "outbounds": [
         "🇹🇷 TR | VLESS | @nofiltering2 #1 [fast]",
         "🇹🇷 TR | VLESS | @nofiltering2 #2 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]"
+        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+        "🇹🇷 TR | VLESS | @selinc #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -113,6 +113,18 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
+      "server": "tr.subscriptionservice.ir",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "a6FPx9bj7gel0PGZtGIYILG1XiXVnQ37",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇹🇷 TR | VLESS | @selinc #1 [fast]",
       "server": "tr.0a0.uk",
@@ -133,18 +145,6 @@
           "public_key": "U-2PKc5vWQ8drgWUeoxL58r4v_GNpmuvxarkDRat9R0",
           "short_id": "2eec85de34f4cc39"
         }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-      "server": "tr.subscriptionservice.ir",
-      "server_port": 2089,
-      "method": "chacha20-ietf-poly1305",
-      "password": "a6FPx9bj7gel0PGZtGIYILG1XiXVnQ37",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {

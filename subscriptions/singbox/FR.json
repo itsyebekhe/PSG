@@ -50,11 +50,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]",
@@ -66,11 +67,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+        "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @mpproxy #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
         "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
         "🇫🇷 FR | VLESS | @red2ray #1 [fast]",
-        "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #1 [fast]",
         "🇫🇷 FR | VLESS | @minovpnch #2 [fast]",
         "🇫🇷 FR | VLESS | @proxy48 #1 [fast]"
@@ -79,6 +81,40 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
+      "server": "23.162.152.22",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
+      "server": "fr.abbaas.net",
+      "server_port": 443,
+      "uuid": "SoonTeam ",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "stg.crazimals.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wBh3jtk45kBonp2-uVqsx71F4ziNH7vZcU6DAC6t2xs",
+          "short_id": "57"
+        }
+      }
     },
     {
       "type": "vless",
@@ -104,7 +140,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #1 [fast]",
-      "server": "15.237.89.128",
+      "server": "15.224.62.190",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -113,7 +149,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 FR | VLESS | @privatevpns #2 [fast]",
-      "server": "13.39.41.107",
+      "server": "15.224.127.161",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
@@ -134,28 +170,6 @@
           "enabled": true,
           "public_key": "wBh3jtk45kBonp2-uVqsx71F4ziNH7vZcU6DAC6t2xs",
           "short_id": "1296174a86a6ac8c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 FR | VLESS | @free1_vpn #1 [fast]",
-      "server": "fr.abbaas.net",
-      "server_port": 443,
-      "uuid": "SoonTeam ",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "stg.crazimals.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wBh3jtk45kBonp2-uVqsx71F4ziNH7vZcU6DAC6t2xs",
-          "short_id": "57"
         }
       }
     },
