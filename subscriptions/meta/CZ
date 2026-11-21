@@ -3,19 +3,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]", "server": "guide.blog-forme.ru", "port": 2087, "type": "vless", "skip-cert-verify": true, "uuid": "549766c3-fa5f-471e-8031-ffc1f8d5064f", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "guide.blog-forme.ru", "reality-opts": {"public-key": "mbi4BZAuiq_L6pfhG2xxWmtosq0Z1Pzf18fvNSWKMxY", "short-id": "3258252d44113e23"}}
   - {"name": "🇨🇿 CZ | VMESS | @freev2rays #1 [fast]", "server": "time.is", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b526926d-1474-4f41-985e-8b877cb840cd", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/", "headers": {"Host": "shs111.kejixiaoqi666.store"}}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇨🇿 CZ | VLESS | @orange_vpns #1 [fast]'
       - '🇨🇿 CZ | VMESS | @freev2rays #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

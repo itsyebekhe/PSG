@@ -50,8 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 SE | VLESS | @orange_vpns #1 [fast]",
-        "🇸🇪 SE | VMESS | @Proxymelimon #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -69,7 +67,6 @@
         "🇸🇪 SE | VLESS | @realvpnmaster #3 [fast]",
         "🇸🇪 SE | VLESS | @realvpnmaster #4 [fast]",
         "🇸🇪 SE | VLESS | @realvpnmaster #5 [fast]",
-        "🇸🇪 SE | VLESS | @realvpnmaster #6 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -78,8 +75,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 SE | VLESS | @orange_vpns #1 [fast]",
-        "🇸🇪 SE | VMESS | @Proxymelimon #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
         "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
@@ -96,52 +91,12 @@
         "🇸🇪 SE | VLESS | @realvpnmaster #2 [fast]",
         "🇸🇪 SE | VLESS | @realvpnmaster #3 [fast]",
         "🇸🇪 SE | VLESS | @realvpnmaster #4 [fast]",
-        "🇸🇪 SE | VLESS | @realvpnmaster #5 [fast]",
-        "🇸🇪 SE | VLESS | @realvpnmaster #6 [fast]"
+        "🇸🇪 SE | VLESS | @realvpnmaster #5 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @orange_vpns #1 [fast]",
-      "server": "88.216.214.159",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-svc-mgr.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 SE | VMESS | @Proxymelimon #1 [fast]",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com"
-      }
     },
     {
       "type": "vless",
@@ -415,22 +370,6 @@
         "path": "/",
         "headers": {
           "Host": "V2ray-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @realvpnmaster #6 [fast]",
-      "server": "185.146.173.58",
-      "server_port": 80,
-      "uuid": "737f891d-b01b-4628-9171-3340aa26ee01",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/Telegram-free_v2rayyy-Telegram-free_v2rayyy-Telegram-free_v2rayyy-Telegram-free_v2rayyy?ed=2048",
-        "headers": {
-          "Host": "501.ftp.debian.org.www.speedtest.net.免费上网66.Site."
         }
       }
     },
