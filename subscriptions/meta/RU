@@ -5,6 +5,7 @@ log-level: info
 proxies:
   - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "147.45.47.101", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "27f26dee-9cf1-4cca-93f8-9ac23d311408", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "apple.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
   - {"name": "🇷🇺 RU | VLESS | @orange_vpns #2 [fast]", "server": "178.248.236.229", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a71d6c6d-c95e-4ec1-a892-22e21733bf09", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "144.hexdey.com", "reality-opts": {"public-key": "_3mkK8SY6YVqws73SUVPKL77tzxDVNUt4ag9J9ec-D0", "short-id": "d05a120d3506d2cc"}}
+  - {"name": "🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]", "server": "g2de.velnix-services.ir", "port": 1080, "type": "vless", "skip-cert-verify": true, "uuid": "250865f0-4a0f-4e2e-8d14-4c39a25d0bef", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "www6.gameservice-iramn3.com", "reality-opts": {"public-key": "qmCIBP5Y6Pu7oxY--0sOXglNvHV9byxo2cyVsfAqUiI", "short-id": "307eb35dbf3a5385"}}
   - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]", "server": "48.103.133.47", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "apple.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
 proxy-groups:
   - name: "PROXY"
@@ -12,6 +13,7 @@ proxy-groups:
     proxies:
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @orange_vpns #2 [fast]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
@@ -19,6 +21,7 @@ proxy-groups:
     proxies:
       - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @orange_vpns #2 [fast]'
+      - '🇷🇺 RU | VLESS | @prrofile_purple #1 [fast]'
       - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT

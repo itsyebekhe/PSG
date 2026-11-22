@@ -60,8 +60,10 @@
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @Proxymelimon #1 [slow]",
+        "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
         "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -80,8 +82,10 @@
         "🇬🇧 GB | SS | @beshkan #1 [fast]",
         "🇬🇧 GB | SS | @beshkan #2 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
-        "🇬🇧 GB | VLESS | @Proxymelimon #1 [slow]",
-        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]"
+        "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
+        "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -214,7 +218,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 GB | VLESS | @Proxymelimon #1 [slow]",
+      "tag": "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
       "server": "185.122.167.103",
       "server_port": 59130,
       "uuid": "b771804e-a62c-429f-a56c-9f0a452d8f6e",
@@ -238,11 +242,32 @@
     {
       "type": "vless",
       "tag": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]",
-      "server": "13.135.123.21",
+      "server": "35.176.130.127",
       "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
       "network": "tcp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]",
+      "server": "18.130.213.36",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
+      "network": "tcp",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
+      "server": "198.244.202.215",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "direct",

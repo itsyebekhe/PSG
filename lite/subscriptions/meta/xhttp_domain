@@ -1,0 +1,31 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]", "server": "host.taghvimtime.ir", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "faf19d58-79f2-4857-f790-3ebd8cb2459d", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "host.taghvimtime.ir"}
+  - {"name": "🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]", "server": "render.com", "port": 2053, "type": "vless", "skip-cert-verify": true, "uuid": "cf7e6223-a9c6-4d85-8678-831bc9dd184c", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "orgg-nether-soeiwhal-bssutudhdhese-beqhjdwter.maniyadg7shard.ir"}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - 'همکاری_ملی'
+      - 'جاویدشاه'
+      - 'KingRezaPahlavi'
+      - '🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - 'همکاری_ملی'
+      - 'جاویدشاه'
+      - 'KingRezaPahlavi'
+      - '🇩🇪 DE | VLESS | @outlinereleasedkey #1 [fast]'
+      - '🇺🇸 US | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
