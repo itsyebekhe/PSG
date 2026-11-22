@@ -58,15 +58,16 @@
         "🇺🇸 US | SS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
+        "🇺🇸 US | SS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
-        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #4 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #5 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #6 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
@@ -123,15 +124,16 @@
         "🇺🇸 US | SS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
+        "🇺🇸 US | SS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
-        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #3 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #4 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #5 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #6 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+        "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
@@ -326,6 +328,18 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @flyv2ray #1 [fast]",
+      "server": "156.146.38.167",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
       "server": "89.18.60.230",
@@ -345,51 +359,6 @@
           "enabled": true,
           "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
           "short_id": "1c3e8241a8743df9"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
-      "server": "xc115-1.meiziba5566.com",
-      "server_port": 443,
-      "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "xc115-1.meiziba5566.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/f40a8d65"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
-      "server": "xcf037.facai2024.com",
-      "server_port": 443,
-      "uuid": "d9863037-0463-4615-e972-36ba9662d1e9",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "ws",
-      "packet_encoding": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "xcf037.facai2024.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/d9863037",
-        "headers": {
-          "Host": "xcf037.facai2024.com"
         }
       }
     },
@@ -469,6 +438,51 @@
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @freev2rays #1 [fast]",
+      "server": "xc115-1.meiziba5566.com",
+      "server_port": 443,
+      "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "xc115-1.meiziba5566.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/f40a8d65"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
+      "server": "xcf037.facai2024.com",
+      "server_port": 443,
+      "uuid": "d9863037-0463-4615-e972-36ba9662d1e9",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "network": "ws",
+      "packet_encoding": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "xcf037.facai2024.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/d9863037",
+        "headers": {
+          "Host": "xcf037.facai2024.com"
+        }
       }
     },
     {

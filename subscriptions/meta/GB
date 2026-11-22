@@ -4,25 +4,22 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇬🇧 GB | VLESS | @ehsawn8 #1 [fast]", "server": "151.101.56.9", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "d8b3f1c4-94c7-423e-a03a-bfa7f6af0ea1", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "freekabotar.global.ssl.fastly.net"}}}
-  - {"name": "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]", "server": "185.122.167.103", "port": 59130, "type": "vless", "skip-cert-verify": true, "uuid": "b771804e-a62c-429f-a56c-9f0a452d8f6e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "nvplm.stg.nvidia.com", "reality-opts": {"public-key": "6Lh48ni3w8oe9QW3xVzNMIE5LU-p5VPHPMCUtVMOmgo", "short-id": "14"}}
+  - {"name": "🇬🇧 GB | VLESS | @Proxymelimon #1 [slow]", "server": "185.122.167.103", "port": 59130, "type": "vless", "skip-cert-verify": true, "uuid": "b771804e-a62c-429f-a56c-9f0a452d8f6e", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "nvplm.stg.nvidia.com", "reality-opts": {"public-key": "6Lh48ni3w8oe9QW3xVzNMIE5LU-p5VPHPMCUtVMOmgo", "short-id": "14"}}
   - {"name": "🇬🇧 GB | VLESS | @privatevpns #1 [fast]", "server": "13.135.123.21", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
-  - {"name": "🇬🇧 GB | VLESS | @privatevpns #2 [fast]", "server": "18.175.41.76", "port": 22222, "type": "vless", "skip-cert-verify": true, "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e", "network": "tcp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇬🇧 GB | VLESS | @ehsawn8 #1 [fast]'
-      - '🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]'
+      - '🇬🇧 GB | VLESS | @Proxymelimon #1 [slow]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇬🇧 GB | VLESS | @ehsawn8 #1 [fast]'
-      - '🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]'
+      - '🇬🇧 GB | VLESS | @Proxymelimon #1 [slow]'
       - '🇬🇧 GB | VLESS | @privatevpns #1 [fast]'
-      - '🇬🇧 GB | VLESS | @privatevpns #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

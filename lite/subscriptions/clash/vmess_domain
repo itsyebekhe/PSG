@@ -3,7 +3,6 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇽🇽 XX | VMESS | @orange_vpns #1 [fast]", "server": "free3.familysharing.ir", "port": 8880, "type": "vmess", "skip-cert-verify": true, "uuid": "4fa625e5-346d-d732-9b93-ce960f81bbc0", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #1 [fast]", "server": "xc115-1.meiziba5566.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "f40a8d65-a9ac-42ce-ebcc-9e6447a9866d", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/f40a8d65", "headers": {"Host": "xc115-1.meiziba5566.com"}}}
   - {"name": "🇺🇸 US | VMESS | @freev2rays #2 [fast]", "server": "xcf037.facai2024.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "d9863037-0463-4615-e972-36ba9662d1e9", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/d9863037", "headers": {"Host": "xcf037.facai2024.com"}}}
   - {"name": "🇽🇽 XX | VMESS | @red2ray #1 [fast]", "server": "www.gptcloudai.com", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0", "alterId": 0, "cipher": "auto", "network": "ws", "tls": true, "ws-opts": {"path": "/truth", "headers": {"Host": "www.gptcloudai.com"}}}
@@ -19,7 +18,6 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇽🇽 XX | VMESS | @orange_vpns #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #2 [fast]'
       - '🇽🇽 XX | VMESS | @red2ray #1 [fast]'
@@ -35,7 +33,6 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇽🇽 XX | VMESS | @orange_vpns #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #1 [fast]'
       - '🇺🇸 US | VMESS | @freev2rays #2 [fast]'
       - '🇽🇽 XX | VMESS | @red2ray #1 [fast]'
