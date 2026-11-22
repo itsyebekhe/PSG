@@ -50,10 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 TR | VLESS | @nofiltering2 #1 [fast]",
-        "🇹🇷 TR | VLESS | @nofiltering2 #2 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [medium]",
+        "🇹🇷 TR | VLESS | @nofiltering2 #1 [slow]",
+        "🇹🇷 TR | VLESS | @nofiltering2 #2 [slow]",
+        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 TR | VLESS | @nofiltering2 #1 [fast]",
-        "🇹🇷 TR | VLESS | @nofiltering2 #2 [fast]",
-        "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-        "🇹🇷 TR | VLESS | @selinc #1 [medium]"
+        "🇹🇷 TR | VLESS | @nofiltering2 #1 [slow]",
+        "🇹🇷 TR | VLESS | @nofiltering2 #2 [slow]",
+        "🇹🇷 TR | VLESS | @selinc #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,7 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @nofiltering2 #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @nofiltering2 #1 [slow]",
       "server": "45.144.214.102",
       "server_port": 443,
       "uuid": "128ce9ab-63bc-48dc-92ca-1b5426a9eb46",
@@ -97,7 +95,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @nofiltering2 #2 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @nofiltering2 #2 [slow]",
       "server": "45.144.214.102",
       "server_port": 443,
       "uuid": "128ce9ab-63bc-48dc-92ca-1b5426a9eb46",
@@ -113,20 +111,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 TR | SS | @free1_vpn #1 [fast]",
-      "server": "tr.subscriptionservice.ir",
-      "server_port": 2089,
-      "method": "chacha20-ietf-poly1305",
-      "password": "a6FPx9bj7gel0PGZtGIYILG1XiXVnQ37",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @selinc #1 [medium]",
+      "tag": "🇹🇷 TR | VLESS | @selinc #1 [fast]",
       "server": "tr.0a0.uk",
       "server_port": 443,
       "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4",
