@@ -53,10 +53,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇮🇷 IR | VLESS | @orange_vpns #1 [fast]",
         "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,10 +68,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇮🇷 IR | VLESS | @orange_vpns #1 [fast]",
         "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
-        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]"
+        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -115,29 +115,6 @@
       "transport": {
         "type": "ws",
         "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR | VLESS | @orange_vpns #1 [fast]",
-      "server": "ir.g-boot.ir",
-      "server_port": 443,
-      "uuid": "a6cfc07b-964a-4737-a089-69abefcdb509",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KaVqOudPdBy9TIEDxGMN_fcOGlKJmNg2e2grikDJ2lE",
-          "short_id": "9a597f16c2171bab"
-        }
       }
     },
     {
@@ -205,6 +182,28 @@
           "enabled": true,
           "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
           "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "afshin.daltoonserver.ir",
+      "server_port": 8989,
+      "uuid": "2b67f150-3b1d-4aff-9fb9-dd32acb9b944",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "s6-sms-cdn.ecom-stg.samsung.con",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5DVeaUVfUfD6bRT6pMDiRa70i6m1NrNp8tFNS9xf4yo",
+          "short_id": "b7b6"
         }
       }
     },
