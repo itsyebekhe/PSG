@@ -58,7 +58,6 @@
         "🇺🇸 US | SS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
-        "🇺🇸 US | SS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
@@ -72,10 +71,12 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
@@ -124,7 +125,6 @@
         "🇺🇸 US | SS | @orange_vpns #1 [fast]",
         "🇺🇸 US | VLESS | @ehsawn8 #1 [fast]",
         "🇺🇸 US | VLESS | @nofiltering2 #1 [fast]",
-        "🇺🇸 US | SS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #1 [fast]",
         "🇺🇸 US | VLESS | @bored_vpn #2 [fast]",
@@ -138,10 +138,12 @@
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
+        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
         "🇺🇸 US | VLESS | @red2ray #1 [fast]",
+        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
@@ -325,18 +327,6 @@
         "alpn": [
           "h2"
         ]
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 US | SS | @flyv2ray #1 [fast]",
-      "server": "156.146.38.167",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {
@@ -529,6 +519,22 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "170.114.45.6",
+      "server_port": 80,
+      "uuid": "9ce32242-557a-4d18-864d-c9c385b3dfa4",
+      "network": "ws",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "matrix.learnpodedu.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
       "server": "199.232.78.120",
       "server_port": 443,
@@ -591,6 +597,24 @@
           "enabled": true,
           "public_key": "NVwzzeQbvYYkT2-MGGBCgsHNnGfsSWupuMtTvd6gEzY",
           "short_id": "733857f978b623eb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
+      "server": "179.254.191.251",
+      "server_port": 4443,
+      "uuid": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "bl1.nexfile.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
