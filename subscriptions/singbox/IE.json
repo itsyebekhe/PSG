@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgTFU=
+//profile-title: base64:UFNHIHwgSUU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]",
+        "🇮🇪 IE | SS | @orange_vpns #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]"
+        "🇮🇪 IE | SS | @orange_vpns #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,29 +67,15 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vless",
-      "tag": "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "fr.extremumnews.com",
-      "server_port": 6443,
-      "uuid": "391a32c6-084c-4d61-8e8d-472678021dac",
-      "network": "grpc",
-      "packet_encoding": "xudp",
+      "type": "shadowsocks",
+      "tag": "🇮🇪 IE | SS | @orange_vpns #1 [fast]",
+      "server": "3.248.201.197",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05",
+      "network": "tcp",
       "tls": {
-        "enabled": true,
-        "server_name": "download.virtualbox.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "j0S1c1otF2nPttqWdl1jvO3Lpo46deTj5UYBeZoUB0w",
-          "short_id": "1265c88595b5c91a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "/api/v1/update"
+        "enabled": true
       }
     },
     {

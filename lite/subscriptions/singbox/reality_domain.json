@@ -53,10 +53,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
+        "🇹🇷 TR | VLESS | @selinc #1 [medium]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+        "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -68,10 +68,10 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇹🇷 TR | VLESS | @selinc #1 [fast]",
+        "🇹🇷 TR | VLESS | @selinc #1 [medium]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
-        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
+        "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]",
+        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -119,7 +119,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 TR | VLESS | @selinc #1 [fast]",
+      "tag": "🇹🇷 TR | VLESS | @selinc #1 [medium]",
       "server": "tr.0a0.uk",
       "server_port": 443,
       "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4",
@@ -164,6 +164,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]",
+      "server": "free.fugui.lol",
+      "server_port": 19482,
+      "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "swdist.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+          "short_id": "fa514b83"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
       "server": "prvtch.titun.su",
       "server_port": 443,
@@ -183,32 +206,6 @@
           "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
           "short_id": "428ef87fd47a3a32"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "se.extremumnews.com",
-      "server_port": 6443,
-      "uuid": "391a32c6-084c-4d61-8e8d-472678021dac",
-      "network": "grpc",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "download.virtualbox.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sadyaFeM276vgv_wdE1g6DDMgKZfKR_fr9DhTyCp9zM",
-          "short_id": "885781b112c298a5"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "/api/v1/update"
       }
     },
     {

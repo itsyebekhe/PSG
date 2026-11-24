@@ -3,21 +3,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇷🇺 RU | VLESS | @orange_vpns #1 [fast]", "server": "178.248.236.229", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "a71d6c6d-c95e-4ec1-a892-22e21733bf09", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "144.hexdey.com", "reality-opts": {"public-key": "_3mkK8SY6YVqws73SUVPKL77tzxDVNUt4ag9J9ec-D0", "short-id": "d05a120d3506d2cc"}}
   - {"name": "🇷🇺 RU | VLESS | @outlinereleasedkey #1 [fast]", "server": "vps3.nemnogogo.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "vps3.nemnogogo.com", "grpc-opts": {"grpc-service-name": "mobile.api.Event"}}
   - {"name": "🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]", "server": "48.103.133.47", "port": 8443, "type": "vless", "skip-cert-verify": true, "uuid": "2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "apple.com", "reality-opts": {"public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc", "short-id": "6ba85179e30d4fc2"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇷🇺 RU | VLESS | @orange_vpns #1 [fast]'
       - '🇷🇺 RU | VLESS | @outlinereleasedkey #1 [fast]'
       - '🇷🇺 RU | VLESS | @netfreedom0 #1 [fast]'
 rules:
