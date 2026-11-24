@@ -57,11 +57,12 @@
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
-        "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
+        "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -77,11 +78,12 @@
         "🇺🇸 US | VLESS | @flyv2ray #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
-        "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
+        "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇳🇱 NL | VLESS | @qeshmserver #1 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]"
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -217,24 +219,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @Proxymelimon #1 [fast]",
-      "server": "45.86.61.133",
-      "server_port": 443,
-      "uuid": "e2f3ddd0-10f1-421f-b684-4c943986da65",
+      "tag": "🇬🇧 GB | VLESS | @Proxymelimon #1 [fast]",
+      "server": "185.122.167.103",
+      "server_port": 59130,
+      "uuid": "b771804e-a62c-429f-a56c-9f0a452d8f6e",
       "flow": "xtls-rprx-vision",
       "network": "tcp",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "nvplm.stg.nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GwjzHvbNB5Wn6Jj7E3WSc5pc32bjeJCvv9yf0ibDnRs",
-          "short_id": "15affa0af66dfc79"
+          "public_key": "6Lh48ni3w8oe9QW3xVzNMIE5LU-p5VPHPMCUtVMOmgo",
+          "short_id": "14"
         }
       }
     },
@@ -254,6 +256,32 @@
           "public_key": "xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4",
           "short_id": "c71118d9399fb8c2"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "145.79.177.134",
+      "server_port": 6443,
+      "uuid": "391a32c6-084c-4d61-8e8d-472678021dac",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.semiconductor.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "a3yUxhq8UVjuSGrtdQZs-epe3B8fepkuCOkGibNyL0E",
+          "short_id": "27b13b0239429b12"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "/api/v1/update"
       }
     },
     {
@@ -302,7 +330,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
       "server": "49.13.27.100",
       "server_port": 443,
       "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af",

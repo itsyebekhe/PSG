@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]", "server": "free.fugui.lol", "port": 19482, "type": "vless", "skip-cert-verify": true, "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "swdist.apple.com", "reality-opts": {"public-key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ", "short-id": "fa514b83"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

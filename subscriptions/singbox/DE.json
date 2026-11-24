@@ -51,7 +51,7 @@
       "outbounds": [
         "auto",
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | SS | @orange_vpns #1 [slow]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
         "🇩🇪 DE | SS | @free1_vpn #1 [fast]",
@@ -63,14 +63,12 @@
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #3 [fast]",
         "🇩🇪 DE | SS | @netfreedom0 #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -80,7 +78,7 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 DE | VLESS | @outline_ir #1 [fast]",
-        "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
+        "🇩🇪 DE | SS | @orange_vpns #1 [slow]",
         "🇩🇪 DE | VLESS | @orange_vpns #1 [fast]",
         "🇩🇪 DE | VLESS | @ehsawn8 #1 [fast]",
         "🇩🇪 DE | SS | @free1_vpn #1 [fast]",
@@ -92,14 +90,12 @@
         "🇩🇪 DE | VLESS | @tanhanet #1 [fast]",
         "🇩🇪 DE | VLESS | @red2ray #1 [fast]",
         "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #3 [fast]",
         "🇩🇪 DE | SS | @netfreedom0 #1 [fast]",
         "🇩🇪 DE | VLESS | @minovpnch #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]",
-        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]"
+        "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -131,7 +127,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 DE | SS | @orange_vpns #1 [fast]",
+      "tag": "🇩🇪 DE | SS | @orange_vpns #1 [slow]",
       "server": "8.209.73.203",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
@@ -335,68 +331,27 @@
     {
       "type": "vless",
       "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "www.pexqelo.ir",
-      "server_port": 443,
-      "uuid": "823bde5d-0271-49a3-b645-9c5353460c27",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
+      "server": "145.79.177.134",
+      "server_port": 6443,
+      "uuid": "391a32c6-084c-4d61-8e8d-472678021dac",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "opensuse.org",
+        "server_name": "www.semiconductor.samsung.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EMMr7Eqwy3wpgbatnOaAmym5Tm4nXyJlC83iVvCadmk",
-          "short_id": "f3f00787a8b3f471"
+          "public_key": "a3yUxhq8UVjuSGrtdQZs-epe3B8fepkuCOkGibNyL0E",
+          "short_id": "27b13b0239429b12"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "panel.jorvexo.ir",
-      "server_port": 1152,
-      "uuid": "6862421c-72ba-4510-bcd7-f29226a8c632",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
-          "short_id": "ead6bdba606219a2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #3 [fast]",
-      "server": "panel.jorvexo.ir",
-      "server_port": 1152,
-      "uuid": "148c45b8-7e40-4062-9ba8-3836b844550b",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
-          "short_id": "ead6bdba606219a2"
-        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "/api/v1/update"
       }
     },
     {
@@ -480,7 +435,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [medium]",
+      "tag": "🇩🇪 DE | VLESS | @nepo_v2ray #1 [fast]",
       "server": "49.13.27.100",
       "server_port": 443,
       "uuid": "5f8c9ef2-d6a5-4ef2-bc68-eeef97f6b6af",

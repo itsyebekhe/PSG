@@ -56,11 +56,11 @@
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+        "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #3 [fast]",
         "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #2 [fast]",
+        "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -75,11 +75,11 @@
         "🇩🇪 DE | VLESS | @free1_vpn #1 [fast]",
         "🇹🇷 TR | VLESS | @selinc #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+        "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #3 [fast]",
-        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]"
+        "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
+        "🇫🇮 FI | VLESS | @NamiraConfigs #2 [fast]",
+        "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -195,6 +195,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]",
+      "server": "free.fugui.lol",
+      "server_port": 19482,
+      "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "swdist.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+          "short_id": "fa514b83"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
       "server": "prvtch.titun.su",
       "server_port": 443,
@@ -218,91 +241,80 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "www.pexqelo.ir",
-      "server_port": 443,
-      "uuid": "823bde5d-0271-49a3-b645-9c5353460c27",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "opensuse.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EMMr7Eqwy3wpgbatnOaAmym5Tm4nXyJlC83iVvCadmk",
-          "short_id": "f3f00787a8b3f471"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "panel.jorvexo.ir",
-      "server_port": 1152,
-      "uuid": "6862421c-72ba-4510-bcd7-f29226a8c632",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
-          "short_id": "ead6bdba606219a2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #3 [fast]",
-      "server": "panel.jorvexo.ir",
-      "server_port": 1152,
-      "uuid": "148c45b8-7e40-4062-9ba8-3836b844550b",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
-          "short_id": "ead6bdba606219a2"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]",
-      "server": "finlandnovemberone.best",
-      "server_port": 443,
-      "uuid": "fdbd8fb8-7d27-4bd8-9da1-1e42c4876835",
-      "network": "xhttp",
+      "server": "se.extremumnews.com",
+      "server_port": 6443,
+      "uuid": "391a32c6-084c-4d61-8e8d-472678021dac",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "finlandnovemberone.best",
+        "server_name": "download.virtualbox.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sadyaFeM276vgv_wdE1g6DDMgKZfKR_fr9DhTyCp9zM",
+          "short_id": "885781b112c298a5"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "/api/v1/update"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 FI | VLESS | @NamiraConfigs #2 [fast]",
+      "server": "pl.extremumnews.com",
+      "server_port": 6443,
+      "uuid": "391a32c6-084c-4d61-8e8d-472678021dac",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "adaptivesupport.amd.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "5INjcaKWv9Yfn62Igz2_xfw1PNgEtroCkKqd0c-wMA4",
-          "short_id": "a8329724e1e60d85"
+          "public_key": "incJdGcSQObiuBxmGneu0LFLO4MnjEnx5MX6e1q98k8",
+          "short_id": "ffd956560a594225"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "/api/v1/update"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "fr.extremumnews.com",
+      "server_port": 6443,
+      "uuid": "391a32c6-084c-4d61-8e8d-472678021dac",
+      "network": "grpc",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.virtualbox.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "j0S1c1otF2nPttqWdl1jvO3Lpo46deTj5UYBeZoUB0w",
+          "short_id": "1265c88595b5c91a"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "/api/v1/update"
       }
     },
     {

@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgWEhUVFBfRE9NQUlO
+//profile-title: base64:UFNHIHwgTFU=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,10 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]",
+        "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,10 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "همکاری_ملی",
-        "جاویدشاه",
-        "KingRezaPahlavi",
-        "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]"
+        "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -74,63 +68,28 @@
     },
     {
       "type": "vless",
-      "tag": "همکاری_ملی",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "جاویدشاه",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "KingRezaPahlavi",
-      "server": "127.0.0.1",
-      "server_port": 443,
-      "uuid": "00000000-0000-0000-0000-000000000000",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #2 [fast]",
-      "server": "panel.jorvexo.ir",
-      "server_port": 1152,
-      "uuid": "6862421c-72ba-4510-bcd7-f29226a8c632",
-      "network": "xhttp",
+      "tag": "🇱🇺 LU | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "fr.extremumnews.com",
+      "server_port": 6443,
+      "uuid": "391a32c6-084c-4d61-8e8d-472678021dac",
+      "network": "grpc",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "in.tradingview.com",
+        "server_name": "download.virtualbox.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Fmhl6wGywDftzMcxYFyzGrlHvP-XCwujzo_ULibHfHE",
-          "short_id": "ead6bdba606219a2"
+          "public_key": "j0S1c1otF2nPttqWdl1jvO3Lpo46deTj5UYBeZoUB0w",
+          "short_id": "1265c88595b5c91a"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "/api/v1/update"
       }
     },
     {

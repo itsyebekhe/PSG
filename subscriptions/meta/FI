@@ -3,17 +3,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "finlandnovemberone.best", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "fdbd8fb8-7d27-4bd8-9da1-1e42c4876835", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "finlandnovemberone.best", "reality-opts": {"public-key": "5INjcaKWv9Yfn62Igz2_xfw1PNgEtroCkKqd0c-wMA4", "short-id": "a8329724e1e60d85"}}
+  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]", "server": "se.extremumnews.com", "port": 6443, "type": "vless", "skip-cert-verify": true, "uuid": "391a32c6-084c-4d61-8e8d-472678021dac", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "qq", "servername": "download.virtualbox.org", "grpc-opts": {"grpc-service-name": "/api/v1/update"}, "reality-opts": {"public-key": "sadyaFeM276vgv_wdE1g6DDMgKZfKR_fr9DhTyCp9zM", "short-id": "885781b112c298a5"}}
+  - {"name": "🇫🇮 FI | VLESS | @NamiraConfigs #2 [fast]", "server": "pl.extremumnews.com", "port": 6443, "type": "vless", "skip-cert-verify": true, "uuid": "391a32c6-084c-4d61-8e8d-472678021dac", "network": "grpc", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "adaptivesupport.amd.com", "grpc-opts": {"grpc-service-name": "/api/v1/update"}, "reality-opts": {"public-key": "incJdGcSQObiuBxmGneu0LFLO4MnjEnx5MX6e1q98k8", "short-id": "ffd956560a594225"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @NamiraConfigs #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇫🇮 FI | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇫🇮 FI | VLESS | @NamiraConfigs #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

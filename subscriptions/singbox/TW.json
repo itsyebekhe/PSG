@@ -1,4 +1,4 @@
-//profile-title: base64:UFNHIHwgQVQ=
+//profile-title: base64:UFNHIHwgVFc=
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 //support-url: https://telegram.me/yebekhe
@@ -50,7 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]",
+        "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,7 +59,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]"
+        "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -67,20 +67,26 @@
       "idle_timeout": "30m"
     },
     {
-      "type": "vmess",
-      "tag": "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]",
-      "server": "154.47.19.225",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
+      "type": "vless",
+      "tag": "🇹🇼 TW | VLESS | @Proxymelimon #1 [fast]",
+      "server": "free.fugui.lol",
+      "server_port": 19482,
+      "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
-      "packet_encoding": "",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "xmfhlpy.com"
+        "server_name": "swdist.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+          "short_id": "fa514b83"
+        }
       }
     },
     {
