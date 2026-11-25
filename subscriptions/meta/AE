@@ -3,17 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [fast]", "server": "189.30.65.203", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "490dc3b4-8d1d-49fd-840e-bd5277b41557", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "service-41f6a2a01377"}}
+  - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [medium]", "server": "189.30.65.203", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "490dc3b4-8d1d-49fd-840e-bd5277b41557", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "service-41f6a2a01377"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
+      - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
+      - '🇦🇪 AE | VLESS | @red2ray #1 [medium]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

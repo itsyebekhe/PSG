@@ -50,10 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH | SS | @outlinereleasedkey #1 [medium]",
         "🇨🇭 CH | VLESS | @bored_vpn #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -62,27 +60,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH | SS | @outlinereleasedkey #1 [medium]",
         "🇨🇭 CH | VLESS | @bored_vpn #1 [fast]",
-        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
-        "🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]"
+        "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 CH | SS | @outlinereleasedkey #1 [medium]",
-      "server": "79.127.184.104",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vless",
@@ -127,29 +111,6 @@
           "enabled": true,
           "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
           "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 CH | VLESS | @mehrosaboran #1 [fast]",
-      "server": "195.15.207.252",
-      "server_port": 443,
-      "uuid": "65b6bc06-44c9-4b21-8dc0-bdf1d688c0e6",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "ch.mntw.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dqhYuWM5WUOgUYe4FmvLZS-Nb4tY9qZ7_WffpePl6lQ",
-          "short_id": "76d0389e457fcba0"
         }
       }
     },
