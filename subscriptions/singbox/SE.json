@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
-        "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #2 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #3 [fast]",
@@ -75,8 +75,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
-        "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #1 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #2 [fast]",
         "🇸🇪 SE | VLESS | @kurd_v2ray #3 [fast]",
@@ -100,6 +100,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇸🇪 SE | VLESS | @red2ray #1 [fast]",
+      "server": "88.216.72.172",
+      "server_port": 443,
+      "uuid": "31e407b3-6e1e-425f-98ea-fcf8f494c6a0",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "video.gifmems.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0MrhgrveImRyxFaC9Q11Mm4-oN38uFlFFt4UnmGrxRo",
+          "short_id": "041a595c72d82db0"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇸🇪 SE | VLESS | @minovpnch #1 [fast]",
       "server": "185.146.173.200",
       "server_port": 8880,
@@ -111,22 +134,6 @@
         "path": "/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed",
         "headers": {
           "Host": "www.speedtest.net.B.lightning-6.LiVE."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 SE | VLESS | @deli_servers #1 [fast]",
-      "server": "185.146.173.59",
-      "server_port": 80,
-      "uuid": "telegram-deli-servers",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/tel+:+deli_servers+tel+:+deli_servers+tel+:+deli_servers+tel+:+deli_servers+tel+:+deli_servers+tel+:+deli_servers?ed=2048",
-        "headers": {
-          "Host": "kia来自我们团队的爱01我爱熟食店lovedeli.speedtest.net.gOogle.com.Arvancloud.ir.realKiaa.ninjA."
         }
       }
     },

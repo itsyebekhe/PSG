@@ -3,18 +3,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+  - {"name": "🇨🇭 CH | VLESS | @orange_vpns #1 [fast]", "server": "45.90.59.15", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "3950b45e-740d-4dca-ac95-505ec8534592", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.cloudflare.com", "reality-opts": {"public-key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY", "short-id": "19253fae84102271"}}
   - {"name": "🇨🇭 CH | VLESS | @bored_vpn #1 [fast]", "server": "195.15.207.252", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "65b6bc06-44c9-4b21-8dc0-bdf1d688c0e6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "ch.mntw.lol", "reality-opts": {"public-key": "dqhYuWM5WUOgUYe4FmvLZS-Nb4tY9qZ7_WffpePl6lQ", "short-id": "76d0389e457fcba0"}}
   - {"name": "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]", "server": "prvtch.titun.su", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "90157e25-cee1-4217-921e-91f300bc1a24", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "perevodchiki.su", "reality-opts": {"public-key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs", "short-id": "428ef87fd47a3a32"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
+      - '🇨🇭 CH | VLESS | @orange_vpns #1 [fast]'
       - '🇨🇭 CH | VLESS | @bored_vpn #1 [fast]'
       - '🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
+      - '🇨🇭 CH | VLESS | @orange_vpns #1 [fast]'
       - '🇨🇭 CH | VLESS | @bored_vpn #1 [fast]'
       - '🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]'
 rules:

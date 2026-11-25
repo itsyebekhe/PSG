@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇪🇸 ES | VLESS | @NamiraConfigs #1 [fast]", "server": "65.20.99.198", "port": 40118, "type": "vless", "skip-cert-verify": true, "uuid": "4e932df2-a06a-4043-861c-87fe8d217aae", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "servername": "delivery.mp.microsoft.com", "reality-opts": {"public-key": "NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs", "short-id": "c39acc8cb9481d24"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇪🇸 ES | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇪🇸 ES | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
