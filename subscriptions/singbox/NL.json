@@ -55,8 +55,7 @@
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | SS | @selinc #1 [fast]",
         "🇳🇱 NL | VLESS | @bored_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
@@ -74,8 +73,7 @@
         "🇳🇱 NL | VLESS | @mehrosaboran #1 [fast]",
         "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
         "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
-        "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
+        "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
         "🇳🇱 NL | SS | @selinc #1 [fast]",
         "🇳🇱 NL | VLESS | @bored_vpn #1 [fast]",
         "🇳🇱 NL | VLESS | @red2ray #1 [fast]",
@@ -89,29 +87,6 @@
     {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @orange_vpns #1 [fast]",
-      "server": "51.158.206.26",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
       "server": "195.206.235.72",
       "server_port": 443,
       "uuid": "26843758-24de-4f76-b5d0-624038e353c4",
@@ -124,6 +99,29 @@
           "enabled": true,
           "public_key": "3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE",
           "short_id": "e572b6579ea525d4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 NL | VLESS | @orange_vpns #2 [fast]",
+      "server": "51.158.206.12",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
         }
       }
     },
@@ -153,7 +151,7 @@
     {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @outlinereleasedkey #1 [fast]",
-      "server": "51.158.206.93",
+      "server": "51.158.206.98",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -162,6 +160,10 @@
       "tls": {
         "enabled": true,
         "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "reality": {
           "enabled": true,
           "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
@@ -172,7 +174,7 @@
     {
       "type": "vless",
       "tag": "🇳🇱 NL | VLESS | @free1_vpn #1 [fast]",
-      "server": "51.158.206.103",
+      "server": "51.158.206.96",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -193,49 +195,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #2 [fast]",
-      "server": "51.158.206.87",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇳🇱 NL | SS | @free1_vpn #1 [fast]",
+      "server": "193.29.139.168",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QCXDxuDlTTMD7jtgHUjIoj",
       "network": "tcp",
-      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 NL | VLESS | @free1_vpn #3 [fast]",
-      "server": "51.158.206.34",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
+        "enabled": true
       }
     },
     {

@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇱🇹 LT | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
@@ -59,12 +60,36 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇱🇹 LT | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 LT | VLESS | @mtproxy22_v2ray #1 [fast]",
+      "server": "84.32.209.54",
+      "server_port": 443,
+      "uuid": "f69e272f-e0e5-4e9d-b180-5be63930cde9",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "lt.memepn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "868419504747f6de"
+        }
+      }
     },
     {
       "type": "shadowsocks",

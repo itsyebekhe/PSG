@@ -50,8 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 AT | VMESS | @outlinereleasedkey #1 [fast]",
         "🇦🇹 AT | SS | @flyv2ray #1 [fast]",
+        "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,8 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 AT | VMESS | @outlinereleasedkey #1 [fast]",
-        "🇦🇹 AT | SS | @flyv2ray #1 [fast]"
+        "🇦🇹 AT | SS | @flyv2ray #1 [fast]",
+        "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -69,8 +69,20 @@
       "idle_timeout": "30m"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 AT | SS | @flyv2ray #1 [fast]",
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇦🇹 AT | VMESS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -83,18 +95,6 @@
       "tls": {
         "enabled": true,
         "server_name": "xmfhlpy.com"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 AT | SS | @flyv2ray #1 [fast]",
-      "server": "152.53.1.57",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
       }
     },
     {

@@ -70,15 +70,13 @@
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @mt_proxy #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
@@ -138,15 +136,13 @@
         "🇺🇸 US | VMESS | @freev2rays #2 [fast]",
         "🇺🇸 US | VLESS | @mt_proxy #1 [fast]",
         "🇺🇸 US | VLESS | @free4allvpn #1 [fast]",
-        "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
+        "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #2 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #3 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #1 [fast]",
         "🇺🇸 US | VLESS | @msv2raynp #2 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-        "🇺🇸 US | VLESS | @red2ray #2 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #1 [fast]",
         "🇺🇸 US | VLESS | @jokerv2ray #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
@@ -523,28 +519,24 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @mtproxy22_v2ray #1 [fast]",
-      "server": "170.114.45.6",
-      "server_port": 80,
-      "uuid": "9ce32242-557a-4d18-864d-c9c385b3dfa4",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "matrix.learnpodedu.com"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #1 [fast]",
       "server": "84.20.27.183",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 US | SS | @mtproxy22_v2ray #2 [fast]",
+      "server": "15.204.246.132",
+      "server_port": 7307,
+      "method": "aes-256-gcm",
+      "password": "FoOiGlkAA9yPEGP",
       "network": "tcp",
       "tls": {
         "enabled": true
@@ -625,46 +617,6 @@
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #1 [fast]",
-      "server": "48.102.217.33",
-      "server_port": 443,
-      "uuid": "12c39efa-b6d8-4467-bfd5-22dca077225e",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NVwzzeQbvYYkT2-MGGBCgsHNnGfsSWupuMtTvd6gEzY",
-          "short_id": "733857f978b623eb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 US | VLESS | @red2ray #2 [fast]",
-      "server": "179.254.191.251",
-      "server_port": 4443,
-      "uuid": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
-      "network": "xhttp",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "bl1.nexfile.net",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
       }
     },
     {

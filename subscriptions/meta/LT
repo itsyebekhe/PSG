@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇱🇹 LT | VLESS | @mtproxy22_v2ray #1 [fast]", "server": "84.32.209.54", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "f69e272f-e0e5-4e9d-b180-5be63930cde9", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "lt.memepn.com", "reality-opts": {"public-key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ", "short-id": "868419504747f6de"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇱🇹 LT | VLESS | @mtproxy22_v2ray #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇱🇹 LT | VLESS | @mtproxy22_v2ray #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
