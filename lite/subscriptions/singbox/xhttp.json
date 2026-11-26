@@ -62,6 +62,9 @@
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
         "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
+        "🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -81,7 +84,10 @@
         "🇽🇽 XX | VLESS | @proxie #2 [fast]",
         "🇺🇸 US | VLESS | @netmellianti #1 [fast]",
         "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]",
-        "🇺🇸 US | VLESS | @qeshmserver #1 [fast]"
+        "🇺🇸 US | VLESS | @qeshmserver #1 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
+        "🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]",
+        "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -132,7 +138,7 @@
       "tag": "🇺🇸 US | VLESS | @mehrosaboran #1 [fast]",
       "server": "167.82.64.7",
       "server_port": 443,
-      "uuid": "XpnTeam-124",
+      "uuid": "XpnTeam-126",
       "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
@@ -145,7 +151,7 @@
       "tag": "🇺🇸 US | VLESS | @mehrosaboran #2 [fast]",
       "server": "167.82.64.7",
       "server_port": 443,
-      "uuid": "XpnTeam-126",
+      "uuid": "XpnTeam-129",
       "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
@@ -281,6 +287,61 @@
       "uuid": "qeshmserver",
       "network": "xhttp",
       "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
+      "server": "ipfast.kingmna.com",
+      "server_port": 443,
+      "uuid": "6080a0e6-591e-4e8b-8bab-cd3e03e3e4d1",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "api.ferrin.uk",
+      "server_port": 443,
+      "uuid": "7d1a74fd-8a38-4a29-863f-5da53a9e557e",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "7d1a74fd.ferrin.uk",
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "android"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]",
+      "server": "d8a566eabb938ddad8a566eabb938ddad8a566eabb938dda.drwsh.org",
+      "server_port": 8080,
+      "uuid": "13dfb464-58a7-4bfa-a30d-48eb38c6cc8e",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "telewebion.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZrRUiPYpM3K35z4cTmMoDSBcQu_lk5k5NU4TrftiSEA",
+          "short_id": "5ba803414e918143"
+        }
+      }
     },
     {
       "type": "direct",

@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇸🇨 SC | VLESS | @tanhanet #1 [fast]", "server": "45.130.125.160", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "406d8436-0eb9-4eb2-84fb-960e076ffba6", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "de.lezzatzone.ir"}
+  - {"name": "🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]", "server": "api.ferrin.uk", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7d1a74fd-8a38-4a29-863f-5da53a9e557e", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "android", "servername": "7d1a74fd.ferrin.uk"}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇸🇨 SC | VLESS | @tanhanet #1 [fast]'
+      - '🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇸🇨 SC | VLESS | @tanhanet #1 [fast]'
+      - '🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

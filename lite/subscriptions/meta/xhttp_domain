@@ -1,0 +1,34 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "همکاری_ملی", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "جاویدشاه", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "KingRezaPahlavi", "server": "127.0.0.1", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "00000000-0000-0000-0000-000000000000", "network": "ws", "tls": false, "udp": true, "client-fingerprint": "chrome", "ws-opts": {"path": "", "headers": {"Host": "127.0.0.1"}}}
+  - {"name": "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]", "server": "ipfast.kingmna.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6080a0e6-591e-4e8b-8bab-cd3e03e3e4d1", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "cdn.akamai.steamstatic.com"}
+  - {"name": "🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]", "server": "api.ferrin.uk", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "7d1a74fd-8a38-4a29-863f-5da53a9e557e", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "android", "servername": "7d1a74fd.ferrin.uk"}
+  - {"name": "🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]", "server": "d8a566eabb938ddad8a566eabb938ddad8a566eabb938dda.drwsh.org", "port": 8080, "type": "vless", "skip-cert-verify": true, "uuid": "13dfb464-58a7-4bfa-a30d-48eb38c6cc8e", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "edge", "servername": "telewebion.ir", "reality-opts": {"public-key": "ZrRUiPYpM3K35z4cTmMoDSBcQu_lk5k5NU4TrftiSEA", "short-id": "5ba803414e918143"}}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - 'همکاری_ملی'
+      - 'جاویدشاه'
+      - 'KingRezaPahlavi'
+      - '🇺🇸 US | VLESS | @Proxymelimon #1 [fast]'
+      - '🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - 'همکاری_ملی'
+      - 'جاویدشاه'
+      - 'KingRezaPahlavi'
+      - '🇺🇸 US | VLESS | @Proxymelimon #1 [fast]'
+      - '🇸🇨 SC | VLESS | @NamiraConfigs #1 [fast]'
+      - '🇩🇪 DE | VLESS | @NamiraConfigs #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY
