@@ -1,0 +1,19 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+  - {"name": "🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]", "server": "152.228.229.14", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b28bd4c0-86e3-11ed-ae56-e341819d545b", "alterId": 100, "cipher": "chacha20-poly1305", "network": "h2", "tls": true}
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - '🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]'
+      - DIRECT
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - '🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]'
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,PROXY

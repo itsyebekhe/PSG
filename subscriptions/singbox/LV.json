@@ -50,7 +50,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇱🇻 LV | VLESS | @outlinereleasedkey #1 [fast]",
         "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
+        "🇱🇻 LV | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -59,12 +61,38 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]"
+        "🇱🇻 LV | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇱🇻 LV | VLESS | @free4allvpn #1 [fast]",
+        "🇱🇻 LV | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 LV | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "195.123.209.159",
+      "server_port": 8443,
+      "uuid": "9a597d68-6688-4046-bf24-a5a541e115e0",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU",
+          "short_id": "f8d0271b4b5f9efc"
+        }
+      }
     },
     {
       "type": "vless",
@@ -87,6 +115,18 @@
           "public_key": "hGGVm0PiHJwNL34pBG6NLtbFGYVdcWhDu5zHYDoct08",
           "short_id": "4360e536"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 LV | SS | @netfreedom0 #1 [fast]",
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

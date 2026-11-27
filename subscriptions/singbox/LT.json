@@ -50,6 +50,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "🇱🇹 LT | SS | @hope_net #1 [fast]",
         "🇱🇹 LT | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
         "direct"
@@ -60,6 +61,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇱🇹 LT | SS | @hope_net #1 [fast]",
         "🇱🇹 LT | VLESS | @mtproxy22_v2ray #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]"
       ],
@@ -67,6 +69,18 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 LT | SS | @hope_net #1 [fast]",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      }
     },
     {
       "type": "vless",

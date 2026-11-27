@@ -14,6 +14,7 @@ proxies:
   - {"name": "🇺🇸 US | VLESS | @netmellianti #1 [fast]", "server": "23.235.33.98", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "b742d8e7-ed7d-4f7d-bb16-bf49bdb4cb44", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
   - {"name": "🇺🇸 US | VLESS | @proxygrizzly #1 [fast]", "server": "147.182.183.207", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "e7be1334-6a1d-47c0-8c9a-c7a5b8575499", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "yahoo.com", "reality-opts": {"public-key": "z--KbBlQtkBgTcrtdBJeGeCymIrLdaUDwkb44pAp6nY", "short-id": "4c"}}
   - {"name": "🇺🇸 US | VLESS | @qeshmserver #1 [fast]", "server": "151.101.3.8", "port": 80, "type": "vless", "skip-cert-verify": true, "uuid": "qeshmserver", "network": "xhttp", "tls": false, "udp": true, "client-fingerprint": "chrome"}
+  - {"name": "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]", "server": "ipfast.kingmna.com", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "6080a0e6-591e-4e8b-8bab-cd3e03e3e4d1", "network": "xhttp", "tls": true, "udp": true, "client-fingerprint": "chrome", "servername": "cdn.akamai.steamstatic.com"}
 proxy-groups:
   - name: "PROXY"
     type: select
@@ -29,6 +30,7 @@ proxy-groups:
       - '🇺🇸 US | VLESS | @netmellianti #1 [fast]'
       - '🇺🇸 US | VLESS | @proxygrizzly #1 [fast]'
       - '🇺🇸 US | VLESS | @qeshmserver #1 [fast]'
+      - '🇺🇸 US | VLESS | @Proxymelimon #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
@@ -44,6 +46,7 @@ proxy-groups:
       - '🇺🇸 US | VLESS | @netmellianti #1 [fast]'
       - '🇺🇸 US | VLESS | @proxygrizzly #1 [fast]'
       - '🇺🇸 US | VLESS | @qeshmserver #1 [fast]'
+      - '🇺🇸 US | VLESS | @Proxymelimon #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

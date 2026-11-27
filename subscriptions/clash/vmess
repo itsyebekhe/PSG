@@ -3,9 +3,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇺🇸 US | VMESS | @orange_vpns #1 [fast]", "server": "84.17.41.2", "port": 18000, "type": "vmess", "skip-cert-verify": true, "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
-  - {"name": "🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]", "server": "103.14.27.207", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
-  - {"name": "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]", "server": "154.47.19.225", "port": 1270, "type": "vmess", "skip-cert-verify": true, "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": true}
+  - {"name": "🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]", "server": "152.228.229.14", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "b28bd4c0-86e3-11ed-ae56-e341819d545b", "alterId": 100, "cipher": "chacha20-poly1305", "network": "h2", "tls": true}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]", "server": "142.132.163.200", "port": 80, "type": "vmess", "skip-cert-verify": true, "uuid": "7f965e3e-b03f-455e-a96e-01b61f72537a", "alterId": 0, "cipher": "auto", "network": "ws", "tls": false, "ws-opts": {"path": "/graphql", "headers": {"Host": "142.132.163.200"}}}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]", "server": "5.75.150.23", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
   - {"name": "🇩🇪 DE | VMESS | @khoneproxy #3 [fast]", "server": "167.235.205.182", "port": 443, "type": "vmess", "skip-cert-verify": true, "uuid": "6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147", "alterId": 0, "cipher": "auto", "network": "tcp", "tls": false}
@@ -30,9 +28,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇺🇸 US | VMESS | @orange_vpns #1 [fast]'
-      - '🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]'
+      - '🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'
@@ -57,9 +53,7 @@ proxy-groups:
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇺🇸 US | VMESS | @orange_vpns #1 [fast]'
-      - '🇧🇷 BR | VMESS | @outlinereleasedkey #1 [fast]'
-      - '🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]'
+      - '🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #1 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #2 [fast]'
       - '🇩🇪 DE | VMESS | @khoneproxy #3 [fast]'

@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH | SS | @outlinereleasedkey #1 [fast]",
         "🇨🇭 CH | VLESS | @bored_vpn #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]",
         "direct"
@@ -61,7 +60,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH | SS | @outlinereleasedkey #1 [fast]",
         "🇨🇭 CH | VLESS | @bored_vpn #1 [fast]",
         "🇨🇭 CH | VLESS | @filtershekan_channel #1 [fast]"
       ],
@@ -69,18 +67,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 CH | SS | @outlinereleasedkey #1 [fast]",
-      "server": "208.69.78.133",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ncIkubmoDGsl",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      }
     },
     {
       "type": "vless",

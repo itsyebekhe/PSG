@@ -3,23 +3,17 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-  - {"name": "🇹🇷 TR | VLESS | @nofiltering2 #1 [medium]", "server": "45.144.214.102", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "128ce9ab-63bc-48dc-92ca-1b5426a9eb46", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "tr.trustsvpn.com", "reality-opts": {"public-key": "W_6kEDko_-O5JHaIigz6YqXJTm4SLrS0_3lCp5B4CWE", "short-id": "aa2cd28cccee4f45"}}
-  - {"name": "🇹🇷 TR | VLESS | @nofiltering2 #2 [medium]", "server": "45.144.214.102", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "128ce9ab-63bc-48dc-92ca-1b5426a9eb46", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "reality-opts": {"public-key": "W_6kEDko_-O5JHaIigz6YqXJTm4SLrS0_3lC…</div>", "short-id": "aa2cd28cccee4f45"}}
-  - {"name": "🇹🇷 TR | VLESS | @selinc #1 [slow]", "server": "tr.0a0.uk", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "U-2PKc5vWQ8drgWUeoxL58r4v_GNpmuvxarkDRat9R0", "short-id": "2eec85de34f4cc39"}}
+  - {"name": "🇹🇷 TR | VLESS | @selinc #1 [fast]", "server": "tr.0a0.uk", "port": 443, "type": "vless", "skip-cert-verify": true, "uuid": "4a414062-e1b2-496a-bf50-d447e786f3f4", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "chrome", "flow": "xtls-rprx-vision", "servername": "www.apple.com", "reality-opts": {"public-key": "U-2PKc5vWQ8drgWUeoxL58r4v_GNpmuvxarkDRat9R0", "short-id": "2eec85de34f4cc39"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - '🇹🇷 TR | VLESS | @nofiltering2 #1 [medium]'
-      - '🇹🇷 TR | VLESS | @nofiltering2 #2 [medium]'
-      - '🇹🇷 TR | VLESS | @selinc #1 [slow]'
+      - '🇹🇷 TR | VLESS | @selinc #1 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
-      - '🇹🇷 TR | VLESS | @nofiltering2 #1 [medium]'
-      - '🇹🇷 TR | VLESS | @nofiltering2 #2 [medium]'
-      - '🇹🇷 TR | VLESS | @selinc #1 [slow]'
+      - '🇹🇷 TR | VLESS | @selinc #1 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY

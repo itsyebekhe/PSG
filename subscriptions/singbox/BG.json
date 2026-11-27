@@ -50,8 +50,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG | VLESS | @nofiltering2 #1 [fast]",
         "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+        "🇧🇬 BG | VLESS | @nofiltering2 #1 [fast]",
+        "🇧🇬 BG | VLESS | @nofiltering2 #2 [fast]",
+        "🇧🇬 BG | SS | @netfreedom0 #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -60,13 +62,37 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
         "🇧🇬 BG | VLESS | @nofiltering2 #1 [fast]",
-        "🇧🇬 BG | VLESS | @hope_net #1 [fast]"
+        "🇧🇬 BG | VLESS | @nofiltering2 #2 [fast]",
+        "🇧🇬 BG | SS | @netfreedom0 #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
+      "server": "p11real3.greewebservices.ir",
+      "server_port": 1040,
+      "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05",
+      "network": "tcp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "9b60d3"
+        }
+      }
     },
     {
       "type": "vless",
@@ -92,24 +118,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 BG | VLESS | @hope_net #1 [fast]",
-      "server": "p11real3.greewebservices.ir",
-      "server_port": 1040,
-      "uuid": "1ca12389-0d86-4197-a79a-49d24539ce05",
-      "network": "tcp",
+      "tag": "🇧🇬 BG | VLESS | @nofiltering2 #2 [fast]",
+      "server": "87.120.92.186",
+      "server_port": 2087,
+      "uuid": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "network": "xhttp",
       "packet_encoding": "xudp",
       "tls": {
-        "enabled": true,
-        "server_name": "play.googleapis.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
-          "short_id": "9b60d3"
-        }
+        "enabled": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 BG | SS | @netfreedom0 #1 [fast]",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
       }
     },
     {

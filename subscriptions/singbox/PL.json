@@ -50,9 +50,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #3 [fast]",
+        "🇵🇱 PL | SS | @hope_net #1 [fast]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -61,9 +60,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
-        "🇵🇱 PL | SS | @netfreedom0 #3 [fast]"
+        "🇵🇱 PL | SS | @hope_net #1 [fast]",
+        "🇵🇱 PL | VLESS | @red2ray #1 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -72,7 +70,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #1 [fast]",
+      "tag": "🇵🇱 PL | SS | @hope_net #1 [fast]",
       "server": "217.30.10.44",
       "server_port": 9095,
       "method": "aes-256-cfb",
@@ -83,27 +81,22 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #2 [fast]",
-      "server": "217.30.10.70",
-      "server_port": 9037,
-      "method": "aes-256-cfb",
-      "password": "TN2YqghxeFDKZfLU",
+      "type": "vless",
+      "tag": "🇵🇱 PL | VLESS | @red2ray #1 [fast]",
+      "server": "45.142.212.191",
+      "server_port": 443,
+      "uuid": "148917bd-0b37-42b8-98f4-aa94ca73e75a",
+      "flow": "xtls-rprx-vision",
       "network": "tcp",
+      "packet_encoding": "xudp",
       "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 PL | SS | @netfreedom0 #3 [fast]",
-      "server": "217.30.10.70",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "travel.yandex.ru",
+        "reality": {
+          "enabled": true,
+          "public_key": "tp7awfnKLbhIDkdYlT7Avf-SfUwt7ncX5oyWS5wQmR0",
+          "short_id": "24c4"
+        }
       }
     },
     {

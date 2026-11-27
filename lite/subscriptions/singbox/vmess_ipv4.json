@@ -53,8 +53,7 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VMESS | @orange_vpns #1 [fast]",
-        "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]",
+        "🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]",
         "direct"
@@ -68,8 +67,7 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VMESS | @orange_vpns #1 [fast]",
-        "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]",
+        "🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #1 [fast]",
         "🇩🇪 DE | VMESS | @khoneproxy #2 [fast]"
       ],
@@ -119,32 +117,24 @@
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 US | VMESS | @orange_vpns #1 [fast]",
-      "server": "84.17.41.2",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto",
-      "alter_id": 0,
+      "tag": "🇫🇷 FR | VMESS | @mahsaproxy #1 [fast]",
+      "server": "152.228.229.14",
+      "server_port": 443,
+      "uuid": "b28bd4c0-86e3-11ed-ae56-e341819d545b",
+      "security": "chacha20-poly1305",
+      "alter_id": 100,
       "global_padding": false,
       "authenticated_length": true,
-      "network": "tcp",
-      "packet_encoding": ""
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇹 AT | VMESS | @Proxymelimon #1 [fast]",
-      "server": "154.47.19.225",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "network": "tcp",
+      "network": "h2",
       "packet_encoding": "",
       "tls": {
         "enabled": true,
-        "server_name": "xmfhlpy.com"
+        "server_name": "snappfood.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "http",
+        "path": "/game-server"
       }
     },
     {
