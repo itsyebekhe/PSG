@@ -50,7 +50,6 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -183,7 +182,6 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #1 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #2 [fast]",
         "🇽🇽 XX | VLESS | @prrofile_purple #3 [fast]",
@@ -313,33 +311,6 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
-    },
-    {
-      "type": "vless",
-      "tag": "🇽🇽 XX | VLESS | @orange_vpns #1 [fast]",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "uuid": "53bbdad4-2f4e-45db-8df4-fa491a6a7227",
-      "network": "ws",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "freeceshi6.frii.site",
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "headers": {
-          "Host": "freeceshi6.frii.site"
-        }
-      }
     },
     {
       "type": "vless",

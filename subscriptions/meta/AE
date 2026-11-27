@@ -4,16 +4,19 @@ mode: rule
 log-level: info
 proxies:
   - {"name": "🇦🇪 AE | VLESS | @red2ray #1 [fast]", "server": "189.30.65.203", "port": 2083, "type": "vless", "skip-cert-verify": true, "uuid": "490dc3b4-8d1d-49fd-840e-bd5277b41557", "network": "grpc", "tls": false, "udp": true, "client-fingerprint": "chrome", "grpc-opts": {"grpc-service-name": "service-41f6a2a01377"}}
+  - {"name": "🇦🇪 AE | VLESS | @red2ray #2 [fast]", "server": "212.192.3.63", "port": 9543, "type": "vless", "skip-cert-verify": true, "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6", "network": "tcp", "tls": true, "udp": true, "client-fingerprint": "firefox", "flow": "xtls-rprx-vision", "servername": "storage.yandexcloud.net", "reality-opts": {"public-key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc", "short-id": "123abcdf"}}
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
       - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
+      - '🇦🇪 AE | VLESS | @red2ray #2 [fast]'
       - DIRECT
   - name: "Auto"
     type: url-test
     proxies:
       - '🇦🇪 AE | VLESS | @red2ray #1 [fast]'
+      - '🇦🇪 AE | VLESS | @red2ray #2 [fast]'
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,PROXY
