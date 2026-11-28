@@ -53,7 +53,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
+        "🇺🇸 US | VLESS | @outlinereleasedkey #1 [fast]",
         "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
         "direct"
       ],
       "default": "auto"
@@ -65,7 +67,9 @@
         "همکاری_ملی",
         "جاویدشاه",
         "KingRezaPahlavi",
-        "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]"
+        "🇺🇸 US | VLESS | @outlinereleasedkey #1 [fast]",
+        "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
+        "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -113,6 +117,23 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 US | VLESS | @outlinereleasedkey #1 [fast]",
+      "server": "swo2.nexfile.net",
+      "server_port": 4443,
+      "uuid": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "swo2.nexfile.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 US | VLESS | @Proxymelimon #1 [fast]",
       "server": "ipfast.kingmna.com",
       "server_port": 443,
@@ -122,6 +143,27 @@
       "tls": {
         "enabled": true,
         "server_name": "cdn.akamai.steamstatic.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇽🇽 XX | VLESS | @proxy_confiingir #2 [fast]",
+      "server": "securitytrails.com",
+      "server_port": 443,
+      "uuid": "90c09d42-c5f6-4602-bba8-957df1ed5598",
+      "network": "xhttp",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.nimrome.dpdns.org",
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
